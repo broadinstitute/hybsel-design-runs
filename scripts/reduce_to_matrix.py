@@ -21,9 +21,18 @@ def read_input(args):
       if int(val) == val:
         val = int(val)
       if args.require_index and args.require_val:
-        if float(ls[args.require_index]) != args.require_val:
-          # skip this entry
-          continue
+        if "," in args.require_index:
+          req_inds = args.require_index.split(',')
+          req_vals = args.require_index.split(',')
+          assert len(req_inds) == len(req_vals)
+          skip = False
+          for i, v in zip(req_inds, req_vals):
+            i, v = int(i), float(v)
+            if float(ls[i]) != v:
+              # skip this entry
+              skip=True
+          if skip:
+            continue
       kv[x][y] = val
   return kv
 
@@ -53,8 +62,8 @@ if __name__ == "__main__":
   argparse.add_argument('--row_index', '-r', type=int, default=0)
   argparse.add_argument('--col_index', '-c', type=int, default=1)
   argparse.add_argument('--val_index', '-v', type=int, default=2)
-  argparse.add_argument('--require_index', type=int)
-  argparse.add_argument('--require_val', type=float)
+  argparse.add_argument('--require_index', type=str)
+  argparse.add_argument('--require_val', type=str)
   args = argparse.parse_args()
 
   main(args)
