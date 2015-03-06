@@ -21,18 +21,17 @@ def read_input(args):
       if int(val) == val:
         val = int(val)
       if args.require_index and args.require_val:
-        if "," in args.require_index:
-          req_inds = args.require_index.split(',')
-          req_vals = args.require_index.split(',')
-          assert len(req_inds) == len(req_vals)
-          skip = False
-          for i, v in zip(req_inds, req_vals):
-            i, v = int(i), float(v)
-            if float(ls[i]) != v:
-              # skip this entry
-              skip=True
-          if skip:
-            continue
+        req_inds = args.require_index.split(',')
+        req_vals = args.require_val.split(',')
+        assert len(req_inds) == len(req_vals)
+        skip = False
+        for i, v in zip(req_inds, req_vals):
+          i, v = int(i), float(v)
+          if float(ls[i]) != v:
+            # skip this entry
+            skip=True
+        if skip:
+          continue
       kv[x][y] = val
   return kv
 
