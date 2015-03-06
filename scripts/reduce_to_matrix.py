@@ -10,11 +10,20 @@ def read_input(args):
   with open(args.input) as f:
     for line in f:
       ls = line.rstrip().split()
-      if len(ls) != 3:
+      if len(ls) < 3:
         continue
-      x, y, val = int(ls[0]), int(ls[1]), float(ls[2])
+      x, y, val = \
+          float(ls[args.row_index]), float(ls[args.col_index]), float(ls[args.val_index])
+      if int(x) == x:
+        x = int(x)
+      if int(y) == y:
+        y = int(y)
       if int(val) == val:
         val = int(val)
+      if args.require_index and args.require_val:
+        if float(ls[args.require_index]) != args.require_val:
+          # skip this entry
+          continue
       kv[x][y] = val
   return kv
 
@@ -41,6 +50,11 @@ def main(args):
 if __name__ == "__main__":
   argparse = argparse.ArgumentParser()
   argparse.add_argument('--input', '-i', required=True)
+  argparse.add_argument('--row_index', '-r', type=int, default=0)
+  argparse.add_argument('--col_index', '-c', type=int, default=1)
+  argparse.add_argument('--val_index', '-v', type=int, default=2)
+  argparse.add_argument('--require_index', type=int)
+  argparse.add_argument('--require_val', type=float)
   args = argparse.parse_args()
 
   main(args)
