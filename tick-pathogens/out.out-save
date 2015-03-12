@@ -1,0 +1,155 @@
+Sender: LSF System <lsf@a2e-gp-0>
+Subject: Job 9651511: <python bin/make_probes_by_set_cover.py -m 0 -l 100 --dataset powassan --output_probes /home/unix/hmetsky/viral/viral-work/results/hybsel_design/tick-pathogens/powassan.skip_set_cover.probes --skip_set_cover> Done
+
+Job <python bin/make_probes_by_set_cover.py -m 0 -l 100 --dataset powassan --output_probes /home/unix/hmetsky/viral/viral-work/results/hybsel_design/tick-pathogens/powassan.skip_set_cover.probes --skip_set_cover> was submitted from host <node1390> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <a2e-gp-0>, in queue <forest>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Wed Mar 11 11:22:18 2015
+Results reported at Wed Mar 11 11:22:26 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes_by_set_cover.py -m 0 -l 100 --dataset powassan --output_probes /home/unix/hmetsky/viral/viral-work/results/hybsel_design/tick-pathogens/powassan.skip_set_cover.probes --skip_set_cover
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :      0.91 sec.
+    Max Memory :        11 MB
+    Max Swap   :        40 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+0 100 1.0 3748
+Sender: LSF System <lsf@a2e-gp-2>
+Subject: Job 9651469: <python bin/make_probes_by_set_cover.py -m 0 -l 100 --dataset all_deer_tick_borne --output_probes /home/unix/hmetsky/viral/viral-work/results/hybsel_design/tick-pathogens/all_deer_tick_borne.skip_set_cover.probes --skip_set_cover> Done
+
+Job <python bin/make_probes_by_set_cover.py -m 0 -l 100 --dataset all_deer_tick_borne --output_probes /home/unix/hmetsky/viral/viral-work/results/hybsel_design/tick-pathogens/all_deer_tick_borne.skip_set_cover.probes --skip_set_cover> was submitted from host <node1390> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <a2e-gp-2>, in queue <forest>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Wed Mar 11 11:21:24 2015
+Results reported at Wed Mar 11 11:22:35 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes_by_set_cover.py -m 0 -l 100 --dataset all_deer_tick_borne --output_probes /home/unix/hmetsky/viral/viral-work/results/hybsel_design/tick-pathogens/all_deer_tick_borne.skip_set_cover.probes --skip_set_cover
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     64.34 sec.
+    Max Memory :       570 MB
+    Max Swap   :       848 MB
+
+    Max Processes  :         3
+    Max Threads    :         4
+
+The output (if any) follows:
+
+0 100 1.0 415144
+Sender: LSF System <lsf@a2e-gp-3>
+Subject: Job 9651504: <python bin/make_probes_by_set_cover.py -m 0 -l 100 --dataset powassan --output_probes /home/unix/hmetsky/viral/viral-work/results/hybsel_design/tick-pathogens/powassan.set_cover.m0_l100.probes> Done
+
+Job <python bin/make_probes_by_set_cover.py -m 0 -l 100 --dataset powassan --output_probes /home/unix/hmetsky/viral/viral-work/results/hybsel_design/tick-pathogens/powassan.set_cover.m0_l100.probes> was submitted from host <node1390> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <a2e-gp-3>, in queue <forest>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Wed Mar 11 11:21:56 2015
+Results reported at Wed Mar 11 11:22:49 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes_by_set_cover.py -m 0 -l 100 --dataset powassan --output_probes /home/unix/hmetsky/viral/viral-work/results/hybsel_design/tick-pathogens/powassan.set_cover.m0_l100.probes
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     31.08 sec.
+    Max Memory :        55 MB
+    Max Swap   :       333 MB
+
+    Max Processes  :         3
+    Max Threads    :         4
+
+The output (if any) follows:
+
+0 100 1.0 1204
+Sender: LSF System <lsf@a2e-gp-3>
+Subject: Job 9651830: <python bin/make_probes_by_set_cover.py -m 3 -l 85 --dataset powassan --output_probes /home/unix/hmetsky/viral/viral-work/results/hybsel_design/tick-pathogens/powassan.set_cover.m3_l85.probes> Done
+
+Job <python bin/make_probes_by_set_cover.py -m 3 -l 85 --dataset powassan --output_probes /home/unix/hmetsky/viral/viral-work/results/hybsel_design/tick-pathogens/powassan.set_cover.m3_l85.probes> was submitted from host <node1390> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <a2e-gp-3>, in queue <forest>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Wed Mar 11 11:32:27 2015
+Results reported at Wed Mar 11 11:34:37 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes_by_set_cover.py -m 3 -l 85 --dataset powassan --output_probes /home/unix/hmetsky/viral/viral-work/results/hybsel_design/tick-pathogens/powassan.set_cover.m3_l85.probes
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     45.53 sec.
+    Max Memory :        57 MB
+    Max Swap   :       335 MB
+
+    Max Processes  :         3
+    Max Threads    :         4
+
+The output (if any) follows:
+
+3 85 1.0 890
+Sender: LSF System <lsf@a2e-gp-3>
+Subject: Job 9651962: <python bin/make_probes_by_redundancy_reduction.py -m 3 -l 85 -f nr --dataset powassan --output_probes /home/unix/hmetsky/viral/viral-work/results/hybsel_design/tick-pathogens/powassan.redundancy_reduction-naive.m3_l85.probes> Done
+
+Job <python bin/make_probes_by_redundancy_reduction.py -m 3 -l 85 -f nr --dataset powassan --output_probes /home/unix/hmetsky/viral/viral-work/results/hybsel_design/tick-pathogens/powassan.redundancy_reduction-naive.m3_l85.probes> was submitted from host <node1390> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <a2e-gp-3>, in queue <forest>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Wed Mar 11 11:34:52 2015
+Results reported at Wed Mar 11 11:38:41 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes_by_redundancy_reduction.py -m 3 -l 85 -f nr --dataset powassan --output_probes /home/unix/hmetsky/viral/viral-work/results/hybsel_design/tick-pathogens/powassan.redundancy_reduction-naive.m3_l85.probes
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :    225.14 sec.
+    Max Memory :        57 MB
+    Max Swap   :       333 MB
+
+    Max Processes  :         3
+    Max Threads    :         4
+
+The output (if any) follows:
+
+3 85 1860
