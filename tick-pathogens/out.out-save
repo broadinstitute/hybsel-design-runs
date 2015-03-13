@@ -153,3 +153,65 @@ Resource usage summary:
 The output (if any) follows:
 
 3 85 1860
+Sender: LSF System <lsf@a2e-gp-2>
+Subject: Job 9651402: <python bin/make_probes_by_set_cover.py -m 0 -l 100 --dataset all_deer_tick_borne --output_probes /home/unix/hmetsky/viral/viral-work/results/hybsel_design/tick-pathogens/all_deer_tick_borne.set_cover.m0_l100.probes> Done
+
+Job <python bin/make_probes_by_set_cover.py -m 0 -l 100 --dataset all_deer_tick_borne --output_probes /home/unix/hmetsky/viral/viral-work/results/hybsel_design/tick-pathogens/all_deer_tick_borne.set_cover.m0_l100.probes> was submitted from host <node1390> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <a2e-gp-2>, in queue <forest>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Wed Mar 11 11:19:59 2015
+Results reported at Fri Mar 13 09:36:26 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes_by_set_cover.py -m 0 -l 100 --dataset all_deer_tick_borne --output_probes /home/unix/hmetsky/viral/viral-work/results/hybsel_design/tick-pathogens/all_deer_tick_borne.set_cover.m0_l100.probes
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   : 166539.25 sec.
+    Max Memory :      2114 MB
+    Max Swap   :      2392 MB
+
+    Max Processes  :         3
+    Max Threads    :         4
+
+The output (if any) follows:
+
+0 100 1.0 205118
+Sender: LSF System <lsf@a2e-gp-3>
+Subject: Job 9651762: <python bin/make_probes_by_set_cover.py -m 3 -l 85 --dataset all_deer_tick_borne --output_probes /home/unix/hmetsky/viral/viral-work/results/hybsel_design/tick-pathogens/all_deer_tick_borne.set_cover.m3_l85.probes> Done
+
+Job <python bin/make_probes_by_set_cover.py -m 3 -l 85 --dataset all_deer_tick_borne --output_probes /home/unix/hmetsky/viral/viral-work/results/hybsel_design/tick-pathogens/all_deer_tick_borne.set_cover.m3_l85.probes> was submitted from host <node1390> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <a2e-gp-3>, in queue <forest>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Wed Mar 11 11:30:25 2015
+Results reported at Fri Mar 13 10:31:45 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes_by_set_cover.py -m 3 -l 85 --dataset all_deer_tick_borne --output_probes /home/unix/hmetsky/viral/viral-work/results/hybsel_design/tick-pathogens/all_deer_tick_borne.set_cover.m3_l85.probes
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   : 169208.89 sec.
+    Max Memory :      2128 MB
+    Max Swap   :      2406 MB
+
+    Max Processes  :         3
+    Max Threads    :         4
+
+The output (if any) follows:
+
+3 85 1.0 202462
