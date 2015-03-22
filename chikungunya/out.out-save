@@ -1,0 +1,847 @@
+Sender: LSF System <lsf@a2e-gp-3>
+Subject: Job 620556: <python bin/make_probes_by_set_cover.py -m 0 -l 100 --dataset chikungunya --verbose -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/chikungunya/chikungunya_probes.m0_l100.fasta> Done
+
+Job <python bin/make_probes_by_set_cover.py -m 0 -l 100 --dataset chikungunya --verbose -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/chikungunya/chikungunya_probes.m0_l100.fasta> was submitted from host <node1378> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <a2e-gp-3>, in queue <forest>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Sun Mar 22 10:33:50 2015
+Results reported at Sun Mar 22 14:51:20 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes_by_set_cover.py -m 0 -l 100 --dataset chikungunya --verbose -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/chikungunya/chikungunya_probes.m0_l100.fasta
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :  15418.29 sec.
+    Max Memory :       897 MB
+    Max Swap   :      1174 MB
+
+    Max Processes  :         3
+    Max Threads    :         4
+
+The output (if any) follows:
+
+2015-03-22 10:34:18,944 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/chikungunya.fasta
+2015-03-22 10:34:19,461 - hybseldesign.filter.probe_designer [INFO] Building candidate probes from target sequences
+2015-03-22 10:34:20,883 - hybseldesign.filter.probe_designer [INFO] Starting filter DuplicateFilter
+2015-03-22 10:34:23,186 - hybseldesign.filter.probe_designer [INFO] Starting filter SetCoverFilter
+2015-03-22 10:34:23,186 - hybseldesign.filter.set_cover_filter [INFO] Building map from k-mers to probes
+2015-03-22 10:34:25,970 - hybseldesign.filter.set_cover_filter [INFO] Building set cover sets input
+2015-03-22 10:34:26,027 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 0 of 213
+2015-03-22 10:34:33,174 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 1 of 213
+2015-03-22 10:34:40,098 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 2 of 213
+2015-03-22 10:34:44,386 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 3 of 213
+2015-03-22 10:34:48,748 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 4 of 213
+2015-03-22 10:34:55,642 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 5 of 213
+2015-03-22 10:35:02,456 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 6 of 213
+2015-03-22 10:35:09,426 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 7 of 213
+2015-03-22 10:35:16,297 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 8 of 213
+2015-03-22 10:35:23,378 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 9 of 213
+2015-03-22 10:35:27,810 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 10 of 213
+2015-03-22 10:35:32,238 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 11 of 213
+2015-03-22 10:35:36,679 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 12 of 213
+2015-03-22 10:35:41,100 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 13 of 213
+2015-03-22 10:35:46,797 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 14 of 213
+2015-03-22 10:35:52,690 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 15 of 213
+2015-03-22 10:35:58,692 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 16 of 213
+2015-03-22 10:36:04,447 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 17 of 213
+2015-03-22 10:36:06,202 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 18 of 213
+2015-03-22 10:36:07,980 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 19 of 213
+2015-03-22 10:36:09,776 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 20 of 213
+2015-03-22 10:36:11,474 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 21 of 213
+2015-03-22 10:36:13,263 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 22 of 213
+2015-03-22 10:36:15,078 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 23 of 213
+2015-03-22 10:36:19,762 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 24 of 213
+2015-03-22 10:36:24,581 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 25 of 213
+2015-03-22 10:36:30,634 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 26 of 213
+2015-03-22 10:36:36,450 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 27 of 213
+2015-03-22 10:36:41,359 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 28 of 213
+2015-03-22 10:36:46,823 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 29 of 213
+2015-03-22 10:36:51,543 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 30 of 213
+2015-03-22 10:36:53,378 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 31 of 213
+2015-03-22 10:36:58,816 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 32 of 213
+2015-03-22 10:37:04,221 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 33 of 213
+2015-03-22 10:37:06,048 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 34 of 213
+2015-03-22 10:37:10,819 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 35 of 213
+2015-03-22 10:37:15,143 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 36 of 213
+2015-03-22 10:37:22,255 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 37 of 213
+2015-03-22 10:37:26,919 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 38 of 213
+2015-03-22 10:37:34,051 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 39 of 213
+2015-03-22 10:37:35,898 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 40 of 213
+2015-03-22 10:37:40,583 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 41 of 213
+2015-03-22 10:37:44,941 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 42 of 213
+2015-03-22 10:37:50,368 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 43 of 213
+2015-03-22 10:37:57,496 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 44 of 213
+2015-03-22 10:38:03,431 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 45 of 213
+2015-03-22 10:38:09,233 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 46 of 213
+2015-03-22 10:38:14,004 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 47 of 213
+2015-03-22 10:38:18,675 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 48 of 213
+2015-03-22 10:38:23,191 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 49 of 213
+2015-03-22 10:38:27,815 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 50 of 213
+2015-03-22 10:38:32,127 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 51 of 213
+2015-03-22 10:38:33,975 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 52 of 213
+2015-03-22 10:38:35,828 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 53 of 213
+2015-03-22 10:38:41,844 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 54 of 213
+2015-03-22 10:38:47,769 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 55 of 213
+2015-03-22 10:38:54,808 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 56 of 213
+2015-03-22 10:39:01,846 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 57 of 213
+2015-03-22 10:39:08,881 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 58 of 213
+2015-03-22 10:39:15,819 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 59 of 213
+2015-03-22 10:39:22,836 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 60 of 213
+2015-03-22 10:39:28,533 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 61 of 213
+2015-03-22 10:39:35,601 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 62 of 213
+2015-03-22 10:39:42,709 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 63 of 213
+2015-03-22 10:39:49,779 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 64 of 213
+2015-03-22 10:39:56,903 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 65 of 213
+2015-03-22 10:40:03,977 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 66 of 213
+2015-03-22 10:40:11,288 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 67 of 213
+2015-03-22 10:40:18,363 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 68 of 213
+2015-03-22 10:40:25,451 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 69 of 213
+2015-03-22 10:40:32,496 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 70 of 213
+2015-03-22 10:40:39,565 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 71 of 213
+2015-03-22 10:40:46,629 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 72 of 213
+2015-03-22 10:40:53,675 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 73 of 213
+2015-03-22 10:41:00,758 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 74 of 213
+2015-03-22 10:41:07,746 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 75 of 213
+2015-03-22 10:41:14,714 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 76 of 213
+2015-03-22 10:41:21,684 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 77 of 213
+2015-03-22 10:41:28,714 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 78 of 213
+2015-03-22 10:41:36,014 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 79 of 213
+2015-03-22 10:41:43,140 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 80 of 213
+2015-03-22 10:41:50,168 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 81 of 213
+2015-03-22 10:41:57,308 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 82 of 213
+2015-03-22 10:42:04,452 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 83 of 213
+2015-03-22 10:42:11,616 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 84 of 213
+2015-03-22 10:42:18,782 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 85 of 213
+2015-03-22 10:42:25,972 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 86 of 213
+2015-03-22 10:42:33,074 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 87 of 213
+2015-03-22 10:42:40,200 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 88 of 213
+2015-03-22 10:42:47,321 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 89 of 213
+2015-03-22 10:42:54,713 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 90 of 213
+2015-03-22 10:42:59,024 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 91 of 213
+2015-03-22 10:43:03,332 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 92 of 213
+2015-03-22 10:43:08,599 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 93 of 213
+2015-03-22 10:43:13,895 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 94 of 213
+2015-03-22 10:43:20,790 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 95 of 213
+2015-03-22 10:43:27,677 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 96 of 213
+2015-03-22 10:43:34,771 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 97 of 213
+2015-03-22 10:43:41,650 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 98 of 213
+2015-03-22 10:43:48,468 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 99 of 213
+2015-03-22 10:43:52,780 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 100 of 213
+2015-03-22 10:43:57,071 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 101 of 213
+2015-03-22 10:44:01,368 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 102 of 213
+2015-03-22 10:44:08,344 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 103 of 213
+2015-03-22 10:44:15,302 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 104 of 213
+2015-03-22 10:44:22,228 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 105 of 213
+2015-03-22 10:44:29,171 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 106 of 213
+2015-03-22 10:44:36,517 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 107 of 213
+2015-03-22 10:44:44,073 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 108 of 213
+2015-03-22 10:44:51,439 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 109 of 213
+2015-03-22 10:44:58,471 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 110 of 213
+2015-03-22 10:45:05,497 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 111 of 213
+2015-03-22 10:45:12,442 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 112 of 213
+2015-03-22 10:45:19,497 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 113 of 213
+2015-03-22 10:45:26,549 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 114 of 213
+2015-03-22 10:45:33,615 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 115 of 213
+2015-03-22 10:45:40,625 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 116 of 213
+2015-03-22 10:45:47,586 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 117 of 213
+2015-03-22 10:45:54,615 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 118 of 213
+2015-03-22 10:46:01,686 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 119 of 213
+2015-03-22 10:46:06,051 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 120 of 213
+2015-03-22 10:46:13,422 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 121 of 213
+2015-03-22 10:46:20,522 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 122 of 213
+2015-03-22 10:46:24,874 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 123 of 213
+2015-03-22 10:46:30,491 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 124 of 213
+2015-03-22 10:46:37,629 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 125 of 213
+2015-03-22 10:46:44,795 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 126 of 213
+2015-03-22 10:46:51,936 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 127 of 213
+2015-03-22 10:46:59,055 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 128 of 213
+2015-03-22 10:47:06,173 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 129 of 213
+2015-03-22 10:47:13,345 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 130 of 213
+2015-03-22 10:47:15,153 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 131 of 213
+2015-03-22 10:47:22,205 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 132 of 213
+2015-03-22 10:47:29,223 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 133 of 213
+2015-03-22 10:47:36,242 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 134 of 213
+2015-03-22 10:47:43,565 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 135 of 213
+2015-03-22 10:47:50,567 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 136 of 213
+2015-03-22 10:47:57,590 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 137 of 213
+2015-03-22 10:48:04,583 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 138 of 213
+2015-03-22 10:48:11,610 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 139 of 213
+2015-03-22 10:48:18,626 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 140 of 213
+2015-03-22 10:48:25,627 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 141 of 213
+2015-03-22 10:48:32,629 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 142 of 213
+2015-03-22 10:48:39,652 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 143 of 213
+2015-03-22 10:48:46,661 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 144 of 213
+2015-03-22 10:48:53,719 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 145 of 213
+2015-03-22 10:49:00,788 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 146 of 213
+2015-03-22 10:49:08,154 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 147 of 213
+2015-03-22 10:49:15,189 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 148 of 213
+2015-03-22 10:49:19,623 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 149 of 213
+2015-03-22 10:49:26,812 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 150 of 213
+2015-03-22 10:49:31,608 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 151 of 213
+2015-03-22 10:49:36,457 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 152 of 213
+2015-03-22 10:49:43,563 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 153 of 213
+2015-03-22 10:49:48,370 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 154 of 213
+2015-03-22 10:49:55,456 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 155 of 213
+2015-03-22 10:50:02,647 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 156 of 213
+2015-03-22 10:50:09,749 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 157 of 213
+2015-03-22 10:50:16,875 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 158 of 213
+2015-03-22 10:50:21,430 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 159 of 213
+2015-03-22 10:50:26,210 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 160 of 213
+2015-03-22 10:50:32,240 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 161 of 213
+2015-03-22 10:50:39,416 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 162 of 213
+2015-03-22 10:50:46,594 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 163 of 213
+2015-03-22 10:50:54,153 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 164 of 213
+2015-03-22 10:51:01,307 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 165 of 213
+2015-03-22 10:51:08,496 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 166 of 213
+2015-03-22 10:51:15,648 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 167 of 213
+2015-03-22 10:51:22,264 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 168 of 213
+2015-03-22 10:51:27,834 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 169 of 213
+2015-03-22 10:51:32,060 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 170 of 213
+2015-03-22 10:51:39,018 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 171 of 213
+2015-03-22 10:51:45,984 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 172 of 213
+2015-03-22 10:51:50,447 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 173 of 213
+2015-03-22 10:51:54,919 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 174 of 213
+2015-03-22 10:51:59,384 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 175 of 213
+2015-03-22 10:52:03,880 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 176 of 213
+2015-03-22 10:52:10,975 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 177 of 213
+2015-03-22 10:52:18,053 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 178 of 213
+2015-03-22 10:52:25,218 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 179 of 213
+2015-03-22 10:52:29,493 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 180 of 213
+2015-03-22 10:52:36,865 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 181 of 213
+2015-03-22 10:52:43,657 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 182 of 213
+2015-03-22 10:52:50,685 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 183 of 213
+2015-03-22 10:52:57,664 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 184 of 213
+2015-03-22 10:53:04,681 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 185 of 213
+2015-03-22 10:53:11,648 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 186 of 213
+2015-03-22 10:53:18,628 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 187 of 213
+2015-03-22 10:53:20,433 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 188 of 213
+2015-03-22 10:53:25,279 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 189 of 213
+2015-03-22 10:53:32,477 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 190 of 213
+2015-03-22 10:53:39,603 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 191 of 213
+2015-03-22 10:53:46,580 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 192 of 213
+2015-03-22 10:53:52,610 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 193 of 213
+2015-03-22 10:53:59,799 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 194 of 213
+2015-03-22 10:54:06,958 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 195 of 213
+2015-03-22 10:54:14,508 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 196 of 213
+2015-03-22 10:54:21,665 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 197 of 213
+2015-03-22 10:54:28,854 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 198 of 213
+2015-03-22 10:54:33,637 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 199 of 213
+2015-03-22 10:54:38,193 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 200 of 213
+2015-03-22 10:54:45,277 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 201 of 213
+2015-03-22 10:54:52,348 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 202 of 213
+2015-03-22 10:54:59,431 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 203 of 213
+2015-03-22 10:55:03,934 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 204 of 213
+2015-03-22 10:55:08,413 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 205 of 213
+2015-03-22 10:55:12,883 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 206 of 213
+2015-03-22 10:55:17,336 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 207 of 213
+2015-03-22 10:55:23,006 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 208 of 213
+2015-03-22 10:55:28,700 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 209 of 213
+2015-03-22 10:55:35,810 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 210 of 213
+2015-03-22 10:55:40,605 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 211 of 213
+2015-03-22 10:55:45,383 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage across genome 212 of 213
+2015-03-22 10:55:52,454 - hybseldesign.filter.set_cover_filter [INFO] Building set cover costs input
+2015-03-22 10:55:52,479 - hybseldesign.filter.set_cover_filter [INFO] Building set cover universe_p input
+2015-03-22 10:55:52,480 - hybseldesign.filter.set_cover_filter [INFO] Approximating the solution to the set cover instance
+2015-03-22 10:56:26,240 - hybseldesign.utils.set_cover [INFO] Selected 0 sets with a total of 2514696 elements remaining to be covered
+2015-03-22 11:00:11,143 - hybseldesign.utils.set_cover [INFO] Selected 10 sets with a total of 2362396 elements remaining to be covered
+2015-03-22 11:03:40,293 - hybseldesign.utils.set_cover [INFO] Selected 20 sets with a total of 2225696 elements remaining to be covered
+2015-03-22 11:07:02,283 - hybseldesign.utils.set_cover [INFO] Selected 30 sets with a total of 2094096 elements remaining to be covered
+2015-03-22 11:10:18,648 - hybseldesign.utils.set_cover [INFO] Selected 40 sets with a total of 1966796 elements remaining to be covered
+2015-03-22 11:13:30,105 - hybseldesign.utils.set_cover [INFO] Selected 50 sets with a total of 1841557 elements remaining to be covered
+2015-03-22 11:16:34,355 - hybseldesign.utils.set_cover [INFO] Selected 60 sets with a total of 1718357 elements remaining to be covered
+2015-03-22 11:19:32,732 - hybseldesign.utils.set_cover [INFO] Selected 70 sets with a total of 1598057 elements remaining to be covered
+2015-03-22 11:22:17,742 - hybseldesign.utils.set_cover [INFO] Selected 80 sets with a total of 1484988 elements remaining to be covered
+2015-03-22 11:25:03,977 - hybseldesign.utils.set_cover [INFO] Selected 90 sets with a total of 1379848 elements remaining to be covered
+2015-03-22 11:27:38,138 - hybseldesign.utils.set_cover [INFO] Selected 100 sets with a total of 1288088 elements remaining to be covered
+2015-03-22 11:30:14,185 - hybseldesign.utils.set_cover [INFO] Selected 110 sets with a total of 1210614 elements remaining to be covered
+2015-03-22 11:32:36,629 - hybseldesign.utils.set_cover [INFO] Selected 120 sets with a total of 1151634 elements remaining to be covered
+2015-03-22 11:34:04,656 - hybseldesign.utils.set_cover [INFO] Selected 130 sets with a total of 1104084 elements remaining to be covered
+2015-03-22 11:34:41,607 - hybseldesign.utils.set_cover [INFO] Selected 140 sets with a total of 1060443 elements remaining to be covered
+2015-03-22 11:35:42,533 - hybseldesign.utils.set_cover [INFO] Selected 150 sets with a total of 1021578 elements remaining to be covered
+2015-03-22 11:36:28,829 - hybseldesign.utils.set_cover [INFO] Selected 160 sets with a total of 986084 elements remaining to be covered
+2015-03-22 11:37:05,431 - hybseldesign.utils.set_cover [INFO] Selected 170 sets with a total of 953204 elements remaining to be covered
+2015-03-22 11:37:49,823 - hybseldesign.utils.set_cover [INFO] Selected 180 sets with a total of 923100 elements remaining to be covered
+2015-03-22 11:38:34,925 - hybseldesign.utils.set_cover [INFO] Selected 190 sets with a total of 894989 elements remaining to be covered
+2015-03-22 11:39:14,394 - hybseldesign.utils.set_cover [INFO] Selected 200 sets with a total of 869250 elements remaining to be covered
+2015-03-22 11:39:52,310 - hybseldesign.utils.set_cover [INFO] Selected 210 sets with a total of 845393 elements remaining to be covered
+2015-03-22 11:40:51,070 - hybseldesign.utils.set_cover [INFO] Selected 220 sets with a total of 822688 elements remaining to be covered
+2015-03-22 11:41:26,926 - hybseldesign.utils.set_cover [INFO] Selected 230 sets with a total of 801535 elements remaining to be covered
+2015-03-22 11:42:09,033 - hybseldesign.utils.set_cover [INFO] Selected 240 sets with a total of 781328 elements remaining to be covered
+2015-03-22 11:42:41,552 - hybseldesign.utils.set_cover [INFO] Selected 250 sets with a total of 762101 elements remaining to be covered
+2015-03-22 11:43:07,214 - hybseldesign.utils.set_cover [INFO] Selected 260 sets with a total of 743884 elements remaining to be covered
+2015-03-22 11:43:46,107 - hybseldesign.utils.set_cover [INFO] Selected 270 sets with a total of 726615 elements remaining to be covered
+2015-03-22 11:43:59,078 - hybseldesign.utils.set_cover [INFO] Selected 280 sets with a total of 710058 elements remaining to be covered
+2015-03-22 11:44:22,585 - hybseldesign.utils.set_cover [INFO] Selected 290 sets with a total of 694163 elements remaining to be covered
+2015-03-22 11:44:48,234 - hybseldesign.utils.set_cover [INFO] Selected 300 sets with a total of 679047 elements remaining to be covered
+2015-03-22 11:45:11,010 - hybseldesign.utils.set_cover [INFO] Selected 310 sets with a total of 664527 elements remaining to be covered
+2015-03-22 11:45:38,572 - hybseldesign.utils.set_cover [INFO] Selected 320 sets with a total of 650517 elements remaining to be covered
+2015-03-22 11:45:59,408 - hybseldesign.utils.set_cover [INFO] Selected 330 sets with a total of 636867 elements remaining to be covered
+2015-03-22 11:46:26,198 - hybseldesign.utils.set_cover [INFO] Selected 340 sets with a total of 623822 elements remaining to be covered
+2015-03-22 11:46:37,467 - hybseldesign.utils.set_cover [INFO] Selected 350 sets with a total of 610894 elements remaining to be covered
+2015-03-22 11:46:51,576 - hybseldesign.utils.set_cover [INFO] Selected 360 sets with a total of 598636 elements remaining to be covered
+2015-03-22 11:47:03,070 - hybseldesign.utils.set_cover [INFO] Selected 370 sets with a total of 586636 elements remaining to be covered
+2015-03-22 11:47:12,954 - hybseldesign.utils.set_cover [INFO] Selected 380 sets with a total of 574636 elements remaining to be covered
+2015-03-22 11:47:26,548 - hybseldesign.utils.set_cover [INFO] Selected 390 sets with a total of 562954 elements remaining to be covered
+2015-03-22 11:47:40,645 - hybseldesign.utils.set_cover [INFO] Selected 400 sets with a total of 551907 elements remaining to be covered
+2015-03-22 11:47:50,227 - hybseldesign.utils.set_cover [INFO] Selected 410 sets with a total of 540907 elements remaining to be covered
+2015-03-22 11:48:15,753 - hybseldesign.utils.set_cover [INFO] Selected 420 sets with a total of 530041 elements remaining to be covered
+2015-03-22 11:48:57,549 - hybseldesign.utils.set_cover [INFO] Selected 430 sets with a total of 519824 elements remaining to be covered
+2015-03-22 11:49:07,644 - hybseldesign.utils.set_cover [INFO] Selected 440 sets with a total of 509824 elements remaining to be covered
+2015-03-22 11:49:41,594 - hybseldesign.utils.set_cover [INFO] Selected 450 sets with a total of 500112 elements remaining to be covered
+2015-03-22 11:50:15,919 - hybseldesign.utils.set_cover [INFO] Selected 460 sets with a total of 490972 elements remaining to be covered
+2015-03-22 11:50:25,756 - hybseldesign.utils.set_cover [INFO] Selected 470 sets with a total of 481972 elements remaining to be covered
+2015-03-22 11:50:41,232 - hybseldesign.utils.set_cover [INFO] Selected 480 sets with a total of 473046 elements remaining to be covered
+2015-03-22 11:51:19,017 - hybseldesign.utils.set_cover [INFO] Selected 490 sets with a total of 464447 elements remaining to be covered
+2015-03-22 11:51:45,554 - hybseldesign.utils.set_cover [INFO] Selected 500 sets with a total of 456078 elements remaining to be covered
+2015-03-22 11:52:06,821 - hybseldesign.utils.set_cover [INFO] Selected 510 sets with a total of 447953 elements remaining to be covered
+2015-03-22 11:52:17,004 - hybseldesign.utils.set_cover [INFO] Selected 520 sets with a total of 439953 elements remaining to be covered
+2015-03-22 11:52:25,956 - hybseldesign.utils.set_cover [INFO] Selected 530 sets with a total of 431953 elements remaining to be covered
+2015-03-22 11:52:35,326 - hybseldesign.utils.set_cover [INFO] Selected 540 sets with a total of 423953 elements remaining to be covered
+2015-03-22 11:52:44,894 - hybseldesign.utils.set_cover [INFO] Selected 550 sets with a total of 416012 elements remaining to be covered
+2015-03-22 11:53:12,260 - hybseldesign.utils.set_cover [INFO] Selected 560 sets with a total of 408392 elements remaining to be covered
+2015-03-22 11:53:37,529 - hybseldesign.utils.set_cover [INFO] Selected 570 sets with a total of 401061 elements remaining to be covered
+2015-03-22 11:54:03,936 - hybseldesign.utils.set_cover [INFO] Selected 580 sets with a total of 393993 elements remaining to be covered
+2015-03-22 11:54:13,292 - hybseldesign.utils.set_cover [INFO] Selected 590 sets with a total of 386993 elements remaining to be covered
+2015-03-22 11:54:22,562 - hybseldesign.utils.set_cover [INFO] Selected 600 sets with a total of 379993 elements remaining to be covered
+2015-03-22 11:54:31,800 - hybseldesign.utils.set_cover [INFO] Selected 610 sets with a total of 372993 elements remaining to be covered
+2015-03-22 11:55:00,867 - hybseldesign.utils.set_cover [INFO] Selected 620 sets with a total of 366071 elements remaining to be covered
+2015-03-22 11:55:32,488 - hybseldesign.utils.set_cover [INFO] Selected 630 sets with a total of 359366 elements remaining to be covered
+2015-03-22 11:55:53,327 - hybseldesign.utils.set_cover [INFO] Selected 640 sets with a total of 352922 elements remaining to be covered
+2015-03-22 11:56:20,522 - hybseldesign.utils.set_cover [INFO] Selected 650 sets with a total of 346767 elements remaining to be covered
+2015-03-22 11:56:30,251 - hybseldesign.utils.set_cover [INFO] Selected 660 sets with a total of 340767 elements remaining to be covered
+2015-03-22 11:56:46,147 - hybseldesign.utils.set_cover [INFO] Selected 670 sets with a total of 334865 elements remaining to be covered
+2015-03-22 11:57:07,683 - hybseldesign.utils.set_cover [INFO] Selected 680 sets with a total of 329106 elements remaining to be covered
+2015-03-22 11:57:23,528 - hybseldesign.utils.set_cover [INFO] Selected 690 sets with a total of 323547 elements remaining to be covered
+2015-03-22 11:57:35,564 - hybseldesign.utils.set_cover [INFO] Selected 700 sets with a total of 318236 elements remaining to be covered
+2015-03-22 11:57:46,672 - hybseldesign.utils.set_cover [INFO] Selected 710 sets with a total of 313182 elements remaining to be covered
+2015-03-22 11:57:55,388 - hybseldesign.utils.set_cover [INFO] Selected 720 sets with a total of 308184 elements remaining to be covered
+2015-03-22 11:58:26,243 - hybseldesign.utils.set_cover [INFO] Selected 730 sets with a total of 303383 elements remaining to be covered
+2015-03-22 11:58:51,294 - hybseldesign.utils.set_cover [INFO] Selected 740 sets with a total of 298786 elements remaining to be covered
+2015-03-22 11:59:01,169 - hybseldesign.utils.set_cover [INFO] Selected 750 sets with a total of 294272 elements remaining to be covered
+2015-03-22 11:59:11,533 - hybseldesign.utils.set_cover [INFO] Selected 760 sets with a total of 289852 elements remaining to be covered
+2015-03-22 11:59:47,201 - hybseldesign.utils.set_cover [INFO] Selected 770 sets with a total of 285567 elements remaining to be covered
+2015-03-22 11:59:57,952 - hybseldesign.utils.set_cover [INFO] Selected 780 sets with a total of 281394 elements remaining to be covered
+2015-03-22 12:00:08,004 - hybseldesign.utils.set_cover [INFO] Selected 790 sets with a total of 277349 elements remaining to be covered
+2015-03-22 12:00:16,431 - hybseldesign.utils.set_cover [INFO] Selected 800 sets with a total of 273349 elements remaining to be covered
+2015-03-22 12:00:25,638 - hybseldesign.utils.set_cover [INFO] Selected 810 sets with a total of 269349 elements remaining to be covered
+2015-03-22 12:00:36,636 - hybseldesign.utils.set_cover [INFO] Selected 820 sets with a total of 265396 elements remaining to be covered
+2015-03-22 12:00:48,333 - hybseldesign.utils.set_cover [INFO] Selected 830 sets with a total of 261510 elements remaining to be covered
+2015-03-22 12:00:59,675 - hybseldesign.utils.set_cover [INFO] Selected 840 sets with a total of 257737 elements remaining to be covered
+2015-03-22 12:01:09,357 - hybseldesign.utils.set_cover [INFO] Selected 850 sets with a total of 254078 elements remaining to be covered
+2015-03-22 12:01:27,697 - hybseldesign.utils.set_cover [INFO] Selected 860 sets with a total of 250527 elements remaining to be covered
+2015-03-22 12:01:36,795 - hybseldesign.utils.set_cover [INFO] Selected 870 sets with a total of 247027 elements remaining to be covered
+2015-03-22 12:01:46,507 - hybseldesign.utils.set_cover [INFO] Selected 880 sets with a total of 243585 elements remaining to be covered
+2015-03-22 12:01:56,272 - hybseldesign.utils.set_cover [INFO] Selected 890 sets with a total of 240211 elements remaining to be covered
+2015-03-22 12:02:08,535 - hybseldesign.utils.set_cover [INFO] Selected 900 sets with a total of 236915 elements remaining to be covered
+2015-03-22 12:02:18,685 - hybseldesign.utils.set_cover [INFO] Selected 910 sets with a total of 233728 elements remaining to be covered
+2015-03-22 12:02:34,359 - hybseldesign.utils.set_cover [INFO] Selected 920 sets with a total of 230652 elements remaining to be covered
+2015-03-22 12:02:50,338 - hybseldesign.utils.set_cover [INFO] Selected 930 sets with a total of 227650 elements remaining to be covered
+2015-03-22 12:02:58,365 - hybseldesign.utils.set_cover [INFO] Selected 940 sets with a total of 224650 elements remaining to be covered
+2015-03-22 12:03:06,713 - hybseldesign.utils.set_cover [INFO] Selected 950 sets with a total of 221650 elements remaining to be covered
+2015-03-22 12:03:14,793 - hybseldesign.utils.set_cover [INFO] Selected 960 sets with a total of 218650 elements remaining to be covered
+2015-03-22 12:03:23,003 - hybseldesign.utils.set_cover [INFO] Selected 970 sets with a total of 215650 elements remaining to be covered
+2015-03-22 12:03:32,228 - hybseldesign.utils.set_cover [INFO] Selected 980 sets with a total of 212650 elements remaining to be covered
+2015-03-22 12:03:50,568 - hybseldesign.utils.set_cover [INFO] Selected 990 sets with a total of 209674 elements remaining to be covered
+2015-03-22 12:04:01,398 - hybseldesign.utils.set_cover [INFO] Selected 1000 sets with a total of 206776 elements remaining to be covered
+2015-03-22 12:04:11,446 - hybseldesign.utils.set_cover [INFO] Selected 1010 sets with a total of 203955 elements remaining to be covered
+2015-03-22 12:04:31,307 - hybseldesign.utils.set_cover [INFO] Selected 1020 sets with a total of 201223 elements remaining to be covered
+2015-03-22 12:04:42,830 - hybseldesign.utils.set_cover [INFO] Selected 1030 sets with a total of 198550 elements remaining to be covered
+2015-03-22 12:04:56,042 - hybseldesign.utils.set_cover [INFO] Selected 1040 sets with a total of 195901 elements remaining to be covered
+2015-03-22 12:05:10,468 - hybseldesign.utils.set_cover [INFO] Selected 1050 sets with a total of 193321 elements remaining to be covered
+2015-03-22 12:05:21,772 - hybseldesign.utils.set_cover [INFO] Selected 1060 sets with a total of 190823 elements remaining to be covered
+2015-03-22 12:05:37,634 - hybseldesign.utils.set_cover [INFO] Selected 1070 sets with a total of 188396 elements remaining to be covered
+2015-03-22 12:05:47,826 - hybseldesign.utils.set_cover [INFO] Selected 1080 sets with a total of 186049 elements remaining to be covered
+2015-03-22 12:06:00,524 - hybseldesign.utils.set_cover [INFO] Selected 1090 sets with a total of 183767 elements remaining to be covered
+2015-03-22 12:06:15,351 - hybseldesign.utils.set_cover [INFO] Selected 1100 sets with a total of 181558 elements remaining to be covered
+2015-03-22 12:06:25,392 - hybseldesign.utils.set_cover [INFO] Selected 1110 sets with a total of 179399 elements remaining to be covered
+2015-03-22 12:06:35,324 - hybseldesign.utils.set_cover [INFO] Selected 1120 sets with a total of 177296 elements remaining to be covered
+2015-03-22 12:06:46,384 - hybseldesign.utils.set_cover [INFO] Selected 1130 sets with a total of 175240 elements remaining to be covered
+2015-03-22 12:07:03,004 - hybseldesign.utils.set_cover [INFO] Selected 1140 sets with a total of 173206 elements remaining to be covered
+2015-03-22 12:07:11,703 - hybseldesign.utils.set_cover [INFO] Selected 1150 sets with a total of 171201 elements remaining to be covered
+2015-03-22 12:07:19,956 - hybseldesign.utils.set_cover [INFO] Selected 1160 sets with a total of 169201 elements remaining to be covered
+2015-03-22 12:07:27,972 - hybseldesign.utils.set_cover [INFO] Selected 1170 sets with a total of 167201 elements remaining to be covered
+2015-03-22 12:07:36,015 - hybseldesign.utils.set_cover [INFO] Selected 1180 sets with a total of 165201 elements remaining to be covered
+2015-03-22 12:07:44,188 - hybseldesign.utils.set_cover [INFO] Selected 1190 sets with a total of 163201 elements remaining to be covered
+2015-03-22 12:07:52,298 - hybseldesign.utils.set_cover [INFO] Selected 1200 sets with a total of 161201 elements remaining to be covered
+2015-03-22 12:08:00,361 - hybseldesign.utils.set_cover [INFO] Selected 1210 sets with a total of 159201 elements remaining to be covered
+2015-03-22 12:08:08,358 - hybseldesign.utils.set_cover [INFO] Selected 1220 sets with a total of 157201 elements remaining to be covered
+2015-03-22 12:08:16,453 - hybseldesign.utils.set_cover [INFO] Selected 1230 sets with a total of 155201 elements remaining to be covered
+2015-03-22 12:08:24,337 - hybseldesign.utils.set_cover [INFO] Selected 1240 sets with a total of 153201 elements remaining to be covered
+2015-03-22 12:08:33,692 - hybseldesign.utils.set_cover [INFO] Selected 1250 sets with a total of 151210 elements remaining to be covered
+2015-03-22 12:08:44,142 - hybseldesign.utils.set_cover [INFO] Selected 1260 sets with a total of 149237 elements remaining to be covered
+2015-03-22 12:08:53,234 - hybseldesign.utils.set_cover [INFO] Selected 1270 sets with a total of 147300 elements remaining to be covered
+2015-03-22 12:09:02,635 - hybseldesign.utils.set_cover [INFO] Selected 1280 sets with a total of 145412 elements remaining to be covered
+2015-03-22 12:09:11,600 - hybseldesign.utils.set_cover [INFO] Selected 1290 sets with a total of 143561 elements remaining to be covered
+2015-03-22 12:09:20,372 - hybseldesign.utils.set_cover [INFO] Selected 1300 sets with a total of 141757 elements remaining to be covered
+2015-03-22 12:09:35,436 - hybseldesign.utils.set_cover [INFO] Selected 1310 sets with a total of 140021 elements remaining to be covered
+2015-03-22 12:09:52,172 - hybseldesign.utils.set_cover [INFO] Selected 1320 sets with a total of 138323 elements remaining to be covered
+2015-03-22 12:10:00,058 - hybseldesign.utils.set_cover [INFO] Selected 1330 sets with a total of 136662 elements remaining to be covered
+2015-03-22 12:10:09,076 - hybseldesign.utils.set_cover [INFO] Selected 1340 sets with a total of 135015 elements remaining to be covered
+2015-03-22 12:10:18,532 - hybseldesign.utils.set_cover [INFO] Selected 1350 sets with a total of 133391 elements remaining to be covered
+2015-03-22 12:10:29,909 - hybseldesign.utils.set_cover [INFO] Selected 1360 sets with a total of 131796 elements remaining to be covered
+2015-03-22 12:10:39,724 - hybseldesign.utils.set_cover [INFO] Selected 1370 sets with a total of 130246 elements remaining to be covered
+2015-03-22 12:10:48,499 - hybseldesign.utils.set_cover [INFO] Selected 1380 sets with a total of 128737 elements remaining to be covered
+2015-03-22 12:10:56,439 - hybseldesign.utils.set_cover [INFO] Selected 1390 sets with a total of 127237 elements remaining to be covered
+2015-03-22 12:11:12,079 - hybseldesign.utils.set_cover [INFO] Selected 1400 sets with a total of 125751 elements remaining to be covered
+2015-03-22 12:11:22,477 - hybseldesign.utils.set_cover [INFO] Selected 1410 sets with a total of 124312 elements remaining to be covered
+2015-03-22 12:11:32,697 - hybseldesign.utils.set_cover [INFO] Selected 1420 sets with a total of 122912 elements remaining to be covered
+2015-03-22 12:11:42,280 - hybseldesign.utils.set_cover [INFO] Selected 1430 sets with a total of 121535 elements remaining to be covered
+2015-03-22 12:11:52,238 - hybseldesign.utils.set_cover [INFO] Selected 1440 sets with a total of 120186 elements remaining to be covered
+2015-03-22 12:12:00,167 - hybseldesign.utils.set_cover [INFO] Selected 1450 sets with a total of 118849 elements remaining to be covered
+2015-03-22 12:12:08,732 - hybseldesign.utils.set_cover [INFO] Selected 1460 sets with a total of 117528 elements remaining to be covered
+2015-03-22 12:12:19,558 - hybseldesign.utils.set_cover [INFO] Selected 1470 sets with a total of 116218 elements remaining to be covered
+2015-03-22 12:12:29,506 - hybseldesign.utils.set_cover [INFO] Selected 1480 sets with a total of 114940 elements remaining to be covered
+2015-03-22 12:12:43,764 - hybseldesign.utils.set_cover [INFO] Selected 1490 sets with a total of 113688 elements remaining to be covered
+2015-03-22 12:12:56,347 - hybseldesign.utils.set_cover [INFO] Selected 1500 sets with a total of 112467 elements remaining to be covered
+2015-03-22 12:13:05,453 - hybseldesign.utils.set_cover [INFO] Selected 1510 sets with a total of 111268 elements remaining to be covered
+2015-03-22 12:13:15,342 - hybseldesign.utils.set_cover [INFO] Selected 1520 sets with a total of 110100 elements remaining to be covered
+2015-03-22 12:13:38,146 - hybseldesign.utils.set_cover [INFO] Selected 1530 sets with a total of 108961 elements remaining to be covered
+2015-03-22 12:13:56,209 - hybseldesign.utils.set_cover [INFO] Selected 1540 sets with a total of 107858 elements remaining to be covered
+2015-03-22 12:14:06,161 - hybseldesign.utils.set_cover [INFO] Selected 1550 sets with a total of 106786 elements remaining to be covered
+2015-03-22 12:14:18,041 - hybseldesign.utils.set_cover [INFO] Selected 1560 sets with a total of 105732 elements remaining to be covered
+2015-03-22 12:14:39,034 - hybseldesign.utils.set_cover [INFO] Selected 1570 sets with a total of 104697 elements remaining to be covered
+2015-03-22 12:14:48,531 - hybseldesign.utils.set_cover [INFO] Selected 1580 sets with a total of 103678 elements remaining to be covered
+2015-03-22 12:15:00,701 - hybseldesign.utils.set_cover [INFO] Selected 1590 sets with a total of 102675 elements remaining to be covered
+2015-03-22 12:15:08,887 - hybseldesign.utils.set_cover [INFO] Selected 1600 sets with a total of 101675 elements remaining to be covered
+2015-03-22 12:15:16,771 - hybseldesign.utils.set_cover [INFO] Selected 1610 sets with a total of 100675 elements remaining to be covered
+2015-03-22 12:15:24,614 - hybseldesign.utils.set_cover [INFO] Selected 1620 sets with a total of 99675 elements remaining to be covered
+2015-03-22 12:15:32,350 - hybseldesign.utils.set_cover [INFO] Selected 1630 sets with a total of 98675 elements remaining to be covered
+2015-03-22 12:15:39,933 - hybseldesign.utils.set_cover [INFO] Selected 1640 sets with a total of 97675 elements remaining to be covered
+2015-03-22 12:15:47,520 - hybseldesign.utils.set_cover [INFO] Selected 1650 sets with a total of 96675 elements remaining to be covered
+2015-03-22 12:15:55,124 - hybseldesign.utils.set_cover [INFO] Selected 1660 sets with a total of 95675 elements remaining to be covered
+2015-03-22 12:16:02,688 - hybseldesign.utils.set_cover [INFO] Selected 1670 sets with a total of 94675 elements remaining to be covered
+2015-03-22 12:16:10,245 - hybseldesign.utils.set_cover [INFO] Selected 1680 sets with a total of 93675 elements remaining to be covered
+2015-03-22 12:16:17,799 - hybseldesign.utils.set_cover [INFO] Selected 1690 sets with a total of 92675 elements remaining to be covered
+2015-03-22 12:16:25,381 - hybseldesign.utils.set_cover [INFO] Selected 1700 sets with a total of 91675 elements remaining to be covered
+2015-03-22 12:16:32,985 - hybseldesign.utils.set_cover [INFO] Selected 1710 sets with a total of 90675 elements remaining to be covered
+2015-03-22 12:16:40,639 - hybseldesign.utils.set_cover [INFO] Selected 1720 sets with a total of 89675 elements remaining to be covered
+2015-03-22 12:16:48,315 - hybseldesign.utils.set_cover [INFO] Selected 1730 sets with a total of 88675 elements remaining to be covered
+2015-03-22 12:16:55,983 - hybseldesign.utils.set_cover [INFO] Selected 1740 sets with a total of 87675 elements remaining to be covered
+2015-03-22 12:17:03,657 - hybseldesign.utils.set_cover [INFO] Selected 1750 sets with a total of 86675 elements remaining to be covered
+2015-03-22 12:17:11,311 - hybseldesign.utils.set_cover [INFO] Selected 1760 sets with a total of 85675 elements remaining to be covered
+2015-03-22 12:17:19,063 - hybseldesign.utils.set_cover [INFO] Selected 1770 sets with a total of 84675 elements remaining to be covered
+2015-03-22 12:17:26,753 - hybseldesign.utils.set_cover [INFO] Selected 1780 sets with a total of 83675 elements remaining to be covered
+2015-03-22 12:17:34,533 - hybseldesign.utils.set_cover [INFO] Selected 1790 sets with a total of 82675 elements remaining to be covered
+2015-03-22 12:17:42,296 - hybseldesign.utils.set_cover [INFO] Selected 1800 sets with a total of 81675 elements remaining to be covered
+2015-03-22 12:17:49,935 - hybseldesign.utils.set_cover [INFO] Selected 1810 sets with a total of 80675 elements remaining to be covered
+2015-03-22 12:17:57,969 - hybseldesign.utils.set_cover [INFO] Selected 1820 sets with a total of 79675 elements remaining to be covered
+2015-03-22 12:18:05,701 - hybseldesign.utils.set_cover [INFO] Selected 1830 sets with a total of 78675 elements remaining to be covered
+2015-03-22 12:18:14,364 - hybseldesign.utils.set_cover [INFO] Selected 1840 sets with a total of 77675 elements remaining to be covered
+2015-03-22 12:18:23,509 - hybseldesign.utils.set_cover [INFO] Selected 1850 sets with a total of 76675 elements remaining to be covered
+2015-03-22 12:18:31,281 - hybseldesign.utils.set_cover [INFO] Selected 1860 sets with a total of 75675 elements remaining to be covered
+2015-03-22 12:18:39,017 - hybseldesign.utils.set_cover [INFO] Selected 1870 sets with a total of 74675 elements remaining to be covered
+2015-03-22 12:18:46,963 - hybseldesign.utils.set_cover [INFO] Selected 1880 sets with a total of 73675 elements remaining to be covered
+2015-03-22 12:18:55,284 - hybseldesign.utils.set_cover [INFO] Selected 1890 sets with a total of 72675 elements remaining to be covered
+2015-03-22 12:19:04,723 - hybseldesign.utils.set_cover [INFO] Selected 1900 sets with a total of 71684 elements remaining to be covered
+2015-03-22 12:19:12,610 - hybseldesign.utils.set_cover [INFO] Selected 1910 sets with a total of 70694 elements remaining to be covered
+2015-03-22 12:19:21,953 - hybseldesign.utils.set_cover [INFO] Selected 1920 sets with a total of 69710 elements remaining to be covered
+2015-03-22 12:19:29,568 - hybseldesign.utils.set_cover [INFO] Selected 1930 sets with a total of 68730 elements remaining to be covered
+2015-03-22 12:19:38,969 - hybseldesign.utils.set_cover [INFO] Selected 1940 sets with a total of 67752 elements remaining to be covered
+2015-03-22 12:19:46,678 - hybseldesign.utils.set_cover [INFO] Selected 1950 sets with a total of 66782 elements remaining to be covered
+2015-03-22 12:19:55,508 - hybseldesign.utils.set_cover [INFO] Selected 1960 sets with a total of 65820 elements remaining to be covered
+2015-03-22 12:20:05,019 - hybseldesign.utils.set_cover [INFO] Selected 1970 sets with a total of 64865 elements remaining to be covered
+2015-03-22 12:20:13,174 - hybseldesign.utils.set_cover [INFO] Selected 1980 sets with a total of 63926 elements remaining to be covered
+2015-03-22 12:20:21,497 - hybseldesign.utils.set_cover [INFO] Selected 1990 sets with a total of 63003 elements remaining to be covered
+2015-03-22 12:20:32,062 - hybseldesign.utils.set_cover [INFO] Selected 2000 sets with a total of 62092 elements remaining to be covered
+2015-03-22 12:20:49,257 - hybseldesign.utils.set_cover [INFO] Selected 2010 sets with a total of 61194 elements remaining to be covered
+2015-03-22 12:21:00,132 - hybseldesign.utils.set_cover [INFO] Selected 2020 sets with a total of 60311 elements remaining to be covered
+2015-03-22 12:21:11,291 - hybseldesign.utils.set_cover [INFO] Selected 2030 sets with a total of 59439 elements remaining to be covered
+2015-03-22 12:21:23,317 - hybseldesign.utils.set_cover [INFO] Selected 2040 sets with a total of 58579 elements remaining to be covered
+2015-03-22 12:21:33,564 - hybseldesign.utils.set_cover [INFO] Selected 2050 sets with a total of 57731 elements remaining to be covered
+2015-03-22 12:21:48,155 - hybseldesign.utils.set_cover [INFO] Selected 2060 sets with a total of 56895 elements remaining to be covered
+2015-03-22 12:21:55,727 - hybseldesign.utils.set_cover [INFO] Selected 2070 sets with a total of 56065 elements remaining to be covered
+2015-03-22 12:22:05,907 - hybseldesign.utils.set_cover [INFO] Selected 2080 sets with a total of 55240 elements remaining to be covered
+2015-03-22 12:22:14,614 - hybseldesign.utils.set_cover [INFO] Selected 2090 sets with a total of 54423 elements remaining to be covered
+2015-03-22 12:22:22,512 - hybseldesign.utils.set_cover [INFO] Selected 2100 sets with a total of 53613 elements remaining to be covered
+2015-03-22 12:22:31,298 - hybseldesign.utils.set_cover [INFO] Selected 2110 sets with a total of 52813 elements remaining to be covered
+2015-03-22 12:22:39,009 - hybseldesign.utils.set_cover [INFO] Selected 2120 sets with a total of 52024 elements remaining to be covered
+2015-03-22 12:22:52,884 - hybseldesign.utils.set_cover [INFO] Selected 2130 sets with a total of 51251 elements remaining to be covered
+2015-03-22 12:23:02,758 - hybseldesign.utils.set_cover [INFO] Selected 2140 sets with a total of 50487 elements remaining to be covered
+2015-03-22 12:23:15,495 - hybseldesign.utils.set_cover [INFO] Selected 2150 sets with a total of 49735 elements remaining to be covered
+2015-03-22 12:23:25,373 - hybseldesign.utils.set_cover [INFO] Selected 2160 sets with a total of 48997 elements remaining to be covered
+2015-03-22 12:23:37,381 - hybseldesign.utils.set_cover [INFO] Selected 2170 sets with a total of 48274 elements remaining to be covered
+2015-03-22 12:23:49,665 - hybseldesign.utils.set_cover [INFO] Selected 2180 sets with a total of 47561 elements remaining to be covered
+2015-03-22 12:23:59,617 - hybseldesign.utils.set_cover [INFO] Selected 2190 sets with a total of 46857 elements remaining to be covered
+2015-03-22 12:24:10,858 - hybseldesign.utils.set_cover [INFO] Selected 2200 sets with a total of 46159 elements remaining to be covered
+2015-03-22 12:24:20,831 - hybseldesign.utils.set_cover [INFO] Selected 2210 sets with a total of 45473 elements remaining to be covered
+2015-03-22 12:24:29,674 - hybseldesign.utils.set_cover [INFO] Selected 2220 sets with a total of 44793 elements remaining to be covered
+2015-03-22 12:24:37,213 - hybseldesign.utils.set_cover [INFO] Selected 2230 sets with a total of 44123 elements remaining to be covered
+2015-03-22 12:24:44,939 - hybseldesign.utils.set_cover [INFO] Selected 2240 sets with a total of 43453 elements remaining to be covered
+2015-03-22 12:24:53,643 - hybseldesign.utils.set_cover [INFO] Selected 2250 sets with a total of 42787 elements remaining to be covered
+2015-03-22 12:25:06,419 - hybseldesign.utils.set_cover [INFO] Selected 2260 sets with a total of 42127 elements remaining to be covered
+2015-03-22 12:25:14,090 - hybseldesign.utils.set_cover [INFO] Selected 2270 sets with a total of 41467 elements remaining to be covered
+2015-03-22 12:25:24,347 - hybseldesign.utils.set_cover [INFO] Selected 2280 sets with a total of 40819 elements remaining to be covered
+2015-03-22 12:25:32,888 - hybseldesign.utils.set_cover [INFO] Selected 2290 sets with a total of 40186 elements remaining to be covered
+2015-03-22 12:25:42,234 - hybseldesign.utils.set_cover [INFO] Selected 2300 sets with a total of 39563 elements remaining to be covered
+2015-03-22 12:25:54,084 - hybseldesign.utils.set_cover [INFO] Selected 2310 sets with a total of 38953 elements remaining to be covered
+2015-03-22 12:26:04,282 - hybseldesign.utils.set_cover [INFO] Selected 2320 sets with a total of 38353 elements remaining to be covered
+2015-03-22 12:26:14,006 - hybseldesign.utils.set_cover [INFO] Selected 2330 sets with a total of 37762 elements remaining to be covered
+2015-03-22 12:26:23,718 - hybseldesign.utils.set_cover [INFO] Selected 2340 sets with a total of 37182 elements remaining to be covered
+2015-03-22 12:26:35,478 - hybseldesign.utils.set_cover [INFO] Selected 2350 sets with a total of 36609 elements remaining to be covered
+2015-03-22 12:26:45,835 - hybseldesign.utils.set_cover [INFO] Selected 2360 sets with a total of 36045 elements remaining to be covered
+2015-03-22 12:26:58,936 - hybseldesign.utils.set_cover [INFO] Selected 2370 sets with a total of 35488 elements remaining to be covered
+2015-03-22 12:27:07,524 - hybseldesign.utils.set_cover [INFO] Selected 2380 sets with a total of 34948 elements remaining to be covered
+2015-03-22 12:27:20,882 - hybseldesign.utils.set_cover [INFO] Selected 2390 sets with a total of 34408 elements remaining to be covered
+2015-03-22 12:27:33,555 - hybseldesign.utils.set_cover [INFO] Selected 2400 sets with a total of 33876 elements remaining to be covered
+2015-03-22 12:27:41,790 - hybseldesign.utils.set_cover [INFO] Selected 2410 sets with a total of 33351 elements remaining to be covered
+2015-03-22 12:27:51,258 - hybseldesign.utils.set_cover [INFO] Selected 2420 sets with a total of 32831 elements remaining to be covered
+2015-03-22 12:27:59,664 - hybseldesign.utils.set_cover [INFO] Selected 2430 sets with a total of 32321 elements remaining to be covered
+2015-03-22 12:28:08,990 - hybseldesign.utils.set_cover [INFO] Selected 2440 sets with a total of 31813 elements remaining to be covered
+2015-03-22 12:28:17,529 - hybseldesign.utils.set_cover [INFO] Selected 2450 sets with a total of 31313 elements remaining to be covered
+2015-03-22 12:28:25,470 - hybseldesign.utils.set_cover [INFO] Selected 2460 sets with a total of 30813 elements remaining to be covered
+2015-03-22 12:28:33,417 - hybseldesign.utils.set_cover [INFO] Selected 2470 sets with a total of 30313 elements remaining to be covered
+2015-03-22 12:28:41,356 - hybseldesign.utils.set_cover [INFO] Selected 2480 sets with a total of 29813 elements remaining to be covered
+2015-03-22 12:28:49,310 - hybseldesign.utils.set_cover [INFO] Selected 2490 sets with a total of 29313 elements remaining to be covered
+2015-03-22 12:28:57,319 - hybseldesign.utils.set_cover [INFO] Selected 2500 sets with a total of 28813 elements remaining to be covered
+2015-03-22 12:29:05,417 - hybseldesign.utils.set_cover [INFO] Selected 2510 sets with a total of 28313 elements remaining to be covered
+2015-03-22 12:29:13,506 - hybseldesign.utils.set_cover [INFO] Selected 2520 sets with a total of 27813 elements remaining to be covered
+2015-03-22 12:29:21,570 - hybseldesign.utils.set_cover [INFO] Selected 2530 sets with a total of 27313 elements remaining to be covered
+2015-03-22 12:29:29,685 - hybseldesign.utils.set_cover [INFO] Selected 2540 sets with a total of 26813 elements remaining to be covered
+2015-03-22 12:29:39,412 - hybseldesign.utils.set_cover [INFO] Selected 2550 sets with a total of 26313 elements remaining to be covered
+2015-03-22 12:29:50,483 - hybseldesign.utils.set_cover [INFO] Selected 2560 sets with a total of 25813 elements remaining to be covered
+2015-03-22 12:30:01,424 - hybseldesign.utils.set_cover [INFO] Selected 2570 sets with a total of 25313 elements remaining to be covered
+2015-03-22 12:30:10,787 - hybseldesign.utils.set_cover [INFO] Selected 2580 sets with a total of 24821 elements remaining to be covered
+2015-03-22 12:30:18,882 - hybseldesign.utils.set_cover [INFO] Selected 2590 sets with a total of 24331 elements remaining to be covered
+2015-03-22 12:30:28,343 - hybseldesign.utils.set_cover [INFO] Selected 2600 sets with a total of 23848 elements remaining to be covered
+2015-03-22 12:30:36,755 - hybseldesign.utils.set_cover [INFO] Selected 2610 sets with a total of 23368 elements remaining to be covered
+2015-03-22 12:30:49,786 - hybseldesign.utils.set_cover [INFO] Selected 2620 sets with a total of 22889 elements remaining to be covered
+2015-03-22 12:30:57,810 - hybseldesign.utils.set_cover [INFO] Selected 2630 sets with a total of 22419 elements remaining to be covered
+2015-03-22 12:31:06,566 - hybseldesign.utils.set_cover [INFO] Selected 2640 sets with a total of 21954 elements remaining to be covered
+2015-03-22 12:31:17,292 - hybseldesign.utils.set_cover [INFO] Selected 2650 sets with a total of 21496 elements remaining to be covered
+2015-03-22 12:31:32,345 - hybseldesign.utils.set_cover [INFO] Selected 2660 sets with a total of 21050 elements remaining to be covered
+2015-03-22 12:31:45,063 - hybseldesign.utils.set_cover [INFO] Selected 2670 sets with a total of 20611 elements remaining to be covered
+2015-03-22 12:32:16,374 - hybseldesign.utils.set_cover [INFO] Selected 2680 sets with a total of 20184 elements remaining to be covered
+2015-03-22 12:32:28,680 - hybseldesign.utils.set_cover [INFO] Selected 2690 sets with a total of 19770 elements remaining to be covered
+2015-03-22 12:32:38,261 - hybseldesign.utils.set_cover [INFO] Selected 2700 sets with a total of 19360 elements remaining to be covered
+2015-03-22 12:32:51,890 - hybseldesign.utils.set_cover [INFO] Selected 2710 sets with a total of 18960 elements remaining to be covered
+2015-03-22 12:33:00,644 - hybseldesign.utils.set_cover [INFO] Selected 2720 sets with a total of 18563 elements remaining to be covered
+2015-03-22 12:33:12,383 - hybseldesign.utils.set_cover [INFO] Selected 2730 sets with a total of 18174 elements remaining to be covered
+2015-03-22 12:33:22,348 - hybseldesign.utils.set_cover [INFO] Selected 2740 sets with a total of 17794 elements remaining to be covered
+2015-03-22 12:33:30,949 - hybseldesign.utils.set_cover [INFO] Selected 2750 sets with a total of 17419 elements remaining to be covered
+2015-03-22 12:33:42,270 - hybseldesign.utils.set_cover [INFO] Selected 2760 sets with a total of 17051 elements remaining to be covered
+2015-03-22 12:33:53,513 - hybseldesign.utils.set_cover [INFO] Selected 2770 sets with a total of 16691 elements remaining to be covered
+2015-03-22 12:34:05,289 - hybseldesign.utils.set_cover [INFO] Selected 2780 sets with a total of 16331 elements remaining to be covered
+2015-03-22 12:34:15,593 - hybseldesign.utils.set_cover [INFO] Selected 2790 sets with a total of 15977 elements remaining to be covered
+2015-03-22 12:34:25,259 - hybseldesign.utils.set_cover [INFO] Selected 2800 sets with a total of 15632 elements remaining to be covered
+2015-03-22 12:34:33,549 - hybseldesign.utils.set_cover [INFO] Selected 2810 sets with a total of 15292 elements remaining to be covered
+2015-03-22 12:34:42,702 - hybseldesign.utils.set_cover [INFO] Selected 2820 sets with a total of 14952 elements remaining to be covered
+2015-03-22 12:34:52,905 - hybseldesign.utils.set_cover [INFO] Selected 2830 sets with a total of 14612 elements remaining to be covered
+2015-03-22 12:35:02,683 - hybseldesign.utils.set_cover [INFO] Selected 2840 sets with a total of 14278 elements remaining to be covered
+2015-03-22 12:35:12,568 - hybseldesign.utils.set_cover [INFO] Selected 2850 sets with a total of 13948 elements remaining to be covered
+2015-03-22 12:35:20,485 - hybseldesign.utils.set_cover [INFO] Selected 2860 sets with a total of 13618 elements remaining to be covered
+2015-03-22 12:35:28,662 - hybseldesign.utils.set_cover [INFO] Selected 2870 sets with a total of 13288 elements remaining to be covered
+2015-03-22 12:35:37,347 - hybseldesign.utils.set_cover [INFO] Selected 2880 sets with a total of 12958 elements remaining to be covered
+2015-03-22 12:35:49,009 - hybseldesign.utils.set_cover [INFO] Selected 2890 sets with a total of 12628 elements remaining to be covered
+2015-03-22 12:35:59,299 - hybseldesign.utils.set_cover [INFO] Selected 2900 sets with a total of 12306 elements remaining to be covered
+2015-03-22 12:36:12,664 - hybseldesign.utils.set_cover [INFO] Selected 2910 sets with a total of 11986 elements remaining to be covered
+2015-03-22 12:36:24,336 - hybseldesign.utils.set_cover [INFO] Selected 2920 sets with a total of 11675 elements remaining to be covered
+2015-03-22 12:36:35,359 - hybseldesign.utils.set_cover [INFO] Selected 2930 sets with a total of 11375 elements remaining to be covered
+2015-03-22 12:36:45,338 - hybseldesign.utils.set_cover [INFO] Selected 2940 sets with a total of 11075 elements remaining to be covered
+2015-03-22 12:37:05,092 - hybseldesign.utils.set_cover [INFO] Selected 2950 sets with a total of 10775 elements remaining to be covered
+2015-03-22 12:37:17,176 - hybseldesign.utils.set_cover [INFO] Selected 2960 sets with a total of 10475 elements remaining to be covered
+2015-03-22 12:37:26,577 - hybseldesign.utils.set_cover [INFO] Selected 2970 sets with a total of 10183 elements remaining to be covered
+2015-03-22 12:37:36,772 - hybseldesign.utils.set_cover [INFO] Selected 2980 sets with a total of 9895 elements remaining to be covered
+2015-03-22 12:37:52,724 - hybseldesign.utils.set_cover [INFO] Selected 2990 sets with a total of 9615 elements remaining to be covered
+2015-03-22 12:38:02,620 - hybseldesign.utils.set_cover [INFO] Selected 3000 sets with a total of 9344 elements remaining to be covered
+2015-03-22 12:38:17,163 - hybseldesign.utils.set_cover [INFO] Selected 3010 sets with a total of 9074 elements remaining to be covered
+2015-03-22 12:38:30,959 - hybseldesign.utils.set_cover [INFO] Selected 3020 sets with a total of 8815 elements remaining to be covered
+2015-03-22 12:38:41,651 - hybseldesign.utils.set_cover [INFO] Selected 3030 sets with a total of 8565 elements remaining to be covered
+2015-03-22 12:38:55,898 - hybseldesign.utils.set_cover [INFO] Selected 3040 sets with a total of 8319 elements remaining to be covered
+2015-03-22 12:39:08,366 - hybseldesign.utils.set_cover [INFO] Selected 3050 sets with a total of 8079 elements remaining to be covered
+2015-03-22 12:39:29,094 - hybseldesign.utils.set_cover [INFO] Selected 3060 sets with a total of 7839 elements remaining to be covered
+2015-03-22 12:39:44,384 - hybseldesign.utils.set_cover [INFO] Selected 3070 sets with a total of 7605 elements remaining to be covered
+2015-03-22 12:39:54,724 - hybseldesign.utils.set_cover [INFO] Selected 3080 sets with a total of 7375 elements remaining to be covered
+2015-03-22 12:40:08,658 - hybseldesign.utils.set_cover [INFO] Selected 3090 sets with a total of 7150 elements remaining to be covered
+2015-03-22 12:40:21,152 - hybseldesign.utils.set_cover [INFO] Selected 3100 sets with a total of 6930 elements remaining to be covered
+2015-03-22 12:40:34,136 - hybseldesign.utils.set_cover [INFO] Selected 3110 sets with a total of 6716 elements remaining to be covered
+2015-03-22 12:40:45,202 - hybseldesign.utils.set_cover [INFO] Selected 3120 sets with a total of 6506 elements remaining to be covered
+2015-03-22 12:40:57,925 - hybseldesign.utils.set_cover [INFO] Selected 3130 sets with a total of 6300 elements remaining to be covered
+2015-03-22 12:41:08,456 - hybseldesign.utils.set_cover [INFO] Selected 3140 sets with a total of 6100 elements remaining to be covered
+2015-03-22 12:41:22,380 - hybseldesign.utils.set_cover [INFO] Selected 3150 sets with a total of 5900 elements remaining to be covered
+2015-03-22 12:41:39,316 - hybseldesign.utils.set_cover [INFO] Selected 3160 sets with a total of 5700 elements remaining to be covered
+2015-03-22 12:41:50,442 - hybseldesign.utils.set_cover [INFO] Selected 3170 sets with a total of 5507 elements remaining to be covered
+2015-03-22 12:42:02,847 - hybseldesign.utils.set_cover [INFO] Selected 3180 sets with a total of 5317 elements remaining to be covered
+2015-03-22 12:42:13,075 - hybseldesign.utils.set_cover [INFO] Selected 3190 sets with a total of 5136 elements remaining to be covered
+2015-03-22 12:42:22,800 - hybseldesign.utils.set_cover [INFO] Selected 3200 sets with a total of 4956 elements remaining to be covered
+2015-03-22 12:42:36,526 - hybseldesign.utils.set_cover [INFO] Selected 3210 sets with a total of 4780 elements remaining to be covered
+2015-03-22 12:42:45,883 - hybseldesign.utils.set_cover [INFO] Selected 3220 sets with a total of 4610 elements remaining to be covered
+2015-03-22 12:42:53,913 - hybseldesign.utils.set_cover [INFO] Selected 3230 sets with a total of 4440 elements remaining to be covered
+2015-03-22 12:43:02,180 - hybseldesign.utils.set_cover [INFO] Selected 3240 sets with a total of 4270 elements remaining to be covered
+2015-03-22 12:43:11,840 - hybseldesign.utils.set_cover [INFO] Selected 3250 sets with a total of 4100 elements remaining to be covered
+2015-03-22 12:43:33,565 - hybseldesign.utils.set_cover [INFO] Selected 3260 sets with a total of 3930 elements remaining to be covered
+2015-03-22 12:43:55,735 - hybseldesign.utils.set_cover [INFO] Selected 3270 sets with a total of 3768 elements remaining to be covered
+2015-03-22 12:44:11,780 - hybseldesign.utils.set_cover [INFO] Selected 3280 sets with a total of 3608 elements remaining to be covered
+2015-03-22 12:44:25,583 - hybseldesign.utils.set_cover [INFO] Selected 3290 sets with a total of 3448 elements remaining to be covered
+2015-03-22 12:44:37,090 - hybseldesign.utils.set_cover [INFO] Selected 3300 sets with a total of 3297 elements remaining to be covered
+2015-03-22 12:44:53,820 - hybseldesign.utils.set_cover [INFO] Selected 3310 sets with a total of 3147 elements remaining to be covered
+2015-03-22 12:45:03,946 - hybseldesign.utils.set_cover [INFO] Selected 3320 sets with a total of 3006 elements remaining to be covered
+2015-03-22 12:45:19,465 - hybseldesign.utils.set_cover [INFO] Selected 3330 sets with a total of 2866 elements remaining to be covered
+2015-03-22 12:45:33,602 - hybseldesign.utils.set_cover [INFO] Selected 3340 sets with a total of 2726 elements remaining to be covered
+2015-03-22 12:45:45,653 - hybseldesign.utils.set_cover [INFO] Selected 3350 sets with a total of 2592 elements remaining to be covered
+2015-03-22 12:45:56,321 - hybseldesign.utils.set_cover [INFO] Selected 3360 sets with a total of 2462 elements remaining to be covered
+2015-03-22 12:46:09,243 - hybseldesign.utils.set_cover [INFO] Selected 3370 sets with a total of 2338 elements remaining to be covered
+2015-03-22 12:46:21,791 - hybseldesign.utils.set_cover [INFO] Selected 3380 sets with a total of 2218 elements remaining to be covered
+2015-03-22 12:46:37,282 - hybseldesign.utils.set_cover [INFO] Selected 3390 sets with a total of 2098 elements remaining to be covered
+2015-03-22 12:46:50,706 - hybseldesign.utils.set_cover [INFO] Selected 3400 sets with a total of 1978 elements remaining to be covered
+2015-03-22 12:47:02,556 - hybseldesign.utils.set_cover [INFO] Selected 3410 sets with a total of 1867 elements remaining to be covered
+2015-03-22 12:47:15,656 - hybseldesign.utils.set_cover [INFO] Selected 3420 sets with a total of 1763 elements remaining to be covered
+2015-03-22 12:47:26,968 - hybseldesign.utils.set_cover [INFO] Selected 3430 sets with a total of 1663 elements remaining to be covered
+2015-03-22 12:47:42,930 - hybseldesign.utils.set_cover [INFO] Selected 3440 sets with a total of 1563 elements remaining to be covered
+2015-03-22 12:47:56,123 - hybseldesign.utils.set_cover [INFO] Selected 3450 sets with a total of 1463 elements remaining to be covered
+2015-03-22 12:48:09,072 - hybseldesign.utils.set_cover [INFO] Selected 3460 sets with a total of 1363 elements remaining to be covered
+2015-03-22 12:48:24,121 - hybseldesign.utils.set_cover [INFO] Selected 3470 sets with a total of 1268 elements remaining to be covered
+2015-03-22 12:48:38,594 - hybseldesign.utils.set_cover [INFO] Selected 3480 sets with a total of 1178 elements remaining to be covered
+2015-03-22 12:48:52,702 - hybseldesign.utils.set_cover [INFO] Selected 3490 sets with a total of 1097 elements remaining to be covered
+2015-03-22 12:49:05,625 - hybseldesign.utils.set_cover [INFO] Selected 3500 sets with a total of 1017 elements remaining to be covered
+2015-03-22 12:49:19,313 - hybseldesign.utils.set_cover [INFO] Selected 3510 sets with a total of 940 elements remaining to be covered
+2015-03-22 12:49:28,288 - hybseldesign.utils.set_cover [INFO] Selected 3520 sets with a total of 870 elements remaining to be covered
+2015-03-22 12:49:49,166 - hybseldesign.utils.set_cover [INFO] Selected 3530 sets with a total of 800 elements remaining to be covered
+2015-03-22 12:50:04,490 - hybseldesign.utils.set_cover [INFO] Selected 3540 sets with a total of 730 elements remaining to be covered
+2015-03-22 12:50:16,680 - hybseldesign.utils.set_cover [INFO] Selected 3550 sets with a total of 667 elements remaining to be covered
+2015-03-22 12:50:26,115 - hybseldesign.utils.set_cover [INFO] Selected 3560 sets with a total of 607 elements remaining to be covered
+2015-03-22 12:50:39,109 - hybseldesign.utils.set_cover [INFO] Selected 3570 sets with a total of 547 elements remaining to be covered
+2015-03-22 12:50:57,483 - hybseldesign.utils.set_cover [INFO] Selected 3580 sets with a total of 487 elements remaining to be covered
+2015-03-22 12:51:09,133 - hybseldesign.utils.set_cover [INFO] Selected 3590 sets with a total of 431 elements remaining to be covered
+2015-03-22 12:51:23,880 - hybseldesign.utils.set_cover [INFO] Selected 3600 sets with a total of 381 elements remaining to be covered
+2015-03-22 12:51:39,924 - hybseldesign.utils.set_cover [INFO] Selected 3610 sets with a total of 341 elements remaining to be covered
+2015-03-22 12:51:49,936 - hybseldesign.utils.set_cover [INFO] Selected 3620 sets with a total of 301 elements remaining to be covered
+2015-03-22 12:52:05,874 - hybseldesign.utils.set_cover [INFO] Selected 3630 sets with a total of 261 elements remaining to be covered
+2015-03-22 12:52:20,110 - hybseldesign.utils.set_cover [INFO] Selected 3640 sets with a total of 221 elements remaining to be covered
+2015-03-22 12:52:30,267 - hybseldesign.utils.set_cover [INFO] Selected 3650 sets with a total of 191 elements remaining to be covered
+2015-03-22 12:52:39,861 - hybseldesign.utils.set_cover [INFO] Selected 3660 sets with a total of 161 elements remaining to be covered
+2015-03-22 12:52:55,320 - hybseldesign.utils.set_cover [INFO] Selected 3670 sets with a total of 138 elements remaining to be covered
+2015-03-22 12:53:05,307 - hybseldesign.utils.set_cover [INFO] Selected 3680 sets with a total of 118 elements remaining to be covered
+2015-03-22 12:53:13,537 - hybseldesign.utils.set_cover [INFO] Selected 3690 sets with a total of 98 elements remaining to be covered
+2015-03-22 12:53:26,217 - hybseldesign.utils.set_cover [INFO] Selected 3700 sets with a total of 78 elements remaining to be covered
+2015-03-22 12:53:41,564 - hybseldesign.utils.set_cover [INFO] Selected 3710 sets with a total of 58 elements remaining to be covered
+2015-03-22 12:53:55,857 - hybseldesign.utils.set_cover [INFO] Selected 3720 sets with a total of 38 elements remaining to be covered
+2015-03-22 12:54:07,138 - hybseldesign.utils.set_cover [INFO] Selected 3730 sets with a total of 26 elements remaining to be covered
+2015-03-22 12:54:17,140 - hybseldesign.utils.set_cover [INFO] Selected 3740 sets with a total of 16 elements remaining to be covered
+2015-03-22 12:54:29,586 - hybseldesign.utils.set_cover [INFO] Selected 3750 sets with a total of 6 elements remaining to be covered
+2015-03-22 12:54:38,307 - hybseldesign.filter.probe_designer [INFO] Starting filter AdapterFilter
+2015-03-22 12:54:38,323 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across all target genomes
+2015-03-22 12:54:38,323 - hybseldesign.filter.adapter_filter [INFO] Building map from k-mers to probes
+2015-03-22 12:54:39,088 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 0 of 213
+2015-03-22 12:55:21,453 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 1 of 213
+2015-03-22 12:56:01,156 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 2 of 213
+2015-03-22 12:56:21,744 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 3 of 213
+2015-03-22 12:56:43,027 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 4 of 213
+2015-03-22 12:57:20,384 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 5 of 213
+2015-03-22 12:57:57,095 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 6 of 213
+2015-03-22 12:58:32,271 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 7 of 213
+2015-03-22 12:59:10,216 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 8 of 213
+2015-03-22 12:59:51,930 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 9 of 213
+2015-03-22 13:00:14,301 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 10 of 213
+2015-03-22 13:00:36,663 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 11 of 213
+2015-03-22 13:00:58,974 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 12 of 213
+2015-03-22 13:01:21,376 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 13 of 213
+2015-03-22 13:01:45,104 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 14 of 213
+2015-03-22 13:02:10,337 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 15 of 213
+2015-03-22 13:02:36,137 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 16 of 213
+2015-03-22 13:02:59,876 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 17 of 213
+2015-03-22 13:03:17,412 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 18 of 213
+2015-03-22 13:03:35,487 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 19 of 213
+2015-03-22 13:03:54,326 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 20 of 213
+2015-03-22 13:04:10,718 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 21 of 213
+2015-03-22 13:04:28,779 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 22 of 213
+2015-03-22 13:04:46,744 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 23 of 213
+2015-03-22 13:05:08,852 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 24 of 213
+2015-03-22 13:05:29,418 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 25 of 213
+2015-03-22 13:05:56,395 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 26 of 213
+2015-03-22 13:06:21,383 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 27 of 213
+2015-03-22 13:06:43,266 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 28 of 213
+2015-03-22 13:07:03,849 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 29 of 213
+2015-03-22 13:07:26,700 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 30 of 213
+2015-03-22 13:07:45,344 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 31 of 213
+2015-03-22 13:08:06,348 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 32 of 213
+2015-03-22 13:08:27,518 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 33 of 213
+2015-03-22 13:08:46,354 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 34 of 213
+2015-03-22 13:09:06,645 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 35 of 213
+2015-03-22 13:09:26,867 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 36 of 213
+2015-03-22 13:10:07,622 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 37 of 213
+2015-03-22 13:10:30,601 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 38 of 213
+2015-03-22 13:11:11,168 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 39 of 213
+2015-03-22 13:11:29,794 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 40 of 213
+2015-03-22 13:11:53,308 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 41 of 213
+2015-03-22 13:12:13,386 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 42 of 213
+2015-03-22 13:12:35,025 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 43 of 213
+2015-03-22 13:13:17,422 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 44 of 213
+2015-03-22 13:13:42,253 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 45 of 213
+2015-03-22 13:14:06,889 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 46 of 213
+2015-03-22 13:14:31,351 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 47 of 213
+2015-03-22 13:14:54,764 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 48 of 213
+2015-03-22 13:15:16,539 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 49 of 213
+2015-03-22 13:15:35,883 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 50 of 213
+2015-03-22 13:15:55,844 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 51 of 213
+2015-03-22 13:16:14,639 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 52 of 213
+2015-03-22 13:16:33,420 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 53 of 213
+2015-03-22 13:17:00,053 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 54 of 213
+2015-03-22 13:17:24,469 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 55 of 213
+2015-03-22 13:18:05,514 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 56 of 213
+2015-03-22 13:18:44,757 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 57 of 213
+2015-03-22 13:19:25,133 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 58 of 213
+2015-03-22 13:20:02,271 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 59 of 213
+2015-03-22 13:20:41,447 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 60 of 213
+2015-03-22 13:21:05,360 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 61 of 213
+2015-03-22 13:21:45,030 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 62 of 213
+2015-03-22 13:22:26,792 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 63 of 213
+2015-03-22 13:23:06,052 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 64 of 213
+2015-03-22 13:23:46,876 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 65 of 213
+2015-03-22 13:24:26,879 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 66 of 213
+2015-03-22 13:25:05,820 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 67 of 213
+2015-03-22 13:25:45,113 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 68 of 213
+2015-03-22 13:26:24,861 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 69 of 213
+2015-03-22 13:27:04,361 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 70 of 213
+2015-03-22 13:27:43,820 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 71 of 213
+2015-03-22 13:28:23,469 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 72 of 213
+2015-03-22 13:29:01,893 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 73 of 213
+2015-03-22 13:29:40,385 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 74 of 213
+2015-03-22 13:30:19,320 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 75 of 213
+2015-03-22 13:30:57,780 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 76 of 213
+2015-03-22 13:31:36,546 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 77 of 213
+2015-03-22 13:32:16,667 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 78 of 213
+2015-03-22 13:32:56,525 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 79 of 213
+2015-03-22 13:33:37,397 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 80 of 213
+2015-03-22 13:34:17,590 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 81 of 213
+2015-03-22 13:34:59,794 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 82 of 213
+2015-03-22 13:35:43,151 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 83 of 213
+2015-03-22 13:36:26,298 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 84 of 213
+2015-03-22 13:37:09,441 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 85 of 213
+2015-03-22 13:37:52,913 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 86 of 213
+2015-03-22 13:38:34,435 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 87 of 213
+2015-03-22 13:39:15,851 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 88 of 213
+2015-03-22 13:39:57,889 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 89 of 213
+2015-03-22 13:40:39,548 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 90 of 213
+2015-03-22 13:41:01,266 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 91 of 213
+2015-03-22 13:41:23,010 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 92 of 213
+2015-03-22 13:41:43,465 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 93 of 213
+2015-03-22 13:42:03,710 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 94 of 213
+2015-03-22 13:42:40,713 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 95 of 213
+2015-03-22 13:43:17,726 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 96 of 213
+2015-03-22 13:43:59,172 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 97 of 213
+2015-03-22 13:44:37,137 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 98 of 213
+2015-03-22 13:45:14,769 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 99 of 213
+2015-03-22 13:45:36,680 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 100 of 213
+2015-03-22 13:45:57,944 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 101 of 213
+2015-03-22 13:46:19,333 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 102 of 213
+2015-03-22 13:46:56,653 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 103 of 213
+2015-03-22 13:47:33,117 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 104 of 213
+2015-03-22 13:48:08,624 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 105 of 213
+2015-03-22 13:48:44,815 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 106 of 213
+2015-03-22 13:49:29,535 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 107 of 213
+2015-03-22 13:50:14,024 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 108 of 213
+2015-03-22 13:50:59,695 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 109 of 213
+2015-03-22 13:51:37,918 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 110 of 213
+2015-03-22 13:52:16,859 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 111 of 213
+2015-03-22 13:52:53,715 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 112 of 213
+2015-03-22 13:53:32,463 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 113 of 213
+2015-03-22 13:54:12,076 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 114 of 213
+2015-03-22 13:54:51,268 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 115 of 213
+2015-03-22 13:55:30,736 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 116 of 213
+2015-03-22 13:56:09,696 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 117 of 213
+2015-03-22 13:56:49,752 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 118 of 213
+2015-03-22 13:57:31,261 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 119 of 213
+2015-03-22 13:57:53,575 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 120 of 213
+2015-03-22 13:58:33,538 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 121 of 213
+2015-03-22 13:59:15,040 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 122 of 213
+2015-03-22 13:59:37,203 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 123 of 213
+2015-03-22 14:00:00,183 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 124 of 213
+2015-03-22 14:00:42,599 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 125 of 213
+2015-03-22 14:01:25,689 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 126 of 213
+2015-03-22 14:02:08,990 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 127 of 213
+2015-03-22 14:02:51,593 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 128 of 213
+2015-03-22 14:03:34,898 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 129 of 213
+2015-03-22 14:04:18,048 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 130 of 213
+2015-03-22 14:04:37,422 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 131 of 213
+2015-03-22 14:05:15,854 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 132 of 213
+2015-03-22 14:05:54,032 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 133 of 213
+2015-03-22 14:06:33,779 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 134 of 213
+2015-03-22 14:07:11,518 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 135 of 213
+2015-03-22 14:07:49,541 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 136 of 213
+2015-03-22 14:08:27,676 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 137 of 213
+2015-03-22 14:09:05,560 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 138 of 213
+2015-03-22 14:09:43,489 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 139 of 213
+2015-03-22 14:10:21,805 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 140 of 213
+2015-03-22 14:10:59,600 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 141 of 213
+2015-03-22 14:11:37,413 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 142 of 213
+2015-03-22 14:12:16,766 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 143 of 213
+2015-03-22 14:12:54,800 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 144 of 213
+2015-03-22 14:13:33,319 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 145 of 213
+2015-03-22 14:14:12,240 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 146 of 213
+2015-03-22 14:14:53,010 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 147 of 213
+2015-03-22 14:15:34,508 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 148 of 213
+2015-03-22 14:15:56,900 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 149 of 213
+2015-03-22 14:16:39,044 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 150 of 213
+2015-03-22 14:17:01,104 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 151 of 213
+2015-03-22 14:17:23,542 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 152 of 213
+2015-03-22 14:18:04,782 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 153 of 213
+2015-03-22 14:18:26,898 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 154 of 213
+2015-03-22 14:19:07,009 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 155 of 213
+2015-03-22 14:19:48,774 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 156 of 213
+2015-03-22 14:20:30,936 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 157 of 213
+2015-03-22 14:21:12,932 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 158 of 213
+2015-03-22 14:21:32,008 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 159 of 213
+2015-03-22 14:21:52,453 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 160 of 213
+2015-03-22 14:22:20,264 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 161 of 213
+2015-03-22 14:23:02,208 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 162 of 213
+2015-03-22 14:23:44,242 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 163 of 213
+2015-03-22 14:24:27,405 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 164 of 213
+2015-03-22 14:25:07,964 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 165 of 213
+2015-03-22 14:25:49,765 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 166 of 213
+2015-03-22 14:26:32,834 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 167 of 213
+2015-03-22 14:27:08,494 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 168 of 213
+2015-03-22 14:27:31,932 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 169 of 213
+2015-03-22 14:27:52,830 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 170 of 213
+2015-03-22 14:28:31,229 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 171 of 213
+2015-03-22 14:29:09,848 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 172 of 213
+2015-03-22 14:29:32,151 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 173 of 213
+2015-03-22 14:29:54,388 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 174 of 213
+2015-03-22 14:30:16,622 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 175 of 213
+2015-03-22 14:30:39,358 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 176 of 213
+2015-03-22 14:31:19,581 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 177 of 213
+2015-03-22 14:31:59,439 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 178 of 213
+2015-03-22 14:32:39,733 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 179 of 213
+2015-03-22 14:33:00,471 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 180 of 213
+2015-03-22 14:33:40,871 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 181 of 213
+2015-03-22 14:34:18,183 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 182 of 213
+2015-03-22 14:34:57,148 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 183 of 213
+2015-03-22 14:35:34,841 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 184 of 213
+2015-03-22 14:36:13,467 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 185 of 213
+2015-03-22 14:36:51,460 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 186 of 213
+2015-03-22 14:37:29,622 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 187 of 213
+2015-03-22 14:37:49,076 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 188 of 213
+2015-03-22 14:38:11,566 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 189 of 213
+2015-03-22 14:38:53,317 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 190 of 213
+2015-03-22 14:39:35,211 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 191 of 213
+2015-03-22 14:40:14,447 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 192 of 213
+2015-03-22 14:40:42,144 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 193 of 213
+2015-03-22 14:41:24,230 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 194 of 213
+2015-03-22 14:42:04,883 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 195 of 213
+2015-03-22 14:42:48,180 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 196 of 213
+2015-03-22 14:43:30,316 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 197 of 213
+2015-03-22 14:44:12,302 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 198 of 213
+2015-03-22 14:44:32,722 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 199 of 213
+2015-03-22 14:44:51,807 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 200 of 213
+2015-03-22 14:45:31,958 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 201 of 213
+2015-03-22 14:46:12,955 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 202 of 213
+2015-03-22 14:46:55,441 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 203 of 213
+2015-03-22 14:47:18,063 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 204 of 213
+2015-03-22 14:47:40,203 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 205 of 213
+2015-03-22 14:48:02,554 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 206 of 213
+2015-03-22 14:48:24,847 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 207 of 213
+2015-03-22 14:48:49,314 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 208 of 213
+2015-03-22 14:49:13,021 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 209 of 213
+2015-03-22 14:49:55,419 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 210 of 213
+2015-03-22 14:50:17,663 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 211 of 213
+2015-03-22 14:50:39,556 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across genome 212 of 213
+2015-03-22 14:51:19,056 - hybseldesign.filter.adapter_filter [INFO] Adding adapters to probes based on votes
+2015-03-22 14:51:19,171 - hybseldesign.filter.probe_designer [INFO] Starting filter ReverseComplementFilter
+0 100 1.0 7512
