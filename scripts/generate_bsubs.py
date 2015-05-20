@@ -1,5 +1,6 @@
 DATASETS = [
             "chikungunya",
+            "crimean_congo",
             "dengue",
             (["ebola_zaire", "ebola2014"], "ebola_zaire-with-2014"),
             "ebola_nonzaire",
@@ -11,6 +12,7 @@ DATASETS = [
             "measles",
             "mers",
             "rhabdovirus",
+            "rift_valley_fever",
             "sars",
             "yellow_fever"
            ]
