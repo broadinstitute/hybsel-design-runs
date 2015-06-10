@@ -259,8 +259,22 @@ def optimize_loss(probe_counts, loss_fn, bounds, x0,
     return sol
 
 
+def total_probe_count_without_interp(params, probe_counts):
+    """
+    The result of make_total_probe_count_across_datasets_fn should give
+    the same count as this function, assuming that params are keys in
+    the datasets of probe_counts. But this uses probe_counts directly
+    as a sanity check (i.e., does not do any interpolation).
+    """
+    s = 0
+    for i, dataset in enumerate(sorted(probe_counts.keys())):
+        mismatches, cover_extension = params[2 * i], params[2 * i + 1]
+        s += probe_counts[dataset][(mismatches, cover_extension)]
+    return s
+
+
 def round_params(params, probe_counts, max_probe_count,
-        mismatches_eps=0.001, cover_extension_eps=0.5):
+        mismatches_eps=0.01, cover_extension_eps=0.1):
     # Params are floats. We want the mismatches parameters to be integers
     # and the cover_extension parameters to be multiples of 10.
     #
@@ -280,6 +294,11 @@ def round_params(params, probe_counts, max_probe_count,
     # smooth around actual data values. This may cause the optimizer to
     # yield parameter values that are very close to parameter values for
     # which probe counts have actually been computed.
+    #
+    # After rounding up, some parameters are decreased; we repeatedly
+    # choose to decrease the parameter whose reduction yields the smallest
+    # loss while still yielding a number of probes that is less than
+    # max_probe_count.
 
     def round_up(x, b):
         # Round float x up to the nearest multiple of int b
@@ -294,19 +313,59 @@ def round_params(params, probe_counts, max_probe_count,
 
         if mismatches - round_down(mismatches, 1) < mismatches_eps:
             # Round mismatches down
-            mismatches = int(mismatches)
+            mismatches = round_down(mismatches, 1)
         else:
             # Round mismatches up
             mismatches = round_up(mismatches, 1)
 
         if cover_extension - round_down(cover_extension, 10) < cover_extension_eps:
             # Round cover_extension down
-            cover_extension = int(cover_extension)
+            cover_extension = round_down(cover_extension, 10)
         else:
             # Round cover_extension up
             cover_extension = round_up(cover_extension, 10)
 
         params_rounded += [mismatches, cover_extension]
+
+    total_probe_count = make_total_probe_count_across_datasets_fn(probe_counts)
+    # Verify that the probe count satisfies the constraint
+    assert total_probe_count(params_rounded) < max_probe_count
+
+    # Keep decreasing parameters while satisfying the constraint.
+    # In particular, choose to decrease the parameter whose reduction
+    # yields the smallest loss while still satisfying the constraint.
+    loss_fn = make_loss_fn(probe_counts, max_probe_count)
+    while True:
+        curr_loss = loss_fn(params_rounded, 0)
+        # Find a parameter to decrease
+        min_loss, min_loss_new_params = curr_loss, None
+        for i in xrange(len(params_rounded)):
+            params_tmp = list(params_rounded)
+            if params_tmp[i] == 0:
+                # This cannot be decreased
+                continue
+            if i % 2 == 0:
+                # This is a mismatch, so decrease by 1
+                params_tmp[i] -= 1
+            else:
+                # This is a cover_extension, so decrease by 10
+                params_tmp[i] -= 10
+            if total_probe_count(params_tmp) >= max_probe_count:
+                # This change yields too many probes, so skip it
+                continue
+            new_loss = loss_fn(params_tmp, 0)
+            if new_loss < min_loss:
+                min_loss = new_loss
+                min_loss_new_params = params_tmp
+
+        if min_loss_new_params != None:
+            # There was a change that led to a better loss, so
+            # update params_rounded
+            params_rounded = min_loss_new_params
+        else:
+            # No parameter change satisfies the constraint and
+            # yields an improvement in the loss
+            break
 
     return params_rounded
 
@@ -346,11 +405,16 @@ def main(args):
     print "TOTAL PROBE COUNT: %d" % opt_params_count
     print "##############################"
 
+    # As a sanity check, verify that we get the same total probe count without
+    # using interpolation (since probe counts for opt_params have actually
+    # been computed)
+    assert opt_params_count == total_probe_count_without_interp(opt_params, probe_counts)
+
 
 if __name__ == "__main__":
     argparse = argparse.ArgumentParser()
     argparse.add_argument('--results_dir', '-i', required=True)
-    argparse.add_argument('--max_probe_count', '-m', type=int, default=90000)
+    argparse.add_argument('--max_probe_count', '-n', type=int, default=90000)
     args = argparse.parse_args()
 
     main(args)
