@@ -2,6 +2,7 @@
 
 import argparse
 from collections import defaultdict
+import os
 
 import plotly.plotly as py
 from plotly.graph_objs import *
