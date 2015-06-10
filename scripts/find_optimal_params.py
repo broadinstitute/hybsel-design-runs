@@ -380,6 +380,23 @@ def print_params_by_dataset(params, probe_counts, type="float"):
         else:
             raise ValueError("Unknown type %s", type)
 
+
+def write_params_to_file(params, probe_counts, path, type="int"):
+    lines = []
+    for i, dataset in enumerate(sorted(probe_counts.keys())):
+        mismatches, cover_extension = params[2 * i], params[2 * i + 1]
+        if type == "float":
+            lines += ["%s\t(%f, %f)" % (dataset, mismatches, cover_extension)]
+        elif type == "int":
+            lines += ["%s\t(%d, %d)" % (dataset, mismatches, cover_extension)]
+        else:
+            raise ValueError("Unknown type %s", type)
+
+    with open(path, 'w') as f:
+        for line in lines:
+            f.write(line + '\n')
+
+
 def main(args):
     probe_counts = utils.read_probe_counts(args)
     loss_fn = make_loss_fn(probe_counts, args.max_probe_count)
@@ -410,11 +427,15 @@ def main(args):
     # been computed)
     assert opt_params_count == total_probe_count_without_interp(opt_params, probe_counts)
 
+    if args.output_params:
+        write_params_to_file(opt_params, probe_counts, args.output_params)
+
 
 if __name__ == "__main__":
     argparse = argparse.ArgumentParser()
     argparse.add_argument('--results_dir', '-i', required=True)
     argparse.add_argument('--max_probe_count', '-n', type=int, default=90000)
+    argparse.add_argument('--output_params', '-o')
     args = argparse.parse_args()
 
     main(args)
