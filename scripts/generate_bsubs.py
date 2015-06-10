@@ -6,6 +6,7 @@ DATASETS = [
             "dengue",
             (["ebola_zaire", "ebola2014"], "ebola_zaire-with-2014"),
             "ebola_nonzaire",
+            "gbv_c",
             "hepatitis_a",
             "hepatitis_c",
             "hiv1_without_ltr",
