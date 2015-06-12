@@ -1,0 +1,155 @@
+Sender: LSF System <lsf@node1754>
+Subject: Job 549326: <python bin/make_probes.py --mismatches 2 --lcf_thres 100 --cover_extension 0 --dataset hepatitis_a --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/hepatitis_a/mismatches_2-coverextension_0.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/hepatitis_a.fasta --verbose> in cluster <cromwell> Done
+
+Job <python bin/make_probes.py --mismatches 2 --lcf_thres 100 --cover_extension 0 --dataset hepatitis_a --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/hepatitis_a/mismatches_2-coverextension_0.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/hepatitis_a.fasta --verbose> was submitted from host <node1748> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <node1754>, in queue <week>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Wed Jun 10 18:08:38 2015
+Results reported on Wed Jun 10 18:09:27 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes.py --mismatches 2 --lcf_thres 100 --cover_extension 0 --dataset hepatitis_a --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/hepatitis_a/mismatches_2-coverextension_0.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/hepatitis_a.fasta --verbose
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               41.47 sec.
+    Max Memory :             53 MB
+    Average Memory :         42.63 MB
+    Total Requested Memory : 4296.00 MB
+    Delta Memory :           4243.00 MB
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Processes :          4
+    Max Threads :            5
+
+The output (if any) follows:
+
+2015-06-10 18:08:45,355 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/hepatitis_a.fasta
+2015-06-10 18:08:45,449 - hybseldesign.filter.probe_designer [INFO] Building candidate probes from target sequences
+2015-06-10 18:08:45,586 - hybseldesign.filter.probe_designer [INFO] Starting filter FastaFilter
+2015-06-10 18:08:45,586 - hybseldesign.utils.seq_io [INFO] Reading fasta file /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/hepatitis_a/mismatches_2-coverextension_0.fasta
+2015-06-10 18:08:45,695 - hybseldesign.filter.probe_designer [INFO] Starting filter DuplicateFilter
+2015-06-10 18:08:45,723 - hybseldesign.filter.probe_designer [INFO] Starting filter AdapterFilter
+2015-06-10 18:08:45,723 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across all target genomes
+2015-06-10 18:08:45,723 - hybseldesign.filter.adapter_filter [INFO] Building map from k-mers to probes
+2015-06-10 18:08:48,081 - hybseldesign.filter.adapter_filter [INFO] Adding adapters to probes based on votes
+2015-06-10 18:08:48,110 - hybseldesign.filter.probe_designer [INFO] Starting filter ReverseComplementFilter
+2015-06-10 18:08:48,273 - hybseldesign.coverage_analysis [INFO] Finding probe covers across target genomes
+2015-06-10 18:08:48,273 - hybseldesign.coverage_analysis [INFO] Building map from k-mers to probes
+2015-06-10 18:08:48,829 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 1 (of 34)
+2015-06-10 18:08:49,962 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 2 (of 34)
+2015-06-10 18:08:51,081 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 3 (of 34)
+2015-06-10 18:08:52,200 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 4 (of 34)
+2015-06-10 18:08:53,301 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 5 (of 34)
+2015-06-10 18:08:54,477 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 6 (of 34)
+2015-06-10 18:08:55,375 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 7 (of 34)
+2015-06-10 18:08:56,429 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 8 (of 34)
+2015-06-10 18:08:57,389 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 9 (of 34)
+2015-06-10 18:08:58,533 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 10 (of 34)
+2015-06-10 18:08:59,672 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 11 (of 34)
+2015-06-10 18:09:00,877 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 12 (of 34)
+2015-06-10 18:09:01,723 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 13 (of 34)
+2015-06-10 18:09:02,732 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 14 (of 34)
+2015-06-10 18:09:03,867 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 15 (of 34)
+2015-06-10 18:09:05,020 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 16 (of 34)
+2015-06-10 18:09:06,174 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 17 (of 34)
+2015-06-10 18:09:07,273 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 18 (of 34)
+2015-06-10 18:09:08,413 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 19 (of 34)
+2015-06-10 18:09:09,771 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 20 (of 34)
+2015-06-10 18:09:11,102 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 21 (of 34)
+2015-06-10 18:09:12,125 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 22 (of 34)
+2015-06-10 18:09:13,123 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 23 (of 34)
+2015-06-10 18:09:14,156 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 24 (of 34)
+2015-06-10 18:09:15,266 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 25 (of 34)
+2015-06-10 18:09:16,272 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 26 (of 34)
+2015-06-10 18:09:17,330 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 27 (of 34)
+2015-06-10 18:09:18,540 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 28 (of 34)
+2015-06-10 18:09:19,601 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 29 (of 34)
+2015-06-10 18:09:20,843 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 30 (of 34)
+2015-06-10 18:09:22,063 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 31 (of 34)
+2015-06-10 18:09:23,279 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 32 (of 34)
+2015-06-10 18:09:24,058 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 33 (of 34)
+2015-06-10 18:09:25,277 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 34 (of 34)
+2015-06-10 18:09:26,517 - hybseldesign.coverage_analysis [INFO] Computing bases covered across target genomes
+2015-06-10 18:09:26,535 - hybseldesign.coverage_analysis [INFO] Computing average coverage across target genomes
+2015-06-10 18:09:26,546 - hybseldesign.coverage_analysis [INFO] Computing sliding coverage across target genomes
+NUMBER OF PROBES: 2172
+
+Genome                             Num bases covered Average coverage/depth
+                                      [over unambig]         [over unambig]
+--------------------------- ------------------------ ----------------------
+hepatitis_a, genome 0       7339 (100.00%) [100.00%]            1.85 [1.85]
+hepatitis_a, genome 0 (rc)    7337 (99.97%) [99.97%]            1.85 [1.85]
+hepatitis_a, genome 1       7339 (100.00%) [100.00%]            1.86 [1.86]
+hepatitis_a, genome 1 (rc)    7337 (99.97%) [99.97%]            1.86 [1.86]
+hepatitis_a, genome 2       7339 (100.00%) [100.00%]            1.84 [1.84]
+hepatitis_a, genome 2 (rc)    7337 (99.97%) [99.97%]            1.84 [1.84]
+hepatitis_a, genome 3         7338 (99.99%) [99.99%]            1.81 [1.81]
+hepatitis_a, genome 3 (rc)  7339 (100.00%) [100.00%]            1.81 [1.81]
+hepatitis_a, genome 4       7492 (100.00%) [100.17%]            2.29 [2.29]
+hepatitis_a, genome 4 (rc)  7492 (100.00%) [100.17%]            2.29 [2.29]
+hepatitis_a, genome 5       7388 (100.00%) [100.00%]            1.13 [1.13]
+hepatitis_a, genome 5 (rc)  7388 (100.00%) [100.00%]            1.13 [1.13]
+hepatitis_a, genome 6       7478 (100.00%) [100.00%]            1.74 [1.74]
+hepatitis_a, genome 6 (rc)  7478 (100.00%) [100.00%]            1.74 [1.74]
+hepatitis_a, genome 7       7476 (100.00%) [100.00%]            1.30 [1.30]
+hepatitis_a, genome 7 (rc)  7476 (100.00%) [100.00%]            1.30 [1.30]
+hepatitis_a, genome 8       7492 (100.00%) [100.00%]            1.99 [1.99]
+hepatitis_a, genome 8 (rc)  7492 (100.00%) [100.00%]            1.99 [1.99]
+hepatitis_a, genome 9       7492 (100.00%) [100.00%]            1.99 [1.99]
+hepatitis_a, genome 9 (rc)  7492 (100.00%) [100.00%]            1.99 [1.99]
+hepatitis_a, genome 10      7459 (100.00%) [100.03%]            2.60 [2.60]
+hepatitis_a, genome 10 (rc) 7459 (100.00%) [100.03%]            2.60 [2.60]
+hepatitis_a, genome 11      7478 (100.00%) [100.00%]            1.12 [1.12]
+hepatitis_a, genome 11 (rc) 7478 (100.00%) [100.00%]            1.12 [1.12]
+hepatitis_a, genome 12      7478 (100.00%) [100.00%]            1.51 [1.51]
+hepatitis_a, genome 12 (rc) 7478 (100.00%) [100.00%]            1.51 [1.51]
+hepatitis_a, genome 13      7445 (100.00%) [100.00%]            2.11 [2.11]
+hepatitis_a, genome 13 (rc) 7445 (100.00%) [100.00%]            2.11 [2.11]
+hepatitis_a, genome 14      7455 (100.00%) [100.00%]            2.08 [2.08]
+hepatitis_a, genome 14 (rc) 7455 (100.00%) [100.00%]            2.08 [2.08]
+hepatitis_a, genome 15        7493 (99.99%) [99.99%]            2.30 [2.30]
+hepatitis_a, genome 15 (rc)   7493 (99.99%) [99.99%]            2.30 [2.30]
+hepatitis_a, genome 16      7442 (100.00%) [100.00%]            2.13 [2.13]
+hepatitis_a, genome 16 (rc)   7441 (99.99%) [99.99%]            2.13 [2.13]
+hepatitis_a, genome 17      7458 (100.00%) [100.00%]            1.89 [1.89]
+hepatitis_a, genome 17 (rc) 7458 (100.00%) [100.00%]            1.89 [1.89]
+hepatitis_a, genome 18      7477 (100.00%) [100.00%]            1.75 [1.75]
+hepatitis_a, genome 18 (rc) 7477 (100.00%) [100.00%]            1.75 [1.75]
+hepatitis_a, genome 19      7453 (100.00%) [100.00%]            1.92 [1.92]
+hepatitis_a, genome 19 (rc) 7453 (100.00%) [100.00%]            1.92 [1.92]
+hepatitis_a, genome 20      7477 (100.00%) [100.00%]            1.65 [1.65]
+hepatitis_a, genome 20 (rc)   7475 (99.97%) [99.97%]            1.65 [1.65]
+hepatitis_a, genome 21        7464 (99.99%) [99.99%]            1.55 [1.55]
+hepatitis_a, genome 21 (rc)   7463 (99.97%) [99.97%]            1.55 [1.55]
+hepatitis_a, genome 22        7479 (99.99%) [99.99%]            1.66 [1.66]
+hepatitis_a, genome 22 (rc)   7479 (99.99%) [99.99%]            1.66 [1.66]
+hepatitis_a, genome 23        7475 (99.99%) [99.99%]            1.87 [1.87]
+hepatitis_a, genome 23 (rc)   7475 (99.99%) [99.99%]            1.87 [1.87]
+hepatitis_a, genome 24      7472 (100.00%) [100.00%]            1.53 [1.53]
+hepatitis_a, genome 24 (rc) 7472 (100.00%) [100.00%]            1.53 [1.53]
+hepatitis_a, genome 25        7477 (99.99%) [99.99%]            1.65 [1.65]
+hepatitis_a, genome 25 (rc)   7477 (99.99%) [99.99%]            1.65 [1.65]
+hepatitis_a, genome 26      7492 (100.00%) [100.00%]            2.25 [2.25]
+hepatitis_a, genome 26 (rc)   7491 (99.99%) [99.99%]            2.25 [2.25]
+hepatitis_a, genome 27      7386 (100.00%) [100.00%]            1.55 [1.55]
+hepatitis_a, genome 27 (rc) 7386 (100.00%) [100.00%]            1.55 [1.55]
+hepatitis_a, genome 28      7492 (100.00%) [100.00%]            2.30 [2.30]
+hepatitis_a, genome 28 (rc) 7492 (100.00%) [100.00%]            2.30 [2.30]
+hepatitis_a, genome 29      7492 (100.00%) [100.04%]            2.32 [2.32]
+hepatitis_a, genome 29 (rc) 7492 (100.00%) [100.04%]            2.32 [2.32]
+hepatitis_a, genome 30      7487 (100.00%) [100.00%]            1.87 [1.87]
+hepatitis_a, genome 30 (rc) 7487 (100.00%) [100.00%]            1.87 [1.87]
+hepatitis_a, genome 31      7414 (100.00%) [100.00%]            1.10 [1.10]
+hepatitis_a, genome 31 (rc) 7414 (100.00%) [100.00%]            1.10 [1.10]
+hepatitis_a, genome 32      7492 (100.00%) [100.01%]            2.35 [2.35]
+hepatitis_a, genome 32 (rc) 7492 (100.00%) [100.01%]            2.35 [2.35]
+hepatitis_a, genome 33      7492 (100.00%) [100.00%]            2.39 [2.39]
+hepatitis_a, genome 33 (rc) 7492 (100.00%) [100.00%]            2.39 [2.39]
+

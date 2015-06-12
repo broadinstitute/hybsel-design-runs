@@ -1,0 +1,684 @@
+Sender: LSF System <lsf@node1966>
+Subject: Job 549336: <python bin/make_probes.py --mismatches 2 --lcf_thres 100 --cover_extension 0 --dataset rift_valley_fever --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/rift_valley_fever/mismatches_2-coverextension_0.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/rift_valley_fever.fasta --verbose> in cluster <cromwell> Done
+
+Job <python bin/make_probes.py --mismatches 2 --lcf_thres 100 --cover_extension 0 --dataset rift_valley_fever --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/rift_valley_fever/mismatches_2-coverextension_0.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/rift_valley_fever.fasta --verbose> was submitted from host <node1748> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <node1966>, in queue <week>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Wed Jun 10 19:08:11 2015
+Results reported on Wed Jun 10 19:11:02 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes.py --mismatches 2 --lcf_thres 100 --cover_extension 0 --dataset rift_valley_fever --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/rift_valley_fever/mismatches_2-coverextension_0.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/rift_valley_fever.fasta --verbose
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               163.73 sec.
+    Max Memory :             267 MB
+    Average Memory :         250.84 MB
+    Total Requested Memory : 4296.00 MB
+    Delta Memory :           4029.00 MB
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Processes :          4
+    Max Threads :            5
+
+The output (if any) follows:
+
+2015-06-10 19:08:16,377 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/378794a7.fasta
+2015-06-10 19:08:16,390 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/e39579d0.fasta
+2015-06-10 19:08:16,416 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/73fd4e67.fasta
+2015-06-10 19:08:16,449 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/66b9b1bd.fasta
+2015-06-10 19:08:16,473 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/47b5c8de.fasta
+2015-06-10 19:08:16,488 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/4b8db095.fasta
+2015-06-10 19:08:16,517 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/0ecc120b.fasta
+2015-06-10 19:08:16,528 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/214a2906.fasta
+2015-06-10 19:08:16,543 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/f732c713.fasta
+2015-06-10 19:08:16,567 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/0a7070d2.fasta
+2015-06-10 19:08:16,595 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/f70f6d3c.fasta
+2015-06-10 19:08:16,619 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/c8d565a8.fasta
+2015-06-10 19:08:16,631 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/9017d221.fasta
+2015-06-10 19:08:16,651 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/75e39d84.fasta
+2015-06-10 19:08:16,658 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/70eccd30.fasta
+2015-06-10 19:08:16,672 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/18fe51a3.fasta
+2015-06-10 19:08:16,708 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/ecd70384.fasta
+2015-06-10 19:08:16,728 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/be6bef82.fasta
+2015-06-10 19:08:16,746 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/5c787114.fasta
+2015-06-10 19:08:16,762 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/14f4eca8.fasta
+2015-06-10 19:08:16,779 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/621a603f.fasta
+2015-06-10 19:08:16,804 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/97c7feeb.fasta
+2015-06-10 19:08:16,829 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/203bcfad.fasta
+2015-06-10 19:08:16,840 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/c4514915.fasta
+2015-06-10 19:08:16,861 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/2395c0a5.fasta
+2015-06-10 19:08:16,868 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/ab54fcd1.fasta
+2015-06-10 19:08:16,893 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/6a03344c.fasta
+2015-06-10 19:08:16,900 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/576fe3cd.fasta
+2015-06-10 19:08:16,911 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/ac0b2525.fasta
+2015-06-10 19:08:16,948 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/4a8d7a2b.fasta
+2015-06-10 19:08:16,970 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/da05bd97.fasta
+2015-06-10 19:08:16,995 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/176f12fc.fasta
+2015-06-10 19:08:17,006 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/b4c2cea5.fasta
+2015-06-10 19:08:17,037 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/16c31bfa.fasta
+2015-06-10 19:08:17,053 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/b9b4e01b.fasta
+2015-06-10 19:08:17,067 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/131939d7.fasta
+2015-06-10 19:08:17,087 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/657124b4.fasta
+2015-06-10 19:08:17,104 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/4be52217.fasta
+2015-06-10 19:08:17,116 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/f7a7ee3a.fasta
+2015-06-10 19:08:17,131 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/e0477f58.fasta
+2015-06-10 19:08:17,146 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/3307a80f.fasta
+2015-06-10 19:08:17,160 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/4d8603e8.fasta
+2015-06-10 19:08:17,182 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/865c714c.fasta
+2015-06-10 19:08:17,207 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/a2a71838.fasta
+2015-06-10 19:08:17,221 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/3d412fa0.fasta
+2015-06-10 19:08:17,243 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/9d22dba2.fasta
+2015-06-10 19:08:17,258 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/c49e6357.fasta
+2015-06-10 19:08:17,267 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/28c7011e.fasta
+2015-06-10 19:08:17,298 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/25a50819.fasta
+2015-06-10 19:08:17,315 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/cfe178bb.fasta
+2015-06-10 19:08:17,342 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/7a155826.fasta
+2015-06-10 19:08:17,355 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/a14393d9.fasta
+2015-06-10 19:08:17,371 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/e113ff3f.fasta
+2015-06-10 19:08:17,380 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/37f222bf.fasta
+2015-06-10 19:08:17,406 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/802dc58e.fasta
+2015-06-10 19:08:17,423 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/33cf719d.fasta
+2015-06-10 19:08:17,434 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/dc640629.fasta
+2015-06-10 19:08:17,441 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/7ddec72f.fasta
+2015-06-10 19:08:17,462 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/42d923fb.fasta
+2015-06-10 19:08:17,479 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/801b61e1.fasta
+2015-06-10 19:08:17,494 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/d2dd96eb.fasta
+2015-06-10 19:08:17,508 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/02b4b23d.fasta
+2015-06-10 19:08:17,522 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/af15305e.fasta
+2015-06-10 19:08:17,539 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/e61139f7.fasta
+2015-06-10 19:08:17,556 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/9cdd0b5d.fasta
+2015-06-10 19:08:17,582 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/4bd3a90c.fasta
+2015-06-10 19:08:17,605 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/98bc48bb.fasta
+2015-06-10 19:08:17,619 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/09853dfc.fasta
+2015-06-10 19:08:17,633 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/0846bf9b.fasta
+2015-06-10 19:08:17,654 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/3640c311.fasta
+2015-06-10 19:08:17,679 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/dc4bbc5e.fasta
+2015-06-10 19:08:17,692 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/f6a237af.fasta
+2015-06-10 19:08:17,717 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/d6b9c713.fasta
+2015-06-10 19:08:17,755 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/a3b36f0f.fasta
+2015-06-10 19:08:17,775 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/839de4e8.fasta
+2015-06-10 19:08:17,789 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/6130dfb1.fasta
+2015-06-10 19:08:17,806 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/9e01a159.fasta
+2015-06-10 19:08:17,828 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/c832bc09.fasta
+2015-06-10 19:08:17,843 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/0f5767d2.fasta
+2015-06-10 19:08:17,864 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/3512698b.fasta
+2015-06-10 19:08:17,888 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/c65c7df3.fasta
+2015-06-10 19:08:17,912 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/4f1a305a.fasta
+2015-06-10 19:08:17,942 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/3c37b5c0.fasta
+2015-06-10 19:08:17,945 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/a8aba42e.fasta
+2015-06-10 19:08:17,994 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/649a4746.fasta
+2015-06-10 19:08:18,012 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/03ef8ae9.fasta
+2015-06-10 19:08:18,025 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/d3ab7666.fasta
+2015-06-10 19:08:18,043 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/ce358879.fasta
+2015-06-10 19:08:18,054 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/ded53174.fasta
+2015-06-10 19:08:18,073 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/752e1629.fasta
+2015-06-10 19:08:18,097 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/9f6276e7.fasta
+2015-06-10 19:08:18,114 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/26ad7a5f.fasta
+2015-06-10 19:08:18,128 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/78ff0adc.fasta
+2015-06-10 19:08:18,142 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/6ac47d75.fasta
+2015-06-10 19:08:18,165 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/52c6e351.fasta
+2015-06-10 19:08:18,190 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/8fe33961.fasta
+2015-06-10 19:08:18,208 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/42066342.fasta
+2015-06-10 19:08:18,222 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/eb86c221.fasta
+2015-06-10 19:08:18,249 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/7ccf62a1.fasta
+2015-06-10 19:08:18,290 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/f0a23557.fasta
+2015-06-10 19:08:18,295 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/495c0bf0.fasta
+2015-06-10 19:08:18,317 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/bfae8333.fasta
+2015-06-10 19:08:18,334 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/5bcb5dd4.fasta
+2015-06-10 19:08:18,356 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/401ef0b4.fasta
+2015-06-10 19:08:18,372 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/7bca26a5.fasta
+2015-06-10 19:08:18,406 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/127594c9.fasta
+2015-06-10 19:08:18,427 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/e3825408.fasta
+2015-06-10 19:08:18,448 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/0740c07e.fasta
+2015-06-10 19:08:18,465 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/aa5d2c80.fasta
+2015-06-10 19:08:18,481 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/32557707.fasta
+2015-06-10 19:08:18,513 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/edd26712.fasta
+2015-06-10 19:08:18,552 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/56de95ed.fasta
+2015-06-10 19:08:18,571 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/7a7ea94b.fasta
+2015-06-10 19:08:18,593 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/d60d2620.fasta
+2015-06-10 19:08:18,599 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/81d699e4.fasta
+2015-06-10 19:08:18,613 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/0360ac28.fasta
+2015-06-10 19:08:18,634 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/8f4b42bc.fasta
+2015-06-10 19:08:18,660 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/a4329805.fasta
+2015-06-10 19:08:18,679 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/985e7b02.fasta
+2015-06-10 19:08:18,699 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/a9abd70e.fasta
+2015-06-10 19:08:18,711 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/f06aa2d8.fasta
+2015-06-10 19:08:18,723 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/631e61b6.fasta
+2015-06-10 19:08:18,746 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/86b151f3.fasta
+2015-06-10 19:08:18,768 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/286e8a0f.fasta
+2015-06-10 19:08:18,790 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/b514feeb.fasta
+2015-06-10 19:08:18,802 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/367a778e.fasta
+2015-06-10 19:08:18,814 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/75fb4909.fasta
+2015-06-10 19:08:18,842 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/b6b86624.fasta
+2015-06-10 19:08:18,859 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/219bfc55.fasta
+2015-06-10 19:08:18,884 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/4e1749d7.fasta
+2015-06-10 19:08:18,906 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/21b136c7.fasta
+2015-06-10 19:08:18,926 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/bcbba6c7.fasta
+2015-06-10 19:08:18,971 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/6d626137.fasta
+2015-06-10 19:08:18,993 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/3e0cf031.fasta
+2015-06-10 19:08:19,006 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/91fe466f.fasta
+2015-06-10 19:08:19,048 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/c72a86ea.fasta
+2015-06-10 19:08:19,059 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/a14b6e81.fasta
+2015-06-10 19:08:19,099 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/d38f483a.fasta
+2015-06-10 19:08:19,113 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/fbea2f74.fasta
+2015-06-10 19:08:19,133 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/de2ff7b6.fasta
+2015-06-10 19:08:19,148 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/449f3ad8.fasta
+2015-06-10 19:08:19,165 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/b6218df8.fasta
+2015-06-10 19:08:19,185 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/261221d7.fasta
+2015-06-10 19:08:19,198 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/38c24f38.fasta
+2015-06-10 19:08:19,216 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/e89817da.fasta
+2015-06-10 19:08:19,233 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/b460e078.fasta
+2015-06-10 19:08:19,245 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/f0392839.fasta
+2015-06-10 19:08:19,288 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/61c472c4.fasta
+2015-06-10 19:08:19,310 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/e9a93fcb.fasta
+2015-06-10 19:08:19,328 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/9e29fad2.fasta
+2015-06-10 19:08:19,348 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/53185303.fasta
+2015-06-10 19:08:19,364 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/2f5660c1.fasta
+2015-06-10 19:08:19,375 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/880eecdd.fasta
+2015-06-10 19:08:19,397 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/31800dce.fasta
+2015-06-10 19:08:19,413 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/03c6d4d8.fasta
+2015-06-10 19:08:19,434 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/71131265.fasta
+2015-06-10 19:08:19,448 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/98e9c076.fasta
+2015-06-10 19:08:19,469 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rift_valley_fever/d6463eb4.fasta
+2015-06-10 19:08:19,486 - hybseldesign.filter.probe_designer [INFO] Building candidate probes from target sequences
+2015-06-10 19:08:20,144 - hybseldesign.filter.probe_designer [INFO] Starting filter FastaFilter
+2015-06-10 19:08:20,145 - hybseldesign.utils.seq_io [INFO] Reading fasta file /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/rift_valley_fever/mismatches_2-coverextension_0.fasta
+2015-06-10 19:08:20,502 - hybseldesign.filter.probe_designer [INFO] Starting filter DuplicateFilter
+2015-06-10 19:08:20,777 - hybseldesign.filter.probe_designer [INFO] Starting filter AdapterFilter
+2015-06-10 19:08:20,777 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across all target genomes
+2015-06-10 19:08:20,777 - hybseldesign.filter.adapter_filter [INFO] Building map from k-mers to probes
+2015-06-10 19:08:32,451 - hybseldesign.filter.adapter_filter [INFO] Adding adapters to probes based on votes
+2015-06-10 19:08:32,472 - hybseldesign.filter.probe_designer [INFO] Starting filter ReverseComplementFilter
+2015-06-10 19:08:32,569 - hybseldesign.coverage_analysis [INFO] Finding probe covers across target genomes
+2015-06-10 19:08:32,569 - hybseldesign.coverage_analysis [INFO] Building map from k-mers to probes
+2015-06-10 19:08:33,000 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 1 (of 158)
+2015-06-10 19:08:34,411 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 2 (of 158)
+2015-06-10 19:08:35,806 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 3 (of 158)
+2015-06-10 19:08:36,116 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 4 (of 158)
+2015-06-10 19:08:37,540 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 5 (of 158)
+2015-06-10 19:08:38,941 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 6 (of 158)
+2015-06-10 19:08:40,354 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 7 (of 158)
+2015-06-10 19:08:40,662 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 8 (of 158)
+2015-06-10 19:08:41,105 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 9 (of 158)
+2015-06-10 19:08:42,554 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 10 (of 158)
+2015-06-10 19:08:43,952 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 11 (of 158)
+2015-06-10 19:08:45,379 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 12 (of 158)
+2015-06-10 19:08:45,664 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 13 (of 158)
+2015-06-10 19:08:45,957 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 14 (of 158)
+2015-06-10 19:08:47,322 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 15 (of 158)
+2015-06-10 19:08:47,634 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 16 (of 158)
+2015-06-10 19:08:49,076 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 17 (of 158)
+2015-06-10 19:08:50,478 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 18 (of 158)
+2015-06-10 19:08:51,877 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 19 (of 158)
+2015-06-10 19:08:52,188 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 20 (of 158)
+2015-06-10 19:08:53,603 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 21 (of 158)
+2015-06-10 19:08:53,904 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 22 (of 158)
+2015-06-10 19:08:55,296 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 23 (of 158)
+2015-06-10 19:08:56,690 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 24 (of 158)
+2015-06-10 19:08:56,985 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 25 (of 158)
+2015-06-10 19:08:57,275 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 26 (of 158)
+2015-06-10 19:08:58,648 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 27 (of 158)
+2015-06-10 19:08:58,950 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 28 (of 158)
+2015-06-10 19:09:00,347 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 29 (of 158)
+2015-06-10 19:09:01,739 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 30 (of 158)
+2015-06-10 19:09:02,048 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 31 (of 158)
+2015-06-10 19:09:03,447 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 32 (of 158)
+2015-06-10 19:09:03,743 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 33 (of 158)
+2015-06-10 19:09:05,123 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 34 (of 158)
+2015-06-10 19:09:05,424 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 35 (of 158)
+2015-06-10 19:09:06,878 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 36 (of 158)
+2015-06-10 19:09:07,186 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 37 (of 158)
+2015-06-10 19:09:07,937 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 38 (of 158)
+2015-06-10 19:09:09,324 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 39 (of 158)
+2015-06-10 19:09:09,632 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 40 (of 158)
+2015-06-10 19:09:09,935 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 41 (of 158)
+2015-06-10 19:09:10,219 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 42 (of 158)
+2015-06-10 19:09:10,893 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 43 (of 158)
+2015-06-10 19:09:12,286 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 44 (of 158)
+2015-06-10 19:09:12,586 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 45 (of 158)
+2015-06-10 19:09:14,037 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 46 (of 158)
+2015-06-10 19:09:15,454 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 47 (of 158)
+2015-06-10 19:09:15,749 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 48 (of 158)
+2015-06-10 19:09:17,149 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 49 (of 158)
+2015-06-10 19:09:17,436 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 50 (of 158)
+2015-06-10 19:09:18,834 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 51 (of 158)
+2015-06-10 19:09:20,288 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 52 (of 158)
+2015-06-10 19:09:20,591 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 53 (of 158)
+2015-06-10 19:09:20,898 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 54 (of 158)
+2015-06-10 19:09:21,204 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 55 (of 158)
+2015-06-10 19:09:22,651 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 56 (of 158)
+2015-06-10 19:09:22,949 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 57 (of 158)
+2015-06-10 19:09:23,243 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 58 (of 158)
+2015-06-10 19:09:23,540 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 59 (of 158)
+2015-06-10 19:09:24,236 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 60 (of 158)
+2015-06-10 19:09:25,677 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 61 (of 158)
+2015-06-10 19:09:27,096 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 62 (of 158)
+2015-06-10 19:09:28,512 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 63 (of 158)
+2015-06-10 19:09:28,818 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 64 (of 158)
+2015-06-10 19:09:30,214 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 65 (of 158)
+2015-06-10 19:09:30,515 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 66 (of 158)
+2015-06-10 19:09:31,901 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 67 (of 158)
+2015-06-10 19:09:32,219 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 68 (of 158)
+2015-06-10 19:09:32,519 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 69 (of 158)
+2015-06-10 19:09:33,907 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 70 (of 158)
+2015-06-10 19:09:34,220 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 71 (of 158)
+2015-06-10 19:09:34,398 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 72 (of 158)
+2015-06-10 19:09:34,692 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 73 (of 158)
+2015-06-10 19:09:36,090 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 74 (of 158)
+2015-06-10 19:09:37,488 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 75 (of 158)
+2015-06-10 19:09:38,880 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 76 (of 158)
+2015-06-10 19:09:40,282 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 77 (of 158)
+2015-06-10 19:09:41,679 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 78 (of 158)
+2015-06-10 19:09:41,982 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 79 (of 158)
+2015-06-10 19:09:43,381 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 80 (of 158)
+2015-06-10 19:09:43,688 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 81 (of 158)
+2015-06-10 19:09:45,034 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 82 (of 158)
+2015-06-10 19:09:46,417 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 83 (of 158)
+2015-06-10 19:09:46,721 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 84 (of 158)
+2015-06-10 19:09:47,020 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 85 (of 158)
+2015-06-10 19:09:48,464 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 86 (of 158)
+2015-06-10 19:09:48,768 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 87 (of 158)
+2015-06-10 19:09:49,070 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 88 (of 158)
+2015-06-10 19:09:50,511 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 89 (of 158)
+2015-06-10 19:09:51,928 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 90 (of 158)
+2015-06-10 19:09:52,376 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 91 (of 158)
+2015-06-10 19:09:53,797 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 92 (of 158)
+2015-06-10 19:09:54,107 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 93 (of 158)
+2015-06-10 19:09:55,485 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 94 (of 158)
+2015-06-10 19:09:56,906 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 95 (of 158)
+2015-06-10 19:09:58,314 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 96 (of 158)
+2015-06-10 19:09:59,724 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 97 (of 158)
+2015-06-10 19:10:01,138 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 98 (of 158)
+2015-06-10 19:10:02,547 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 99 (of 158)
+2015-06-10 19:10:03,946 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 100 (of 158)
+2015-06-10 19:10:05,296 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 101 (of 158)
+2015-06-10 19:10:05,616 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 102 (of 158)
+2015-06-10 19:10:05,914 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 103 (of 158)
+2015-06-10 19:10:06,218 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 104 (of 158)
+2015-06-10 19:10:07,657 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 105 (of 158)
+2015-06-10 19:10:09,064 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 106 (of 158)
+2015-06-10 19:10:09,372 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 107 (of 158)
+2015-06-10 19:10:09,818 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 108 (of 158)
+2015-06-10 19:10:10,125 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 109 (of 158)
+2015-06-10 19:10:10,423 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 110 (of 158)
+2015-06-10 19:10:11,828 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 111 (of 158)
+2015-06-10 19:10:13,228 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 112 (of 158)
+2015-06-10 19:10:13,528 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 113 (of 158)
+2015-06-10 19:10:14,937 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 114 (of 158)
+2015-06-10 19:10:15,241 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 115 (of 158)
+2015-06-10 19:10:15,693 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 116 (of 158)
+2015-06-10 19:10:17,099 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 117 (of 158)
+2015-06-10 19:10:17,395 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 118 (of 158)
+2015-06-10 19:10:18,798 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 119 (of 158)
+2015-06-10 19:10:20,202 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 120 (of 158)
+2015-06-10 19:10:20,508 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 121 (of 158)
+2015-06-10 19:10:20,805 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 122 (of 158)
+2015-06-10 19:10:22,215 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 123 (of 158)
+2015-06-10 19:10:23,633 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 124 (of 158)
+2015-06-10 19:10:23,949 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 125 (of 158)
+2015-06-10 19:10:25,402 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 126 (of 158)
+2015-06-10 19:10:25,707 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 127 (of 158)
+2015-06-10 19:10:27,109 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 128 (of 158)
+2015-06-10 19:10:27,415 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 129 (of 158)
+2015-06-10 19:10:28,750 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 130 (of 158)
+2015-06-10 19:10:29,066 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 131 (of 158)
+2015-06-10 19:10:30,462 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 132 (of 158)
+2015-06-10 19:10:31,883 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 133 (of 158)
+2015-06-10 19:10:33,293 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 134 (of 158)
+2015-06-10 19:10:33,599 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 135 (of 158)
+2015-06-10 19:10:35,019 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 136 (of 158)
+2015-06-10 19:10:36,426 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 137 (of 158)
+2015-06-10 19:10:37,826 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 138 (of 158)
+2015-06-10 19:10:39,209 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 139 (of 158)
+2015-06-10 19:10:40,605 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 140 (of 158)
+2015-06-10 19:10:40,915 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 141 (of 158)
+2015-06-10 19:10:42,260 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 142 (of 158)
+2015-06-10 19:10:42,570 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 143 (of 158)
+2015-06-10 19:10:43,924 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 144 (of 158)
+2015-06-10 19:10:44,218 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 145 (of 158)
+2015-06-10 19:10:45,565 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 146 (of 158)
+2015-06-10 19:10:46,998 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 147 (of 158)
+2015-06-10 19:10:48,428 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 148 (of 158)
+2015-06-10 19:10:49,770 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 149 (of 158)
+2015-06-10 19:10:51,184 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 150 (of 158)
+2015-06-10 19:10:52,656 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 151 (of 158)
+2015-06-10 19:10:52,982 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 152 (of 158)
+2015-06-10 19:10:53,318 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 153 (of 158)
+2015-06-10 19:10:53,654 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 154 (of 158)
+2015-06-10 19:10:53,983 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 155 (of 158)
+2015-06-10 19:10:54,308 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 156 (of 158)
+2015-06-10 19:10:55,771 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 157 (of 158)
+2015-06-10 19:10:57,256 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 158 (of 158)
+2015-06-10 19:10:57,600 - hybseldesign.coverage_analysis [INFO] Computing bases covered across target genomes
+2015-06-10 19:10:57,697 - hybseldesign.coverage_analysis [INFO] Computing average coverage across target genomes
+2015-06-10 19:10:57,764 - hybseldesign.coverage_analysis [INFO] Computing sliding coverage across target genomes
+NUMBER OF PROBES: 1528
+
+Genome                                     Num bases covered Average coverage/depth
+                                              [over unambig]         [over unambig]
+---------------------------------- ------------------------- ----------------------
+rift_valley_fever, genome 0        11978 (100.00%) [100.00%]            2.45 [2.45]
+rift_valley_fever, genome 0 (rc)   11978 (100.00%) [100.00%]            2.45 [2.45]
+rift_valley_fever, genome 1        11980 (100.00%) [100.00%]            2.45 [2.45]
+rift_valley_fever, genome 1 (rc)   11980 (100.00%) [100.00%]            2.45 [2.45]
+rift_valley_fever, genome 2         1691 (100.00%) [100.00%]            3.91 [3.91]
+rift_valley_fever, genome 2 (rc)    1691 (100.00%) [100.00%]            3.91 [3.91]
+rift_valley_fever, genome 3        11980 (100.00%) [100.00%]            2.45 [2.45]
+rift_valley_fever, genome 3 (rc)   11980 (100.00%) [100.00%]            2.45 [2.45]
+rift_valley_fever, genome 4        11980 (100.00%) [100.00%]            2.49 [2.49]
+rift_valley_fever, genome 4 (rc)   11980 (100.00%) [100.00%]            2.49 [2.49]
+rift_valley_fever, genome 5        11978 (100.00%) [100.00%]            2.51 [2.51]
+rift_valley_fever, genome 5 (rc)   11978 (100.00%) [100.00%]            2.51 [2.51]
+rift_valley_fever, genome 6         1690 (100.00%) [100.00%]            3.45 [3.45]
+rift_valley_fever, genome 6 (rc)    1690 (100.00%) [100.00%]            3.45 [3.45]
+rift_valley_fever, genome 7         3885 (100.00%) [100.00%]            2.23 [2.23]
+rift_valley_fever, genome 7 (rc)    3885 (100.00%) [100.00%]            2.23 [2.23]
+rift_valley_fever, genome 8        11979 (100.00%) [100.00%]            2.69 [2.69]
+rift_valley_fever, genome 8 (rc)   11979 (100.00%) [100.00%]            2.69 [2.69]
+rift_valley_fever, genome 9        11979 (100.00%) [100.00%]            2.26 [2.26]
+rift_valley_fever, genome 9 (rc)   11979 (100.00%) [100.00%]            2.26 [2.26]
+rift_valley_fever, genome 10       11995 (100.00%) [100.00%]            2.52 [2.52]
+rift_valley_fever, genome 10 (rc)  11995 (100.00%) [100.00%]            2.52 [2.52]
+rift_valley_fever, genome 11        1690 (100.00%) [100.00%]            2.96 [2.96]
+rift_valley_fever, genome 11 (rc)   1690 (100.00%) [100.00%]            2.96 [2.96]
+rift_valley_fever, genome 12        1690 (100.00%) [100.00%]            3.09 [3.09]
+rift_valley_fever, genome 12 (rc)   1690 (100.00%) [100.00%]            3.09 [3.09]
+rift_valley_fever, genome 13       11980 (100.00%) [100.00%]            2.08 [2.08]
+rift_valley_fever, genome 13 (rc)  11980 (100.00%) [100.00%]            2.08 [2.08]
+rift_valley_fever, genome 14        1691 (100.00%) [100.00%]            3.98 [3.98]
+rift_valley_fever, genome 14 (rc)   1691 (100.00%) [100.00%]            3.98 [3.98]
+rift_valley_fever, genome 15       11979 (100.00%) [100.00%]            2.73 [2.73]
+rift_valley_fever, genome 15 (rc)    11978 (99.99%) [99.99%]            2.73 [2.73]
+rift_valley_fever, genome 16       11980 (100.00%) [100.00%]            2.50 [2.50]
+rift_valley_fever, genome 16 (rc)  11980 (100.00%) [100.00%]            2.50 [2.50]
+rift_valley_fever, genome 17       11980 (100.00%) [100.00%]            2.48 [2.48]
+rift_valley_fever, genome 17 (rc)  11980 (100.00%) [100.00%]            2.48 [2.48]
+rift_valley_fever, genome 18        1691 (100.00%) [100.00%]            3.92 [3.92]
+rift_valley_fever, genome 18 (rc)   1691 (100.00%) [100.00%]            3.92 [3.92]
+rift_valley_fever, genome 19         11978 (99.99%) [99.99%]            2.51 [2.51]
+rift_valley_fever, genome 19 (rc)  11979 (100.00%) [100.00%]            2.51 [2.51]
+rift_valley_fever, genome 20        1691 (100.00%) [100.00%]            3.20 [3.20]
+rift_valley_fever, genome 20 (rc)   1691 (100.00%) [100.00%]            3.20 [3.20]
+rift_valley_fever, genome 21       11980 (100.00%) [100.00%]            2.43 [2.43]
+rift_valley_fever, genome 21 (rc)  11980 (100.00%) [100.00%]            2.43 [2.43]
+rift_valley_fever, genome 22       11980 (100.00%) [100.00%]            2.42 [2.42]
+rift_valley_fever, genome 22 (rc)  11980 (100.00%) [100.00%]            2.42 [2.42]
+rift_valley_fever, genome 23        1692 (100.00%) [100.00%]            2.59 [2.59]
+rift_valley_fever, genome 23 (rc)   1692 (100.00%) [100.00%]            2.59 [2.59]
+rift_valley_fever, genome 24        1691 (100.00%) [100.00%]            2.89 [2.89]
+rift_valley_fever, genome 24 (rc)   1691 (100.00%) [100.00%]            2.89 [2.89]
+rift_valley_fever, genome 25         11978 (99.99%) [99.99%]            2.36 [2.36]
+rift_valley_fever, genome 25 (rc)  11979 (100.00%) [100.00%]            2.36 [2.36]
+rift_valley_fever, genome 26        1690 (100.00%) [100.00%]            3.20 [3.20]
+rift_valley_fever, genome 26 (rc)   1690 (100.00%) [100.00%]            3.20 [3.20]
+rift_valley_fever, genome 27       11979 (100.00%) [100.00%]            2.45 [2.45]
+rift_valley_fever, genome 27 (rc)  11979 (100.00%) [100.00%]            2.45 [2.45]
+rift_valley_fever, genome 28       11980 (100.00%) [100.00%]            2.43 [2.43]
+rift_valley_fever, genome 28 (rc)  11980 (100.00%) [100.00%]            2.43 [2.43]
+rift_valley_fever, genome 29        1691 (100.00%) [100.00%]            3.55 [3.55]
+rift_valley_fever, genome 29 (rc)   1691 (100.00%) [100.00%]            3.55 [3.55]
+rift_valley_fever, genome 30       11980 (100.00%) [100.00%]            2.44 [2.44]
+rift_valley_fever, genome 30 (rc)  11980 (100.00%) [100.00%]            2.44 [2.44]
+rift_valley_fever, genome 31        1691 (100.00%) [100.00%]            2.77 [2.77]
+rift_valley_fever, genome 31 (rc)   1691 (100.00%) [100.00%]            2.77 [2.77]
+rift_valley_fever, genome 32       11959 (100.00%) [100.00%]            2.24 [2.24]
+rift_valley_fever, genome 32 (rc)  11959 (100.00%) [100.00%]            2.24 [2.24]
+rift_valley_fever, genome 33        1691 (100.00%) [100.00%]            3.98 [3.98]
+rift_valley_fever, genome 33 (rc)   1691 (100.00%) [100.00%]            3.98 [3.98]
+rift_valley_fever, genome 34       11979 (100.00%) [100.00%]            2.69 [2.69]
+rift_valley_fever, genome 34 (rc)  11979 (100.00%) [100.00%]            2.69 [2.69]
+rift_valley_fever, genome 35        1691 (100.00%) [100.00%]            3.38 [3.38]
+rift_valley_fever, genome 35 (rc)   1691 (100.00%) [100.00%]            3.38 [3.38]
+rift_valley_fever, genome 36        5576 (100.00%) [100.00%]            2.63 [2.63]
+rift_valley_fever, genome 36 (rc)   5576 (100.00%) [100.00%]            2.63 [2.63]
+rift_valley_fever, genome 37       11974 (100.00%) [100.00%]            2.33 [2.33]
+rift_valley_fever, genome 37 (rc)  11974 (100.00%) [100.00%]            2.33 [2.33]
+rift_valley_fever, genome 38        1691 (100.00%) [100.00%]            3.38 [3.38]
+rift_valley_fever, genome 38 (rc)   1691 (100.00%) [100.00%]            3.38 [3.38]
+rift_valley_fever, genome 39        1690 (100.00%) [100.00%]            3.26 [3.26]
+rift_valley_fever, genome 39 (rc)   1690 (100.00%) [100.00%]            3.26 [3.26]
+rift_valley_fever, genome 40        1691 (100.00%) [100.00%]            2.30 [2.30]
+rift_valley_fever, genome 40 (rc)   1691 (100.00%) [100.00%]            2.30 [2.30]
+rift_valley_fever, genome 41        6404 (100.00%) [100.00%]            2.64 [2.64]
+rift_valley_fever, genome 41 (rc)     6403 (99.98%) [99.98%]            2.64 [2.64]
+rift_valley_fever, genome 42       11980 (100.00%) [100.00%]            2.43 [2.43]
+rift_valley_fever, genome 42 (rc)  11980 (100.00%) [100.00%]            2.43 [2.43]
+rift_valley_fever, genome 43        1690 (100.00%) [100.00%]            3.20 [3.20]
+rift_valley_fever, genome 43 (rc)   1690 (100.00%) [100.00%]            3.20 [3.20]
+rift_valley_fever, genome 44       11979 (100.00%) [100.00%]            2.62 [2.62]
+rift_valley_fever, genome 44 (rc)  11979 (100.00%) [100.00%]            2.62 [2.62]
+rift_valley_fever, genome 45       11979 (100.00%) [100.00%]            2.53 [2.53]
+rift_valley_fever, genome 45 (rc)  11979 (100.00%) [100.00%]            2.53 [2.53]
+rift_valley_fever, genome 46        1690 (100.00%) [100.00%]            3.51 [3.51]
+rift_valley_fever, genome 46 (rc)   1690 (100.00%) [100.00%]            3.51 [3.51]
+rift_valley_fever, genome 47       11979 (100.00%) [100.00%]            2.40 [2.40]
+rift_valley_fever, genome 47 (rc)    11978 (99.99%) [99.99%]            2.40 [2.40]
+rift_valley_fever, genome 48        1691 (100.00%) [100.00%]            2.65 [2.65]
+rift_valley_fever, genome 48 (rc)   1691 (100.00%) [100.00%]            2.65 [2.65]
+rift_valley_fever, genome 49       11980 (100.00%) [100.00%]            2.47 [2.47]
+rift_valley_fever, genome 49 (rc)  11980 (100.00%) [100.00%]            2.47 [2.47]
+rift_valley_fever, genome 50       11980 (100.00%) [100.00%]            2.87 [2.87]
+rift_valley_fever, genome 50 (rc)  11980 (100.00%) [100.00%]            2.87 [2.87]
+rift_valley_fever, genome 51        1691 (100.00%) [100.00%]            3.20 [3.20]
+rift_valley_fever, genome 51 (rc)   1691 (100.00%) [100.00%]            3.20 [3.20]
+rift_valley_fever, genome 52        1691 (100.00%) [100.00%]            3.38 [3.38]
+rift_valley_fever, genome 52 (rc)   1691 (100.00%) [100.00%]            3.38 [3.38]
+rift_valley_fever, genome 53        1691 (100.00%) [100.00%]            3.20 [3.20]
+rift_valley_fever, genome 53 (rc)   1691 (100.00%) [100.00%]            3.20 [3.20]
+rift_valley_fever, genome 54       11979 (100.00%) [100.00%]            2.67 [2.67]
+rift_valley_fever, genome 54 (rc)  11979 (100.00%) [100.00%]            2.67 [2.67]
+rift_valley_fever, genome 55        1690 (100.00%) [100.00%]            3.01 [3.01]
+rift_valley_fever, genome 55 (rc)   1690 (100.00%) [100.00%]            3.01 [3.01]
+rift_valley_fever, genome 56        1692 (100.00%) [100.00%]            2.83 [2.83]
+rift_valley_fever, genome 56 (rc)   1692 (100.00%) [100.00%]            2.83 [2.83]
+rift_valley_fever, genome 57        1690 (100.00%) [100.00%]            3.07 [3.07]
+rift_valley_fever, genome 57 (rc)   1690 (100.00%) [100.00%]            3.07 [3.07]
+rift_valley_fever, genome 58        5026 (100.00%) [100.00%]            2.64 [2.64]
+rift_valley_fever, genome 58 (rc)   5026 (100.00%) [100.00%]            2.64 [2.64]
+rift_valley_fever, genome 59       11979 (100.00%) [100.00%]            2.73 [2.73]
+rift_valley_fever, genome 59 (rc)    11978 (99.99%) [99.99%]            2.73 [2.73]
+rift_valley_fever, genome 60        11979 (99.99%) [100.01%]            2.55 [2.55]
+rift_valley_fever, genome 60 (rc)  11980 (100.00%) [100.02%]            2.55 [2.55]
+rift_valley_fever, genome 61         11978 (99.99%) [99.99%]            2.46 [2.46]
+rift_valley_fever, genome 61 (rc)  11979 (100.00%) [100.00%]            2.46 [2.46]
+rift_valley_fever, genome 62        1691 (100.00%) [100.00%]            3.26 [3.26]
+rift_valley_fever, genome 62 (rc)   1691 (100.00%) [100.00%]            3.26 [3.26]
+rift_valley_fever, genome 63       11980 (100.00%) [100.00%]            2.45 [2.45]
+rift_valley_fever, genome 63 (rc)  11980 (100.00%) [100.00%]            2.45 [2.45]
+rift_valley_fever, genome 64        1690 (100.00%) [100.00%]            3.25 [3.25]
+rift_valley_fever, genome 64 (rc)   1690 (100.00%) [100.00%]            3.25 [3.25]
+rift_valley_fever, genome 65       11980 (100.00%) [100.00%]            2.43 [2.43]
+rift_valley_fever, genome 65 (rc)  11980 (100.00%) [100.00%]            2.43 [2.43]
+rift_valley_fever, genome 66        1691 (100.00%) [100.00%]            4.10 [4.10]
+rift_valley_fever, genome 66 (rc)   1691 (100.00%) [100.00%]            4.10 [4.10]
+rift_valley_fever, genome 67        1690 (100.00%) [100.00%]            3.32 [3.32]
+rift_valley_fever, genome 67 (rc)   1690 (100.00%) [100.00%]            3.32 [3.32]
+rift_valley_fever, genome 68       11979 (100.00%) [100.00%]            2.40 [2.40]
+rift_valley_fever, genome 68 (rc)  11979 (100.00%) [100.00%]            2.40 [2.40]
+rift_valley_fever, genome 69        1690 (100.00%) [100.00%]            3.86 [3.86]
+rift_valley_fever, genome 69 (rc)   1690 (100.00%) [100.00%]            3.86 [3.86]
+rift_valley_fever, genome 70         738 (100.00%) [100.00%]            4.01 [4.01]
+rift_valley_fever, genome 70 (rc)    738 (100.00%) [100.00%]            4.01 [4.01]
+rift_valley_fever, genome 71        1690 (100.00%) [100.00%]            3.02 [3.02]
+rift_valley_fever, genome 71 (rc)   1690 (100.00%) [100.00%]            3.02 [3.02]
+rift_valley_fever, genome 72       11980 (100.00%) [100.00%]            2.47 [2.47]
+rift_valley_fever, genome 72 (rc)    11978 (99.98%) [99.98%]            2.47 [2.47]
+rift_valley_fever, genome 73       11979 (100.00%) [100.00%]            2.45 [2.45]
+rift_valley_fever, genome 73 (rc)  11979 (100.00%) [100.00%]            2.45 [2.45]
+rift_valley_fever, genome 74       11980 (100.00%) [100.00%]            2.49 [2.49]
+rift_valley_fever, genome 74 (rc)  11980 (100.00%) [100.00%]            2.49 [2.49]
+rift_valley_fever, genome 75       11980 (100.00%) [100.00%]            2.47 [2.47]
+rift_valley_fever, genome 75 (rc)    11978 (99.98%) [99.98%]            2.47 [2.47]
+rift_valley_fever, genome 76       11980 (100.00%) [100.00%]            2.43 [2.43]
+rift_valley_fever, genome 76 (rc)  11980 (100.00%) [100.00%]            2.43 [2.43]
+rift_valley_fever, genome 77        1690 (100.00%) [100.00%]            3.32 [3.32]
+rift_valley_fever, genome 77 (rc)   1690 (100.00%) [100.00%]            3.32 [3.32]
+rift_valley_fever, genome 78       11980 (100.00%) [100.00%]            2.44 [2.44]
+rift_valley_fever, genome 78 (rc)  11980 (100.00%) [100.00%]            2.44 [2.44]
+rift_valley_fever, genome 79        1691 (100.00%) [100.00%]            3.32 [3.32]
+rift_valley_fever, genome 79 (rc)   1691 (100.00%) [100.00%]            3.32 [3.32]
+rift_valley_fever, genome 80       11981 (100.00%) [100.00%]            1.99 [1.99]
+rift_valley_fever, genome 80 (rc)    11980 (99.99%) [99.99%]            1.99 [1.99]
+rift_valley_fever, genome 81       11981 (100.00%) [100.00%]            2.17 [2.17]
+rift_valley_fever, genome 81 (rc)  11981 (100.00%) [100.00%]            2.17 [2.17]
+rift_valley_fever, genome 82        1690 (100.00%) [100.00%]            3.25 [3.25]
+rift_valley_fever, genome 82 (rc)   1690 (100.00%) [100.00%]            3.25 [3.25]
+rift_valley_fever, genome 83        1691 (100.00%) [100.00%]            3.21 [3.21]
+rift_valley_fever, genome 83 (rc)   1691 (100.00%) [100.00%]            3.21 [3.21]
+rift_valley_fever, genome 84       11980 (100.00%) [100.00%]            2.78 [2.78]
+rift_valley_fever, genome 84 (rc)  11980 (100.00%) [100.00%]            2.78 [2.78]
+rift_valley_fever, genome 85        1690 (100.00%) [100.00%]            3.14 [3.14]
+rift_valley_fever, genome 85 (rc)   1690 (100.00%) [100.00%]            3.14 [3.14]
+rift_valley_fever, genome 86        1690 (100.00%) [100.00%]            3.20 [3.20]
+rift_valley_fever, genome 86 (rc)   1690 (100.00%) [100.00%]            3.20 [3.20]
+rift_valley_fever, genome 87         11978 (99.99%) [99.99%]            2.72 [2.72]
+rift_valley_fever, genome 87 (rc)  11979 (100.00%) [100.00%]            2.72 [2.72]
+rift_valley_fever, genome 88       11979 (100.00%) [100.00%]            2.47 [2.47]
+rift_valley_fever, genome 88 (rc)  11979 (100.00%) [100.00%]            2.47 [2.47]
+rift_valley_fever, genome 89        3885 (100.00%) [100.00%]            2.18 [2.18]
+rift_valley_fever, genome 89 (rc)   3885 (100.00%) [100.00%]            2.18 [2.18]
+rift_valley_fever, genome 90       11979 (100.00%) [100.00%]            2.54 [2.54]
+rift_valley_fever, genome 90 (rc)  11979 (100.00%) [100.00%]            2.54 [2.54]
+rift_valley_fever, genome 91        1691 (100.00%) [100.00%]            3.38 [3.38]
+rift_valley_fever, genome 91 (rc)   1691 (100.00%) [100.00%]            3.38 [3.38]
+rift_valley_fever, genome 92       11980 (100.00%) [100.00%]            2.05 [2.05]
+rift_valley_fever, genome 92 (rc)  11980 (100.00%) [100.00%]            2.05 [2.05]
+rift_valley_fever, genome 93       11980 (100.00%) [100.00%]            2.49 [2.49]
+rift_valley_fever, genome 93 (rc)  11980 (100.00%) [100.00%]            2.49 [2.49]
+rift_valley_fever, genome 94       11980 (100.00%) [100.00%]            2.40 [2.40]
+rift_valley_fever, genome 94 (rc)  11980 (100.00%) [100.00%]            2.40 [2.40]
+rift_valley_fever, genome 95       11980 (100.00%) [100.00%]            2.44 [2.44]
+rift_valley_fever, genome 95 (rc)  11980 (100.00%) [100.00%]            2.44 [2.44]
+rift_valley_fever, genome 96       11980 (100.00%) [100.00%]            2.41 [2.41]
+rift_valley_fever, genome 96 (rc)  11980 (100.00%) [100.00%]            2.41 [2.41]
+rift_valley_fever, genome 97       11980 (100.00%) [100.00%]            2.50 [2.50]
+rift_valley_fever, genome 97 (rc)  11980 (100.00%) [100.00%]            2.50 [2.50]
+rift_valley_fever, genome 98       11980 (100.00%) [100.00%]            2.42 [2.42]
+rift_valley_fever, genome 98 (rc)  11980 (100.00%) [100.00%]            2.42 [2.42]
+rift_valley_fever, genome 99       11979 (100.00%) [100.00%]            2.00 [2.00]
+rift_valley_fever, genome 99 (rc)    11978 (99.99%) [99.99%]            2.00 [2.00]
+rift_valley_fever, genome 100       1691 (100.00%) [100.00%]            4.52 [4.52]
+rift_valley_fever, genome 100 (rc)  1691 (100.00%) [100.00%]            4.52 [4.52]
+rift_valley_fever, genome 101       1690 (100.00%) [100.00%]            3.15 [3.15]
+rift_valley_fever, genome 101 (rc)  1690 (100.00%) [100.00%]            3.15 [3.15]
+rift_valley_fever, genome 102       1691 (100.00%) [100.00%]            3.00 [3.00]
+rift_valley_fever, genome 102 (rc)  1691 (100.00%) [100.00%]            3.00 [3.00]
+rift_valley_fever, genome 103        11979 (99.99%) [99.99%]            2.60 [2.60]
+rift_valley_fever, genome 103 (rc) 11980 (100.00%) [100.00%]            2.60 [2.60]
+rift_valley_fever, genome 104      11980 (100.00%) [100.00%]            2.48 [2.48]
+rift_valley_fever, genome 104 (rc) 11980 (100.00%) [100.00%]            2.48 [2.48]
+rift_valley_fever, genome 105       1689 (100.00%) [100.00%]            3.44 [3.44]
+rift_valley_fever, genome 105 (rc)  1689 (100.00%) [100.00%]            3.44 [3.44]
+rift_valley_fever, genome 106       3885 (100.00%) [100.00%]            2.18 [2.18]
+rift_valley_fever, genome 106 (rc)  3885 (100.00%) [100.00%]            2.18 [2.18]
+rift_valley_fever, genome 107       1691 (100.00%) [100.00%]            3.31 [3.31]
+rift_valley_fever, genome 107 (rc)  1691 (100.00%) [100.00%]            3.31 [3.31]
+rift_valley_fever, genome 108       1690 (100.00%) [100.00%]            3.02 [3.02]
+rift_valley_fever, genome 108 (rc)  1690 (100.00%) [100.00%]            3.02 [3.02]
+rift_valley_fever, genome 109      11980 (100.00%) [100.00%]            2.47 [2.47]
+rift_valley_fever, genome 109 (rc) 11980 (100.00%) [100.00%]            2.47 [2.47]
+rift_valley_fever, genome 110      11980 (100.00%) [100.00%]            2.42 [2.42]
+rift_valley_fever, genome 110 (rc) 11980 (100.00%) [100.00%]            2.42 [2.42]
+rift_valley_fever, genome 111       1692 (100.00%) [100.00%]            3.00 [3.00]
+rift_valley_fever, genome 111 (rc)  1692 (100.00%) [100.00%]            3.00 [3.00]
+rift_valley_fever, genome 112      11980 (100.00%) [100.00%]            2.47 [2.47]
+rift_valley_fever, genome 112 (rc) 11980 (100.00%) [100.00%]            2.47 [2.47]
+rift_valley_fever, genome 113       1691 (100.00%) [100.00%]            3.20 [3.20]
+rift_valley_fever, genome 113 (rc)  1691 (100.00%) [100.00%]            3.20 [3.20]
+rift_valley_fever, genome 114       3885 (100.00%) [100.00%]            2.18 [2.18]
+rift_valley_fever, genome 114 (rc)  3885 (100.00%) [100.00%]            2.18 [2.18]
+rift_valley_fever, genome 115      11980 (100.00%) [100.00%]            2.44 [2.44]
+rift_valley_fever, genome 115 (rc) 11980 (100.00%) [100.00%]            2.44 [2.44]
+rift_valley_fever, genome 116       1690 (100.00%) [100.00%]            3.02 [3.02]
+rift_valley_fever, genome 116 (rc)  1690 (100.00%) [100.00%]            3.02 [3.02]
+rift_valley_fever, genome 117      11979 (100.00%) [100.00%]            2.41 [2.41]
+rift_valley_fever, genome 117 (rc) 11979 (100.00%) [100.00%]            2.41 [2.41]
+rift_valley_fever, genome 118      11980 (100.00%) [100.00%]            2.49 [2.49]
+rift_valley_fever, genome 118 (rc) 11980 (100.00%) [100.00%]            2.49 [2.49]
+rift_valley_fever, genome 119       1691 (100.00%) [100.00%]            3.14 [3.14]
+rift_valley_fever, genome 119 (rc)  1691 (100.00%) [100.00%]            3.14 [3.14]
+rift_valley_fever, genome 120       1691 (100.00%) [100.00%]            2.77 [2.77]
+rift_valley_fever, genome 120 (rc)  1691 (100.00%) [100.00%]            2.77 [2.77]
+rift_valley_fever, genome 121        11978 (99.99%) [99.99%]            2.46 [2.46]
+rift_valley_fever, genome 121 (rc) 11979 (100.00%) [100.00%]            2.46 [2.46]
+rift_valley_fever, genome 122      11980 (100.00%) [100.00%]            2.44 [2.44]
+rift_valley_fever, genome 122 (rc) 11980 (100.00%) [100.00%]            2.44 [2.44]
+rift_valley_fever, genome 123       1691 (100.00%) [100.00%]            4.28 [4.28]
+rift_valley_fever, genome 123 (rc)  1691 (100.00%) [100.00%]            4.28 [4.28]
+rift_valley_fever, genome 124      11980 (100.00%) [100.00%]            2.83 [2.83]
+rift_valley_fever, genome 124 (rc) 11980 (100.00%) [100.00%]            2.83 [2.83]
+rift_valley_fever, genome 125       1691 (100.00%) [100.00%]            3.14 [3.14]
+rift_valley_fever, genome 125 (rc)  1691 (100.00%) [100.00%]            3.14 [3.14]
+rift_valley_fever, genome 126        11978 (99.99%) [99.99%]            2.48 [2.48]
+rift_valley_fever, genome 126 (rc) 11979 (100.00%) [100.00%]            2.48 [2.48]
+rift_valley_fever, genome 127       1690 (100.00%) [100.00%]            3.68 [3.68]
+rift_valley_fever, genome 127 (rc)  1690 (100.00%) [100.00%]            3.68 [3.68]
+rift_valley_fever, genome 128      11980 (100.00%) [100.01%]            1.91 [1.91]
+rift_valley_fever, genome 128 (rc) 11980 (100.00%) [100.01%]            1.91 [1.91]
+rift_valley_fever, genome 129       1690 (100.00%) [100.00%]            4.10 [4.10]
+rift_valley_fever, genome 129 (rc)  1690 (100.00%) [100.00%]            4.10 [4.10]
+rift_valley_fever, genome 130      11980 (100.00%) [100.00%]            2.42 [2.42]
+rift_valley_fever, genome 130 (rc) 11980 (100.00%) [100.00%]            2.42 [2.42]
+rift_valley_fever, genome 131      11979 (100.00%) [100.00%]            2.54 [2.54]
+rift_valley_fever, genome 131 (rc) 11979 (100.00%) [100.00%]            2.54 [2.54]
+rift_valley_fever, genome 132      11980 (100.00%) [100.00%]            2.48 [2.48]
+rift_valley_fever, genome 132 (rc) 11980 (100.00%) [100.00%]            2.48 [2.48]
+rift_valley_fever, genome 133       1690 (100.00%) [100.00%]            3.26 [3.26]
+rift_valley_fever, genome 133 (rc)  1690 (100.00%) [100.00%]            3.26 [3.26]
+rift_valley_fever, genome 134        11978 (99.99%) [99.99%]            2.52 [2.52]
+rift_valley_fever, genome 134 (rc) 11979 (100.00%) [100.00%]            2.52 [2.52]
+rift_valley_fever, genome 135      11980 (100.00%) [100.00%]            2.47 [2.47]
+rift_valley_fever, genome 135 (rc) 11980 (100.00%) [100.00%]            2.47 [2.47]
+rift_valley_fever, genome 136      11976 (100.00%) [100.00%]            2.50 [2.50]
+rift_valley_fever, genome 136 (rc) 11976 (100.00%) [100.00%]            2.50 [2.50]
+rift_valley_fever, genome 137        11979 (99.99%) [99.99%]            2.09 [2.09]
+rift_valley_fever, genome 137 (rc)   11977 (99.97%) [99.97%]            2.09 [2.09]
+rift_valley_fever, genome 138      11980 (100.00%) [100.00%]            2.45 [2.45]
+rift_valley_fever, genome 138 (rc) 11980 (100.00%) [100.00%]            2.45 [2.45]
+rift_valley_fever, genome 139       1690 (100.00%) [100.00%]            3.93 [3.93]
+rift_valley_fever, genome 139 (rc)  1690 (100.00%) [100.00%]            3.93 [3.93]
+rift_valley_fever, genome 140      11979 (100.00%) [100.00%]            2.01 [2.01]
+rift_valley_fever, genome 140 (rc)   11978 (99.99%) [99.99%]            2.01 [2.01]
+rift_valley_fever, genome 141       1691 (100.00%) [100.00%]            3.38 [3.38]
+rift_valley_fever, genome 141 (rc)  1691 (100.00%) [100.00%]            3.38 [3.38]
+rift_valley_fever, genome 142      11980 (100.00%) [100.00%]            2.00 [2.00]
+rift_valley_fever, genome 142 (rc) 11980 (100.00%) [100.00%]            2.00 [2.00]
+rift_valley_fever, genome 143       1690 (100.00%) [100.00%]            3.08 [3.08]
+rift_valley_fever, genome 143 (rc)  1690 (100.00%) [100.00%]            3.08 [3.08]
+rift_valley_fever, genome 144      11979 (100.00%) [100.00%]            2.00 [2.00]
+rift_valley_fever, genome 144 (rc)   11978 (99.99%) [99.99%]            2.00 [2.00]
+rift_valley_fever, genome 145      11979 (100.00%) [100.00%]            2.63 [2.63]
+rift_valley_fever, genome 145 (rc)   11977 (99.98%) [99.98%]            2.63 [2.63]
+rift_valley_fever, genome 146      11980 (100.00%) [100.00%]            2.49 [2.49]
+rift_valley_fever, genome 146 (rc) 11980 (100.00%) [100.00%]            2.49 [2.49]
+rift_valley_fever, genome 147        11978 (99.98%) [99.98%]            1.88 [1.88]
+rift_valley_fever, genome 147 (rc)   11977 (99.97%) [99.97%]            1.88 [1.88]
+rift_valley_fever, genome 148      11980 (100.00%) [100.00%]            2.43 [2.43]
+rift_valley_fever, genome 148 (rc) 11980 (100.00%) [100.00%]            2.43 [2.43]
+rift_valley_fever, genome 149      11979 (100.00%) [100.00%]            2.21 [2.21]
+rift_valley_fever, genome 149 (rc) 11979 (100.00%) [100.00%]            2.21 [2.21]
+rift_valley_fever, genome 150       1691 (100.00%) [100.00%]            3.38 [3.38]
+rift_valley_fever, genome 150 (rc)  1691 (100.00%) [100.00%]            3.38 [3.38]
+rift_valley_fever, genome 151       1691 (100.00%) [100.00%]            3.98 [3.98]
+rift_valley_fever, genome 151 (rc)  1691 (100.00%) [100.00%]            3.98 [3.98]
+rift_valley_fever, genome 152       1690 (100.00%) [100.00%]            3.93 [3.93]
+rift_valley_fever, genome 152 (rc)  1690 (100.00%) [100.00%]            3.93 [3.93]
+rift_valley_fever, genome 153       1691 (100.00%) [100.00%]            3.74 [3.74]
+rift_valley_fever, genome 153 (rc)  1691 (100.00%) [100.00%]            3.74 [3.74]
+rift_valley_fever, genome 154       1689 (100.00%) [100.00%]            3.50 [3.50]
+rift_valley_fever, genome 154 (rc)  1689 (100.00%) [100.00%]            3.50 [3.50]
+rift_valley_fever, genome 155      11980 (100.00%) [100.00%]            2.44 [2.44]
+rift_valley_fever, genome 155 (rc) 11980 (100.00%) [100.00%]            2.44 [2.44]
+rift_valley_fever, genome 156      11979 (100.00%) [100.00%]            2.49 [2.49]
+rift_valley_fever, genome 156 (rc) 11979 (100.00%) [100.00%]            2.49 [2.49]
+rift_valley_fever, genome 157       1690 (100.00%) [100.00%]            3.50 [3.50]
+rift_valley_fever, genome 157 (rc)  1690 (100.00%) [100.00%]            3.50 [3.50]
+

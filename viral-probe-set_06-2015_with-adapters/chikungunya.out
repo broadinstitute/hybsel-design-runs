@@ -1,0 +1,692 @@
+Sender: LSF System <lsf@node1968>
+Subject: Job 549320: <python bin/make_probes.py --mismatches 2 --lcf_thres 100 --cover_extension 0 --dataset chikungunya --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/chikungunya/mismatches_2-coverextension_0.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/chikungunya.fasta --verbose> in cluster <cromwell> Done
+
+Job <python bin/make_probes.py --mismatches 2 --lcf_thres 100 --cover_extension 0 --dataset chikungunya --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/chikungunya/mismatches_2-coverextension_0.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/chikungunya.fasta --verbose> was submitted from host <node1748> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <node1968>, in queue <week>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Wed Jun 10 19:09:25 2015
+Results reported on Wed Jun 10 19:15:07 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes.py --mismatches 2 --lcf_thres 100 --cover_extension 0 --dataset chikungunya --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/chikungunya/mismatches_2-coverextension_0.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/chikungunya.fasta --verbose
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               328.44 sec.
+    Max Memory :             205 MB
+    Average Memory :         164.39 MB
+    Total Requested Memory : 4296.00 MB
+    Delta Memory :           4091.00 MB
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Processes :          4
+    Max Threads :            5
+
+The output (if any) follows:
+
+2015-06-10 19:09:31,466 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/chikungunya.fasta
+2015-06-10 19:09:31,819 - hybseldesign.filter.probe_designer [INFO] Building candidate probes from target sequences
+2015-06-10 19:09:33,536 - hybseldesign.filter.probe_designer [INFO] Starting filter FastaFilter
+2015-06-10 19:09:33,537 - hybseldesign.utils.seq_io [INFO] Reading fasta file /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/chikungunya/mismatches_2-coverextension_0.fasta
+2015-06-10 19:09:33,967 - hybseldesign.filter.probe_designer [INFO] Starting filter DuplicateFilter
+2015-06-10 19:09:34,112 - hybseldesign.filter.probe_designer [INFO] Starting filter AdapterFilter
+2015-06-10 19:09:34,112 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across all target genomes
+2015-06-10 19:09:34,112 - hybseldesign.filter.adapter_filter [INFO] Building map from k-mers to probes
+2015-06-10 19:09:55,882 - hybseldesign.filter.adapter_filter [INFO] Adding adapters to probes based on votes
+2015-06-10 19:09:55,909 - hybseldesign.filter.probe_designer [INFO] Starting filter ReverseComplementFilter
+2015-06-10 19:09:56,044 - hybseldesign.coverage_analysis [INFO] Finding probe covers across target genomes
+2015-06-10 19:09:56,045 - hybseldesign.coverage_analysis [INFO] Building map from k-mers to probes
+2015-06-10 19:09:56,723 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 1 (of 213)
+2015-06-10 19:09:58,317 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 2 (of 213)
+2015-06-10 19:09:59,751 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 3 (of 213)
+2015-06-10 19:10:01,092 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 4 (of 213)
+2015-06-10 19:10:02,415 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 5 (of 213)
+2015-06-10 19:10:03,807 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 6 (of 213)
+2015-06-10 19:10:05,199 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 7 (of 213)
+2015-06-10 19:10:06,586 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 8 (of 213)
+2015-06-10 19:10:08,011 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 9 (of 213)
+2015-06-10 19:10:09,428 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 10 (of 213)
+2015-06-10 19:10:10,701 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 11 (of 213)
+2015-06-10 19:10:11,970 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 12 (of 213)
+2015-06-10 19:10:13,236 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 13 (of 213)
+2015-06-10 19:10:14,508 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 14 (of 213)
+2015-06-10 19:10:16,002 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 15 (of 213)
+2015-06-10 19:10:17,411 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 16 (of 213)
+2015-06-10 19:10:18,836 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 17 (of 213)
+2015-06-10 19:10:20,518 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 18 (of 213)
+2015-06-10 19:10:21,391 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 19 (of 213)
+2015-06-10 19:10:22,252 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 20 (of 213)
+2015-06-10 19:10:23,123 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 21 (of 213)
+2015-06-10 19:10:23,976 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 22 (of 213)
+2015-06-10 19:10:24,819 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 23 (of 213)
+2015-06-10 19:10:25,677 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 24 (of 213)
+2015-06-10 19:10:27,074 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 25 (of 213)
+2015-06-10 19:10:28,530 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 26 (of 213)
+2015-06-10 19:10:29,968 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 27 (of 213)
+2015-06-10 19:10:31,451 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 28 (of 213)
+2015-06-10 19:10:32,929 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 29 (of 213)
+2015-06-10 19:10:34,301 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 30 (of 213)
+2015-06-10 19:10:35,700 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 31 (of 213)
+2015-06-10 19:10:36,579 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 32 (of 213)
+2015-06-10 19:10:38,070 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 33 (of 213)
+2015-06-10 19:10:39,431 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 34 (of 213)
+2015-06-10 19:10:40,293 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 35 (of 213)
+2015-06-10 19:10:41,661 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 36 (of 213)
+2015-06-10 19:10:42,976 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 37 (of 213)
+2015-06-10 19:10:44,395 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 38 (of 213)
+2015-06-10 19:10:45,765 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 39 (of 213)
+2015-06-10 19:10:47,185 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 40 (of 213)
+2015-06-10 19:10:48,045 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 41 (of 213)
+2015-06-10 19:10:49,432 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 42 (of 213)
+2015-06-10 19:10:50,757 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 43 (of 213)
+2015-06-10 19:10:52,134 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 44 (of 213)
+2015-06-10 19:10:53,572 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 45 (of 213)
+2015-06-10 19:10:54,983 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 46 (of 213)
+2015-06-10 19:10:56,773 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 47 (of 213)
+2015-06-10 19:10:58,195 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 48 (of 213)
+2015-06-10 19:10:59,561 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 49 (of 213)
+2015-06-10 19:11:00,852 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 50 (of 213)
+2015-06-10 19:11:02,247 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 51 (of 213)
+2015-06-10 19:11:03,571 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 52 (of 213)
+2015-06-10 19:11:04,446 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 53 (of 213)
+2015-06-10 19:11:05,323 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 54 (of 213)
+2015-06-10 19:11:06,745 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 55 (of 213)
+2015-06-10 19:11:08,183 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 56 (of 213)
+2015-06-10 19:11:09,613 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 57 (of 213)
+2015-06-10 19:11:11,051 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 58 (of 213)
+2015-06-10 19:11:12,479 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 59 (of 213)
+2015-06-10 19:11:13,822 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 60 (of 213)
+2015-06-10 19:11:15,243 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 61 (of 213)
+2015-06-10 19:11:16,746 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 62 (of 213)
+2015-06-10 19:11:18,128 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 63 (of 213)
+2015-06-10 19:11:19,569 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 64 (of 213)
+2015-06-10 19:11:20,933 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 65 (of 213)
+2015-06-10 19:11:22,358 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 66 (of 213)
+2015-06-10 19:11:23,740 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 67 (of 213)
+2015-06-10 19:11:25,104 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 68 (of 213)
+2015-06-10 19:11:26,468 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 69 (of 213)
+2015-06-10 19:11:27,845 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 70 (of 213)
+2015-06-10 19:11:29,222 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 71 (of 213)
+2015-06-10 19:11:30,589 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 72 (of 213)
+2015-06-10 19:11:31,960 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 73 (of 213)
+2015-06-10 19:11:33,324 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 74 (of 213)
+2015-06-10 19:11:34,692 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 75 (of 213)
+2015-06-10 19:11:36,056 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 76 (of 213)
+2015-06-10 19:11:37,460 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 77 (of 213)
+2015-06-10 19:11:38,870 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 78 (of 213)
+2015-06-10 19:11:40,274 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 79 (of 213)
+2015-06-10 19:11:41,682 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 80 (of 213)
+2015-06-10 19:11:43,101 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 81 (of 213)
+2015-06-10 19:11:44,490 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 82 (of 213)
+2015-06-10 19:11:45,897 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 83 (of 213)
+2015-06-10 19:11:47,338 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 84 (of 213)
+2015-06-10 19:11:48,788 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 85 (of 213)
+2015-06-10 19:11:50,226 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 86 (of 213)
+2015-06-10 19:11:51,664 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 87 (of 213)
+2015-06-10 19:11:53,106 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 88 (of 213)
+2015-06-10 19:11:54,545 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 89 (of 213)
+2015-06-10 19:11:55,988 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 90 (of 213)
+2015-06-10 19:11:57,403 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 91 (of 213)
+2015-06-10 19:11:58,816 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 92 (of 213)
+2015-06-10 19:12:00,234 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 93 (of 213)
+2015-06-10 19:12:01,512 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 94 (of 213)
+2015-06-10 19:12:02,707 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 95 (of 213)
+2015-06-10 19:12:03,970 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 96 (of 213)
+2015-06-10 19:12:05,240 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 97 (of 213)
+2015-06-10 19:12:06,677 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 98 (of 213)
+2015-06-10 19:12:07,957 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 99 (of 213)
+2015-06-10 19:12:09,219 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 100 (of 213)
+2015-06-10 19:12:10,524 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 101 (of 213)
+2015-06-10 19:12:11,836 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 102 (of 213)
+2015-06-10 19:12:13,146 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 103 (of 213)
+2015-06-10 19:12:14,567 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 104 (of 213)
+2015-06-10 19:12:15,931 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 105 (of 213)
+2015-06-10 19:12:17,282 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 106 (of 213)
+2015-06-10 19:12:18,603 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 107 (of 213)
+2015-06-10 19:12:20,270 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 108 (of 213)
+2015-06-10 19:12:21,900 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 109 (of 213)
+2015-06-10 19:12:23,569 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 110 (of 213)
+2015-06-10 19:12:24,966 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 111 (of 213)
+2015-06-10 19:12:26,370 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 112 (of 213)
+2015-06-10 19:12:27,819 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 113 (of 213)
+2015-06-10 19:12:29,226 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 114 (of 213)
+2015-06-10 19:12:31,001 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 115 (of 213)
+2015-06-10 19:12:32,474 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 116 (of 213)
+2015-06-10 19:12:33,887 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 117 (of 213)
+2015-06-10 19:12:35,302 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 118 (of 213)
+2015-06-10 19:12:36,712 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 119 (of 213)
+2015-06-10 19:12:38,208 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 120 (of 213)
+2015-06-10 19:12:39,347 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 121 (of 213)
+2015-06-10 19:12:40,714 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 122 (of 213)
+2015-06-10 19:12:42,136 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 123 (of 213)
+2015-06-10 19:12:43,295 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 124 (of 213)
+2015-06-10 19:12:44,624 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 125 (of 213)
+2015-06-10 19:12:46,170 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 126 (of 213)
+2015-06-10 19:12:47,712 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 127 (of 213)
+2015-06-10 19:12:49,243 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 128 (of 213)
+2015-06-10 19:12:50,758 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 129 (of 213)
+2015-06-10 19:12:52,267 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 130 (of 213)
+2015-06-10 19:12:53,784 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 131 (of 213)
+2015-06-10 19:12:54,647 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 132 (of 213)
+2015-06-10 19:12:55,957 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 133 (of 213)
+2015-06-10 19:12:57,256 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 134 (of 213)
+2015-06-10 19:12:58,646 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 135 (of 213)
+2015-06-10 19:12:59,950 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 136 (of 213)
+2015-06-10 19:13:01,278 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 137 (of 213)
+2015-06-10 19:13:02,618 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 138 (of 213)
+2015-06-10 19:13:03,942 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 139 (of 213)
+2015-06-10 19:13:05,263 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 140 (of 213)
+2015-06-10 19:13:06,603 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 141 (of 213)
+2015-06-10 19:13:07,942 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 142 (of 213)
+2015-06-10 19:13:09,282 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 143 (of 213)
+2015-06-10 19:13:10,630 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 144 (of 213)
+2015-06-10 19:13:11,949 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 145 (of 213)
+2015-06-10 19:13:13,288 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 146 (of 213)
+2015-06-10 19:13:14,626 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 147 (of 213)
+2015-06-10 19:13:16,029 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 148 (of 213)
+2015-06-10 19:13:17,440 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 149 (of 213)
+2015-06-10 19:13:18,754 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 150 (of 213)
+2015-06-10 19:13:20,171 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 151 (of 213)
+2015-06-10 19:13:21,597 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 152 (of 213)
+2015-06-10 19:13:23,043 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 153 (of 213)
+2015-06-10 19:13:24,512 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 154 (of 213)
+2015-06-10 19:13:25,949 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 155 (of 213)
+2015-06-10 19:13:27,347 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 156 (of 213)
+2015-06-10 19:13:28,756 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 157 (of 213)
+2015-06-10 19:13:30,180 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 158 (of 213)
+2015-06-10 19:13:31,601 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 159 (of 213)
+2015-06-10 19:13:32,872 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 160 (of 213)
+2015-06-10 19:13:34,169 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 161 (of 213)
+2015-06-10 19:13:35,562 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 162 (of 213)
+2015-06-10 19:13:36,940 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 163 (of 213)
+2015-06-10 19:13:38,337 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 164 (of 213)
+2015-06-10 19:13:39,766 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 165 (of 213)
+2015-06-10 19:13:41,178 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 166 (of 213)
+2015-06-10 19:13:42,628 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 167 (of 213)
+2015-06-10 19:13:44,230 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 168 (of 213)
+2015-06-10 19:13:45,618 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 169 (of 213)
+2015-06-10 19:13:46,970 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 170 (of 213)
+2015-06-10 19:13:48,142 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 171 (of 213)
+2015-06-10 19:13:49,461 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 172 (of 213)
+2015-06-10 19:13:50,777 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 173 (of 213)
+2015-06-10 19:13:52,198 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 174 (of 213)
+2015-06-10 19:13:53,609 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 175 (of 213)
+2015-06-10 19:13:55,007 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 176 (of 213)
+2015-06-10 19:13:56,441 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 177 (of 213)
+2015-06-10 19:13:57,993 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 178 (of 213)
+2015-06-10 19:13:59,533 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 179 (of 213)
+2015-06-10 19:14:01,014 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 180 (of 213)
+2015-06-10 19:14:02,313 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 181 (of 213)
+2015-06-10 19:14:03,668 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 182 (of 213)
+2015-06-10 19:14:04,944 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 183 (of 213)
+2015-06-10 19:14:06,270 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 184 (of 213)
+2015-06-10 19:14:07,595 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 185 (of 213)
+2015-06-10 19:14:08,926 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 186 (of 213)
+2015-06-10 19:14:10,250 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 187 (of 213)
+2015-06-10 19:14:11,577 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 188 (of 213)
+2015-06-10 19:14:12,487 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 189 (of 213)
+2015-06-10 19:14:13,998 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 190 (of 213)
+2015-06-10 19:14:15,475 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 191 (of 213)
+2015-06-10 19:14:16,972 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 192 (of 213)
+2015-06-10 19:14:18,289 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 193 (of 213)
+2015-06-10 19:14:19,758 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 194 (of 213)
+2015-06-10 19:14:21,231 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 195 (of 213)
+2015-06-10 19:14:22,667 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 196 (of 213)
+2015-06-10 19:14:24,157 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 197 (of 213)
+2015-06-10 19:14:25,629 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 198 (of 213)
+2015-06-10 19:14:27,085 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 199 (of 213)
+2015-06-10 19:14:28,438 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 200 (of 213)
+2015-06-10 19:14:29,783 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 201 (of 213)
+2015-06-10 19:14:31,249 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 202 (of 213)
+2015-06-10 19:14:32,672 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 203 (of 213)
+2015-06-10 19:14:34,160 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 204 (of 213)
+2015-06-10 19:14:35,595 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 205 (of 213)
+2015-06-10 19:14:37,001 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 206 (of 213)
+2015-06-10 19:14:38,401 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 207 (of 213)
+2015-06-10 19:14:39,799 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 208 (of 213)
+2015-06-10 19:14:41,267 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 209 (of 213)
+2015-06-10 19:14:42,795 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 210 (of 213)
+2015-06-10 19:14:44,280 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 211 (of 213)
+2015-06-10 19:14:45,786 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 212 (of 213)
+2015-06-10 19:14:47,288 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 213 (of 213)
+2015-06-10 19:14:48,782 - hybseldesign.coverage_analysis [INFO] Computing bases covered across target genomes
+2015-06-10 19:14:49,020 - hybseldesign.coverage_analysis [INFO] Computing average coverage across target genomes
+2015-06-10 19:14:49,166 - hybseldesign.coverage_analysis [INFO] Computing sliding coverage across target genomes
+NUMBER OF PROBES: 1882
+
+Genome                               Num bases covered Average coverage/depth
+                                        [over unambig]         [over unambig]
+---------------------------- ------------------------- ----------------------
+chikungunya, genome 0        11829 (100.00%) [100.00%]            3.23 [3.23]
+chikungunya, genome 0 (rc)   11829 (100.00%) [100.00%]            3.23 [3.23]
+chikungunya, genome 1        11805 (100.00%) [100.08%]            3.10 [3.10]
+chikungunya, genome 1 (rc)   11805 (100.00%) [100.08%]            3.10 [3.10]
+chikungunya, genome 2        11979 (100.00%) [100.00%]            2.23 [2.23]
+chikungunya, genome 2 (rc)   11979 (100.00%) [100.00%]            2.23 [2.23]
+chikungunya, genome 3        12017 (100.00%) [100.00%]            2.16 [2.16]
+chikungunya, genome 3 (rc)   12017 (100.00%) [100.00%]            2.16 [2.16]
+chikungunya, genome 4        11733 (100.00%) [100.00%]            2.84 [2.84]
+chikungunya, genome 4 (rc)   11733 (100.00%) [100.00%]            2.84 [2.84]
+chikungunya, genome 5        11733 (100.00%) [100.00%]            2.78 [2.78]
+chikungunya, genome 5 (rc)   11733 (100.00%) [100.00%]            2.78 [2.78]
+chikungunya, genome 6        11733 (100.00%) [100.00%]            2.80 [2.80]
+chikungunya, genome 6 (rc)   11733 (100.00%) [100.00%]            2.80 [2.80]
+chikungunya, genome 7        11811 (100.00%) [100.00%]            3.02 [3.02]
+chikungunya, genome 7 (rc)   11811 (100.00%) [100.00%]            3.02 [3.02]
+chikungunya, genome 8        11774 (100.00%) [100.00%]            3.05 [3.05]
+chikungunya, genome 8 (rc)   11774 (100.00%) [100.00%]            3.05 [3.05]
+chikungunya, genome 9        11837 (100.00%) [100.00%]            2.21 [2.21]
+chikungunya, genome 9 (rc)   11837 (100.00%) [100.00%]            2.21 [2.21]
+chikungunya, genome 10       11837 (100.00%) [100.00%]            2.22 [2.22]
+chikungunya, genome 10 (rc)  11837 (100.00%) [100.00%]            2.22 [2.22]
+chikungunya, genome 11       11837 (100.00%) [100.00%]            2.22 [2.22]
+chikungunya, genome 11 (rc)  11837 (100.00%) [100.00%]            2.22 [2.22]
+chikungunya, genome 12       11837 (100.00%) [100.00%]            2.21 [2.21]
+chikungunya, genome 12 (rc)  11837 (100.00%) [100.00%]            2.21 [2.21]
+chikungunya, genome 13       11826 (100.00%) [100.00%]            2.76 [2.76]
+chikungunya, genome 13 (rc)  11826 (100.00%) [100.00%]            2.76 [2.76]
+chikungunya, genome 14       11754 (100.00%) [100.00%]            2.67 [2.67]
+chikungunya, genome 14 (rc)  11754 (100.00%) [100.00%]            2.67 [2.67]
+chikungunya, genome 15       11753 (100.00%) [100.01%]            2.82 [2.82]
+chikungunya, genome 15 (rc)  11753 (100.00%) [100.01%]            2.82 [2.82]
+chikungunya, genome 16       11823 (100.00%) [100.03%]            2.67 [2.67]
+chikungunya, genome 16 (rc)  11823 (100.00%) [100.03%]            2.67 [2.67]
+chikungunya, genome 17       11817 (100.00%) [100.00%]            1.23 [1.23]
+chikungunya, genome 17 (rc)  11817 (100.00%) [100.00%]            1.23 [1.23]
+chikungunya, genome 18       11860 (100.00%) [100.00%]            1.24 [1.24]
+chikungunya, genome 18 (rc)  11860 (100.00%) [100.00%]            1.24 [1.24]
+chikungunya, genome 19       11823 (100.00%) [100.00%]            1.25 [1.25]
+chikungunya, genome 19 (rc)  11823 (100.00%) [100.00%]            1.25 [1.25]
+chikungunya, genome 20        11831 (99.99%) [100.00%]            1.24 [1.24]
+chikungunya, genome 20 (rc)    11830 (99.98%) [99.99%]            1.24 [1.24]
+chikungunya, genome 21         11820 (99.97%) [99.98%]            1.26 [1.26]
+chikungunya, genome 21 (rc)    11820 (99.97%) [99.98%]            1.26 [1.26]
+chikungunya, genome 22         11820 (99.97%) [99.98%]            1.24 [1.24]
+chikungunya, genome 22 (rc)   11822 (99.99%) [100.00%]            1.24 [1.24]
+chikungunya, genome 23       11939 (100.00%) [100.02%]            2.41 [2.41]
+chikungunya, genome 23 (rc)  11939 (100.00%) [100.02%]            2.41 [2.41]
+chikungunya, genome 24       11976 (100.00%) [100.00%]            2.37 [2.37]
+chikungunya, genome 24 (rc)  11976 (100.00%) [100.00%]            2.37 [2.37]
+chikungunya, genome 25       11774 (100.00%) [100.00%]            2.92 [2.92]
+chikungunya, genome 25 (rc)  11774 (100.00%) [100.00%]            2.92 [2.92]
+chikungunya, genome 26       11775 (100.00%) [100.00%]            2.89 [2.89]
+chikungunya, genome 26 (rc)  11775 (100.00%) [100.00%]            2.89 [2.89]
+chikungunya, genome 27       11986 (100.00%) [100.01%]            2.57 [2.57]
+chikungunya, genome 27 (rc)  11986 (100.00%) [100.01%]            2.57 [2.57]
+chikungunya, genome 28       11753 (100.00%) [100.01%]            2.54 [2.54]
+chikungunya, genome 28 (rc)  11753 (100.00%) [100.01%]            2.54 [2.54]
+chikungunya, genome 29       11968 (100.00%) [100.02%]            2.43 [2.43]
+chikungunya, genome 29 (rc)  11968 (100.00%) [100.02%]            2.43 [2.43]
+chikungunya, genome 30       11843 (100.00%) [100.01%]            1.26 [1.26]
+chikungunya, genome 30 (rc)  11843 (100.00%) [100.01%]            1.26 [1.26]
+chikungunya, genome 31       11768 (100.00%) [100.00%]            2.56 [2.56]
+chikungunya, genome 31 (rc)  11768 (100.00%) [100.00%]            2.56 [2.56]
+chikungunya, genome 32         11681 (99.96%) [99.98%]            2.60 [2.60]
+chikungunya, genome 32 (rc)   11685 (99.99%) [100.02%]            2.60 [2.60]
+chikungunya, genome 33         11844 (99.97%) [99.98%]            1.25 [1.25]
+chikungunya, genome 33 (rc)  11847 (100.00%) [100.01%]            1.25 [1.25]
+chikungunya, genome 34       11897 (100.00%) [100.00%]            2.35 [2.35]
+chikungunya, genome 34 (rc)  11897 (100.00%) [100.00%]            2.35 [2.35]
+chikungunya, genome 35       11975 (100.00%) [100.01%]            2.07 [2.07]
+chikungunya, genome 35 (rc)  11975 (100.00%) [100.01%]            2.07 [2.07]
+chikungunya, genome 36       11766 (100.00%) [100.00%]            3.03 [3.03]
+chikungunya, genome 36 (rc)  11766 (100.00%) [100.00%]            3.03 [3.03]
+chikungunya, genome 37       11897 (100.00%) [100.01%]            2.38 [2.38]
+chikungunya, genome 37 (rc)  11897 (100.00%) [100.01%]            2.38 [2.38]
+chikungunya, genome 38       11758 (100.00%) [100.00%]            3.04 [3.04]
+chikungunya, genome 38 (rc)  11758 (100.00%) [100.00%]            3.04 [3.04]
+chikungunya, genome 39         11829 (99.97%) [99.97%]            1.27 [1.27]
+chikungunya, genome 39 (rc)  11832 (100.00%) [100.00%]            1.27 [1.27]
+chikungunya, genome 40       11979 (100.00%) [100.00%]            2.40 [2.40]
+chikungunya, genome 40 (rc)  11979 (100.00%) [100.00%]            2.40 [2.40]
+chikungunya, genome 41       11979 (100.00%) [100.00%]            2.21 [2.21]
+chikungunya, genome 41 (rc)  11979 (100.00%) [100.00%]            2.21 [2.21]
+chikungunya, genome 42        11692 (99.99%) [100.00%]            2.62 [2.62]
+chikungunya, genome 42 (rc)  11693 (100.00%) [100.01%]            2.62 [2.62]
+chikungunya, genome 43       11774 (100.00%) [100.01%]            3.09 [3.09]
+chikungunya, genome 43 (rc)  11774 (100.00%) [100.01%]            3.09 [3.09]
+chikungunya, genome 44         11765 (99.98%) [99.99%]            2.95 [2.95]
+chikungunya, genome 44 (rc)  11767 (100.00%) [100.01%]            2.95 [2.95]
+chikungunya, genome 45       11836 (100.00%) [100.00%]            2.70 [2.70]
+chikungunya, genome 45 (rc)  11836 (100.00%) [100.00%]            2.70 [2.70]
+chikungunya, genome 46       11992 (100.00%) [100.00%]            2.49 [2.49]
+chikungunya, genome 46 (rc)  11992 (100.00%) [100.00%]            2.49 [2.49]
+chikungunya, genome 47       11907 (100.00%) [100.00%]            2.40 [2.40]
+chikungunya, genome 47 (rc)  11907 (100.00%) [100.00%]            2.40 [2.40]
+chikungunya, genome 48       11855 (100.00%) [100.00%]            2.28 [2.28]
+chikungunya, genome 48 (rc)  11855 (100.00%) [100.00%]            2.28 [2.28]
+chikungunya, genome 49       11988 (100.00%) [100.00%]            2.10 [2.10]
+chikungunya, genome 49 (rc)  11988 (100.00%) [100.00%]            2.10 [2.10]
+chikungunya, genome 50        11967 (99.99%) [100.02%]            2.18 [2.18]
+chikungunya, genome 50 (rc)   11967 (99.99%) [100.02%]            2.18 [2.18]
+chikungunya, genome 51       11844 (100.00%) [100.00%]            1.26 [1.26]
+chikungunya, genome 51 (rc)  11844 (100.00%) [100.00%]            1.26 [1.26]
+chikungunya, genome 52         11841 (99.97%) [99.98%]            1.29 [1.29]
+chikungunya, genome 52 (rc)  11844 (100.00%) [100.01%]            1.29 [1.29]
+chikungunya, genome 53       11772 (100.00%) [100.02%]            2.87 [2.87]
+chikungunya, genome 53 (rc)  11772 (100.00%) [100.02%]            2.87 [2.87]
+chikungunya, genome 54       11812 (100.00%) [100.00%]            2.77 [2.77]
+chikungunya, genome 54 (rc)  11812 (100.00%) [100.00%]            2.77 [2.77]
+chikungunya, genome 55       11811 (100.00%) [100.00%]            3.10 [3.10]
+chikungunya, genome 55 (rc)  11811 (100.00%) [100.00%]            3.10 [3.10]
+chikungunya, genome 56       11811 (100.00%) [100.00%]            3.11 [3.11]
+chikungunya, genome 56 (rc)  11811 (100.00%) [100.00%]            3.11 [3.11]
+chikungunya, genome 57       11811 (100.00%) [100.00%]            3.11 [3.11]
+chikungunya, genome 57 (rc)  11811 (100.00%) [100.00%]            3.11 [3.11]
+chikungunya, genome 58       11670 (100.00%) [100.00%]            2.73 [2.73]
+chikungunya, genome 58 (rc)  11670 (100.00%) [100.00%]            2.73 [2.73]
+chikungunya, genome 59       11752 (100.00%) [100.00%]            2.91 [2.91]
+chikungunya, genome 59 (rc)  11752 (100.00%) [100.00%]            2.91 [2.91]
+chikungunya, genome 60       11826 (100.00%) [100.00%]            2.76 [2.76]
+chikungunya, genome 60 (rc)  11826 (100.00%) [100.00%]            2.76 [2.76]
+chikungunya, genome 61       11719 (100.00%) [100.00%]            2.90 [2.90]
+chikungunya, genome 61 (rc)  11719 (100.00%) [100.00%]            2.90 [2.90]
+chikungunya, genome 62       11800 (100.00%) [100.00%]            3.13 [3.13]
+chikungunya, genome 62 (rc)  11800 (100.00%) [100.00%]            3.13 [3.13]
+chikungunya, genome 63       11717 (100.00%) [100.00%]            2.84 [2.84]
+chikungunya, genome 63 (rc)  11717 (100.00%) [100.00%]            2.84 [2.84]
+chikungunya, genome 64       11790 (100.00%) [100.00%]            3.02 [3.02]
+chikungunya, genome 64 (rc)  11790 (100.00%) [100.00%]            3.02 [3.02]
+chikungunya, genome 65       11729 (100.00%) [100.00%]            2.87 [2.87]
+chikungunya, genome 65 (rc)  11729 (100.00%) [100.00%]            2.87 [2.87]
+chikungunya, genome 66       11719 (100.00%) [100.00%]            2.87 [2.87]
+chikungunya, genome 66 (rc)  11719 (100.00%) [100.00%]            2.87 [2.87]
+chikungunya, genome 67       11714 (100.00%) [100.00%]            2.85 [2.85]
+chikungunya, genome 67 (rc)  11714 (100.00%) [100.00%]            2.85 [2.85]
+chikungunya, genome 68       11729 (100.00%) [100.00%]            2.88 [2.88]
+chikungunya, genome 68 (rc)  11729 (100.00%) [100.00%]            2.88 [2.88]
+chikungunya, genome 69       11722 (100.00%) [100.00%]            2.86 [2.86]
+chikungunya, genome 69 (rc)  11722 (100.00%) [100.00%]            2.86 [2.86]
+chikungunya, genome 70       11722 (100.00%) [100.00%]            2.86 [2.86]
+chikungunya, genome 70 (rc)  11722 (100.00%) [100.00%]            2.86 [2.86]
+chikungunya, genome 71       11722 (100.00%) [100.00%]            2.84 [2.84]
+chikungunya, genome 71 (rc)  11722 (100.00%) [100.00%]            2.84 [2.84]
+chikungunya, genome 72       11717 (100.00%) [100.00%]            2.86 [2.86]
+chikungunya, genome 72 (rc)  11717 (100.00%) [100.00%]            2.86 [2.86]
+chikungunya, genome 73       11717 (100.00%) [100.00%]            2.88 [2.88]
+chikungunya, genome 73 (rc)  11717 (100.00%) [100.00%]            2.88 [2.88]
+chikungunya, genome 74       11717 (100.00%) [100.00%]            2.81 [2.81]
+chikungunya, genome 74 (rc)  11717 (100.00%) [100.00%]            2.81 [2.81]
+chikungunya, genome 75       11764 (100.00%) [100.00%]            2.96 [2.96]
+chikungunya, genome 75 (rc)  11764 (100.00%) [100.00%]            2.96 [2.96]
+chikungunya, genome 76       11764 (100.00%) [100.00%]            2.96 [2.96]
+chikungunya, genome 76 (rc)  11764 (100.00%) [100.00%]            2.96 [2.96]
+chikungunya, genome 77       11764 (100.00%) [100.00%]            2.94 [2.94]
+chikungunya, genome 77 (rc)  11764 (100.00%) [100.00%]            2.94 [2.94]
+chikungunya, genome 78       11764 (100.00%) [100.00%]            2.99 [2.99]
+chikungunya, genome 78 (rc)  11764 (100.00%) [100.00%]            2.99 [2.99]
+chikungunya, genome 79       11764 (100.00%) [100.00%]            3.08 [3.08]
+chikungunya, genome 79 (rc)  11764 (100.00%) [100.00%]            3.08 [3.08]
+chikungunya, genome 80       11764 (100.00%) [100.00%]            2.98 [2.98]
+chikungunya, genome 80 (rc)  11764 (100.00%) [100.00%]            2.98 [2.98]
+chikungunya, genome 81       11812 (100.00%) [100.00%]            3.15 [3.15]
+chikungunya, genome 81 (rc)  11812 (100.00%) [100.00%]            3.15 [3.15]
+chikungunya, genome 82       11812 (100.00%) [100.00%]            3.13 [3.13]
+chikungunya, genome 82 (rc)  11812 (100.00%) [100.00%]            3.13 [3.13]
+chikungunya, genome 83       11812 (100.00%) [100.00%]            3.20 [3.20]
+chikungunya, genome 83 (rc)  11812 (100.00%) [100.00%]            3.20 [3.20]
+chikungunya, genome 84       11812 (100.00%) [100.00%]            3.17 [3.17]
+chikungunya, genome 84 (rc)  11812 (100.00%) [100.00%]            3.17 [3.17]
+chikungunya, genome 85       11813 (100.00%) [100.00%]            3.14 [3.14]
+chikungunya, genome 85 (rc)  11813 (100.00%) [100.00%]            3.14 [3.14]
+chikungunya, genome 86       11807 (100.00%) [100.00%]            3.14 [3.14]
+chikungunya, genome 86 (rc)  11807 (100.00%) [100.00%]            3.14 [3.14]
+chikungunya, genome 87       11812 (100.00%) [100.00%]            3.15 [3.15]
+chikungunya, genome 87 (rc)  11812 (100.00%) [100.00%]            3.15 [3.15]
+chikungunya, genome 88       11812 (100.00%) [100.00%]            3.15 [3.15]
+chikungunya, genome 88 (rc)  11812 (100.00%) [100.00%]            3.15 [3.15]
+chikungunya, genome 89       11774 (100.00%) [100.00%]            3.08 [3.08]
+chikungunya, genome 89 (rc)  11774 (100.00%) [100.00%]            3.08 [3.08]
+chikungunya, genome 90       12041 (100.00%) [100.02%]            2.13 [2.13]
+chikungunya, genome 90 (rc)  12041 (100.00%) [100.02%]            2.13 [2.13]
+chikungunya, genome 91       12042 (100.00%) [100.01%]            2.13 [2.13]
+chikungunya, genome 91 (rc)  12042 (100.00%) [100.01%]            2.13 [2.13]
+chikungunya, genome 92       11726 (100.00%) [100.00%]            2.26 [2.26]
+chikungunya, genome 92 (rc)  11726 (100.00%) [100.00%]            2.26 [2.26]
+chikungunya, genome 93       11561 (100.00%) [100.00%]            2.29 [2.29]
+chikungunya, genome 93 (rc)    11557 (99.97%) [99.97%]            2.29 [2.29]
+chikungunya, genome 94       11562 (100.00%) [100.00%]            2.74 [2.74]
+chikungunya, genome 94 (rc)  11562 (100.00%) [100.00%]            2.74 [2.74]
+chikungunya, genome 95       11562 (100.00%) [100.00%]            2.74 [2.74]
+chikungunya, genome 95 (rc)  11562 (100.00%) [100.00%]            2.74 [2.74]
+chikungunya, genome 96       11791 (100.00%) [100.00%]            3.09 [3.09]
+chikungunya, genome 96 (rc)  11791 (100.00%) [100.00%]            3.09 [3.09]
+chikungunya, genome 97       11562 (100.00%) [100.00%]            2.81 [2.81]
+chikungunya, genome 97 (rc)  11562 (100.00%) [100.00%]            2.81 [2.81]
+chikungunya, genome 98       11562 (100.00%) [100.02%]            2.78 [2.78]
+chikungunya, genome 98 (rc)  11562 (100.00%) [100.02%]            2.78 [2.78]
+chikungunya, genome 99       12011 (100.00%) [100.00%]            2.19 [2.19]
+chikungunya, genome 99 (rc)    12010 (99.99%) [99.99%]            2.19 [2.19]
+chikungunya, genome 100      12014 (100.00%) [100.00%]            2.12 [2.12]
+chikungunya, genome 100 (rc) 12014 (100.00%) [100.00%]            2.12 [2.12]
+chikungunya, genome 101      12014 (100.00%) [100.00%]            2.15 [2.15]
+chikungunya, genome 101 (rc) 12014 (100.00%) [100.00%]            2.15 [2.15]
+chikungunya, genome 102      12530 (100.00%) [100.02%]            2.83 [2.83]
+chikungunya, genome 102 (rc) 12530 (100.00%) [100.02%]            2.83 [2.83]
+chikungunya, genome 103      11730 (100.00%) [100.00%]            2.79 [2.79]
+chikungunya, genome 103 (rc) 11730 (100.00%) [100.00%]            2.79 [2.79]
+chikungunya, genome 104      11722 (100.00%) [100.00%]            2.73 [2.73]
+chikungunya, genome 104 (rc) 11722 (100.00%) [100.00%]            2.73 [2.73]
+chikungunya, genome 105      11695 (100.00%) [100.00%]            2.69 [2.69]
+chikungunya, genome 105 (rc) 11695 (100.00%) [100.00%]            2.69 [2.69]
+chikungunya, genome 106      12034 (100.00%) [100.00%]            3.26 [3.26]
+chikungunya, genome 106 (rc) 12034 (100.00%) [100.00%]            3.26 [3.26]
+chikungunya, genome 107      11851 (100.00%) [100.00%]            3.28 [3.28]
+chikungunya, genome 107 (rc) 11851 (100.00%) [100.00%]            3.28 [3.28]
+chikungunya, genome 108      12771 (100.00%) [100.00%]            3.13 [3.13]
+chikungunya, genome 108 (rc) 12771 (100.00%) [100.00%]            3.13 [3.13]
+chikungunya, genome 109      11777 (100.00%) [100.00%]            2.91 [2.91]
+chikungunya, genome 109 (rc) 11777 (100.00%) [100.00%]            2.91 [2.91]
+chikungunya, genome 110      11776 (100.00%) [100.02%]            2.97 [2.97]
+chikungunya, genome 110 (rc) 11776 (100.00%) [100.02%]            2.97 [2.97]
+chikungunya, genome 111      11778 (100.00%) [100.02%]            2.83 [2.83]
+chikungunya, genome 111 (rc) 11778 (100.00%) [100.02%]            2.83 [2.83]
+chikungunya, genome 112      11779 (100.00%) [100.01%]            2.93 [2.93]
+chikungunya, genome 112 (rc) 11779 (100.00%) [100.01%]            2.93 [2.93]
+chikungunya, genome 113      11789 (100.00%) [100.01%]            3.01 [3.01]
+chikungunya, genome 113 (rc) 11789 (100.00%) [100.01%]            3.01 [3.01]
+chikungunya, genome 114      11784 (100.00%) [100.00%]            2.99 [2.99]
+chikungunya, genome 114 (rc) 11784 (100.00%) [100.00%]            2.99 [2.99]
+chikungunya, genome 115        11762 (99.98%) [99.98%]            3.00 [3.00]
+chikungunya, genome 115 (rc)   11760 (99.97%) [99.97%]            3.00 [3.00]
+chikungunya, genome 116        11763 (99.99%) [99.99%]            2.98 [2.98]
+chikungunya, genome 116 (rc)   11761 (99.97%) [99.97%]            2.98 [2.98]
+chikungunya, genome 117        11763 (99.99%) [99.99%]            3.01 [3.01]
+chikungunya, genome 117 (rc)   11761 (99.97%) [99.97%]            3.01 [3.01]
+chikungunya, genome 118      11836 (100.00%) [100.00%]            3.17 [3.17]
+chikungunya, genome 118 (rc) 11836 (100.00%) [100.00%]            3.17 [3.17]
+chikungunya, genome 119      11612 (100.00%) [100.00%]            2.16 [2.16]
+chikungunya, genome 119 (rc) 11612 (100.00%) [100.00%]            2.16 [2.16]
+chikungunya, genome 120      11745 (100.00%) [100.00%]            2.96 [2.96]
+chikungunya, genome 120 (rc) 11745 (100.00%) [100.00%]            2.96 [2.96]
+chikungunya, genome 121      11818 (100.00%) [100.00%]            3.12 [3.12]
+chikungunya, genome 121 (rc) 11818 (100.00%) [100.00%]            3.12 [3.12]
+chikungunya, genome 122      11612 (100.00%) [100.00%]            2.14 [2.14]
+chikungunya, genome 122 (rc) 11612 (100.00%) [100.00%]            2.14 [2.14]
+chikungunya, genome 123      11724 (100.00%) [100.00%]            2.46 [2.46]
+chikungunya, genome 123 (rc) 11724 (100.00%) [100.00%]            2.46 [2.46]
+chikungunya, genome 124      11838 (100.00%) [100.00%]            3.23 [3.23]
+chikungunya, genome 124 (rc) 11838 (100.00%) [100.00%]            3.23 [3.23]
+chikungunya, genome 125      11836 (100.00%) [100.00%]            3.27 [3.27]
+chikungunya, genome 125 (rc) 11836 (100.00%) [100.00%]            3.27 [3.27]
+chikungunya, genome 126      11836 (100.00%) [100.00%]            3.24 [3.24]
+chikungunya, genome 126 (rc) 11836 (100.00%) [100.00%]            3.24 [3.24]
+chikungunya, genome 127      11836 (100.00%) [100.02%]            3.24 [3.24]
+chikungunya, genome 127 (rc) 11836 (100.00%) [100.02%]            3.24 [3.24]
+chikungunya, genome 128      11836 (100.00%) [100.00%]            3.26 [3.26]
+chikungunya, genome 128 (rc) 11836 (100.00%) [100.00%]            3.26 [3.26]
+chikungunya, genome 129      11836 (100.00%) [100.00%]            3.27 [3.27]
+chikungunya, genome 129 (rc) 11836 (100.00%) [100.00%]            3.27 [3.27]
+chikungunya, genome 130      11881 (100.00%) [100.00%]            1.28 [1.28]
+chikungunya, genome 130 (rc)   11880 (99.99%) [99.99%]            1.28 [1.28]
+chikungunya, genome 131      11687 (100.00%) [100.00%]            2.75 [2.75]
+chikungunya, genome 131 (rc) 11687 (100.00%) [100.00%]            2.75 [2.75]
+chikungunya, genome 132      11677 (100.00%) [100.00%]            2.72 [2.72]
+chikungunya, genome 132 (rc) 11677 (100.00%) [100.00%]            2.72 [2.72]
+chikungunya, genome 133      11793 (100.00%) [100.00%]            3.06 [3.06]
+chikungunya, genome 133 (rc) 11793 (100.00%) [100.00%]            3.06 [3.06]
+chikungunya, genome 134      11687 (100.00%) [100.00%]            2.74 [2.74]
+chikungunya, genome 134 (rc) 11687 (100.00%) [100.00%]            2.74 [2.74]
+chikungunya, genome 135      11717 (100.00%) [100.00%]            2.85 [2.85]
+chikungunya, genome 135 (rc) 11717 (100.00%) [100.00%]            2.85 [2.85]
+chikungunya, genome 136      11716 (100.00%) [100.00%]            2.82 [2.82]
+chikungunya, genome 136 (rc) 11716 (100.00%) [100.00%]            2.82 [2.82]
+chikungunya, genome 137      11710 (100.00%) [100.00%]            2.76 [2.76]
+chikungunya, genome 137 (rc) 11710 (100.00%) [100.00%]            2.76 [2.76]
+chikungunya, genome 138      11696 (100.00%) [100.00%]            2.79 [2.79]
+chikungunya, genome 138 (rc) 11696 (100.00%) [100.00%]            2.79 [2.79]
+chikungunya, genome 139      11717 (100.00%) [100.00%]            2.82 [2.82]
+chikungunya, genome 139 (rc) 11717 (100.00%) [100.00%]            2.82 [2.82]
+chikungunya, genome 140      11714 (100.00%) [100.00%]            2.74 [2.74]
+chikungunya, genome 140 (rc) 11714 (100.00%) [100.00%]            2.74 [2.74]
+chikungunya, genome 141      11710 (100.00%) [100.00%]            2.78 [2.78]
+chikungunya, genome 141 (rc) 11710 (100.00%) [100.00%]            2.78 [2.78]
+chikungunya, genome 142      11726 (100.00%) [100.00%]            2.93 [2.93]
+chikungunya, genome 142 (rc) 11726 (100.00%) [100.00%]            2.93 [2.93]
+chikungunya, genome 143      11693 (100.00%) [100.00%]            2.71 [2.71]
+chikungunya, genome 143 (rc) 11693 (100.00%) [100.00%]            2.71 [2.71]
+chikungunya, genome 144      11716 (100.00%) [100.00%]            2.88 [2.88]
+chikungunya, genome 144 (rc) 11716 (100.00%) [100.00%]            2.88 [2.88]
+chikungunya, genome 145      11722 (100.00%) [100.00%]            2.88 [2.88]
+chikungunya, genome 145 (rc) 11722 (100.00%) [100.00%]            2.88 [2.88]
+chikungunya, genome 146      11811 (100.00%) [100.00%]            3.09 [3.09]
+chikungunya, genome 146 (rc) 11811 (100.00%) [100.00%]            3.09 [3.09]
+chikungunya, genome 147      11811 (100.00%) [100.00%]            3.09 [3.09]
+chikungunya, genome 147 (rc) 11811 (100.00%) [100.00%]            3.09 [3.09]
+chikungunya, genome 148        12011 (99.98%) [99.98%]            2.25 [2.25]
+chikungunya, genome 148 (rc) 12013 (100.00%) [100.00%]            2.25 [2.25]
+chikungunya, genome 149      11811 (100.00%) [100.00%]            3.20 [3.20]
+chikungunya, genome 149 (rc) 11811 (100.00%) [100.00%]            3.20 [3.20]
+chikungunya, genome 150      12036 (100.00%) [100.02%]            2.59 [2.59]
+chikungunya, genome 150 (rc) 12036 (100.00%) [100.02%]            2.59 [2.59]
+chikungunya, genome 151      12036 (100.00%) [100.03%]            2.62 [2.62]
+chikungunya, genome 151 (rc) 12036 (100.00%) [100.03%]            2.62 [2.62]
+chikungunya, genome 152      11832 (100.00%) [100.00%]            3.17 [3.17]
+chikungunya, genome 152 (rc) 11832 (100.00%) [100.00%]            3.17 [3.17]
+chikungunya, genome 153      12036 (100.00%) [100.01%]            2.59 [2.59]
+chikungunya, genome 153 (rc) 12036 (100.00%) [100.01%]            2.59 [2.59]
+chikungunya, genome 154      11788 (100.00%) [100.00%]            3.07 [3.07]
+chikungunya, genome 154 (rc) 11788 (100.00%) [100.00%]            3.07 [3.07]
+chikungunya, genome 155      11810 (100.00%) [100.00%]            2.96 [2.96]
+chikungunya, genome 155 (rc) 11810 (100.00%) [100.00%]            2.96 [2.96]
+chikungunya, genome 156      11772 (100.00%) [100.00%]            3.20 [3.20]
+chikungunya, genome 156 (rc) 11772 (100.00%) [100.00%]            3.20 [3.20]
+chikungunya, genome 157      11806 (100.00%) [100.00%]            3.17 [3.17]
+chikungunya, genome 157 (rc) 11806 (100.00%) [100.00%]            3.17 [3.17]
+chikungunya, genome 158      11805 (100.00%) [100.00%]            2.11 [2.11]
+chikungunya, genome 158 (rc) 11805 (100.00%) [100.00%]            2.11 [2.11]
+chikungunya, genome 159      11784 (100.00%) [100.00%]            2.39 [2.39]
+chikungunya, genome 159 (rc) 11784 (100.00%) [100.00%]            2.39 [2.39]
+chikungunya, genome 160      11814 (100.00%) [100.00%]            2.94 [2.94]
+chikungunya, genome 160 (rc) 11814 (100.00%) [100.00%]            2.94 [2.94]
+chikungunya, genome 161      11750 (100.00%) [100.00%]            3.07 [3.07]
+chikungunya, genome 161 (rc) 11750 (100.00%) [100.00%]            3.07 [3.07]
+chikungunya, genome 162      11767 (100.00%) [100.00%]            3.13 [3.13]
+chikungunya, genome 162 (rc) 11767 (100.00%) [100.00%]            3.13 [3.13]
+chikungunya, genome 163      11800 (100.00%) [100.00%]            3.17 [3.17]
+chikungunya, genome 163 (rc) 11800 (100.00%) [100.00%]            3.17 [3.17]
+chikungunya, genome 164        11728 (99.99%) [99.99%]            2.95 [2.95]
+chikungunya, genome 164 (rc)   11728 (99.99%) [99.99%]            2.95 [2.95]
+chikungunya, genome 165      11779 (100.00%) [100.00%]            3.07 [3.07]
+chikungunya, genome 165 (rc) 11779 (100.00%) [100.00%]            3.07 [3.07]
+chikungunya, genome 166      11840 (100.00%) [100.03%]            3.27 [3.27]
+chikungunya, genome 166 (rc) 11840 (100.00%) [100.03%]            3.27 [3.27]
+chikungunya, genome 167      11567 (100.00%) [100.00%]            2.88 [2.88]
+chikungunya, genome 167 (rc) 11567 (100.00%) [100.00%]            2.88 [2.88]
+chikungunya, genome 168      11567 (100.00%) [100.00%]            2.70 [2.70]
+chikungunya, genome 168 (rc) 11567 (100.00%) [100.00%]            2.70 [2.70]
+chikungunya, genome 169      11621 (100.00%) [100.00%]            2.23 [2.23]
+chikungunya, genome 169 (rc) 11621 (100.00%) [100.00%]            2.23 [2.23]
+chikungunya, genome 170      11559 (100.00%) [100.00%]            2.70 [2.70]
+chikungunya, genome 170 (rc) 11559 (100.00%) [100.00%]            2.70 [2.70]
+chikungunya, genome 171      11559 (100.00%) [100.00%]            2.70 [2.70]
+chikungunya, genome 171 (rc) 11559 (100.00%) [100.00%]            2.70 [2.70]
+chikungunya, genome 172      12028 (100.00%) [100.00%]            2.24 [2.24]
+chikungunya, genome 172 (rc) 12028 (100.00%) [100.00%]            2.24 [2.24]
+chikungunya, genome 173        12025 (99.98%) [99.98%]            2.23 [2.23]
+chikungunya, genome 173 (rc)   12027 (99.99%) [99.99%]            2.23 [2.23]
+chikungunya, genome 174      12028 (100.00%) [100.00%]            2.23 [2.23]
+chikungunya, genome 174 (rc) 12028 (100.00%) [100.00%]            2.23 [2.23]
+chikungunya, genome 175      12028 (100.00%) [100.00%]            2.27 [2.27]
+chikungunya, genome 175 (rc) 12028 (100.00%) [100.00%]            2.27 [2.27]
+chikungunya, genome 176      11829 (100.00%) [100.00%]            3.21 [3.21]
+chikungunya, genome 176 (rc) 11829 (100.00%) [100.00%]            3.21 [3.21]
+chikungunya, genome 177      11829 (100.00%) [100.00%]            3.25 [3.25]
+chikungunya, genome 177 (rc) 11829 (100.00%) [100.00%]            3.25 [3.25]
+chikungunya, genome 178      11778 (100.00%) [100.00%]            3.04 [3.04]
+chikungunya, genome 178 (rc) 11778 (100.00%) [100.00%]            3.04 [3.04]
+chikungunya, genome 179      11933 (100.00%) [100.01%]            1.99 [1.99]
+chikungunya, genome 179 (rc) 11933 (100.00%) [100.01%]            1.99 [1.99]
+chikungunya, genome 180      11659 (100.00%) [100.03%]            2.84 [2.84]
+chikungunya, genome 180 (rc) 11659 (100.00%) [100.03%]            2.84 [2.84]
+chikungunya, genome 181       11199 (96.53%) [100.02%]            2.61 [2.70]
+chikungunya, genome 181 (rc)  11199 (96.53%) [100.02%]            2.61 [2.70]
+chikungunya, genome 182      11601 (100.00%) [100.00%]            2.72 [2.72]
+chikungunya, genome 182 (rc) 11601 (100.00%) [100.00%]            2.72 [2.72]
+chikungunya, genome 183      11601 (100.00%) [100.00%]            2.70 [2.70]
+chikungunya, genome 183 (rc) 11601 (100.00%) [100.00%]            2.70 [2.70]
+chikungunya, genome 184      11601 (100.00%) [100.00%]            2.72 [2.72]
+chikungunya, genome 184 (rc) 11601 (100.00%) [100.00%]            2.72 [2.72]
+chikungunya, genome 185      11598 (100.00%) [100.00%]            2.68 [2.68]
+chikungunya, genome 185 (rc) 11598 (100.00%) [100.00%]            2.68 [2.68]
+chikungunya, genome 186      11601 (100.00%) [100.00%]            2.70 [2.70]
+chikungunya, genome 186 (rc) 11601 (100.00%) [100.00%]            2.70 [2.70]
+chikungunya, genome 187      11881 (100.00%) [100.00%]            1.28 [1.28]
+chikungunya, genome 187 (rc)   11880 (99.99%) [99.99%]            1.28 [1.28]
+chikungunya, genome 188      12036 (100.00%) [100.03%]            2.62 [2.62]
+chikungunya, genome 188 (rc) 12036 (100.00%) [100.03%]            2.62 [2.62]
+chikungunya, genome 189      11810 (100.00%) [100.00%]            2.96 [2.96]
+chikungunya, genome 189 (rc) 11810 (100.00%) [100.00%]            2.96 [2.96]
+chikungunya, genome 190      11806 (100.00%) [100.00%]            3.17 [3.17]
+chikungunya, genome 190 (rc) 11806 (100.00%) [100.00%]            3.17 [3.17]
+chikungunya, genome 191      11558 (100.00%) [100.00%]            2.79 [2.79]
+chikungunya, genome 191 (rc) 11558 (100.00%) [100.00%]            2.79 [2.79]
+chikungunya, genome 192      11814 (100.00%) [100.00%]            2.94 [2.94]
+chikungunya, genome 192 (rc) 11814 (100.00%) [100.00%]            2.94 [2.94]
+chikungunya, genome 193      11779 (100.00%) [100.00%]            3.07 [3.07]
+chikungunya, genome 193 (rc) 11779 (100.00%) [100.00%]            3.07 [3.07]
+chikungunya, genome 194        11728 (99.99%) [99.99%]            2.95 [2.95]
+chikungunya, genome 194 (rc)   11728 (99.99%) [99.99%]            2.95 [2.95]
+chikungunya, genome 195      11800 (100.00%) [100.00%]            3.17 [3.17]
+chikungunya, genome 195 (rc) 11800 (100.00%) [100.00%]            3.17 [3.17]
+chikungunya, genome 196      11767 (100.00%) [100.00%]            3.13 [3.13]
+chikungunya, genome 196 (rc) 11767 (100.00%) [100.00%]            3.13 [3.13]
+chikungunya, genome 197      11750 (100.00%) [100.00%]            3.07 [3.07]
+chikungunya, genome 197 (rc) 11750 (100.00%) [100.00%]            3.07 [3.07]
+chikungunya, genome 198      11784 (100.00%) [100.00%]            2.39 [2.39]
+chikungunya, genome 198 (rc) 11784 (100.00%) [100.00%]            2.39 [2.39]
+chikungunya, genome 199      11805 (100.00%) [100.00%]            2.11 [2.11]
+chikungunya, genome 199 (rc) 11805 (100.00%) [100.00%]            2.11 [2.11]
+chikungunya, genome 200      11788 (100.00%) [100.00%]            3.07 [3.07]
+chikungunya, genome 200 (rc) 11788 (100.00%) [100.00%]            3.07 [3.07]
+chikungunya, genome 201        11762 (99.99%) [99.99%]            2.92 [2.92]
+chikungunya, genome 201 (rc) 11763 (100.00%) [100.00%]            2.92 [2.92]
+chikungunya, genome 202        11811 (99.99%) [99.99%]            3.17 [3.17]
+chikungunya, genome 202 (rc) 11812 (100.00%) [100.00%]            3.17 [3.17]
+chikungunya, genome 203      12028 (100.00%) [100.00%]            2.27 [2.27]
+chikungunya, genome 203 (rc) 12028 (100.00%) [100.00%]            2.27 [2.27]
+chikungunya, genome 204      12028 (100.00%) [100.00%]            2.23 [2.23]
+chikungunya, genome 204 (rc) 12028 (100.00%) [100.00%]            2.23 [2.23]
+chikungunya, genome 205        12025 (99.98%) [99.98%]            2.23 [2.23]
+chikungunya, genome 205 (rc)   12027 (99.99%) [99.99%]            2.23 [2.23]
+chikungunya, genome 206      12028 (100.00%) [100.00%]            2.24 [2.24]
+chikungunya, genome 206 (rc) 12028 (100.00%) [100.00%]            2.24 [2.24]
+chikungunya, genome 207        11789 (99.98%) [99.98%]            2.74 [2.74]
+chikungunya, genome 207 (rc)   11790 (99.99%) [99.99%]            2.74 [2.74]
+chikungunya, genome 208      11826 (100.00%) [100.00%]            2.76 [2.76]
+chikungunya, genome 208 (rc) 11826 (100.00%) [100.00%]            2.76 [2.76]
+chikungunya, genome 209      11772 (100.00%) [100.00%]            3.20 [3.20]
+chikungunya, genome 209 (rc) 11772 (100.00%) [100.00%]            3.20 [3.20]
+chikungunya, genome 210      12036 (100.00%) [100.01%]            2.59 [2.59]
+chikungunya, genome 210 (rc) 12036 (100.00%) [100.01%]            2.59 [2.59]
+chikungunya, genome 211      12036 (100.00%) [100.02%]            2.59 [2.59]
+chikungunya, genome 211 (rc) 12036 (100.00%) [100.02%]            2.59 [2.59]
+chikungunya, genome 212      11805 (100.00%) [100.08%]            3.10 [3.10]
+chikungunya, genome 212 (rc) 11805 (100.00%) [100.08%]            3.10 [3.10]
+

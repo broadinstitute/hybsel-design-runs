@@ -1,0 +1,364 @@
+Sender: LSF System <lsf@node1976>
+Subject: Job 549321: <python bin/make_probes.py --mismatches 2 --lcf_thres 100 --cover_extension 30 --dataset crimean_congo --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/crimean_congo/mismatches_2-coverextension_30.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/crimean_congo.fasta --verbose> in cluster <cromwell> Done
+
+Job <python bin/make_probes.py --mismatches 2 --lcf_thres 100 --cover_extension 30 --dataset crimean_congo --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/crimean_congo/mismatches_2-coverextension_30.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/crimean_congo.fasta --verbose> was submitted from host <node1748> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <node1976>, in queue <week>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Wed Jun 10 19:08:08 2015
+Results reported on Wed Jun 10 19:11:08 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes.py --mismatches 2 --lcf_thres 100 --cover_extension 30 --dataset crimean_congo --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/crimean_congo/mismatches_2-coverextension_30.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/crimean_congo.fasta --verbose
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               170.16 sec.
+    Max Memory :             153 MB
+    Average Memory :         138.31 MB
+    Total Requested Memory : 4296.00 MB
+    Delta Memory :           4143.00 MB
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Processes :          4
+    Max Threads :            5
+
+The output (if any) follows:
+
+2015-06-10 19:08:16,355 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/51d61b5a.fasta
+2015-06-10 19:08:16,410 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/5b20703f.fasta
+2015-06-10 19:08:16,462 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/051ff1bd.fasta
+2015-06-10 19:08:16,485 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/46c7af51.fasta
+2015-06-10 19:08:16,499 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/220fa4b2.fasta
+2015-06-10 19:08:16,525 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/324a0394.fasta
+2015-06-10 19:08:16,559 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/e1b64019.fasta
+2015-06-10 19:08:16,572 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/9b936e77.fasta
+2015-06-10 19:08:16,582 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/c4629b28.fasta
+2015-06-10 19:08:16,606 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/823d08b6.fasta
+2015-06-10 19:08:16,617 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/0388e524.fasta
+2015-06-10 19:08:16,644 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/d601f700.fasta
+2015-06-10 19:08:16,680 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/17ac4db8.fasta
+2015-06-10 19:08:16,706 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/1e0c5a06.fasta
+2015-06-10 19:08:16,720 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/5355ff54.fasta
+2015-06-10 19:08:16,740 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/f4ee3e92.fasta
+2015-06-10 19:08:16,759 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/09a821e9.fasta
+2015-06-10 19:08:16,802 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/a154a01f.fasta
+2015-06-10 19:08:16,815 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/f9d4c3ec.fasta
+2015-06-10 19:08:16,857 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/2f556334.fasta
+2015-06-10 19:08:16,888 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/011150b9.fasta
+2015-06-10 19:08:16,900 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/71f38904.fasta
+2015-06-10 19:08:16,919 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/d64132e9.fasta
+2015-06-10 19:08:16,923 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/999eb495.fasta
+2015-06-10 19:08:16,941 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/ecef3229.fasta
+2015-06-10 19:08:16,995 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/9ff97a2e.fasta
+2015-06-10 19:08:17,032 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/91593135.fasta
+2015-06-10 19:08:17,081 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/011ec448.fasta
+2015-06-10 19:08:17,115 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/d9306566.fasta
+2015-06-10 19:08:17,145 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/4b10b5a7.fasta
+2015-06-10 19:08:17,190 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/e41bb0e9.fasta
+2015-06-10 19:08:17,201 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/8712f91b.fasta
+2015-06-10 19:08:17,214 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/592f1316.fasta
+2015-06-10 19:08:17,226 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/aefcad85.fasta
+2015-06-10 19:08:17,239 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/e5cbacfd.fasta
+2015-06-10 19:08:17,260 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/e5f1f516.fasta
+2015-06-10 19:08:17,283 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/232632c7.fasta
+2015-06-10 19:08:17,305 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/041950fd.fasta
+2015-06-10 19:08:17,326 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/8a3e4710.fasta
+2015-06-10 19:08:17,352 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/1443402c.fasta
+2015-06-10 19:08:17,384 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/19bce22f.fasta
+2015-06-10 19:08:17,403 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/4ab06ede.fasta
+2015-06-10 19:08:17,416 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/4cfcc254.fasta
+2015-06-10 19:08:17,438 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/87a4a721.fasta
+2015-06-10 19:08:17,464 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/39b227eb.fasta
+2015-06-10 19:08:17,497 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/5c72b948.fasta
+2015-06-10 19:08:17,508 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/512fe2ca.fasta
+2015-06-10 19:08:17,541 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/1661109c.fasta
+2015-06-10 19:08:17,571 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/b00e3790.fasta
+2015-06-10 19:08:17,589 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/b76da209.fasta
+2015-06-10 19:08:17,613 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/126f9ae0.fasta
+2015-06-10 19:08:17,636 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/74d1dfe8.fasta
+2015-06-10 19:08:17,659 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/d6bf050d.fasta
+2015-06-10 19:08:17,679 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/f046a329.fasta
+2015-06-10 19:08:17,692 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/895625c3.fasta
+2015-06-10 19:08:17,720 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/0f952a21.fasta
+2015-06-10 19:08:17,743 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/18401c4d.fasta
+2015-06-10 19:08:17,808 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/65261ad8.fasta
+2015-06-10 19:08:17,822 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/86e1ac2a.fasta
+2015-06-10 19:08:17,826 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/a2f16857.fasta
+2015-06-10 19:08:17,876 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/78de4681.fasta
+2015-06-10 19:08:17,961 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/305f8ad5.fasta
+2015-06-10 19:08:17,998 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/be11e410.fasta
+2015-06-10 19:08:18,015 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/b3d82585.fasta
+2015-06-10 19:08:18,031 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/8bbc4730.fasta
+2015-06-10 19:08:18,040 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/a3421ec8.fasta
+2015-06-10 19:08:18,064 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/2260f54d.fasta
+2015-06-10 19:08:18,081 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/7a2f3f90.fasta
+2015-06-10 19:08:18,116 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/ab2031d1.fasta
+2015-06-10 19:08:18,128 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/7dfed502.fasta
+2015-06-10 19:08:18,141 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/6da52913.fasta
+2015-06-10 19:08:18,152 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/864b05fc.fasta
+2015-06-10 19:08:18,201 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/6996d462.fasta
+2015-06-10 19:08:18,224 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/585bbcb1.fasta
+2015-06-10 19:08:18,237 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/5ea42614.fasta
+2015-06-10 19:08:18,251 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/c81ed56e.fasta
+2015-06-10 19:08:18,273 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/f0eb1831.fasta
+2015-06-10 19:08:18,300 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/crimean_congo/c5d5dc4f.fasta
+2015-06-10 19:08:18,336 - hybseldesign.filter.probe_designer [INFO] Building candidate probes from target sequences
+2015-06-10 19:08:18,890 - hybseldesign.filter.probe_designer [INFO] Starting filter FastaFilter
+2015-06-10 19:08:18,890 - hybseldesign.utils.seq_io [INFO] Reading fasta file /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/crimean_congo/mismatches_2-coverextension_30.fasta
+2015-06-10 19:08:19,113 - hybseldesign.filter.probe_designer [INFO] Starting filter DuplicateFilter
+2015-06-10 19:08:19,186 - hybseldesign.filter.probe_designer [INFO] Starting filter AdapterFilter
+2015-06-10 19:08:19,186 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across all target genomes
+2015-06-10 19:08:19,186 - hybseldesign.filter.adapter_filter [INFO] Building map from k-mers to probes
+2015-06-10 19:08:31,574 - hybseldesign.filter.adapter_filter [INFO] Adding adapters to probes based on votes
+2015-06-10 19:08:31,667 - hybseldesign.filter.probe_designer [INFO] Starting filter ReverseComplementFilter
+2015-06-10 19:08:32,062 - hybseldesign.coverage_analysis [INFO] Finding probe covers across target genomes
+2015-06-10 19:08:32,062 - hybseldesign.coverage_analysis [INFO] Building map from k-mers to probes
+2015-06-10 19:08:33,839 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 1 (of 78)
+2015-06-10 19:08:37,066 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 2 (of 78)
+2015-06-10 19:08:40,264 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 3 (of 78)
+2015-06-10 19:08:43,290 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 4 (of 78)
+2015-06-10 19:08:44,130 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 5 (of 78)
+2015-06-10 19:08:47,265 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 6 (of 78)
+2015-06-10 19:08:49,468 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 7 (of 78)
+2015-06-10 19:08:49,971 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 8 (of 78)
+2015-06-10 19:08:51,443 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 9 (of 78)
+2015-06-10 19:08:54,715 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 10 (of 78)
+2015-06-10 19:08:56,503 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 11 (of 78)
+2015-06-10 19:08:59,377 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 12 (of 78)
+2015-06-10 19:08:59,830 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 13 (of 78)
+2015-06-10 19:09:01,565 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 14 (of 78)
+2015-06-10 19:09:02,058 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 15 (of 78)
+2015-06-10 19:09:04,713 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 16 (of 78)
+2015-06-10 19:09:05,227 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 17 (of 78)
+2015-06-10 19:09:06,882 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 18 (of 78)
+2015-06-10 19:09:07,730 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 19 (of 78)
+2015-06-10 19:09:09,491 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 20 (of 78)
+2015-06-10 19:09:09,989 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 21 (of 78)
+2015-06-10 19:09:10,879 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 22 (of 78)
+2015-06-10 19:09:13,985 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 23 (of 78)
+2015-06-10 19:09:15,377 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 24 (of 78)
+2015-06-10 19:09:18,513 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 25 (of 78)
+2015-06-10 19:09:21,565 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 26 (of 78)
+2015-06-10 19:09:24,733 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 27 (of 78)
+2015-06-10 19:09:25,646 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 28 (of 78)
+2015-06-10 19:09:28,822 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 29 (of 78)
+2015-06-10 19:09:29,341 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 30 (of 78)
+2015-06-10 19:09:31,041 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 31 (of 78)
+2015-06-10 19:09:31,573 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 32 (of 78)
+2015-06-10 19:09:32,420 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 33 (of 78)
+2015-06-10 19:09:35,660 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 34 (of 78)
+2015-06-10 19:09:36,233 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 35 (of 78)
+2015-06-10 19:09:37,171 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 36 (of 78)
+2015-06-10 19:09:38,932 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 37 (of 78)
+2015-06-10 19:09:40,689 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 38 (of 78)
+2015-06-10 19:09:43,906 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 39 (of 78)
+2015-06-10 19:09:44,430 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 40 (of 78)
+2015-06-10 19:09:47,585 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 41 (of 78)
+2015-06-10 19:09:48,463 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 42 (of 78)
+2015-06-10 19:09:48,974 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 43 (of 78)
+2015-06-10 19:09:51,870 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 44 (of 78)
+2015-06-10 19:09:55,068 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 45 (of 78)
+2015-06-10 19:09:57,767 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 46 (of 78)
+2015-06-10 19:09:58,779 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 47 (of 78)
+2015-06-10 19:10:01,940 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 48 (of 78)
+2015-06-10 19:10:05,027 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 49 (of 78)
+2015-06-10 19:10:05,540 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 50 (of 78)
+2015-06-10 19:10:08,455 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 51 (of 78)
+2015-06-10 19:10:08,940 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 52 (of 78)
+2015-06-10 19:10:12,091 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 53 (of 78)
+2015-06-10 19:10:15,510 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 54 (of 78)
+2015-06-10 19:10:16,491 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 55 (of 78)
+2015-06-10 19:10:19,920 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 56 (of 78)
+2015-06-10 19:10:23,158 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 57 (of 78)
+2015-06-10 19:10:26,522 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 58 (of 78)
+2015-06-10 19:10:27,568 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 59 (of 78)
+2015-06-10 19:10:29,371 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 60 (of 78)
+2015-06-10 19:10:31,278 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 61 (of 78)
+2015-06-10 19:10:31,796 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 62 (of 78)
+2015-06-10 19:10:34,920 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 63 (of 78)
+2015-06-10 19:10:36,569 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 64 (of 78)
+2015-06-10 19:10:37,889 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 65 (of 78)
+2015-06-10 19:10:39,650 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 66 (of 78)
+2015-06-10 19:10:41,100 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 67 (of 78)
+2015-06-10 19:10:42,487 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 68 (of 78)
+2015-06-10 19:10:44,839 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 69 (of 78)
+2015-06-10 19:10:45,346 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 70 (of 78)
+2015-06-10 19:10:46,167 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 71 (of 78)
+2015-06-10 19:10:47,610 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 72 (of 78)
+2015-06-10 19:10:50,790 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 73 (of 78)
+2015-06-10 19:10:53,924 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 74 (of 78)
+2015-06-10 19:10:54,421 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 75 (of 78)
+2015-06-10 19:10:57,583 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 76 (of 78)
+2015-06-10 19:11:00,876 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 77 (of 78)
+2015-06-10 19:11:04,067 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 78 (of 78)
+2015-06-10 19:11:04,747 - hybseldesign.coverage_analysis [INFO] Computing bases covered across target genomes
+2015-06-10 19:11:04,779 - hybseldesign.coverage_analysis [INFO] Computing average coverage across target genomes
+2015-06-10 19:11:04,813 - hybseldesign.coverage_analysis [INFO] Computing sliding coverage across target genomes
+NUMBER OF PROBES: 6228
+
+Genome                                Num bases covered Average coverage/depth
+                                         [over unambig]         [over unambig]
+----------------------------- ------------------------- ----------------------
+crimean_congo, genome 0       19168 (100.00%) [100.00%]            1.87 [1.87]
+crimean_congo, genome 0 (rc)  19168 (100.00%) [100.00%]            1.87 [1.87]
+crimean_congo, genome 1       19207 (100.00%) [100.00%]            1.58 [1.58]
+crimean_congo, genome 1 (rc)  19207 (100.00%) [100.00%]            1.58 [1.58]
+crimean_congo, genome 2       19264 (100.00%) [100.00%]            1.80 [1.80]
+crimean_congo, genome 2 (rc)  19264 (100.00%) [100.00%]            1.80 [1.80]
+crimean_congo, genome 3        5055 (100.00%) [100.04%]            1.63 [1.63]
+crimean_congo, genome 3 (rc)   5055 (100.00%) [100.04%]            1.63 [1.63]
+crimean_congo, genome 4       19186 (100.00%) [100.00%]            1.59 [1.59]
+crimean_congo, genome 4 (rc)  19186 (100.00%) [100.00%]            1.59 [1.59]
+crimean_congo, genome 5       13841 (100.00%) [100.00%]            1.57 [1.57]
+crimean_congo, genome 5 (rc)  13841 (100.00%) [100.00%]            1.57 [1.57]
+crimean_congo, genome 6        1673 (100.00%) [100.00%]            1.81 [1.81]
+crimean_congo, genome 6 (rc)   1673 (100.00%) [100.00%]            1.81 [1.81]
+crimean_congo, genome 7        7037 (100.00%) [100.00%]            1.53 [1.53]
+crimean_congo, genome 7 (rc)   7037 (100.00%) [100.00%]            1.53 [1.53]
+crimean_congo, genome 8       19210 (100.00%) [100.00%]            1.59 [1.59]
+crimean_congo, genome 8 (rc)  19210 (100.00%) [100.00%]            1.59 [1.59]
+crimean_congo, genome 9       12160 (100.00%) [100.00%]            2.03 [2.03]
+crimean_congo, genome 9 (rc)  12160 (100.00%) [100.00%]            2.03 [2.03]
+crimean_congo, genome 10      19232 (100.00%) [100.00%]            1.70 [1.70]
+crimean_congo, genome 10 (rc) 19232 (100.00%) [100.00%]            1.70 [1.70]
+crimean_congo, genome 11       1581 (100.00%) [100.00%]            1.72 [1.72]
+crimean_congo, genome 11 (rc)  1581 (100.00%) [100.00%]            1.72 [1.72]
+crimean_congo, genome 12      12157 (100.00%) [100.00%]            1.83 [1.83]
+crimean_congo, genome 12 (rc) 12157 (100.00%) [100.00%]            1.83 [1.83]
+crimean_congo, genome 13       1673 (100.00%) [100.00%]            1.81 [1.81]
+crimean_congo, genome 13 (rc)  1673 (100.00%) [100.00%]            1.81 [1.81]
+crimean_congo, genome 14      17514 (100.00%) [100.00%]            1.65 [1.65]
+crimean_congo, genome 14 (rc) 17514 (100.00%) [100.00%]            1.65 [1.65]
+crimean_congo, genome 15       1673 (100.00%) [100.00%]            1.54 [1.54]
+crimean_congo, genome 15 (rc)  1673 (100.00%) [100.00%]            1.54 [1.54]
+crimean_congo, genome 16      12157 (100.00%) [100.00%]            1.47 [1.47]
+crimean_congo, genome 16 (rc) 12157 (100.00%) [100.00%]            1.47 [1.47]
+crimean_congo, genome 17       5055 (100.00%) [100.00%]            1.41 [1.41]
+crimean_congo, genome 17 (rc)  5055 (100.00%) [100.00%]            1.41 [1.41]
+crimean_congo, genome 18      12169 (100.00%) [100.00%]            1.58 [1.58]
+crimean_congo, genome 18 (rc) 12169 (100.00%) [100.00%]            1.58 [1.58]
+crimean_congo, genome 19       1673 (100.00%) [100.00%]            1.64 [1.64]
+crimean_congo, genome 19 (rc)  1673 (100.00%) [100.00%]            1.64 [1.64]
+crimean_congo, genome 20       5070 (100.00%) [100.00%]            1.47 [1.47]
+crimean_congo, genome 20 (rc)  5070 (100.00%) [100.00%]            1.47 [1.47]
+crimean_congo, genome 21      19168 (100.00%) [100.00%]            1.83 [1.83]
+crimean_congo, genome 21 (rc) 19168 (100.00%) [100.00%]            1.83 [1.83]
+crimean_congo, genome 22       6912 (100.00%) [100.00%]            1.62 [1.62]
+crimean_congo, genome 22 (rc)  6912 (100.00%) [100.00%]            1.62 [1.62]
+crimean_congo, genome 23      19201 (100.00%) [100.00%]            1.48 [1.48]
+crimean_congo, genome 23 (rc) 19201 (100.00%) [100.00%]            1.48 [1.48]
+crimean_congo, genome 24      19207 (100.00%) [100.00%]            1.51 [1.51]
+crimean_congo, genome 24 (rc) 19207 (100.00%) [100.00%]            1.51 [1.51]
+crimean_congo, genome 25      19167 (100.00%) [100.00%]            1.79 [1.79]
+crimean_congo, genome 25 (rc) 19167 (100.00%) [100.00%]            1.79 [1.79]
+crimean_congo, genome 26       5364 (100.00%) [100.00%]            1.47 [1.47]
+crimean_congo, genome 26 (rc)  5364 (100.00%) [100.00%]            1.47 [1.47]
+crimean_congo, genome 27      19183 (100.00%) [100.00%]            1.65 [1.65]
+crimean_congo, genome 27 (rc) 19183 (100.00%) [100.00%]            1.65 [1.65]
+crimean_congo, genome 28       1653 (100.00%) [100.00%]            1.83 [1.83]
+crimean_congo, genome 28 (rc)  1653 (100.00%) [100.00%]            1.84 [1.84]
+crimean_congo, genome 29      12112 (100.00%) [100.00%]            1.67 [1.67]
+crimean_congo, genome 29 (rc) 12112 (100.00%) [100.00%]            1.67 [1.67]
+crimean_congo, genome 30       1673 (100.00%) [100.00%]            2.08 [2.08]
+crimean_congo, genome 30 (rc)  1673 (100.00%) [100.00%]            2.08 [2.08]
+crimean_congo, genome 31       5388 (100.00%) [100.00%]            1.66 [1.66]
+crimean_congo, genome 31 (rc)  5388 (100.00%) [100.00%]            1.66 [1.66]
+crimean_congo, genome 32      19134 (100.00%) [100.00%]            1.48 [1.48]
+crimean_congo, genome 32 (rc) 19134 (100.00%) [100.00%]            1.48 [1.48]
+crimean_congo, genome 33       1673 (100.00%) [100.00%]            1.52 [1.52]
+crimean_congo, genome 33 (rc)  1673 (100.00%) [100.00%]            1.52 [1.52]
+crimean_congo, genome 34       5357 (100.00%) [100.00%]            1.44 [1.44]
+crimean_congo, genome 34 (rc)  5357 (100.00%) [100.00%]            1.44 [1.44]
+crimean_congo, genome 35      12162 (100.00%) [100.00%]            1.54 [1.54]
+crimean_congo, genome 35 (rc) 12162 (100.00%) [100.00%]            1.54 [1.54]
+crimean_congo, genome 36      12172 (100.00%) [100.00%]            1.56 [1.56]
+crimean_congo, genome 36 (rc) 12172 (100.00%) [100.00%]            1.56 [1.56]
+crimean_congo, genome 37      19150 (100.00%) [100.00%]            1.83 [1.83]
+crimean_congo, genome 37 (rc) 19150 (100.00%) [100.00%]            1.83 [1.83]
+crimean_congo, genome 38       1632 (100.00%) [100.00%]            1.56 [1.56]
+crimean_congo, genome 38 (rc)  1632 (100.00%) [100.00%]            1.56 [1.56]
+crimean_congo, genome 39      19206 (100.00%) [100.00%]            1.50 [1.50]
+crimean_congo, genome 39 (rc) 19206 (100.00%) [100.00%]            1.50 [1.50]
+crimean_congo, genome 40       5356 (100.00%) [100.00%]            1.47 [1.47]
+crimean_congo, genome 40 (rc)  5356 (100.00%) [100.00%]            1.47 [1.47]
+crimean_congo, genome 41       1673 (100.00%) [100.00%]            1.61 [1.61]
+crimean_congo, genome 41 (rc)  1673 (100.00%) [100.00%]            1.61 [1.61]
+crimean_congo, genome 42      19208 (100.00%) [100.00%]            1.59 [1.59]
+crimean_congo, genome 42 (rc) 19208 (100.00%) [100.00%]            1.59 [1.59]
+crimean_congo, genome 43      19186 (100.00%) [100.00%]            1.65 [1.65]
+crimean_congo, genome 43 (rc) 19186 (100.00%) [100.00%]            1.65 [1.65]
+crimean_congo, genome 44      19156 (100.00%) [100.00%]            1.64 [1.64]
+crimean_congo, genome 44 (rc) 19156 (100.00%) [100.00%]            1.64 [1.64]
+crimean_congo, genome 45       5368 (100.00%) [100.00%]            1.41 [1.41]
+crimean_congo, genome 45 (rc)  5368 (100.00%) [100.00%]            1.41 [1.41]
+crimean_congo, genome 46      19200 (100.00%) [100.00%]            1.48 [1.48]
+crimean_congo, genome 46 (rc) 19200 (100.00%) [100.00%]            1.48 [1.48]
+crimean_congo, genome 47      19182 (100.00%) [100.01%]            1.69 [1.69]
+crimean_congo, genome 47 (rc) 19182 (100.00%) [100.01%]            1.69 [1.69]
+crimean_congo, genome 48       1673 (100.00%) [100.00%]            1.52 [1.52]
+crimean_congo, genome 48 (rc)  1673 (100.00%) [100.00%]            1.52 [1.52]
+crimean_congo, genome 49      19206 (100.00%) [100.00%]            1.58 [1.58]
+crimean_congo, genome 49 (rc) 19206 (100.00%) [100.00%]            1.58 [1.58]
+crimean_congo, genome 50       1673 (100.00%) [100.00%]            1.53 [1.53]
+crimean_congo, genome 50 (rc)  1673 (100.00%) [100.00%]            1.53 [1.53]
+crimean_congo, genome 51      19186 (100.00%) [100.00%]            1.60 [1.60]
+crimean_congo, genome 51 (rc) 19186 (100.00%) [100.00%]            1.60 [1.60]
+crimean_congo, genome 52      19163 (100.00%) [100.00%]            1.75 [1.75]
+crimean_congo, genome 52 (rc) 19163 (100.00%) [100.00%]            1.75 [1.75]
+crimean_congo, genome 53       5366 (100.00%) [100.00%]            1.50 [1.50]
+crimean_congo, genome 53 (rc)  5366 (100.00%) [100.00%]            1.50 [1.50]
+crimean_congo, genome 54      19193 (100.00%) [100.00%]            1.61 [1.61]
+crimean_congo, genome 54 (rc) 19193 (100.00%) [100.00%]            1.61 [1.61]
+crimean_congo, genome 55      19232 (100.00%) [100.00%]            1.78 [1.78]
+crimean_congo, genome 55 (rc) 19232 (100.00%) [100.00%]            1.78 [1.78]
+crimean_congo, genome 56      19184 (100.00%) [100.00%]            1.69 [1.69]
+crimean_congo, genome 56 (rc) 19184 (100.00%) [100.00%]            1.69 [1.69]
+crimean_congo, genome 57       5070 (100.00%) [100.02%]            1.67 [1.67]
+crimean_congo, genome 57 (rc)  5070 (100.00%) [100.02%]            1.67 [1.67]
+crimean_congo, genome 58      12111 (100.00%) [100.00%]            1.72 [1.72]
+crimean_congo, genome 58 (rc) 12111 (100.00%) [100.00%]            1.72 [1.72]
+crimean_congo, genome 59      12160 (100.00%) [100.00%]            2.02 [2.02]
+crimean_congo, genome 59 (rc) 12160 (100.00%) [100.00%]            2.02 [2.02]
+crimean_congo, genome 60       1671 (100.00%) [100.00%]            1.92 [1.92]
+crimean_congo, genome 60 (rc)  1671 (100.00%) [100.00%]            1.92 [1.92]
+crimean_congo, genome 61      19184 (100.00%) [100.00%]            1.82 [1.82]
+crimean_congo, genome 61 (rc) 19184 (100.00%) [100.00%]            1.82 [1.82]
+crimean_congo, genome 62      12133 (100.00%) [100.00%]            1.65 [1.65]
+crimean_congo, genome 62 (rc) 12133 (100.00%) [100.00%]            1.65 [1.65]
+crimean_congo, genome 63       7026 (100.00%) [100.00%]            1.44 [1.44]
+crimean_congo, genome 63 (rc)  7026 (100.00%) [100.00%]            1.44 [1.44]
+crimean_congo, genome 64      12170 (100.00%) [100.00%]            1.58 [1.58]
+crimean_congo, genome 64 (rc) 12170 (100.00%) [100.00%]            1.58 [1.58]
+crimean_congo, genome 65       6992 (100.00%) [100.00%]            1.60 [1.60]
+crimean_congo, genome 65 (rc)  6992 (100.00%) [100.00%]            1.60 [1.60]
+crimean_congo, genome 66      12128 (100.00%) [100.00%]            1.63 [1.63]
+crimean_congo, genome 66 (rc) 12128 (100.00%) [100.00%]            1.63 [1.63]
+crimean_congo, genome 67      19245 (100.00%) [100.00%]            1.64 [1.64]
+crimean_congo, genome 67 (rc) 19245 (100.00%) [100.00%]            1.64 [1.64]
+crimean_congo, genome 68       1673 (100.00%) [100.00%]            1.63 [1.63]
+crimean_congo, genome 68 (rc)  1673 (100.00%) [100.00%]            1.63 [1.63]
+crimean_congo, genome 69       5100 (100.00%) [100.00%]            1.63 [1.63]
+crimean_congo, genome 69 (rc)  5100 (100.00%) [100.00%]            1.63 [1.63]
+crimean_congo, genome 70       7029 (100.00%) [100.01%]            1.66 [1.66]
+crimean_congo, genome 70 (rc)  7029 (100.00%) [100.01%]            1.66 [1.66]
+crimean_congo, genome 71      19195 (100.00%) [100.00%]            1.54 [1.54]
+crimean_congo, genome 71 (rc) 19195 (100.00%) [100.00%]            1.54 [1.54]
+crimean_congo, genome 72      19137 (100.00%) [100.01%]            1.50 [1.50]
+crimean_congo, genome 72 (rc) 19137 (100.00%) [100.01%]            1.50 [1.50]
+crimean_congo, genome 73       1673 (100.00%) [100.00%]            1.62 [1.62]
+crimean_congo, genome 73 (rc)  1673 (100.00%) [100.00%]            1.62 [1.62]
+crimean_congo, genome 74      19186 (100.00%) [100.00%]            1.63 [1.63]
+crimean_congo, genome 74 (rc) 19186 (100.00%) [100.00%]            1.63 [1.63]
+crimean_congo, genome 75      19103 (100.00%) [100.00%]            1.88 [1.88]
+crimean_congo, genome 75 (rc) 19103 (100.00%) [100.00%]            1.88 [1.88]
+crimean_congo, genome 76      19147 (100.00%) [100.00%]            1.82 [1.82]
+crimean_congo, genome 76 (rc) 19147 (100.00%) [100.00%]            1.82 [1.82]
+crimean_congo, genome 77       1673 (100.00%) [100.00%]            1.41 [1.41]
+crimean_congo, genome 77 (rc)  1673 (100.00%) [100.00%]            1.41 [1.41]
+

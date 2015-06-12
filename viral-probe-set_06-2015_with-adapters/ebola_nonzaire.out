@@ -1,0 +1,212 @@
+Sender: LSF System <lsf@node1754>
+Subject: Job 549324: <python bin/make_probes.py --mismatches 1 --lcf_thres 100 --cover_extension 30 --dataset ebola_nonzaire --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/ebola_nonzaire/mismatches_1-coverextension_30.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/ebola_nonzaire.fasta --verbose> in cluster <cromwell> Done
+
+Job <python bin/make_probes.py --mismatches 1 --lcf_thres 100 --cover_extension 30 --dataset ebola_nonzaire --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/ebola_nonzaire/mismatches_1-coverextension_30.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/ebola_nonzaire.fasta --verbose> was submitted from host <node1748> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <node1754>, in queue <week>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Wed Jun 10 18:08:38 2015
+Results reported on Wed Jun 10 18:10:56 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes.py --mismatches 1 --lcf_thres 100 --cover_extension 30 --dataset ebola_nonzaire --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/ebola_nonzaire/mismatches_1-coverextension_30.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/ebola_nonzaire.fasta --verbose
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               130.61 sec.
+    Max Memory :             120 MB
+    Average Memory :         108.56 MB
+    Total Requested Memory : 4296.00 MB
+    Delta Memory :           4176.00 MB
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Processes :          4
+    Max Threads :            5
+
+The output (if any) follows:
+
+2015-06-10 18:08:45,359 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/ebola_nonzaire.fasta
+2015-06-10 18:08:45,555 - hybseldesign.filter.probe_designer [INFO] Building candidate probes from target sequences
+2015-06-10 18:08:46,131 - hybseldesign.filter.probe_designer [INFO] Starting filter FastaFilter
+2015-06-10 18:08:46,132 - hybseldesign.utils.seq_io [INFO] Reading fasta file /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/ebola_nonzaire/mismatches_1-coverextension_30.fasta
+2015-06-10 18:08:46,402 - hybseldesign.filter.probe_designer [INFO] Starting filter DuplicateFilter
+2015-06-10 18:08:46,658 - hybseldesign.filter.probe_designer [INFO] Starting filter AdapterFilter
+2015-06-10 18:08:46,658 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across all target genomes
+2015-06-10 18:08:46,658 - hybseldesign.filter.adapter_filter [INFO] Building map from k-mers to probes
+2015-06-10 18:08:50,666 - hybseldesign.filter.adapter_filter [INFO] Adding adapters to probes based on votes
+2015-06-10 18:08:50,737 - hybseldesign.filter.probe_designer [INFO] Starting filter ReverseComplementFilter
+2015-06-10 18:08:51,060 - hybseldesign.coverage_analysis [INFO] Finding probe covers across target genomes
+2015-06-10 18:08:51,060 - hybseldesign.coverage_analysis [INFO] Building map from k-mers to probes
+2015-06-10 18:08:52,576 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 1 (of 53)
+2015-06-10 18:08:53,946 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 2 (of 53)
+2015-06-10 18:08:55,279 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 3 (of 53)
+2015-06-10 18:08:56,613 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 4 (of 53)
+2015-06-10 18:08:57,921 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 5 (of 53)
+2015-06-10 18:08:59,221 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 6 (of 53)
+2015-06-10 18:09:00,498 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 7 (of 53)
+2015-06-10 18:09:01,781 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 8 (of 53)
+2015-06-10 18:09:06,365 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 9 (of 53)
+2015-06-10 18:09:10,957 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 10 (of 53)
+2015-06-10 18:09:15,719 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 11 (of 53)
+2015-06-10 18:09:20,497 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 12 (of 53)
+2015-06-10 18:09:24,918 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 13 (of 53)
+2015-06-10 18:09:29,603 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 14 (of 53)
+2015-06-10 18:09:34,484 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 15 (of 53)
+2015-06-10 18:09:39,313 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 16 (of 53)
+2015-06-10 18:09:43,869 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 17 (of 53)
+2015-06-10 18:09:48,743 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 18 (of 53)
+2015-06-10 18:09:53,603 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 19 (of 53)
+2015-06-10 18:09:58,624 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 20 (of 53)
+2015-06-10 18:09:59,898 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 21 (of 53)
+2015-06-10 18:10:01,530 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 22 (of 53)
+2015-06-10 18:10:03,139 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 23 (of 53)
+2015-06-10 18:10:04,762 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 24 (of 53)
+2015-06-10 18:10:06,431 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 25 (of 53)
+2015-06-10 18:10:08,048 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 26 (of 53)
+2015-06-10 18:10:09,724 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 27 (of 53)
+2015-06-10 18:10:11,360 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 28 (of 53)
+2015-06-10 18:10:13,025 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 29 (of 53)
+2015-06-10 18:10:14,708 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 30 (of 53)
+2015-06-10 18:10:16,372 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 31 (of 53)
+2015-06-10 18:10:18,018 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 32 (of 53)
+2015-06-10 18:10:19,681 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 33 (of 53)
+2015-06-10 18:10:21,363 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 34 (of 53)
+2015-06-10 18:10:23,040 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 35 (of 53)
+2015-06-10 18:10:24,645 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 36 (of 53)
+2015-06-10 18:10:26,253 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 37 (of 53)
+2015-06-10 18:10:27,854 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 38 (of 53)
+2015-06-10 18:10:29,453 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 39 (of 53)
+2015-06-10 18:10:31,052 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 40 (of 53)
+2015-06-10 18:10:32,649 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 41 (of 53)
+2015-06-10 18:10:34,248 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 42 (of 53)
+2015-06-10 18:10:35,837 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 43 (of 53)
+2015-06-10 18:10:37,420 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 44 (of 53)
+2015-06-10 18:10:39,011 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 45 (of 53)
+2015-06-10 18:10:40,701 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 46 (of 53)
+2015-06-10 18:10:42,345 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 47 (of 53)
+2015-06-10 18:10:43,948 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 48 (of 53)
+2015-06-10 18:10:45,595 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 49 (of 53)
+2015-06-10 18:10:47,153 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 50 (of 53)
+2015-06-10 18:10:48,752 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 51 (of 53)
+2015-06-10 18:10:50,037 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 52 (of 53)
+2015-06-10 18:10:51,320 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 53 (of 53)
+2015-06-10 18:10:52,667 - hybseldesign.coverage_analysis [INFO] Computing bases covered across target genomes
+2015-06-10 18:10:52,702 - hybseldesign.coverage_analysis [INFO] Computing average coverage across target genomes
+2015-06-10 18:10:52,736 - hybseldesign.coverage_analysis [INFO] Computing sliding coverage across target genomes
+NUMBER OF PROBES: 4918
+
+Genome                                 Num bases covered Average coverage/depth
+                                          [over unambig]         [over unambig]
+------------------------------ ------------------------- ----------------------
+ebola_nonzaire, genome 0       18939 (100.00%) [100.00%]            1.46 [1.46]
+ebola_nonzaire, genome 0 (rc)  18939 (100.00%) [100.00%]            1.46 [1.46]
+ebola_nonzaire, genome 1       18939 (100.00%) [100.00%]            1.46 [1.46]
+ebola_nonzaire, genome 1 (rc)  18939 (100.00%) [100.00%]            1.46 [1.46]
+ebola_nonzaire, genome 2       18939 (100.00%) [100.00%]            1.46 [1.46]
+ebola_nonzaire, genome 2 (rc)  18939 (100.00%) [100.00%]            1.46 [1.46]
+ebola_nonzaire, genome 3       18939 (100.00%) [100.00%]            1.46 [1.46]
+ebola_nonzaire, genome 3 (rc)  18939 (100.00%) [100.00%]            1.46 [1.46]
+ebola_nonzaire, genome 4       18940 (100.00%) [100.00%]            1.46 [1.46]
+ebola_nonzaire, genome 4 (rc)  18940 (100.00%) [100.00%]            1.46 [1.46]
+ebola_nonzaire, genome 5       18940 (100.00%) [100.00%]            1.46 [1.46]
+ebola_nonzaire, genome 5 (rc)  18940 (100.00%) [100.00%]            1.46 [1.46]
+ebola_nonzaire, genome 6       18940 (100.00%) [100.00%]            1.46 [1.46]
+ebola_nonzaire, genome 6 (rc)  18940 (100.00%) [100.00%]            1.46 [1.46]
+ebola_nonzaire, genome 7       18875 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 7 (rc)  18875 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 8       18875 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 8 (rc)  18875 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 9       18875 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 9 (rc)  18875 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 10      18875 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 10 (rc) 18875 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 11      18891 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 11 (rc) 18891 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 12      18891 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 12 (rc) 18891 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 13      18891 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 13 (rc) 18891 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 14      18891 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 14 (rc) 18891 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 15      18959 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 15 (rc) 18959 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 16      18959 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 16 (rc) 18959 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 17      18959 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 17 (rc) 18959 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 18      18959 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 18 (rc) 18959 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 19      19111 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 19 (rc) 19111 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 20      18891 (100.00%) [100.00%]            1.73 [1.73]
+ebola_nonzaire, genome 20 (rc) 18891 (100.00%) [100.00%]            1.73 [1.73]
+ebola_nonzaire, genome 21      18891 (100.00%) [100.00%]            1.63 [1.63]
+ebola_nonzaire, genome 21 (rc) 18891 (100.00%) [100.00%]            1.63 [1.63]
+ebola_nonzaire, genome 22      18895 (100.00%) [100.00%]            1.59 [1.59]
+ebola_nonzaire, genome 22 (rc) 18895 (100.00%) [100.00%]            1.59 [1.59]
+ebola_nonzaire, genome 23      18891 (100.00%) [100.00%]            1.63 [1.63]
+ebola_nonzaire, genome 23 (rc) 18891 (100.00%) [100.00%]            1.63 [1.63]
+ebola_nonzaire, genome 24      18887 (100.00%) [100.00%]            1.47 [1.47]
+ebola_nonzaire, genome 24 (rc) 18887 (100.00%) [100.00%]            1.47 [1.47]
+ebola_nonzaire, genome 25      18891 (100.00%) [100.00%]            1.63 [1.63]
+ebola_nonzaire, genome 25 (rc) 18891 (100.00%) [100.00%]            1.63 [1.63]
+ebola_nonzaire, genome 26      18895 (100.00%) [100.00%]            1.59 [1.59]
+ebola_nonzaire, genome 26 (rc) 18895 (100.00%) [100.00%]            1.59 [1.59]
+ebola_nonzaire, genome 27      18891 (100.00%) [100.00%]            1.63 [1.63]
+ebola_nonzaire, genome 27 (rc) 18891 (100.00%) [100.00%]            1.63 [1.63]
+ebola_nonzaire, genome 28      18890 (100.00%) [100.00%]            1.73 [1.73]
+ebola_nonzaire, genome 28 (rc) 18890 (100.00%) [100.00%]            1.73 [1.73]
+ebola_nonzaire, genome 29      18891 (100.00%) [100.00%]            1.63 [1.63]
+ebola_nonzaire, genome 29 (rc) 18891 (100.00%) [100.00%]            1.63 [1.63]
+ebola_nonzaire, genome 30      18895 (100.00%) [100.00%]            1.59 [1.59]
+ebola_nonzaire, genome 30 (rc) 18895 (100.00%) [100.00%]            1.59 [1.59]
+ebola_nonzaire, genome 31      18891 (100.00%) [100.00%]            1.63 [1.63]
+ebola_nonzaire, genome 31 (rc) 18891 (100.00%) [100.00%]            1.63 [1.63]
+ebola_nonzaire, genome 32      18890 (100.00%) [100.00%]            1.73 [1.73]
+ebola_nonzaire, genome 32 (rc) 18890 (100.00%) [100.00%]            1.73 [1.73]
+ebola_nonzaire, genome 33      18890 (100.00%) [100.00%]            1.73 [1.73]
+ebola_nonzaire, genome 33 (rc) 18890 (100.00%) [100.00%]            1.73 [1.73]
+ebola_nonzaire, genome 34      18887 (100.00%) [100.00%]            1.48 [1.48]
+ebola_nonzaire, genome 34 (rc) 18887 (100.00%) [100.00%]            1.48 [1.48]
+ebola_nonzaire, genome 35      18836 (100.00%) [100.01%]            1.46 [1.46]
+ebola_nonzaire, genome 35 (rc) 18836 (100.00%) [100.01%]            1.46 [1.46]
+ebola_nonzaire, genome 36      18796 (100.00%) [100.00%]            1.58 [1.58]
+ebola_nonzaire, genome 36 (rc) 18796 (100.00%) [100.00%]            1.58 [1.58]
+ebola_nonzaire, genome 37      18875 (100.00%) [100.00%]            1.52 [1.52]
+ebola_nonzaire, genome 37 (rc) 18875 (100.00%) [100.00%]            1.52 [1.52]
+ebola_nonzaire, genome 38      18874 (100.00%) [100.00%]            1.48 [1.48]
+ebola_nonzaire, genome 38 (rc) 18874 (100.00%) [100.00%]            1.48 [1.48]
+ebola_nonzaire, genome 39      18874 (100.00%) [100.00%]            1.47 [1.47]
+ebola_nonzaire, genome 39 (rc) 18874 (100.00%) [100.00%]            1.47 [1.47]
+ebola_nonzaire, genome 40      18874 (100.00%) [100.00%]            1.48 [1.48]
+ebola_nonzaire, genome 40 (rc) 18874 (100.00%) [100.00%]            1.48 [1.48]
+ebola_nonzaire, genome 41      18875 (100.00%) [100.00%]            1.47 [1.47]
+ebola_nonzaire, genome 41 (rc) 18875 (100.00%) [100.00%]            1.47 [1.47]
+ebola_nonzaire, genome 42      18874 (100.00%) [100.00%]            1.48 [1.48]
+ebola_nonzaire, genome 42 (rc) 18874 (100.00%) [100.00%]            1.48 [1.48]
+ebola_nonzaire, genome 43      18875 (100.00%) [100.00%]            1.49 [1.49]
+ebola_nonzaire, genome 43 (rc) 18875 (100.00%) [100.00%]            1.49 [1.49]
+ebola_nonzaire, genome 44      18875 (100.00%) [100.00%]            1.49 [1.49]
+ebola_nonzaire, genome 44 (rc) 18875 (100.00%) [100.00%]            1.49 [1.49]
+ebola_nonzaire, genome 45      18875 (100.00%) [100.00%]            1.53 [1.53]
+ebola_nonzaire, genome 45 (rc) 18875 (100.00%) [100.00%]            1.53 [1.53]
+ebola_nonzaire, genome 46      18875 (100.00%) [100.00%]            1.49 [1.49]
+ebola_nonzaire, genome 46 (rc) 18875 (100.00%) [100.00%]            1.49 [1.49]
+ebola_nonzaire, genome 47      18875 (100.00%) [100.00%]            1.49 [1.49]
+ebola_nonzaire, genome 47 (rc) 18875 (100.00%) [100.00%]            1.49 [1.49]
+ebola_nonzaire, genome 48      18875 (100.00%) [100.00%]            1.52 [1.52]
+ebola_nonzaire, genome 48 (rc) 18875 (100.00%) [100.00%]            1.52 [1.52]
+ebola_nonzaire, genome 49      18875 (100.00%) [100.00%]            1.49 [1.49]
+ebola_nonzaire, genome 49 (rc) 18875 (100.00%) [100.00%]            1.49 [1.49]
+ebola_nonzaire, genome 50      18935 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 50 (rc) 18935 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 51      18935 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 51 (rc) 18935 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 52      18935 (100.00%) [100.00%]            1.62 [1.62]
+ebola_nonzaire, genome 52 (rc) 18935 (100.00%) [100.00%]            1.62 [1.62]
+

@@ -1,0 +1,212 @@
+Sender: LSF System <lsf@node1977>
+Subject: Job 549333: <python bin/make_probes.py --mismatches 2 --lcf_thres 100 --cover_extension 0 --dataset measles --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/measles/mismatches_2-coverextension_0.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/measles.fasta --verbose> in cluster <cromwell> Done
+
+Job <python bin/make_probes.py --mismatches 2 --lcf_thres 100 --cover_extension 0 --dataset measles --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/measles/mismatches_2-coverextension_0.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/measles.fasta --verbose> was submitted from host <node1748> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <node1977>, in queue <week>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Wed Jun 10 19:08:11 2015
+Results reported on Wed Jun 10 19:09:24 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes.py --mismatches 2 --lcf_thres 100 --cover_extension 0 --dataset measles --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/measles/mismatches_2-coverextension_0.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/measles.fasta --verbose
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               69.85 sec.
+    Max Memory :             108 MB
+    Average Memory :         94.96 MB
+    Total Requested Memory : 4296.00 MB
+    Delta Memory :           4188.00 MB
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Processes :          4
+    Max Threads :            5
+
+The output (if any) follows:
+
+2015-06-10 19:08:15,209 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/measles.fasta
+2015-06-10 19:08:15,379 - hybseldesign.filter.probe_designer [INFO] Building candidate probes from target sequences
+2015-06-10 19:08:15,851 - hybseldesign.filter.probe_designer [INFO] Starting filter FastaFilter
+2015-06-10 19:08:15,851 - hybseldesign.utils.seq_io [INFO] Reading fasta file /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/measles/mismatches_2-coverextension_0.fasta
+2015-06-10 19:08:16,122 - hybseldesign.filter.probe_designer [INFO] Starting filter DuplicateFilter
+2015-06-10 19:08:16,321 - hybseldesign.filter.probe_designer [INFO] Starting filter AdapterFilter
+2015-06-10 19:08:16,321 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across all target genomes
+2015-06-10 19:08:16,321 - hybseldesign.filter.adapter_filter [INFO] Building map from k-mers to probes
+2015-06-10 19:08:20,627 - hybseldesign.filter.adapter_filter [INFO] Adding adapters to probes based on votes
+2015-06-10 19:08:20,646 - hybseldesign.filter.probe_designer [INFO] Starting filter ReverseComplementFilter
+2015-06-10 19:08:20,741 - hybseldesign.coverage_analysis [INFO] Finding probe covers across target genomes
+2015-06-10 19:08:20,741 - hybseldesign.coverage_analysis [INFO] Building map from k-mers to probes
+2015-06-10 19:08:21,115 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 1 (of 53)
+2015-06-10 19:08:22,248 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 2 (of 53)
+2015-06-10 19:08:23,361 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 3 (of 53)
+2015-06-10 19:08:24,526 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 4 (of 53)
+2015-06-10 19:08:25,694 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 5 (of 53)
+2015-06-10 19:08:26,865 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 6 (of 53)
+2015-06-10 19:08:28,033 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 7 (of 53)
+2015-06-10 19:08:29,214 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 8 (of 53)
+2015-06-10 19:08:30,354 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 9 (of 53)
+2015-06-10 19:08:31,498 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 10 (of 53)
+2015-06-10 19:08:32,750 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 11 (of 53)
+2015-06-10 19:08:33,891 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 12 (of 53)
+2015-06-10 19:08:35,034 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 13 (of 53)
+2015-06-10 19:08:36,208 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 14 (of 53)
+2015-06-10 19:08:37,385 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 15 (of 53)
+2015-06-10 19:08:38,562 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 16 (of 53)
+2015-06-10 19:08:39,738 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 17 (of 53)
+2015-06-10 19:08:40,919 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 18 (of 53)
+2015-06-10 19:08:42,100 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 19 (of 53)
+2015-06-10 19:08:43,291 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 20 (of 53)
+2015-06-10 19:08:44,470 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 21 (of 53)
+2015-06-10 19:08:45,655 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 22 (of 53)
+2015-06-10 19:08:46,842 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 23 (of 53)
+2015-06-10 19:08:48,029 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 24 (of 53)
+2015-06-10 19:08:49,190 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 25 (of 53)
+2015-06-10 19:08:50,348 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 26 (of 53)
+2015-06-10 19:08:51,395 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 27 (of 53)
+2015-06-10 19:08:52,585 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 28 (of 53)
+2015-06-10 19:08:53,290 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 29 (of 53)
+2015-06-10 19:08:53,995 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 30 (of 53)
+2015-06-10 19:08:55,169 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 31 (of 53)
+2015-06-10 19:08:56,360 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 32 (of 53)
+2015-06-10 19:08:57,476 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 33 (of 53)
+2015-06-10 19:08:58,602 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 34 (of 53)
+2015-06-10 19:08:59,729 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 35 (of 53)
+2015-06-10 19:09:00,919 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 36 (of 53)
+2015-06-10 19:09:02,099 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 37 (of 53)
+2015-06-10 19:09:03,285 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 38 (of 53)
+2015-06-10 19:09:04,468 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 39 (of 53)
+2015-06-10 19:09:05,662 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 40 (of 53)
+2015-06-10 19:09:06,779 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 41 (of 53)
+2015-06-10 19:09:07,911 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 42 (of 53)
+2015-06-10 19:09:09,038 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 43 (of 53)
+2015-06-10 19:09:10,225 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 44 (of 53)
+2015-06-10 19:09:11,405 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 45 (of 53)
+2015-06-10 19:09:12,593 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 46 (of 53)
+2015-06-10 19:09:13,773 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 47 (of 53)
+2015-06-10 19:09:14,946 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 48 (of 53)
+2015-06-10 19:09:16,017 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 49 (of 53)
+2015-06-10 19:09:17,142 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 50 (of 53)
+2015-06-10 19:09:18,261 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 51 (of 53)
+2015-06-10 19:09:19,350 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 52 (of 53)
+2015-06-10 19:09:20,453 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 53 (of 53)
+2015-06-10 19:09:21,479 - hybseldesign.coverage_analysis [INFO] Computing bases covered across target genomes
+2015-06-10 19:09:21,527 - hybseldesign.coverage_analysis [INFO] Computing average coverage across target genomes
+2015-06-10 19:09:21,560 - hybseldesign.coverage_analysis [INFO] Computing sliding coverage across target genomes
+NUMBER OF PROBES: 1340
+
+Genome                          Num bases covered Average coverage/depth
+                                   [over unambig]         [over unambig]
+----------------------- ------------------------- ----------------------
+measles, genome 0       15894 (100.00%) [100.00%]            1.70 [1.70]
+measles, genome 0 (rc)  15894 (100.00%) [100.00%]            1.70 [1.70]
+measles, genome 1       15894 (100.00%) [100.00%]            1.68 [1.68]
+measles, genome 1 (rc)  15894 (100.00%) [100.00%]            1.68 [1.68]
+measles, genome 2         15893 (99.99%) [99.99%]            1.74 [1.74]
+measles, genome 2 (rc)  15894 (100.00%) [100.00%]            1.74 [1.74]
+measles, genome 3       15894 (100.00%) [100.00%]            1.73 [1.73]
+measles, genome 3 (rc)  15894 (100.00%) [100.00%]            1.73 [1.73]
+measles, genome 4       15894 (100.00%) [100.00%]            1.73 [1.73]
+measles, genome 4 (rc)  15894 (100.00%) [100.00%]            1.73 [1.73]
+measles, genome 5       15894 (100.00%) [100.00%]            1.73 [1.73]
+measles, genome 5 (rc)  15894 (100.00%) [100.00%]            1.73 [1.73]
+measles, genome 6       15894 (100.00%) [100.00%]            1.79 [1.79]
+measles, genome 6 (rc)  15894 (100.00%) [100.00%]            1.79 [1.79]
+measles, genome 7       15894 (100.00%) [100.00%]            1.71 [1.71]
+measles, genome 7 (rc)  15894 (100.00%) [100.00%]            1.71 [1.71]
+measles, genome 8       15894 (100.00%) [100.00%]            1.72 [1.72]
+measles, genome 8 (rc)  15894 (100.00%) [100.00%]            1.72 [1.72]
+measles, genome 9       15894 (100.00%) [100.00%]            1.71 [1.71]
+measles, genome 9 (rc)  15894 (100.00%) [100.00%]            1.71 [1.71]
+measles, genome 10      15894 (100.00%) [100.00%]            1.72 [1.72]
+measles, genome 10 (rc) 15894 (100.00%) [100.00%]            1.72 [1.72]
+measles, genome 11      15894 (100.00%) [100.00%]            1.72 [1.72]
+measles, genome 11 (rc) 15894 (100.00%) [100.00%]            1.72 [1.72]
+measles, genome 12      15894 (100.00%) [100.00%]            1.75 [1.75]
+measles, genome 12 (rc) 15894 (100.00%) [100.00%]            1.75 [1.75]
+measles, genome 13      15894 (100.00%) [100.00%]            1.77 [1.77]
+measles, genome 13 (rc) 15894 (100.00%) [100.00%]            1.77 [1.77]
+measles, genome 14      15894 (100.00%) [100.00%]            1.79 [1.79]
+measles, genome 14 (rc) 15894 (100.00%) [100.00%]            1.79 [1.79]
+measles, genome 15        15893 (99.99%) [99.99%]            1.75 [1.75]
+measles, genome 15 (rc) 15894 (100.00%) [100.00%]            1.75 [1.75]
+measles, genome 16      15894 (100.00%) [100.00%]            1.77 [1.77]
+measles, genome 16 (rc) 15894 (100.00%) [100.00%]            1.77 [1.77]
+measles, genome 17      15894 (100.00%) [100.00%]            1.77 [1.77]
+measles, genome 17 (rc) 15894 (100.00%) [100.00%]            1.77 [1.77]
+measles, genome 18      15894 (100.00%) [100.00%]            1.78 [1.78]
+measles, genome 18 (rc) 15894 (100.00%) [100.00%]            1.78 [1.78]
+measles, genome 19      15894 (100.00%) [100.00%]            1.79 [1.79]
+measles, genome 19 (rc) 15894 (100.00%) [100.00%]            1.79 [1.79]
+measles, genome 20      15894 (100.00%) [100.00%]            1.79 [1.79]
+measles, genome 20 (rc) 15894 (100.00%) [100.00%]            1.79 [1.79]
+measles, genome 21      15894 (100.00%) [100.00%]            1.79 [1.79]
+measles, genome 21 (rc)   15893 (99.99%) [99.99%]            1.79 [1.79]
+measles, genome 22      15894 (100.00%) [100.00%]            1.79 [1.79]
+measles, genome 22 (rc)   15893 (99.99%) [99.99%]            1.79 [1.79]
+measles, genome 23      15894 (100.00%) [100.00%]            1.79 [1.79]
+measles, genome 23 (rc) 15894 (100.00%) [100.00%]            1.79 [1.79]
+measles, genome 24      15894 (100.00%) [100.00%]            1.79 [1.79]
+measles, genome 24 (rc) 15894 (100.00%) [100.00%]            1.79 [1.79]
+measles, genome 25      15894 (100.00%) [100.00%]            1.28 [1.28]
+measles, genome 25 (rc) 15894 (100.00%) [100.00%]            1.28 [1.28]
+measles, genome 26      15894 (100.00%) [100.01%]            1.80 [1.80]
+measles, genome 26 (rc) 15894 (100.00%) [100.01%]            1.80 [1.80]
+measles, genome 27        10490 (99.99%) [99.99%]            1.68 [1.68]
+measles, genome 27 (rc)   10490 (99.99%) [99.99%]            1.68 [1.68]
+measles, genome 28        10491 (99.99%) [99.99%]            1.64 [1.64]
+measles, genome 28 (rc)   10491 (99.99%) [99.99%]            1.64 [1.64]
+measles, genome 29        15893 (99.99%) [99.99%]            1.74 [1.74]
+measles, genome 29 (rc) 15894 (100.00%) [100.00%]            1.74 [1.74]
+measles, genome 30      15894 (100.00%) [100.00%]            1.78 [1.78]
+measles, genome 30 (rc) 15894 (100.00%) [100.00%]            1.78 [1.78]
+measles, genome 31      15894 (100.00%) [100.00%]            1.59 [1.59]
+measles, genome 31 (rc) 15894 (100.00%) [100.00%]            1.59 [1.59]
+measles, genome 32      15894 (100.00%) [100.00%]            1.68 [1.68]
+measles, genome 32 (rc) 15894 (100.00%) [100.00%]            1.68 [1.68]
+measles, genome 33      15894 (100.00%) [100.00%]            1.67 [1.67]
+measles, genome 33 (rc) 15894 (100.00%) [100.00%]            1.67 [1.67]
+measles, genome 34      15894 (100.00%) [100.00%]            1.79 [1.79]
+measles, genome 34 (rc) 15894 (100.00%) [100.00%]            1.79 [1.79]
+measles, genome 35      15894 (100.00%) [100.00%]            1.77 [1.77]
+measles, genome 35 (rc) 15894 (100.00%) [100.00%]            1.77 [1.77]
+measles, genome 36      15894 (100.00%) [100.00%]            1.79 [1.79]
+measles, genome 36 (rc) 15894 (100.00%) [100.00%]            1.79 [1.79]
+measles, genome 37      15894 (100.00%) [100.00%]            1.77 [1.77]
+measles, genome 37 (rc) 15894 (100.00%) [100.00%]            1.77 [1.77]
+measles, genome 38      15894 (100.00%) [100.00%]            1.78 [1.78]
+measles, genome 38 (rc) 15894 (100.00%) [100.00%]            1.78 [1.78]
+measles, genome 39      15894 (100.00%) [100.00%]            1.59 [1.59]
+measles, genome 39 (rc) 15894 (100.00%) [100.00%]            1.59 [1.59]
+measles, genome 40      15894 (100.00%) [100.00%]            1.68 [1.68]
+measles, genome 40 (rc) 15894 (100.00%) [100.00%]            1.68 [1.68]
+measles, genome 41      15894 (100.00%) [100.00%]            1.67 [1.67]
+measles, genome 41 (rc) 15894 (100.00%) [100.00%]            1.67 [1.67]
+measles, genome 42      15894 (100.00%) [100.00%]            1.79 [1.79]
+measles, genome 42 (rc) 15894 (100.00%) [100.00%]            1.79 [1.79]
+measles, genome 43      15894 (100.00%) [100.00%]            1.77 [1.77]
+measles, genome 43 (rc) 15894 (100.00%) [100.00%]            1.77 [1.77]
+measles, genome 44      15894 (100.00%) [100.00%]            1.79 [1.79]
+measles, genome 44 (rc) 15894 (100.00%) [100.00%]            1.79 [1.79]
+measles, genome 45      15894 (100.00%) [100.00%]            1.77 [1.77]
+measles, genome 45 (rc) 15894 (100.00%) [100.00%]            1.77 [1.77]
+measles, genome 46      15894 (100.00%) [100.00%]            1.74 [1.74]
+measles, genome 46 (rc) 15894 (100.00%) [100.00%]            1.74 [1.74]
+measles, genome 47        15887 (99.96%) [99.96%]            1.50 [1.50]
+measles, genome 47 (rc)   15893 (99.99%) [99.99%]            1.50 [1.50]
+measles, genome 48      15894 (100.00%) [100.00%]            1.66 [1.66]
+measles, genome 48 (rc) 15894 (100.00%) [100.00%]            1.66 [1.66]
+measles, genome 49      15894 (100.00%) [100.00%]            1.66 [1.66]
+measles, genome 49 (rc) 15894 (100.00%) [100.00%]            1.66 [1.66]
+measles, genome 50        15888 (99.96%) [99.96%]            1.56 [1.56]
+measles, genome 50 (rc) 15894 (100.00%) [100.00%]            1.56 [1.56]
+measles, genome 51        15890 (99.97%) [99.97%]            1.58 [1.58]
+measles, genome 51 (rc) 15894 (100.00%) [100.00%]            1.58 [1.58]
+measles, genome 52        15893 (99.99%) [99.99%]            1.21 [1.21]
+measles, genome 52 (rc) 15894 (100.00%) [100.00%]            1.21 [1.21]
+

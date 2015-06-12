@@ -1,0 +1,782 @@
+Sender: LSF System <lsf@node1966>
+Subject: Job 549335: <python bin/make_probes.py --mismatches 3 --lcf_thres 100 --cover_extension 50 --dataset rhabdovirus --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/rhabdovirus/mismatches_3-coverextension_50.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/rhabdovirus.fasta --verbose> in cluster <cromwell> Done
+
+Job <python bin/make_probes.py --mismatches 3 --lcf_thres 100 --cover_extension 50 --dataset rhabdovirus --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/rhabdovirus/mismatches_3-coverextension_50.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/rhabdovirus.fasta --verbose> was submitted from host <node1748> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <node1966>, in queue <week>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Wed Jun 10 19:08:11 2015
+Results reported on Wed Jun 10 19:18:12 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes.py --mismatches 3 --lcf_thres 100 --cover_extension 50 --dataset rhabdovirus --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/rhabdovirus/mismatches_3-coverextension_50.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/rhabdovirus.fasta --verbose
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               598.30 sec.
+    Max Memory :             277 MB
+    Average Memory :         254.06 MB
+    Total Requested Memory : 4296.00 MB
+    Delta Memory :           4019.00 MB
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Processes :          4
+    Max Threads :            5
+
+The output (if any) follows:
+
+2015-06-10 19:08:16,366 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/rhabdovirus.fasta
+2015-06-10 19:08:16,821 - hybseldesign.filter.probe_designer [INFO] Building candidate probes from target sequences
+2015-06-10 19:08:18,591 - hybseldesign.filter.probe_designer [INFO] Starting filter FastaFilter
+2015-06-10 19:08:18,591 - hybseldesign.utils.seq_io [INFO] Reading fasta file /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/rhabdovirus/mismatches_3-coverextension_50.fasta
+2015-06-10 19:08:18,921 - hybseldesign.filter.probe_designer [INFO] Starting filter DuplicateFilter
+2015-06-10 19:08:19,081 - hybseldesign.filter.probe_designer [INFO] Starting filter AdapterFilter
+2015-06-10 19:08:19,082 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across all target genomes
+2015-06-10 19:08:19,082 - hybseldesign.filter.adapter_filter [INFO] Building map from k-mers to probes
+2015-06-10 19:08:48,009 - hybseldesign.filter.adapter_filter [INFO] Adding adapters to probes based on votes
+2015-06-10 19:08:48,112 - hybseldesign.filter.probe_designer [INFO] Starting filter ReverseComplementFilter
+2015-06-10 19:08:48,554 - hybseldesign.coverage_analysis [INFO] Finding probe covers across target genomes
+2015-06-10 19:08:48,554 - hybseldesign.coverage_analysis [INFO] Building map from k-mers to probes
+2015-06-10 19:08:51,163 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 1 (of 243)
+2015-06-10 19:08:53,414 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 2 (of 243)
+2015-06-10 19:08:55,851 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 3 (of 243)
+2015-06-10 19:08:58,417 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 4 (of 243)
+2015-06-10 19:09:00,978 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 5 (of 243)
+2015-06-10 19:09:03,542 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 6 (of 243)
+2015-06-10 19:09:05,704 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 7 (of 243)
+2015-06-10 19:09:08,137 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 8 (of 243)
+2015-06-10 19:09:10,626 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 9 (of 243)
+2015-06-10 19:09:13,037 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 10 (of 243)
+2015-06-10 19:09:15,532 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 11 (of 243)
+2015-06-10 19:09:17,977 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 12 (of 243)
+2015-06-10 19:09:20,427 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 13 (of 243)
+2015-06-10 19:09:22,866 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 14 (of 243)
+2015-06-10 19:09:25,311 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 15 (of 243)
+2015-06-10 19:09:27,798 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 16 (of 243)
+2015-06-10 19:09:30,236 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 17 (of 243)
+2015-06-10 19:09:32,694 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 18 (of 243)
+2015-06-10 19:09:35,134 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 19 (of 243)
+2015-06-10 19:09:37,568 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 20 (of 243)
+2015-06-10 19:09:40,127 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 21 (of 243)
+2015-06-10 19:09:42,606 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 22 (of 243)
+2015-06-10 19:09:44,668 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 23 (of 243)
+2015-06-10 19:09:46,605 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 24 (of 243)
+2015-06-10 19:09:49,015 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 25 (of 243)
+2015-06-10 19:09:51,058 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 26 (of 243)
+2015-06-10 19:09:53,067 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 27 (of 243)
+2015-06-10 19:09:55,100 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 28 (of 243)
+2015-06-10 19:09:57,620 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 29 (of 243)
+2015-06-10 19:09:59,904 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 30 (of 243)
+2015-06-10 19:10:02,072 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 31 (of 243)
+2015-06-10 19:10:04,214 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 32 (of 243)
+2015-06-10 19:10:06,687 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 33 (of 243)
+2015-06-10 19:10:09,143 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 34 (of 243)
+2015-06-10 19:10:11,520 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 35 (of 243)
+2015-06-10 19:10:13,270 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 36 (of 243)
+2015-06-10 19:10:14,998 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 37 (of 243)
+2015-06-10 19:10:17,288 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 38 (of 243)
+2015-06-10 19:10:19,710 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 39 (of 243)
+2015-06-10 19:10:22,211 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 40 (of 243)
+2015-06-10 19:10:24,657 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 41 (of 243)
+2015-06-10 19:10:27,055 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 42 (of 243)
+2015-06-10 19:10:29,461 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 43 (of 243)
+2015-06-10 19:10:31,687 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 44 (of 243)
+2015-06-10 19:10:33,894 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 45 (of 243)
+2015-06-10 19:10:36,230 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 46 (of 243)
+2015-06-10 19:10:38,710 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 47 (of 243)
+2015-06-10 19:10:41,164 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 48 (of 243)
+2015-06-10 19:10:43,555 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 49 (of 243)
+2015-06-10 19:10:45,776 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 50 (of 243)
+2015-06-10 19:10:47,873 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 51 (of 243)
+2015-06-10 19:10:50,091 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 52 (of 243)
+2015-06-10 19:10:52,175 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 53 (of 243)
+2015-06-10 19:10:54,262 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 54 (of 243)
+2015-06-10 19:10:56,376 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 55 (of 243)
+2015-06-10 19:10:58,376 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 56 (of 243)
+2015-06-10 19:11:00,740 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 57 (of 243)
+2015-06-10 19:11:03,058 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 58 (of 243)
+2015-06-10 19:11:05,457 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 59 (of 243)
+2015-06-10 19:11:07,283 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 60 (of 243)
+2015-06-10 19:11:09,492 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 61 (of 243)
+2015-06-10 19:11:11,911 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 62 (of 243)
+2015-06-10 19:11:14,368 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 63 (of 243)
+2015-06-10 19:11:16,640 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 64 (of 243)
+2015-06-10 19:11:18,679 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 65 (of 243)
+2015-06-10 19:11:20,977 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 66 (of 243)
+2015-06-10 19:11:23,177 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 67 (of 243)
+2015-06-10 19:11:25,277 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 68 (of 243)
+2015-06-10 19:11:27,383 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 69 (of 243)
+2015-06-10 19:11:29,480 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 70 (of 243)
+2015-06-10 19:11:31,574 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 71 (of 243)
+2015-06-10 19:11:33,650 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 72 (of 243)
+2015-06-10 19:11:35,723 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 73 (of 243)
+2015-06-10 19:11:38,168 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 74 (of 243)
+2015-06-10 19:11:40,188 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 75 (of 243)
+2015-06-10 19:11:42,264 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 76 (of 243)
+2015-06-10 19:11:44,357 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 77 (of 243)
+2015-06-10 19:11:46,436 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 78 (of 243)
+2015-06-10 19:11:48,609 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 79 (of 243)
+2015-06-10 19:11:50,781 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 80 (of 243)
+2015-06-10 19:11:52,946 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 81 (of 243)
+2015-06-10 19:11:55,120 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 82 (of 243)
+2015-06-10 19:11:57,547 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 83 (of 243)
+2015-06-10 19:11:59,988 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 84 (of 243)
+2015-06-10 19:12:01,978 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 85 (of 243)
+2015-06-10 19:12:04,048 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 86 (of 243)
+2015-06-10 19:12:06,135 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 87 (of 243)
+2015-06-10 19:12:08,464 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 88 (of 243)
+2015-06-10 19:12:10,501 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 89 (of 243)
+2015-06-10 19:12:12,964 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 90 (of 243)
+2015-06-10 19:12:15,018 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 91 (of 243)
+2015-06-10 19:12:17,331 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 92 (of 243)
+2015-06-10 19:12:19,764 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 93 (of 243)
+2015-06-10 19:12:22,128 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 94 (of 243)
+2015-06-10 19:12:24,510 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 95 (of 243)
+2015-06-10 19:12:26,873 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 96 (of 243)
+2015-06-10 19:12:28,992 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 97 (of 243)
+2015-06-10 19:12:31,141 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 98 (of 243)
+2015-06-10 19:12:33,231 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 99 (of 243)
+2015-06-10 19:12:35,300 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 100 (of 243)
+2015-06-10 19:12:37,388 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 101 (of 243)
+2015-06-10 19:12:39,441 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 102 (of 243)
+2015-06-10 19:12:41,525 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 103 (of 243)
+2015-06-10 19:12:43,593 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 104 (of 243)
+2015-06-10 19:12:45,721 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 105 (of 243)
+2015-06-10 19:12:48,225 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 106 (of 243)
+2015-06-10 19:12:50,773 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 107 (of 243)
+2015-06-10 19:12:53,328 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 108 (of 243)
+2015-06-10 19:12:55,802 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 109 (of 243)
+2015-06-10 19:12:58,004 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 110 (of 243)
+2015-06-10 19:13:00,208 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 111 (of 243)
+2015-06-10 19:13:02,252 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 112 (of 243)
+2015-06-10 19:13:04,214 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 113 (of 243)
+2015-06-10 19:13:06,130 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 114 (of 243)
+2015-06-10 19:13:08,573 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 115 (of 243)
+2015-06-10 19:13:10,736 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 116 (of 243)
+2015-06-10 19:13:12,802 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 117 (of 243)
+2015-06-10 19:13:14,951 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 118 (of 243)
+2015-06-10 19:13:17,090 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 119 (of 243)
+2015-06-10 19:13:19,116 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 120 (of 243)
+2015-06-10 19:13:21,264 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 121 (of 243)
+2015-06-10 19:13:23,236 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 122 (of 243)
+2015-06-10 19:13:24,984 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 123 (of 243)
+2015-06-10 19:13:27,356 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 124 (of 243)
+2015-06-10 19:13:29,078 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 125 (of 243)
+2015-06-10 19:13:31,443 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 126 (of 243)
+2015-06-10 19:13:33,924 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 127 (of 243)
+2015-06-10 19:13:36,414 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 128 (of 243)
+2015-06-10 19:13:38,821 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 129 (of 243)
+2015-06-10 19:13:41,234 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 130 (of 243)
+2015-06-10 19:13:43,374 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 131 (of 243)
+2015-06-10 19:13:45,587 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 132 (of 243)
+2015-06-10 19:13:47,996 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 133 (of 243)
+2015-06-10 19:13:50,227 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 134 (of 243)
+2015-06-10 19:13:52,622 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 135 (of 243)
+2015-06-10 19:13:55,019 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 136 (of 243)
+2015-06-10 19:13:57,414 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 137 (of 243)
+2015-06-10 19:13:59,637 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 138 (of 243)
+2015-06-10 19:14:01,823 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 139 (of 243)
+2015-06-10 19:14:04,018 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 140 (of 243)
+2015-06-10 19:14:06,380 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 141 (of 243)
+2015-06-10 19:14:08,729 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 142 (of 243)
+2015-06-10 19:14:10,763 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 143 (of 243)
+2015-06-10 19:14:12,784 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 144 (of 243)
+2015-06-10 19:14:14,768 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 145 (of 243)
+2015-06-10 19:14:16,644 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 146 (of 243)
+2015-06-10 19:14:18,578 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 147 (of 243)
+2015-06-10 19:14:20,332 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 148 (of 243)
+2015-06-10 19:14:22,707 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 149 (of 243)
+2015-06-10 19:14:25,066 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 150 (of 243)
+2015-06-10 19:14:27,365 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 151 (of 243)
+2015-06-10 19:14:29,779 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 152 (of 243)
+2015-06-10 19:14:31,864 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 153 (of 243)
+2015-06-10 19:14:33,546 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 154 (of 243)
+2015-06-10 19:14:35,939 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 155 (of 243)
+2015-06-10 19:14:38,406 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 156 (of 243)
+2015-06-10 19:14:40,844 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 157 (of 243)
+2015-06-10 19:14:43,282 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 158 (of 243)
+2015-06-10 19:14:45,591 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 159 (of 243)
+2015-06-10 19:14:47,945 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 160 (of 243)
+2015-06-10 19:14:49,887 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 161 (of 243)
+2015-06-10 19:14:52,416 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 162 (of 243)
+2015-06-10 19:14:55,050 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 163 (of 243)
+2015-06-10 19:14:57,545 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 164 (of 243)
+2015-06-10 19:14:59,999 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 165 (of 243)
+2015-06-10 19:15:02,186 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 166 (of 243)
+2015-06-10 19:15:04,538 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 167 (of 243)
+2015-06-10 19:15:06,875 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 168 (of 243)
+2015-06-10 19:15:09,226 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 169 (of 243)
+2015-06-10 19:15:11,564 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 170 (of 243)
+2015-06-10 19:15:13,916 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 171 (of 243)
+2015-06-10 19:15:16,267 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 172 (of 243)
+2015-06-10 19:15:18,616 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 173 (of 243)
+2015-06-10 19:15:20,965 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 174 (of 243)
+2015-06-10 19:15:23,317 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 175 (of 243)
+2015-06-10 19:15:25,666 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 176 (of 243)
+2015-06-10 19:15:28,008 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 177 (of 243)
+2015-06-10 19:15:30,359 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 178 (of 243)
+2015-06-10 19:15:32,712 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 179 (of 243)
+2015-06-10 19:15:35,053 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 180 (of 243)
+2015-06-10 19:15:37,409 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 181 (of 243)
+2015-06-10 19:15:39,767 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 182 (of 243)
+2015-06-10 19:15:42,102 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 183 (of 243)
+2015-06-10 19:15:44,449 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 184 (of 243)
+2015-06-10 19:15:46,789 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 185 (of 243)
+2015-06-10 19:15:49,134 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 186 (of 243)
+2015-06-10 19:15:51,487 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 187 (of 243)
+2015-06-10 19:15:53,883 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 188 (of 243)
+2015-06-10 19:15:56,284 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 189 (of 243)
+2015-06-10 19:15:58,629 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 190 (of 243)
+2015-06-10 19:16:00,742 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 191 (of 243)
+2015-06-10 19:16:02,932 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 192 (of 243)
+2015-06-10 19:16:05,409 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 193 (of 243)
+2015-06-10 19:16:07,891 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 194 (of 243)
+2015-06-10 19:16:10,353 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 195 (of 243)
+2015-06-10 19:16:12,766 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 196 (of 243)
+2015-06-10 19:16:15,220 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 197 (of 243)
+2015-06-10 19:16:17,655 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 198 (of 243)
+2015-06-10 19:16:20,068 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 199 (of 243)
+2015-06-10 19:16:22,468 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 200 (of 243)
+2015-06-10 19:16:24,917 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 201 (of 243)
+2015-06-10 19:16:27,351 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 202 (of 243)
+2015-06-10 19:16:29,800 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 203 (of 243)
+2015-06-10 19:16:32,221 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 204 (of 243)
+2015-06-10 19:16:34,671 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 205 (of 243)
+2015-06-10 19:16:37,118 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 206 (of 243)
+2015-06-10 19:16:39,548 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 207 (of 243)
+2015-06-10 19:16:41,969 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 208 (of 243)
+2015-06-10 19:16:44,397 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 209 (of 243)
+2015-06-10 19:16:46,837 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 210 (of 243)
+2015-06-10 19:16:49,278 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 211 (of 243)
+2015-06-10 19:16:51,725 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 212 (of 243)
+2015-06-10 19:16:54,174 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 213 (of 243)
+2015-06-10 19:16:56,609 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 214 (of 243)
+2015-06-10 19:16:59,090 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 215 (of 243)
+2015-06-10 19:17:01,578 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 216 (of 243)
+2015-06-10 19:17:04,033 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 217 (of 243)
+2015-06-10 19:17:06,396 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 218 (of 243)
+2015-06-10 19:17:08,595 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 219 (of 243)
+2015-06-10 19:17:10,712 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 220 (of 243)
+2015-06-10 19:17:12,873 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 221 (of 243)
+2015-06-10 19:17:14,884 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 222 (of 243)
+2015-06-10 19:17:16,986 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 223 (of 243)
+2015-06-10 19:17:19,187 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 224 (of 243)
+2015-06-10 19:17:21,532 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 225 (of 243)
+2015-06-10 19:17:23,895 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 226 (of 243)
+2015-06-10 19:17:26,277 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 227 (of 243)
+2015-06-10 19:17:28,647 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 228 (of 243)
+2015-06-10 19:17:31,007 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 229 (of 243)
+2015-06-10 19:17:33,378 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 230 (of 243)
+2015-06-10 19:17:35,743 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 231 (of 243)
+2015-06-10 19:17:38,136 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 232 (of 243)
+2015-06-10 19:17:40,494 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 233 (of 243)
+2015-06-10 19:17:41,776 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 234 (of 243)
+2015-06-10 19:17:43,051 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 235 (of 243)
+2015-06-10 19:17:44,410 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 236 (of 243)
+2015-06-10 19:17:45,793 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 237 (of 243)
+2015-06-10 19:17:48,162 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 238 (of 243)
+2015-06-10 19:17:50,525 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 239 (of 243)
+2015-06-10 19:17:52,885 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 240 (of 243)
+2015-06-10 19:17:55,324 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 241 (of 243)
+2015-06-10 19:17:57,588 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 242 (of 243)
+2015-06-10 19:17:59,721 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 243 (of 243)
+2015-06-10 19:18:01,886 - hybseldesign.coverage_analysis [INFO] Computing bases covered across target genomes
+2015-06-10 19:18:01,977 - hybseldesign.coverage_analysis [INFO] Computing average coverage across target genomes
+2015-06-10 19:18:02,070 - hybseldesign.coverage_analysis [INFO] Computing sliding coverage across target genomes
+NUMBER OF PROBES: 7138
+
+Genome                               Num bases covered Average coverage/depth
+                                        [over unambig]         [over unambig]
+---------------------------- ------------------------- ----------------------
+rhabdovirus, genome 0        11928 (100.00%) [100.00%]            1.25 [1.25]
+rhabdovirus, genome 0 (rc)   11928 (100.00%) [100.00%]            1.25 [1.25]
+rhabdovirus, genome 1        11821 (100.00%) [100.00%]            2.41 [2.41]
+rhabdovirus, genome 1 (rc)   11821 (100.00%) [100.00%]            2.41 [2.41]
+rhabdovirus, genome 2        11923 (100.00%) [100.00%]            2.28 [2.28]
+rhabdovirus, genome 2 (rc)   11923 (100.00%) [100.00%]            2.28 [2.28]
+rhabdovirus, genome 3        11923 (100.00%) [100.00%]            2.50 [2.50]
+rhabdovirus, genome 3 (rc)   11923 (100.00%) [100.00%]            2.50 [2.50]
+rhabdovirus, genome 4        11923 (100.00%) [100.00%]            2.42 [2.42]
+rhabdovirus, genome 4 (rc)   11923 (100.00%) [100.00%]            2.42 [2.42]
+rhabdovirus, genome 5          11926 (99.99%) [99.99%]            1.39 [1.39]
+rhabdovirus, genome 5 (rc)   11927 (100.00%) [100.00%]            1.39 [1.39]
+rhabdovirus, genome 6        11914 (100.00%) [100.00%]            2.35 [2.35]
+rhabdovirus, genome 6 (rc)   11914 (100.00%) [100.00%]            2.35 [2.35]
+rhabdovirus, genome 7        11923 (100.00%) [100.00%]            2.27 [2.27]
+rhabdovirus, genome 7 (rc)   11923 (100.00%) [100.00%]            2.27 [2.27]
+rhabdovirus, genome 8        11923 (100.00%) [100.00%]            2.22 [2.22]
+rhabdovirus, genome 8 (rc)   11923 (100.00%) [100.00%]            2.22 [2.22]
+rhabdovirus, genome 9        11923 (100.00%) [100.00%]            2.27 [2.27]
+rhabdovirus, genome 9 (rc)   11923 (100.00%) [100.00%]            2.27 [2.27]
+rhabdovirus, genome 10       11821 (100.00%) [100.00%]            2.41 [2.41]
+rhabdovirus, genome 10 (rc)  11821 (100.00%) [100.00%]            2.41 [2.41]
+rhabdovirus, genome 11       11802 (100.00%) [100.00%]            2.40 [2.40]
+rhabdovirus, genome 11 (rc)  11802 (100.00%) [100.00%]            2.40 [2.40]
+rhabdovirus, genome 12       11828 (100.00%) [100.00%]            2.41 [2.41]
+rhabdovirus, genome 12 (rc)  11828 (100.00%) [100.00%]            2.41 [2.41]
+rhabdovirus, genome 13       11834 (100.00%) [100.00%]            2.42 [2.42]
+rhabdovirus, genome 13 (rc)  11834 (100.00%) [100.00%]            2.42 [2.42]
+rhabdovirus, genome 14       11923 (100.00%) [100.00%]            2.32 [2.32]
+rhabdovirus, genome 14 (rc)  11923 (100.00%) [100.00%]            2.32 [2.32]
+rhabdovirus, genome 15       11830 (100.00%) [100.00%]            2.42 [2.42]
+rhabdovirus, genome 15 (rc)  11830 (100.00%) [100.00%]            2.42 [2.42]
+rhabdovirus, genome 16       11922 (100.00%) [100.00%]            2.46 [2.46]
+rhabdovirus, genome 16 (rc)  11922 (100.00%) [100.00%]            2.46 [2.46]
+rhabdovirus, genome 17       11821 (100.00%) [100.00%]            2.44 [2.44]
+rhabdovirus, genome 17 (rc)  11821 (100.00%) [100.00%]            2.44 [2.44]
+rhabdovirus, genome 18       11821 (100.00%) [100.00%]            2.41 [2.41]
+rhabdovirus, genome 18 (rc)  11821 (100.00%) [100.00%]            2.41 [2.41]
+rhabdovirus, genome 19       11923 (100.00%) [100.00%]            2.32 [2.32]
+rhabdovirus, genome 19 (rc)  11923 (100.00%) [100.00%]            2.32 [2.32]
+rhabdovirus, genome 20       11802 (100.00%) [100.00%]            2.39 [2.39]
+rhabdovirus, genome 20 (rc)  11802 (100.00%) [100.00%]            2.39 [2.39]
+rhabdovirus, genome 21       11883 (100.00%) [100.00%]            1.51 [1.51]
+rhabdovirus, genome 21 (rc)  11883 (100.00%) [100.00%]            1.51 [1.51]
+rhabdovirus, genome 22       11899 (100.00%) [100.00%]            1.58 [1.58]
+rhabdovirus, genome 22 (rc)  11899 (100.00%) [100.00%]            1.58 [1.58]
+rhabdovirus, genome 23       11925 (100.00%) [100.00%]            2.53 [2.53]
+rhabdovirus, genome 23 (rc)  11925 (100.00%) [100.00%]            2.53 [2.53]
+rhabdovirus, genome 24         11922 (99.99%) [99.99%]            1.55 [1.55]
+rhabdovirus, genome 24 (rc)    11922 (99.99%) [99.99%]            1.55 [1.55]
+rhabdovirus, genome 25       11925 (100.00%) [100.00%]            1.52 [1.52]
+rhabdovirus, genome 25 (rc)  11925 (100.00%) [100.00%]            1.52 [1.52]
+rhabdovirus, genome 26       11922 (100.00%) [100.01%]            1.59 [1.59]
+rhabdovirus, genome 26 (rc)  11922 (100.00%) [100.01%]            1.59 [1.59]
+rhabdovirus, genome 27       11923 (100.00%) [100.00%]            2.50 [2.50]
+rhabdovirus, genome 27 (rc)  11923 (100.00%) [100.00%]            2.50 [2.50]
+rhabdovirus, genome 28       11923 (100.00%) [100.00%]            1.36 [1.36]
+rhabdovirus, genome 28 (rc)  11923 (100.00%) [100.00%]            1.36 [1.36]
+rhabdovirus, genome 29       11923 (100.00%) [100.00%]            1.35 [1.35]
+rhabdovirus, genome 29 (rc)  11923 (100.00%) [100.00%]            1.35 [1.35]
+rhabdovirus, genome 30       11923 (100.00%) [100.00%]            1.31 [1.31]
+rhabdovirus, genome 30 (rc)  11923 (100.00%) [100.00%]            1.31 [1.31]
+rhabdovirus, genome 31       11922 (100.00%) [100.00%]            2.46 [2.46]
+rhabdovirus, genome 31 (rc)  11922 (100.00%) [100.00%]            2.46 [2.46]
+rhabdovirus, genome 32       11922 (100.00%) [100.00%]            2.46 [2.46]
+rhabdovirus, genome 32 (rc)  11922 (100.00%) [100.00%]            2.46 [2.46]
+rhabdovirus, genome 33       11925 (100.00%) [100.00%]            1.57 [1.57]
+rhabdovirus, genome 33 (rc)  11925 (100.00%) [100.00%]            1.57 [1.57]
+rhabdovirus, genome 34       11923 (100.00%) [100.00%]            1.03 [1.03]
+rhabdovirus, genome 34 (rc)  11923 (100.00%) [100.00%]            1.03 [1.03]
+rhabdovirus, genome 35       11923 (100.00%) [100.00%]            1.02 [1.02]
+rhabdovirus, genome 35 (rc)  11923 (100.00%) [100.00%]            1.02 [1.02]
+rhabdovirus, genome 36       11930 (100.00%) [100.00%]            1.68 [1.68]
+rhabdovirus, genome 36 (rc)    11929 (99.99%) [99.99%]            1.68 [1.68]
+rhabdovirus, genome 37       11922 (100.00%) [100.00%]            2.29 [2.29]
+rhabdovirus, genome 37 (rc)  11922 (100.00%) [100.00%]            2.29 [2.29]
+rhabdovirus, genome 38       11925 (100.00%) [100.00%]            1.84 [1.84]
+rhabdovirus, genome 38 (rc)  11925 (100.00%) [100.00%]            1.84 [1.84]
+rhabdovirus, genome 39       11922 (100.00%) [100.00%]            2.47 [2.47]
+rhabdovirus, genome 39 (rc)  11922 (100.00%) [100.00%]            2.47 [2.47]
+rhabdovirus, genome 40       11821 (100.00%) [100.00%]            2.39 [2.39]
+rhabdovirus, genome 40 (rc)  11821 (100.00%) [100.00%]            2.39 [2.39]
+rhabdovirus, genome 41       11824 (100.00%) [100.00%]            2.35 [2.35]
+rhabdovirus, genome 41 (rc)  11824 (100.00%) [100.00%]            2.35 [2.35]
+rhabdovirus, genome 42       11924 (100.00%) [100.00%]            1.25 [1.25]
+rhabdovirus, genome 42 (rc)  11924 (100.00%) [100.00%]            1.25 [1.25]
+rhabdovirus, genome 43       11923 (100.00%) [100.00%]            1.60 [1.60]
+rhabdovirus, genome 43 (rc)  11923 (100.00%) [100.00%]            1.60 [1.60]
+rhabdovirus, genome 44       11922 (100.00%) [100.00%]            2.06 [2.06]
+rhabdovirus, genome 44 (rc)  11922 (100.00%) [100.00%]            2.06 [2.06]
+rhabdovirus, genome 45       11922 (100.00%) [100.00%]            2.43 [2.43]
+rhabdovirus, genome 45 (rc)  11922 (100.00%) [100.00%]            2.43 [2.43]
+rhabdovirus, genome 46       11922 (100.00%) [100.00%]            2.48 [2.48]
+rhabdovirus, genome 46 (rc)  11922 (100.00%) [100.00%]            2.48 [2.48]
+rhabdovirus, genome 47       11927 (100.00%) [100.00%]            2.02 [2.02]
+rhabdovirus, genome 47 (rc)  11927 (100.00%) [100.00%]            2.02 [2.02]
+rhabdovirus, genome 48       11928 (100.00%) [100.00%]            1.28 [1.28]
+rhabdovirus, genome 48 (rc)    11927 (99.99%) [99.99%]            1.28 [1.28]
+rhabdovirus, genome 49       11924 (100.00%) [100.00%]            1.67 [1.67]
+rhabdovirus, genome 49 (rc)  11924 (100.00%) [100.00%]            1.67 [1.67]
+rhabdovirus, genome 50       11928 (100.00%) [100.00%]            1.44 [1.44]
+rhabdovirus, genome 50 (rc)  11928 (100.00%) [100.00%]            1.44 [1.44]
+rhabdovirus, genome 51       11924 (100.00%) [100.02%]            1.67 [1.67]
+rhabdovirus, genome 51 (rc)  11924 (100.00%) [100.02%]            1.67 [1.67]
+rhabdovirus, genome 52       11922 (100.00%) [100.00%]            1.65 [1.65]
+rhabdovirus, genome 52 (rc)    11921 (99.99%) [99.99%]            1.65 [1.65]
+rhabdovirus, genome 53       11924 (100.00%) [100.00%]            1.77 [1.77]
+rhabdovirus, genome 53 (rc)    11923 (99.99%) [99.99%]            1.77 [1.77]
+rhabdovirus, genome 54       11923 (100.00%) [100.00%]            1.47 [1.47]
+rhabdovirus, genome 54 (rc)  11923 (100.00%) [100.00%]            1.47 [1.47]
+rhabdovirus, genome 55       11924 (100.00%) [100.00%]            1.58 [1.58]
+rhabdovirus, genome 55 (rc)  11924 (100.00%) [100.00%]            1.58 [1.58]
+rhabdovirus, genome 56       11925 (100.00%) [100.00%]            1.66 [1.66]
+rhabdovirus, genome 56 (rc)  11925 (100.00%) [100.00%]            1.66 [1.66]
+rhabdovirus, genome 57       11923 (100.00%) [100.00%]            1.81 [1.81]
+rhabdovirus, genome 57 (rc)  11923 (100.00%) [100.00%]            1.81 [1.81]
+rhabdovirus, genome 58       11856 (100.00%) [100.00%]            1.10 [1.10]
+rhabdovirus, genome 58 (rc)  11856 (100.00%) [100.00%]            1.10 [1.10]
+rhabdovirus, genome 59       11928 (100.00%) [100.00%]            1.29 [1.29]
+rhabdovirus, genome 59 (rc)    11927 (99.99%) [99.99%]            1.29 [1.29]
+rhabdovirus, genome 60       11922 (100.00%) [100.00%]            2.24 [2.24]
+rhabdovirus, genome 60 (rc)  11922 (100.00%) [100.00%]            2.24 [2.24]
+rhabdovirus, genome 61       11922 (100.00%) [100.00%]            2.47 [2.47]
+rhabdovirus, genome 61 (rc)  11922 (100.00%) [100.00%]            2.47 [2.47]
+rhabdovirus, genome 62       11923 (100.00%) [100.00%]            1.50 [1.50]
+rhabdovirus, genome 62 (rc)  11923 (100.00%) [100.00%]            1.50 [1.50]
+rhabdovirus, genome 63       11923 (100.00%) [100.00%]            1.15 [1.15]
+rhabdovirus, genome 63 (rc)  11923 (100.00%) [100.00%]            1.15 [1.15]
+rhabdovirus, genome 64       11923 (100.00%) [100.00%]            1.31 [1.31]
+rhabdovirus, genome 64 (rc)    11922 (99.99%) [99.99%]            1.31 [1.31]
+rhabdovirus, genome 65       11922 (100.00%) [100.00%]            1.63 [1.63]
+rhabdovirus, genome 65 (rc)  11922 (100.00%) [100.00%]            1.63 [1.63]
+rhabdovirus, genome 66       11924 (100.00%) [100.00%]            1.72 [1.72]
+rhabdovirus, genome 66 (rc)  11924 (100.00%) [100.00%]            1.72 [1.72]
+rhabdovirus, genome 67       11924 (100.00%) [100.00%]            1.72 [1.72]
+rhabdovirus, genome 67 (rc)  11924 (100.00%) [100.00%]            1.72 [1.72]
+rhabdovirus, genome 68       11924 (100.00%) [100.00%]            1.70 [1.70]
+rhabdovirus, genome 68 (rc)  11924 (100.00%) [100.00%]            1.70 [1.70]
+rhabdovirus, genome 69       11924 (100.00%) [100.00%]            1.73 [1.73]
+rhabdovirus, genome 69 (rc)  11924 (100.00%) [100.00%]            1.73 [1.73]
+rhabdovirus, genome 70       11923 (100.00%) [100.00%]            1.70 [1.70]
+rhabdovirus, genome 70 (rc)  11923 (100.00%) [100.00%]            1.70 [1.70]
+rhabdovirus, genome 71       11924 (100.00%) [100.00%]            1.70 [1.70]
+rhabdovirus, genome 71 (rc)  11924 (100.00%) [100.00%]            1.70 [1.70]
+rhabdovirus, genome 72       11922 (100.00%) [100.00%]            2.40 [2.40]
+rhabdovirus, genome 72 (rc)  11922 (100.00%) [100.00%]            2.40 [2.40]
+rhabdovirus, genome 73       11922 (100.00%) [100.00%]            1.29 [1.29]
+rhabdovirus, genome 73 (rc)  11922 (100.00%) [100.00%]            1.29 [1.29]
+rhabdovirus, genome 74       11908 (100.00%) [100.00%]            1.32 [1.32]
+rhabdovirus, genome 74 (rc)  11908 (100.00%) [100.00%]            1.32 [1.32]
+rhabdovirus, genome 75       11924 (100.00%) [100.00%]            1.74 [1.74]
+rhabdovirus, genome 75 (rc)  11924 (100.00%) [100.00%]            1.74 [1.74]
+rhabdovirus, genome 76       11924 (100.00%) [100.00%]            1.65 [1.65]
+rhabdovirus, genome 76 (rc)  11924 (100.00%) [100.00%]            1.65 [1.65]
+rhabdovirus, genome 77       11925 (100.00%) [100.00%]            1.60 [1.60]
+rhabdovirus, genome 77 (rc)  11925 (100.00%) [100.00%]            1.60 [1.60]
+rhabdovirus, genome 78       11925 (100.00%) [100.00%]            1.63 [1.63]
+rhabdovirus, genome 78 (rc)  11925 (100.00%) [100.00%]            1.63 [1.63]
+rhabdovirus, genome 79         11921 (99.98%) [99.98%]            1.57 [1.57]
+rhabdovirus, genome 79 (rc)    11921 (99.98%) [99.98%]            1.57 [1.57]
+rhabdovirus, genome 80       11924 (100.00%) [100.00%]            1.57 [1.57]
+rhabdovirus, genome 80 (rc)  11924 (100.00%) [100.00%]            1.57 [1.57]
+rhabdovirus, genome 81       11927 (100.00%) [100.00%]            2.14 [2.14]
+rhabdovirus, genome 81 (rc)  11927 (100.00%) [100.00%]            2.14 [2.14]
+rhabdovirus, genome 82       11927 (100.00%) [100.00%]            2.16 [2.16]
+rhabdovirus, genome 82 (rc)  11927 (100.00%) [100.00%]            2.16 [2.16]
+rhabdovirus, genome 83       11923 (100.00%) [100.00%]            1.44 [1.44]
+rhabdovirus, genome 83 (rc)  11923 (100.00%) [100.00%]            1.44 [1.44]
+rhabdovirus, genome 84       11925 (100.00%) [100.00%]            1.65 [1.65]
+rhabdovirus, genome 84 (rc)  11925 (100.00%) [100.00%]            1.65 [1.65]
+rhabdovirus, genome 85       11925 (100.00%) [100.00%]            1.69 [1.69]
+rhabdovirus, genome 85 (rc)  11925 (100.00%) [100.00%]            1.69 [1.69]
+rhabdovirus, genome 86       11863 (100.00%) [100.00%]            2.28 [2.28]
+rhabdovirus, genome 86 (rc)  11863 (100.00%) [100.00%]            2.28 [2.28]
+rhabdovirus, genome 87       11924 (100.00%) [100.00%]            1.71 [1.71]
+rhabdovirus, genome 87 (rc)  11924 (100.00%) [100.00%]            1.71 [1.71]
+rhabdovirus, genome 88       11924 (100.00%) [100.00%]            2.02 [2.02]
+rhabdovirus, genome 88 (rc)  11924 (100.00%) [100.00%]            2.02 [2.02]
+rhabdovirus, genome 89         11921 (99.98%) [99.98%]            1.15 [1.15]
+rhabdovirus, genome 89 (rc)  11923 (100.00%) [100.00%]            1.15 [1.15]
+rhabdovirus, genome 90       11924 (100.00%) [100.00%]            1.45 [1.45]
+rhabdovirus, genome 90 (rc)  11924 (100.00%) [100.00%]            1.45 [1.45]
+rhabdovirus, genome 91       11927 (100.00%) [100.00%]            2.21 [2.21]
+rhabdovirus, genome 91 (rc)  11927 (100.00%) [100.00%]            2.21 [2.21]
+rhabdovirus, genome 92       11932 (100.00%) [100.00%]            2.04 [2.04]
+rhabdovirus, genome 92 (rc)  11932 (100.00%) [100.00%]            2.04 [2.04]
+rhabdovirus, genome 93       11932 (100.00%) [100.01%]            2.02 [2.02]
+rhabdovirus, genome 93 (rc)  11932 (100.00%) [100.01%]            2.02 [2.02]
+rhabdovirus, genome 94       11931 (100.00%) [100.01%]            2.02 [2.02]
+rhabdovirus, genome 94 (rc)  11931 (100.00%) [100.01%]            2.02 [2.02]
+rhabdovirus, genome 95       11923 (100.00%) [100.00%]            1.71 [1.71]
+rhabdovirus, genome 95 (rc)  11923 (100.00%) [100.00%]            1.71 [1.71]
+rhabdovirus, genome 96       11923 (100.00%) [100.00%]            1.59 [1.59]
+rhabdovirus, genome 96 (rc)  11923 (100.00%) [100.00%]            1.59 [1.59]
+rhabdovirus, genome 97       11924 (100.00%) [100.00%]            1.72 [1.72]
+rhabdovirus, genome 97 (rc)  11924 (100.00%) [100.00%]            1.72 [1.72]
+rhabdovirus, genome 98       11924 (100.00%) [100.00%]            1.67 [1.67]
+rhabdovirus, genome 98 (rc)  11924 (100.00%) [100.00%]            1.67 [1.67]
+rhabdovirus, genome 99       11924 (100.00%) [100.00%]            1.72 [1.72]
+rhabdovirus, genome 99 (rc)  11924 (100.00%) [100.00%]            1.72 [1.72]
+rhabdovirus, genome 100      11923 (100.00%) [100.00%]            1.30 [1.30]
+rhabdovirus, genome 100 (rc) 11923 (100.00%) [100.00%]            1.30 [1.30]
+rhabdovirus, genome 101      11910 (100.00%) [100.00%]            1.19 [1.19]
+rhabdovirus, genome 101 (rc) 11910 (100.00%) [100.00%]            1.19 [1.19]
+rhabdovirus, genome 102      11922 (100.00%) [100.00%]            1.36 [1.36]
+rhabdovirus, genome 102 (rc) 11922 (100.00%) [100.00%]            1.36 [1.36]
+rhabdovirus, genome 103      11924 (100.00%) [100.00%]            1.64 [1.64]
+rhabdovirus, genome 103 (rc) 11924 (100.00%) [100.00%]            1.64 [1.64]
+rhabdovirus, genome 104      11925 (100.00%) [100.00%]            2.52 [2.52]
+rhabdovirus, genome 104 (rc) 11925 (100.00%) [100.00%]            2.52 [2.52]
+rhabdovirus, genome 105      11925 (100.00%) [100.00%]            2.70 [2.70]
+rhabdovirus, genome 105 (rc) 11925 (100.00%) [100.00%]            2.70 [2.70]
+rhabdovirus, genome 106      11924 (100.00%) [100.00%]            2.70 [2.70]
+rhabdovirus, genome 106 (rc) 11924 (100.00%) [100.00%]            2.70 [2.70]
+rhabdovirus, genome 107      11711 (100.00%) [100.00%]            2.55 [2.55]
+rhabdovirus, genome 107 (rc) 11711 (100.00%) [100.00%]            2.55 [2.55]
+rhabdovirus, genome 108      11923 (100.00%) [100.00%]            1.61 [1.61]
+rhabdovirus, genome 108 (rc) 11923 (100.00%) [100.00%]            1.61 [1.61]
+rhabdovirus, genome 109      11922 (100.00%) [100.00%]            1.81 [1.81]
+rhabdovirus, genome 109 (rc) 11922 (100.00%) [100.00%]            1.81 [1.81]
+rhabdovirus, genome 110      11923 (100.00%) [100.00%]            1.59 [1.59]
+rhabdovirus, genome 110 (rc) 11923 (100.00%) [100.00%]            1.59 [1.59]
+rhabdovirus, genome 111      11926 (100.00%) [100.00%]            1.34 [1.34]
+rhabdovirus, genome 111 (rc) 11926 (100.00%) [100.00%]            1.34 [1.34]
+rhabdovirus, genome 112      11926 (100.00%) [100.00%]            1.30 [1.30]
+rhabdovirus, genome 112 (rc) 11926 (100.00%) [100.00%]            1.30 [1.30]
+rhabdovirus, genome 113      11615 (100.00%) [100.00%]            2.42 [2.42]
+rhabdovirus, genome 113 (rc) 11615 (100.00%) [100.00%]            2.42 [2.42]
+rhabdovirus, genome 114      11923 (100.00%) [100.00%]            1.58 [1.58]
+rhabdovirus, genome 114 (rc) 11923 (100.00%) [100.00%]            1.58 [1.58]
+rhabdovirus, genome 115      11908 (100.00%) [100.00%]            1.26 [1.26]
+rhabdovirus, genome 115 (rc) 11908 (100.00%) [100.00%]            1.26 [1.26]
+rhabdovirus, genome 116        11921 (99.99%) [99.99%]            1.71 [1.71]
+rhabdovirus, genome 116 (rc) 11922 (100.00%) [100.00%]            1.71 [1.71]
+rhabdovirus, genome 117      11922 (100.00%) [100.00%]            1.71 [1.71]
+rhabdovirus, genome 117 (rc) 11922 (100.00%) [100.00%]            1.71 [1.71]
+rhabdovirus, genome 118      11923 (100.00%) [100.00%]            1.56 [1.56]
+rhabdovirus, genome 118 (rc) 11923 (100.00%) [100.00%]            1.56 [1.56]
+rhabdovirus, genome 119        11921 (99.99%) [99.99%]            1.64 [1.64]
+rhabdovirus, genome 119 (rc) 11922 (100.00%) [100.00%]            1.64 [1.64]
+rhabdovirus, genome 120        11922 (99.98%) [99.98%]            1.29 [1.29]
+rhabdovirus, genome 120 (rc)   11920 (99.97%) [99.97%]            1.29 [1.29]
+rhabdovirus, genome 121      11923 (100.00%) [100.00%]            1.18 [1.18]
+rhabdovirus, genome 121 (rc) 11923 (100.00%) [100.00%]            1.18 [1.18]
+rhabdovirus, genome 122      11925 (100.00%) [100.00%]            1.77 [1.77]
+rhabdovirus, genome 122 (rc) 11925 (100.00%) [100.00%]            1.77 [1.77]
+rhabdovirus, genome 123        11922 (99.99%) [99.99%]            1.17 [1.17]
+rhabdovirus, genome 123 (rc) 11923 (100.00%) [100.00%]            1.17 [1.17]
+rhabdovirus, genome 124      11869 (100.00%) [100.00%]            2.03 [2.03]
+rhabdovirus, genome 124 (rc) 11869 (100.00%) [100.00%]            2.03 [2.03]
+rhabdovirus, genome 125      11923 (100.00%) [100.00%]            2.20 [2.20]
+rhabdovirus, genome 125 (rc) 11923 (100.00%) [100.00%]            2.20 [2.20]
+rhabdovirus, genome 126      11925 (100.00%) [100.00%]            2.36 [2.36]
+rhabdovirus, genome 126 (rc) 11925 (100.00%) [100.00%]            2.36 [2.36]
+rhabdovirus, genome 127      11926 (100.00%) [100.00%]            2.05 [2.05]
+rhabdovirus, genome 127 (rc) 11926 (100.00%) [100.00%]            2.05 [2.05]
+rhabdovirus, genome 128      11926 (100.00%) [100.00%]            2.18 [2.18]
+rhabdovirus, genome 128 (rc) 11926 (100.00%) [100.00%]            2.18 [2.18]
+rhabdovirus, genome 129        11923 (99.99%) [99.99%]            1.66 [1.66]
+rhabdovirus, genome 129 (rc)   11923 (99.99%) [99.99%]            1.66 [1.66]
+rhabdovirus, genome 130      11928 (100.00%) [100.00%]            1.58 [1.58]
+rhabdovirus, genome 130 (rc) 11928 (100.00%) [100.00%]            1.57 [1.57]
+rhabdovirus, genome 131      11922 (100.00%) [100.00%]            2.29 [2.29]
+rhabdovirus, genome 131 (rc) 11922 (100.00%) [100.00%]            2.29 [2.29]
+rhabdovirus, genome 132      11924 (100.00%) [100.00%]            1.49 [1.49]
+rhabdovirus, genome 132 (rc) 11924 (100.00%) [100.00%]            1.49 [1.49]
+rhabdovirus, genome 133      11821 (100.00%) [100.00%]            2.23 [2.23]
+rhabdovirus, genome 133 (rc) 11821 (100.00%) [100.00%]            2.23 [2.23]
+rhabdovirus, genome 134      11817 (100.00%) [100.00%]            2.23 [2.23]
+rhabdovirus, genome 134 (rc) 11817 (100.00%) [100.00%]            2.23 [2.23]
+rhabdovirus, genome 135      11817 (100.00%) [100.00%]            2.23 [2.23]
+rhabdovirus, genome 135 (rc) 11817 (100.00%) [100.00%]            2.23 [2.23]
+rhabdovirus, genome 136        11920 (99.98%) [99.98%]            1.49 [1.49]
+rhabdovirus, genome 136 (rc)   11920 (99.98%) [99.98%]            1.49 [1.49]
+rhabdovirus, genome 137      11928 (100.00%) [100.00%]            1.54 [1.54]
+rhabdovirus, genome 137 (rc) 11928 (100.00%) [100.00%]            1.54 [1.54]
+rhabdovirus, genome 138      11928 (100.00%) [100.00%]            1.54 [1.54]
+rhabdovirus, genome 138 (rc) 11928 (100.00%) [100.00%]            1.54 [1.54]
+rhabdovirus, genome 139      11723 (100.00%) [100.00%]            2.02 [2.02]
+rhabdovirus, genome 139 (rc) 11723 (100.00%) [100.00%]            2.02 [2.02]
+rhabdovirus, genome 140      11932 (100.00%) [100.00%]            2.20 [2.20]
+rhabdovirus, genome 140 (rc) 11932 (100.00%) [100.00%]            2.20 [2.20]
+rhabdovirus, genome 141        11922 (99.99%) [99.99%]            1.53 [1.53]
+rhabdovirus, genome 141 (rc) 11923 (100.00%) [100.00%]            1.53 [1.53]
+rhabdovirus, genome 142        11922 (99.99%) [99.99%]            1.53 [1.53]
+rhabdovirus, genome 142 (rc) 11923 (100.00%) [100.00%]            1.53 [1.53]
+rhabdovirus, genome 143      11923 (100.00%) [100.00%]            1.24 [1.24]
+rhabdovirus, genome 143 (rc) 11923 (100.00%) [100.00%]            1.24 [1.24]
+rhabdovirus, genome 144      11923 (100.00%) [100.06%]            1.20 [1.20]
+rhabdovirus, genome 144 (rc) 11923 (100.00%) [100.06%]            1.20 [1.20]
+rhabdovirus, genome 145      11923 (100.00%) [100.03%]            1.23 [1.23]
+rhabdovirus, genome 145 (rc) 11923 (100.00%) [100.03%]            1.23 [1.23]
+rhabdovirus, genome 146      11924 (100.00%) [100.00%]            1.17 [1.17]
+rhabdovirus, genome 146 (rc) 11924 (100.00%) [100.00%]            1.17 [1.17]
+rhabdovirus, genome 147      11931 (100.00%) [100.01%]            1.95 [1.95]
+rhabdovirus, genome 147 (rc) 11931 (100.00%) [100.01%]            1.95 [1.95]
+rhabdovirus, genome 148      11933 (100.00%) [100.00%]            1.97 [1.97]
+rhabdovirus, genome 148 (rc) 11933 (100.00%) [100.00%]            1.97 [1.97]
+rhabdovirus, genome 149      11926 (100.00%) [100.00%]            1.91 [1.91]
+rhabdovirus, genome 149 (rc)   11925 (99.99%) [99.99%]            1.91 [1.91]
+rhabdovirus, genome 150      11634 (100.00%) [100.00%]            2.28 [2.28]
+rhabdovirus, genome 150 (rc) 11634 (100.00%) [100.00%]            2.28 [2.28]
+rhabdovirus, genome 151      10015 (100.00%) [100.00%]            2.35 [2.35]
+rhabdovirus, genome 151 (rc) 10015 (100.00%) [100.00%]            2.35 [2.35]
+rhabdovirus, genome 152        11922 (99.99%) [99.99%]            1.13 [1.13]
+rhabdovirus, genome 152 (rc) 11923 (100.00%) [100.00%]            1.13 [1.13]
+rhabdovirus, genome 153      11796 (100.00%) [100.00%]            2.41 [2.41]
+rhabdovirus, genome 153 (rc) 11796 (100.00%) [100.00%]            2.41 [2.41]
+rhabdovirus, genome 154      11799 (100.00%) [100.00%]            2.54 [2.54]
+rhabdovirus, genome 154 (rc) 11799 (100.00%) [100.00%]            2.54 [2.54]
+rhabdovirus, genome 155      11798 (100.00%) [100.01%]            2.54 [2.54]
+rhabdovirus, genome 155 (rc) 11798 (100.00%) [100.01%]            2.54 [2.54]
+rhabdovirus, genome 156      11798 (100.00%) [100.00%]            2.53 [2.53]
+rhabdovirus, genome 156 (rc) 11798 (100.00%) [100.00%]            2.53 [2.53]
+rhabdovirus, genome 157      11932 (100.00%) [100.00%]            1.97 [1.97]
+rhabdovirus, genome 157 (rc) 11932 (100.00%) [100.00%]            1.97 [1.97]
+rhabdovirus, genome 158      11924 (100.00%) [100.00%]            1.69 [1.69]
+rhabdovirus, genome 158 (rc) 11924 (100.00%) [100.00%]            1.69 [1.69]
+rhabdovirus, genome 159        11922 (99.98%) [99.98%]            1.31 [1.31]
+rhabdovirus, genome 159 (rc) 11924 (100.00%) [100.00%]            1.31 [1.31]
+rhabdovirus, genome 160      11923 (100.00%) [100.00%]            2.21 [2.21]
+rhabdovirus, genome 160 (rc)   11922 (99.99%) [99.99%]            2.21 [2.21]
+rhabdovirus, genome 161      11926 (100.00%) [100.00%]            2.74 [2.74]
+rhabdovirus, genome 161 (rc) 11926 (100.00%) [100.00%]            2.74 [2.74]
+rhabdovirus, genome 162      11923 (100.00%) [100.00%]            2.32 [2.32]
+rhabdovirus, genome 162 (rc) 11923 (100.00%) [100.00%]            2.32 [2.32]
+rhabdovirus, genome 163      11923 (100.00%) [100.00%]            2.45 [2.45]
+rhabdovirus, genome 163 (rc) 11923 (100.00%) [100.00%]            2.45 [2.45]
+rhabdovirus, genome 164      11928 (100.00%) [100.00%]            1.63 [1.63]
+rhabdovirus, genome 164 (rc)   11927 (99.99%) [99.99%]            1.63 [1.63]
+rhabdovirus, genome 165      11907 (100.00%) [100.00%]            2.01 [2.01]
+rhabdovirus, genome 165 (rc) 11907 (100.00%) [100.00%]            2.01 [2.01]
+rhabdovirus, genome 166      11907 (100.00%) [100.00%]            1.99 [1.99]
+rhabdovirus, genome 166 (rc) 11907 (100.00%) [100.00%]            1.99 [1.99]
+rhabdovirus, genome 167      11907 (100.00%) [100.00%]            1.99 [1.99]
+rhabdovirus, genome 167 (rc) 11907 (100.00%) [100.00%]            1.99 [1.99]
+rhabdovirus, genome 168      11907 (100.00%) [100.00%]            2.01 [2.01]
+rhabdovirus, genome 168 (rc) 11907 (100.00%) [100.00%]            2.01 [2.01]
+rhabdovirus, genome 169      11907 (100.00%) [100.00%]            1.99 [1.99]
+rhabdovirus, genome 169 (rc) 11907 (100.00%) [100.00%]            1.99 [1.99]
+rhabdovirus, genome 170      11907 (100.00%) [100.00%]            2.01 [2.01]
+rhabdovirus, genome 170 (rc) 11907 (100.00%) [100.00%]            2.01 [2.01]
+rhabdovirus, genome 171      11928 (100.00%) [100.00%]            2.02 [2.02]
+rhabdovirus, genome 171 (rc) 11928 (100.00%) [100.00%]            2.02 [2.02]
+rhabdovirus, genome 172      11886 (100.00%) [100.00%]            2.01 [2.01]
+rhabdovirus, genome 172 (rc) 11886 (100.00%) [100.00%]            2.01 [2.01]
+rhabdovirus, genome 173      11886 (100.00%) [100.00%]            2.01 [2.01]
+rhabdovirus, genome 173 (rc) 11886 (100.00%) [100.00%]            2.01 [2.01]
+rhabdovirus, genome 174      11886 (100.00%) [100.00%]            2.01 [2.01]
+rhabdovirus, genome 174 (rc) 11886 (100.00%) [100.00%]            2.01 [2.01]
+rhabdovirus, genome 175      11886 (100.00%) [100.00%]            1.97 [1.97]
+rhabdovirus, genome 175 (rc) 11886 (100.00%) [100.00%]            1.97 [1.97]
+rhabdovirus, genome 176      11886 (100.00%) [100.00%]            2.01 [2.01]
+rhabdovirus, genome 176 (rc) 11886 (100.00%) [100.00%]            2.01 [2.01]
+rhabdovirus, genome 177      11928 (100.00%) [100.03%]            1.93 [1.93]
+rhabdovirus, genome 177 (rc) 11928 (100.00%) [100.03%]            1.93 [1.93]
+rhabdovirus, genome 178      11928 (100.00%) [100.00%]            1.92 [1.92]
+rhabdovirus, genome 178 (rc) 11928 (100.00%) [100.00%]            1.92 [1.92]
+rhabdovirus, genome 179      11930 (100.00%) [100.02%]            1.93 [1.93]
+rhabdovirus, genome 179 (rc) 11930 (100.00%) [100.02%]            1.93 [1.93]
+rhabdovirus, genome 180      11930 (100.00%) [100.02%]            1.93 [1.93]
+rhabdovirus, genome 180 (rc) 11930 (100.00%) [100.02%]            1.93 [1.93]
+rhabdovirus, genome 181      11928 (100.00%) [100.02%]            1.93 [1.93]
+rhabdovirus, genome 181 (rc) 11928 (100.00%) [100.02%]            1.93 [1.93]
+rhabdovirus, genome 182      11928 (100.00%) [100.02%]            1.93 [1.93]
+rhabdovirus, genome 182 (rc) 11928 (100.00%) [100.02%]            1.93 [1.93]
+rhabdovirus, genome 183      11928 (100.00%) [100.02%]            1.93 [1.93]
+rhabdovirus, genome 183 (rc) 11928 (100.00%) [100.02%]            1.93 [1.93]
+rhabdovirus, genome 184      11928 (100.00%) [100.00%]            2.02 [2.02]
+rhabdovirus, genome 184 (rc) 11928 (100.00%) [100.00%]            2.02 [2.02]
+rhabdovirus, genome 185      11928 (100.00%) [100.00%]            2.02 [2.02]
+rhabdovirus, genome 185 (rc) 11928 (100.00%) [100.00%]            2.02 [2.02]
+rhabdovirus, genome 186      11931 (100.00%) [100.00%]            2.15 [2.15]
+rhabdovirus, genome 186 (rc) 11931 (100.00%) [100.00%]            2.15 [2.15]
+rhabdovirus, genome 187      11933 (100.00%) [100.00%]            2.15 [2.15]
+rhabdovirus, genome 187 (rc) 11933 (100.00%) [100.00%]            2.15 [2.15]
+rhabdovirus, genome 188      11928 (100.00%) [100.00%]            2.02 [2.02]
+rhabdovirus, genome 188 (rc) 11928 (100.00%) [100.00%]            2.02 [2.02]
+rhabdovirus, genome 189      11924 (100.00%) [100.00%]            1.72 [1.72]
+rhabdovirus, genome 189 (rc) 11924 (100.00%) [100.00%]            1.72 [1.72]
+rhabdovirus, genome 190      11923 (100.00%) [100.00%]            1.65 [1.65]
+rhabdovirus, genome 190 (rc) 11923 (100.00%) [100.00%]            1.65 [1.65]
+rhabdovirus, genome 191      11922 (100.00%) [100.00%]            2.43 [2.43]
+rhabdovirus, genome 191 (rc) 11922 (100.00%) [100.00%]            2.43 [2.43]
+rhabdovirus, genome 192      11922 (100.00%) [100.00%]            2.46 [2.46]
+rhabdovirus, genome 192 (rc) 11922 (100.00%) [100.00%]            2.46 [2.46]
+rhabdovirus, genome 193      11922 (100.00%) [100.00%]            2.43 [2.43]
+rhabdovirus, genome 193 (rc) 11922 (100.00%) [100.00%]            2.43 [2.43]
+rhabdovirus, genome 194      11922 (100.00%) [100.00%]            2.44 [2.44]
+rhabdovirus, genome 194 (rc) 11922 (100.00%) [100.00%]            2.44 [2.44]
+rhabdovirus, genome 195      11922 (100.00%) [100.00%]            2.44 [2.44]
+rhabdovirus, genome 195 (rc) 11922 (100.00%) [100.00%]            2.44 [2.44]
+rhabdovirus, genome 196      11922 (100.00%) [100.00%]            2.49 [2.49]
+rhabdovirus, genome 196 (rc) 11922 (100.00%) [100.00%]            2.49 [2.49]
+rhabdovirus, genome 197      11828 (100.00%) [100.00%]            2.35 [2.35]
+rhabdovirus, genome 197 (rc) 11828 (100.00%) [100.00%]            2.35 [2.35]
+rhabdovirus, genome 198      11813 (100.00%) [100.00%]            2.33 [2.33]
+rhabdovirus, genome 198 (rc) 11813 (100.00%) [100.00%]            2.33 [2.33]
+rhabdovirus, genome 199      11929 (100.00%) [100.00%]            2.41 [2.41]
+rhabdovirus, genome 199 (rc) 11929 (100.00%) [100.00%]            2.41 [2.41]
+rhabdovirus, genome 200      11922 (100.00%) [100.00%]            2.47 [2.47]
+rhabdovirus, genome 200 (rc) 11922 (100.00%) [100.00%]            2.47 [2.47]
+rhabdovirus, genome 201      11929 (100.00%) [100.00%]            2.41 [2.41]
+rhabdovirus, genome 201 (rc) 11929 (100.00%) [100.00%]            2.41 [2.41]
+rhabdovirus, genome 202      11813 (100.00%) [100.00%]            2.32 [2.32]
+rhabdovirus, genome 202 (rc) 11813 (100.00%) [100.00%]            2.32 [2.32]
+rhabdovirus, genome 203      11929 (100.00%) [100.00%]            2.39 [2.39]
+rhabdovirus, genome 203 (rc) 11929 (100.00%) [100.00%]            2.39 [2.39]
+rhabdovirus, genome 204      11922 (100.00%) [100.00%]            2.46 [2.46]
+rhabdovirus, genome 204 (rc) 11922 (100.00%) [100.00%]            2.46 [2.46]
+rhabdovirus, genome 205      11929 (100.00%) [100.00%]            2.38 [2.38]
+rhabdovirus, genome 205 (rc) 11929 (100.00%) [100.00%]            2.38 [2.38]
+rhabdovirus, genome 206      11828 (100.00%) [100.00%]            2.33 [2.33]
+rhabdovirus, genome 206 (rc) 11828 (100.00%) [100.00%]            2.33 [2.33]
+rhabdovirus, genome 207      11808 (100.00%) [100.00%]            2.41 [2.41]
+rhabdovirus, genome 207 (rc) 11808 (100.00%) [100.00%]            2.41 [2.41]
+rhabdovirus, genome 208      11922 (100.00%) [100.00%]            2.47 [2.47]
+rhabdovirus, genome 208 (rc) 11922 (100.00%) [100.00%]            2.47 [2.47]
+rhabdovirus, genome 209      11922 (100.00%) [100.00%]            2.47 [2.47]
+rhabdovirus, genome 209 (rc) 11922 (100.00%) [100.00%]            2.47 [2.47]
+rhabdovirus, genome 210      11922 (100.00%) [100.00%]            2.49 [2.49]
+rhabdovirus, genome 210 (rc) 11922 (100.00%) [100.00%]            2.49 [2.49]
+rhabdovirus, genome 211      11922 (100.00%) [100.00%]            2.47 [2.47]
+rhabdovirus, genome 211 (rc) 11922 (100.00%) [100.00%]            2.47 [2.47]
+rhabdovirus, genome 212      11929 (100.00%) [100.00%]            2.40 [2.40]
+rhabdovirus, genome 212 (rc) 11929 (100.00%) [100.00%]            2.40 [2.40]
+rhabdovirus, genome 213      11922 (100.00%) [100.00%]            2.46 [2.46]
+rhabdovirus, genome 213 (rc) 11922 (100.00%) [100.00%]            2.46 [2.46]
+rhabdovirus, genome 214      11922 (100.00%) [100.00%]            2.44 [2.44]
+rhabdovirus, genome 214 (rc) 11922 (100.00%) [100.00%]            2.44 [2.44]
+rhabdovirus, genome 215      11922 (100.00%) [100.00%]            2.49 [2.49]
+rhabdovirus, genome 215 (rc) 11922 (100.00%) [100.00%]            2.49 [2.49]
+rhabdovirus, genome 216      11928 (100.00%) [100.00%]            2.00 [2.00]
+rhabdovirus, genome 216 (rc) 11928 (100.00%) [100.00%]            2.00 [2.00]
+rhabdovirus, genome 217      11923 (100.00%) [100.00%]            1.66 [1.66]
+rhabdovirus, genome 217 (rc) 11923 (100.00%) [100.00%]            1.66 [1.66]
+rhabdovirus, genome 218      11924 (100.00%) [100.00%]            1.52 [1.52]
+rhabdovirus, genome 218 (rc)   11923 (99.99%) [99.99%]            1.52 [1.52]
+rhabdovirus, genome 219      11927 (100.00%) [100.00%]            1.82 [1.82]
+rhabdovirus, genome 219 (rc) 11927 (100.00%) [100.00%]            1.82 [1.82]
+rhabdovirus, genome 220      11924 (100.00%) [100.00%]            1.46 [1.46]
+rhabdovirus, genome 220 (rc) 11924 (100.00%) [100.00%]            1.46 [1.46]
+rhabdovirus, genome 221      11925 (100.00%) [100.00%]            1.64 [1.64]
+rhabdovirus, genome 221 (rc) 11925 (100.00%) [100.00%]            1.64 [1.64]
+rhabdovirus, genome 222      11928 (100.00%) [100.00%]            1.54 [1.54]
+rhabdovirus, genome 222 (rc)   11927 (99.99%) [99.99%]            1.54 [1.54]
+rhabdovirus, genome 223      11931 (100.00%) [100.00%]            2.02 [2.02]
+rhabdovirus, genome 223 (rc) 11931 (100.00%) [100.00%]            2.02 [2.02]
+rhabdovirus, genome 224      11928 (100.00%) [100.00%]            2.02 [2.02]
+rhabdovirus, genome 224 (rc) 11928 (100.00%) [100.00%]            2.02 [2.02]
+rhabdovirus, genome 225      11928 (100.00%) [100.00%]            1.98 [1.98]
+rhabdovirus, genome 225 (rc) 11928 (100.00%) [100.00%]            1.98 [1.98]
+rhabdovirus, genome 226      11928 (100.00%) [100.00%]            1.98 [1.98]
+rhabdovirus, genome 226 (rc) 11928 (100.00%) [100.00%]            1.98 [1.98]
+rhabdovirus, genome 227      11928 (100.00%) [100.00%]            1.98 [1.98]
+rhabdovirus, genome 227 (rc) 11928 (100.00%) [100.00%]            1.98 [1.98]
+rhabdovirus, genome 228      11928 (100.00%) [100.00%]            1.98 [1.98]
+rhabdovirus, genome 228 (rc) 11928 (100.00%) [100.00%]            1.98 [1.98]
+rhabdovirus, genome 229      11928 (100.00%) [100.00%]            1.98 [1.98]
+rhabdovirus, genome 229 (rc) 11928 (100.00%) [100.00%]            1.98 [1.98]
+rhabdovirus, genome 230      11928 (100.00%) [100.00%]            2.02 [2.02]
+rhabdovirus, genome 230 (rc) 11928 (100.00%) [100.00%]            2.02 [2.02]
+rhabdovirus, genome 231      11928 (100.00%) [100.00%]            1.98 [1.98]
+rhabdovirus, genome 231 (rc) 11928 (100.00%) [100.00%]            1.98 [1.98]
+rhabdovirus, genome 232      11932 (100.00%) [100.00%]            1.03 [1.03]
+rhabdovirus, genome 232 (rc) 11932 (100.00%) [100.00%]            1.03 [1.03]
+rhabdovirus, genome 233      11932 (100.00%) [100.00%]            1.03 [1.03]
+rhabdovirus, genome 233 (rc) 11932 (100.00%) [100.00%]            1.03 [1.03]
+rhabdovirus, genome 234      11932 (100.00%) [100.00%]            1.03 [1.03]
+rhabdovirus, genome 234 (rc) 11932 (100.00%) [100.00%]            1.03 [1.03]
+rhabdovirus, genome 235      11932 (100.00%) [100.00%]            1.03 [1.03]
+rhabdovirus, genome 235 (rc) 11932 (100.00%) [100.00%]            1.03 [1.03]
+rhabdovirus, genome 236      11932 (100.00%) [100.00%]            2.15 [2.15]
+rhabdovirus, genome 236 (rc) 11932 (100.00%) [100.00%]            2.15 [2.15]
+rhabdovirus, genome 237      11928 (100.00%) [100.00%]            2.02 [2.02]
+rhabdovirus, genome 237 (rc) 11928 (100.00%) [100.00%]            2.02 [2.02]
+rhabdovirus, genome 238      11932 (100.00%) [100.00%]            2.15 [2.15]
+rhabdovirus, genome 238 (rc) 11932 (100.00%) [100.00%]            2.15 [2.15]
+rhabdovirus, genome 239      11922 (100.00%) [100.00%]            2.29 [2.29]
+rhabdovirus, genome 239 (rc) 11922 (100.00%) [100.00%]            2.29 [2.29]
+rhabdovirus, genome 240      11926 (100.00%) [100.00%]            1.79 [1.79]
+rhabdovirus, genome 240 (rc) 11926 (100.00%) [100.00%]            1.79 [1.79]
+rhabdovirus, genome 241      11924 (100.00%) [100.00%]            1.34 [1.34]
+rhabdovirus, genome 241 (rc) 11924 (100.00%) [100.00%]            1.34 [1.34]
+rhabdovirus, genome 242      11924 (100.00%) [100.00%]            1.63 [1.63]
+rhabdovirus, genome 242 (rc)   11923 (99.99%) [99.99%]            1.63 [1.63]
+

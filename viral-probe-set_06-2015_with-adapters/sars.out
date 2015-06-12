@@ -1,0 +1,482 @@
+Sender: LSF System <lsf@node1966>
+Subject: Job 549337: <python bin/make_probes.py --mismatches 1 --lcf_thres 100 --cover_extension 10 --dataset sars --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/sars/mismatches_1-coverextension_10.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/sars.fasta --verbose> in cluster <cromwell> Done
+
+Job <python bin/make_probes.py --mismatches 1 --lcf_thres 100 --cover_extension 10 --dataset sars --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/sars/mismatches_1-coverextension_10.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/sars.fasta --verbose> was submitted from host <node1748> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <node1966>, in queue <week>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Wed Jun 10 19:08:11 2015
+Results reported on Wed Jun 10 19:11:46 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes.py --mismatches 1 --lcf_thres 100 --cover_extension 10 --dataset sars --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/sars/mismatches_1-coverextension_10.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/sars.fasta --verbose
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               211.15 sec.
+    Max Memory :             313 MB
+    Average Memory :         275.17 MB
+    Total Requested Memory : 4296.00 MB
+    Delta Memory :           3983.00 MB
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Processes :          4
+    Max Threads :            5
+
+The output (if any) follows:
+
+2015-06-10 19:08:16,388 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/sars.fasta
+2015-06-10 19:08:17,005 - hybseldesign.filter.probe_designer [INFO] Building candidate probes from target sequences
+2015-06-10 19:08:19,751 - hybseldesign.filter.probe_designer [INFO] Starting filter FastaFilter
+2015-06-10 19:08:19,751 - hybseldesign.utils.seq_io [INFO] Reading fasta file /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/sars/mismatches_1-coverextension_10.fasta
+2015-06-10 19:08:20,038 - hybseldesign.filter.probe_designer [INFO] Starting filter DuplicateFilter
+2015-06-10 19:08:20,232 - hybseldesign.filter.probe_designer [INFO] Starting filter AdapterFilter
+2015-06-10 19:08:20,232 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across all target genomes
+2015-06-10 19:08:20,232 - hybseldesign.filter.adapter_filter [INFO] Building map from k-mers to probes
+2015-06-10 19:08:30,502 - hybseldesign.filter.adapter_filter [INFO] Adding adapters to probes based on votes
+2015-06-10 19:08:30,516 - hybseldesign.filter.probe_designer [INFO] Starting filter ReverseComplementFilter
+2015-06-10 19:08:30,583 - hybseldesign.coverage_analysis [INFO] Finding probe covers across target genomes
+2015-06-10 19:08:30,583 - hybseldesign.coverage_analysis [INFO] Building map from k-mers to probes
+2015-06-10 19:08:30,798 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 1 (of 143)
+2015-06-10 19:08:32,025 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 2 (of 143)
+2015-06-10 19:08:33,245 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 3 (of 143)
+2015-06-10 19:08:34,490 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 4 (of 143)
+2015-06-10 19:08:35,708 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 5 (of 143)
+2015-06-10 19:08:36,931 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 6 (of 143)
+2015-06-10 19:08:38,151 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 7 (of 143)
+2015-06-10 19:08:39,455 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 8 (of 143)
+2015-06-10 19:08:40,739 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 9 (of 143)
+2015-06-10 19:08:42,029 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 10 (of 143)
+2015-06-10 19:08:43,295 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 11 (of 143)
+2015-06-10 19:08:44,510 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 12 (of 143)
+2015-06-10 19:08:45,747 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 13 (of 143)
+2015-06-10 19:08:47,026 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 14 (of 143)
+2015-06-10 19:08:48,270 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 15 (of 143)
+2015-06-10 19:08:49,544 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 16 (of 143)
+2015-06-10 19:08:50,812 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 17 (of 143)
+2015-06-10 19:08:52,087 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 18 (of 143)
+2015-06-10 19:08:53,357 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 19 (of 143)
+2015-06-10 19:08:54,629 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 20 (of 143)
+2015-06-10 19:08:55,886 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 21 (of 143)
+2015-06-10 19:08:57,141 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 22 (of 143)
+2015-06-10 19:08:58,399 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 23 (of 143)
+2015-06-10 19:08:59,631 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 24 (of 143)
+2015-06-10 19:09:00,861 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 25 (of 143)
+2015-06-10 19:09:02,127 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 26 (of 143)
+2015-06-10 19:09:03,382 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 27 (of 143)
+2015-06-10 19:09:04,654 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 28 (of 143)
+2015-06-10 19:09:05,931 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 29 (of 143)
+2015-06-10 19:09:07,198 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 30 (of 143)
+2015-06-10 19:09:08,471 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 31 (of 143)
+2015-06-10 19:09:09,742 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 32 (of 143)
+2015-06-10 19:09:11,014 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 33 (of 143)
+2015-06-10 19:09:12,283 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 34 (of 143)
+2015-06-10 19:09:13,560 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 35 (of 143)
+2015-06-10 19:09:14,782 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 36 (of 143)
+2015-06-10 19:09:16,515 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 37 (of 143)
+2015-06-10 19:09:17,733 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 38 (of 143)
+2015-06-10 19:09:18,934 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 39 (of 143)
+2015-06-10 19:09:20,137 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 40 (of 143)
+2015-06-10 19:09:21,378 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 41 (of 143)
+2015-06-10 19:09:22,617 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 42 (of 143)
+2015-06-10 19:09:23,868 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 43 (of 143)
+2015-06-10 19:09:25,114 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 44 (of 143)
+2015-06-10 19:09:26,357 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 45 (of 143)
+2015-06-10 19:09:27,599 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 46 (of 143)
+2015-06-10 19:09:28,842 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 47 (of 143)
+2015-06-10 19:09:30,088 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 48 (of 143)
+2015-06-10 19:09:31,331 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 49 (of 143)
+2015-06-10 19:09:32,578 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 50 (of 143)
+2015-06-10 19:09:33,819 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 51 (of 143)
+2015-06-10 19:09:35,068 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 52 (of 143)
+2015-06-10 19:09:36,307 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 53 (of 143)
+2015-06-10 19:09:37,569 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 54 (of 143)
+2015-06-10 19:09:38,838 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 55 (of 143)
+2015-06-10 19:09:40,108 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 56 (of 143)
+2015-06-10 19:09:41,395 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 57 (of 143)
+2015-06-10 19:09:42,680 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 58 (of 143)
+2015-06-10 19:09:43,963 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 59 (of 143)
+2015-06-10 19:09:45,247 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 60 (of 143)
+2015-06-10 19:09:46,485 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 61 (of 143)
+2015-06-10 19:09:47,726 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 62 (of 143)
+2015-06-10 19:09:49,026 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 63 (of 143)
+2015-06-10 19:09:50,298 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 64 (of 143)
+2015-06-10 19:09:51,574 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 65 (of 143)
+2015-06-10 19:09:52,842 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 66 (of 143)
+2015-06-10 19:09:54,147 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 67 (of 143)
+2015-06-10 19:09:55,421 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 68 (of 143)
+2015-06-10 19:09:56,685 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 69 (of 143)
+2015-06-10 19:09:57,934 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 70 (of 143)
+2015-06-10 19:09:59,178 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 71 (of 143)
+2015-06-10 19:10:00,419 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 72 (of 143)
+2015-06-10 19:10:01,659 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 73 (of 143)
+2015-06-10 19:10:02,904 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 74 (of 143)
+2015-06-10 19:10:04,167 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 75 (of 143)
+2015-06-10 19:10:05,433 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 76 (of 143)
+2015-06-10 19:10:06,710 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 77 (of 143)
+2015-06-10 19:10:07,976 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 78 (of 143)
+2015-06-10 19:10:09,241 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 79 (of 143)
+2015-06-10 19:10:10,510 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 80 (of 143)
+2015-06-10 19:10:11,775 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 81 (of 143)
+2015-06-10 19:10:13,041 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 82 (of 143)
+2015-06-10 19:10:14,295 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 83 (of 143)
+2015-06-10 19:10:15,546 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 84 (of 143)
+2015-06-10 19:10:16,799 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 85 (of 143)
+2015-06-10 19:10:18,048 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 86 (of 143)
+2015-06-10 19:10:19,284 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 87 (of 143)
+2015-06-10 19:10:20,531 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 88 (of 143)
+2015-06-10 19:10:21,781 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 89 (of 143)
+2015-06-10 19:10:23,036 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 90 (of 143)
+2015-06-10 19:10:24,292 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 91 (of 143)
+2015-06-10 19:10:25,554 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 92 (of 143)
+2015-06-10 19:10:26,797 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 93 (of 143)
+2015-06-10 19:10:28,045 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 94 (of 143)
+2015-06-10 19:10:29,306 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 95 (of 143)
+2015-06-10 19:10:30,578 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 96 (of 143)
+2015-06-10 19:10:31,831 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 97 (of 143)
+2015-06-10 19:10:33,098 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 98 (of 143)
+2015-06-10 19:10:34,362 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 99 (of 143)
+2015-06-10 19:10:35,628 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 100 (of 143)
+2015-06-10 19:10:36,894 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 101 (of 143)
+2015-06-10 19:10:38,159 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 102 (of 143)
+2015-06-10 19:10:39,418 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 103 (of 143)
+2015-06-10 19:10:40,683 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 104 (of 143)
+2015-06-10 19:10:41,948 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 105 (of 143)
+2015-06-10 19:10:43,207 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 106 (of 143)
+2015-06-10 19:10:44,471 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 107 (of 143)
+2015-06-10 19:10:45,738 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 108 (of 143)
+2015-06-10 19:10:46,988 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 109 (of 143)
+2015-06-10 19:10:48,249 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 110 (of 143)
+2015-06-10 19:10:49,513 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 111 (of 143)
+2015-06-10 19:10:50,767 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 112 (of 143)
+2015-06-10 19:10:52,005 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 113 (of 143)
+2015-06-10 19:10:53,244 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 114 (of 143)
+2015-06-10 19:10:54,488 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 115 (of 143)
+2015-06-10 19:10:55,729 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 116 (of 143)
+2015-06-10 19:10:57,009 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 117 (of 143)
+2015-06-10 19:10:58,277 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 118 (of 143)
+2015-06-10 19:10:59,553 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 119 (of 143)
+2015-06-10 19:11:00,819 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 120 (of 143)
+2015-06-10 19:11:02,086 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 121 (of 143)
+2015-06-10 19:11:03,355 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 122 (of 143)
+2015-06-10 19:11:04,620 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 123 (of 143)
+2015-06-10 19:11:05,878 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 124 (of 143)
+2015-06-10 19:11:07,597 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 125 (of 143)
+2015-06-10 19:11:08,865 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 126 (of 143)
+2015-06-10 19:11:10,129 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 127 (of 143)
+2015-06-10 19:11:11,390 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 128 (of 143)
+2015-06-10 19:11:12,629 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 129 (of 143)
+2015-06-10 19:11:13,889 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 130 (of 143)
+2015-06-10 19:11:15,139 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 131 (of 143)
+2015-06-10 19:11:16,395 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 132 (of 143)
+2015-06-10 19:11:17,650 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 133 (of 143)
+2015-06-10 19:11:18,899 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 134 (of 143)
+2015-06-10 19:11:20,151 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 135 (of 143)
+2015-06-10 19:11:21,378 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 136 (of 143)
+2015-06-10 19:11:22,629 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 137 (of 143)
+2015-06-10 19:11:23,879 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 138 (of 143)
+2015-06-10 19:11:25,108 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 139 (of 143)
+2015-06-10 19:11:26,360 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 140 (of 143)
+2015-06-10 19:11:27,607 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 141 (of 143)
+2015-06-10 19:11:28,855 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 142 (of 143)
+2015-06-10 19:11:30,102 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 143 (of 143)
+2015-06-10 19:11:31,367 - hybseldesign.coverage_analysis [INFO] Computing bases covered across target genomes
+2015-06-10 19:11:31,605 - hybseldesign.coverage_analysis [INFO] Computing average coverage across target genomes
+2015-06-10 19:11:31,772 - hybseldesign.coverage_analysis [INFO] Computing sliding coverage across target genomes
+NUMBER OF PROBES: 1022
+
+Genome                        Num bases covered Average coverage/depth
+                                 [over unambig]         [over unambig]
+--------------------- ------------------------- ----------------------
+sars, genome 0        29646 (100.00%) [100.01%]            1.87 [1.87]
+sars, genome 0 (rc)   29646 (100.00%) [100.01%]            1.87 [1.87]
+sars, genome 1        29646 (100.00%) [100.02%]            1.86 [1.86]
+sars, genome 1 (rc)   29646 (100.00%) [100.02%]            1.86 [1.86]
+sars, genome 2        29646 (100.00%) [100.01%]            1.87 [1.87]
+sars, genome 2 (rc)   29646 (100.00%) [100.01%]            1.87 [1.87]
+sars, genome 3        29646 (100.00%) [100.02%]            1.86 [1.87]
+sars, genome 3 (rc)   29646 (100.00%) [100.02%]            1.86 [1.87]
+sars, genome 4        29646 (100.00%) [100.00%]            1.86 [1.86]
+sars, genome 4 (rc)   29646 (100.00%) [100.00%]            1.86 [1.86]
+sars, genome 5        29646 (100.00%) [100.02%]            1.86 [1.86]
+sars, genome 5 (rc)   29646 (100.00%) [100.02%]            1.86 [1.86]
+sars, genome 6        29751 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 6 (rc)   29751 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 7        29727 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 7 (rc)   29727 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 8        29727 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 8 (rc)   29727 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 9        29716 (100.00%) [100.04%]            1.88 [1.88]
+sars, genome 9 (rc)   29716 (100.00%) [100.04%]            1.88 [1.88]
+sars, genome 10       29013 (100.00%) [100.01%]            1.83 [1.83]
+sars, genome 10 (rc)  29013 (100.00%) [100.01%]            1.83 [1.83]
+sars, genome 11       29592 (100.00%) [100.01%]            1.84 [1.84]
+sars, genome 11 (rc)  29592 (100.00%) [100.01%]            1.84 [1.84]
+sars, genome 12       29740 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 12 (rc)  29740 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 13       29573 (100.00%) [100.00%]            1.84 [1.84]
+sars, genome 13 (rc)  29573 (100.00%) [100.00%]            1.84 [1.84]
+sars, genome 14       29727 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 14 (rc)  29727 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 15       29754 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 15 (rc)  29754 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 16       29711 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 16 (rc)  29711 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 17       29706 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 17 (rc)  29706 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 18       29711 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 18 (rc)  29711 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 19       29644 (100.00%) [100.00%]            1.86 [1.86]
+sars, genome 19 (rc)  29644 (100.00%) [100.00%]            1.86 [1.86]
+sars, genome 20       29644 (100.00%) [100.00%]            1.86 [1.86]
+sars, genome 20 (rc)  29644 (100.00%) [100.00%]            1.86 [1.86]
+sars, genome 21       29644 (100.00%) [100.00%]            1.86 [1.86]
+sars, genome 21 (rc)  29644 (100.00%) [100.00%]            1.86 [1.86]
+sars, genome 22       29694 (100.00%) [100.00%]            1.81 [1.81]
+sars, genome 22 (rc)  29694 (100.00%) [100.00%]            1.81 [1.81]
+sars, genome 23       29525 (100.00%) [100.00%]            1.83 [1.83]
+sars, genome 23 (rc)  29525 (100.00%) [100.00%]            1.83 [1.83]
+sars, genome 24       29741 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 24 (rc)  29741 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 25       29731 (100.00%) [100.00%]            1.87 [1.87]
+sars, genome 25 (rc)  29731 (100.00%) [100.00%]            1.87 [1.87]
+sars, genome 26       29725 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 26 (rc)  29725 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 27       29751 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 27 (rc)  29751 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 28       29727 (100.00%) [100.01%]            1.90 [1.90]
+sars, genome 28 (rc)  29727 (100.00%) [100.01%]            1.90 [1.90]
+sars, genome 29       29732 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 29 (rc)  29732 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 30       29745 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 30 (rc)  29745 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 31       29740 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 31 (rc)  29740 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 32       29757 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 32 (rc)  29757 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 33       29751 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 33 (rc)  29751 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 34       29499 (100.00%) [100.00%]            1.82 [1.82]
+sars, genome 34 (rc)  29499 (100.00%) [100.00%]            1.82 [1.82]
+sars, genome 35       29727 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 35 (rc)  29727 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 36       29683 (100.00%) [100.00%]            1.83 [1.83]
+sars, genome 36 (rc)  29683 (100.00%) [100.00%]            1.83 [1.83]
+sars, genome 37       29518 (100.00%) [100.00%]            1.83 [1.83]
+sars, genome 37 (rc)  29518 (100.00%) [100.00%]            1.83 [1.83]
+sars, genome 38       29540 (100.00%) [100.00%]            1.83 [1.83]
+sars, genome 38 (rc)  29540 (100.00%) [100.00%]            1.83 [1.83]
+sars, genome 39       29745 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 39 (rc)  29745 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 40       29760 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 40 (rc)  29760 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 41       29732 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 41 (rc)  29732 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 42       29729 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 42 (rc)  29729 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 43       29729 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 43 (rc)  29729 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 44       29729 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 44 (rc)  29729 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 45       29729 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 45 (rc)  29729 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 46       29729 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 46 (rc)  29729 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 47       29729 (100.00%) [100.01%]            1.90 [1.90]
+sars, genome 47 (rc)  29729 (100.00%) [100.01%]            1.90 [1.90]
+sars, genome 48       29729 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 48 (rc)  29729 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 49       29729 (100.00%) [100.01%]            1.90 [1.90]
+sars, genome 49 (rc)  29729 (100.00%) [100.01%]            1.90 [1.90]
+sars, genome 50       29729 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 50 (rc)  29729 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 51       29727 (100.00%) [100.01%]            1.89 [1.89]
+sars, genome 51 (rc)  29727 (100.00%) [100.01%]            1.89 [1.89]
+sars, genome 52       29745 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 52 (rc)  29745 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 53       29736 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 53 (rc)  29736 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 54       29711 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 54 (rc)  29711 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 55       29738 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 55 (rc)  29738 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 56       29738 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 56 (rc)  29738 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 57       29736 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 57 (rc)  29736 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 58       29736 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 58 (rc)  29736 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 59       29573 (100.00%) [100.00%]            1.85 [1.85]
+sars, genome 59 (rc)  29573 (100.00%) [100.00%]            1.85 [1.85]
+sars, genome 60       29573 (100.00%) [100.00%]            1.85 [1.85]
+sars, genome 60 (rc)  29573 (100.00%) [100.00%]            1.85 [1.85]
+sars, genome 61       29751 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 61 (rc)  29751 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 62       29727 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 62 (rc)  29727 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 63       29736 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 63 (rc)  29736 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 64       29706 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 64 (rc)  29706 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 65       29751 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 65 (rc)  29751 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 66       29729 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 66 (rc)  29729 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 67       29682 (100.00%) [100.00%]            1.87 [1.87]
+sars, genome 67 (rc)  29682 (100.00%) [100.00%]            1.87 [1.87]
+sars, genome 68       29602 (100.00%) [100.00%]            1.86 [1.86]
+sars, genome 68 (rc)  29602 (100.00%) [100.00%]            1.86 [1.86]
+sars, genome 69       29461 (100.00%) [100.00%]            1.87 [1.87]
+sars, genome 69 (rc)  29461 (100.00%) [100.00%]            1.87 [1.87]
+sars, genome 70       29512 (100.00%) [100.00%]            1.85 [1.85]
+sars, genome 70 (rc)  29512 (100.00%) [100.00%]            1.85 [1.85]
+sars, genome 71       29602 (100.00%) [100.00%]            1.85 [1.85]
+sars, genome 71 (rc)  29602 (100.00%) [100.00%]            1.85 [1.85]
+sars, genome 72       29602 (100.00%) [100.00%]            1.85 [1.85]
+sars, genome 72 (rc)  29602 (100.00%) [100.00%]            1.85 [1.85]
+sars, genome 73       29731 (100.00%) [100.00%]            1.87 [1.87]
+sars, genome 73 (rc)  29731 (100.00%) [100.00%]            1.87 [1.87]
+sars, genome 74       29731 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 74 (rc)  29731 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 75       29751 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 75 (rc)  29751 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 76       29746 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 76 (rc)  29746 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 77       29727 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 77 (rc)  29727 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 78       29727 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 78 (rc)  29727 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 79       29727 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 79 (rc)  29727 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 80       29728 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 80 (rc)  29728 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 81       29739 (100.00%) [100.00%]            1.85 [1.85]
+sars, genome 81 (rc)  29739 (100.00%) [100.00%]            1.85 [1.85]
+sars, genome 82       29737 (100.00%) [100.00%]            1.84 [1.84]
+sars, genome 82 (rc)  29737 (100.00%) [100.00%]            1.84 [1.84]
+sars, genome 83       29739 (100.00%) [100.00%]            1.86 [1.86]
+sars, genome 83 (rc)  29739 (100.00%) [100.00%]            1.86 [1.86]
+sars, genome 84       29721 (100.00%) [100.00%]            1.83 [1.83]
+sars, genome 84 (rc)  29721 (100.00%) [100.00%]            1.83 [1.83]
+sars, genome 85        29534 (99.39%) [100.07%]            1.83 [1.85]
+sars, genome 85 (rc)   29534 (99.39%) [100.07%]            1.83 [1.85]
+sars, genome 86       29723 (100.00%) [100.00%]            1.84 [1.84]
+sars, genome 86 (rc)  29723 (100.00%) [100.00%]            1.84 [1.84]
+sars, genome 87       29728 (100.00%) [100.00%]            1.86 [1.86]
+sars, genome 87 (rc)  29728 (100.00%) [100.00%]            1.86 [1.86]
+sars, genome 88       29730 (100.00%) [100.00%]            1.84 [1.84]
+sars, genome 88 (rc)  29730 (100.00%) [100.00%]            1.84 [1.84]
+sars, genome 89       29730 (100.00%) [100.00%]            1.84 [1.84]
+sars, genome 89 (rc)  29730 (100.00%) [100.00%]            1.84 [1.84]
+sars, genome 90       29730 (100.00%) [100.00%]            1.84 [1.84]
+sars, genome 90 (rc)  29730 (100.00%) [100.00%]            1.84 [1.84]
+sars, genome 91        29657 (99.75%) [100.14%]            1.82 [1.83]
+sars, genome 91 (rc)   29658 (99.76%) [100.14%]            1.82 [1.83]
+sars, genome 92       29731 (100.00%) [100.00%]            1.84 [1.84]
+sars, genome 92 (rc)  29731 (100.00%) [100.00%]            1.84 [1.84]
+sars, genome 93        29633 (99.72%) [100.09%]            1.88 [1.89]
+sars, genome 93 (rc)   29633 (99.72%) [100.09%]            1.88 [1.89]
+sars, genome 94       29720 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 94 (rc)  29720 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 95       29577 (100.00%) [100.00%]            1.86 [1.86]
+sars, genome 95 (rc)  29577 (100.00%) [100.00%]            1.86 [1.86]
+sars, genome 96       29719 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 96 (rc)  29719 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 97       29712 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 97 (rc)  29712 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 98       29713 (100.00%) [100.00%]            1.87 [1.87]
+sars, genome 98 (rc)  29713 (100.00%) [100.00%]            1.87 [1.87]
+sars, genome 99       29710 (100.00%) [100.00%]            1.87 [1.87]
+sars, genome 99 (rc)  29709 (100.00%) [100.00%]            1.87 [1.87]
+sars, genome 100      29725 (100.00%) [100.00%]            1.86 [1.86]
+sars, genome 100 (rc) 29725 (100.00%) [100.00%]            1.86 [1.86]
+sars, genome 101      29717 (100.00%) [100.11%]            1.85 [1.85]
+sars, genome 101 (rc) 29717 (100.00%) [100.11%]            1.85 [1.85]
+sars, genome 102      29714 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 102 (rc) 29714 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 103      29716 (100.00%) [100.02%]            1.89 [1.89]
+sars, genome 103 (rc) 29716 (100.00%) [100.02%]            1.89 [1.89]
+sars, genome 104      29661 (100.00%) [100.00%]            1.87 [1.87]
+sars, genome 104 (rc) 29661 (100.00%) [100.00%]            1.87 [1.87]
+sars, genome 105      29713 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 105 (rc) 29713 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 106      29722 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 106 (rc) 29722 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 107       29523 (99.18%) [100.07%]            1.85 [1.87]
+sars, genome 107 (rc)  29524 (99.18%) [100.07%]            1.85 [1.87]
+sars, genome 108      29670 (100.00%) [100.00%]            1.87 [1.87]
+sars, genome 108 (rc) 29670 (100.00%) [100.00%]            1.87 [1.87]
+sars, genome 109      29716 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 109 (rc) 29716 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 110      29647 (100.00%) [100.00%]            1.85 [1.85]
+sars, genome 110 (rc) 29647 (100.00%) [100.00%]            1.85 [1.85]
+sars, genome 111      29350 (100.00%) [100.00%]            1.85 [1.85]
+sars, genome 111 (rc) 29350 (100.00%) [100.00%]            1.85 [1.85]
+sars, genome 112      29350 (100.00%) [100.00%]            1.85 [1.85]
+sars, genome 112 (rc) 29350 (100.00%) [100.00%]            1.85 [1.85]
+sars, genome 113      29350 (100.00%) [100.00%]            1.85 [1.85]
+sars, genome 113 (rc) 29350 (100.00%) [100.00%]            1.85 [1.85]
+sars, genome 114      29350 (100.00%) [100.00%]            1.85 [1.85]
+sars, genome 114 (rc) 29350 (100.00%) [100.00%]            1.85 [1.85]
+sars, genome 115      29736 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 115 (rc) 29736 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 116      29683 (100.00%) [100.00%]            1.87 [1.87]
+sars, genome 116 (rc) 29683 (100.00%) [100.00%]            1.87 [1.87]
+sars, genome 117      29683 (100.00%) [100.00%]            1.87 [1.87]
+sars, genome 117 (rc) 29683 (100.00%) [100.00%]            1.87 [1.87]
+sars, genome 118      29765 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 118 (rc) 29765 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 119      29765 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 119 (rc) 29765 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 120      29736 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 120 (rc) 29736 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 121      29736 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 121 (rc) 29736 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 122      29729 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 122 (rc) 29729 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 123      29736 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 123 (rc) 29736 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 124      29736 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 124 (rc) 29736 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 125      29736 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 125 (rc) 29736 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 126      29709 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 126 (rc) 29709 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 127      29530 (100.00%) [100.00%]            1.87 [1.87]
+sars, genome 127 (rc) 29530 (100.00%) [100.00%]            1.87 [1.87]
+sars, genome 128      29699 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 128 (rc) 29699 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 129      29715 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 129 (rc) 29715 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 130      29720 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 130 (rc) 29720 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 131      29742 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 131 (rc) 29742 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 132      29727 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 132 (rc) 29727 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 133      29727 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 133 (rc) 29727 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 134      29749 (100.00%) [100.00%]            1.82 [1.82]
+sars, genome 134 (rc) 29749 (100.00%) [100.00%]            1.82 [1.82]
+sars, genome 135      29725 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 135 (rc) 29725 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 136      29715 (100.00%) [100.00%]            1.86 [1.86]
+sars, genome 136 (rc) 29715 (100.00%) [100.00%]            1.86 [1.86]
+sars, genome 137      29632 (100.00%) [100.00%]            1.82 [1.82]
+sars, genome 137 (rc) 29632 (100.00%) [100.00%]            1.82 [1.82]
+sars, genome 138      29727 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 138 (rc) 29727 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 139      29725 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 139 (rc) 29725 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 140      29705 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 140 (rc) 29705 (100.00%) [100.00%]            1.88 [1.88]
+sars, genome 141      29711 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 141 (rc) 29711 (100.00%) [100.00%]            1.89 [1.89]
+sars, genome 142      29740 (100.00%) [100.00%]            1.90 [1.90]
+sars, genome 142 (rc) 29740 (100.00%) [100.00%]            1.90 [1.90]
+

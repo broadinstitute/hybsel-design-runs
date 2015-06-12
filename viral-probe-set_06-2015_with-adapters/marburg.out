@@ -1,0 +1,287 @@
+Sender: LSF System <lsf@node1972>
+Subject: Job 549332: <python bin/make_probes.py --mismatches 2 --lcf_thres 100 --cover_extension 0 --dataset marburg --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/marburg/mismatches_2-coverextension_0.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/marburg.fasta --verbose> in cluster <cromwell> Done
+
+Job <python bin/make_probes.py --mismatches 2 --lcf_thres 100 --cover_extension 0 --dataset marburg --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/marburg/mismatches_2-coverextension_0.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/marburg.fasta --verbose> was submitted from host <node1748> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <node1972>, in queue <week>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Wed Jun 10 19:08:10 2015
+Results reported on Wed Jun 10 19:10:30 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes.py --mismatches 2 --lcf_thres 100 --cover_extension 0 --dataset marburg --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/marburg/mismatches_2-coverextension_0.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/marburg.fasta --verbose
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               134.61 sec.
+    Max Memory :             147 MB
+    Average Memory :         133.70 MB
+    Total Requested Memory : 4296.00 MB
+    Delta Memory :           4149.00 MB
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Processes :          4
+    Max Threads :            5
+
+The output (if any) follows:
+
+2015-06-10 19:08:16,348 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/marburg.fasta
+2015-06-10 19:08:16,603 - hybseldesign.filter.probe_designer [INFO] Building candidate probes from target sequences
+2015-06-10 19:08:17,413 - hybseldesign.filter.probe_designer [INFO] Starting filter FastaFilter
+2015-06-10 19:08:17,414 - hybseldesign.utils.seq_io [INFO] Reading fasta file /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/marburg/mismatches_2-coverextension_0.fasta
+2015-06-10 19:08:17,778 - hybseldesign.filter.probe_designer [INFO] Starting filter DuplicateFilter
+2015-06-10 19:08:18,082 - hybseldesign.filter.probe_designer [INFO] Starting filter AdapterFilter
+2015-06-10 19:08:18,082 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across all target genomes
+2015-06-10 19:08:18,082 - hybseldesign.filter.adapter_filter [INFO] Building map from k-mers to probes
+2015-06-10 19:08:25,650 - hybseldesign.filter.adapter_filter [INFO] Adding adapters to probes based on votes
+2015-06-10 19:08:25,683 - hybseldesign.filter.probe_designer [INFO] Starting filter ReverseComplementFilter
+2015-06-10 19:08:25,844 - hybseldesign.coverage_analysis [INFO] Finding probe covers across target genomes
+2015-06-10 19:08:25,844 - hybseldesign.coverage_analysis [INFO] Building map from k-mers to probes
+2015-06-10 19:08:26,461 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 1 (of 78)
+2015-06-10 19:08:28,124 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 2 (of 78)
+2015-06-10 19:08:29,949 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 3 (of 78)
+2015-06-10 19:08:31,602 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 4 (of 78)
+2015-06-10 19:08:33,218 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 5 (of 78)
+2015-06-10 19:08:34,788 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 6 (of 78)
+2015-06-10 19:08:36,427 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 7 (of 78)
+2015-06-10 19:08:37,993 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 8 (of 78)
+2015-06-10 19:08:39,555 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 9 (of 78)
+2015-06-10 19:08:41,143 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 10 (of 78)
+2015-06-10 19:08:42,222 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 11 (of 78)
+2015-06-10 19:08:43,293 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 12 (of 78)
+2015-06-10 19:08:44,872 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 13 (of 78)
+2015-06-10 19:08:46,456 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 14 (of 78)
+2015-06-10 19:08:47,525 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 15 (of 78)
+2015-06-10 19:08:48,578 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 16 (of 78)
+2015-06-10 19:08:50,217 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 17 (of 78)
+2015-06-10 19:08:51,275 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 18 (of 78)
+2015-06-10 19:08:52,333 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 19 (of 78)
+2015-06-10 19:08:53,903 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 20 (of 78)
+2015-06-10 19:08:55,471 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 21 (of 78)
+2015-06-10 19:08:56,530 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 22 (of 78)
+2015-06-10 19:08:57,592 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 23 (of 78)
+2015-06-10 19:08:59,109 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 24 (of 78)
+2015-06-10 19:09:00,623 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 25 (of 78)
+2015-06-10 19:09:02,136 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 26 (of 78)
+2015-06-10 19:09:03,646 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 27 (of 78)
+2015-06-10 19:09:05,160 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 28 (of 78)
+2015-06-10 19:09:06,676 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 29 (of 78)
+2015-06-10 19:09:08,193 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 30 (of 78)
+2015-06-10 19:09:09,708 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 31 (of 78)
+2015-06-10 19:09:11,357 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 32 (of 78)
+2015-06-10 19:09:12,960 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 33 (of 78)
+2015-06-10 19:09:14,550 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 34 (of 78)
+2015-06-10 19:09:15,608 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 35 (of 78)
+2015-06-10 19:09:17,241 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 36 (of 78)
+2015-06-10 19:09:18,808 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 37 (of 78)
+2015-06-10 19:09:20,367 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 38 (of 78)
+2015-06-10 19:09:21,426 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 39 (of 78)
+2015-06-10 19:09:22,494 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 40 (of 78)
+2015-06-10 19:09:23,556 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 41 (of 78)
+2015-06-10 19:09:24,626 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 42 (of 78)
+2015-06-10 19:09:25,686 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 43 (of 78)
+2015-06-10 19:09:27,279 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 44 (of 78)
+2015-06-10 19:09:28,893 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 45 (of 78)
+2015-06-10 19:09:30,493 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 46 (of 78)
+2015-06-10 19:09:32,184 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 47 (of 78)
+2015-06-10 19:09:33,840 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 48 (of 78)
+2015-06-10 19:09:35,498 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 49 (of 78)
+2015-06-10 19:09:37,154 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 50 (of 78)
+2015-06-10 19:09:38,798 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 51 (of 78)
+2015-06-10 19:09:40,457 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 52 (of 78)
+2015-06-10 19:09:42,117 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 53 (of 78)
+2015-06-10 19:09:43,769 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 54 (of 78)
+2015-06-10 19:09:45,421 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 55 (of 78)
+2015-06-10 19:09:47,071 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 56 (of 78)
+2015-06-10 19:09:48,726 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 57 (of 78)
+2015-06-10 19:09:50,379 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 58 (of 78)
+2015-06-10 19:09:52,028 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 59 (of 78)
+2015-06-10 19:09:53,665 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 60 (of 78)
+2015-06-10 19:09:55,305 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 61 (of 78)
+2015-06-10 19:09:56,967 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 62 (of 78)
+2015-06-10 19:09:58,621 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 63 (of 78)
+2015-06-10 19:10:00,275 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 64 (of 78)
+2015-06-10 19:10:01,924 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 65 (of 78)
+2015-06-10 19:10:03,573 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 66 (of 78)
+2015-06-10 19:10:05,209 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 67 (of 78)
+2015-06-10 19:10:06,854 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 68 (of 78)
+2015-06-10 19:10:08,497 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 69 (of 78)
+2015-06-10 19:10:10,146 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 70 (of 78)
+2015-06-10 19:10:11,799 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 71 (of 78)
+2015-06-10 19:10:13,442 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 72 (of 78)
+2015-06-10 19:10:15,072 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 73 (of 78)
+2015-06-10 19:10:16,726 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 74 (of 78)
+2015-06-10 19:10:18,382 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 75 (of 78)
+2015-06-10 19:10:20,020 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 76 (of 78)
+2015-06-10 19:10:21,671 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 77 (of 78)
+2015-06-10 19:10:23,321 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 78 (of 78)
+2015-06-10 19:10:24,462 - hybseldesign.coverage_analysis [INFO] Computing bases covered across target genomes
+2015-06-10 19:10:24,535 - hybseldesign.coverage_analysis [INFO] Computing average coverage across target genomes
+2015-06-10 19:10:24,593 - hybseldesign.coverage_analysis [INFO] Computing sliding coverage across target genomes
+NUMBER OF PROBES: 2422
+
+Genome                          Num bases covered Average coverage/depth
+                                   [over unambig]         [over unambig]
+----------------------- ------------------------- ----------------------
+marburg, genome 0       19114 (100.00%) [100.00%]            1.59 [1.59]
+marburg, genome 0 (rc)  19114 (100.00%) [100.00%]            1.59 [1.59]
+marburg, genome 1       19113 (100.00%) [100.00%]            1.59 [1.59]
+marburg, genome 1 (rc)  19113 (100.00%) [100.00%]            1.59 [1.59]
+marburg, genome 2       19113 (100.00%) [100.00%]            1.59 [1.59]
+marburg, genome 2 (rc)  19113 (100.00%) [100.00%]            1.59 [1.59]
+marburg, genome 3       19151 (100.00%) [100.00%]            1.61 [1.61]
+marburg, genome 3 (rc)    19150 (99.99%) [99.99%]            1.61 [1.61]
+marburg, genome 4       19111 (100.00%) [100.00%]            1.40 [1.40]
+marburg, genome 4 (rc)  19111 (100.00%) [100.00%]            1.40 [1.40]
+marburg, genome 5       19112 (100.00%) [100.00%]            1.53 [1.53]
+marburg, genome 5 (rc)  19112 (100.00%) [100.00%]            1.53 [1.53]
+marburg, genome 6       19113 (100.00%) [100.00%]            1.40 [1.40]
+marburg, genome 6 (rc)  19113 (100.00%) [100.00%]            1.40 [1.40]
+marburg, genome 7       19112 (100.00%) [100.00%]            1.40 [1.40]
+marburg, genome 7 (rc)  19112 (100.00%) [100.00%]            1.40 [1.40]
+marburg, genome 8       19114 (100.00%) [100.00%]            1.59 [1.59]
+marburg, genome 8 (rc)    19113 (99.99%) [99.99%]            1.59 [1.59]
+marburg, genome 9       19114 (100.00%) [100.00%]            1.07 [1.07]
+marburg, genome 9 (rc)  19114 (100.00%) [100.00%]            1.07 [1.07]
+marburg, genome 10      19114 (100.00%) [100.00%]            1.07 [1.07]
+marburg, genome 10 (rc) 19114 (100.00%) [100.00%]            1.07 [1.07]
+marburg, genome 11      19114 (100.00%) [100.00%]            1.57 [1.57]
+marburg, genome 11 (rc)   19113 (99.99%) [99.99%]            1.57 [1.57]
+marburg, genome 12      19114 (100.00%) [100.00%]            1.58 [1.58]
+marburg, genome 12 (rc)   19113 (99.99%) [99.99%]            1.58 [1.58]
+marburg, genome 13      19114 (100.00%) [100.00%]            1.07 [1.07]
+marburg, genome 13 (rc) 19114 (100.00%) [100.00%]            1.07 [1.07]
+marburg, genome 14        19113 (99.99%) [99.99%]            1.07 [1.07]
+marburg, genome 14 (rc)   19113 (99.99%) [99.99%]            1.07 [1.07]
+marburg, genome 15      19112 (100.00%) [100.00%]            1.53 [1.53]
+marburg, genome 15 (rc) 19112 (100.00%) [100.00%]            1.53 [1.53]
+marburg, genome 16      19114 (100.00%) [100.00%]            1.07 [1.07]
+marburg, genome 16 (rc) 19114 (100.00%) [100.00%]            1.07 [1.07]
+marburg, genome 17      19114 (100.00%) [100.00%]            1.08 [1.08]
+marburg, genome 17 (rc) 19114 (100.00%) [100.00%]            1.08 [1.08]
+marburg, genome 18      19111 (100.00%) [100.00%]            1.40 [1.40]
+marburg, genome 18 (rc) 19111 (100.00%) [100.00%]            1.40 [1.40]
+marburg, genome 19      19111 (100.00%) [100.00%]            1.40 [1.40]
+marburg, genome 19 (rc) 19111 (100.00%) [100.00%]            1.40 [1.40]
+marburg, genome 20      19114 (100.00%) [100.00%]            1.07 [1.07]
+marburg, genome 20 (rc) 19114 (100.00%) [100.00%]            1.07 [1.07]
+marburg, genome 21      19114 (100.00%) [100.00%]            1.08 [1.08]
+marburg, genome 21 (rc) 19114 (100.00%) [100.00%]            1.08 [1.08]
+marburg, genome 22      19114 (100.00%) [100.00%]            1.28 [1.28]
+marburg, genome 22 (rc) 19114 (100.00%) [100.00%]            1.28 [1.28]
+marburg, genome 23      19114 (100.00%) [100.00%]            1.27 [1.27]
+marburg, genome 23 (rc) 19114 (100.00%) [100.00%]            1.27 [1.27]
+marburg, genome 24      19114 (100.00%) [100.00%]            1.27 [1.27]
+marburg, genome 24 (rc) 19114 (100.00%) [100.00%]            1.27 [1.27]
+marburg, genome 25      19114 (100.00%) [100.00%]            1.27 [1.27]
+marburg, genome 25 (rc) 19114 (100.00%) [100.00%]            1.27 [1.27]
+marburg, genome 26      19114 (100.00%) [100.00%]            1.28 [1.28]
+marburg, genome 26 (rc) 19114 (100.00%) [100.00%]            1.28 [1.28]
+marburg, genome 27      19114 (100.00%) [100.00%]            1.27 [1.27]
+marburg, genome 27 (rc) 19114 (100.00%) [100.00%]            1.27 [1.27]
+marburg, genome 28      19114 (100.00%) [100.00%]            1.28 [1.28]
+marburg, genome 28 (rc) 19114 (100.00%) [100.00%]            1.28 [1.28]
+marburg, genome 29      19114 (100.00%) [100.00%]            1.27 [1.27]
+marburg, genome 29 (rc) 19114 (100.00%) [100.00%]            1.27 [1.27]
+marburg, genome 30      19112 (100.00%) [100.00%]            1.59 [1.59]
+marburg, genome 30 (rc) 19112 (100.00%) [100.00%]            1.59 [1.59]
+marburg, genome 31        19111 (99.98%) [99.98%]            1.63 [1.63]
+marburg, genome 31 (rc)   19112 (99.99%) [99.99%]            1.63 [1.63]
+marburg, genome 32      19114 (100.00%) [100.00%]            1.58 [1.58]
+marburg, genome 32 (rc) 19114 (100.00%) [100.00%]            1.58 [1.58]
+marburg, genome 33      19114 (100.00%) [100.00%]            1.07 [1.07]
+marburg, genome 33 (rc) 19114 (100.00%) [100.00%]            1.07 [1.07]
+marburg, genome 34        19112 (99.99%) [99.99%]            1.56 [1.56]
+marburg, genome 34 (rc) 19113 (100.00%) [100.00%]            1.56 [1.56]
+marburg, genome 35      19111 (100.00%) [100.00%]            1.40 [1.40]
+marburg, genome 35 (rc) 19111 (100.00%) [100.00%]            1.40 [1.40]
+marburg, genome 36      19104 (100.00%) [100.00%]            1.36 [1.36]
+marburg, genome 36 (rc) 19104 (100.00%) [100.00%]            1.36 [1.36]
+marburg, genome 37      19114 (100.00%) [100.00%]            1.07 [1.07]
+marburg, genome 37 (rc) 19114 (100.00%) [100.00%]            1.07 [1.07]
+marburg, genome 38      19114 (100.00%) [100.00%]            1.08 [1.08]
+marburg, genome 38 (rc) 19114 (100.00%) [100.00%]            1.08 [1.08]
+marburg, genome 39      19114 (100.00%) [100.00%]            1.08 [1.08]
+marburg, genome 39 (rc) 19114 (100.00%) [100.00%]            1.08 [1.08]
+marburg, genome 40      19114 (100.00%) [100.00%]            1.08 [1.08]
+marburg, genome 40 (rc) 19114 (100.00%) [100.00%]            1.08 [1.08]
+marburg, genome 41      19114 (100.00%) [100.00%]            1.08 [1.08]
+marburg, genome 41 (rc) 19114 (100.00%) [100.00%]            1.08 [1.08]
+marburg, genome 42      19114 (100.00%) [100.00%]            1.59 [1.59]
+marburg, genome 42 (rc)   19113 (99.99%) [99.99%]            1.59 [1.59]
+marburg, genome 43      19114 (100.00%) [100.00%]            1.53 [1.53]
+marburg, genome 43 (rc) 19114 (100.00%) [100.00%]            1.53 [1.53]
+marburg, genome 44        19112 (99.99%) [99.99%]            1.59 [1.59]
+marburg, genome 44 (rc) 19113 (100.00%) [100.00%]            1.59 [1.59]
+marburg, genome 45        19112 (99.99%) [99.99%]            1.60 [1.60]
+marburg, genome 45 (rc) 19113 (100.00%) [100.00%]            1.60 [1.60]
+marburg, genome 46      19114 (100.00%) [100.00%]            1.58 [1.58]
+marburg, genome 46 (rc) 19114 (100.00%) [100.00%]            1.58 [1.58]
+marburg, genome 47        19111 (99.98%) [99.98%]            1.62 [1.62]
+marburg, genome 47 (rc)   19112 (99.99%) [99.99%]            1.62 [1.62]
+marburg, genome 48        19111 (99.98%) [99.98%]            1.61 [1.61]
+marburg, genome 48 (rc)   19112 (99.99%) [99.99%]            1.61 [1.61]
+marburg, genome 49      19114 (100.00%) [100.00%]            1.58 [1.58]
+marburg, genome 49 (rc) 19114 (100.00%) [100.00%]            1.58 [1.58]
+marburg, genome 50        19111 (99.98%) [99.98%]            1.60 [1.60]
+marburg, genome 50 (rc)   19112 (99.99%) [99.99%]            1.60 [1.60]
+marburg, genome 51        19111 (99.98%) [99.98%]            1.62 [1.62]
+marburg, genome 51 (rc)   19112 (99.99%) [99.99%]            1.62 [1.62]
+marburg, genome 52        19111 (99.98%) [99.98%]            1.62 [1.62]
+marburg, genome 52 (rc)   19112 (99.99%) [99.99%]            1.62 [1.62]
+marburg, genome 53        19111 (99.98%) [99.98%]            1.62 [1.62]
+marburg, genome 53 (rc)   19112 (99.99%) [99.99%]            1.62 [1.62]
+marburg, genome 54        19113 (99.99%) [99.99%]            1.64 [1.64]
+marburg, genome 54 (rc) 19114 (100.00%) [100.00%]            1.64 [1.64]
+marburg, genome 55        19111 (99.98%) [99.98%]            1.62 [1.62]
+marburg, genome 55 (rc)   19112 (99.99%) [99.99%]            1.62 [1.62]
+marburg, genome 56        19111 (99.98%) [99.98%]            1.62 [1.62]
+marburg, genome 56 (rc)   19112 (99.99%) [99.99%]            1.62 [1.62]
+marburg, genome 57        19111 (99.98%) [99.98%]            1.62 [1.62]
+marburg, genome 57 (rc)   19112 (99.99%) [99.99%]            1.62 [1.62]
+marburg, genome 58        19111 (99.98%) [99.98%]            1.60 [1.60]
+marburg, genome 58 (rc)   19112 (99.99%) [99.99%]            1.60 [1.60]
+marburg, genome 59        19111 (99.98%) [99.98%]            1.60 [1.60]
+marburg, genome 59 (rc)   19112 (99.99%) [99.99%]            1.60 [1.60]
+marburg, genome 60        19111 (99.98%) [99.98%]            1.64 [1.64]
+marburg, genome 60 (rc)   19112 (99.99%) [99.99%]            1.64 [1.64]
+marburg, genome 61        19111 (99.98%) [99.98%]            1.62 [1.62]
+marburg, genome 61 (rc)   19112 (99.99%) [99.99%]            1.62 [1.62]
+marburg, genome 62        19111 (99.98%) [99.98%]            1.61 [1.61]
+marburg, genome 62 (rc)   19112 (99.99%) [99.99%]            1.61 [1.61]
+marburg, genome 63        19111 (99.98%) [99.98%]            1.62 [1.62]
+marburg, genome 63 (rc)   19112 (99.99%) [99.99%]            1.62 [1.62]
+marburg, genome 64        19111 (99.98%) [99.98%]            1.61 [1.61]
+marburg, genome 64 (rc)   19112 (99.99%) [99.99%]            1.61 [1.61]
+marburg, genome 65      19114 (100.00%) [100.00%]            1.58 [1.58]
+marburg, genome 65 (rc) 19114 (100.00%) [100.00%]            1.58 [1.58]
+marburg, genome 66        19113 (99.99%) [99.99%]            1.64 [1.64]
+marburg, genome 66 (rc) 19114 (100.00%) [100.00%]            1.64 [1.64]
+marburg, genome 67        19111 (99.98%) [99.98%]            1.58 [1.58]
+marburg, genome 67 (rc)   19112 (99.99%) [99.99%]            1.58 [1.58]
+marburg, genome 68        19113 (99.99%) [99.99%]            1.64 [1.64]
+marburg, genome 68 (rc) 19114 (100.00%) [100.00%]            1.64 [1.64]
+marburg, genome 69      19114 (100.00%) [100.00%]            1.54 [1.54]
+marburg, genome 69 (rc)   19112 (99.99%) [99.99%]            1.54 [1.54]
+marburg, genome 70      19114 (100.00%) [100.00%]            1.59 [1.59]
+marburg, genome 70 (rc)   19113 (99.99%) [99.99%]            1.59 [1.59]
+marburg, genome 71      19114 (100.00%) [100.00%]            1.58 [1.58]
+marburg, genome 71 (rc)   19113 (99.99%) [99.99%]            1.58 [1.58]
+marburg, genome 72        19113 (99.99%) [99.99%]            1.54 [1.54]
+marburg, genome 72 (rc)   19112 (99.99%) [99.99%]            1.54 [1.54]
+marburg, genome 73      19114 (100.00%) [100.00%]            1.59 [1.59]
+marburg, genome 73 (rc) 19114 (100.00%) [100.00%]            1.59 [1.59]
+marburg, genome 74        19113 (99.99%) [99.99%]            1.59 [1.59]
+marburg, genome 74 (rc) 19114 (100.00%) [100.00%]            1.59 [1.59]
+marburg, genome 75        19113 (99.99%) [99.99%]            1.56 [1.56]
+marburg, genome 75 (rc)   19112 (99.99%) [99.99%]            1.56 [1.56]
+marburg, genome 76        19113 (99.99%) [99.99%]            1.56 [1.56]
+marburg, genome 76 (rc)   19112 (99.99%) [99.99%]            1.56 [1.56]
+marburg, genome 77        19113 (99.99%) [99.99%]            1.07 [1.07]
+marburg, genome 77 (rc) 19114 (100.00%) [100.00%]            1.07 [1.07]
+

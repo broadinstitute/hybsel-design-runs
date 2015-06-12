@@ -1,0 +1,143 @@
+Sender: LSF System <lsf@node1977>
+Subject: Job 549329: <python bin/make_probes.py --mismatches 1 --lcf_thres 100 --cover_extension 30 --dataset hiv2_without_ltr --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/hiv2_without_ltr/mismatches_1-coverextension_30.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/hiv2_without_ltr.fasta --verbose> in cluster <cromwell> Done
+
+Job <python bin/make_probes.py --mismatches 1 --lcf_thres 100 --cover_extension 30 --dataset hiv2_without_ltr --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/hiv2_without_ltr/mismatches_1-coverextension_30.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/hiv2_without_ltr.fasta --verbose> was submitted from host <node1748> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <node1977>, in queue <week>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Wed Jun 10 19:08:10 2015
+Results reported on Wed Jun 10 19:08:52 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes.py --mismatches 1 --lcf_thres 100 --cover_extension 30 --dataset hiv2_without_ltr --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/hiv2_without_ltr/mismatches_1-coverextension_30.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/hiv2_without_ltr.fasta --verbose
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               37.82 sec.
+    Max Memory :             148 MB
+    Average Memory :         137.14 MB
+    Total Requested Memory : 4296.00 MB
+    Delta Memory :           4148.00 MB
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Processes :          4
+    Max Threads :            5
+
+The output (if any) follows:
+
+2015-06-10 19:08:15,198 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/hiv2_without_ltr.fasta
+2015-06-10 19:08:15,335 - hybseldesign.filter.probe_designer [INFO] Building candidate probes from target sequences
+2015-06-10 19:08:15,468 - hybseldesign.filter.probe_designer [INFO] Starting filter FastaFilter
+2015-06-10 19:08:15,469 - hybseldesign.utils.seq_io [INFO] Reading fasta file /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/hiv2_without_ltr/mismatches_1-coverextension_30.fasta
+2015-06-10 19:08:15,607 - hybseldesign.filter.probe_designer [INFO] Starting filter DuplicateFilter
+2015-06-10 19:08:15,638 - hybseldesign.filter.probe_designer [INFO] Starting filter AdapterFilter
+2015-06-10 19:08:15,639 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across all target genomes
+2015-06-10 19:08:15,639 - hybseldesign.filter.adapter_filter [INFO] Building map from k-mers to probes
+2015-06-10 19:08:16,916 - hybseldesign.filter.adapter_filter [INFO] Adding adapters to probes based on votes
+2015-06-10 19:08:16,960 - hybseldesign.filter.probe_designer [INFO] Starting filter ReverseComplementFilter
+2015-06-10 19:08:17,175 - hybseldesign.coverage_analysis [INFO] Finding probe covers across target genomes
+2015-06-10 19:08:17,175 - hybseldesign.coverage_analysis [INFO] Building map from k-mers to probes
+2015-06-10 19:08:17,994 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 1 (of 30)
+2015-06-10 19:08:18,827 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 2 (of 30)
+2015-06-10 19:08:19,965 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 3 (of 30)
+2015-06-10 19:08:21,129 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 4 (of 30)
+2015-06-10 19:08:22,274 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 5 (of 30)
+2015-06-10 19:08:23,419 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 6 (of 30)
+2015-06-10 19:08:24,547 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 7 (of 30)
+2015-06-10 19:08:25,658 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 8 (of 30)
+2015-06-10 19:08:26,856 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 9 (of 30)
+2015-06-10 19:08:28,048 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 10 (of 30)
+2015-06-10 19:08:29,195 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 11 (of 30)
+2015-06-10 19:08:30,395 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 12 (of 30)
+2015-06-10 19:08:31,582 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 13 (of 30)
+2015-06-10 19:08:32,774 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 14 (of 30)
+2015-06-10 19:08:33,972 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 15 (of 30)
+2015-06-10 19:08:35,119 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 16 (of 30)
+2015-06-10 19:08:36,277 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 17 (of 30)
+2015-06-10 19:08:37,438 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 18 (of 30)
+2015-06-10 19:08:38,553 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 19 (of 30)
+2015-06-10 19:08:39,710 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 20 (of 30)
+2015-06-10 19:08:40,906 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 21 (of 30)
+2015-06-10 19:08:42,104 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 22 (of 30)
+2015-06-10 19:08:43,267 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 23 (of 30)
+2015-06-10 19:08:44,426 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 24 (of 30)
+2015-06-10 19:08:45,488 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 25 (of 30)
+2015-06-10 19:08:46,559 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 26 (of 30)
+2015-06-10 19:08:47,647 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 27 (of 30)
+2015-06-10 19:08:48,662 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 28 (of 30)
+2015-06-10 19:08:49,677 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 29 (of 30)
+2015-06-10 19:08:50,730 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 30 (of 30)
+2015-06-10 19:08:51,734 - hybseldesign.coverage_analysis [INFO] Computing bases covered across target genomes
+2015-06-10 19:08:51,742 - hybseldesign.coverage_analysis [INFO] Computing average coverage across target genomes
+2015-06-10 19:08:51,751 - hybseldesign.coverage_analysis [INFO] Computing sliding coverage across target genomes
+NUMBER OF PROBES: 3314
+
+Genome                                  Num bases covered Average coverage/depth
+                                           [over unambig]         [over unambig]
+-------------------------------- ------------------------ ----------------------
+hiv2_without_ltr, genome 0       8637 (100.00%) [100.01%]            1.63 [1.63]
+hiv2_without_ltr, genome 0 (rc)  8637 (100.00%) [100.01%]            1.63 [1.63]
+hiv2_without_ltr, genome 1       8633 (100.00%) [100.00%]            1.51 [1.51]
+hiv2_without_ltr, genome 1 (rc)  8633 (100.00%) [100.00%]            1.51 [1.51]
+hiv2_without_ltr, genome 2       8633 (100.00%) [100.00%]            1.49 [1.49]
+hiv2_without_ltr, genome 2 (rc)  8633 (100.00%) [100.00%]            1.49 [1.49]
+hiv2_without_ltr, genome 3       8649 (100.00%) [100.00%]            1.57 [1.57]
+hiv2_without_ltr, genome 3 (rc)  8649 (100.00%) [100.00%]            1.57 [1.57]
+hiv2_without_ltr, genome 4       8649 (100.00%) [100.00%]            1.57 [1.57]
+hiv2_without_ltr, genome 4 (rc)  8649 (100.00%) [100.00%]            1.57 [1.57]
+hiv2_without_ltr, genome 5       8623 (100.00%) [100.00%]            1.59 [1.59]
+hiv2_without_ltr, genome 5 (rc)  8623 (100.00%) [100.00%]            1.59 [1.59]
+hiv2_without_ltr, genome 6       8638 (100.00%) [100.00%]            1.59 [1.59]
+hiv2_without_ltr, genome 6 (rc)  8638 (100.00%) [100.00%]            1.59 [1.59]
+hiv2_without_ltr, genome 7       8649 (100.00%) [100.00%]            1.58 [1.58]
+hiv2_without_ltr, genome 7 (rc)  8649 (100.00%) [100.00%]            1.58 [1.58]
+hiv2_without_ltr, genome 8       8626 (100.00%) [100.00%]            1.63 [1.63]
+hiv2_without_ltr, genome 8 (rc)  8626 (100.00%) [100.00%]            1.63 [1.63]
+hiv2_without_ltr, genome 9       8603 (100.00%) [100.00%]            1.63 [1.63]
+hiv2_without_ltr, genome 9 (rc)  8603 (100.00%) [100.00%]            1.63 [1.63]
+hiv2_without_ltr, genome 10      8653 (100.00%) [100.00%]            1.60 [1.60]
+hiv2_without_ltr, genome 10 (rc) 8653 (100.00%) [100.00%]            1.60 [1.60]
+hiv2_without_ltr, genome 11      8642 (100.00%) [100.00%]            1.59 [1.59]
+hiv2_without_ltr, genome 11 (rc) 8642 (100.00%) [100.00%]            1.59 [1.59]
+hiv2_without_ltr, genome 12      8643 (100.00%) [100.00%]            1.59 [1.59]
+hiv2_without_ltr, genome 12 (rc) 8643 (100.00%) [100.00%]            1.59 [1.59]
+hiv2_without_ltr, genome 13      8643 (100.00%) [100.00%]            1.58 [1.58]
+hiv2_without_ltr, genome 13 (rc) 8643 (100.00%) [100.00%]            1.58 [1.58]
+hiv2_without_ltr, genome 14      8539 (100.00%) [100.02%]            1.51 [1.51]
+hiv2_without_ltr, genome 14 (rc) 8539 (100.00%) [100.02%]            1.51 [1.51]
+hiv2_without_ltr, genome 15      8561 (100.00%) [100.00%]            1.45 [1.45]
+hiv2_without_ltr, genome 15 (rc) 8561 (100.00%) [100.00%]            1.45 [1.45]
+hiv2_without_ltr, genome 16      8561 (100.00%) [100.00%]            1.45 [1.45]
+hiv2_without_ltr, genome 16 (rc) 8561 (100.00%) [100.00%]            1.45 [1.45]
+hiv2_without_ltr, genome 17      8534 (100.00%) [101.02%]            1.47 [1.48]
+hiv2_without_ltr, genome 17 (rc) 8534 (100.00%) [101.02%]            1.47 [1.48]
+hiv2_without_ltr, genome 18      8543 (100.00%) [100.52%]            1.66 [1.66]
+hiv2_without_ltr, genome 18 (rc) 8543 (100.00%) [100.52%]            1.66 [1.66]
+hiv2_without_ltr, genome 19      8545 (100.00%) [100.00%]            1.82 [1.82]
+hiv2_without_ltr, genome 19 (rc) 8545 (100.00%) [100.00%]            1.82 [1.82]
+hiv2_without_ltr, genome 20      8545 (100.00%) [100.00%]            1.82 [1.82]
+hiv2_without_ltr, genome 20 (rc) 8545 (100.00%) [100.00%]            1.82 [1.82]
+hiv2_without_ltr, genome 21      8535 (100.00%) [100.00%]            1.58 [1.58]
+hiv2_without_ltr, genome 21 (rc) 8535 (100.00%) [100.00%]            1.58 [1.58]
+hiv2_without_ltr, genome 22      8535 (100.00%) [100.02%]            1.60 [1.60]
+hiv2_without_ltr, genome 22 (rc) 8535 (100.00%) [100.02%]            1.60 [1.60]
+hiv2_without_ltr, genome 23      8505 (100.00%) [101.03%]            1.55 [1.57]
+hiv2_without_ltr, genome 23 (rc) 8505 (100.00%) [101.03%]            1.55 [1.57]
+hiv2_without_ltr, genome 24      8565 (100.00%) [100.00%]            1.57 [1.57]
+hiv2_without_ltr, genome 24 (rc) 8565 (100.00%) [100.00%]            1.57 [1.57]
+hiv2_without_ltr, genome 25      8561 (100.00%) [100.00%]            1.60 [1.60]
+hiv2_without_ltr, genome 25 (rc) 8561 (100.00%) [100.00%]            1.60 [1.60]
+hiv2_without_ltr, genome 26      8528 (100.00%) [100.00%]            1.59 [1.59]
+hiv2_without_ltr, genome 26 (rc) 8528 (100.00%) [100.00%]            1.59 [1.59]
+hiv2_without_ltr, genome 27      8528 (100.00%) [100.00%]            1.59 [1.59]
+hiv2_without_ltr, genome 27 (rc) 8528 (100.00%) [100.00%]            1.59 [1.59]
+hiv2_without_ltr, genome 28      8540 (100.00%) [100.00%]            1.61 [1.61]
+hiv2_without_ltr, genome 28 (rc) 8540 (100.00%) [100.00%]            1.61 [1.61]
+hiv2_without_ltr, genome 29      8522 (100.00%) [100.00%]            1.63 [1.63]
+hiv2_without_ltr, genome 29 (rc) 8522 (100.00%) [100.00%]            1.63 [1.63]
+

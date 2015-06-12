@@ -1,0 +1,104 @@
+Sender: LSF System <lsf@node1754>
+Subject: Job 549325: <python bin/make_probes.py --mismatches 1 --lcf_thres 100 --cover_extension 0 --dataset gbv_c --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/gbv_c/mismatches_1-coverextension_0.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/gbv_c.fasta --verbose> in cluster <cromwell> Done
+
+Job <python bin/make_probes.py --mismatches 1 --lcf_thres 100 --cover_extension 0 --dataset gbv_c --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/gbv_c/mismatches_1-coverextension_0.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/gbv_c.fasta --verbose> was submitted from host <node1748> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <node1754>, in queue <week>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Wed Jun 10 18:08:38 2015
+Results reported on Wed Jun 10 18:09:09 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes.py --mismatches 1 --lcf_thres 100 --cover_extension 0 --dataset gbv_c --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/gbv_c/mismatches_1-coverextension_0.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/gbv_c.fasta --verbose
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               23.95 sec.
+    Max Memory :             57 MB
+    Average Memory :         41.60 MB
+    Total Requested Memory : 4296.00 MB
+    Delta Memory :           4239.00 MB
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Processes :          4
+    Max Threads :            5
+
+The output (if any) follows:
+
+2015-06-10 18:08:45,357 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/gbv_c.fasta
+2015-06-10 18:08:45,424 - hybseldesign.filter.probe_designer [INFO] Building candidate probes from target sequences
+2015-06-10 18:08:45,506 - hybseldesign.filter.probe_designer [INFO] Starting filter FastaFilter
+2015-06-10 18:08:45,506 - hybseldesign.utils.seq_io [INFO] Reading fasta file /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/gbv_c/mismatches_1-coverextension_0.fasta
+2015-06-10 18:08:45,608 - hybseldesign.filter.probe_designer [INFO] Starting filter DuplicateFilter
+2015-06-10 18:08:45,622 - hybseldesign.filter.probe_designer [INFO] Starting filter AdapterFilter
+2015-06-10 18:08:45,622 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across all target genomes
+2015-06-10 18:08:45,622 - hybseldesign.filter.adapter_filter [INFO] Building map from k-mers to probes
+2015-06-10 18:08:46,454 - hybseldesign.filter.adapter_filter [INFO] Adding adapters to probes based on votes
+2015-06-10 18:08:46,493 - hybseldesign.filter.probe_designer [INFO] Starting filter ReverseComplementFilter
+2015-06-10 18:08:46,724 - hybseldesign.coverage_analysis [INFO] Finding probe covers across target genomes
+2015-06-10 18:08:46,724 - hybseldesign.coverage_analysis [INFO] Building map from k-mers to probes
+2015-06-10 18:08:47,488 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 1 (of 17)
+2015-06-10 18:08:48,712 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 2 (of 17)
+2015-06-10 18:08:49,980 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 3 (of 17)
+2015-06-10 18:08:51,224 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 4 (of 17)
+2015-06-10 18:08:52,480 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 5 (of 17)
+2015-06-10 18:08:53,693 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 6 (of 17)
+2015-06-10 18:08:54,927 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 7 (of 17)
+2015-06-10 18:08:56,151 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 8 (of 17)
+2015-06-10 18:08:57,419 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 9 (of 17)
+2015-06-10 18:08:58,652 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 10 (of 17)
+2015-06-10 18:08:59,966 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 11 (of 17)
+2015-06-10 18:09:00,592 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 12 (of 17)
+2015-06-10 18:09:01,899 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 13 (of 17)
+2015-06-10 18:09:03,272 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 14 (of 17)
+2015-06-10 18:09:04,585 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 15 (of 17)
+2015-06-10 18:09:06,013 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 16 (of 17)
+2015-06-10 18:09:07,273 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 17 (of 17)
+2015-06-10 18:09:08,477 - hybseldesign.coverage_analysis [INFO] Computing bases covered across target genomes
+2015-06-10 18:09:08,588 - hybseldesign.coverage_analysis [INFO] Computing average coverage across target genomes
+2015-06-10 18:09:08,594 - hybseldesign.coverage_analysis [INFO] Computing sliding coverage across target genomes
+NUMBER OF PROBES: 2996
+
+Genome                       Num bases covered Average coverage/depth
+                                [over unambig]         [over unambig]
+--------------------- ------------------------ ----------------------
+gbv_c, genome 0       9368 (100.00%) [100.00%]            1.07 [1.07]
+gbv_c, genome 0 (rc)  9368 (100.00%) [100.00%]            1.07 [1.07]
+gbv_c, genome 1         9082 (97.09%) [99.07%]            1.20 [1.23]
+gbv_c, genome 1 (rc)    9082 (97.09%) [99.07%]            1.20 [1.23]
+gbv_c, genome 2       9259 (100.00%) [100.00%]            1.18 [1.18]
+gbv_c, genome 2 (rc)  9259 (100.00%) [100.00%]            1.18 [1.18]
+gbv_c, genome 3       9258 (100.00%) [100.00%]            1.15 [1.15]
+gbv_c, genome 3 (rc)  9258 (100.00%) [100.00%]            1.15 [1.15]
+gbv_c, genome 4       9257 (100.00%) [100.00%]            1.07 [1.07]
+gbv_c, genome 4 (rc)  9257 (100.00%) [100.00%]            1.07 [1.07]
+gbv_c, genome 5       9258 (100.00%) [100.00%]            1.11 [1.11]
+gbv_c, genome 5 (rc)  9258 (100.00%) [100.00%]            1.11 [1.11]
+gbv_c, genome 6       9264 (100.00%) [100.00%]            1.17 [1.17]
+gbv_c, genome 6 (rc)  9264 (100.00%) [100.00%]            1.17 [1.17]
+gbv_c, genome 7       9264 (100.00%) [100.00%]            1.21 [1.21]
+gbv_c, genome 7 (rc)  9264 (100.00%) [100.00%]            1.21 [1.21]
+gbv_c, genome 8         9263 (99.99%) [99.99%]            1.20 [1.20]
+gbv_c, genome 8 (rc)  9264 (100.00%) [100.00%]            1.20 [1.20]
+gbv_c, genome 9       9309 (100.00%) [100.00%]            1.20 [1.20]
+gbv_c, genome 9 (rc)  9309 (100.00%) [100.00%]            1.20 [1.20]
+gbv_c, genome 10      9250 (100.00%) [100.00%]            1.03 [1.03]
+gbv_c, genome 10 (rc) 9250 (100.00%) [100.00%]            1.03 [1.03]
+gbv_c, genome 11      9395 (100.00%) [100.00%]            1.20 [1.20]
+gbv_c, genome 11 (rc) 9395 (100.00%) [100.00%]            1.20 [1.20]
+gbv_c, genome 12      9373 (100.00%) [100.00%]            1.24 [1.24]
+gbv_c, genome 12 (rc) 9373 (100.00%) [100.00%]            1.24 [1.24]
+gbv_c, genome 13      9103 (100.00%) [100.00%]            1.17 [1.17]
+gbv_c, genome 13 (rc) 9103 (100.00%) [100.00%]            1.17 [1.17]
+gbv_c, genome 14      9392 (100.00%) [100.01%]            1.23 [1.23]
+gbv_c, genome 14 (rc) 9392 (100.00%) [100.01%]            1.23 [1.23]
+gbv_c, genome 15       9159 (99.99%) [100.09%]            1.13 [1.13]
+gbv_c, genome 15 (rc)  9158 (99.98%) [100.08%]            1.13 [1.13]
+gbv_c, genome 16      9128 (100.00%) [100.00%]            1.17 [1.17]
+gbv_c, genome 16 (rc) 9128 (100.00%) [100.00%]            1.17 [1.17]
+

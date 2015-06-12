@@ -1,0 +1,959 @@
+Sender: LSF System <lsf@node1754>
+Subject: Job 549322: <python bin/make_probes.py --mismatches 3 --lcf_thres 100 --cover_extension 20 --dataset dengue --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/dengue/mismatches_3-coverextension_20.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/dengue.fasta --verbose> in cluster <cromwell> Done
+
+Job <python bin/make_probes.py --mismatches 3 --lcf_thres 100 --cover_extension 20 --dataset dengue --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/dengue/mismatches_3-coverextension_20.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/dengue.fasta --verbose> was submitted from host <node1748> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <node1754>, in queue <week>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Wed Jun 10 18:08:38 2015
+Results reported on Wed Jun 10 18:16:00 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes.py --mismatches 3 --lcf_thres 100 --cover_extension 20 --dataset dengue --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/dengue/mismatches_3-coverextension_20.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/dengue.fasta --verbose
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               432.24 sec.
+    Max Memory :             370 MB
+    Average Memory :         338.82 MB
+    Total Requested Memory : 4296.00 MB
+    Delta Memory :           3926.00 MB
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Processes :          4
+    Max Threads :            5
+
+The output (if any) follows:
+
+2015-06-10 18:08:45,359 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/dengue.fasta
+2015-06-10 18:08:45,928 - hybseldesign.filter.probe_designer [INFO] Building candidate probes from target sequences
+2015-06-10 18:08:47,871 - hybseldesign.filter.probe_designer [INFO] Starting filter FastaFilter
+2015-06-10 18:08:47,871 - hybseldesign.utils.seq_io [INFO] Reading fasta file /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/dengue/mismatches_3-coverextension_20.fasta
+2015-06-10 18:08:48,117 - hybseldesign.filter.probe_designer [INFO] Starting filter DuplicateFilter
+2015-06-10 18:08:48,272 - hybseldesign.filter.probe_designer [INFO] Starting filter AdapterFilter
+2015-06-10 18:08:48,272 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across all target genomes
+2015-06-10 18:08:48,272 - hybseldesign.filter.adapter_filter [INFO] Building map from k-mers to probes
+2015-06-10 18:09:14,770 - hybseldesign.filter.adapter_filter [INFO] Adding adapters to probes based on votes
+2015-06-10 18:09:14,828 - hybseldesign.filter.probe_designer [INFO] Starting filter ReverseComplementFilter
+2015-06-10 18:09:15,124 - hybseldesign.coverage_analysis [INFO] Finding probe covers across target genomes
+2015-06-10 18:09:15,124 - hybseldesign.coverage_analysis [INFO] Building map from k-mers to probes
+2015-06-10 18:09:16,683 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 1 (of 302)
+2015-06-10 18:09:17,725 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 2 (of 302)
+2015-06-10 18:09:19,287 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 3 (of 302)
+2015-06-10 18:09:20,649 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 4 (of 302)
+2015-06-10 18:09:22,142 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 5 (of 302)
+2015-06-10 18:09:23,612 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 6 (of 302)
+2015-06-10 18:09:25,081 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 7 (of 302)
+2015-06-10 18:09:26,581 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 8 (of 302)
+2015-06-10 18:09:28,038 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 9 (of 302)
+2015-06-10 18:09:29,505 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 10 (of 302)
+2015-06-10 18:09:30,904 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 11 (of 302)
+2015-06-10 18:09:32,302 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 12 (of 302)
+2015-06-10 18:09:33,730 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 13 (of 302)
+2015-06-10 18:09:35,150 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 14 (of 302)
+2015-06-10 18:09:36,523 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 15 (of 302)
+2015-06-10 18:09:37,939 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 16 (of 302)
+2015-06-10 18:09:39,225 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 17 (of 302)
+2015-06-10 18:09:40,501 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 18 (of 302)
+2015-06-10 18:09:41,900 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 19 (of 302)
+2015-06-10 18:09:43,300 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 20 (of 302)
+2015-06-10 18:09:44,567 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 21 (of 302)
+2015-06-10 18:09:45,842 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 22 (of 302)
+2015-06-10 18:09:47,233 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 23 (of 302)
+2015-06-10 18:09:48,505 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 24 (of 302)
+2015-06-10 18:09:50,035 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 25 (of 302)
+2015-06-10 18:09:51,454 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 26 (of 302)
+2015-06-10 18:09:52,757 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 27 (of 302)
+2015-06-10 18:09:54,057 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 28 (of 302)
+2015-06-10 18:09:55,354 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 29 (of 302)
+2015-06-10 18:09:56,761 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 30 (of 302)
+2015-06-10 18:09:58,172 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 31 (of 302)
+2015-06-10 18:09:59,583 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 32 (of 302)
+2015-06-10 18:10:00,878 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 33 (of 302)
+2015-06-10 18:10:02,268 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 34 (of 302)
+2015-06-10 18:10:03,671 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 35 (of 302)
+2015-06-10 18:10:05,060 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 36 (of 302)
+2015-06-10 18:10:06,445 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 37 (of 302)
+2015-06-10 18:10:07,821 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 38 (of 302)
+2015-06-10 18:10:09,203 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 39 (of 302)
+2015-06-10 18:10:10,592 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 40 (of 302)
+2015-06-10 18:10:12,038 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 41 (of 302)
+2015-06-10 18:10:13,454 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 42 (of 302)
+2015-06-10 18:10:14,848 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 43 (of 302)
+2015-06-10 18:10:16,231 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 44 (of 302)
+2015-06-10 18:10:17,640 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 45 (of 302)
+2015-06-10 18:10:19,021 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 46 (of 302)
+2015-06-10 18:10:20,463 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 47 (of 302)
+2015-06-10 18:10:21,857 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 48 (of 302)
+2015-06-10 18:10:23,328 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 49 (of 302)
+2015-06-10 18:10:24,709 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 50 (of 302)
+2015-06-10 18:10:26,095 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 51 (of 302)
+2015-06-10 18:10:27,508 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 52 (of 302)
+2015-06-10 18:10:28,954 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 53 (of 302)
+2015-06-10 18:10:30,380 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 54 (of 302)
+2015-06-10 18:10:31,815 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 55 (of 302)
+2015-06-10 18:10:33,251 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 56 (of 302)
+2015-06-10 18:10:34,712 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 57 (of 302)
+2015-06-10 18:10:36,147 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 58 (of 302)
+2015-06-10 18:10:37,606 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 59 (of 302)
+2015-06-10 18:10:39,061 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 60 (of 302)
+2015-06-10 18:10:40,630 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 61 (of 302)
+2015-06-10 18:10:42,064 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 62 (of 302)
+2015-06-10 18:10:43,473 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 63 (of 302)
+2015-06-10 18:10:44,912 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 64 (of 302)
+2015-06-10 18:10:46,342 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 65 (of 302)
+2015-06-10 18:10:47,769 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 66 (of 302)
+2015-06-10 18:10:49,193 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 67 (of 302)
+2015-06-10 18:10:50,644 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 68 (of 302)
+2015-06-10 18:10:52,091 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 69 (of 302)
+2015-06-10 18:10:53,537 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 70 (of 302)
+2015-06-10 18:10:54,993 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 71 (of 302)
+2015-06-10 18:10:56,440 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 72 (of 302)
+2015-06-10 18:10:57,780 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 73 (of 302)
+2015-06-10 18:10:59,120 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 74 (of 302)
+2015-06-10 18:11:00,427 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 75 (of 302)
+2015-06-10 18:11:01,730 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 76 (of 302)
+2015-06-10 18:11:03,051 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 77 (of 302)
+2015-06-10 18:11:04,366 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 78 (of 302)
+2015-06-10 18:11:05,689 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 79 (of 302)
+2015-06-10 18:11:06,981 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 80 (of 302)
+2015-06-10 18:11:08,267 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 81 (of 302)
+2015-06-10 18:11:09,548 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 82 (of 302)
+2015-06-10 18:11:10,826 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 83 (of 302)
+2015-06-10 18:11:12,097 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 84 (of 302)
+2015-06-10 18:11:13,391 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 85 (of 302)
+2015-06-10 18:11:14,778 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 86 (of 302)
+2015-06-10 18:11:16,191 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 87 (of 302)
+2015-06-10 18:11:17,604 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 88 (of 302)
+2015-06-10 18:11:19,020 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 89 (of 302)
+2015-06-10 18:11:20,442 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 90 (of 302)
+2015-06-10 18:11:21,728 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 91 (of 302)
+2015-06-10 18:11:23,081 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 92 (of 302)
+2015-06-10 18:11:24,433 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 93 (of 302)
+2015-06-10 18:11:25,782 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 94 (of 302)
+2015-06-10 18:11:27,132 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 95 (of 302)
+2015-06-10 18:11:28,375 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 96 (of 302)
+2015-06-10 18:11:29,591 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 97 (of 302)
+2015-06-10 18:11:30,784 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 98 (of 302)
+2015-06-10 18:11:32,016 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 99 (of 302)
+2015-06-10 18:11:33,230 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 100 (of 302)
+2015-06-10 18:11:34,447 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 101 (of 302)
+2015-06-10 18:11:35,659 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 102 (of 302)
+2015-06-10 18:11:36,897 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 103 (of 302)
+2015-06-10 18:11:38,210 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 104 (of 302)
+2015-06-10 18:11:39,517 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 105 (of 302)
+2015-06-10 18:11:40,833 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 106 (of 302)
+2015-06-10 18:11:42,146 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 107 (of 302)
+2015-06-10 18:11:43,452 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 108 (of 302)
+2015-06-10 18:11:44,768 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 109 (of 302)
+2015-06-10 18:11:46,085 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 110 (of 302)
+2015-06-10 18:11:47,399 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 111 (of 302)
+2015-06-10 18:11:48,714 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 112 (of 302)
+2015-06-10 18:11:51,331 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 113 (of 302)
+2015-06-10 18:11:52,645 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 114 (of 302)
+2015-06-10 18:11:53,968 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 115 (of 302)
+2015-06-10 18:11:55,291 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 116 (of 302)
+2015-06-10 18:11:56,607 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 117 (of 302)
+2015-06-10 18:11:57,920 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 118 (of 302)
+2015-06-10 18:11:59,233 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 119 (of 302)
+2015-06-10 18:12:00,560 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 120 (of 302)
+2015-06-10 18:12:01,885 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 121 (of 302)
+2015-06-10 18:12:03,203 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 122 (of 302)
+2015-06-10 18:12:04,526 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 123 (of 302)
+2015-06-10 18:12:05,910 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 124 (of 302)
+2015-06-10 18:12:07,306 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 125 (of 302)
+2015-06-10 18:12:08,696 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 126 (of 302)
+2015-06-10 18:12:10,062 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 127 (of 302)
+2015-06-10 18:12:11,343 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 128 (of 302)
+2015-06-10 18:12:12,621 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 129 (of 302)
+2015-06-10 18:12:13,918 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 130 (of 302)
+2015-06-10 18:12:15,224 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 131 (of 302)
+2015-06-10 18:12:16,508 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 132 (of 302)
+2015-06-10 18:12:17,813 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 133 (of 302)
+2015-06-10 18:12:19,100 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 134 (of 302)
+2015-06-10 18:12:20,384 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 135 (of 302)
+2015-06-10 18:12:21,683 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 136 (of 302)
+2015-06-10 18:12:22,978 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 137 (of 302)
+2015-06-10 18:12:24,352 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 138 (of 302)
+2015-06-10 18:12:25,739 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 139 (of 302)
+2015-06-10 18:12:27,060 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 140 (of 302)
+2015-06-10 18:12:28,368 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 141 (of 302)
+2015-06-10 18:12:29,672 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 142 (of 302)
+2015-06-10 18:12:30,857 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 143 (of 302)
+2015-06-10 18:12:32,040 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 144 (of 302)
+2015-06-10 18:12:33,226 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 145 (of 302)
+2015-06-10 18:12:34,412 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 146 (of 302)
+2015-06-10 18:12:35,600 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 147 (of 302)
+2015-06-10 18:12:36,793 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 148 (of 302)
+2015-06-10 18:12:38,009 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 149 (of 302)
+2015-06-10 18:12:39,237 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 150 (of 302)
+2015-06-10 18:12:40,440 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 151 (of 302)
+2015-06-10 18:12:41,641 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 152 (of 302)
+2015-06-10 18:12:42,837 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 153 (of 302)
+2015-06-10 18:12:43,995 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 154 (of 302)
+2015-06-10 18:12:45,205 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 155 (of 302)
+2015-06-10 18:12:46,410 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 156 (of 302)
+2015-06-10 18:12:47,655 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 157 (of 302)
+2015-06-10 18:12:48,854 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 158 (of 302)
+2015-06-10 18:12:50,056 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 159 (of 302)
+2015-06-10 18:12:51,207 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 160 (of 302)
+2015-06-10 18:12:52,412 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 161 (of 302)
+2015-06-10 18:12:53,606 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 162 (of 302)
+2015-06-10 18:12:54,807 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 163 (of 302)
+2015-06-10 18:12:56,013 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 164 (of 302)
+2015-06-10 18:12:57,208 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 165 (of 302)
+2015-06-10 18:12:58,411 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 166 (of 302)
+2015-06-10 18:12:59,617 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 167 (of 302)
+2015-06-10 18:13:00,806 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 168 (of 302)
+2015-06-10 18:13:01,996 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 169 (of 302)
+2015-06-10 18:13:03,196 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 170 (of 302)
+2015-06-10 18:13:04,394 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 171 (of 302)
+2015-06-10 18:13:05,595 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 172 (of 302)
+2015-06-10 18:13:06,787 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 173 (of 302)
+2015-06-10 18:13:07,988 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 174 (of 302)
+2015-06-10 18:13:09,184 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 175 (of 302)
+2015-06-10 18:13:10,376 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 176 (of 302)
+2015-06-10 18:13:11,578 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 177 (of 302)
+2015-06-10 18:13:12,776 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 178 (of 302)
+2015-06-10 18:13:13,974 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 179 (of 302)
+2015-06-10 18:13:15,172 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 180 (of 302)
+2015-06-10 18:13:16,367 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 181 (of 302)
+2015-06-10 18:13:17,556 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 182 (of 302)
+2015-06-10 18:13:18,752 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 183 (of 302)
+2015-06-10 18:13:19,951 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 184 (of 302)
+2015-06-10 18:13:21,138 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 185 (of 302)
+2015-06-10 18:13:22,334 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 186 (of 302)
+2015-06-10 18:13:23,535 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 187 (of 302)
+2015-06-10 18:13:24,735 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 188 (of 302)
+2015-06-10 18:13:25,934 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 189 (of 302)
+2015-06-10 18:13:27,132 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 190 (of 302)
+2015-06-10 18:13:28,318 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 191 (of 302)
+2015-06-10 18:13:29,550 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 192 (of 302)
+2015-06-10 18:13:30,755 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 193 (of 302)
+2015-06-10 18:13:31,949 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 194 (of 302)
+2015-06-10 18:13:33,150 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 195 (of 302)
+2015-06-10 18:13:34,349 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 196 (of 302)
+2015-06-10 18:13:35,492 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 197 (of 302)
+2015-06-10 18:13:36,720 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 198 (of 302)
+2015-06-10 18:13:37,949 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 199 (of 302)
+2015-06-10 18:13:39,177 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 200 (of 302)
+2015-06-10 18:13:40,408 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 201 (of 302)
+2015-06-10 18:13:41,629 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 202 (of 302)
+2015-06-10 18:13:42,846 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 203 (of 302)
+2015-06-10 18:13:44,079 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 204 (of 302)
+2015-06-10 18:13:45,306 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 205 (of 302)
+2015-06-10 18:13:46,539 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 206 (of 302)
+2015-06-10 18:13:47,770 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 207 (of 302)
+2015-06-10 18:13:49,002 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 208 (of 302)
+2015-06-10 18:13:50,243 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 209 (of 302)
+2015-06-10 18:13:51,465 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 210 (of 302)
+2015-06-10 18:13:52,691 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 211 (of 302)
+2015-06-10 18:13:53,911 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 212 (of 302)
+2015-06-10 18:13:55,063 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 213 (of 302)
+2015-06-10 18:13:56,288 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 214 (of 302)
+2015-06-10 18:13:57,469 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 215 (of 302)
+2015-06-10 18:13:58,687 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 216 (of 302)
+2015-06-10 18:13:59,908 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 217 (of 302)
+2015-06-10 18:14:01,138 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 218 (of 302)
+2015-06-10 18:14:02,365 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 219 (of 302)
+2015-06-10 18:14:03,590 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 220 (of 302)
+2015-06-10 18:14:04,760 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 221 (of 302)
+2015-06-10 18:14:05,959 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 222 (of 302)
+2015-06-10 18:14:07,188 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 223 (of 302)
+2015-06-10 18:14:08,418 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 224 (of 302)
+2015-06-10 18:14:09,651 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 225 (of 302)
+2015-06-10 18:14:10,873 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 226 (of 302)
+2015-06-10 18:14:12,122 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 227 (of 302)
+2015-06-10 18:14:13,354 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 228 (of 302)
+2015-06-10 18:14:14,582 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 229 (of 302)
+2015-06-10 18:14:15,806 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 230 (of 302)
+2015-06-10 18:14:17,029 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 231 (of 302)
+2015-06-10 18:14:18,253 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 232 (of 302)
+2015-06-10 18:14:19,583 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 233 (of 302)
+2015-06-10 18:14:20,981 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 234 (of 302)
+2015-06-10 18:14:22,308 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 235 (of 302)
+2015-06-10 18:14:23,646 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 236 (of 302)
+2015-06-10 18:14:24,960 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 237 (of 302)
+2015-06-10 18:14:26,270 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 238 (of 302)
+2015-06-10 18:14:27,582 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 239 (of 302)
+2015-06-10 18:14:28,880 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 240 (of 302)
+2015-06-10 18:14:30,182 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 241 (of 302)
+2015-06-10 18:14:31,489 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 242 (of 302)
+2015-06-10 18:14:32,802 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 243 (of 302)
+2015-06-10 18:14:34,110 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 244 (of 302)
+2015-06-10 18:14:35,408 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 245 (of 302)
+2015-06-10 18:14:36,709 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 246 (of 302)
+2015-06-10 18:14:38,054 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 247 (of 302)
+2015-06-10 18:14:39,349 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 248 (of 302)
+2015-06-10 18:14:40,652 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 249 (of 302)
+2015-06-10 18:14:41,961 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 250 (of 302)
+2015-06-10 18:14:43,275 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 251 (of 302)
+2015-06-10 18:14:44,652 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 252 (of 302)
+2015-06-10 18:14:45,996 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 253 (of 302)
+2015-06-10 18:14:47,314 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 254 (of 302)
+2015-06-10 18:14:48,634 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 255 (of 302)
+2015-06-10 18:14:49,889 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 256 (of 302)
+2015-06-10 18:14:51,158 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 257 (of 302)
+2015-06-10 18:14:52,470 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 258 (of 302)
+2015-06-10 18:14:53,776 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 259 (of 302)
+2015-06-10 18:14:54,938 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 260 (of 302)
+2015-06-10 18:14:56,201 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 261 (of 302)
+2015-06-10 18:14:57,476 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 262 (of 302)
+2015-06-10 18:14:58,751 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 263 (of 302)
+2015-06-10 18:15:00,023 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 264 (of 302)
+2015-06-10 18:15:01,295 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 265 (of 302)
+2015-06-10 18:15:02,421 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 266 (of 302)
+2015-06-10 18:15:03,664 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 267 (of 302)
+2015-06-10 18:15:04,894 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 268 (of 302)
+2015-06-10 18:15:06,153 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 269 (of 302)
+2015-06-10 18:15:07,389 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 270 (of 302)
+2015-06-10 18:15:08,656 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 271 (of 302)
+2015-06-10 18:15:09,928 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 272 (of 302)
+2015-06-10 18:15:11,147 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 273 (of 302)
+2015-06-10 18:15:12,368 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 274 (of 302)
+2015-06-10 18:15:13,582 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 275 (of 302)
+2015-06-10 18:15:14,796 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 276 (of 302)
+2015-06-10 18:15:16,025 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 277 (of 302)
+2015-06-10 18:15:17,249 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 278 (of 302)
+2015-06-10 18:15:18,461 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 279 (of 302)
+2015-06-10 18:15:19,708 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 280 (of 302)
+2015-06-10 18:15:20,918 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 281 (of 302)
+2015-06-10 18:15:22,155 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 282 (of 302)
+2015-06-10 18:15:23,374 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 283 (of 302)
+2015-06-10 18:15:24,621 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 284 (of 302)
+2015-06-10 18:15:25,884 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 285 (of 302)
+2015-06-10 18:15:27,146 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 286 (of 302)
+2015-06-10 18:15:28,364 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 287 (of 302)
+2015-06-10 18:15:29,586 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 288 (of 302)
+2015-06-10 18:15:30,820 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 289 (of 302)
+2015-06-10 18:15:32,038 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 290 (of 302)
+2015-06-10 18:15:33,246 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 291 (of 302)
+2015-06-10 18:15:34,484 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 292 (of 302)
+2015-06-10 18:15:35,673 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 293 (of 302)
+2015-06-10 18:15:36,884 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 294 (of 302)
+2015-06-10 18:15:38,106 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 295 (of 302)
+2015-06-10 18:15:39,328 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 296 (of 302)
+2015-06-10 18:15:40,489 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 297 (of 302)
+2015-06-10 18:15:41,700 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 298 (of 302)
+2015-06-10 18:15:42,912 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 299 (of 302)
+2015-06-10 18:15:44,132 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 300 (of 302)
+2015-06-10 18:15:45,362 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 301 (of 302)
+2015-06-10 18:15:46,575 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 302 (of 302)
+2015-06-10 18:15:47,785 - hybseldesign.coverage_analysis [INFO] Computing bases covered across target genomes
+2015-06-10 18:15:47,967 - hybseldesign.coverage_analysis [INFO] Computing average coverage across target genomes
+2015-06-10 18:15:48,104 - hybseldesign.coverage_analysis [INFO] Computing sliding coverage across target genomes
+NUMBER OF PROBES: 4280
+
+Genome                          Num bases covered Average coverage/depth
+                                   [over unambig]         [over unambig]
+----------------------- ------------------------- ----------------------
+dengue, genome 0        10176 (100.00%) [100.00%]            1.92 [1.92]
+dengue, genome 0 (rc)   10176 (100.00%) [100.00%]            1.92 [1.92]
+dengue, genome 1        10737 (100.00%) [100.00%]            2.76 [2.76]
+dengue, genome 1 (rc)   10737 (100.00%) [100.00%]            2.76 [2.76]
+dengue, genome 2        10735 (100.00%) [100.00%]            2.76 [2.76]
+dengue, genome 2 (rc)   10735 (100.00%) [100.00%]            2.76 [2.76]
+dengue, genome 3        10736 (100.00%) [100.00%]            2.30 [2.30]
+dengue, genome 3 (rc)   10736 (100.00%) [100.00%]            2.30 [2.30]
+dengue, genome 4        10736 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 4 (rc)   10736 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 5        10737 (100.00%) [100.00%]            2.73 [2.73]
+dengue, genome 5 (rc)   10737 (100.00%) [100.00%]            2.73 [2.73]
+dengue, genome 6        10736 (100.00%) [100.00%]            2.31 [2.31]
+dengue, genome 6 (rc)   10736 (100.00%) [100.00%]            2.31 [2.31]
+dengue, genome 7        10602 (100.00%) [100.00%]            2.01 [2.01]
+dengue, genome 7 (rc)   10602 (100.00%) [100.00%]            2.01 [2.01]
+dengue, genome 8        10583 (100.00%) [100.00%]            1.98 [1.98]
+dengue, genome 8 (rc)   10583 (100.00%) [100.00%]            1.98 [1.98]
+dengue, genome 9        10583 (100.00%) [100.00%]            1.95 [1.95]
+dengue, genome 9 (rc)   10583 (100.00%) [100.00%]            1.95 [1.95]
+dengue, genome 10       10583 (100.00%) [100.00%]            1.99 [1.99]
+dengue, genome 10 (rc)  10583 (100.00%) [100.00%]            1.99 [1.99]
+dengue, genome 11       10733 (100.00%) [100.00%]            1.97 [1.97]
+dengue, genome 11 (rc)  10733 (100.00%) [100.00%]            1.97 [1.97]
+dengue, genome 12       10605 (100.00%) [100.00%]            2.64 [2.64]
+dengue, genome 12 (rc)  10605 (100.00%) [100.00%]            2.64 [2.64]
+dengue, genome 13       10474 (100.00%) [100.00%]            1.91 [1.91]
+dengue, genome 13 (rc)  10474 (100.00%) [100.00%]            1.91 [1.91]
+dengue, genome 14       10445 (100.00%) [100.00%]            2.68 [2.68]
+dengue, genome 14 (rc)  10445 (100.00%) [100.00%]            2.68 [2.68]
+dengue, genome 15       10445 (100.00%) [100.00%]            2.71 [2.71]
+dengue, genome 15 (rc)  10445 (100.00%) [100.00%]            2.71 [2.71]
+dengue, genome 16       10445 (100.00%) [100.00%]            2.63 [2.63]
+dengue, genome 16 (rc)  10445 (100.00%) [100.00%]            2.63 [2.63]
+dengue, genome 17       10445 (100.00%) [100.00%]            2.63 [2.63]
+dengue, genome 17 (rc)  10445 (100.00%) [100.00%]            2.63 [2.63]
+dengue, genome 18       10444 (100.00%) [100.00%]            2.63 [2.63]
+dengue, genome 18 (rc)  10444 (100.00%) [100.00%]            2.63 [2.63]
+dengue, genome 19       10444 (100.00%) [100.00%]            2.64 [2.64]
+dengue, genome 19 (rc)  10444 (100.00%) [100.00%]            2.64 [2.64]
+dengue, genome 20       10444 (100.00%) [100.00%]            2.66 [2.66]
+dengue, genome 20 (rc)  10444 (100.00%) [100.00%]            2.66 [2.66]
+dengue, genome 21       10444 (100.00%) [100.00%]            2.61 [2.61]
+dengue, genome 21 (rc)  10444 (100.00%) [100.00%]            2.61 [2.61]
+dengue, genome 22       10442 (100.00%) [100.00%]            2.66 [2.66]
+dengue, genome 22 (rc)  10442 (100.00%) [100.00%]            2.66 [2.66]
+dengue, genome 23       10444 (100.00%) [100.00%]            2.65 [2.65]
+dengue, genome 23 (rc)  10444 (100.00%) [100.00%]            2.65 [2.65]
+dengue, genome 24       10445 (100.00%) [100.00%]            2.63 [2.63]
+dengue, genome 24 (rc)  10445 (100.00%) [100.00%]            2.63 [2.63]
+dengue, genome 25       10384 (100.00%) [100.00%]            2.58 [2.58]
+dengue, genome 25 (rc)  10384 (100.00%) [100.00%]            2.58 [2.58]
+dengue, genome 26       10480 (100.00%) [100.00%]            2.63 [2.63]
+dengue, genome 26 (rc)  10480 (100.00%) [100.00%]            2.63 [2.63]
+dengue, genome 27       10456 (100.00%) [100.00%]            2.72 [2.72]
+dengue, genome 27 (rc)  10456 (100.00%) [100.00%]            2.72 [2.72]
+dengue, genome 28       10443 (100.00%) [100.00%]            2.70 [2.70]
+dengue, genome 28 (rc)  10443 (100.00%) [100.00%]            2.70 [2.70]
+dengue, genome 29       10461 (100.00%) [100.00%]            2.69 [2.69]
+dengue, genome 29 (rc)  10461 (100.00%) [100.00%]            2.69 [2.69]
+dengue, genome 30       10443 (100.00%) [100.00%]            2.68 [2.68]
+dengue, genome 30 (rc)  10443 (100.00%) [100.00%]            2.68 [2.68]
+dengue, genome 31       10465 (100.00%) [100.00%]            2.68 [2.68]
+dengue, genome 31 (rc)  10465 (100.00%) [100.00%]            2.68 [2.68]
+dengue, genome 32       10445 (100.00%) [100.00%]            2.61 [2.61]
+dengue, genome 32 (rc)  10445 (100.00%) [100.00%]            2.61 [2.61]
+dengue, genome 33       10448 (100.00%) [100.00%]            2.68 [2.68]
+dengue, genome 33 (rc)  10448 (100.00%) [100.00%]            2.68 [2.68]
+dengue, genome 34       10448 (100.00%) [100.00%]            2.61 [2.61]
+dengue, genome 34 (rc)  10448 (100.00%) [100.00%]            2.61 [2.61]
+dengue, genome 35       10444 (100.00%) [100.00%]            2.65 [2.65]
+dengue, genome 35 (rc)  10444 (100.00%) [100.00%]            2.65 [2.65]
+dengue, genome 36       10443 (100.00%) [100.00%]            2.57 [2.57]
+dengue, genome 36 (rc)  10443 (100.00%) [100.00%]            2.57 [2.57]
+dengue, genome 37       10444 (100.00%) [100.00%]            2.57 [2.57]
+dengue, genome 37 (rc)  10444 (100.00%) [100.00%]            2.57 [2.57]
+dengue, genome 38       10442 (100.00%) [100.00%]            2.62 [2.62]
+dengue, genome 38 (rc)  10442 (100.00%) [100.00%]            2.62 [2.62]
+dengue, genome 39       10444 (100.00%) [100.00%]            2.61 [2.61]
+dengue, genome 39 (rc)  10444 (100.00%) [100.00%]            2.61 [2.61]
+dengue, genome 40       10444 (100.00%) [100.00%]            2.62 [2.62]
+dengue, genome 40 (rc)  10444 (100.00%) [100.00%]            2.62 [2.62]
+dengue, genome 41       10444 (100.00%) [100.00%]            2.68 [2.68]
+dengue, genome 41 (rc)  10444 (100.00%) [100.00%]            2.68 [2.68]
+dengue, genome 42       10265 (100.00%) [100.00%]            2.62 [2.62]
+dengue, genome 42 (rc)  10265 (100.00%) [100.00%]            2.62 [2.62]
+dengue, genome 43       10522 (100.00%) [100.00%]            2.62 [2.62]
+dengue, genome 43 (rc)  10522 (100.00%) [100.00%]            2.62 [2.62]
+dengue, genome 44       10456 (100.00%) [100.00%]            2.59 [2.59]
+dengue, genome 44 (rc)  10456 (100.00%) [100.00%]            2.59 [2.59]
+dengue, genome 45       10648 (100.00%) [100.00%]            2.69 [2.69]
+dengue, genome 45 (rc)  10648 (100.00%) [100.00%]            2.69 [2.69]
+dengue, genome 46       10444 (100.00%) [100.00%]            2.58 [2.58]
+dengue, genome 46 (rc)  10444 (100.00%) [100.00%]            2.58 [2.58]
+dengue, genome 47       10798 (100.00%) [100.00%]            2.74 [2.74]
+dengue, genome 47 (rc)  10798 (100.00%) [100.00%]            2.74 [2.74]
+dengue, genome 48       10453 (100.00%) [100.00%]            2.59 [2.59]
+dengue, genome 48 (rc)  10453 (100.00%) [100.00%]            2.59 [2.59]
+dengue, genome 49       10452 (100.00%) [100.00%]            2.58 [2.58]
+dengue, genome 49 (rc)  10452 (100.00%) [100.00%]            2.58 [2.58]
+dengue, genome 50       10735 (100.00%) [100.00%]            1.88 [1.88]
+dengue, genome 50 (rc)  10735 (100.00%) [100.00%]            1.88 [1.88]
+dengue, genome 51       10718 (100.00%) [100.00%]            1.96 [1.96]
+dengue, genome 51 (rc)  10718 (100.00%) [100.00%]            1.96 [1.96]
+dengue, genome 52       10734 (100.00%) [100.02%]            1.98 [1.98]
+dengue, genome 52 (rc)  10734 (100.00%) [100.02%]            1.98 [1.98]
+dengue, genome 53       10735 (100.00%) [100.01%]            2.07 [2.07]
+dengue, genome 53 (rc)  10735 (100.00%) [100.01%]            2.07 [2.07]
+dengue, genome 54       10735 (100.00%) [100.01%]            2.06 [2.06]
+dengue, genome 54 (rc)  10735 (100.00%) [100.01%]            2.06 [2.06]
+dengue, genome 55       10735 (100.00%) [100.01%]            2.01 [2.01]
+dengue, genome 55 (rc)  10735 (100.00%) [100.01%]            2.01 [2.01]
+dengue, genome 56       10735 (100.00%) [100.00%]            2.07 [2.07]
+dengue, genome 56 (rc)  10735 (100.00%) [100.00%]            2.07 [2.07]
+dengue, genome 57       10735 (100.00%) [100.00%]            1.99 [1.99]
+dengue, genome 57 (rc)  10735 (100.00%) [100.00%]            1.99 [1.99]
+dengue, genome 58       10724 (100.00%) [100.00%]            2.02 [2.02]
+dengue, genome 58 (rc)  10724 (100.00%) [100.00%]            2.02 [2.02]
+dengue, genome 59       10735 (100.00%) [100.00%]            2.04 [2.04]
+dengue, genome 59 (rc)  10735 (100.00%) [100.00%]            2.04 [2.04]
+dengue, genome 60       10735 (100.00%) [100.00%]            2.02 [2.02]
+dengue, genome 60 (rc)  10735 (100.00%) [100.00%]            2.02 [2.02]
+dengue, genome 61       10735 (100.00%) [100.00%]            1.88 [1.88]
+dengue, genome 61 (rc)  10735 (100.00%) [100.00%]            1.88 [1.88]
+dengue, genome 62       10699 (100.00%) [100.00%]            2.03 [2.03]
+dengue, genome 62 (rc)  10699 (100.00%) [100.00%]            2.03 [2.03]
+dengue, genome 63       10699 (100.00%) [100.00%]            1.97 [1.97]
+dengue, genome 63 (rc)  10699 (100.00%) [100.00%]            1.97 [1.97]
+dengue, genome 64       10699 (100.00%) [100.00%]            2.01 [2.01]
+dengue, genome 64 (rc)  10699 (100.00%) [100.00%]            2.01 [2.01]
+dengue, genome 65       10699 (100.00%) [100.00%]            1.91 [1.91]
+dengue, genome 65 (rc)  10699 (100.00%) [100.00%]            1.91 [1.91]
+dengue, genome 66       10694 (100.00%) [100.00%]            2.05 [2.05]
+dengue, genome 66 (rc)  10694 (100.00%) [100.00%]            2.05 [2.05]
+dengue, genome 67       10694 (100.00%) [100.00%]            2.01 [2.01]
+dengue, genome 67 (rc)  10694 (100.00%) [100.00%]            2.01 [2.01]
+dengue, genome 68       10669 (100.00%) [100.00%]            2.20 [2.20]
+dengue, genome 68 (rc)  10669 (100.00%) [100.00%]            2.20 [2.20]
+dengue, genome 69       10669 (100.00%) [100.00%]            2.18 [2.18]
+dengue, genome 69 (rc)  10669 (100.00%) [100.00%]            2.18 [2.18]
+dengue, genome 70       10669 (100.00%) [100.00%]            2.14 [2.14]
+dengue, genome 70 (rc)  10669 (100.00%) [100.00%]            2.14 [2.14]
+dengue, genome 71       10668 (100.00%) [100.00%]            1.95 [1.95]
+dengue, genome 71 (rc)  10668 (100.00%) [100.00%]            1.95 [1.95]
+dengue, genome 72       10671 (100.00%) [100.00%]            1.97 [1.97]
+dengue, genome 72 (rc)  10671 (100.00%) [100.00%]            1.97 [1.97]
+dengue, genome 73       10723 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 73 (rc)  10723 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 74       10670 (100.00%) [100.00%]            2.11 [2.11]
+dengue, genome 74 (rc)  10670 (100.00%) [100.00%]            2.11 [2.11]
+dengue, genome 75       10723 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 75 (rc)  10723 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 76       10723 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 76 (rc)  10723 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 77       10726 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 77 (rc)  10726 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 78       10630 (100.00%) [100.00%]            2.19 [2.19]
+dengue, genome 78 (rc)  10630 (100.00%) [100.00%]            2.19 [2.19]
+dengue, genome 79       10542 (100.00%) [100.00%]            2.14 [2.14]
+dengue, genome 79 (rc)  10542 (100.00%) [100.00%]            2.14 [2.14]
+dengue, genome 80       10539 (100.00%) [100.00%]            2.14 [2.14]
+dengue, genome 80 (rc)  10539 (100.00%) [100.00%]            2.14 [2.14]
+dengue, genome 81       10544 (100.00%) [100.00%]            2.17 [2.17]
+dengue, genome 81 (rc)  10544 (100.00%) [100.00%]            2.17 [2.17]
+dengue, genome 82       10540 (100.00%) [100.00%]            2.17 [2.17]
+dengue, genome 82 (rc)  10540 (100.00%) [100.00%]            2.17 [2.17]
+dengue, genome 83       10597 (100.00%) [100.00%]            2.12 [2.12]
+dengue, genome 83 (rc)  10597 (100.00%) [100.00%]            2.12 [2.12]
+dengue, genome 84       10723 (100.00%) [100.00%]            2.43 [2.43]
+dengue, genome 84 (rc)  10723 (100.00%) [100.00%]            2.43 [2.43]
+dengue, genome 85       10723 (100.00%) [100.00%]            2.47 [2.47]
+dengue, genome 85 (rc)  10723 (100.00%) [100.00%]            2.47 [2.47]
+dengue, genome 86       10723 (100.00%) [100.00%]            2.44 [2.44]
+dengue, genome 86 (rc)  10723 (100.00%) [100.00%]            2.44 [2.44]
+dengue, genome 87       10723 (100.00%) [100.00%]            2.50 [2.50]
+dengue, genome 87 (rc)  10723 (100.00%) [100.00%]            2.50 [2.50]
+dengue, genome 88       10723 (100.00%) [100.00%]            2.50 [2.50]
+dengue, genome 88 (rc)  10723 (100.00%) [100.00%]            2.50 [2.50]
+dengue, genome 89       10725 (100.00%) [100.00%]            2.05 [2.05]
+dengue, genome 89 (rc)  10725 (100.00%) [100.00%]            2.05 [2.05]
+dengue, genome 90       10678 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 90 (rc)  10678 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 91       10678 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 91 (rc)  10678 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 92       10678 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 92 (rc)  10678 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 93       10678 (100.00%) [100.00%]            2.22 [2.22]
+dengue, genome 93 (rc)  10678 (100.00%) [100.00%]            2.22 [2.22]
+dengue, genome 94       10477 (100.00%) [100.00%]            2.09 [2.09]
+dengue, genome 94 (rc)  10477 (100.00%) [100.00%]            2.09 [2.09]
+dengue, genome 95       10300 (100.00%) [100.00%]            2.06 [2.06]
+dengue, genome 95 (rc)  10300 (100.00%) [100.00%]            2.06 [2.06]
+dengue, genome 96       10481 (100.00%) [100.00%]            2.04 [2.04]
+dengue, genome 96 (rc)  10481 (100.00%) [100.00%]            2.04 [2.04]
+dengue, genome 97       10479 (100.00%) [100.00%]            1.97 [1.97]
+dengue, genome 97 (rc)  10479 (100.00%) [100.00%]            1.97 [1.97]
+dengue, genome 98       10494 (100.00%) [100.00%]            1.99 [1.99]
+dengue, genome 98 (rc)  10494 (100.00%) [100.00%]            1.99 [1.99]
+dengue, genome 99       10477 (100.00%) [100.00%]            1.99 [1.99]
+dengue, genome 99 (rc)  10477 (100.00%) [100.00%]            1.99 [1.99]
+dengue, genome 100      10477 (100.00%) [100.00%]            1.99 [1.99]
+dengue, genome 100 (rc) 10477 (100.00%) [100.00%]            1.99 [1.99]
+dengue, genome 101      10723 (100.00%) [100.03%]            1.89 [1.89]
+dengue, genome 101 (rc) 10723 (100.00%) [100.03%]            1.89 [1.89]
+dengue, genome 102      10723 (100.00%) [100.01%]            2.27 [2.27]
+dengue, genome 102 (rc) 10723 (100.00%) [100.01%]            2.27 [2.27]
+dengue, genome 103      10723 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 103 (rc) 10723 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 104      10723 (100.00%) [100.00%]            2.26 [2.26]
+dengue, genome 104 (rc) 10723 (100.00%) [100.00%]            2.26 [2.26]
+dengue, genome 105      10723 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 105 (rc) 10723 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 106      10723 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 106 (rc) 10723 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 107      10723 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 107 (rc) 10723 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 108      10723 (100.00%) [100.00%]            2.23 [2.23]
+dengue, genome 108 (rc) 10723 (100.00%) [100.00%]            2.23 [2.23]
+dengue, genome 109      10723 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 109 (rc) 10723 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 110      10723 (100.00%) [100.01%]            2.28 [2.28]
+dengue, genome 110 (rc) 10723 (100.00%) [100.01%]            2.28 [2.28]
+dengue, genome 111      10723 (100.00%) [100.00%]            2.26 [2.26]
+dengue, genome 111 (rc) 10723 (100.00%) [100.00%]            2.26 [2.26]
+dengue, genome 112      10723 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 112 (rc) 10723 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 113      10723 (100.00%) [100.02%]            2.26 [2.26]
+dengue, genome 113 (rc) 10723 (100.00%) [100.02%]            2.26 [2.26]
+dengue, genome 114      10723 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 114 (rc) 10723 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 115      10723 (100.00%) [100.00%]            2.23 [2.23]
+dengue, genome 115 (rc) 10723 (100.00%) [100.00%]            2.23 [2.23]
+dengue, genome 116      10723 (100.00%) [100.05%]            2.27 [2.27]
+dengue, genome 116 (rc) 10723 (100.00%) [100.05%]            2.27 [2.27]
+dengue, genome 117      10723 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 117 (rc) 10723 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 118      10723 (100.00%) [100.01%]            2.27 [2.27]
+dengue, genome 118 (rc) 10723 (100.00%) [100.01%]            2.27 [2.27]
+dengue, genome 119      10723 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 119 (rc) 10723 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 120      10723 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 120 (rc) 10723 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 121      10723 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 121 (rc) 10723 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 122      10629 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 122 (rc) 10629 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 123      10629 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 123 (rc) 10629 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 124      10629 (100.00%) [100.00%]            2.22 [2.22]
+dengue, genome 124 (rc) 10629 (100.00%) [100.00%]            2.22 [2.22]
+dengue, genome 125      10723 (100.00%) [100.00%]            2.22 [2.22]
+dengue, genome 125 (rc) 10723 (100.00%) [100.00%]            2.22 [2.22]
+dengue, genome 126      10507 (100.00%) [100.00%]            2.12 [2.12]
+dengue, genome 126 (rc) 10507 (100.00%) [100.00%]            2.12 [2.12]
+dengue, genome 127      10508 (100.00%) [100.00%]            2.14 [2.14]
+dengue, genome 127 (rc) 10508 (100.00%) [100.00%]            2.14 [2.14]
+dengue, genome 128      10696 (100.00%) [100.00%]            2.14 [2.14]
+dengue, genome 128 (rc) 10696 (100.00%) [100.00%]            2.14 [2.14]
+dengue, genome 129      10659 (100.00%) [100.00%]            2.17 [2.17]
+dengue, genome 129 (rc) 10659 (100.00%) [100.00%]            2.17 [2.17]
+dengue, genome 130      10587 (100.00%) [100.00%]            2.12 [2.12]
+dengue, genome 130 (rc) 10587 (100.00%) [100.00%]            2.12 [2.12]
+dengue, genome 131      10599 (100.00%) [100.00%]            2.15 [2.15]
+dengue, genome 131 (rc) 10599 (100.00%) [100.00%]            2.15 [2.15]
+dengue, genome 132      10598 (100.00%) [100.00%]            2.12 [2.12]
+dengue, genome 132 (rc) 10598 (100.00%) [100.00%]            2.12 [2.12]
+dengue, genome 133      10596 (100.00%) [100.00%]            2.13 [2.13]
+dengue, genome 133 (rc) 10596 (100.00%) [100.00%]            2.13 [2.13]
+dengue, genome 134      10611 (100.00%) [100.00%]            2.16 [2.16]
+dengue, genome 134 (rc) 10611 (100.00%) [100.00%]            2.16 [2.16]
+dengue, genome 135      10723 (100.00%) [100.00%]            1.97 [1.97]
+dengue, genome 135 (rc) 10723 (100.00%) [100.00%]            1.97 [1.97]
+dengue, genome 136      10670 (100.00%) [100.00%]            2.22 [2.22]
+dengue, genome 136 (rc) 10670 (100.00%) [100.00%]            2.22 [2.22]
+dengue, genome 137      10723 (100.00%) [100.00%]            1.77 [1.77]
+dengue, genome 137 (rc) 10723 (100.00%) [100.00%]            1.77 [1.77]
+dengue, genome 138      10723 (100.00%) [100.01%]            2.29 [2.29]
+dengue, genome 138 (rc) 10723 (100.00%) [100.01%]            2.29 [2.29]
+dengue, genome 139      10670 (100.00%) [100.00%]            2.38 [2.38]
+dengue, genome 139 (rc) 10670 (100.00%) [100.00%]            2.38 [2.38]
+dengue, genome 140      10673 (100.00%) [100.00%]            1.93 [1.93]
+dengue, genome 140 (rc) 10673 (100.00%) [100.00%]            1.93 [1.93]
+dengue, genome 141      10686 (100.00%) [100.00%]            2.17 [2.17]
+dengue, genome 141 (rc) 10686 (100.00%) [100.00%]            2.17 [2.17]
+dengue, genome 142      10675 (100.00%) [100.00%]            2.16 [2.16]
+dengue, genome 142 (rc) 10675 (100.00%) [100.00%]            2.16 [2.16]
+dengue, genome 143      10678 (100.00%) [100.00%]            2.17 [2.17]
+dengue, genome 143 (rc) 10678 (100.00%) [100.00%]            2.17 [2.17]
+dengue, genome 144      10677 (100.00%) [100.00%]            2.17 [2.17]
+dengue, genome 144 (rc) 10677 (100.00%) [100.00%]            2.17 [2.17]
+dengue, genome 145      10686 (100.00%) [100.00%]            2.17 [2.17]
+dengue, genome 145 (rc) 10686 (100.00%) [100.00%]            2.17 [2.17]
+dengue, genome 146      10675 (100.00%) [100.00%]            2.20 [2.20]
+dengue, genome 146 (rc) 10675 (100.00%) [100.00%]            2.20 [2.20]
+dengue, genome 147      10707 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 147 (rc) 10707 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 148      10652 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 148 (rc) 10652 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 149      10539 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 149 (rc) 10539 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 150      10538 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 150 (rc) 10538 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 151      10539 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 151 (rc) 10539 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 152      10381 (100.00%) [100.00%]            2.19 [2.19]
+dengue, genome 152 (rc) 10381 (100.00%) [100.00%]            2.19 [2.19]
+dengue, genome 153      10540 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 153 (rc) 10540 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 154      10537 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 154 (rc) 10537 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 155      10539 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 155 (rc) 10539 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 156      10539 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 156 (rc) 10539 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 157      10538 (100.00%) [100.00%]            2.21 [2.21]
+dengue, genome 157 (rc) 10538 (100.00%) [100.00%]            2.21 [2.21]
+dengue, genome 158      10310 (100.00%) [100.00%]            2.20 [2.20]
+dengue, genome 158 (rc) 10310 (100.00%) [100.00%]            2.20 [2.20]
+dengue, genome 159      10583 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 159 (rc) 10583 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 160      10537 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 160 (rc) 10537 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 161      10531 (100.00%) [100.00%]            2.23 [2.23]
+dengue, genome 161 (rc) 10531 (100.00%) [100.00%]            2.23 [2.23]
+dengue, genome 162      10581 (100.00%) [100.00%]            2.26 [2.26]
+dengue, genome 162 (rc) 10581 (100.00%) [100.00%]            2.26 [2.26]
+dengue, genome 163      10583 (100.00%) [100.00%]            2.26 [2.26]
+dengue, genome 163 (rc) 10583 (100.00%) [100.00%]            2.26 [2.26]
+dengue, genome 164      10540 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 164 (rc) 10540 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 165      10627 (100.00%) [100.00%]            2.29 [2.29]
+dengue, genome 165 (rc) 10627 (100.00%) [100.00%]            2.29 [2.29]
+dengue, genome 166      10580 (100.00%) [100.00%]            2.26 [2.26]
+dengue, genome 166 (rc) 10580 (100.00%) [100.00%]            2.26 [2.26]
+dengue, genome 167      10538 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 167 (rc) 10538 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 168      10539 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 168 (rc) 10539 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 169      10539 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 169 (rc) 10539 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 170      10539 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 170 (rc) 10539 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 171      10565 (100.00%) [100.00%]            2.23 [2.23]
+dengue, genome 171 (rc) 10565 (100.00%) [100.00%]            2.23 [2.23]
+dengue, genome 172      10539 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 172 (rc) 10539 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 173      10538 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 173 (rc) 10538 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 174      10539 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 174 (rc) 10539 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 175      10539 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 175 (rc) 10539 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 176      10540 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 176 (rc) 10540 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 177      10536 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 177 (rc) 10536 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 178      10539 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 178 (rc) 10539 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 179      10538 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 179 (rc) 10538 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 180      10566 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 180 (rc) 10566 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 181      10539 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 181 (rc) 10539 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 182      10540 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 182 (rc) 10540 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 183      10539 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 183 (rc) 10539 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 184      10534 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 184 (rc) 10534 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 185      10539 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 185 (rc) 10539 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 186      10539 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 186 (rc) 10539 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 187      10534 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 187 (rc) 10534 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 188      10539 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 188 (rc) 10539 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 189      10495 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 189 (rc) 10495 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 190      10539 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 190 (rc) 10539 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 191      10540 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 191 (rc) 10540 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 192      10541 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 192 (rc) 10541 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 193      10539 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 193 (rc) 10539 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 194      10540 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 194 (rc) 10540 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 195      10287 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 195 (rc) 10287 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 196      10681 (100.00%) [100.00%]            2.29 [2.29]
+dengue, genome 196 (rc) 10681 (100.00%) [100.00%]            2.29 [2.29]
+dengue, genome 197      10682 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 197 (rc) 10682 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 198      10680 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 198 (rc) 10680 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 199      10680 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 199 (rc) 10680 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 200      10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 200 (rc) 10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 201      10681 (100.00%) [100.00%]            2.23 [2.23]
+dengue, genome 201 (rc) 10681 (100.00%) [100.00%]            2.23 [2.23]
+dengue, genome 202      10681 (100.00%) [100.00%]            2.29 [2.29]
+dengue, genome 202 (rc) 10681 (100.00%) [100.00%]            2.29 [2.29]
+dengue, genome 203      10681 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 203 (rc) 10681 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 204      10681 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 204 (rc) 10681 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 205      10681 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 205 (rc) 10681 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 206      10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 206 (rc) 10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 207      10685 (100.00%) [100.00%]            2.26 [2.26]
+dengue, genome 207 (rc) 10685 (100.00%) [100.00%]            2.26 [2.26]
+dengue, genome 208      10681 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 208 (rc) 10681 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 209      10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 209 (rc) 10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 210      10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 210 (rc) 10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 211      10431 (100.00%) [100.00%]            2.23 [2.23]
+dengue, genome 211 (rc) 10431 (100.00%) [100.00%]            2.23 [2.23]
+dengue, genome 212      10682 (100.00%) [100.00%]            2.29 [2.29]
+dengue, genome 212 (rc) 10682 (100.00%) [100.00%]            2.29 [2.29]
+dengue, genome 213      10522 (100.00%) [100.00%]            2.20 [2.20]
+dengue, genome 213 (rc) 10522 (100.00%) [100.00%]            2.20 [2.20]
+dengue, genome 214      10681 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 214 (rc) 10681 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 215      10681 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 215 (rc) 10681 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 216      10680 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 216 (rc) 10680 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 217      10680 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 217 (rc) 10680 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 218      10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 218 (rc) 10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 219      10477 (100.00%) [100.00%]            2.17 [2.17]
+dengue, genome 219 (rc) 10477 (100.00%) [100.00%]            2.17 [2.17]
+dengue, genome 220      10535 (100.00%) [100.00%]            2.20 [2.20]
+dengue, genome 220 (rc) 10535 (100.00%) [100.00%]            2.20 [2.20]
+dengue, genome 221      10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 221 (rc) 10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 222      10682 (100.00%) [100.00%]            2.23 [2.23]
+dengue, genome 222 (rc) 10682 (100.00%) [100.00%]            2.23 [2.23]
+dengue, genome 223      10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 223 (rc) 10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 224      10605 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 224 (rc) 10605 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 225      10675 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 225 (rc) 10675 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 226      10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 226 (rc) 10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 227      10681 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 227 (rc) 10681 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 228      10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 228 (rc) 10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 229      10680 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 229 (rc) 10680 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 230      10681 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 230 (rc) 10681 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 231      10681 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 231 (rc) 10681 (100.00%) [100.00%]            2.28 [2.28]
+dengue, genome 232      10676 (100.00%) [100.00%]            2.23 [2.23]
+dengue, genome 232 (rc) 10676 (100.00%) [100.00%]            2.23 [2.23]
+dengue, genome 233      10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 233 (rc) 10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 234      10683 (100.00%) [100.00%]            2.29 [2.29]
+dengue, genome 234 (rc) 10683 (100.00%) [100.00%]            2.29 [2.29]
+dengue, genome 235      10690 (100.00%) [100.00%]            2.21 [2.21]
+dengue, genome 235 (rc) 10690 (100.00%) [100.00%]            2.21 [2.21]
+dengue, genome 236      10681 (100.00%) [100.00%]            2.29 [2.29]
+dengue, genome 236 (rc) 10681 (100.00%) [100.00%]            2.29 [2.29]
+dengue, genome 237      10685 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 237 (rc) 10685 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 238      10679 (100.00%) [100.00%]            2.20 [2.20]
+dengue, genome 238 (rc) 10679 (100.00%) [100.00%]            2.20 [2.20]
+dengue, genome 239      10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 239 (rc) 10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 240      10682 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 240 (rc) 10682 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 241      10683 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 241 (rc) 10683 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 242      10683 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 242 (rc) 10683 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 243      10681 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 243 (rc) 10681 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 244      10670 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 244 (rc) 10670 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 245      10680 (100.00%) [100.00%]            2.19 [2.19]
+dengue, genome 245 (rc) 10680 (100.00%) [100.00%]            2.19 [2.19]
+dengue, genome 246      10691 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 246 (rc) 10691 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 247      10676 (100.00%) [100.00%]            2.23 [2.23]
+dengue, genome 247 (rc) 10676 (100.00%) [100.00%]            2.23 [2.23]
+dengue, genome 248      10680 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 248 (rc) 10680 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 249      10681 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 249 (rc) 10681 (100.00%) [100.00%]            2.25 [2.25]
+dengue, genome 250      10689 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 250 (rc) 10689 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 251      10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 251 (rc) 10681 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 252      10644 (100.00%) [100.00%]            2.22 [2.22]
+dengue, genome 252 (rc) 10644 (100.00%) [100.00%]            2.22 [2.22]
+dengue, genome 253      10678 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 253 (rc) 10678 (100.00%) [100.00%]            2.24 [2.24]
+dengue, genome 254      10398 (100.00%) [100.00%]            2.20 [2.20]
+dengue, genome 254 (rc) 10398 (100.00%) [100.00%]            2.20 [2.20]
+dengue, genome 255      10527 (100.00%) [100.00%]            2.15 [2.15]
+dengue, genome 255 (rc) 10527 (100.00%) [100.00%]            2.15 [2.15]
+dengue, genome 256      10684 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 256 (rc) 10684 (100.00%) [100.00%]            2.27 [2.27]
+dengue, genome 257      10696 (100.00%) [100.00%]            2.22 [2.22]
+dengue, genome 257 (rc) 10696 (100.00%) [100.00%]            2.21 [2.21]
+dengue, genome 258      10173 (100.00%) [100.01%]            1.93 [1.93]
+dengue, genome 258 (rc)  10172 (99.99%) [100.00%]            1.93 [1.93]
+dengue, genome 259      10630 (100.00%) [100.00%]            2.05 [2.05]
+dengue, genome 259 (rc) 10630 (100.00%) [100.00%]            2.05 [2.05]
+dengue, genome 260      10707 (100.00%) [100.00%]            2.19 [2.19]
+dengue, genome 260 (rc) 10707 (100.00%) [100.00%]            2.19 [2.19]
+dengue, genome 261      10707 (100.00%) [100.00%]            2.21 [2.21]
+dengue, genome 261 (rc) 10707 (100.00%) [100.00%]            2.21 [2.21]
+dengue, genome 262      10707 (100.00%) [100.00%]            2.16 [2.16]
+dengue, genome 262 (rc) 10707 (100.00%) [100.00%]            2.16 [2.16]
+dengue, genome 263      10707 (100.00%) [100.01%]            2.16 [2.16]
+dengue, genome 263 (rc) 10707 (100.00%) [100.01%]            2.16 [2.16]
+dengue, genome 264      10250 (100.00%) [100.01%]            1.66 [1.66]
+dengue, genome 264 (rc) 10250 (100.00%) [100.01%]            1.66 [1.66]
+dengue, genome 265      10707 (100.00%) [100.00%]            1.98 [1.98]
+dengue, genome 265 (rc) 10707 (100.00%) [100.00%]            1.98 [1.98]
+dengue, genome 266      10707 (100.00%) [100.00%]            1.98 [1.98]
+dengue, genome 266 (rc) 10707 (100.00%) [100.00%]            1.98 [1.98]
+dengue, genome 267      10685 (100.00%) [100.00%]            2.21 [2.21]
+dengue, genome 267 (rc) 10685 (100.00%) [100.00%]            2.21 [2.21]
+dengue, genome 268      10649 (100.00%) [100.00%]            1.92 [1.92]
+dengue, genome 268 (rc) 10649 (100.00%) [100.00%]            1.92 [1.92]
+dengue, genome 269      10652 (100.00%) [100.00%]            1.85 [1.85]
+dengue, genome 269 (rc) 10652 (100.00%) [100.00%]            1.85 [1.85]
+dengue, genome 270      10739 (100.00%) [100.00%]            1.80 [1.80]
+dengue, genome 270 (rc) 10739 (100.00%) [100.00%]            1.80 [1.80]
+dengue, genome 271      10653 (100.00%) [100.00%]            1.81 [1.81]
+dengue, genome 271 (rc) 10653 (100.00%) [100.00%]            1.81 [1.81]
+dengue, genome 272      10653 (100.00%) [100.00%]            1.81 [1.81]
+dengue, genome 272 (rc) 10653 (100.00%) [100.00%]            1.81 [1.81]
+dengue, genome 273      10574 (100.00%) [100.00%]            1.63 [1.63]
+dengue, genome 273 (rc) 10574 (100.00%) [100.00%]            1.63 [1.63]
+dengue, genome 274      10631 (100.00%) [100.00%]            1.84 [1.84]
+dengue, genome 274 (rc) 10631 (100.00%) [100.00%]            1.84 [1.84]
+dengue, genome 275      10653 (100.00%) [100.00%]            1.87 [1.87]
+dengue, genome 275 (rc) 10653 (100.00%) [100.00%]            1.87 [1.87]
+dengue, genome 276      10604 (100.00%) [100.00%]            1.93 [1.93]
+dengue, genome 276 (rc) 10604 (100.00%) [100.00%]            1.93 [1.93]
+dengue, genome 277      10604 (100.00%) [100.00%]            1.90 [1.90]
+dengue, genome 277 (rc) 10604 (100.00%) [100.00%]            1.90 [1.90]
+dengue, genome 278      10604 (100.00%) [100.00%]            1.91 [1.91]
+dengue, genome 278 (rc) 10604 (100.00%) [100.00%]            1.91 [1.91]
+dengue, genome 279      10604 (100.00%) [100.00%]            1.90 [1.90]
+dengue, genome 279 (rc) 10604 (100.00%) [100.00%]            1.90 [1.90]
+dengue, genome 280      10604 (100.00%) [100.00%]            1.96 [1.96]
+dengue, genome 280 (rc) 10604 (100.00%) [100.00%]            1.96 [1.96]
+dengue, genome 281      10604 (100.00%) [100.00%]            1.92 [1.92]
+dengue, genome 281 (rc) 10604 (100.00%) [100.00%]            1.92 [1.92]
+dengue, genome 282      10604 (100.00%) [100.00%]            1.98 [1.98]
+dengue, genome 282 (rc) 10604 (100.00%) [100.00%]            1.98 [1.98]
+dengue, genome 283      10604 (100.00%) [100.00%]            1.89 [1.89]
+dengue, genome 283 (rc) 10604 (100.00%) [100.00%]            1.89 [1.89]
+dengue, genome 284      10604 (100.00%) [100.00%]            1.92 [1.92]
+dengue, genome 284 (rc) 10604 (100.00%) [100.00%]            1.92 [1.92]
+dengue, genome 285      10604 (100.00%) [100.00%]            1.95 [1.95]
+dengue, genome 285 (rc) 10604 (100.00%) [100.00%]            1.95 [1.95]
+dengue, genome 286      10604 (100.00%) [100.00%]            1.97 [1.97]
+dengue, genome 286 (rc) 10604 (100.00%) [100.00%]            1.97 [1.97]
+dengue, genome 287      10604 (100.00%) [100.00%]            1.97 [1.97]
+dengue, genome 287 (rc) 10604 (100.00%) [100.00%]            1.97 [1.97]
+dengue, genome 288      10604 (100.00%) [100.00%]            1.95 [1.95]
+dengue, genome 288 (rc) 10604 (100.00%) [100.00%]            1.95 [1.95]
+dengue, genome 289      10604 (100.00%) [100.08%]            1.93 [1.93]
+dengue, genome 289 (rc) 10604 (100.00%) [100.08%]            1.93 [1.93]
+dengue, genome 290      10604 (100.00%) [100.00%]            1.96 [1.96]
+dengue, genome 290 (rc) 10604 (100.00%) [100.00%]            1.96 [1.96]
+dengue, genome 291      10604 (100.00%) [100.07%]            1.90 [1.90]
+dengue, genome 291 (rc) 10604 (100.00%) [100.07%]            1.90 [1.90]
+dengue, genome 292      10604 (100.00%) [100.01%]            1.69 [1.69]
+dengue, genome 292 (rc) 10604 (100.00%) [100.01%]            1.69 [1.69]
+dengue, genome 293      10572 (100.00%) [100.00%]            1.90 [1.90]
+dengue, genome 293 (rc) 10572 (100.00%) [100.00%]            1.90 [1.90]
+dengue, genome 294      10572 (100.00%) [100.00%]            1.87 [1.87]
+dengue, genome 294 (rc) 10572 (100.00%) [100.00%]            1.87 [1.87]
+dengue, genome 295      10246 (100.00%) [100.00%]            1.83 [1.83]
+dengue, genome 295 (rc) 10246 (100.00%) [100.00%]            1.83 [1.83]
+dengue, genome 296      10572 (100.00%) [100.00%]            1.83 [1.83]
+dengue, genome 296 (rc) 10572 (100.00%) [100.00%]            1.83 [1.83]
+dengue, genome 297      10572 (100.00%) [100.00%]            1.86 [1.86]
+dengue, genome 297 (rc) 10572 (100.00%) [100.00%]            1.86 [1.86]
+dengue, genome 298      10572 (100.00%) [100.00%]            1.88 [1.88]
+dengue, genome 298 (rc) 10572 (100.00%) [100.00%]            1.88 [1.88]
+dengue, genome 299      10572 (100.00%) [100.00%]            1.88 [1.88]
+dengue, genome 299 (rc) 10572 (100.00%) [100.00%]            1.88 [1.88]
+dengue, genome 300      10573 (100.00%) [100.00%]            1.84 [1.84]
+dengue, genome 300 (rc) 10573 (100.00%) [100.00%]            1.84 [1.84]
+dengue, genome 301      10246 (100.00%) [100.00%]            1.83 [1.83]
+dengue, genome 301 (rc) 10246 (100.00%) [100.00%]            1.83 [1.83]
+

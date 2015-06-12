@@ -1,0 +1,218 @@
+Sender: LSF System <lsf@node1966>
+Subject: Job 549338: <python bin/make_probes.py --mismatches 2 --lcf_thres 100 --cover_extension 0 --dataset yellow_fever --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/yellow_fever/mismatches_2-coverextension_0.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/yellow_fever.fasta --verbose> in cluster <cromwell> Done
+
+Job <python bin/make_probes.py --mismatches 2 --lcf_thres 100 --cover_extension 0 --dataset yellow_fever --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/yellow_fever/mismatches_2-coverextension_0.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/yellow_fever.fasta --verbose> was submitted from host <node1748> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <node1966>, in queue <week>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Wed Jun 10 19:08:11 2015
+Results reported on Wed Jun 10 19:09:30 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes.py --mismatches 2 --lcf_thres 100 --cover_extension 0 --dataset yellow_fever --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/yellow_fever/mismatches_2-coverextension_0.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/yellow_fever.fasta --verbose
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               74.90 sec.
+    Max Memory :             1151 MB
+    Average Memory :         1141.63 MB
+    Total Requested Memory : 4296.00 MB
+    Delta Memory :           3145.00 MB
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Processes :          4
+    Max Threads :            5
+
+The output (if any) follows:
+
+2015-06-10 19:08:16,375 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/yellow_fever.fasta
+2015-06-10 19:08:16,513 - hybseldesign.filter.probe_designer [INFO] Building candidate probes from target sequences
+2015-06-10 19:08:16,817 - hybseldesign.filter.probe_designer [INFO] Starting filter FastaFilter
+2015-06-10 19:08:16,818 - hybseldesign.utils.seq_io [INFO] Reading fasta file /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/yellow_fever/mismatches_2-coverextension_0.fasta
+2015-06-10 19:08:17,036 - hybseldesign.filter.probe_designer [INFO] Starting filter DuplicateFilter
+2015-06-10 19:08:17,105 - hybseldesign.filter.probe_designer [INFO] Starting filter AdapterFilter
+2015-06-10 19:08:17,105 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across all target genomes
+2015-06-10 19:08:17,105 - hybseldesign.filter.adapter_filter [INFO] Building map from k-mers to probes
+2015-06-10 19:08:21,367 - hybseldesign.filter.adapter_filter [INFO] Adding adapters to probes based on votes
+2015-06-10 19:08:21,407 - hybseldesign.filter.probe_designer [INFO] Starting filter ReverseComplementFilter
+2015-06-10 19:08:21,644 - hybseldesign.coverage_analysis [INFO] Finding probe covers across target genomes
+2015-06-10 19:08:21,645 - hybseldesign.coverage_analysis [INFO] Building map from k-mers to probes
+2015-06-10 19:08:22,346 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 1 (of 55)
+2015-06-10 19:08:23,548 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 2 (of 55)
+2015-06-10 19:08:24,810 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 3 (of 55)
+2015-06-10 19:08:26,053 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 4 (of 55)
+2015-06-10 19:08:27,306 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 5 (of 55)
+2015-06-10 19:08:28,235 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 6 (of 55)
+2015-06-10 19:08:29,133 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 7 (of 55)
+2015-06-10 19:08:29,934 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 8 (of 55)
+2015-06-10 19:08:31,189 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 9 (of 55)
+2015-06-10 19:08:32,444 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 10 (of 55)
+2015-06-10 19:08:33,700 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 11 (of 55)
+2015-06-10 19:08:34,958 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 12 (of 55)
+2015-06-10 19:08:36,198 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 13 (of 55)
+2015-06-10 19:08:37,442 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 14 (of 55)
+2015-06-10 19:08:38,686 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 15 (of 55)
+2015-06-10 19:08:39,931 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 16 (of 55)
+2015-06-10 19:08:41,173 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 17 (of 55)
+2015-06-10 19:08:42,430 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 18 (of 55)
+2015-06-10 19:08:43,673 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 19 (of 55)
+2015-06-10 19:08:44,922 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 20 (of 55)
+2015-06-10 19:08:46,172 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 21 (of 55)
+2015-06-10 19:08:47,424 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 22 (of 55)
+2015-06-10 19:08:48,674 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 23 (of 55)
+2015-06-10 19:08:49,906 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 24 (of 55)
+2015-06-10 19:08:51,045 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 25 (of 55)
+2015-06-10 19:08:52,279 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 26 (of 55)
+2015-06-10 19:08:53,483 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 27 (of 55)
+2015-06-10 19:08:54,694 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 28 (of 55)
+2015-06-10 19:08:55,872 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 29 (of 55)
+2015-06-10 19:08:57,083 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 30 (of 55)
+2015-06-10 19:08:58,284 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 31 (of 55)
+2015-06-10 19:08:59,523 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 32 (of 55)
+2015-06-10 19:09:00,712 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 33 (of 55)
+2015-06-10 19:09:01,880 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 34 (of 55)
+2015-06-10 19:09:03,074 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 35 (of 55)
+2015-06-10 19:09:04,173 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 36 (of 55)
+2015-06-10 19:09:05,407 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 37 (of 55)
+2015-06-10 19:09:06,587 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 38 (of 55)
+2015-06-10 19:09:07,846 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 39 (of 55)
+2015-06-10 19:09:09,106 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 40 (of 55)
+2015-06-10 19:09:10,368 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 41 (of 55)
+2015-06-10 19:09:11,280 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 42 (of 55)
+2015-06-10 19:09:12,564 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 43 (of 55)
+2015-06-10 19:09:13,711 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 44 (of 55)
+2015-06-10 19:09:14,970 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 45 (of 55)
+2015-06-10 19:09:16,229 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 46 (of 55)
+2015-06-10 19:09:17,288 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 47 (of 55)
+2015-06-10 19:09:18,566 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 48 (of 55)
+2015-06-10 19:09:19,822 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 49 (of 55)
+2015-06-10 19:09:21,072 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 50 (of 55)
+2015-06-10 19:09:22,325 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 51 (of 55)
+2015-06-10 19:09:23,569 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 52 (of 55)
+2015-06-10 19:09:24,850 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 53 (of 55)
+2015-06-10 19:09:26,105 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 54 (of 55)
+2015-06-10 19:09:27,363 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 55 (of 55)
+2015-06-10 19:09:28,636 - hybseldesign.coverage_analysis [INFO] Computing bases covered across target genomes
+2015-06-10 19:09:28,667 - hybseldesign.coverage_analysis [INFO] Computing average coverage across target genomes
+2015-06-10 19:09:28,690 - hybseldesign.coverage_analysis [INFO] Computing sliding coverage across target genomes
+NUMBER OF PROBES: 2948
+
+Genome                               Num bases covered Average coverage/depth
+                                        [over unambig]         [over unambig]
+---------------------------- ------------------------- ----------------------
+yellow_fever, genome 0       10760 (100.00%) [100.00%]            1.61 [1.61]
+yellow_fever, genome 0 (rc)  10760 (100.00%) [100.00%]            1.61 [1.61]
+yellow_fever, genome 1       10811 (100.00%) [100.00%]            1.74 [1.74]
+yellow_fever, genome 1 (rc)  10811 (100.00%) [100.00%]            1.74 [1.74]
+yellow_fever, genome 2       10862 (100.00%) [100.07%]            1.78 [1.78]
+yellow_fever, genome 2 (rc)  10862 (100.00%) [100.07%]            1.78 [1.78]
+yellow_fever, genome 3       10862 (100.00%) [100.02%]            1.79 [1.79]
+yellow_fever, genome 3 (rc)  10862 (100.00%) [100.02%]            1.79 [1.79]
+yellow_fever, genome 4       10823 (100.00%) [100.00%]            1.13 [1.13]
+yellow_fever, genome 4 (rc)  10823 (100.00%) [100.00%]            1.13 [1.13]
+yellow_fever, genome 5       10823 (100.00%) [100.00%]            1.11 [1.11]
+yellow_fever, genome 5 (rc)  10823 (100.00%) [100.00%]            1.11 [1.11]
+yellow_fever, genome 6       10823 (100.00%) [100.00%]            1.07 [1.07]
+yellow_fever, genome 6 (rc)  10823 (100.00%) [100.00%]            1.07 [1.07]
+yellow_fever, genome 7       10862 (100.00%) [100.00%]            1.81 [1.81]
+yellow_fever, genome 7 (rc)  10862 (100.00%) [100.00%]            1.81 [1.81]
+yellow_fever, genome 8       10862 (100.00%) [100.00%]            1.80 [1.80]
+yellow_fever, genome 8 (rc)  10862 (100.00%) [100.00%]            1.80 [1.80]
+yellow_fever, genome 9       10862 (100.00%) [100.00%]            1.81 [1.81]
+yellow_fever, genome 9 (rc)  10862 (100.00%) [100.00%]            1.81 [1.81]
+yellow_fever, genome 10      10862 (100.00%) [100.00%]            1.82 [1.82]
+yellow_fever, genome 10 (rc) 10862 (100.00%) [100.00%]            1.82 [1.82]
+yellow_fever, genome 11      10862 (100.00%) [100.03%]            1.67 [1.67]
+yellow_fever, genome 11 (rc) 10862 (100.00%) [100.03%]            1.67 [1.67]
+yellow_fever, genome 12      10862 (100.00%) [100.02%]            1.66 [1.66]
+yellow_fever, genome 12 (rc) 10862 (100.00%) [100.02%]            1.66 [1.66]
+yellow_fever, genome 13      10862 (100.00%) [100.03%]            1.67 [1.67]
+yellow_fever, genome 13 (rc) 10862 (100.00%) [100.03%]            1.67 [1.67]
+yellow_fever, genome 14      10862 (100.00%) [100.03%]            1.67 [1.67]
+yellow_fever, genome 14 (rc) 10862 (100.00%) [100.03%]            1.67 [1.67]
+yellow_fever, genome 15      10862 (100.00%) [100.01%]            1.66 [1.66]
+yellow_fever, genome 15 (rc) 10862 (100.00%) [100.01%]            1.66 [1.66]
+yellow_fever, genome 16      10859 (100.00%) [100.01%]            1.69 [1.69]
+yellow_fever, genome 16 (rc) 10859 (100.00%) [100.01%]            1.69 [1.69]
+yellow_fever, genome 17      10857 (100.00%) [100.00%]            1.67 [1.67]
+yellow_fever, genome 17 (rc) 10857 (100.00%) [100.00%]            1.67 [1.67]
+yellow_fever, genome 18      10861 (100.00%) [100.01%]            1.72 [1.72]
+yellow_fever, genome 18 (rc) 10861 (100.00%) [100.01%]            1.72 [1.72]
+yellow_fever, genome 19      10862 (100.00%) [100.00%]            1.72 [1.72]
+yellow_fever, genome 19 (rc) 10862 (100.00%) [100.00%]            1.72 [1.72]
+yellow_fever, genome 20      10859 (100.00%) [100.04%]            1.83 [1.83]
+yellow_fever, genome 20 (rc)  10858 (99.99%) [100.03%]            1.83 [1.83]
+yellow_fever, genome 21      10859 (100.00%) [100.05%]            1.78 [1.78]
+yellow_fever, genome 21 (rc)  10858 (99.99%) [100.04%]            1.78 [1.78]
+yellow_fever, genome 22       10861 (99.99%) [100.01%]            1.69 [1.69]
+yellow_fever, genome 22 (rc)  10861 (99.99%) [100.01%]            1.69 [1.69]
+yellow_fever, genome 23      10848 (100.00%) [100.01%]            1.16 [1.16]
+yellow_fever, genome 23 (rc) 10848 (100.00%) [100.01%]            1.16 [1.16]
+yellow_fever, genome 24       10861 (99.99%) [100.00%]            1.67 [1.67]
+yellow_fever, genome 24 (rc)  10861 (99.99%) [100.00%]            1.67 [1.67]
+yellow_fever, genome 25      10859 (100.00%) [100.00%]            1.46 [1.46]
+yellow_fever, genome 25 (rc) 10859 (100.00%) [100.00%]            1.46 [1.46]
+yellow_fever, genome 26        11007 (99.99%) [99.99%]            1.50 [1.50]
+yellow_fever, genome 26 (rc) 11008 (100.00%) [100.00%]            1.50 [1.50]
+yellow_fever, genome 27        10816 (99.99%) [99.99%]            1.47 [1.47]
+yellow_fever, genome 27 (rc) 10817 (100.00%) [100.00%]            1.47 [1.47]
+yellow_fever, genome 28       11007 (99.99%) [100.01%]            1.49 [1.49]
+yellow_fever, genome 28 (rc) 11008 (100.00%) [100.02%]            1.49 [1.49]
+yellow_fever, genome 29      11004 (100.00%) [100.00%]            1.45 [1.45]
+yellow_fever, genome 29 (rc) 11004 (100.00%) [100.00%]            1.45 [1.45]
+yellow_fever, genome 30        11007 (99.99%) [99.99%]            1.49 [1.49]
+yellow_fever, genome 30 (rc)   11005 (99.97%) [99.97%]            1.49 [1.49]
+yellow_fever, genome 31        11002 (99.98%) [99.98%]            1.42 [1.42]
+yellow_fever, genome 31 (rc) 11004 (100.00%) [100.00%]            1.42 [1.42]
+yellow_fever, genome 32        10850 (99.98%) [99.98%]            1.49 [1.49]
+yellow_fever, genome 32 (rc)   10851 (99.99%) [99.99%]            1.49 [1.49]
+yellow_fever, genome 33      10860 (100.00%) [100.00%]            1.45 [1.45]
+yellow_fever, genome 33 (rc) 10860 (100.00%) [100.00%]            1.45 [1.45]
+yellow_fever, genome 34      10795 (100.00%) [100.01%]            1.24 [1.24]
+yellow_fever, genome 34 (rc) 10795 (100.00%) [100.01%]            1.24 [1.24]
+yellow_fever, genome 35        11004 (99.96%) [99.96%]            1.49 [1.49]
+yellow_fever, genome 35 (rc)   11007 (99.99%) [99.99%]            1.49 [1.49]
+yellow_fever, genome 36        10887 (99.98%) [99.98%]            1.49 [1.49]
+yellow_fever, genome 36 (rc) 10889 (100.00%) [100.00%]            1.49 [1.49]
+yellow_fever, genome 37      10862 (100.00%) [100.00%]            1.82 [1.82]
+yellow_fever, genome 37 (rc) 10862 (100.00%) [100.00%]            1.82 [1.82]
+yellow_fever, genome 38      10862 (100.00%) [100.00%]            1.82 [1.82]
+yellow_fever, genome 38 (rc) 10862 (100.00%) [100.00%]            1.82 [1.82]
+yellow_fever, genome 39      10862 (100.00%) [100.00%]            1.82 [1.82]
+yellow_fever, genome 39 (rc) 10862 (100.00%) [100.00%]            1.82 [1.82]
+yellow_fever, genome 40      10820 (100.00%) [100.00%]            1.12 [1.12]
+yellow_fever, genome 40 (rc) 10820 (100.00%) [100.00%]            1.12 [1.12]
+yellow_fever, genome 41      10862 (100.00%) [100.00%]            1.91 [1.91]
+yellow_fever, genome 41 (rc) 10862 (100.00%) [100.00%]            1.91 [1.91]
+yellow_fever, genome 42      10862 (100.00%) [100.00%]            1.19 [1.19]
+yellow_fever, genome 42 (rc) 10862 (100.00%) [100.00%]            1.19 [1.19]
+yellow_fever, genome 43      10862 (100.00%) [100.00%]            1.82 [1.82]
+yellow_fever, genome 43 (rc) 10862 (100.00%) [100.00%]            1.82 [1.82]
+yellow_fever, genome 44      10862 (100.00%) [100.00%]            1.78 [1.78]
+yellow_fever, genome 44 (rc) 10862 (100.00%) [100.00%]            1.78 [1.78]
+yellow_fever, genome 45       10655 (99.98%) [100.00%]            1.16 [1.16]
+yellow_fever, genome 45 (rc) 10657 (100.00%) [100.02%]            1.16 [1.16]
+yellow_fever, genome 46      10833 (100.00%) [100.00%]            1.87 [1.87]
+yellow_fever, genome 46 (rc) 10833 (100.00%) [100.00%]            1.87 [1.87]
+yellow_fever, genome 47      10838 (100.00%) [100.00%]            1.78 [1.78]
+yellow_fever, genome 47 (rc) 10838 (100.00%) [100.00%]            1.78 [1.78]
+yellow_fever, genome 48       10861 (99.99%) [100.01%]            1.77 [1.77]
+yellow_fever, genome 48 (rc)  10860 (99.98%) [100.00%]            1.77 [1.77]
+yellow_fever, genome 49      10862 (100.00%) [100.07%]            1.73 [1.73]
+yellow_fever, genome 49 (rc)  10861 (99.99%) [100.06%]            1.73 [1.73]
+yellow_fever, genome 50      10862 (100.00%) [100.00%]            1.77 [1.77]
+yellow_fever, genome 50 (rc)   10861 (99.99%) [99.99%]            1.77 [1.77]
+yellow_fever, genome 51      10862 (100.00%) [100.00%]            1.91 [1.91]
+yellow_fever, genome 51 (rc) 10862 (100.00%) [100.00%]            1.91 [1.91]
+yellow_fever, genome 52      10862 (100.00%) [100.00%]            1.81 [1.81]
+yellow_fever, genome 52 (rc) 10862 (100.00%) [100.00%]            1.81 [1.81]
+yellow_fever, genome 53      10862 (100.00%) [100.00%]            1.82 [1.82]
+yellow_fever, genome 53 (rc) 10862 (100.00%) [100.00%]            1.82 [1.82]
+yellow_fever, genome 54      10862 (100.00%) [100.00%]            1.81 [1.81]
+yellow_fever, genome 54 (rc) 10862 (100.00%) [100.00%]            1.81 [1.81]
+

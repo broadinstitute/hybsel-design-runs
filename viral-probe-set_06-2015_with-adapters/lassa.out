@@ -1,0 +1,940 @@
+Sender: LSF System <lsf@node1972>
+Subject: Job 549331: <python bin/make_probes.py --mismatches 4 --lcf_thres 100 --cover_extension 30 --dataset lassa --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/lassa/mismatches_4-coverextension_30.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/lassa.fasta --verbose> in cluster <cromwell> Done
+
+Job <python bin/make_probes.py --mismatches 4 --lcf_thres 100 --cover_extension 30 --dataset lassa --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/lassa/mismatches_4-coverextension_30.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/lassa.fasta --verbose> was submitted from host <node1748> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <node1972>, in queue <week>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Wed Jun 10 19:08:10 2015
+Results reported on Wed Jun 10 19:16:27 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes.py --mismatches 4 --lcf_thres 100 --cover_extension 30 --dataset lassa --filter_from_fasta /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/lassa/mismatches_4-coverextension_30.fasta --skip_set_cover --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015_with-adapters/lassa.fasta --verbose
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               488.29 sec.
+    Max Memory :             195 MB
+    Average Memory :         179.29 MB
+    Total Requested Memory : 4296.00 MB
+    Delta Memory :           4101.00 MB
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Processes :          4
+    Max Threads :            5
+
+The output (if any) follows:
+
+2015-06-10 19:08:16,428 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/d6c020bb.fasta
+2015-06-10 19:08:16,463 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/75a1c073.fasta
+2015-06-10 19:08:16,479 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/30397172.fasta
+2015-06-10 19:08:16,493 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/8b0d5978.fasta
+2015-06-10 19:08:16,520 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/0d5ee380.fasta
+2015-06-10 19:08:16,549 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/5db02423.fasta
+2015-06-10 19:08:16,566 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/2a85623d.fasta
+2015-06-10 19:08:16,583 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/6c3153f1.fasta
+2015-06-10 19:08:16,594 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/7b504710.fasta
+2015-06-10 19:08:16,611 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/b23fd381.fasta
+2015-06-10 19:08:16,634 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/1ed70c2f.fasta
+2015-06-10 19:08:16,679 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/65b12981.fasta
+2015-06-10 19:08:16,691 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/7e7c297c.fasta
+2015-06-10 19:08:16,723 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/9fb501b2.fasta
+2015-06-10 19:08:16,741 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/433e1e36.fasta
+2015-06-10 19:08:16,760 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/1275d683.fasta
+2015-06-10 19:08:16,779 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/5019b301.fasta
+2015-06-10 19:08:16,802 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/4e9a37a5.fasta
+2015-06-10 19:08:16,825 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/2e23ac7a.fasta
+2015-06-10 19:08:16,865 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/ad079edc.fasta
+2015-06-10 19:08:16,894 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/6ff9e272.fasta
+2015-06-10 19:08:16,914 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/47467d27.fasta
+2015-06-10 19:08:16,931 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/ec31c5a9.fasta
+2015-06-10 19:08:16,965 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/92862710.fasta
+2015-06-10 19:08:16,995 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/2e05296e.fasta
+2015-06-10 19:08:17,012 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/561263b9.fasta
+2015-06-10 19:08:17,033 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/8952c82c.fasta
+2015-06-10 19:08:17,100 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/96bb029e.fasta
+2015-06-10 19:08:17,146 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/3c6326e7.fasta
+2015-06-10 19:08:17,193 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/9b31dbee.fasta
+2015-06-10 19:08:17,205 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/0fb5d0b9.fasta
+2015-06-10 19:08:17,223 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/cc507ce6.fasta
+2015-06-10 19:08:17,243 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/dea97644.fasta
+2015-06-10 19:08:17,281 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/af3f1406.fasta
+2015-06-10 19:08:17,305 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/b24c2ce4.fasta
+2015-06-10 19:08:17,315 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/1f9fbdf3.fasta
+2015-06-10 19:08:17,329 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/c32c987d.fasta
+2015-06-10 19:08:17,345 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/5839cd6f.fasta
+2015-06-10 19:08:17,381 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/f90be54b.fasta
+2015-06-10 19:08:17,402 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/5af84e1d.fasta
+2015-06-10 19:08:17,411 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/95c44f7d.fasta
+2015-06-10 19:08:17,430 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/55d6083d.fasta
+2015-06-10 19:08:17,440 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/0f3fc54e.fasta
+2015-06-10 19:08:17,461 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/f904b0f6.fasta
+2015-06-10 19:08:17,473 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/5c7eb3ae.fasta
+2015-06-10 19:08:17,492 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/40828811.fasta
+2015-06-10 19:08:17,513 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/48d67e51.fasta
+2015-06-10 19:08:17,533 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/0f25ec34.fasta
+2015-06-10 19:08:17,538 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/5a35961c.fasta
+2015-06-10 19:08:17,562 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/a009f1b0.fasta
+2015-06-10 19:08:17,584 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/0adf6f73.fasta
+2015-06-10 19:08:17,599 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/33515284.fasta
+2015-06-10 19:08:17,612 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/78ce97ee.fasta
+2015-06-10 19:08:17,632 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/21fa94f1.fasta
+2015-06-10 19:08:17,640 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/51d6ae6c.fasta
+2015-06-10 19:08:17,669 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/fa699e39.fasta
+2015-06-10 19:08:17,687 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/8d8dba7b.fasta
+2015-06-10 19:08:17,703 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/48e42d14.fasta
+2015-06-10 19:08:17,721 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/285319a7.fasta
+2015-06-10 19:08:17,731 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/47c13775.fasta
+2015-06-10 19:08:17,777 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/e579ca6b.fasta
+2015-06-10 19:08:17,820 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/d771db69.fasta
+2015-06-10 19:08:17,875 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/508a678f.fasta
+2015-06-10 19:08:17,896 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/1fbb9189.fasta
+2015-06-10 19:08:17,913 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/0521b2bc.fasta
+2015-06-10 19:08:17,934 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/c25e1ef6.fasta
+2015-06-10 19:08:17,948 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/2a766def.fasta
+2015-06-10 19:08:17,975 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/102de9b2.fasta
+2015-06-10 19:08:17,988 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/b015acd9.fasta
+2015-06-10 19:08:18,006 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/357d5961.fasta
+2015-06-10 19:08:18,021 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/4344514a.fasta
+2015-06-10 19:08:18,032 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/d9fd6a42.fasta
+2015-06-10 19:08:18,064 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/b4447460.fasta
+2015-06-10 19:08:18,087 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/998d0ed7.fasta
+2015-06-10 19:08:18,110 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/33da382f.fasta
+2015-06-10 19:08:18,129 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/c853a7b9.fasta
+2015-06-10 19:08:18,143 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/dc3edfae.fasta
+2015-06-10 19:08:18,179 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/77a46d32.fasta
+2015-06-10 19:08:18,221 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/f7c9b951.fasta
+2015-06-10 19:08:18,247 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/5ea679c9.fasta
+2015-06-10 19:08:18,271 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/f4e351ee.fasta
+2015-06-10 19:08:18,288 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/efa9c734.fasta
+2015-06-10 19:08:18,300 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/adc8c806.fasta
+2015-06-10 19:08:18,316 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/3fd72326.fasta
+2015-06-10 19:08:18,341 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/001645a0.fasta
+2015-06-10 19:08:18,365 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/783d94f0.fasta
+2015-06-10 19:08:18,408 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/8f96f9e2.fasta
+2015-06-10 19:08:18,415 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/45b2ff4b.fasta
+2015-06-10 19:08:18,439 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/20e717ff.fasta
+2015-06-10 19:08:18,474 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/f219b098.fasta
+2015-06-10 19:08:18,519 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/de151e08.fasta
+2015-06-10 19:08:18,540 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/6ea434e3.fasta
+2015-06-10 19:08:18,586 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/245fef67.fasta
+2015-06-10 19:08:18,633 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/670cfedd.fasta
+2015-06-10 19:08:18,658 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/7f7d29b6.fasta
+2015-06-10 19:08:18,664 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/cf11eae1.fasta
+2015-06-10 19:08:18,696 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/31c3576f.fasta
+2015-06-10 19:08:18,708 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/7b140c0a.fasta
+2015-06-10 19:08:18,712 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/4b4eb1a1.fasta
+2015-06-10 19:08:18,731 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/82b5ac18.fasta
+2015-06-10 19:08:18,757 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/ea44d8e5.fasta
+2015-06-10 19:08:18,784 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/aac3de41.fasta
+2015-06-10 19:08:18,801 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/bcd0c5ae.fasta
+2015-06-10 19:08:18,817 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/7f2fc686.fasta
+2015-06-10 19:08:18,853 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/a04a1739.fasta
+2015-06-10 19:08:18,857 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/0b229733.fasta
+2015-06-10 19:08:18,886 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/11b8cd53.fasta
+2015-06-10 19:08:18,914 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/9eff0e50.fasta
+2015-06-10 19:08:18,942 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/39bbee7e.fasta
+2015-06-10 19:08:18,957 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/2e59bf52.fasta
+2015-06-10 19:08:19,008 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/30c6d6a6.fasta
+2015-06-10 19:08:19,023 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/fe13ae5c.fasta
+2015-06-10 19:08:19,061 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/f69fc9ed.fasta
+2015-06-10 19:08:19,091 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/43c312ce.fasta
+2015-06-10 19:08:19,110 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/51fbc916.fasta
+2015-06-10 19:08:19,141 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/76e6c3fb.fasta
+2015-06-10 19:08:19,202 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/bb2bf6a4.fasta
+2015-06-10 19:08:19,214 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/f85c2469.fasta
+2015-06-10 19:08:19,218 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/4e348511.fasta
+2015-06-10 19:08:19,247 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/fadc0e28.fasta
+2015-06-10 19:08:19,299 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/d72212f1.fasta
+2015-06-10 19:08:19,344 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/cc99634a.fasta
+2015-06-10 19:08:19,367 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/18c56e2b.fasta
+2015-06-10 19:08:19,379 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/a3cf5552.fasta
+2015-06-10 19:08:19,399 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/3f1218fb.fasta
+2015-06-10 19:08:19,409 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/3fd5441b.fasta
+2015-06-10 19:08:19,421 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/6f9f976a.fasta
+2015-06-10 19:08:19,446 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/937b645d.fasta
+2015-06-10 19:08:19,479 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/50013c09.fasta
+2015-06-10 19:08:19,500 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/b5e7cd06.fasta
+2015-06-10 19:08:19,515 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/6a6661e1.fasta
+2015-06-10 19:08:19,545 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/227a4b8f.fasta
+2015-06-10 19:08:19,554 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/b6fb5c53.fasta
+2015-06-10 19:08:19,568 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/28054297.fasta
+2015-06-10 19:08:19,585 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/34bb9406.fasta
+2015-06-10 19:08:19,610 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/f4de28ac.fasta
+2015-06-10 19:08:19,623 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/d0aa270e.fasta
+2015-06-10 19:08:19,628 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/c7294819.fasta
+2015-06-10 19:08:19,632 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/adee85ca.fasta
+2015-06-10 19:08:19,650 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/ef2cc4a0.fasta
+2015-06-10 19:08:19,674 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/a83cc12e.fasta
+2015-06-10 19:08:19,678 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/661b0b79.fasta
+2015-06-10 19:08:19,692 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/4ee6ebae.fasta
+2015-06-10 19:08:19,714 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/9f74dc39.fasta
+2015-06-10 19:08:19,727 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/2fde62f7.fasta
+2015-06-10 19:08:19,738 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/d4d223a7.fasta
+2015-06-10 19:08:19,755 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/4b36c771.fasta
+2015-06-10 19:08:19,770 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/84a6c4a4.fasta
+2015-06-10 19:08:19,787 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/2b48f717.fasta
+2015-06-10 19:08:19,817 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/9adac372.fasta
+2015-06-10 19:08:19,863 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/04047156.fasta
+2015-06-10 19:08:19,899 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/14d69a53.fasta
+2015-06-10 19:08:19,916 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/b591c98f.fasta
+2015-06-10 19:08:19,928 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/0f125da3.fasta
+2015-06-10 19:08:19,951 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/74e65b16.fasta
+2015-06-10 19:08:19,974 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/6bca0134.fasta
+2015-06-10 19:08:19,984 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/6d5800cd.fasta
+2015-06-10 19:08:20,014 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/38956447.fasta
+2015-06-10 19:08:20,037 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/99868e7a.fasta
+2015-06-10 19:08:20,056 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/6fdc7f71.fasta
+2015-06-10 19:08:20,092 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/c11a8ffe.fasta
+2015-06-10 19:08:20,107 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/9cb40360.fasta
+2015-06-10 19:08:20,145 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/c8629e1d.fasta
+2015-06-10 19:08:20,171 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/657c414c.fasta
+2015-06-10 19:08:20,188 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/221fa9be.fasta
+2015-06-10 19:08:20,207 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/70c927dd.fasta
+2015-06-10 19:08:20,239 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/24a7b553.fasta
+2015-06-10 19:08:20,314 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/4853fb8e.fasta
+2015-06-10 19:08:20,342 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/ed0fb330.fasta
+2015-06-10 19:08:20,360 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/eacfd35d.fasta
+2015-06-10 19:08:20,383 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/76337c4d.fasta
+2015-06-10 19:08:20,423 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/ee58e492.fasta
+2015-06-10 19:08:20,439 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/9276a827.fasta
+2015-06-10 19:08:20,458 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/08aafb82.fasta
+2015-06-10 19:08:20,479 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/98b8f3fc.fasta
+2015-06-10 19:08:20,494 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/7f828fc2.fasta
+2015-06-10 19:08:20,531 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/a00ced04.fasta
+2015-06-10 19:08:20,583 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/53c1d081.fasta
+2015-06-10 19:08:20,605 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/3154eafe.fasta
+2015-06-10 19:08:20,629 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/c72c2842.fasta
+2015-06-10 19:08:20,662 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/ad3bed68.fasta
+2015-06-10 19:08:20,709 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/47cc7cfd.fasta
+2015-06-10 19:08:20,731 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/9e9c54e8.fasta
+2015-06-10 19:08:20,766 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/21c2e5ed.fasta
+2015-06-10 19:08:20,806 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/9a8d973a.fasta
+2015-06-10 19:08:20,831 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/31ff0f1d.fasta
+2015-06-10 19:08:20,849 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/c9db9e90.fasta
+2015-06-10 19:08:20,854 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/6cc30a16.fasta
+2015-06-10 19:08:20,869 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/495a691a.fasta
+2015-06-10 19:08:20,898 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/a68eb5a9.fasta
+2015-06-10 19:08:20,915 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/e69f54e5.fasta
+2015-06-10 19:08:20,939 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/e7d418ee.fasta
+2015-06-10 19:08:20,951 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/6fbd1e9b.fasta
+2015-06-10 19:08:20,972 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/2fbf54a9.fasta
+2015-06-10 19:08:21,004 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/4a2eb3ef.fasta
+2015-06-10 19:08:21,025 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/6e8490e7.fasta
+2015-06-10 19:08:21,054 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/360dc43c.fasta
+2015-06-10 19:08:21,065 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/169d54b6.fasta
+2015-06-10 19:08:21,073 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/2ac76bca.fasta
+2015-06-10 19:08:21,105 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/348530e9.fasta
+2015-06-10 19:08:21,148 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/1de764da.fasta
+2015-06-10 19:08:21,162 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/93180052.fasta
+2015-06-10 19:08:21,180 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/08edef2d.fasta
+2015-06-10 19:08:21,215 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/c4047fdc.fasta
+2015-06-10 19:08:21,247 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/8f2b8a9e.fasta
+2015-06-10 19:08:21,265 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/07f18a77.fasta
+2015-06-10 19:08:21,282 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/cd023e60.fasta
+2015-06-10 19:08:21,299 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/e0c3e6f0.fasta
+2015-06-10 19:08:21,301 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/49421c34.fasta
+2015-06-10 19:08:21,320 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/f9d10dec.fasta
+2015-06-10 19:08:21,335 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/5062d82f.fasta
+2015-06-10 19:08:21,360 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/e9e7d5f2.fasta
+2015-06-10 19:08:21,427 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/53c008c7.fasta
+2015-06-10 19:08:21,438 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/7b4b6e09.fasta
+2015-06-10 19:08:21,451 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/b69411b8.fasta
+2015-06-10 19:08:21,460 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/b261e2ea.fasta
+2015-06-10 19:08:21,469 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/8c8c476f.fasta
+2015-06-10 19:08:21,491 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/3e15ec0e.fasta
+2015-06-10 19:08:21,505 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/dff31819.fasta
+2015-06-10 19:08:21,534 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/33d1a37f.fasta
+2015-06-10 19:08:21,555 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/f4e793d3.fasta
+2015-06-10 19:08:21,567 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/lassa/60bace2e.fasta
+2015-06-10 19:08:21,571 - hybseldesign.filter.probe_designer [INFO] Building candidate probes from target sequences
+2015-06-10 19:08:22,846 - hybseldesign.filter.probe_designer [INFO] Starting filter FastaFilter
+2015-06-10 19:08:22,846 - hybseldesign.utils.seq_io [INFO] Reading fasta file /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/lassa/mismatches_4-coverextension_30.fasta
+2015-06-10 19:08:23,039 - hybseldesign.filter.probe_designer [INFO] Starting filter DuplicateFilter
+2015-06-10 19:08:23,092 - hybseldesign.filter.probe_designer [INFO] Starting filter AdapterFilter
+2015-06-10 19:08:23,092 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across all target genomes
+2015-06-10 19:08:23,093 - hybseldesign.filter.adapter_filter [INFO] Building map from k-mers to probes
+2015-06-10 19:09:04,449 - hybseldesign.filter.adapter_filter [INFO] Adding adapters to probes based on votes
+2015-06-10 19:09:04,533 - hybseldesign.filter.probe_designer [INFO] Starting filter ReverseComplementFilter
+2015-06-10 19:09:04,919 - hybseldesign.coverage_analysis [INFO] Finding probe covers across target genomes
+2015-06-10 19:09:04,920 - hybseldesign.coverage_analysis [INFO] Building map from k-mers to probes
+2015-06-10 19:09:06,859 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 1 (of 222)
+2015-06-10 19:09:09,098 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 2 (of 222)
+2015-06-10 19:09:09,796 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 3 (of 222)
+2015-06-10 19:09:12,140 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 4 (of 222)
+2015-06-10 19:09:14,477 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 5 (of 222)
+2015-06-10 19:09:16,624 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 6 (of 222)
+2015-06-10 19:09:18,720 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 7 (of 222)
+2015-06-10 19:09:20,741 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 8 (of 222)
+2015-06-10 19:09:22,909 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 9 (of 222)
+2015-06-10 19:09:24,614 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 10 (of 222)
+2015-06-10 19:09:26,823 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 11 (of 222)
+2015-06-10 19:09:29,106 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 12 (of 222)
+2015-06-10 19:09:31,409 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 13 (of 222)
+2015-06-10 19:09:32,182 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 14 (of 222)
+2015-06-10 19:09:34,311 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 15 (of 222)
+2015-06-10 19:09:36,402 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 16 (of 222)
+2015-06-10 19:09:38,759 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 17 (of 222)
+2015-06-10 19:09:41,008 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 18 (of 222)
+2015-06-10 19:09:43,144 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 19 (of 222)
+2015-06-10 19:09:44,868 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 20 (of 222)
+2015-06-10 19:09:47,038 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 21 (of 222)
+2015-06-10 19:09:49,221 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 22 (of 222)
+2015-06-10 19:09:51,396 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 23 (of 222)
+2015-06-10 19:09:53,656 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 24 (of 222)
+2015-06-10 19:09:55,614 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 25 (of 222)
+2015-06-10 19:09:57,829 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 26 (of 222)
+2015-06-10 19:10:00,093 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 27 (of 222)
+2015-06-10 19:10:02,245 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 28 (of 222)
+2015-06-10 19:10:03,951 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 29 (of 222)
+2015-06-10 19:10:04,726 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 30 (of 222)
+2015-06-10 19:10:06,973 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 31 (of 222)
+2015-06-10 19:10:08,680 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 32 (of 222)
+2015-06-10 19:10:10,357 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 33 (of 222)
+2015-06-10 19:10:12,690 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 34 (of 222)
+2015-06-10 19:10:14,839 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 35 (of 222)
+2015-06-10 19:10:17,118 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 36 (of 222)
+2015-06-10 19:10:17,913 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 37 (of 222)
+2015-06-10 19:10:20,134 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 38 (of 222)
+2015-06-10 19:10:22,307 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 39 (of 222)
+2015-06-10 19:10:23,153 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 40 (of 222)
+2015-06-10 19:10:25,496 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 41 (of 222)
+2015-06-10 19:10:27,750 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 42 (of 222)
+2015-06-10 19:10:29,464 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 43 (of 222)
+2015-06-10 19:10:31,758 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 44 (of 222)
+2015-06-10 19:10:33,734 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 45 (of 222)
+2015-06-10 19:10:36,043 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 46 (of 222)
+2015-06-10 19:10:38,227 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 47 (of 222)
+2015-06-10 19:10:40,490 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 48 (of 222)
+2015-06-10 19:10:42,759 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 49 (of 222)
+2015-06-10 19:10:43,640 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 50 (of 222)
+2015-06-10 19:10:45,834 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 51 (of 222)
+2015-06-10 19:10:46,507 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 52 (of 222)
+2015-06-10 19:10:47,249 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 53 (of 222)
+2015-06-10 19:10:48,981 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 54 (of 222)
+2015-06-10 19:10:50,654 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 55 (of 222)
+2015-06-10 19:10:52,872 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 56 (of 222)
+2015-06-10 19:10:55,157 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 57 (of 222)
+2015-06-10 19:10:57,448 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 58 (of 222)
+2015-06-10 19:10:59,648 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 59 (of 222)
+2015-06-10 19:11:01,338 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 60 (of 222)
+2015-06-10 19:11:03,690 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 61 (of 222)
+2015-06-10 19:11:04,542 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 62 (of 222)
+2015-06-10 19:11:05,304 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 63 (of 222)
+2015-06-10 19:11:07,437 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 64 (of 222)
+2015-06-10 19:11:09,591 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 65 (of 222)
+2015-06-10 19:11:11,816 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 66 (of 222)
+2015-06-10 19:11:13,954 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 67 (of 222)
+2015-06-10 19:11:16,053 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 68 (of 222)
+2015-06-10 19:11:16,870 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 69 (of 222)
+2015-06-10 19:11:18,782 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 70 (of 222)
+2015-06-10 19:11:21,040 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 71 (of 222)
+2015-06-10 19:11:21,889 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 72 (of 222)
+2015-06-10 19:11:24,203 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 73 (of 222)
+2015-06-10 19:11:26,303 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 74 (of 222)
+2015-06-10 19:11:28,515 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 75 (of 222)
+2015-06-10 19:11:30,233 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 76 (of 222)
+2015-06-10 19:11:32,768 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 77 (of 222)
+2015-06-10 19:11:34,407 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 78 (of 222)
+2015-06-10 19:11:35,265 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 79 (of 222)
+2015-06-10 19:11:37,461 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 80 (of 222)
+2015-06-10 19:11:39,744 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 81 (of 222)
+2015-06-10 19:11:41,886 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 82 (of 222)
+2015-06-10 19:11:43,974 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 83 (of 222)
+2015-06-10 19:11:44,784 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 84 (of 222)
+2015-06-10 19:11:46,933 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 85 (of 222)
+2015-06-10 19:11:47,777 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 86 (of 222)
+2015-06-10 19:11:49,983 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 87 (of 222)
+2015-06-10 19:11:52,265 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 88 (of 222)
+2015-06-10 19:11:54,495 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 89 (of 222)
+2015-06-10 19:11:56,683 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 90 (of 222)
+2015-06-10 19:11:58,714 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 91 (of 222)
+2015-06-10 19:11:59,558 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 92 (of 222)
+2015-06-10 19:12:01,780 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 93 (of 222)
+2015-06-10 19:12:02,596 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 94 (of 222)
+2015-06-10 19:12:04,328 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 95 (of 222)
+2015-06-10 19:12:06,618 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 96 (of 222)
+2015-06-10 19:12:07,441 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 97 (of 222)
+2015-06-10 19:12:09,608 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 98 (of 222)
+2015-06-10 19:12:11,330 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 99 (of 222)
+2015-06-10 19:12:12,154 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 100 (of 222)
+2015-06-10 19:12:13,047 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 101 (of 222)
+2015-06-10 19:12:14,743 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 102 (of 222)
+2015-06-10 19:12:16,907 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 103 (of 222)
+2015-06-10 19:12:18,665 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 104 (of 222)
+2015-06-10 19:12:20,742 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 105 (of 222)
+2015-06-10 19:12:21,614 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 106 (of 222)
+2015-06-10 19:12:22,456 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 107 (of 222)
+2015-06-10 19:12:24,675 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 108 (of 222)
+2015-06-10 19:12:26,892 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 109 (of 222)
+2015-06-10 19:12:28,609 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 110 (of 222)
+2015-06-10 19:12:30,814 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 111 (of 222)
+2015-06-10 19:12:32,946 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 112 (of 222)
+2015-06-10 19:12:35,121 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 113 (of 222)
+2015-06-10 19:12:37,603 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 114 (of 222)
+2015-06-10 19:12:39,958 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 115 (of 222)
+2015-06-10 19:12:42,297 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 116 (of 222)
+2015-06-10 19:12:44,266 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 117 (of 222)
+2015-06-10 19:12:46,401 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 118 (of 222)
+2015-06-10 19:12:48,387 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 119 (of 222)
+2015-06-10 19:12:50,630 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 120 (of 222)
+2015-06-10 19:12:52,285 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 121 (of 222)
+2015-06-10 19:12:54,305 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 122 (of 222)
+2015-06-10 19:12:56,479 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 123 (of 222)
+2015-06-10 19:12:58,699 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 124 (of 222)
+2015-06-10 19:13:00,910 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 125 (of 222)
+2015-06-10 19:13:01,722 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 126 (of 222)
+2015-06-10 19:13:03,960 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 127 (of 222)
+2015-06-10 19:13:06,142 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 128 (of 222)
+2015-06-10 19:13:08,424 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 129 (of 222)
+2015-06-10 19:13:10,605 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 130 (of 222)
+2015-06-10 19:13:12,761 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 131 (of 222)
+2015-06-10 19:13:14,965 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 132 (of 222)
+2015-06-10 19:13:15,765 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 133 (of 222)
+2015-06-10 19:13:17,882 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 134 (of 222)
+2015-06-10 19:13:19,948 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 135 (of 222)
+2015-06-10 19:13:21,679 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 136 (of 222)
+2015-06-10 19:13:24,015 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 137 (of 222)
+2015-06-10 19:13:26,113 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 138 (of 222)
+2015-06-10 19:13:28,259 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 139 (of 222)
+2015-06-10 19:13:30,382 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 140 (of 222)
+2015-06-10 19:13:32,336 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 141 (of 222)
+2015-06-10 19:13:34,640 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 142 (of 222)
+2015-06-10 19:13:36,670 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 143 (of 222)
+2015-06-10 19:13:38,836 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 144 (of 222)
+2015-06-10 19:13:39,637 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 145 (of 222)
+2015-06-10 19:13:41,861 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 146 (of 222)
+2015-06-10 19:13:43,929 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 147 (of 222)
+2015-06-10 19:13:46,048 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 148 (of 222)
+2015-06-10 19:13:48,321 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 149 (of 222)
+2015-06-10 19:13:50,492 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 150 (of 222)
+2015-06-10 19:13:52,877 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 151 (of 222)
+2015-06-10 19:13:55,243 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 152 (of 222)
+2015-06-10 19:13:57,585 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 153 (of 222)
+2015-06-10 19:13:59,783 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 154 (of 222)
+2015-06-10 19:14:02,074 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 155 (of 222)
+2015-06-10 19:14:04,212 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 156 (of 222)
+2015-06-10 19:14:05,000 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 157 (of 222)
+2015-06-10 19:14:07,111 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 158 (of 222)
+2015-06-10 19:14:09,448 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 159 (of 222)
+2015-06-10 19:14:11,625 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 160 (of 222)
+2015-06-10 19:14:14,075 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 161 (of 222)
+2015-06-10 19:14:16,336 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 162 (of 222)
+2015-06-10 19:14:18,679 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 163 (of 222)
+2015-06-10 19:14:20,366 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 164 (of 222)
+2015-06-10 19:14:21,248 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 165 (of 222)
+2015-06-10 19:14:23,457 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 166 (of 222)
+2015-06-10 19:14:25,642 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 167 (of 222)
+2015-06-10 19:14:27,957 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 168 (of 222)
+2015-06-10 19:14:30,166 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 169 (of 222)
+2015-06-10 19:14:31,870 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 170 (of 222)
+2015-06-10 19:14:33,889 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 171 (of 222)
+2015-06-10 19:14:35,625 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 172 (of 222)
+2015-06-10 19:14:37,647 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 173 (of 222)
+2015-06-10 19:14:40,167 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 174 (of 222)
+2015-06-10 19:14:41,933 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 175 (of 222)
+2015-06-10 19:14:44,256 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 176 (of 222)
+2015-06-10 19:14:46,654 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 177 (of 222)
+2015-06-10 19:14:48,533 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 178 (of 222)
+2015-06-10 19:14:50,796 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 179 (of 222)
+2015-06-10 19:14:52,918 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 180 (of 222)
+2015-06-10 19:14:55,129 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 181 (of 222)
+2015-06-10 19:14:57,412 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 182 (of 222)
+2015-06-10 19:14:59,481 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 183 (of 222)
+2015-06-10 19:15:01,642 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 184 (of 222)
+2015-06-10 19:15:03,371 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 185 (of 222)
+2015-06-10 19:15:05,604 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 186 (of 222)
+2015-06-10 19:15:07,951 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 187 (of 222)
+2015-06-10 19:15:10,134 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 188 (of 222)
+2015-06-10 19:15:10,951 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 189 (of 222)
+2015-06-10 19:15:13,140 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 190 (of 222)
+2015-06-10 19:15:15,362 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 191 (of 222)
+2015-06-10 19:15:17,503 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 192 (of 222)
+2015-06-10 19:15:19,695 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 193 (of 222)
+2015-06-10 19:15:21,674 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 194 (of 222)
+2015-06-10 19:15:23,983 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 195 (of 222)
+2015-06-10 19:15:26,192 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 196 (of 222)
+2015-06-10 19:15:28,311 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 197 (of 222)
+2015-06-10 19:15:30,512 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 198 (of 222)
+2015-06-10 19:15:32,741 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 199 (of 222)
+2015-06-10 19:15:34,438 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 200 (of 222)
+2015-06-10 19:15:36,591 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 201 (of 222)
+2015-06-10 19:15:38,931 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 202 (of 222)
+2015-06-10 19:15:41,136 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 203 (of 222)
+2015-06-10 19:15:43,416 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 204 (of 222)
+2015-06-10 19:15:45,140 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 205 (of 222)
+2015-06-10 19:15:47,500 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 206 (of 222)
+2015-06-10 19:15:49,256 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 207 (of 222)
+2015-06-10 19:15:50,984 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 208 (of 222)
+2015-06-10 19:15:51,865 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 209 (of 222)
+2015-06-10 19:15:52,625 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 210 (of 222)
+2015-06-10 19:15:54,165 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 211 (of 222)
+2015-06-10 19:15:56,255 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 212 (of 222)
+2015-06-10 19:15:58,598 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 213 (of 222)
+2015-06-10 19:15:59,458 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 214 (of 222)
+2015-06-10 19:16:01,757 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 215 (of 222)
+2015-06-10 19:16:04,074 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 216 (of 222)
+2015-06-10 19:16:06,277 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 217 (of 222)
+2015-06-10 19:16:08,580 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 218 (of 222)
+2015-06-10 19:16:10,879 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 219 (of 222)
+2015-06-10 19:16:13,049 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 220 (of 222)
+2015-06-10 19:16:14,735 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 221 (of 222)
+2015-06-10 19:16:16,899 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 1), with target genome 222 (of 222)
+2015-06-10 19:16:19,115 - hybseldesign.coverage_analysis [INFO] Computing bases covered across target genomes
+2015-06-10 19:16:19,257 - hybseldesign.coverage_analysis [INFO] Computing average coverage across target genomes
+2015-06-10 19:16:19,353 - hybseldesign.coverage_analysis [INFO] Computing sliding coverage across target genomes
+NUMBER OF PROBES: 6170
+
+Genome                         Num bases covered Average coverage/depth
+                                  [over unambig]         [over unambig]
+---------------------- ------------------------- ----------------------
+lassa, genome 0        10670 (100.00%) [100.00%]            3.56 [3.56]
+lassa, genome 0 (rc)   10670 (100.00%) [100.00%]            3.56 [3.56]
+lassa, genome 1         3388 (100.00%) [100.80%]            1.71 [1.72]
+lassa, genome 1 (rc)    3388 (100.00%) [100.80%]            1.71 [1.72]
+lassa, genome 2        10676 (100.00%) [100.00%]            3.18 [3.18]
+lassa, genome 2 (rc)   10676 (100.00%) [100.00%]            3.18 [3.18]
+lassa, genome 3        10688 (100.00%) [100.09%]            3.34 [3.34]
+lassa, genome 3 (rc)   10688 (100.00%) [100.09%]            3.34 [3.34]
+lassa, genome 4        10657 (100.00%) [100.00%]            3.51 [3.51]
+lassa, genome 4 (rc)   10657 (100.00%) [100.00%]            3.51 [3.51]
+lassa, genome 5        10571 (100.00%) [100.00%]            4.12 [4.12]
+lassa, genome 5 (rc)   10571 (100.00%) [100.00%]            4.12 [4.12]
+lassa, genome 6        10658 (100.00%) [100.00%]            1.63 [1.63]
+lassa, genome 6 (rc)   10658 (100.00%) [100.00%]            1.63 [1.63]
+lassa, genome 7        10620 (100.00%) [100.18%]            4.37 [4.38]
+lassa, genome 7 (rc)   10620 (100.00%) [100.18%]            4.37 [4.38]
+lassa, genome 8        10639 (100.00%) [100.33%]            2.88 [2.89]
+lassa, genome 8 (rc)   10639 (100.00%) [100.33%]            2.88 [2.89]
+lassa, genome 9        10648 (100.00%) [100.00%]            4.16 [4.16]
+lassa, genome 9 (rc)   10648 (100.00%) [100.00%]            4.16 [4.16]
+lassa, genome 10       10663 (100.00%) [100.00%]            4.74 [4.74]
+lassa, genome 10 (rc)  10663 (100.00%) [100.00%]            4.74 [4.74]
+lassa, genome 11       10667 (100.00%) [100.21%]            3.44 [3.45]
+lassa, genome 11 (rc)  10667 (100.00%) [100.21%]            3.44 [3.45]
+lassa, genome 12        3362 (100.00%) [100.00%]            4.79 [4.79]
+lassa, genome 12 (rc)   3362 (100.00%) [100.00%]            4.79 [4.79]
+lassa, genome 13       10648 (100.00%) [100.00%]            1.69 [1.69]
+lassa, genome 13 (rc)  10648 (100.00%) [100.00%]            1.69 [1.69]
+lassa, genome 14       10660 (100.00%) [100.00%]            2.65 [2.65]
+lassa, genome 14 (rc)  10660 (100.00%) [100.00%]            2.65 [2.65]
+lassa, genome 15       10677 (100.00%) [100.00%]            3.69 [3.69]
+lassa, genome 15 (rc)  10677 (100.00%) [100.00%]            3.69 [3.69]
+lassa, genome 16        10659 (99.93%) [101.46%]            2.36 [2.40]
+lassa, genome 16 (rc)   10661 (99.94%) [101.48%]            2.36 [2.40]
+lassa, genome 17       10609 (100.00%) [100.00%]            4.38 [4.38]
+lassa, genome 17 (rc)  10609 (100.00%) [100.00%]            4.38 [4.38]
+lassa, genome 18       10665 (100.00%) [100.52%]            2.87 [2.88]
+lassa, genome 18 (rc)  10665 (100.00%) [100.52%]            2.87 [2.88]
+lassa, genome 19       10667 (100.00%) [100.22%]            2.16 [2.16]
+lassa, genome 19 (rc)  10667 (100.00%) [100.22%]            2.16 [2.16]
+lassa, genome 20       10660 (100.00%) [100.00%]            4.22 [4.22]
+lassa, genome 20 (rc)  10660 (100.00%) [100.00%]            4.22 [4.22]
+lassa, genome 21       10663 (100.00%) [100.22%]            3.78 [3.78]
+lassa, genome 21 (rc)  10663 (100.00%) [100.22%]            3.78 [3.78]
+lassa, genome 22       10655 (100.00%) [100.40%]            3.41 [3.42]
+lassa, genome 22 (rc)  10655 (100.00%) [100.40%]            3.41 [3.42]
+lassa, genome 23       10606 (100.00%) [100.00%]            1.64 [1.64]
+lassa, genome 23 (rc)  10606 (100.00%) [100.00%]            1.64 [1.64]
+lassa, genome 24       10633 (100.00%) [100.36%]            2.74 [2.75]
+lassa, genome 24 (rc)  10633 (100.00%) [100.36%]            2.74 [2.75]
+lassa, genome 25        10627 (99.91%) [100.61%]            2.99 [3.01]
+lassa, genome 25 (rc)   10623 (99.87%) [100.57%]            2.99 [3.01]
+lassa, genome 26       10676 (100.00%) [100.42%]            1.66 [1.66]
+lassa, genome 26 (rc)  10676 (100.00%) [100.42%]            1.66 [1.66]
+lassa, genome 27       10843 (100.00%) [100.01%]            1.70 [1.70]
+lassa, genome 27 (rc)  10843 (100.00%) [100.01%]            1.70 [1.70]
+lassa, genome 28        3339 (100.00%) [100.00%]            1.64 [1.64]
+lassa, genome 28 (rc)   3339 (100.00%) [100.00%]            1.64 [1.64]
+lassa, genome 29       10634 (100.00%) [100.00%]            4.97 [4.97]
+lassa, genome 29 (rc)  10634 (100.00%) [100.00%]            4.97 [4.97]
+lassa, genome 30       10631 (100.00%) [100.32%]            2.85 [2.86]
+lassa, genome 30 (rc)  10631 (100.00%) [100.32%]            2.85 [2.86]
+lassa, genome 31       10610 (100.00%) [100.65%]            2.80 [2.82]
+lassa, genome 31 (rc)  10610 (100.00%) [100.65%]            2.80 [2.82]
+lassa, genome 32       10692 (100.00%) [100.00%]            3.04 [3.04]
+lassa, genome 32 (rc)  10692 (100.00%) [100.00%]            3.04 [3.04]
+lassa, genome 33       10637 (100.00%) [100.00%]            4.17 [4.17]
+lassa, genome 33 (rc)  10637 (100.00%) [100.00%]            4.17 [4.17]
+lassa, genome 34       10673 (100.00%) [100.00%]            4.71 [4.71]
+lassa, genome 34 (rc)  10673 (100.00%) [100.00%]            4.71 [4.71]
+lassa, genome 35        3395 (100.00%) [101.10%]            1.64 [1.66]
+lassa, genome 35 (rc)   3395 (100.00%) [101.10%]            1.64 [1.66]
+lassa, genome 36       10652 (100.00%) [100.37%]            3.82 [3.83]
+lassa, genome 36 (rc)  10652 (100.00%) [100.37%]            3.82 [3.83]
+lassa, genome 37       10666 (100.00%) [100.00%]            3.50 [3.50]
+lassa, genome 37 (rc)  10666 (100.00%) [100.00%]            3.50 [3.50]
+lassa, genome 38        3383 (100.00%) [100.00%]            2.68 [2.68]
+lassa, genome 38 (rc)   3383 (100.00%) [100.00%]            2.68 [2.68]
+lassa, genome 39       10702 (100.00%) [100.00%]            3.29 [3.29]
+lassa, genome 39 (rc)  10702 (100.00%) [100.00%]            3.29 [3.29]
+lassa, genome 40       10652 (100.00%) [100.00%]            3.65 [3.65]
+lassa, genome 40 (rc)  10652 (100.00%) [100.00%]            3.65 [3.65]
+lassa, genome 41       10634 (100.00%) [100.49%]            2.86 [2.88]
+lassa, genome 41 (rc)  10634 (100.00%) [100.49%]            2.86 [2.88]
+lassa, genome 42       10661 (100.00%) [100.00%]            4.35 [4.35]
+lassa, genome 42 (rc)  10661 (100.00%) [100.00%]            4.35 [4.35]
+lassa, genome 43       10611 (100.00%) [100.00%]            2.16 [2.16]
+lassa, genome 43 (rc)  10611 (100.00%) [100.00%]            2.16 [2.16]
+lassa, genome 44       10693 (100.00%) [100.00%]            2.97 [2.97]
+lassa, genome 44 (rc)  10693 (100.00%) [100.00%]            2.97 [2.97]
+lassa, genome 45       10661 (100.00%) [100.00%]            3.88 [3.88]
+lassa, genome 45 (rc)  10661 (100.00%) [100.00%]            3.88 [3.88]
+lassa, genome 46       10692 (100.00%) [100.00%]            2.62 [2.62]
+lassa, genome 46 (rc)  10692 (100.00%) [100.00%]            2.62 [2.62]
+lassa, genome 47       10664 (100.00%) [100.00%]            2.68 [2.68]
+lassa, genome 47 (rc)  10664 (100.00%) [100.00%]            2.68 [2.68]
+lassa, genome 48        3380 (100.00%) [100.00%]            3.85 [3.85]
+lassa, genome 48 (rc)   3380 (100.00%) [100.00%]            3.85 [3.85]
+lassa, genome 49       10654 (100.00%) [100.00%]            3.75 [3.75]
+lassa, genome 49 (rc)  10654 (100.00%) [100.00%]            3.75 [3.75]
+lassa, genome 50        3397 (100.00%) [100.71%]            1.64 [1.65]
+lassa, genome 50 (rc)   3397 (100.00%) [100.71%]            1.64 [1.65]
+lassa, genome 51        3315 (100.00%) [100.30%]            1.63 [1.64]
+lassa, genome 51 (rc)   3315 (100.00%) [100.30%]            1.63 [1.64]
+lassa, genome 52       10620 (100.00%) [100.54%]            2.85 [2.86]
+lassa, genome 52 (rc)  10620 (100.00%) [100.54%]            2.85 [2.86]
+lassa, genome 53       10563 (100.00%) [100.00%]            1.69 [1.69]
+lassa, genome 53 (rc)  10563 (100.00%) [100.00%]            1.69 [1.69]
+lassa, genome 54       10666 (100.00%) [100.00%]            4.23 [4.23]
+lassa, genome 54 (rc)  10666 (100.00%) [100.00%]            4.23 [4.23]
+lassa, genome 55       10687 (100.00%) [100.32%]            3.19 [3.20]
+lassa, genome 55 (rc)  10687 (100.00%) [100.32%]            3.19 [3.20]
+lassa, genome 56       10694 (100.00%) [100.00%]            2.81 [2.81]
+lassa, genome 56 (rc)  10694 (100.00%) [100.00%]            2.81 [2.81]
+lassa, genome 57       10682 (100.00%) [100.00%]            3.95 [3.95]
+lassa, genome 57 (rc)  10682 (100.00%) [100.00%]            3.95 [3.95]
+lassa, genome 58        10514 (98.63%) [101.16%]            2.65 [2.72]
+lassa, genome 58 (rc)   10516 (98.65%) [101.18%]            2.65 [2.72]
+lassa, genome 59       10681 (100.00%) [100.01%]            3.24 [3.24]
+lassa, genome 59 (rc)  10681 (100.00%) [100.01%]            3.24 [3.24]
+lassa, genome 60        3394 (100.00%) [103.22%]            3.49 [3.60]
+lassa, genome 60 (rc)   3394 (100.00%) [103.22%]            3.49 [3.60]
+lassa, genome 61        3355 (100.00%) [100.00%]            4.30 [4.30]
+lassa, genome 61 (rc)   3355 (100.00%) [100.00%]            4.30 [4.30]
+lassa, genome 62       10670 (100.00%) [100.00%]            3.69 [3.69]
+lassa, genome 62 (rc)  10670 (100.00%) [100.00%]            3.69 [3.69]
+lassa, genome 63       10673 (100.00%) [100.00%]            3.85 [3.85]
+lassa, genome 63 (rc)  10673 (100.00%) [100.00%]            3.85 [3.85]
+lassa, genome 64       10610 (100.00%) [100.00%]            5.05 [5.05]
+lassa, genome 64 (rc)  10610 (100.00%) [100.00%]            5.05 [5.05]
+lassa, genome 65       10547 (100.00%) [100.28%]            4.30 [4.31]
+lassa, genome 65 (rc)  10547 (100.00%) [100.28%]            4.30 [4.31]
+lassa, genome 66       10539 (100.00%) [100.60%]            3.96 [3.99]
+lassa, genome 66 (rc)  10539 (100.00%) [100.60%]            3.96 [3.99]
+lassa, genome 67        3339 (100.00%) [100.63%]            3.63 [3.66]
+lassa, genome 67 (rc)   3339 (100.00%) [100.63%]            3.63 [3.66]
+lassa, genome 68        10415 (99.64%) [100.60%]            1.58 [1.60]
+lassa, genome 68 (rc)   10414 (99.63%) [100.59%]            1.58 [1.60]
+lassa, genome 69       10658 (100.00%) [100.00%]            4.35 [4.35]
+lassa, genome 69 (rc)  10658 (100.00%) [100.00%]            4.35 [4.35]
+lassa, genome 70        3410 (100.00%) [100.00%]            4.56 [4.56]
+lassa, genome 70 (rc)   3410 (100.00%) [100.00%]            4.56 [4.56]
+lassa, genome 71       10686 (100.00%) [100.12%]            3.43 [3.43]
+lassa, genome 71 (rc)  10686 (100.00%) [100.12%]            3.43 [3.43]
+lassa, genome 72       10668 (100.00%) [100.00%]            1.66 [1.66]
+lassa, genome 72 (rc)  10668 (100.00%) [100.00%]            1.66 [1.66]
+lassa, genome 73       10654 (100.00%) [100.00%]            4.19 [4.19]
+lassa, genome 73 (rc)  10654 (100.00%) [100.00%]            4.19 [4.19]
+lassa, genome 74        10615 (99.95%) [100.60%]            2.78 [2.80]
+lassa, genome 74 (rc)   10612 (99.92%) [100.57%]            2.78 [2.80]
+lassa, genome 75       10686 (100.00%) [100.00%]            4.70 [4.70]
+lassa, genome 75 (rc)  10686 (100.00%) [100.00%]            4.70 [4.70]
+lassa, genome 76        10313 (97.16%) [101.18%]            2.57 [2.68]
+lassa, genome 76 (rc)   10315 (97.18%) [101.20%]            2.57 [2.68]
+lassa, genome 77        3405 (100.00%) [100.00%]            4.12 [4.12]
+lassa, genome 77 (rc)   3405 (100.00%) [100.00%]            4.12 [4.12]
+lassa, genome 78       10645 (100.00%) [100.00%]            3.78 [3.78]
+lassa, genome 78 (rc)  10645 (100.00%) [100.00%]            3.78 [3.78]
+lassa, genome 79       10658 (100.00%) [100.00%]            4.53 [4.53]
+lassa, genome 79 (rc)  10658 (100.00%) [100.00%]            4.53 [4.53]
+lassa, genome 80       10640 (100.00%) [100.08%]            3.98 [3.98]
+lassa, genome 80 (rc)  10640 (100.00%) [100.08%]            3.98 [3.98]
+lassa, genome 81       10641 (100.00%) [100.02%]            4.17 [4.17]
+lassa, genome 81 (rc)  10641 (100.00%) [100.02%]            4.17 [4.17]
+lassa, genome 82        3395 (100.00%) [100.00%]            4.09 [4.09]
+lassa, genome 82 (rc)   3395 (100.00%) [100.00%]            4.09 [4.09]
+lassa, genome 83       10645 (100.00%) [100.23%]            2.16 [2.17]
+lassa, genome 83 (rc)  10645 (100.00%) [100.23%]            2.16 [2.17]
+lassa, genome 84        3382 (100.00%) [100.00%]            3.09 [3.09]
+lassa, genome 84 (rc)   3382 (100.00%) [100.00%]            3.09 [3.09]
+lassa, genome 85       10664 (100.00%) [100.00%]            3.84 [3.84]
+lassa, genome 85 (rc)  10664 (100.00%) [100.00%]            3.84 [3.84]
+lassa, genome 86        10677 (99.91%) [100.64%]            3.01 [3.03]
+lassa, genome 86 (rc)   10677 (99.91%) [100.64%]            3.01 [3.03]
+lassa, genome 87       10682 (100.00%) [100.17%]            2.34 [2.35]
+lassa, genome 87 (rc)  10682 (100.00%) [100.17%]            2.34 [2.35]
+lassa, genome 88       10620 (100.00%) [100.00%]            2.10 [2.10]
+lassa, genome 88 (rc)  10620 (100.00%) [100.00%]            2.10 [2.10]
+lassa, genome 89       10605 (100.00%) [100.00%]            1.67 [1.67]
+lassa, genome 89 (rc)  10605 (100.00%) [100.00%]            1.67 [1.67]
+lassa, genome 90        3402 (100.00%) [100.00%]            2.38 [2.38]
+lassa, genome 90 (rc)   3402 (100.00%) [100.00%]            2.38 [2.38]
+lassa, genome 91        10526 (99.14%) [100.57%]            3.04 [3.09]
+lassa, genome 91 (rc)   10528 (99.16%) [100.59%]            3.05 [3.09]
+lassa, genome 92        3296 (100.00%) [100.00%]            3.98 [3.98]
+lassa, genome 92 (rc)   3296 (100.00%) [100.00%]            3.98 [3.98]
+lassa, genome 93       10661 (100.00%) [100.53%]            2.86 [2.87]
+lassa, genome 93 (rc)  10661 (100.00%) [100.53%]            2.86 [2.87]
+lassa, genome 94       10690 (100.00%) [100.07%]            2.82 [2.82]
+lassa, genome 94 (rc)  10690 (100.00%) [100.07%]            2.82 [2.82]
+lassa, genome 95        3372 (100.00%) [100.15%]            4.88 [4.89]
+lassa, genome 95 (rc)   3372 (100.00%) [100.15%]            4.88 [4.89]
+lassa, genome 96       10595 (100.00%) [100.46%]            4.76 [4.78]
+lassa, genome 96 (rc)  10595 (100.00%) [100.46%]            4.76 [4.78]
+lassa, genome 97       10668 (100.00%) [100.00%]            1.68 [1.68]
+lassa, genome 97 (rc)  10668 (100.00%) [100.00%]            1.68 [1.68]
+lassa, genome 98        3357 (100.00%) [101.54%]            3.67 [3.73]
+lassa, genome 98 (rc)   3357 (100.00%) [101.54%]            3.67 [3.73]
+lassa, genome 99        3397 (100.00%) [100.00%]            3.82 [3.82]
+lassa, genome 99 (rc)   3397 (100.00%) [100.00%]            3.82 [3.82]
+lassa, genome 100       10611 (99.87%) [100.75%]            2.72 [2.75]
+lassa, genome 100 (rc)  10615 (99.91%) [100.79%]            2.73 [2.75]
+lassa, genome 101      10653 (100.00%) [100.29%]            2.16 [2.17]
+lassa, genome 101 (rc) 10653 (100.00%) [100.29%]            2.16 [2.17]
+lassa, genome 102      10667 (100.00%) [100.46%]            2.88 [2.90]
+lassa, genome 102 (rc) 10667 (100.00%) [100.46%]            2.88 [2.90]
+lassa, genome 103      10600 (100.00%) [100.43%]            4.42 [4.44]
+lassa, genome 103 (rc) 10600 (100.00%) [100.43%]            4.42 [4.44]
+lassa, genome 104       3395 (100.00%) [100.00%]            3.48 [3.48]
+lassa, genome 104 (rc)  3395 (100.00%) [100.00%]            3.48 [3.48]
+lassa, genome 105       3374 (100.00%) [101.35%]            3.66 [3.71]
+lassa, genome 105 (rc)  3374 (100.00%) [101.35%]            3.66 [3.71]
+lassa, genome 106      10668 (100.00%) [100.00%]            4.04 [4.04]
+lassa, genome 106 (rc) 10668 (100.00%) [100.00%]            4.04 [4.04]
+lassa, genome 107        10495 (98.56%) [99.66%]            2.89 [2.92]
+lassa, genome 107 (rc)   10494 (98.55%) [99.65%]            2.89 [2.92]
+lassa, genome 108      10649 (100.00%) [100.40%]            2.84 [2.85]
+lassa, genome 108 (rc) 10649 (100.00%) [100.40%]            2.84 [2.85]
+lassa, genome 109      10662 (100.00%) [100.00%]            3.77 [3.77]
+lassa, genome 109 (rc) 10662 (100.00%) [100.00%]            3.77 [3.77]
+lassa, genome 110      10637 (100.00%) [100.13%]            3.58 [3.58]
+lassa, genome 110 (rc) 10637 (100.00%) [100.13%]            3.58 [3.58]
+lassa, genome 111      10635 (100.00%) [100.00%]            4.14 [4.14]
+lassa, genome 111 (rc) 10635 (100.00%) [100.00%]            4.14 [4.14]
+lassa, genome 112      10679 (100.00%) [100.00%]            3.52 [3.52]
+lassa, genome 112 (rc) 10679 (100.00%) [100.00%]            3.52 [3.52]
+lassa, genome 113      10683 (100.00%) [100.00%]            3.22 [3.22]
+lassa, genome 113 (rc) 10683 (100.00%) [100.00%]            3.22 [3.22]
+lassa, genome 114      10720 (100.00%) [100.00%]            2.82 [2.82]
+lassa, genome 114 (rc) 10720 (100.00%) [100.00%]            2.82 [2.82]
+lassa, genome 115      10529 (100.00%) [100.36%]            3.47 [3.48]
+lassa, genome 115 (rc) 10529 (100.00%) [100.36%]            3.47 [3.48]
+lassa, genome 116      10661 (100.00%) [100.00%]            3.78 [3.78]
+lassa, genome 116 (rc) 10661 (100.00%) [100.00%]            3.78 [3.78]
+lassa, genome 117      10675 (100.00%) [100.00%]            1.68 [1.68]
+lassa, genome 117 (rc) 10675 (100.00%) [100.00%]            1.68 [1.68]
+lassa, genome 118      10667 (100.00%) [100.00%]            4.38 [4.38]
+lassa, genome 118 (rc) 10667 (100.00%) [100.00%]            4.38 [4.38]
+lassa, genome 119      10515 (100.00%) [100.19%]            1.67 [1.67]
+lassa, genome 119 (rc) 10515 (100.00%) [100.19%]            1.67 [1.67]
+lassa, genome 120      10560 (100.00%) [100.62%]            3.76 [3.79]
+lassa, genome 120 (rc) 10560 (100.00%) [100.62%]            3.76 [3.79]
+lassa, genome 121      10691 (100.00%) [100.00%]            3.65 [3.65]
+lassa, genome 121 (rc) 10691 (100.00%) [100.00%]            3.65 [3.65]
+lassa, genome 122      10665 (100.00%) [100.00%]            4.37 [4.37]
+lassa, genome 122 (rc) 10665 (100.00%) [100.00%]            4.37 [4.37]
+lassa, genome 123      10652 (100.00%) [100.00%]            4.01 [4.01]
+lassa, genome 123 (rc) 10652 (100.00%) [100.00%]            4.01 [4.01]
+lassa, genome 124       3269 (100.00%) [100.00%]            3.77 [3.77]
+lassa, genome 124 (rc)  3269 (100.00%) [100.00%]            3.77 [3.77]
+lassa, genome 125      10662 (100.00%) [100.00%]            3.65 [3.65]
+lassa, genome 125 (rc) 10662 (100.00%) [100.00%]            3.65 [3.65]
+lassa, genome 126       10485 (99.83%) [101.09%]            3.07 [3.11]
+lassa, genome 126 (rc)  10482 (99.80%) [101.06%]            3.07 [3.11]
+lassa, genome 127      10664 (100.00%) [100.00%]            4.47 [4.47]
+lassa, genome 127 (rc) 10664 (100.00%) [100.00%]            4.47 [4.47]
+lassa, genome 128      10678 (100.00%) [100.00%]            3.88 [3.88]
+lassa, genome 128 (rc) 10678 (100.00%) [100.00%]            3.88 [3.88]
+lassa, genome 129      10669 (100.00%) [100.48%]            2.35 [2.36]
+lassa, genome 129 (rc) 10669 (100.00%) [100.48%]            2.35 [2.36]
+lassa, genome 130       10661 (99.91%) [100.58%]            2.44 [2.45]
+lassa, genome 130 (rc)  10662 (99.92%) [100.58%]            2.44 [2.45]
+lassa, genome 131       3267 (100.00%) [100.00%]            3.38 [3.38]
+lassa, genome 131 (rc)  3267 (100.00%) [100.00%]            3.38 [3.38]
+lassa, genome 132      10618 (100.00%) [100.04%]            3.80 [3.80]
+lassa, genome 132 (rc) 10618 (100.00%) [100.04%]            3.80 [3.80]
+lassa, genome 133       10433 (99.92%) [100.60%]            4.45 [4.48]
+lassa, genome 133 (rc)  10432 (99.91%) [100.59%]            4.45 [4.48]
+lassa, genome 134      10662 (100.00%) [100.52%]            2.86 [2.87]
+lassa, genome 134 (rc) 10662 (100.00%) [100.52%]            2.86 [2.87]
+lassa, genome 135      10681 (100.00%) [100.26%]            3.00 [3.01]
+lassa, genome 135 (rc) 10681 (100.00%) [100.26%]            3.00 [3.01]
+lassa, genome 136      10524 (100.00%) [100.51%]            4.37 [4.39]
+lassa, genome 136 (rc) 10524 (100.00%) [100.51%]            4.37 [4.39]
+lassa, genome 137      10653 (100.00%) [100.19%]            3.56 [3.57]
+lassa, genome 137 (rc) 10653 (100.00%) [100.19%]            3.56 [3.57]
+lassa, genome 138      10646 (100.00%) [100.00%]            3.92 [3.92]
+lassa, genome 138 (rc) 10646 (100.00%) [100.00%]            3.92 [3.92]
+lassa, genome 139       10393 (99.03%) [101.25%]            1.62 [1.66]
+lassa, genome 139 (rc)  10396 (99.06%) [101.28%]            1.62 [1.66]
+lassa, genome 140      10671 (100.00%) [100.00%]            2.81 [2.81]
+lassa, genome 140 (rc) 10671 (100.00%) [100.00%]            2.81 [2.81]
+lassa, genome 141      10541 (100.00%) [100.44%]            4.07 [4.09]
+lassa, genome 141 (rc) 10541 (100.00%) [100.44%]            4.07 [4.09]
+lassa, genome 142      10592 (100.00%) [100.11%]            4.36 [4.36]
+lassa, genome 142 (rc) 10592 (100.00%) [100.11%]            4.36 [4.36]
+lassa, genome 143       3397 (100.00%) [100.89%]            4.47 [4.51]
+lassa, genome 143 (rc)  3397 (100.00%) [100.89%]            4.47 [4.51]
+lassa, genome 144      10686 (100.00%) [100.13%]            2.34 [2.34]
+lassa, genome 144 (rc) 10686 (100.00%) [100.13%]            2.34 [2.34]
+lassa, genome 145       10609 (99.96%) [100.59%]            3.89 [3.92]
+lassa, genome 145 (rc)  10610 (99.97%) [100.60%]            3.89 [3.92]
+lassa, genome 146      10628 (100.00%) [100.00%]            3.88 [3.88]
+lassa, genome 146 (rc) 10628 (100.00%) [100.00%]            3.88 [3.88]
+lassa, genome 147      10637 (100.00%) [100.00%]            4.38 [4.38]
+lassa, genome 147 (rc) 10637 (100.00%) [100.00%]            4.38 [4.38]
+lassa, genome 148      10597 (100.00%) [100.24%]            4.76 [4.77]
+lassa, genome 148 (rc)  10596 (99.99%) [100.23%]            4.76 [4.77]
+lassa, genome 149      10686 (100.00%) [100.01%]            3.47 [3.47]
+lassa, genome 149 (rc) 10686 (100.00%) [100.01%]            3.47 [3.47]
+lassa, genome 150      10661 (100.00%) [100.03%]            3.47 [3.47]
+lassa, genome 150 (rc) 10661 (100.00%) [100.03%]            3.47 [3.47]
+lassa, genome 151      10683 (100.00%) [100.00%]            3.58 [3.58]
+lassa, genome 151 (rc) 10683 (100.00%) [100.00%]            3.58 [3.58]
+lassa, genome 152      10629 (100.00%) [100.00%]            4.32 [4.32]
+lassa, genome 152 (rc) 10629 (100.00%) [100.00%]            4.32 [4.32]
+lassa, genome 153      10660 (100.00%) [100.03%]            3.17 [3.18]
+lassa, genome 153 (rc) 10660 (100.00%) [100.03%]            3.17 [3.18]
+lassa, genome 154      10661 (100.00%) [100.00%]            3.73 [3.73]
+lassa, genome 154 (rc) 10661 (100.00%) [100.00%]            3.73 [3.73]
+lassa, genome 155       3307 (100.00%) [100.00%]            2.65 [2.65]
+lassa, genome 155 (rc)  3307 (100.00%) [100.00%]            2.65 [2.65]
+lassa, genome 156      10605 (100.00%) [100.00%]            4.19 [4.19]
+lassa, genome 156 (rc) 10605 (100.00%) [100.00%]            4.19 [4.19]
+lassa, genome 157      10685 (100.00%) [100.00%]            2.48 [2.48]
+lassa, genome 157 (rc) 10685 (100.00%) [100.00%]            2.48 [2.48]
+lassa, genome 158      10658 (100.00%) [100.00%]            3.87 [3.87]
+lassa, genome 158 (rc) 10658 (100.00%) [100.00%]            3.87 [3.87]
+lassa, genome 159      10672 (100.00%) [100.00%]            3.50 [3.50]
+lassa, genome 159 (rc) 10672 (100.00%) [100.00%]            3.50 [3.50]
+lassa, genome 160      10672 (100.00%) [100.00%]            4.27 [4.27]
+lassa, genome 160 (rc) 10672 (100.00%) [100.00%]            4.27 [4.27]
+lassa, genome 161      10673 (100.00%) [100.27%]            3.33 [3.34]
+lassa, genome 161 (rc) 10673 (100.00%) [100.27%]            3.33 [3.34]
+lassa, genome 162      10614 (100.00%) [100.36%]            2.87 [2.88]
+lassa, genome 162 (rc) 10614 (100.00%) [100.36%]            2.87 [2.88]
+lassa, genome 163       3398 (100.00%) [100.00%]            3.42 [3.42]
+lassa, genome 163 (rc)  3398 (100.00%) [100.00%]            3.42 [3.42]
+lassa, genome 164      10672 (100.00%) [100.00%]            3.98 [3.98]
+lassa, genome 164 (rc) 10672 (100.00%) [100.00%]            3.98 [3.98]
+lassa, genome 165      10637 (100.00%) [100.11%]            4.22 [4.22]
+lassa, genome 165 (rc) 10637 (100.00%) [100.11%]            4.22 [4.22]
+lassa, genome 166      10685 (100.00%) [100.35%]            3.04 [3.05]
+lassa, genome 166 (rc) 10685 (100.00%) [100.35%]            3.04 [3.05]
+lassa, genome 167      10669 (100.00%) [100.00%]            3.95 [3.95]
+lassa, genome 167 (rc) 10669 (100.00%) [100.00%]            3.95 [3.95]
+lassa, genome 168      10616 (100.00%) [100.55%]            2.85 [2.86]
+lassa, genome 168 (rc) 10616 (100.00%) [100.55%]            2.85 [2.86]
+lassa, genome 169      10564 (100.00%) [100.24%]            3.95 [3.96]
+lassa, genome 169 (rc) 10564 (100.00%) [100.24%]            3.95 [3.96]
+lassa, genome 170      10664 (100.00%) [100.23%]            2.79 [2.80]
+lassa, genome 170 (rc) 10664 (100.00%) [100.23%]            2.79 [2.80]
+lassa, genome 171      10693 (100.00%) [100.00%]            1.62 [1.62]
+lassa, genome 171 (rc) 10693 (100.00%) [100.00%]            1.62 [1.62]
+lassa, genome 172      10686 (100.00%) [100.00%]            4.66 [4.66]
+lassa, genome 172 (rc) 10686 (100.00%) [100.00%]            4.66 [4.66]
+lassa, genome 173      10660 (100.00%) [100.37%]            2.90 [2.91]
+lassa, genome 173 (rc) 10660 (100.00%) [100.37%]            2.90 [2.91]
+lassa, genome 174      10687 (100.00%) [100.00%]            3.26 [3.26]
+lassa, genome 174 (rc) 10687 (100.00%) [100.00%]            3.26 [3.26]
+lassa, genome 175      10698 (100.00%) [100.02%]            3.33 [3.33]
+lassa, genome 175 (rc) 10698 (100.00%) [100.02%]            3.33 [3.33]
+lassa, genome 176      10588 (100.00%) [100.60%]            1.59 [1.60]
+lassa, genome 176 (rc)  10587 (99.99%) [100.59%]            1.59 [1.60]
+lassa, genome 177      10619 (100.00%) [100.21%]            3.18 [3.18]
+lassa, genome 177 (rc) 10619 (100.00%) [100.21%]            3.18 [3.18]
+lassa, genome 178      10639 (100.00%) [100.00%]            3.82 [3.82]
+lassa, genome 178 (rc) 10639 (100.00%) [100.00%]            3.82 [3.82]
+lassa, genome 179       10544 (99.48%) [100.67%]            3.40 [3.44]
+lassa, genome 179 (rc)  10547 (99.51%) [100.70%]            3.40 [3.44]
+lassa, genome 180      10617 (100.00%) [100.24%]            4.54 [4.56]
+lassa, genome 180 (rc) 10617 (100.00%) [100.24%]            4.54 [4.56]
+lassa, genome 181      10696 (100.00%) [100.00%]            1.68 [1.68]
+lassa, genome 181 (rc) 10696 (100.00%) [100.00%]            1.68 [1.68]
+lassa, genome 182      10657 (100.00%) [100.00%]            3.75 [3.75]
+lassa, genome 182 (rc) 10657 (100.00%) [100.00%]            3.75 [3.75]
+lassa, genome 183      10665 (100.00%) [100.58%]            2.75 [2.76]
+lassa, genome 183 (rc) 10665 (100.00%) [100.58%]            2.75 [2.76]
+lassa, genome 184      10667 (100.00%) [100.00%]            4.09 [4.09]
+lassa, genome 184 (rc) 10667 (100.00%) [100.00%]            4.09 [4.09]
+lassa, genome 185      10681 (100.00%) [100.00%]            3.19 [3.19]
+lassa, genome 185 (rc) 10681 (100.00%) [100.00%]            3.19 [3.19]
+lassa, genome 186      10662 (100.00%) [100.00%]            3.64 [3.64]
+lassa, genome 186 (rc) 10662 (100.00%) [100.00%]            3.64 [3.64]
+lassa, genome 187       3389 (100.00%) [100.00%]            4.12 [4.12]
+lassa, genome 187 (rc)  3389 (100.00%) [100.00%]            4.12 [4.12]
+lassa, genome 188      10669 (100.00%) [100.00%]            4.17 [4.17]
+lassa, genome 188 (rc) 10669 (100.00%) [100.00%]            4.17 [4.17]
+lassa, genome 189      10665 (100.00%) [100.00%]            4.05 [4.05]
+lassa, genome 189 (rc) 10665 (100.00%) [100.00%]            4.05 [4.05]
+lassa, genome 190      10658 (100.00%) [100.00%]            3.81 [3.81]
+lassa, genome 190 (rc) 10658 (100.00%) [100.00%]            3.81 [3.81]
+lassa, genome 191      10631 (100.00%) [100.29%]            4.00 [4.01]
+lassa, genome 191 (rc) 10631 (100.00%) [100.29%]            4.00 [4.01]
+lassa, genome 192      10652 (100.00%) [100.00%]            2.15 [2.15]
+lassa, genome 192 (rc) 10652 (100.00%) [100.00%]            2.15 [2.15]
+lassa, genome 193      10670 (100.00%) [100.10%]            3.34 [3.35]
+lassa, genome 193 (rc) 10670 (100.00%) [100.10%]            3.34 [3.35]
+lassa, genome 194      10655 (100.00%) [100.00%]            4.03 [4.03]
+lassa, genome 194 (rc) 10655 (100.00%) [100.00%]            4.03 [4.03]
+lassa, genome 195      10678 (100.00%) [100.00%]            3.64 [3.64]
+lassa, genome 195 (rc) 10678 (100.00%) [100.00%]            3.64 [3.64]
+lassa, genome 196      10678 (100.00%) [100.00%]            4.17 [4.17]
+lassa, genome 196 (rc) 10678 (100.00%) [100.00%]            4.17 [4.17]
+lassa, genome 197        10663 (99.99%) [99.99%]            4.56 [4.56]
+lassa, genome 197 (rc)   10663 (99.99%) [99.99%]            4.56 [4.56]
+lassa, genome 198      10641 (100.00%) [100.25%]            2.84 [2.85]
+lassa, genome 198 (rc) 10641 (100.00%) [100.25%]            2.84 [2.85]
+lassa, genome 199      10651 (100.00%) [100.00%]            3.89 [3.89]
+lassa, genome 199 (rc) 10651 (100.00%) [100.00%]            3.89 [3.89]
+lassa, genome 200      10670 (100.00%) [100.00%]            3.46 [3.46]
+lassa, genome 200 (rc) 10670 (100.00%) [100.00%]            3.46 [3.46]
+lassa, genome 201      10666 (100.00%) [100.00%]            4.27 [4.27]
+lassa, genome 201 (rc) 10666 (100.00%) [100.00%]            4.27 [4.27]
+lassa, genome 202      10662 (100.00%) [100.00%]            4.59 [4.59]
+lassa, genome 202 (rc) 10662 (100.00%) [100.00%]            4.59 [4.59]
+lassa, genome 203      10630 (100.00%) [100.47%]            2.85 [2.86]
+lassa, genome 203 (rc) 10630 (100.00%) [100.47%]            2.85 [2.86]
+lassa, genome 204      10685 (100.00%) [100.00%]            3.37 [3.37]
+lassa, genome 204 (rc) 10685 (100.00%) [100.00%]            3.37 [3.37]
+lassa, genome 205      10661 (100.00%) [100.39%]            2.89 [2.90]
+lassa, genome 205 (rc) 10661 (100.00%) [100.39%]            2.89 [2.90]
+lassa, genome 206      10652 (100.00%) [100.67%]            2.80 [2.82]
+lassa, genome 206 (rc) 10652 (100.00%) [100.67%]            2.80 [2.82]
+lassa, genome 207       3389 (100.00%) [100.00%]            3.72 [3.72]
+lassa, genome 207 (rc)  3389 (100.00%) [100.00%]            3.72 [3.72]
+lassa, genome 208       3281 (100.00%) [100.00%]            4.29 [4.29]
+lassa, genome 208 (rc)  3281 (100.00%) [100.00%]            4.30 [4.30]
+lassa, genome 209      10700 (100.00%) [100.00%]            1.68 [1.68]
+lassa, genome 209 (rc) 10700 (100.00%) [100.00%]            1.68 [1.68]
+lassa, genome 210      10525 (100.00%) [100.44%]            2.33 [2.34]
+lassa, genome 210 (rc) 10525 (100.00%) [100.44%]            2.33 [2.34]
+lassa, genome 211      10688 (100.00%) [100.00%]            3.56 [3.56]
+lassa, genome 211 (rc) 10688 (100.00%) [100.00%]            3.56 [3.56]
+lassa, genome 212       3376 (100.00%) [100.00%]            3.68 [3.68]
+lassa, genome 212 (rc)  3376 (100.00%) [100.00%]            3.68 [3.68]
+lassa, genome 213      10669 (100.00%) [100.47%]            2.78 [2.79]
+lassa, genome 213 (rc) 10669 (100.00%) [100.47%]            2.78 [2.79]
+lassa, genome 214      10663 (100.00%) [100.21%]            3.11 [3.12]
+lassa, genome 214 (rc) 10663 (100.00%) [100.21%]            3.12 [3.12]
+lassa, genome 215      10654 (100.00%) [100.00%]            4.13 [4.13]
+lassa, genome 215 (rc) 10654 (100.00%) [100.00%]            4.13 [4.13]
+lassa, genome 216      10672 (100.00%) [100.28%]            2.64 [2.65]
+lassa, genome 216 (rc) 10672 (100.00%) [100.28%]            2.64 [2.65]
+lassa, genome 217      10683 (100.00%) [100.00%]            2.64 [2.64]
+lassa, genome 217 (rc) 10683 (100.00%) [100.00%]            2.64 [2.64]
+lassa, genome 218       10644 (99.86%) [100.58%]            3.55 [3.58]
+lassa, genome 218 (rc)  10643 (99.85%) [100.57%]            3.55 [3.58]
+lassa, genome 219      10824 (100.00%) [100.01%]            1.67 [1.67]
+lassa, genome 219 (rc) 10824 (100.00%) [100.01%]            1.67 [1.67]
+lassa, genome 220      10649 (100.00%) [100.00%]            3.66 [3.66]
+lassa, genome 220 (rc) 10649 (100.00%) [100.00%]            3.66 [3.66]
+lassa, genome 221      10662 (100.00%) [100.00%]            3.73 [3.73]
+lassa, genome 221 (rc) 10662 (100.00%) [100.00%]            3.73 [3.73]
+
