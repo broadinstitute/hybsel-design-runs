@@ -1,0 +1,22 @@
+                   Virus  Mismatches    Extension    Number
+                           allowed       allowed     probes
+             Chikungunya      2             0         1882
+           Crimean-Congo      2            30         6228
+                  Dengue      3            20         4280
+         Ebola non-Zaire      1            30         4918
+Ebola Zaire (incl. 2014)      1            10         1284
+              GB virus C      1             0         2996
+             Hepatitis A      2             0         2172
+             Hepatitis C      5            50        13120
+         HIV-1 (w/o LTR)      6            40        15428
+         HIV-2 (w/o LTR)      1            30         3314
+       Influenza A and B      3            30         9084
+                   Lassa      4            30         6170
+                 Marburg      2             0         2422
+                 Measles      2             0         1340
+                    MERS      1             0         2716
+             Rhabdovirus      3            50         7138
+       Rift valley fever      2             0         1528
+                    SARS      1            10         1022
+            Yellow fever      2             0         2948
+                   TOTAL                             89990
