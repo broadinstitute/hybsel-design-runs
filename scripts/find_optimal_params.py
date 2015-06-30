@@ -399,6 +399,15 @@ def write_params_to_file(params, probe_counts, path, type="int"):
 
 def main(args):
     probe_counts = utils.read_probe_counts(args)
+
+    # If the 'limit_datasets' arg was specified, only consider datasets
+    # in that list of datasets
+    if args.limit_datasets:
+        all_datasets = set(probe_counts.keys())
+        for dataset in all_datasets:
+            if dataset not in args.limit_datasets:
+                del probe_counts[dataset]
+
     loss_fn = make_loss_fn(probe_counts, args.max_probe_count)
     bounds = make_param_bounds(probe_counts)
     x0 = make_initial_guess(probe_counts, args.max_probe_count)
@@ -434,6 +443,7 @@ def main(args):
 if __name__ == "__main__":
     argparse = argparse.ArgumentParser()
     argparse.add_argument('--results_dir', '-i', required=True)
+    argparse.add_argument('--limit_datasets', '-d', nargs='+')
     argparse.add_argument('--max_probe_count', '-n', type=int, default=90000)
     argparse.add_argument('--output_params', '-o')
     args = argparse.parse_args()
