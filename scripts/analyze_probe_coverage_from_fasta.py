@@ -35,7 +35,7 @@ DATASETS = [
 PARAMETER_SPACE = [(mismatches, lcf_thres, cover_extension)
                    for mismatches in range(0, 17)
                    for lcf_thres in [100]
-                   for cover_extension in range(0, 71, 10)]
+                   for cover_extension in range(0, 101, 10)]
 
 
 def analysis_path(tmp_dir, dataset_name, mismatches,
