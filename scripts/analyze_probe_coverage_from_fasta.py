@@ -48,8 +48,8 @@ def analysis_path(tmp_dir, dataset_name, mismatches,
     return path
 
 
-def iter_dataset_and_params():
-    # yield (dataset, name, params)
+def iter_dataset():
+    # yield (dataset, name)
     for dataset in DATASETS:
         if isinstance(dataset, tuple):
             # dataset is a tuple (x, y) where x is an array of datasets
@@ -61,13 +61,19 @@ def iter_dataset_and_params():
             # dataset
             name = dataset
             dataset = [dataset]
+        yield (dataset, name)
+
+
+def iter_dataset_and_params():
+    # yield (dataset, name, params)
+    for dataset, name in iter_dataset():
         for params in PARAMETER_SPACE:
             yield (dataset, name, params)
 
 
 def run_analysis():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-tmp_dir", default=DEFAULT_TMP_DIR,
+    parser.add_argument("--tmp_dir", default=DEFAULT_TMP_DIR,
                         help="tmp directory")
     parser.add_argument("-f", "--probes_fasta", required=True,
                         help="path to fasta with probes")
@@ -103,7 +109,7 @@ def run_analysis():
 
 def clean():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-tmp_dir", default=DEFAULT_TMP_DIR)
+    parser.add_argument("--tmp_dir", default=DEFAULT_TMP_DIR)
     args = parser.parse_args(sys.argv[2:])
 
     # remove all files (but not subdirs) in the tmp dir
@@ -161,7 +167,7 @@ def best_params_giving_acceptable_coverage(covg_for_params):
 
 def summarize():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-tmp_dir", default=DEFAULT_TMP_DIR)
+    parser.add_argument("--tmp_dir", default=DEFAULT_TMP_DIR)
     args = parser.parse_args(sys.argv[2:])
 
     dataset_params_covg = {}
@@ -185,6 +191,42 @@ def summarize():
         print(dataset_name, best_acceptable_params)
 
 
+def specified_param(percentiles=[0, 5, 25, 50, 75, 95, 100], default_lcf=100):
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--tmp_dir", default=DEFAULT_TMP_DIR)
+    parser.add_argument("--param_choices", required=True,
+        help=("file giving, on each line, "
+              "'[dataset name]  [param choices as tuple]'"))
+    args = parser.parse_args(sys.argv[2:])
+
+    dataset_params = {}
+    with open(args.param_choices) as f:
+        for line in f:
+            ls = line.rstrip().split('\t')
+            dataset = ls[0]
+            params = eval(ls[1])
+            dataset_params[dataset] = params
+
+    for dataset_name in sorted(dataset_params.keys()):
+        if len(dataset_params[dataset_name]) == 2:
+            mismatches, cover_extension = dataset_params[dataset_name]
+            lcf_thres = default_lcf
+        else:
+            mismatches, lcf_thres, cover_extension = dataset_params[dataset_name]
+        path = analysis_path(args.tmp_dir, dataset_name, mismatches, lcf_thres,
+                             cover_extension)
+        path_full = path + ".analysis.tsv"
+        if not os.path.exists(path_full):
+            print("MISSING FILE", path_full, file=sys.stderr)
+            continue
+        fracs_unambig_covered = read_frac_of_covered_genome(path_full)
+
+        covgs = np.percentile(fracs_unambig_covered, percentiles)
+        covgs = [min(1.0, c) for c in covgs]
+        covgs_formatted = [float("{0:.2f}".format(100.0*c)) for c in covgs]
+        print(dataset_name, covgs_formatted)
+
+
 if __name__ == "__main__":
     this_module = sys.modules[__name__]
     
@@ -194,7 +236,11 @@ if __name__ == "__main__":
             clean           delete contents of the tmp dir
             run_analysis    run hybseldesign's coverage analyzer for each
                             dataset and param combination
-            summarize       collect information from all of the runs
+            summarize       collect information from all of the runs, across
+                            all datasets and param combinations
+            specified_param summarize coverage information for each dataset,
+                            using only a specified parameter choice for
+                            each dataset
         """)
 
     parser.add_argument('command', help="Subcommand to run")
