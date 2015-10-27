@@ -1,37 +1,26 @@
+from collections import OrderedDict
 import os
 
-DATASETS = [
-            "chikungunya",
-            "crimean_congo",
-            "dengue",
-            (["ebola_zaire", "ebola2014"], "ebola_zaire-with-2014"),
-            "ebola_nonzaire",
-            "gbv_c",
-            "hepatitis_a",
-            "hepatitis_c",
-            "hiv1_without_ltr",
-            "hiv2_without_ltr",
-            "influenza",
-            "lassa",
-            "marburg",
-            "measles",
-            "mers",
-            "rhabdovirus",
-            "rift_valley_fever",
-            "sars",
-            "yellow_fever",
-           ]
 
-RESULTS_PATH = "/home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_06-2015/"
+RESULTS_PATH = "/home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_all-human-host-viruses/2015-10/"
+
+DATASETS = OrderedDict()
+with open(RESULTS_PATH + "datasets.txt") as f:
+    for line in f:
+        ls = line.split('\t')
+        dataset = ls[0]
+        stats = (int(ls[1]), int(ls[2]), float(ls[3]))
+        DATASETS[dataset] = stats
+
 
 # parameter space is (mismatches, cover_extension)
 PARAMETER_SPACE = [(mismatches, cover_extension)
                    for mismatches in range(0, 10)
                    for cover_extension in range(0, 51, 10)]
 
-def mem_requested(dataset_name, mismatches, cover_extension):
-    big_datasets = ["hepatitis_c", "influenza", "hiv1_without_ltr"]
-    if dataset_name in big_datasets:
+def mem_requested(num_seqs, avg_seq_len, mismatches):
+    cost = num_seqs * avg_seq_len
+    if cost > 10**6:
         if mismatches >= 7:
             return 24
         elif mismatches >= 4:
@@ -40,13 +29,20 @@ def mem_requested(dataset_name, mismatches, cover_extension):
             return 8
     else:
         if mismatches >= 7:
-            return 16
-        elif mismatches >= 4:
             return 8
-        else:
+        elif mismatches >= 4:
             return 4
+        else:
+            return 2
 
-for dataset in DATASETS:
+def queue_requested(num_seqs, avg_seq_len, mismatches):
+    cost = num_seqs * avg_seq_len
+    if cost > 10**6:
+        return "forest"
+    else:
+        return "hour"
+
+for dataset, stats in DATASETS.items():
     if isinstance(dataset, tuple):
         # dataset is a tuple (x, y) where x is an array of datasets
         # and y is the name that should be given to this collection of
@@ -57,6 +53,9 @@ for dataset in DATASETS:
         # dataset
         name = dataset
         dataset = [dataset]
+
+    num_genomes, num_seqs, avg_seq_len = stats
+
     # Make the directory for this dataset's results
     if not os.path.exists(RESULTS_PATH + name):
         os.makedirs(RESULTS_PATH + name)
@@ -64,10 +63,12 @@ for dataset in DATASETS:
         mismatches, cover_extension = params
         path = (RESULTS_PATH + name + "/mismatches_" + str(mismatches) +
                 "-coverextension_" + str(cover_extension))
-        mem = mem_requested(name, mismatches, cover_extension)
+        mem = mem_requested(num_seqs, avg_seq_len, mismatches)
+        queue = queue_requested(num_seqs, avg_seq_len, mismatches)
+
         cmd = ["bsub"]
         cmd += ["-o", path +  ".out"]
-        cmd += ["-q", "week"]
+        cmd += ["-q", queue]
         cmd += ["-R", "\"rusage[mem=" + str(mem) + "]\""]
         cmd += ["-P", "hybseldesign"]
         cmd += ["python", "bin/make_probes.py"]
@@ -81,4 +82,4 @@ for dataset in DATASETS:
         cmd += ["--write_sliding_window_coverage", path + ".covg"]
         cmd += ["-o", path + ".fasta"]
         cmd += ["--verbose"]
-        print ' '.join(cmd)
+        print(' '.join(cmd))
