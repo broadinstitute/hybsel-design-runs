@@ -13,6 +13,16 @@ with open(RESULTS_PATH + "datasets.txt") as f:
         DATASETS[dataset] = stats
 
 
+# output of 'bjobs -w | grep RUN'; don't submit commands
+# that are running
+RUNNING_CMD_LIST = "/home/unix/hmetsky/tmp/running"
+RUNNING = []
+if RUNNING_CMD_LIST is not None:
+    with open(RUNNING_CMD_LIST) as f:
+        for line in f:
+            RUNNING += [line.rstrip()]
+
+
 # parameter space is (mismatches, cover_extension)
 PARAMETER_SPACE = [(mismatches, cover_extension)
                    for mismatches in range(0, 10)
@@ -35,12 +45,24 @@ def mem_requested(num_seqs, avg_seq_len, mismatches):
         else:
             return 2
 
-def queue_requested(num_seqs, avg_seq_len, mismatches):
-    cost = num_seqs * avg_seq_len
-    if cost > 10**6:
+def queue_requested(num_seqs, avg_seq_len, mismatches, mem):
+    if mem > 16:
         return "forest"
     else:
-        return "hour"
+        cost = num_seqs * avg_seq_len
+        if cost > 10**6:
+            return "week"
+        else:
+            return "hour"
+
+def job_completed_successfully(out_path):
+    if not os.path.isfile(out_path):
+        return False
+    with open(out_path) as f:
+        for line in f:
+            if 'Successfully completed' in line:
+                return True
+    return False
 
 for dataset, stats in DATASETS.items():
     if isinstance(dataset, tuple):
@@ -63,15 +85,20 @@ for dataset, stats in DATASETS.items():
         mismatches, cover_extension = params
         path = (RESULTS_PATH + name + "/mismatches_" + str(mismatches) +
                 "-coverextension_" + str(cover_extension))
-        mem = mem_requested(num_seqs, avg_seq_len, mismatches)
-        queue = queue_requested(num_seqs, avg_seq_len, mismatches)
 
-        cmd = ["bsub"]
-        cmd += ["-o", path +  ".out"]
-        cmd += ["-q", queue]
-        cmd += ["-R", "\"rusage[mem=" + str(mem) + "]\""]
-        cmd += ["-P", "hybseldesign"]
-        cmd += ["python", "bin/make_probes.py"]
+        if job_completed_successfully(path + '.out'):
+            continue
+
+        mem = mem_requested(num_seqs, avg_seq_len, mismatches)
+        queue = queue_requested(num_seqs, avg_seq_len, mismatches, mem)
+
+        bsub_cmd = ["bsub"]
+        bsub_cmd += ["-o", path +  ".out"]
+        bsub_cmd += ["-q", queue]
+        bsub_cmd += ["-R", "\"rusage[mem=" + str(mem) + "]\""]
+        bsub_cmd += ["-P", "hybseldesign"]
+
+        cmd = ["python", "bin/make_probes.py"]
         cmd += ["--mismatches", str(mismatches)]
         cmd += ["--lcf_thres", "100"]
         cmd += ["--cover_extension", str(cover_extension)]
@@ -82,4 +109,14 @@ for dataset, stats in DATASETS.items():
         cmd += ["--write_sliding_window_coverage", path + ".covg"]
         cmd += ["-o", path + ".fasta"]
         cmd += ["--verbose"]
-        print(' '.join(cmd))
+
+        py_cmd = ' '.join(cmd)
+        skip_cmd = False
+        for r in RUNNING:
+            if py_cmd in r:
+                skip_cmd = True
+                break
+        if skip_cmd:
+            continue
+
+        print(' '.join(bsub_cmd + cmd))
