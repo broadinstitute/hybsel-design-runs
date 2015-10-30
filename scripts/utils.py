@@ -17,9 +17,13 @@ def count_probes(fn):
     return int(out)
 
 
-def read_probe_counts(args):
+def read_probe_counts(args, skip=["datasets.txt"]):
     probe_counts = {}
     for dir in os.listdir(args.results_dir):
+        if os.path.isfile(dir) and dir in skip:
+            continue
+        else:
+            assert os.path.isdir(dir)
         # dir gives a virus/dataset name
         dataset = dir
         dataset_results_path = os.path.join(args.results_dir, dir)

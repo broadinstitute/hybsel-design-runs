@@ -238,8 +238,8 @@ def optimize_loss(probe_counts, loss_fn, bounds, x0,
     eps = initial_eps
     while eps >= 0.01:
         x0_probe_count = make_total_probe_count_across_datasets_fn(probe_counts)(x0)
-        print "Starting an iteration with eps=%f, with x0 yielding %d probes" % \
-              (eps, x0_probe_count)
+        print("Starting an iteration with eps=%f, with x0 yielding %d probes" % \
+              (eps, x0_probe_count))
 
         sol, nfeval, rc = optimize.fmin_tnc(loss_fn, x0, bounds=bounds,
                                             args=(eps,),
@@ -249,9 +249,9 @@ def optimize_loss(probe_counts, loss_fn, bounds, x0,
         if rc in [0, 1, 2]:
             # rc == 0 indicates reaching the local minimum, and rc == 1 or
             # rc == 2 indicates the function value converged
-            print "  Iteration was successful"
+            print("  Iteration was successful")
         else:
-            print "  Iteration failed to converge!"
+            print("  Iteration failed to converge!")
 
         x0 = sol
         eps = 0.1 * eps
@@ -339,7 +339,7 @@ def round_params(params, probe_counts, max_probe_count,
         curr_loss = loss_fn(params_rounded, 0)
         # Find a parameter to decrease
         min_loss, min_loss_new_params = curr_loss, None
-        for i in xrange(len(params_rounded)):
+        for i in range(len(params_rounded)):
             params_tmp = list(params_rounded)
             if params_tmp[i] == 0:
                 # This cannot be decreased
@@ -374,9 +374,9 @@ def print_params_by_dataset(params, probe_counts, type="float"):
     for i, dataset in enumerate(sorted(probe_counts.keys())):
         mismatches, cover_extension = params[2 * i], params[2 * i + 1]
         if type == "float":
-            print "%s: (%f, %f)" % (dataset, mismatches, cover_extension)
+            print("%s: (%f, %f)" % (dataset, mismatches, cover_extension))
         elif type == "int":
-            print "%s: (%d, %d)" % (dataset, mismatches, cover_extension)
+            print("%s: (%d, %d)" % (dataset, mismatches, cover_extension))
         else:
             raise ValueError("Unknown type %s", type)
 
@@ -414,22 +414,22 @@ def main(args):
 
     x_sol = optimize_loss(probe_counts, loss_fn, bounds, x0)
 
-    print "##############################"
-    print "Continuous parameter values:"
+    print("##############################")
+    print("Continuous parameter values:")
     print_params_by_dataset(x_sol, probe_counts, "float")
     x_sol_count = make_total_probe_count_across_datasets_fn(probe_counts)(x_sol)
-    print "TOTAL INTERPOLATED PROBE COUNT: %d" %  x_sol_count
-    print "##############################"
-    print
+    print("TOTAL INTERPOLATED PROBE COUNT: %d" %  x_sol_count)
+    print("##############################")
+    print()
 
     opt_params = round_params(x_sol, probe_counts, args.max_probe_count)
 
-    print "##############################"
-    print "Rounded parameter values:"
+    print("##############################")
+    print("Rounded parameter values:")
     print_params_by_dataset(opt_params, probe_counts, "int")
     opt_params_count = make_total_probe_count_across_datasets_fn(probe_counts)(opt_params)
-    print "TOTAL PROBE COUNT: %d" % opt_params_count
-    print "##############################"
+    print("TOTAL PROBE COUNT: %d" % opt_params_count)
+    print("##############################")
 
     # As a sanity check, verify that we get the same total probe count without
     # using interpolation (since probe counts for opt_params have actually
