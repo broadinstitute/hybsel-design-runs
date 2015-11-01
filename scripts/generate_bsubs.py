@@ -12,6 +12,10 @@ with open(RESULTS_PATH + "datasets.txt") as f:
         stats = (int(ls[1]), int(ls[2]), float(ls[3]))
         DATASETS[dataset] = stats
 
+# if re-running some jobs because they failed due to memory limits
+# (submitted with too little memory requested), re-run them with
+# double the initial requested amount
+DOUBLE_MEM = False
 
 # output of 'bjobs -w | grep RUN'; don't submit commands
 # that are running
@@ -32,18 +36,22 @@ def mem_requested(num_seqs, avg_seq_len, mismatches):
     cost = num_seqs * avg_seq_len
     if cost > 10**6:
         if mismatches >= 7:
-            return 24
+            mem = 24
         elif mismatches >= 4:
-            return 16
+            mem = 16
         else:
-            return 8
+            mem = 8
     else:
         if mismatches >= 7:
-            return 8
+            mem = 8
         elif mismatches >= 4:
-            return 4
+            mem = 4
         else:
-            return 2
+            mem = 2
+
+    if DOUBLE_MEM:
+        mem *= 2
+    return mem
 
 def queue_requested(num_seqs, avg_seq_len, mismatches, mem):
     if mem > 16:
