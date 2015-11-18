@@ -17,9 +17,15 @@ def count_probes(fn):
     return int(out)
 
 
-def read_probe_counts(args, skip=["datasets.txt"]):
+def read_probe_counts(args,
+                      skip=["datasets.txt",
+                            "all_mismatches_3-coverextension_0.fasta"]):
     probe_counts = {}
     for dir in os.listdir(args.results_dir):
+        if args.limit_datasets is not None and dir not in args.limit_datasets:
+            # only process datasets in args.limit_datasets
+            continue
+
         if os.path.isfile(dir) and dir in skip:
             continue
         else:

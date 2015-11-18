@@ -13,6 +13,7 @@ function.
 """
 
 import argparse
+from collections import defaultdict
 import math
 
 import numpy as np
@@ -22,14 +23,6 @@ import utils
 
 
 def make_interp_probe_count_for_dataset_fn(probe_counts):
-    # Find (and sort) all of the parameter values for which we computed probe counts,
-    # which is useful when interpolating probe counts
-    mismatches_for_dataset = {dataset: sorted([k[0]
-                                  for k in probe_counts[dataset].keys()])
-                              for dataset in probe_counts.keys()}
-    cover_extensions_for_dataset = {dataset: sorted([k[1]
-                                        for k in probe_counts[dataset].keys()])
-                                    for dataset in probe_counts.keys()}
 
     def interp_probe_count_for_dataset(dataset, mismatches, cover_extension):
         """
@@ -38,54 +31,98 @@ def make_interp_probe_count_for_dataset_fn(probe_counts):
         at a cover extension of 'cover_extension', where each of these may be
         floats
         """
-        # 'mismatches' may be a float between the min/max mismatches for dataset
-        # Find the mismatches parameters for dataset that are just below and just
-        # above 'mismatches'
-        mismatches_ind = np.searchsorted(mismatches_for_dataset[dataset], mismatches)
-        if mismatches_ind >= len(mismatches_for_dataset[dataset]):
-            # 'mismatches' is greater than the largest mismatches parameter we have
-            # for dataset
-            raise ValueError("mismatches %f is too large to interpolate for dataset %s" %
-                             (mismatches, dataset))
-        if mismatches < mismatches_for_dataset[dataset][0]:
-            # 'mismatches' is less than the smallest mismatches parameter we have
-            # for dataset
-            raise ValueError("mismatches %f is too small to interpolate for dataset %s" %
-                             (mismatches, dataset))
-        if mismatches == mismatches_for_dataset[dataset][mismatches_ind]:
-            # 'mismatches' is equal to a mismatches parameter we have
-            mismatches_floor = mismatches_for_dataset[dataset][mismatches_ind]
-            mismatches_ceil = mismatches_for_dataset[dataset][mismatches_ind]
-        else:
-            mismatches_floor = mismatches_for_dataset[dataset][mismatches_ind - 1]
-            mismatches_ceil = mismatches_for_dataset[dataset][mismatches_ind]
-        
-        # cover_extension may be a float between the min/max cover_extension for dataset
-        # Find the cover_extension parameters for dataset that are just below and just
-        # above 'cover_extension'
-        cover_extension_ind = np.searchsorted(cover_extensions_for_dataset[dataset],
-                                              cover_extension)
-        if cover_extension_ind >= len(cover_extensions_for_dataset[dataset]):
-            # 'cover_extension' is greater than the largest cover_extension parameter
-            # we have for dataset
-            raise ValueError(("cover_extension %f is too large to interpolate "
-                              "for dataset %s") % (cover_extension, dataset))
-        if cover_extension < cover_extensions_for_dataset[dataset][0]:
-            # 'cover_extension' is less than the smallest cover_extension parameter
-            # we have for dataset
-            raise ValueError(("cover_extension %f is too small to interpolate "
-                              "for dataset %s") % (cover_extension, dataset))
-        if cover_extension == cover_extensions_for_dataset[dataset][cover_extension_ind]:
-            # 'cover_extension' is equal to a cover_extension parameter we have
-            cover_extension_floor = \
-                cover_extensions_for_dataset[dataset][cover_extension_ind]
-            cover_extension_ceil = \
-                cover_extensions_for_dataset[dataset][cover_extension_ind]
-        else:
-            cover_extension_floor = \
-                cover_extensions_for_dataset[dataset][cover_extension_ind - 1]
-            cover_extension_ceil = \
-                cover_extensions_for_dataset[dataset][cover_extension_ind]
+        # 'mismatches' may be a float between the min/max mismatches for
+        # dataset. 'cover_extension' may be a float between the min/max
+        # cover_extension for dataset. Find the mismatches and cover_extension
+        # parameters for dataset that form the smallest rectangle encompassing
+        # 'mismatches' and 'cover_extension', so that we can use the points of
+        # this rectangle to perform bilinear interpolation. We brute force over
+        # all possible rectangles encompassing 'mismatches' and
+        # 'cover_extension' (with some heuristics to not be completely
+        # exhaustive), which takes O(n^3) time; there are faster methods, but
+        # this should suffice here.
+        # Consider mismatches on the x-axis (left to right) and cover_extensio
+        # on the y-axis (bottom to top)
+        points = set(probe_counts[dataset].keys())
+        points_topleft = set()
+        points_topright = set()
+        points_bottomleft = set()
+        points_bottomright = set()
+        for p in points:
+            m, ce = p
+            if m == mismatches:
+                if ce == cover_extension:
+                    points_topleft.add(p)
+                    points_topright.add(p)
+                    points_bottomleft.add(p)
+                    points_bottomright.add(p)
+                elif ce > cover_extension:
+                    points_topleft.add(p)
+                    points_topright.add(p)
+                else:
+                    points_bottomleft.add(p)
+                    points_bottomright.add(p)
+            elif m > mismatches:
+                if ce == cover_extension:
+                    points_topright.add(p)
+                    points_bottomright.add(p)
+                elif ce > cover_extension:
+                    points_topright.add(p)
+                else:
+                    points_bottomright.add(p)
+            else:
+                if ce == cover_extension:
+                    points_topleft.add(p)
+                    points_bottomleft.add(p)
+                elif ce > cover_extension:
+                    points_topleft.add(p)
+                else:
+                    points_bottomleft.add(p)
+
+        points_topright_by_y = defaultdict(set)
+        for p in points_topright:
+            m, ce = p
+            points_topright_by_y[ce].add(p)
+        points_bottomleft_by_x = defaultdict(set)
+        for p in points_bottomleft:
+            m, ce = p
+            points_bottomleft_by_x[m].add(p)
+
+        min_rectangle, min_area = None, float('inf')
+        for p_topleft in points_topleft:
+            p_topleft_m, p_topleft_ce = p_topleft
+            # find all points in the top-right with the same cover_extension
+            # (y-value) as p_topleft
+            for p_topright in points_topright_by_y[p_topleft_ce]:
+                p_topright_m, p_topright_ce = p_topright
+                # find all points in the bottom-left with the same mismatches
+                # (x-value) as p_topleft
+                for p_bottomleft in points_bottomleft_by_x[p_topleft_m]:
+                    p_bottomleft_m, p_bottomleft_ce = p_bottomleft
+                    # to form a rectangle, we need the point (p_topright_m,
+                    # p_bottomleft_ce); this point should be in the
+                    # bottom-right, so check if it exists
+                    p_bottomright = (p_topright_m, p_bottomleft_ce)
+                    if p_bottomright in points_bottomright:
+                        # we found a valid rectangle; now compute its 'area'
+                        width = p_topright_m - p_topleft_m
+                        height = (p_topright_ce - p_bottomleft_ce) / 10.0
+                        area = width * height
+                        if area < min_area:
+                            min_rectangle = (p_topleft, p_bottomright)
+                            min_area = area
+
+        if min_rectangle is None:
+            print(points_topleft, points_topright, points_bottomleft,
+                  points_bottomright)
+            raise ValueError(("Unable to find rectangular bounding box around "
+                              "(mismatches, cover_extension)=(%f, %f) for "
+                              "dataset %s") % (mismatches, cover_extension,
+                              dataset))
+
+        rect_topleft, rect_bottomright = min_rectangle
+        mismatches_floor, cover_extension_ceil = rect_topleft
+        mismatches_ceil, cover_extension_floor = rect_bottomright
 
         # At cover_extension_floor and at cover_extension_ceil, interpolate the
         # number of probes at 'mismatches' mismatches (interpolate linearly)
@@ -203,10 +240,6 @@ def make_loss_fn(probe_counts, max_probe_count):
 def make_param_bounds(probe_counts, step_size=0.001):
     bounds = []
     for dataset in sorted(probe_counts.keys()):
-        if dataset == 'hiv1_without_ltr':
-            bounds += [(0, 7 - step_size)]
-            bounds += [(0, 50 - step_size)]
-            continue
         mismatches = [k[0] for k in probe_counts[dataset].keys()]
         bounds += [(min(mismatches), max(mismatches) - step_size)]
         cover_extensions = [k[1] for k in probe_counts[dataset].keys()]
@@ -215,8 +248,8 @@ def make_param_bounds(probe_counts, step_size=0.001):
 
 
 def make_initial_guess(probe_counts, max_probe_count):
-    # Guess mismatches=5, cover_extension=30 for all datasets
-    x0 = np.array([5, 30] * len(probe_counts))
+    # Guess mismatches=4, cover_extension=30 for all datasets
+    x0 = np.array([4, 30] * len(probe_counts))
 
     # Verify that this yields fewer probes than the maximum allowed
     # (i.e., is not beyond the barrier)
@@ -274,7 +307,7 @@ def total_probe_count_without_interp(params, probe_counts):
 
 
 def round_params(params, probe_counts, max_probe_count,
-        mismatches_eps=0.01, cover_extension_eps=0.1):
+        mismatches_eps=0.001, cover_extension_eps=0.01):
     # Params are floats. We want the mismatches parameters to be integers
     # and the cover_extension parameters to be multiples of 10.
     #
@@ -400,14 +433,6 @@ def write_params_to_file(params, probe_counts, path, type="int"):
 def main(args):
     probe_counts = utils.read_probe_counts(args)
 
-    # If the 'limit_datasets' arg was specified, only consider datasets
-    # in that list of datasets
-    if args.limit_datasets:
-        all_datasets = set(probe_counts.keys())
-        for dataset in all_datasets:
-            if dataset not in args.limit_datasets:
-                del probe_counts[dataset]
-
     loss_fn = make_loss_fn(probe_counts, args.max_probe_count)
     bounds = make_param_bounds(probe_counts)
     x0 = make_initial_guess(probe_counts, args.max_probe_count)
@@ -431,10 +456,10 @@ def main(args):
     print("TOTAL PROBE COUNT: %d" % opt_params_count)
     print("##############################")
 
-    # As a sanity check, verify that we get the same total probe count without
-    # using interpolation (since probe counts for opt_params have actually
-    # been computed)
-    assert opt_params_count == total_probe_count_without_interp(opt_params, probe_counts)
+    if args.verify_without_interp:
+        # As a sanity check, verify that we get the same total probe count
+        # without using interpolation
+        assert opt_params_count == total_probe_count_without_interp(opt_params, probe_counts)
 
     if args.output_params:
         write_params_to_file(opt_params, probe_counts, args.output_params)
@@ -446,6 +471,9 @@ if __name__ == "__main__":
     argparse.add_argument('--limit_datasets', '-d', nargs='+')
     argparse.add_argument('--max_probe_count', '-n', type=int, default=90000)
     argparse.add_argument('--output_params', '-o')
+    argparse.add_argument('--verify_without_interp',
+                          dest='verify_without_interp',
+                          action='store_true')
     args = argparse.parse_args()
 
     main(args)
