@@ -15,7 +15,7 @@ with open(RESULTS_PATH + "datasets.txt") as f:
 # if re-running some jobs because they failed due to memory limits
 # (submitted with too little memory requested), re-run them with
 # double the initial requested amount
-DOUBLE_MEM = False
+DOUBLE_MEM = True
 
 # output of 'bjobs -w | grep RUN'; don't submit commands
 # that are running
@@ -34,7 +34,14 @@ PARAMETER_SPACE = [(mismatches, cover_extension)
 
 def mem_requested(num_seqs, avg_seq_len, mismatches):
     cost = num_seqs * avg_seq_len
-    if cost > 10**6:
+    if cost > 2 * 10**7:
+        if mismatches >= 7:
+            mem = 32
+        elif mismatches >= 4:
+            mem = 24
+        else:
+            mem = 16
+    elif cost > 10**7:
         if mismatches >= 7:
             mem = 24
         elif mismatches >= 4:
@@ -54,7 +61,7 @@ def mem_requested(num_seqs, avg_seq_len, mismatches):
     return mem
 
 def queue_requested(num_seqs, avg_seq_len, mismatches, mem):
-    if mem > 16:
+    if mem > 64:
         return "forest"
     else:
         cost = num_seqs * avg_seq_len
