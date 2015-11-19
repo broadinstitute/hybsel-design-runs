@@ -107,14 +107,15 @@ def make_interp_probe_count_for_dataset_fn(probe_counts):
                         # we found a valid rectangle; now compute its 'area'
                         width = p_topright_m - p_topleft_m
                         height = (p_topright_ce - p_bottomleft_ce) / 10.0
-                        area = width * height
+                        # add pseudocounts to width and height because if
+                        # width or height is 0, we still want the other
+                        # dimension to be accounted for
+                        area = (width + 0.001) * (height + 0.001)
                         if area < min_area:
                             min_rectangle = (p_topleft, p_bottomright)
                             min_area = area
 
         if min_rectangle is None:
-            print(points_topleft, points_topright, points_bottomleft,
-                  points_bottomright)
             raise ValueError(("Unable to find rectangular bounding box around "
                               "(mismatches, cover_extension)=(%f, %f) for "
                               "dataset %s") % (mismatches, cover_extension,
@@ -262,7 +263,6 @@ def make_param_bounds(probe_counts, step_size=0.001):
 
         bounds += [(mismatches_lo, mismatches_hi - step_size)]
         bounds += [(min(cover_extensions), max(cover_extensions) - step_size)]
-        print(dataset, mismatches_lo, mismatches_hi)
     return bounds
 
 
