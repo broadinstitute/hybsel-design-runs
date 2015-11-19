@@ -240,16 +240,35 @@ def make_loss_fn(probe_counts, max_probe_count):
 def make_param_bounds(probe_counts, step_size=0.001):
     bounds = []
     for dataset in sorted(probe_counts.keys()):
-        mismatches = [k[0] for k in probe_counts[dataset].keys()]
-        bounds += [(min(mismatches), max(mismatches) - step_size)]
-        cover_extensions = [k[1] for k in probe_counts[dataset].keys()]
+        params = probe_counts[dataset].keys()
+
+        # bound cover_extensions by the lowest and highest value for
+        # which we have a probe count result
+        cover_extensions = [k[1] for k in params]
+        cover_extensions_lo = min(cover_extensions)
+        cover_extensions_hi = max(cover_extensions)
+
+        # to ensure we can find a rectangular bounding box around an
+        # arbitrary point ((mismatches, cover_extension)), our lower
+        # bound on mismatches should have a corresponding cover extension
+        # of min(cover_extensions) and of max(cover_extensions);
+        # so should our upper bound on mismatches
+        mismatches = [k[0] for k in params]
+        mismatches_with_valid_cover_extension = \
+            [m for m in mismatches if ((m, cover_extensions_lo) in params and
+             (m, cover_extensions_hi) in params)]
+        mismatches_lo = min(mismatches_with_valid_cover_extension)
+        mismatches_hi = max(mismatches_with_valid_cover_extension)
+
+        bounds += [(mismatches_lo, mismatches_hi - step_size)]
         bounds += [(min(cover_extensions), max(cover_extensions) - step_size)]
+        print(dataset, mismatches_lo, mismatches_hi)
     return bounds
 
 
 def make_initial_guess(probe_counts, max_probe_count):
-    # Guess mismatches=4, cover_extension=30 for all datasets
-    x0 = np.array([4, 30] * len(probe_counts))
+    # Guess mismatches=5, cover_extension=30 for all datasets
+    x0 = np.array([5, 30] * len(probe_counts))
 
     # Verify that this yields fewer probes than the maximum allowed
     # (i.e., is not beyond the barrier)
@@ -307,7 +326,7 @@ def total_probe_count_without_interp(params, probe_counts):
 
 
 def round_params(params, probe_counts, max_probe_count,
-        mismatches_eps=0.001, cover_extension_eps=0.01):
+        mismatches_eps=0.01, cover_extension_eps=0.1):
     # Params are floats. We want the mismatches parameters to be integers
     # and the cover_extension parameters to be multiples of 10.
     #
@@ -362,6 +381,10 @@ def round_params(params, probe_counts, max_probe_count,
 
     total_probe_count = make_total_probe_count_across_datasets_fn(probe_counts)
     # Verify that the probe count satisfies the constraint
+    # Note that this assertion may fail if we are dealing with datasets
+    # for which few actual probe counts have been computed; in these
+    # cases, the interpolation may severely underestimate the number
+    # of probes at a particular parameter choice
     assert total_probe_count(params_rounded) < max_probe_count
 
     # Keep decreasing parameters while satisfying the constraint.
