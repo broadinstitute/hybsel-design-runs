@@ -22,14 +22,39 @@ from scipy import optimize
 import utils
 
 
+def round_up(x, b):
+    """Round float x up to the nearest multiple of int b
+    """
+    return int(math.ceil(float(x) / b)) * b
+def round_down(x, b):
+    """Round float x down to the nearest multiple of int b
+    """
+    return int(math.floor(float(x) / b)) * b
+
+
 def make_interp_probe_count_for_dataset_fn(probe_counts):
 
-    def interp_probe_count_for_dataset(dataset, mismatches, cover_extension):
+    memoized_bounding_boxes = {dataset: {} for dataset in probe_counts.keys()}
+    def immediate_bounding_box(mismatches, cover_extension):
+        """Return the box around the values rounded down/up to the nearest int
+        to use when memoizing bounding boxes.
+
+        Since the cover_extensions are multiples of 10, we could really round
+        down/up cover_extension to the nearest 10. But just do the nearest
+        integer here to make it easier to generalize.
         """
-        Using the given probe counts at particular parameter values, interpolate
-        the number of probes for 'dataset' and 'mismatches' mismatches and
-        at a cover extension of 'cover_extension', where each of these may be
-        floats
+        return (round_down(mismatches, 1),
+                round_up(mismatches, 1),
+                round_down(cover_extension, 1),
+                round_up(cover_extension, 1))
+
+    def find_bounding_box_around_point(dataset, mismatches, cover_extension):
+        """Return a rectangular bounding box around given parameters.
+
+        Based on probe_counts[dataset], choose parameter values that form the
+        smallest box around (mismatches, cover_extension) so that we can
+        use actual computed probe counts (based on the box's parameter values)
+        to interpolate the probe count for (mismatches, cover_extension).
         """
         # 'mismatches' may be a float between the min/max mismatches for
         # dataset. 'cover_extension' may be a float between the min/max
@@ -41,7 +66,7 @@ def make_interp_probe_count_for_dataset_fn(probe_counts):
         # 'cover_extension' (with some heuristics to not be completely
         # exhaustive), which takes O(n^3) time; there are faster methods, but
         # this should suffice here.
-        # Consider mismatches on the x-axis (left to right) and cover_extensio
+        # Consider mismatches on the x-axis (left to right) and cover_extension
         # on the y-axis (bottom to top)
         points = set(probe_counts[dataset].keys())
         points_topleft = set()
@@ -114,12 +139,32 @@ def make_interp_probe_count_for_dataset_fn(probe_counts):
                         if area < min_area:
                             min_rectangle = (p_topleft, p_bottomright)
                             min_area = area
+        return min_rectangle
 
-        if min_rectangle is None:
-            raise ValueError(("Unable to find rectangular bounding box around "
-                              "(mismatches, cover_extension)=(%f, %f) for "
-                              "dataset %s") % (mismatches, cover_extension,
-                              dataset))
+    def interp_probe_count_for_dataset(dataset, mismatches, cover_extension):
+        """
+        Using the given probe counts at particular parameter values, interpolate
+        the number of probes for 'dataset' and 'mismatches' mismatches and
+        at a cover extension of 'cover_extension', where each of these may be
+        floats
+        """
+        immediate_bb = immediate_bounding_box(mismatches, cover_extension)
+        if immediate_bb in memoized_bounding_boxes[dataset]:
+            # The bounding box for (mismatches, cover_extension) has been
+            # memoized
+            min_rectangle = memoized_bounding_boxes[dataset][immediate_bb]
+        else:
+            # Compute and memoized the bounding box for (mismatches,
+            # cover_extension)
+            min_rectangle = find_bounding_box_around_point(dataset,
+                                                           mismatches,
+                                                           cover_extension)
+            if min_rectangle is None:
+                raise ValueError(("Unable to find rectangular bounding box around "
+                                  "(mismatches, cover_extension)=(%f, %f) for "
+                                  "dataset %s") % (mismatches, cover_extension,
+                                  dataset))
+            memoized_bounding_boxes[dataset][immediate_bb] = min_rectangle
 
         rect_topleft, rect_bottomright = min_rectangle
         mismatches_floor, cover_extension_ceil = rect_topleft
@@ -351,13 +396,6 @@ def round_params(params, probe_counts, max_probe_count,
     # choose to decrease the parameter whose reduction yields the smallest
     # loss while still yielding a number of probes that is less than
     # max_probe_count.
-
-    def round_up(x, b):
-        # Round float x up to the nearest multiple of int b
-        return int(math.ceil(float(x) / b)) * b
-    def round_down(x, b):
-        # Round float x down to the nearest multiple of int b
-        return int(math.floor(float(x) / b)) * b
 
     params_rounded = []
     for i, dataset in enumerate(sorted(probe_counts.keys())):
