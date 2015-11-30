@@ -154,7 +154,7 @@ def make_interp_probe_count_for_dataset_fn(probe_counts):
             # memoized
             min_rectangle = memoized_bounding_boxes[dataset][immediate_bb]
         else:
-            # Compute and memoized the bounding box for (mismatches,
+            # Compute and memoize the bounding box for (mismatches,
             # cover_extension)
             min_rectangle = find_bounding_box_around_point(dataset,
                                                            mismatches,
@@ -271,12 +271,18 @@ def make_loss_fn(probe_counts, max_probe_count):
             # an approximate gradient and may get stuck. So help it out
             # by giving a value such that the negative gradient points toward
             # a direction outside the barrier.
-            barrier_val = 9999 + 10.0 * np.log(total_probe_count)
+            # Add 1 so that, if total_probe_count == max_probe_count, we do
+            # not take log(0).
+            barrier_val = 9999 + 10000.0 * np.log((total_probe_count -
+                                                  max_probe_count + 1))
         else:
             # The barrier function is -log(max_probe_count - total_probe_count), to
             # enforce the constraint that total_probe_count be less than
             # max_probe_count.
-            barrier_val = -1.0 * eps * np.log(max_probe_count - total_probe_count)
+            # Add 1 so that, if max_probe_count - total_probe_count < 1,
+            # the argument to log(..) remains >= 1.
+            barrier_val = -1.0 * eps * np.log((max_probe_count -
+                                               total_probe_count + 1))
 
         return opt_val + barrier_val
 
@@ -312,15 +318,16 @@ def make_param_bounds(probe_counts, step_size=0.001):
 
 
 def make_initial_guess(probe_counts, max_probe_count):
-    # Guess mismatches=5, cover_extension=30 for all datasets
-    x0 = np.array([5, 30] * len(probe_counts))
+    # Guess mismatches=6, cover_extension=40 for all datasets
+    x0 = np.array([6, 40] * len(probe_counts))
 
     # Verify that this yields fewer probes than the maximum allowed
     # (i.e., is not beyond the barrier)
     guess_probe_count = make_total_probe_count_across_datasets_fn(probe_counts)(x0)
     if guess_probe_count >= max_probe_count:
-        raise ValueError(("Initial guess yields too many probes (%d, but the max "
-                         "is %d)") % (guess_probe_count, max_probe_count))
+        print(("WARNING: Initial guess is beyond the probe barrier (%d, but "
+               "the max is %d)") % (guess_probe_count, max_probe_count))
+        print(("         ...continuing anyway"))
 
     return x0
 
@@ -335,7 +342,7 @@ def optimize_loss(probe_counts, loss_fn, bounds, x0,
     eps = initial_eps
     while eps >= 0.01:
         x0_probe_count = make_total_probe_count_across_datasets_fn(probe_counts)(x0)
-        print("Starting an iteration with eps=%f, with x0 yielding %d probes" % \
+        print("Starting an iteration with eps=%f, with x0 yielding %f probes" % \
               (eps, x0_probe_count))
 
         sol, nfeval, rc = optimize.fmin_tnc(loss_fn, x0, bounds=bounds,
@@ -504,7 +511,7 @@ def main(args):
     print("Continuous parameter values:")
     print_params_by_dataset(x_sol, probe_counts, "float")
     x_sol_count = make_total_probe_count_across_datasets_fn(probe_counts)(x_sol)
-    print("TOTAL INTERPOLATED PROBE COUNT: %d" %  x_sol_count)
+    print("TOTAL INTERPOLATED PROBE COUNT: %f" % x_sol_count)
     print("##############################")
     print()
 
