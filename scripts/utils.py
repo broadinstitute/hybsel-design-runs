@@ -26,13 +26,13 @@ def read_probe_counts(args,
             # only process datasets in args.limit_datasets
             continue
 
-        if os.path.isfile(dir) and dir in skip:
+        dataset_results_path = os.path.join(args.results_dir, dir)
+        if os.path.isfile(dataset_results_path) and dir in skip:
             continue
         else:
-            assert os.path.isdir(dir)
+            assert os.path.isdir(dataset_results_path)
         # dir gives a virus/dataset name
         dataset = dir
-        dataset_results_path = os.path.join(args.results_dir, dir)
         d = {}
         for fn in os.listdir(dataset_results_path):
             # match fasta files; the parameters are part of the
