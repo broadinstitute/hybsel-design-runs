@@ -317,9 +317,15 @@ def make_param_bounds(probe_counts, step_size=0.001):
     return bounds
 
 
-def make_initial_guess(probe_counts, max_probe_count):
-    # Guess mismatches=6, cover_extension=40 for all datasets
-    x0 = np.array([6, 40] * len(probe_counts))
+def make_initial_guess(probe_counts, bounds, max_probe_count):
+    # Guess uniformly within bounds for each dataset
+    x0 = np.zeros(2 * len(probe_counts))
+    for i, dataset in enumerate(sorted(probe_counts.keys())):
+        mismatches_lo, mismatches_hi = bounds[2 * i]
+        x0[2 * i] = np.random.uniform(mismatches_lo, mismatches_hi)
+        cover_extension_lo, cover_extension_hi = bounds[2 * i + 1]
+        x0[2 * i + 1] = np.random.uniform(cover_extension_lo,
+                                          cover_extension_hi)
 
     # Verify that this yields fewer probes than the maximum allowed
     # (i.e., is not beyond the barrier)
@@ -503,7 +509,7 @@ def main(args):
 
     loss_fn = make_loss_fn(probe_counts, args.max_probe_count)
     bounds = make_param_bounds(probe_counts)
-    x0 = make_initial_guess(probe_counts, args.max_probe_count)
+    x0 = make_initial_guess(probe_counts, bounds, args.max_probe_count)
 
     x_sol = optimize_loss(probe_counts, loss_fn, bounds, x0)
 
