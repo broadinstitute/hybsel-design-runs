@@ -289,14 +289,16 @@ def make_loss_fn(probe_counts, max_probe_count):
     return loss
 
 
-def make_param_bounds(probe_counts, step_size=0.001):
+def make_param_bounds(probe_counts, hard_max_mismatches,
+                      hard_max_cover_extension, step_size=0.001):
     bounds = []
     for dataset in sorted(probe_counts.keys()):
         params = probe_counts[dataset].keys()
 
         # bound cover_extensions by the lowest and highest value for
         # which we have a probe count result
-        cover_extensions = [k[1] for k in params]
+        cover_extensions = [k[1] for k in params
+                            if k[1] <= hard_max_cover_extension]
         cover_extensions_lo = min(cover_extensions)
         cover_extensions_hi = max(cover_extensions)
 
@@ -305,7 +307,8 @@ def make_param_bounds(probe_counts, step_size=0.001):
         # bound on mismatches should have a corresponding cover extension
         # of min(cover_extensions) and of max(cover_extensions);
         # so should our upper bound on mismatches
-        mismatches = [k[0] for k in params]
+        mismatches = [k[0] for k in params
+                      if k[0] <= hard_max_mismatches]
         mismatches_with_valid_cover_extension = \
             [m for m in mismatches if ((m, cover_extensions_lo) in params and
              (m, cover_extensions_hi) in params)]
@@ -508,7 +511,9 @@ def main(args):
     probe_counts = utils.read_probe_counts(args)
 
     loss_fn = make_loss_fn(probe_counts, args.max_probe_count)
-    bounds = make_param_bounds(probe_counts)
+    bounds = make_param_bounds(probe_counts,
+                               args.hard_max_mismatches,
+                               args.hard_max_cover_extension)
     x0 = make_initial_guess(probe_counts, bounds, args.max_probe_count)
 
     x_sol = optimize_loss(probe_counts, loss_fn, bounds, x0)
@@ -548,6 +553,8 @@ if __name__ == "__main__":
     argparse.add_argument('--verify_without_interp',
                           dest='verify_without_interp',
                           action='store_true')
+    argparse.add_argument('--hard_max_mismatches', type=int, default=5)
+    argparse.add_argument('--hard_max_cover_extension', type=int, default=50)
     args = argparse.parse_args()
 
     main(args)
