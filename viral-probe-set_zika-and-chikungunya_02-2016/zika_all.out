@@ -1,0 +1,1269 @@
+Sender: LSF System <lsf@node1976>
+Subject: Job 6989788: <python bin/make_probes.py -d zika zika_partial -m 0 -e 0 --expand_n --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_zika-and-chikungunya_02-2016/zika_all.fasta --write_analysis_to_tsv /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_zika-and-chikungunya_02-2016/zika_all.analysis.tsv --write_sliding_window_coverage /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_zika-and-chikungunya_02-2016/zika_all.covg --verbose> in cluster <cromwell> Done
+
+Job <python bin/make_probes.py -d zika zika_partial -m 0 -e 0 --expand_n --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_zika-and-chikungunya_02-2016/zika_all.fasta --write_analysis_to_tsv /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_zika-and-chikungunya_02-2016/zika_all.analysis.tsv --write_sliding_window_coverage /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_zika-and-chikungunya_02-2016/zika_all.covg --verbose> was submitted from host <node1748> by user <hmetsky> in cluster <cromwell>.
+Job was executed on host(s) <node1976>, in queue <hour>, as user <hmetsky> in cluster <cromwell>.
+</home/unix/hmetsky> was used as the home directory.
+</home/unix/hmetsky/viral/hybsel_design> was used as the working directory.
+Started at Wed Feb 24 19:56:55 2016
+Results reported on Wed Feb 24 20:00:21 2016
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python bin/make_probes.py -d zika zika_partial -m 0 -e 0 --expand_n --print_analysis -o /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_zika-and-chikungunya_02-2016/zika_all.fasta --write_analysis_to_tsv /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_zika-and-chikungunya_02-2016/zika_all.analysis.tsv --write_sliding_window_coverage /home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_zika-and-chikungunya_02-2016/zika_all.covg --verbose
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               341.57 sec.
+    Max Memory :             254 MB
+    Average Memory :         161.90 MB
+    Total Requested Memory : 750.00 MB
+    Delta Memory :           496.00 MB
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Processes :          11
+    Max Threads :            15
+
+The output (if any) follows:
+
+2016-02-24 19:57:02,191 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/zika.fasta
+2016-02-24 19:57:02,282 - hybseldesign.utils.seq_io [INFO] Reading fasta file /idi/sabeti-scratch/hmetsky/hybsel_design/hybseldesign/datasets/data/zika_partial.fasta
+2016-02-24 19:57:02,375 - hybseldesign.filter.probe_designer [INFO] Building candidate probes from target sequences
+2016-02-24 19:57:04,089 - hybseldesign.filter.probe_designer [INFO] Starting filter DuplicateFilter
+2016-02-24 19:57:04,758 - hybseldesign.filter.probe_designer [INFO] Starting filter SetCoverFilter
+2016-02-24 19:57:04,759 - hybseldesign.filter.set_cover_filter [INFO] Building set cover sets input
+2016-02-24 19:57:04,759 - hybseldesign.filter.set_cover_filter [INFO] Building map from k-mers to probes
+2016-02-24 19:57:04,976 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 1 (of 27)
+2016-02-24 19:57:05,030 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 2 (of 27)
+2016-02-24 19:57:05,150 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 3 (of 27)
+2016-02-24 19:57:05,209 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 4 (of 27)
+2016-02-24 19:57:05,289 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 5 (of 27)
+2016-02-24 19:57:05,354 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 6 (of 27)
+2016-02-24 19:57:05,403 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 7 (of 27)
+2016-02-24 19:57:05,606 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 8 (of 27)
+2016-02-24 19:57:05,775 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 9 (of 27)
+2016-02-24 19:57:05,952 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 10 (of 27)
+2016-02-24 19:57:06,129 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 11 (of 27)
+2016-02-24 19:57:06,200 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 12 (of 27)
+2016-02-24 19:57:06,331 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 13 (of 27)
+2016-02-24 19:57:06,425 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 14 (of 27)
+2016-02-24 19:57:06,487 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 15 (of 27)
+2016-02-24 19:57:06,663 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 16 (of 27)
+2016-02-24 19:57:06,952 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 17 (of 27)
+2016-02-24 19:57:07,022 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 18 (of 27)
+2016-02-24 19:57:07,201 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 19 (of 27)
+2016-02-24 19:57:07,356 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 20 (of 27)
+2016-02-24 19:57:07,532 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 21 (of 27)
+2016-02-24 19:57:07,627 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 22 (of 27)
+2016-02-24 19:57:07,823 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 23 (of 27)
+2016-02-24 19:57:08,016 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 24 (of 27)
+2016-02-24 19:57:08,083 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 25 (of 27)
+2016-02-24 19:57:08,263 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 26 (of 27)
+2016-02-24 19:57:08,347 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 1 (of 2), with target genome 27 (of 27)
+2016-02-24 19:57:08,518 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 1 (of 221)
+2016-02-24 19:57:08,535 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 2 (of 221)
+2016-02-24 19:57:08,555 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 3 (of 221)
+2016-02-24 19:57:08,564 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 4 (of 221)
+2016-02-24 19:57:08,581 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 5 (of 221)
+2016-02-24 19:57:08,590 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 6 (of 221)
+2016-02-24 19:57:08,605 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 7 (of 221)
+2016-02-24 19:57:08,615 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 8 (of 221)
+2016-02-24 19:57:08,629 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 9 (of 221)
+2016-02-24 19:57:08,638 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 10 (of 221)
+2016-02-24 19:57:08,647 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 11 (of 221)
+2016-02-24 19:57:08,657 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 12 (of 221)
+2016-02-24 19:57:08,668 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 13 (of 221)
+2016-02-24 19:57:08,681 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 14 (of 221)
+2016-02-24 19:57:08,690 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 15 (of 221)
+2016-02-24 19:57:08,729 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 16 (of 221)
+2016-02-24 19:57:08,800 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 17 (of 221)
+2016-02-24 19:57:08,901 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 18 (of 221)
+2016-02-24 19:57:08,917 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 19 (of 221)
+2016-02-24 19:57:08,952 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 20 (of 221)
+2016-02-24 19:57:08,993 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 21 (of 221)
+2016-02-24 19:57:08,999 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 22 (of 221)
+2016-02-24 19:57:09,034 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 23 (of 221)
+2016-02-24 19:57:09,082 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 24 (of 221)
+2016-02-24 19:57:09,132 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 25 (of 221)
+2016-02-24 19:57:09,138 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 26 (of 221)
+2016-02-24 19:57:09,166 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 27 (of 221)
+2016-02-24 19:57:09,184 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 28 (of 221)
+2016-02-24 19:57:09,204 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 29 (of 221)
+2016-02-24 19:57:09,227 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 30 (of 221)
+2016-02-24 19:57:09,245 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 31 (of 221)
+2016-02-24 19:57:09,268 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 32 (of 221)
+2016-02-24 19:57:09,282 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 33 (of 221)
+2016-02-24 19:57:09,300 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 34 (of 221)
+2016-02-24 19:57:09,314 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 35 (of 221)
+2016-02-24 19:57:09,331 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 36 (of 221)
+2016-02-24 19:57:09,348 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 37 (of 221)
+2016-02-24 19:57:09,366 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 38 (of 221)
+2016-02-24 19:57:09,383 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 39 (of 221)
+2016-02-24 19:57:09,399 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 40 (of 221)
+2016-02-24 19:57:09,416 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 41 (of 221)
+2016-02-24 19:57:09,438 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 42 (of 221)
+2016-02-24 19:57:09,457 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 43 (of 221)
+2016-02-24 19:57:09,482 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 44 (of 221)
+2016-02-24 19:57:09,506 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 45 (of 221)
+2016-02-24 19:57:09,527 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 46 (of 221)
+2016-02-24 19:57:09,545 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 47 (of 221)
+2016-02-24 19:57:09,571 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 48 (of 221)
+2016-02-24 19:57:09,590 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 49 (of 221)
+2016-02-24 19:57:09,611 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 50 (of 221)
+2016-02-24 19:57:09,632 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 51 (of 221)
+2016-02-24 19:57:09,647 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 52 (of 221)
+2016-02-24 19:57:09,665 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 53 (of 221)
+2016-02-24 19:57:09,690 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 54 (of 221)
+2016-02-24 19:57:09,707 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 55 (of 221)
+2016-02-24 19:57:09,727 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 56 (of 221)
+2016-02-24 19:57:09,744 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 57 (of 221)
+2016-02-24 19:57:09,762 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 58 (of 221)
+2016-02-24 19:57:09,780 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 59 (of 221)
+2016-02-24 19:57:09,869 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 60 (of 221)
+2016-02-24 19:57:09,892 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 61 (of 221)
+2016-02-24 19:57:09,917 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 62 (of 221)
+2016-02-24 19:57:09,942 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 63 (of 221)
+2016-02-24 19:57:09,963 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 64 (of 221)
+2016-02-24 19:57:09,991 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 65 (of 221)
+2016-02-24 19:57:10,015 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 66 (of 221)
+2016-02-24 19:57:10,039 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 67 (of 221)
+2016-02-24 19:57:10,063 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 68 (of 221)
+2016-02-24 19:57:10,092 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 69 (of 221)
+2016-02-24 19:57:10,117 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 70 (of 221)
+2016-02-24 19:57:10,146 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 71 (of 221)
+2016-02-24 19:57:10,165 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 72 (of 221)
+2016-02-24 19:57:10,182 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 73 (of 221)
+2016-02-24 19:57:10,201 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 74 (of 221)
+2016-02-24 19:57:10,219 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 75 (of 221)
+2016-02-24 19:57:10,236 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 76 (of 221)
+2016-02-24 19:57:10,269 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 77 (of 221)
+2016-02-24 19:57:10,273 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 78 (of 221)
+2016-02-24 19:57:10,276 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 79 (of 221)
+2016-02-24 19:57:10,280 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 80 (of 221)
+2016-02-24 19:57:10,284 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 81 (of 221)
+2016-02-24 19:57:10,288 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 82 (of 221)
+2016-02-24 19:57:10,293 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 83 (of 221)
+2016-02-24 19:57:10,297 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 84 (of 221)
+2016-02-24 19:57:10,301 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 85 (of 221)
+2016-02-24 19:57:10,311 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 86 (of 221)
+2016-02-24 19:57:10,316 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 87 (of 221)
+2016-02-24 19:57:10,320 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 88 (of 221)
+2016-02-24 19:57:10,329 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 89 (of 221)
+2016-02-24 19:57:10,333 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 90 (of 221)
+2016-02-24 19:57:10,337 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 91 (of 221)
+2016-02-24 19:57:10,342 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 92 (of 221)
+2016-02-24 19:57:10,346 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 93 (of 221)
+2016-02-24 19:57:10,350 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 94 (of 221)
+2016-02-24 19:57:10,353 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 95 (of 221)
+2016-02-24 19:57:10,357 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 96 (of 221)
+2016-02-24 19:57:10,374 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 97 (of 221)
+2016-02-24 19:57:10,391 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 98 (of 221)
+2016-02-24 19:57:10,498 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 99 (of 221)
+2016-02-24 19:57:10,512 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 100 (of 221)
+2016-02-24 19:57:10,535 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 101 (of 221)
+2016-02-24 19:57:10,539 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 102 (of 221)
+2016-02-24 19:57:10,543 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 103 (of 221)
+2016-02-24 19:57:10,547 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 104 (of 221)
+2016-02-24 19:57:10,550 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 105 (of 221)
+2016-02-24 19:57:10,610 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 106 (of 221)
+2016-02-24 19:57:10,658 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 107 (of 221)
+2016-02-24 19:57:10,662 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 108 (of 221)
+2016-02-24 19:57:10,665 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 109 (of 221)
+2016-02-24 19:57:10,668 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 110 (of 221)
+2016-02-24 19:57:10,672 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 111 (of 221)
+2016-02-24 19:57:10,677 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 112 (of 221)
+2016-02-24 19:57:10,681 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 113 (of 221)
+2016-02-24 19:57:10,685 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 114 (of 221)
+2016-02-24 19:57:10,690 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 115 (of 221)
+2016-02-24 19:57:10,694 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 116 (of 221)
+2016-02-24 19:57:10,699 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 117 (of 221)
+2016-02-24 19:57:10,704 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 118 (of 221)
+2016-02-24 19:57:10,709 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 119 (of 221)
+2016-02-24 19:57:10,714 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 120 (of 221)
+2016-02-24 19:57:10,719 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 121 (of 221)
+2016-02-24 19:57:10,723 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 122 (of 221)
+2016-02-24 19:57:10,727 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 123 (of 221)
+2016-02-24 19:57:10,732 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 124 (of 221)
+2016-02-24 19:57:10,736 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 125 (of 221)
+2016-02-24 19:57:10,740 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 126 (of 221)
+2016-02-24 19:57:10,746 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 127 (of 221)
+2016-02-24 19:57:10,752 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 128 (of 221)
+2016-02-24 19:57:10,757 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 129 (of 221)
+2016-02-24 19:57:10,762 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 130 (of 221)
+2016-02-24 19:57:10,768 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 131 (of 221)
+2016-02-24 19:57:10,774 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 132 (of 221)
+2016-02-24 19:57:10,783 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 133 (of 221)
+2016-02-24 19:57:10,787 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 134 (of 221)
+2016-02-24 19:57:10,791 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 135 (of 221)
+2016-02-24 19:57:10,796 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 136 (of 221)
+2016-02-24 19:57:10,801 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 137 (of 221)
+2016-02-24 19:57:10,805 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 138 (of 221)
+2016-02-24 19:57:10,809 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 139 (of 221)
+2016-02-24 19:57:10,813 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 140 (of 221)
+2016-02-24 19:57:10,817 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 141 (of 221)
+2016-02-24 19:57:10,821 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 142 (of 221)
+2016-02-24 19:57:10,825 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 143 (of 221)
+2016-02-24 19:57:10,829 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 144 (of 221)
+2016-02-24 19:57:10,832 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 145 (of 221)
+2016-02-24 19:57:10,836 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 146 (of 221)
+2016-02-24 19:57:10,840 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 147 (of 221)
+2016-02-24 19:57:10,846 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 148 (of 221)
+2016-02-24 19:57:10,851 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 149 (of 221)
+2016-02-24 19:57:10,856 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 150 (of 221)
+2016-02-24 19:57:10,861 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 151 (of 221)
+2016-02-24 19:57:10,866 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 152 (of 221)
+2016-02-24 19:57:10,869 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 153 (of 221)
+2016-02-24 19:57:10,874 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 154 (of 221)
+2016-02-24 19:57:10,877 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 155 (of 221)
+2016-02-24 19:57:10,881 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 156 (of 221)
+2016-02-24 19:57:10,884 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 157 (of 221)
+2016-02-24 19:57:10,889 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 158 (of 221)
+2016-02-24 19:57:10,894 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 159 (of 221)
+2016-02-24 19:57:10,897 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 160 (of 221)
+2016-02-24 19:57:10,902 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 161 (of 221)
+2016-02-24 19:57:10,905 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 162 (of 221)
+2016-02-24 19:57:10,910 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 163 (of 221)
+2016-02-24 19:57:10,914 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 164 (of 221)
+2016-02-24 19:57:10,919 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 165 (of 221)
+2016-02-24 19:57:10,923 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 166 (of 221)
+2016-02-24 19:57:10,927 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 167 (of 221)
+2016-02-24 19:57:10,933 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 168 (of 221)
+2016-02-24 19:57:10,938 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 169 (of 221)
+2016-02-24 19:57:10,942 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 170 (of 221)
+2016-02-24 19:57:10,946 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 171 (of 221)
+2016-02-24 19:57:10,950 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 172 (of 221)
+2016-02-24 19:57:10,954 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 173 (of 221)
+2016-02-24 19:57:10,959 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 174 (of 221)
+2016-02-24 19:57:10,963 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 175 (of 221)
+2016-02-24 19:57:10,968 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 176 (of 221)
+2016-02-24 19:57:10,974 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 177 (of 221)
+2016-02-24 19:57:10,980 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 178 (of 221)
+2016-02-24 19:57:10,985 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 179 (of 221)
+2016-02-24 19:57:10,990 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 180 (of 221)
+2016-02-24 19:57:10,994 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 181 (of 221)
+2016-02-24 19:57:10,998 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 182 (of 221)
+2016-02-24 19:57:11,003 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 183 (of 221)
+2016-02-24 19:57:11,008 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 184 (of 221)
+2016-02-24 19:57:11,013 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 185 (of 221)
+2016-02-24 19:57:11,023 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 186 (of 221)
+2016-02-24 19:57:11,030 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 187 (of 221)
+2016-02-24 19:57:11,036 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 188 (of 221)
+2016-02-24 19:57:11,042 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 189 (of 221)
+2016-02-24 19:57:11,048 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 190 (of 221)
+2016-02-24 19:57:11,054 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 191 (of 221)
+2016-02-24 19:57:11,058 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 192 (of 221)
+2016-02-24 19:57:11,064 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 193 (of 221)
+2016-02-24 19:57:11,071 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 194 (of 221)
+2016-02-24 19:57:11,076 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 195 (of 221)
+2016-02-24 19:57:11,082 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 196 (of 221)
+2016-02-24 19:57:11,089 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 197 (of 221)
+2016-02-24 19:57:11,095 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 198 (of 221)
+2016-02-24 19:57:11,102 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 199 (of 221)
+2016-02-24 19:57:11,109 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 200 (of 221)
+2016-02-24 19:57:11,114 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 201 (of 221)
+2016-02-24 19:57:11,120 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 202 (of 221)
+2016-02-24 19:57:11,126 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 203 (of 221)
+2016-02-24 19:57:11,131 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 204 (of 221)
+2016-02-24 19:57:11,136 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 205 (of 221)
+2016-02-24 19:57:11,142 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 206 (of 221)
+2016-02-24 19:57:11,149 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 207 (of 221)
+2016-02-24 19:57:11,153 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 208 (of 221)
+2016-02-24 19:57:11,158 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 209 (of 221)
+2016-02-24 19:57:11,166 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 210 (of 221)
+2016-02-24 19:57:11,169 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 211 (of 221)
+2016-02-24 19:57:11,173 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 212 (of 221)
+2016-02-24 19:57:11,275 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 213 (of 221)
+2016-02-24 19:57:11,348 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 214 (of 221)
+2016-02-24 19:57:11,393 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 215 (of 221)
+2016-02-24 19:57:11,434 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 216 (of 221)
+2016-02-24 19:57:11,514 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 217 (of 221)
+2016-02-24 19:57:11,526 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 218 (of 221)
+2016-02-24 19:57:11,533 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 219 (of 221)
+2016-02-24 19:57:11,538 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 220 (of 221)
+2016-02-24 19:57:11,540 - hybseldesign.filter.set_cover_filter [INFO] Computing coverage in grouping 2 (of 2), with target genome 221 (of 221)
+2016-02-24 19:57:11,807 - hybseldesign.filter.set_cover_filter [INFO] Building set cover ranks input
+2016-02-24 19:57:11,840 - hybseldesign.filter.set_cover_filter [INFO] Building set cover costs input
+2016-02-24 19:57:11,842 - hybseldesign.filter.set_cover_filter [INFO] Building set cover universe_p input
+2016-02-24 19:57:11,842 - hybseldesign.filter.set_cover_filter [INFO] Building universe_p directly from desired fractional coverage
+2016-02-24 19:57:11,842 - hybseldesign.filter.set_cover_filter [INFO] Approximating the solution to a single set cover instance across all groupings
+2016-02-24 19:57:21,269 - hybseldesign.utils.set_cover [INFO] Selected 0 sets with a total of 545324 elements remaining to be covered
+2016-02-24 19:57:30,634 - hybseldesign.utils.set_cover [INFO] Selected 10 sets with a total of 479240 elements remaining to be covered
+2016-02-24 19:57:33,443 - hybseldesign.utils.set_cover [INFO] Selected 20 sets with a total of 453912 elements remaining to be covered
+2016-02-24 19:57:34,281 - hybseldesign.utils.set_cover [INFO] Selected 30 sets with a total of 434312 elements remaining to be covered
+2016-02-24 19:57:35,411 - hybseldesign.utils.set_cover [INFO] Selected 40 sets with a total of 415937 elements remaining to be covered
+2016-02-24 19:57:37,099 - hybseldesign.utils.set_cover [INFO] Selected 50 sets with a total of 398842 elements remaining to be covered
+2016-02-24 19:57:38,425 - hybseldesign.utils.set_cover [INFO] Selected 60 sets with a total of 382760 elements remaining to be covered
+2016-02-24 19:57:39,694 - hybseldesign.utils.set_cover [INFO] Selected 70 sets with a total of 367760 elements remaining to be covered
+2016-02-24 19:57:41,296 - hybseldesign.utils.set_cover [INFO] Selected 80 sets with a total of 353532 elements remaining to be covered
+2016-02-24 19:57:42,995 - hybseldesign.utils.set_cover [INFO] Selected 90 sets with a total of 340374 elements remaining to be covered
+2016-02-24 19:57:45,181 - hybseldesign.utils.set_cover [INFO] Selected 100 sets with a total of 328159 elements remaining to be covered
+2016-02-24 19:57:46,913 - hybseldesign.utils.set_cover [INFO] Selected 110 sets with a total of 317198 elements remaining to be covered
+2016-02-24 19:57:47,970 - hybseldesign.utils.set_cover [INFO] Selected 120 sets with a total of 307351 elements remaining to be covered
+2016-02-24 19:57:48,249 - hybseldesign.utils.set_cover [INFO] Selected 130 sets with a total of 298351 elements remaining to be covered
+2016-02-24 19:57:49,175 - hybseldesign.utils.set_cover [INFO] Selected 140 sets with a total of 290298 elements remaining to be covered
+2016-02-24 19:57:49,246 - hybseldesign.utils.set_cover [INFO] Selected 150 sets with a total of 282298 elements remaining to be covered
+2016-02-24 19:57:50,258 - hybseldesign.utils.set_cover [INFO] Selected 160 sets with a total of 274463 elements remaining to be covered
+2016-02-24 19:57:51,209 - hybseldesign.utils.set_cover [INFO] Selected 170 sets with a total of 267437 elements remaining to be covered
+2016-02-24 19:57:51,318 - hybseldesign.utils.set_cover [INFO] Selected 180 sets with a total of 260437 elements remaining to be covered
+2016-02-24 19:57:51,408 - hybseldesign.utils.set_cover [INFO] Selected 190 sets with a total of 253437 elements remaining to be covered
+2016-02-24 19:57:51,584 - hybseldesign.utils.set_cover [INFO] Selected 200 sets with a total of 246437 elements remaining to be covered
+2016-02-24 19:57:51,734 - hybseldesign.utils.set_cover [INFO] Selected 210 sets with a total of 239437 elements remaining to be covered
+2016-02-24 19:57:52,883 - hybseldesign.utils.set_cover [INFO] Selected 220 sets with a total of 232684 elements remaining to be covered
+2016-02-24 19:57:53,745 - hybseldesign.utils.set_cover [INFO] Selected 230 sets with a total of 226641 elements remaining to be covered
+2016-02-24 19:57:54,573 - hybseldesign.utils.set_cover [INFO] Selected 240 sets with a total of 220671 elements remaining to be covered
+2016-02-24 19:57:57,115 - hybseldesign.utils.set_cover [INFO] Selected 250 sets with a total of 215254 elements remaining to be covered
+2016-02-24 19:57:57,162 - hybseldesign.utils.set_cover [INFO] Selected 260 sets with a total of 210254 elements remaining to be covered
+2016-02-24 19:57:58,513 - hybseldesign.utils.set_cover [INFO] Selected 270 sets with a total of 205343 elements remaining to be covered
+2016-02-24 19:58:00,199 - hybseldesign.utils.set_cover [INFO] Selected 280 sets with a total of 200944 elements remaining to be covered
+2016-02-24 19:58:01,570 - hybseldesign.utils.set_cover [INFO] Selected 290 sets with a total of 196907 elements remaining to be covered
+2016-02-24 19:58:01,664 - hybseldesign.utils.set_cover [INFO] Selected 300 sets with a total of 192907 elements remaining to be covered
+2016-02-24 19:58:02,241 - hybseldesign.utils.set_cover [INFO] Selected 310 sets with a total of 188928 elements remaining to be covered
+2016-02-24 19:58:04,345 - hybseldesign.utils.set_cover [INFO] Selected 320 sets with a total of 185086 elements remaining to be covered
+2016-02-24 19:58:05,978 - hybseldesign.utils.set_cover [INFO] Selected 330 sets with a total of 181492 elements remaining to be covered
+2016-02-24 19:58:08,075 - hybseldesign.utils.set_cover [INFO] Selected 340 sets with a total of 178312 elements remaining to be covered
+2016-02-24 19:58:08,850 - hybseldesign.utils.set_cover [INFO] Selected 350 sets with a total of 175311 elements remaining to be covered
+2016-02-24 19:58:08,903 - hybseldesign.utils.set_cover [INFO] Selected 360 sets with a total of 172311 elements remaining to be covered
+2016-02-24 19:58:08,946 - hybseldesign.utils.set_cover [INFO] Selected 370 sets with a total of 169311 elements remaining to be covered
+2016-02-24 19:58:09,002 - hybseldesign.utils.set_cover [INFO] Selected 380 sets with a total of 166311 elements remaining to be covered
+2016-02-24 19:58:09,067 - hybseldesign.utils.set_cover [INFO] Selected 390 sets with a total of 163311 elements remaining to be covered
+2016-02-24 19:58:09,164 - hybseldesign.utils.set_cover [INFO] Selected 400 sets with a total of 160311 elements remaining to be covered
+2016-02-24 19:58:09,244 - hybseldesign.utils.set_cover [INFO] Selected 410 sets with a total of 157311 elements remaining to be covered
+2016-02-24 19:58:10,356 - hybseldesign.utils.set_cover [INFO] Selected 420 sets with a total of 154361 elements remaining to be covered
+2016-02-24 19:58:11,562 - hybseldesign.utils.set_cover [INFO] Selected 430 sets with a total of 151596 elements remaining to be covered
+2016-02-24 19:58:12,565 - hybseldesign.utils.set_cover [INFO] Selected 440 sets with a total of 149044 elements remaining to be covered
+2016-02-24 19:58:14,058 - hybseldesign.utils.set_cover [INFO] Selected 450 sets with a total of 146643 elements remaining to be covered
+2016-02-24 19:58:15,088 - hybseldesign.utils.set_cover [INFO] Selected 460 sets with a total of 144483 elements remaining to be covered
+2016-02-24 19:58:15,339 - hybseldesign.utils.set_cover [INFO] Selected 470 sets with a total of 142465 elements remaining to be covered
+2016-02-24 19:58:15,359 - hybseldesign.utils.set_cover [INFO] Selected 480 sets with a total of 140465 elements remaining to be covered
+2016-02-24 19:58:15,382 - hybseldesign.utils.set_cover [INFO] Selected 490 sets with a total of 138465 elements remaining to be covered
+2016-02-24 19:58:15,401 - hybseldesign.utils.set_cover [INFO] Selected 500 sets with a total of 136465 elements remaining to be covered
+2016-02-24 19:58:15,423 - hybseldesign.utils.set_cover [INFO] Selected 510 sets with a total of 134465 elements remaining to be covered
+2016-02-24 19:58:15,446 - hybseldesign.utils.set_cover [INFO] Selected 520 sets with a total of 132465 elements remaining to be covered
+2016-02-24 19:58:15,469 - hybseldesign.utils.set_cover [INFO] Selected 530 sets with a total of 130465 elements remaining to be covered
+2016-02-24 19:58:15,493 - hybseldesign.utils.set_cover [INFO] Selected 540 sets with a total of 128465 elements remaining to be covered
+2016-02-24 19:58:15,518 - hybseldesign.utils.set_cover [INFO] Selected 550 sets with a total of 126465 elements remaining to be covered
+2016-02-24 19:58:15,569 - hybseldesign.utils.set_cover [INFO] Selected 560 sets with a total of 124465 elements remaining to be covered
+2016-02-24 19:58:15,595 - hybseldesign.utils.set_cover [INFO] Selected 570 sets with a total of 122465 elements remaining to be covered
+2016-02-24 19:58:15,636 - hybseldesign.utils.set_cover [INFO] Selected 580 sets with a total of 120465 elements remaining to be covered
+2016-02-24 19:58:15,664 - hybseldesign.utils.set_cover [INFO] Selected 590 sets with a total of 118465 elements remaining to be covered
+2016-02-24 19:58:16,076 - hybseldesign.utils.set_cover [INFO] Selected 600 sets with a total of 116471 elements remaining to be covered
+2016-02-24 19:58:16,864 - hybseldesign.utils.set_cover [INFO] Selected 610 sets with a total of 114533 elements remaining to be covered
+2016-02-24 19:58:17,940 - hybseldesign.utils.set_cover [INFO] Selected 620 sets with a total of 112674 elements remaining to be covered
+2016-02-24 19:58:18,736 - hybseldesign.utils.set_cover [INFO] Selected 630 sets with a total of 110905 elements remaining to be covered
+2016-02-24 19:58:19,601 - hybseldesign.utils.set_cover [INFO] Selected 640 sets with a total of 109244 elements remaining to be covered
+2016-02-24 19:58:20,153 - hybseldesign.utils.set_cover [INFO] Selected 650 sets with a total of 107690 elements remaining to be covered
+2016-02-24 19:58:20,316 - hybseldesign.utils.set_cover [INFO] Selected 660 sets with a total of 106190 elements remaining to be covered
+2016-02-24 19:58:20,659 - hybseldesign.utils.set_cover [INFO] Selected 670 sets with a total of 104698 elements remaining to be covered
+2016-02-24 19:58:21,648 - hybseldesign.utils.set_cover [INFO] Selected 680 sets with a total of 103281 elements remaining to be covered
+2016-02-24 19:58:22,266 - hybseldesign.utils.set_cover [INFO] Selected 690 sets with a total of 101932 elements remaining to be covered
+2016-02-24 19:58:22,747 - hybseldesign.utils.set_cover [INFO] Selected 700 sets with a total of 100647 elements remaining to be covered
+2016-02-24 19:58:23,686 - hybseldesign.utils.set_cover [INFO] Selected 710 sets with a total of 99457 elements remaining to be covered
+2016-02-24 19:58:24,394 - hybseldesign.utils.set_cover [INFO] Selected 720 sets with a total of 98333 elements remaining to be covered
+2016-02-24 19:58:25,240 - hybseldesign.utils.set_cover [INFO] Selected 730 sets with a total of 97280 elements remaining to be covered
+2016-02-24 19:58:25,252 - hybseldesign.utils.set_cover [INFO] Selected 740 sets with a total of 96280 elements remaining to be covered
+2016-02-24 19:58:25,264 - hybseldesign.utils.set_cover [INFO] Selected 750 sets with a total of 95280 elements remaining to be covered
+2016-02-24 19:58:25,296 - hybseldesign.utils.set_cover [INFO] Selected 760 sets with a total of 94280 elements remaining to be covered
+2016-02-24 19:58:25,309 - hybseldesign.utils.set_cover [INFO] Selected 770 sets with a total of 93280 elements remaining to be covered
+2016-02-24 19:58:25,322 - hybseldesign.utils.set_cover [INFO] Selected 780 sets with a total of 92280 elements remaining to be covered
+2016-02-24 19:58:25,334 - hybseldesign.utils.set_cover [INFO] Selected 790 sets with a total of 91280 elements remaining to be covered
+2016-02-24 19:58:25,352 - hybseldesign.utils.set_cover [INFO] Selected 800 sets with a total of 90280 elements remaining to be covered
+2016-02-24 19:58:25,365 - hybseldesign.utils.set_cover [INFO] Selected 810 sets with a total of 89280 elements remaining to be covered
+2016-02-24 19:58:25,377 - hybseldesign.utils.set_cover [INFO] Selected 820 sets with a total of 88280 elements remaining to be covered
+2016-02-24 19:58:25,391 - hybseldesign.utils.set_cover [INFO] Selected 830 sets with a total of 87280 elements remaining to be covered
+2016-02-24 19:58:25,407 - hybseldesign.utils.set_cover [INFO] Selected 840 sets with a total of 86280 elements remaining to be covered
+2016-02-24 19:58:25,421 - hybseldesign.utils.set_cover [INFO] Selected 850 sets with a total of 85280 elements remaining to be covered
+2016-02-24 19:58:25,436 - hybseldesign.utils.set_cover [INFO] Selected 860 sets with a total of 84280 elements remaining to be covered
+2016-02-24 19:58:25,457 - hybseldesign.utils.set_cover [INFO] Selected 870 sets with a total of 83280 elements remaining to be covered
+2016-02-24 19:58:25,476 - hybseldesign.utils.set_cover [INFO] Selected 880 sets with a total of 82280 elements remaining to be covered
+2016-02-24 19:58:25,491 - hybseldesign.utils.set_cover [INFO] Selected 890 sets with a total of 81280 elements remaining to be covered
+2016-02-24 19:58:25,508 - hybseldesign.utils.set_cover [INFO] Selected 900 sets with a total of 80280 elements remaining to be covered
+2016-02-24 19:58:25,524 - hybseldesign.utils.set_cover [INFO] Selected 910 sets with a total of 79280 elements remaining to be covered
+2016-02-24 19:58:25,541 - hybseldesign.utils.set_cover [INFO] Selected 920 sets with a total of 78280 elements remaining to be covered
+2016-02-24 19:58:25,559 - hybseldesign.utils.set_cover [INFO] Selected 930 sets with a total of 77280 elements remaining to be covered
+2016-02-24 19:58:25,577 - hybseldesign.utils.set_cover [INFO] Selected 940 sets with a total of 76280 elements remaining to be covered
+2016-02-24 19:58:25,595 - hybseldesign.utils.set_cover [INFO] Selected 950 sets with a total of 75280 elements remaining to be covered
+2016-02-24 19:58:25,614 - hybseldesign.utils.set_cover [INFO] Selected 960 sets with a total of 74280 elements remaining to be covered
+2016-02-24 19:58:25,639 - hybseldesign.utils.set_cover [INFO] Selected 970 sets with a total of 73280 elements remaining to be covered
+2016-02-24 19:58:25,664 - hybseldesign.utils.set_cover [INFO] Selected 980 sets with a total of 72280 elements remaining to be covered
+2016-02-24 19:58:25,691 - hybseldesign.utils.set_cover [INFO] Selected 990 sets with a total of 71280 elements remaining to be covered
+2016-02-24 19:58:25,719 - hybseldesign.utils.set_cover [INFO] Selected 1000 sets with a total of 70280 elements remaining to be covered
+2016-02-24 19:58:25,750 - hybseldesign.utils.set_cover [INFO] Selected 1010 sets with a total of 69280 elements remaining to be covered
+2016-02-24 19:58:25,782 - hybseldesign.utils.set_cover [INFO] Selected 1020 sets with a total of 68280 elements remaining to be covered
+2016-02-24 19:58:25,814 - hybseldesign.utils.set_cover [INFO] Selected 1030 sets with a total of 67280 elements remaining to be covered
+2016-02-24 19:58:25,841 - hybseldesign.utils.set_cover [INFO] Selected 1040 sets with a total of 66280 elements remaining to be covered
+2016-02-24 19:58:25,872 - hybseldesign.utils.set_cover [INFO] Selected 1050 sets with a total of 65280 elements remaining to be covered
+2016-02-24 19:58:25,903 - hybseldesign.utils.set_cover [INFO] Selected 1060 sets with a total of 64280 elements remaining to be covered
+2016-02-24 19:58:25,936 - hybseldesign.utils.set_cover [INFO] Selected 1070 sets with a total of 63280 elements remaining to be covered
+2016-02-24 19:58:25,971 - hybseldesign.utils.set_cover [INFO] Selected 1080 sets with a total of 62280 elements remaining to be covered
+2016-02-24 19:58:26,029 - hybseldesign.utils.set_cover [INFO] Selected 1090 sets with a total of 61280 elements remaining to be covered
+2016-02-24 19:58:26,093 - hybseldesign.utils.set_cover [INFO] Selected 1100 sets with a total of 60280 elements remaining to be covered
+2016-02-24 19:58:26,141 - hybseldesign.utils.set_cover [INFO] Selected 1110 sets with a total of 59280 elements remaining to be covered
+2016-02-24 19:58:26,200 - hybseldesign.utils.set_cover [INFO] Selected 1120 sets with a total of 58280 elements remaining to be covered
+2016-02-24 19:58:26,259 - hybseldesign.utils.set_cover [INFO] Selected 1130 sets with a total of 57280 elements remaining to be covered
+2016-02-24 19:58:26,319 - hybseldesign.utils.set_cover [INFO] Selected 1140 sets with a total of 56280 elements remaining to be covered
+2016-02-24 19:58:26,376 - hybseldesign.utils.set_cover [INFO] Selected 1150 sets with a total of 55280 elements remaining to be covered
+2016-02-24 19:58:26,433 - hybseldesign.utils.set_cover [INFO] Selected 1160 sets with a total of 54280 elements remaining to be covered
+2016-02-24 19:58:26,478 - hybseldesign.utils.set_cover [INFO] Selected 1170 sets with a total of 53280 elements remaining to be covered
+2016-02-24 19:58:26,535 - hybseldesign.utils.set_cover [INFO] Selected 1180 sets with a total of 52280 elements remaining to be covered
+2016-02-24 19:58:26,593 - hybseldesign.utils.set_cover [INFO] Selected 1190 sets with a total of 51280 elements remaining to be covered
+2016-02-24 19:58:26,673 - hybseldesign.utils.set_cover [INFO] Selected 1200 sets with a total of 50280 elements remaining to be covered
+2016-02-24 19:58:26,756 - hybseldesign.utils.set_cover [INFO] Selected 1210 sets with a total of 49280 elements remaining to be covered
+2016-02-24 19:58:26,803 - hybseldesign.utils.set_cover [INFO] Selected 1220 sets with a total of 48280 elements remaining to be covered
+2016-02-24 19:58:26,837 - hybseldesign.utils.set_cover [INFO] Selected 1230 sets with a total of 47280 elements remaining to be covered
+2016-02-24 19:58:26,872 - hybseldesign.utils.set_cover [INFO] Selected 1240 sets with a total of 46280 elements remaining to be covered
+2016-02-24 19:58:26,907 - hybseldesign.utils.set_cover [INFO] Selected 1250 sets with a total of 45280 elements remaining to be covered
+2016-02-24 19:58:26,943 - hybseldesign.utils.set_cover [INFO] Selected 1260 sets with a total of 44280 elements remaining to be covered
+2016-02-24 19:58:27,010 - hybseldesign.utils.set_cover [INFO] Selected 1270 sets with a total of 43280 elements remaining to be covered
+2016-02-24 19:58:27,047 - hybseldesign.utils.set_cover [INFO] Selected 1280 sets with a total of 42280 elements remaining to be covered
+2016-02-24 19:58:27,085 - hybseldesign.utils.set_cover [INFO] Selected 1290 sets with a total of 41280 elements remaining to be covered
+2016-02-24 19:58:27,124 - hybseldesign.utils.set_cover [INFO] Selected 1300 sets with a total of 40280 elements remaining to be covered
+2016-02-24 19:58:27,164 - hybseldesign.utils.set_cover [INFO] Selected 1310 sets with a total of 39280 elements remaining to be covered
+2016-02-24 19:58:27,202 - hybseldesign.utils.set_cover [INFO] Selected 1320 sets with a total of 38280 elements remaining to be covered
+2016-02-24 19:58:27,239 - hybseldesign.utils.set_cover [INFO] Selected 1330 sets with a total of 37280 elements remaining to be covered
+2016-02-24 19:58:27,278 - hybseldesign.utils.set_cover [INFO] Selected 1340 sets with a total of 36280 elements remaining to be covered
+2016-02-24 19:58:27,317 - hybseldesign.utils.set_cover [INFO] Selected 1350 sets with a total of 35280 elements remaining to be covered
+2016-02-24 19:58:27,356 - hybseldesign.utils.set_cover [INFO] Selected 1360 sets with a total of 34280 elements remaining to be covered
+2016-02-24 19:58:27,396 - hybseldesign.utils.set_cover [INFO] Selected 1370 sets with a total of 33280 elements remaining to be covered
+2016-02-24 19:58:27,437 - hybseldesign.utils.set_cover [INFO] Selected 1380 sets with a total of 32280 elements remaining to be covered
+2016-02-24 19:58:27,479 - hybseldesign.utils.set_cover [INFO] Selected 1390 sets with a total of 31280 elements remaining to be covered
+2016-02-24 19:58:27,521 - hybseldesign.utils.set_cover [INFO] Selected 1400 sets with a total of 30280 elements remaining to be covered
+2016-02-24 19:58:28,042 - hybseldesign.utils.set_cover [INFO] Selected 1410 sets with a total of 29297 elements remaining to be covered
+2016-02-24 19:58:28,178 - hybseldesign.utils.set_cover [INFO] Selected 1420 sets with a total of 28344 elements remaining to be covered
+2016-02-24 19:58:28,414 - hybseldesign.utils.set_cover [INFO] Selected 1430 sets with a total of 27404 elements remaining to be covered
+2016-02-24 19:58:28,917 - hybseldesign.utils.set_cover [INFO] Selected 1440 sets with a total of 26489 elements remaining to be covered
+2016-02-24 19:58:29,179 - hybseldesign.utils.set_cover [INFO] Selected 1450 sets with a total of 25593 elements remaining to be covered
+2016-02-24 19:58:29,519 - hybseldesign.utils.set_cover [INFO] Selected 1460 sets with a total of 24713 elements remaining to be covered
+2016-02-24 19:58:30,084 - hybseldesign.utils.set_cover [INFO] Selected 1470 sets with a total of 23871 elements remaining to be covered
+2016-02-24 19:58:30,230 - hybseldesign.utils.set_cover [INFO] Selected 1480 sets with a total of 23048 elements remaining to be covered
+2016-02-24 19:58:30,453 - hybseldesign.utils.set_cover [INFO] Selected 1490 sets with a total of 22239 elements remaining to be covered
+2016-02-24 19:58:30,751 - hybseldesign.utils.set_cover [INFO] Selected 1500 sets with a total of 21451 elements remaining to be covered
+2016-02-24 19:58:31,211 - hybseldesign.utils.set_cover [INFO] Selected 1510 sets with a total of 20685 elements remaining to be covered
+2016-02-24 19:58:31,411 - hybseldesign.utils.set_cover [INFO] Selected 1520 sets with a total of 19942 elements remaining to be covered
+2016-02-24 19:58:31,755 - hybseldesign.utils.set_cover [INFO] Selected 1530 sets with a total of 19216 elements remaining to be covered
+2016-02-24 19:58:32,265 - hybseldesign.utils.set_cover [INFO] Selected 1540 sets with a total of 18533 elements remaining to be covered
+2016-02-24 19:58:32,903 - hybseldesign.utils.set_cover [INFO] Selected 1550 sets with a total of 17898 elements remaining to be covered
+2016-02-24 19:58:33,049 - hybseldesign.utils.set_cover [INFO] Selected 1560 sets with a total of 17284 elements remaining to be covered
+2016-02-24 19:58:33,360 - hybseldesign.utils.set_cover [INFO] Selected 1570 sets with a total of 16688 elements remaining to be covered
+2016-02-24 19:58:33,795 - hybseldesign.utils.set_cover [INFO] Selected 1580 sets with a total of 16117 elements remaining to be covered
+2016-02-24 19:58:34,055 - hybseldesign.utils.set_cover [INFO] Selected 1590 sets with a total of 15560 elements remaining to be covered
+2016-02-24 19:58:34,768 - hybseldesign.utils.set_cover [INFO] Selected 1600 sets with a total of 15027 elements remaining to be covered
+2016-02-24 19:58:35,168 - hybseldesign.utils.set_cover [INFO] Selected 1610 sets with a total of 14523 elements remaining to be covered
+2016-02-24 19:58:35,189 - hybseldesign.utils.set_cover [INFO] Selected 1620 sets with a total of 14023 elements remaining to be covered
+2016-02-24 19:58:35,207 - hybseldesign.utils.set_cover [INFO] Selected 1630 sets with a total of 13523 elements remaining to be covered
+2016-02-24 19:58:35,226 - hybseldesign.utils.set_cover [INFO] Selected 1640 sets with a total of 13023 elements remaining to be covered
+2016-02-24 19:58:35,266 - hybseldesign.utils.set_cover [INFO] Selected 1650 sets with a total of 12523 elements remaining to be covered
+2016-02-24 19:58:35,304 - hybseldesign.utils.set_cover [INFO] Selected 1660 sets with a total of 12023 elements remaining to be covered
+2016-02-24 19:58:35,330 - hybseldesign.utils.set_cover [INFO] Selected 1670 sets with a total of 11523 elements remaining to be covered
+2016-02-24 19:58:35,348 - hybseldesign.utils.set_cover [INFO] Selected 1680 sets with a total of 11023 elements remaining to be covered
+2016-02-24 19:58:35,366 - hybseldesign.utils.set_cover [INFO] Selected 1690 sets with a total of 10523 elements remaining to be covered
+2016-02-24 19:58:35,388 - hybseldesign.utils.set_cover [INFO] Selected 1700 sets with a total of 10023 elements remaining to be covered
+2016-02-24 19:58:35,656 - hybseldesign.utils.set_cover [INFO] Selected 1710 sets with a total of 9526 elements remaining to be covered
+2016-02-24 19:58:35,944 - hybseldesign.utils.set_cover [INFO] Selected 1720 sets with a total of 9040 elements remaining to be covered
+2016-02-24 19:58:36,218 - hybseldesign.utils.set_cover [INFO] Selected 1730 sets with a total of 8575 elements remaining to be covered
+2016-02-24 19:58:36,230 - hybseldesign.utils.set_cover [INFO] Selected 1740 sets with a total of 8125 elements remaining to be covered
+2016-02-24 19:58:36,352 - hybseldesign.utils.set_cover [INFO] Selected 1750 sets with a total of 7684 elements remaining to be covered
+2016-02-24 19:58:36,519 - hybseldesign.utils.set_cover [INFO] Selected 1760 sets with a total of 7251 elements remaining to be covered
+2016-02-24 19:58:36,977 - hybseldesign.utils.set_cover [INFO] Selected 1770 sets with a total of 6833 elements remaining to be covered
+2016-02-24 19:58:36,996 - hybseldesign.utils.set_cover [INFO] Selected 1780 sets with a total of 6433 elements remaining to be covered
+2016-02-24 19:58:37,138 - hybseldesign.utils.set_cover [INFO] Selected 1790 sets with a total of 6041 elements remaining to be covered
+2016-02-24 19:58:37,579 - hybseldesign.utils.set_cover [INFO] Selected 1800 sets with a total of 5662 elements remaining to be covered
+2016-02-24 19:58:37,820 - hybseldesign.utils.set_cover [INFO] Selected 1810 sets with a total of 5294 elements remaining to be covered
+2016-02-24 19:58:38,057 - hybseldesign.utils.set_cover [INFO] Selected 1820 sets with a total of 4941 elements remaining to be covered
+2016-02-24 19:58:38,580 - hybseldesign.utils.set_cover [INFO] Selected 1830 sets with a total of 4606 elements remaining to be covered
+2016-02-24 19:58:38,847 - hybseldesign.utils.set_cover [INFO] Selected 1840 sets with a total of 4285 elements remaining to be covered
+2016-02-24 19:58:39,085 - hybseldesign.utils.set_cover [INFO] Selected 1850 sets with a total of 3968 elements remaining to be covered
+2016-02-24 19:58:39,543 - hybseldesign.utils.set_cover [INFO] Selected 1860 sets with a total of 3666 elements remaining to be covered
+2016-02-24 19:58:40,023 - hybseldesign.utils.set_cover [INFO] Selected 1870 sets with a total of 3391 elements remaining to be covered
+2016-02-24 19:58:40,504 - hybseldesign.utils.set_cover [INFO] Selected 1880 sets with a total of 3144 elements remaining to be covered
+2016-02-24 19:58:40,783 - hybseldesign.utils.set_cover [INFO] Selected 1890 sets with a total of 2909 elements remaining to be covered
+2016-02-24 19:58:40,967 - hybseldesign.utils.set_cover [INFO] Selected 1900 sets with a total of 2686 elements remaining to be covered
+2016-02-24 19:58:41,111 - hybseldesign.utils.set_cover [INFO] Selected 1910 sets with a total of 2471 elements remaining to be covered
+2016-02-24 19:58:41,335 - hybseldesign.utils.set_cover [INFO] Selected 1920 sets with a total of 2277 elements remaining to be covered
+2016-02-24 19:58:41,486 - hybseldesign.utils.set_cover [INFO] Selected 1930 sets with a total of 2089 elements remaining to be covered
+2016-02-24 19:58:41,607 - hybseldesign.utils.set_cover [INFO] Selected 1940 sets with a total of 1909 elements remaining to be covered
+2016-02-24 19:58:41,881 - hybseldesign.utils.set_cover [INFO] Selected 1950 sets with a total of 1730 elements remaining to be covered
+2016-02-24 19:58:42,102 - hybseldesign.utils.set_cover [INFO] Selected 1960 sets with a total of 1561 elements remaining to be covered
+2016-02-24 19:58:42,142 - hybseldesign.utils.set_cover [INFO] Selected 1970 sets with a total of 1401 elements remaining to be covered
+2016-02-24 19:58:42,391 - hybseldesign.utils.set_cover [INFO] Selected 1980 sets with a total of 1251 elements remaining to be covered
+2016-02-24 19:58:42,943 - hybseldesign.utils.set_cover [INFO] Selected 1990 sets with a total of 1116 elements remaining to be covered
+2016-02-24 19:58:43,014 - hybseldesign.utils.set_cover [INFO] Selected 2000 sets with a total of 996 elements remaining to be covered
+2016-02-24 19:58:43,328 - hybseldesign.utils.set_cover [INFO] Selected 2010 sets with a total of 877 elements remaining to be covered
+2016-02-24 19:58:43,370 - hybseldesign.utils.set_cover [INFO] Selected 2020 sets with a total of 767 elements remaining to be covered
+2016-02-24 19:58:43,622 - hybseldesign.utils.set_cover [INFO] Selected 2030 sets with a total of 660 elements remaining to be covered
+2016-02-24 19:58:43,689 - hybseldesign.utils.set_cover [INFO] Selected 2040 sets with a total of 560 elements remaining to be covered
+2016-02-24 19:58:44,209 - hybseldesign.utils.set_cover [INFO] Selected 2050 sets with a total of 468 elements remaining to be covered
+2016-02-24 19:58:44,451 - hybseldesign.utils.set_cover [INFO] Selected 2060 sets with a total of 392 elements remaining to be covered
+2016-02-24 19:58:44,703 - hybseldesign.utils.set_cover [INFO] Selected 2070 sets with a total of 326 elements remaining to be covered
+2016-02-24 19:58:44,730 - hybseldesign.utils.set_cover [INFO] Selected 2080 sets with a total of 266 elements remaining to be covered
+2016-02-24 19:58:44,785 - hybseldesign.utils.set_cover [INFO] Selected 2090 sets with a total of 206 elements remaining to be covered
+2016-02-24 19:58:45,007 - hybseldesign.utils.set_cover [INFO] Selected 2100 sets with a total of 152 elements remaining to be covered
+2016-02-24 19:58:45,032 - hybseldesign.utils.set_cover [INFO] Selected 2110 sets with a total of 102 elements remaining to be covered
+2016-02-24 19:58:45,330 - hybseldesign.utils.set_cover [INFO] Selected 2120 sets with a total of 60 elements remaining to be covered
+2016-02-24 19:58:45,570 - hybseldesign.utils.set_cover [INFO] Selected 2130 sets with a total of 31 elements remaining to be covered
+2016-02-24 19:58:45,698 - hybseldesign.utils.set_cover [INFO] Selected 2140 sets with a total of 14 elements remaining to be covered
+2016-02-24 19:58:45,733 - hybseldesign.utils.set_cover [INFO] Selected 2150 sets with a total of 4 elements remaining to be covered
+2016-02-24 19:58:45,784 - hybseldesign.filter.probe_designer [INFO] Starting filter AdapterFilter
+2016-02-24 19:58:45,785 - hybseldesign.filter.adapter_filter [INFO] Computing adapter votes across all target genomes
+2016-02-24 19:58:45,785 - hybseldesign.filter.adapter_filter [INFO] Building map from k-mers to probes
+2016-02-24 19:59:04,664 - hybseldesign.filter.adapter_filter [INFO] Adding adapters to probes based on votes
+2016-02-24 19:59:05,230 - hybseldesign.filter.probe_designer [INFO] Starting filter NExpansionFilter
+2016-02-24 19:59:05,244 - hybseldesign.filter.probe_designer [INFO] Starting filter ReverseComplementFilter
+2016-02-24 19:59:06,110 - hybseldesign.coverage_analysis [INFO] Finding probe covers across target genomes
+2016-02-24 19:59:06,110 - hybseldesign.coverage_analysis [INFO] Building map from k-mers to probes
+2016-02-24 19:59:08,161 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 1 (of 27)
+2016-02-24 19:59:09,243 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 2 (of 27)
+2016-02-24 19:59:10,236 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 3 (of 27)
+2016-02-24 19:59:11,173 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 4 (of 27)
+2016-02-24 19:59:12,158 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 5 (of 27)
+2016-02-24 19:59:13,142 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 6 (of 27)
+2016-02-24 19:59:13,882 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 7 (of 27)
+2016-02-24 19:59:14,980 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 8 (of 27)
+2016-02-24 19:59:16,009 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 9 (of 27)
+2016-02-24 19:59:17,170 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 10 (of 27)
+2016-02-24 19:59:18,340 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 11 (of 27)
+2016-02-24 19:59:19,443 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 12 (of 27)
+2016-02-24 19:59:20,256 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 13 (of 27)
+2016-02-24 19:59:21,411 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 14 (of 27)
+2016-02-24 19:59:22,333 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 15 (of 27)
+2016-02-24 19:59:23,425 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 16 (of 27)
+2016-02-24 19:59:24,514 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 17 (of 27)
+2016-02-24 19:59:25,514 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 18 (of 27)
+2016-02-24 19:59:26,789 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 19 (of 27)
+2016-02-24 19:59:27,868 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 20 (of 27)
+2016-02-24 19:59:28,798 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 21 (of 27)
+2016-02-24 19:59:29,848 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 22 (of 27)
+2016-02-24 19:59:31,071 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 23 (of 27)
+2016-02-24 19:59:32,228 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 24 (of 27)
+2016-02-24 19:59:33,122 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 25 (of 27)
+2016-02-24 19:59:34,156 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 26 (of 27)
+2016-02-24 19:59:35,184 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 1 (of 2), with target genome 27 (of 27)
+2016-02-24 19:59:36,197 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 1 (of 221)
+2016-02-24 19:59:36,353 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 2 (of 221)
+2016-02-24 19:59:36,485 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 3 (of 221)
+2016-02-24 19:59:36,637 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 4 (of 221)
+2016-02-24 19:59:36,773 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 5 (of 221)
+2016-02-24 19:59:36,903 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 6 (of 221)
+2016-02-24 19:59:37,029 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 7 (of 221)
+2016-02-24 19:59:37,161 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 8 (of 221)
+2016-02-24 19:59:37,351 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 9 (of 221)
+2016-02-24 19:59:37,477 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 10 (of 221)
+2016-02-24 19:59:37,680 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 11 (of 221)
+2016-02-24 19:59:37,839 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 12 (of 221)
+2016-02-24 19:59:37,995 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 13 (of 221)
+2016-02-24 19:59:38,193 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 14 (of 221)
+2016-02-24 19:59:38,356 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 15 (of 221)
+2016-02-24 19:59:38,566 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 16 (of 221)
+2016-02-24 19:59:39,720 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 17 (of 221)
+2016-02-24 19:59:40,876 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 18 (of 221)
+2016-02-24 19:59:41,093 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 19 (of 221)
+2016-02-24 19:59:41,393 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 20 (of 221)
+2016-02-24 19:59:41,697 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 21 (of 221)
+2016-02-24 19:59:41,777 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 22 (of 221)
+2016-02-24 19:59:42,037 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 23 (of 221)
+2016-02-24 19:59:42,356 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 24 (of 221)
+2016-02-24 19:59:42,684 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 25 (of 221)
+2016-02-24 19:59:42,763 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 26 (of 221)
+2016-02-24 19:59:43,013 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 27 (of 221)
+2016-02-24 19:59:43,190 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 28 (of 221)
+2016-02-24 19:59:43,372 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 29 (of 221)
+2016-02-24 19:59:43,552 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 30 (of 221)
+2016-02-24 19:59:43,774 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 31 (of 221)
+2016-02-24 19:59:43,968 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 32 (of 221)
+2016-02-24 19:59:44,165 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 33 (of 221)
+2016-02-24 19:59:44,342 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 34 (of 221)
+2016-02-24 19:59:44,513 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 35 (of 221)
+2016-02-24 19:59:44,685 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 36 (of 221)
+2016-02-24 19:59:44,890 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 37 (of 221)
+2016-02-24 19:59:45,078 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 38 (of 221)
+2016-02-24 19:59:45,273 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 39 (of 221)
+2016-02-24 19:59:45,436 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 40 (of 221)
+2016-02-24 19:59:45,625 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 41 (of 221)
+2016-02-24 19:59:45,806 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 42 (of 221)
+2016-02-24 19:59:46,034 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 43 (of 221)
+2016-02-24 19:59:46,275 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 44 (of 221)
+2016-02-24 19:59:46,456 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 45 (of 221)
+2016-02-24 19:59:46,644 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 46 (of 221)
+2016-02-24 19:59:46,842 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 47 (of 221)
+2016-02-24 19:59:47,026 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 48 (of 221)
+2016-02-24 19:59:47,210 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 49 (of 221)
+2016-02-24 19:59:47,430 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 50 (of 221)
+2016-02-24 19:59:47,673 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 51 (of 221)
+2016-02-24 19:59:47,867 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 52 (of 221)
+2016-02-24 19:59:48,081 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 53 (of 221)
+2016-02-24 19:59:48,253 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 54 (of 221)
+2016-02-24 19:59:48,442 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 55 (of 221)
+2016-02-24 19:59:48,636 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 56 (of 221)
+2016-02-24 19:59:48,840 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 57 (of 221)
+2016-02-24 19:59:49,017 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 58 (of 221)
+2016-02-24 19:59:49,219 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 59 (of 221)
+2016-02-24 19:59:49,402 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 60 (of 221)
+2016-02-24 19:59:49,600 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 61 (of 221)
+2016-02-24 19:59:49,774 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 62 (of 221)
+2016-02-24 19:59:49,967 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 63 (of 221)
+2016-02-24 19:59:50,154 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 64 (of 221)
+2016-02-24 19:59:50,319 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 65 (of 221)
+2016-02-24 19:59:50,503 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 66 (of 221)
+2016-02-24 19:59:50,688 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 67 (of 221)
+2016-02-24 19:59:50,876 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 68 (of 221)
+2016-02-24 19:59:51,032 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 69 (of 221)
+2016-02-24 19:59:51,195 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 70 (of 221)
+2016-02-24 19:59:51,361 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 71 (of 221)
+2016-02-24 19:59:51,565 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 72 (of 221)
+2016-02-24 19:59:51,732 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 73 (of 221)
+2016-02-24 19:59:51,914 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 74 (of 221)
+2016-02-24 19:59:52,097 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 75 (of 221)
+2016-02-24 19:59:52,292 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 76 (of 221)
+2016-02-24 19:59:52,490 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 77 (of 221)
+2016-02-24 19:59:52,532 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 78 (of 221)
+2016-02-24 19:59:52,576 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 79 (of 221)
+2016-02-24 19:59:52,623 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 80 (of 221)
+2016-02-24 19:59:52,671 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 81 (of 221)
+2016-02-24 19:59:52,722 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 82 (of 221)
+2016-02-24 19:59:52,776 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 83 (of 221)
+2016-02-24 19:59:52,837 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 84 (of 221)
+2016-02-24 19:59:52,893 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 85 (of 221)
+2016-02-24 19:59:53,062 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 86 (of 221)
+2016-02-24 19:59:53,122 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 87 (of 221)
+2016-02-24 19:59:53,176 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 88 (of 221)
+2016-02-24 19:59:53,383 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 89 (of 221)
+2016-02-24 19:59:53,427 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 90 (of 221)
+2016-02-24 19:59:53,484 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 91 (of 221)
+2016-02-24 19:59:53,543 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 92 (of 221)
+2016-02-24 19:59:53,597 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 93 (of 221)
+2016-02-24 19:59:53,655 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 94 (of 221)
+2016-02-24 19:59:53,701 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 95 (of 221)
+2016-02-24 19:59:53,744 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 96 (of 221)
+2016-02-24 19:59:53,941 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 97 (of 221)
+2016-02-24 19:59:54,139 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 98 (of 221)
+2016-02-24 19:59:55,390 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 99 (of 221)
+2016-02-24 19:59:55,411 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 100 (of 221)
+2016-02-24 19:59:55,652 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 101 (of 221)
+2016-02-24 19:59:55,698 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 102 (of 221)
+2016-02-24 19:59:55,753 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 103 (of 221)
+2016-02-24 19:59:55,797 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 104 (of 221)
+2016-02-24 19:59:55,854 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 105 (of 221)
+2016-02-24 19:59:56,878 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 106 (of 221)
+2016-02-24 19:59:57,691 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 107 (of 221)
+2016-02-24 19:59:57,846 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 108 (of 221)
+2016-02-24 19:59:57,975 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 109 (of 221)
+2016-02-24 19:59:58,113 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 110 (of 221)
+2016-02-24 19:59:58,252 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 111 (of 221)
+2016-02-24 19:59:58,382 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 112 (of 221)
+2016-02-24 19:59:58,527 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 113 (of 221)
+2016-02-24 19:59:58,663 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 114 (of 221)
+2016-02-24 19:59:58,790 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 115 (of 221)
+2016-02-24 19:59:58,918 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 116 (of 221)
+2016-02-24 19:59:59,012 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 117 (of 221)
+2016-02-24 19:59:59,102 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 118 (of 221)
+2016-02-24 19:59:59,195 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 119 (of 221)
+2016-02-24 19:59:59,311 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 120 (of 221)
+2016-02-24 19:59:59,415 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 121 (of 221)
+2016-02-24 19:59:59,515 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 122 (of 221)
+2016-02-24 19:59:59,614 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 123 (of 221)
+2016-02-24 19:59:59,711 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 124 (of 221)
+2016-02-24 19:59:59,834 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 125 (of 221)
+2016-02-24 19:59:59,926 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 126 (of 221)
+2016-02-24 20:00:00,025 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 127 (of 221)
+2016-02-24 20:00:00,108 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 128 (of 221)
+2016-02-24 20:00:00,186 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 129 (of 221)
+2016-02-24 20:00:00,265 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 130 (of 221)
+2016-02-24 20:00:00,336 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 131 (of 221)
+2016-02-24 20:00:00,461 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 132 (of 221)
+2016-02-24 20:00:00,577 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 133 (of 221)
+2016-02-24 20:00:00,669 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 134 (of 221)
+2016-02-24 20:00:00,773 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 135 (of 221)
+2016-02-24 20:00:00,862 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 136 (of 221)
+2016-02-24 20:00:00,960 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 137 (of 221)
+2016-02-24 20:00:01,050 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 138 (of 221)
+2016-02-24 20:00:01,194 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 139 (of 221)
+2016-02-24 20:00:01,249 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 140 (of 221)
+2016-02-24 20:00:01,351 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 141 (of 221)
+2016-02-24 20:00:01,450 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 142 (of 221)
+2016-02-24 20:00:01,562 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 143 (of 221)
+2016-02-24 20:00:01,814 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 144 (of 221)
+2016-02-24 20:00:01,915 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 145 (of 221)
+2016-02-24 20:00:02,019 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 146 (of 221)
+2016-02-24 20:00:02,145 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 147 (of 221)
+2016-02-24 20:00:02,272 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 148 (of 221)
+2016-02-24 20:00:02,382 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 149 (of 221)
+2016-02-24 20:00:02,475 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 150 (of 221)
+2016-02-24 20:00:02,583 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 151 (of 221)
+2016-02-24 20:00:02,706 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 152 (of 221)
+2016-02-24 20:00:02,944 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 153 (of 221)
+2016-02-24 20:00:03,167 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 154 (of 221)
+2016-02-24 20:00:03,406 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 155 (of 221)
+2016-02-24 20:00:03,594 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 156 (of 221)
+2016-02-24 20:00:03,808 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 157 (of 221)
+2016-02-24 20:00:04,025 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 158 (of 221)
+2016-02-24 20:00:04,256 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 159 (of 221)
+2016-02-24 20:00:04,317 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 160 (of 221)
+2016-02-24 20:00:04,373 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 161 (of 221)
+2016-02-24 20:00:04,439 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 162 (of 221)
+2016-02-24 20:00:04,617 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 163 (of 221)
+2016-02-24 20:00:04,685 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 164 (of 221)
+2016-02-24 20:00:04,752 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 165 (of 221)
+2016-02-24 20:00:04,822 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 166 (of 221)
+2016-02-24 20:00:04,916 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 167 (of 221)
+2016-02-24 20:00:05,043 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 168 (of 221)
+2016-02-24 20:00:05,236 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 169 (of 221)
+2016-02-24 20:00:05,409 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 170 (of 221)
+2016-02-24 20:00:05,574 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 171 (of 221)
+2016-02-24 20:00:05,742 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 172 (of 221)
+2016-02-24 20:00:05,950 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 173 (of 221)
+2016-02-24 20:00:06,196 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 174 (of 221)
+2016-02-24 20:00:06,413 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 175 (of 221)
+2016-02-24 20:00:06,526 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 176 (of 221)
+2016-02-24 20:00:06,698 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 177 (of 221)
+2016-02-24 20:00:06,845 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 178 (of 221)
+2016-02-24 20:00:06,980 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 179 (of 221)
+2016-02-24 20:00:07,132 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 180 (of 221)
+2016-02-24 20:00:07,264 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 181 (of 221)
+2016-02-24 20:00:07,366 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 182 (of 221)
+2016-02-24 20:00:07,506 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 183 (of 221)
+2016-02-24 20:00:07,661 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 184 (of 221)
+2016-02-24 20:00:07,815 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 185 (of 221)
+2016-02-24 20:00:07,956 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 186 (of 221)
+2016-02-24 20:00:08,060 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 187 (of 221)
+2016-02-24 20:00:08,211 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 188 (of 221)
+2016-02-24 20:00:08,391 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 189 (of 221)
+2016-02-24 20:00:08,496 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 190 (of 221)
+2016-02-24 20:00:08,654 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 191 (of 221)
+2016-02-24 20:00:08,781 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 192 (of 221)
+2016-02-24 20:00:08,918 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 193 (of 221)
+2016-02-24 20:00:09,065 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 194 (of 221)
+2016-02-24 20:00:09,185 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 195 (of 221)
+2016-02-24 20:00:09,290 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 196 (of 221)
+2016-02-24 20:00:09,412 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 197 (of 221)
+2016-02-24 20:00:09,572 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 198 (of 221)
+2016-02-24 20:00:09,698 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 199 (of 221)
+2016-02-24 20:00:09,812 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 200 (of 221)
+2016-02-24 20:00:09,885 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 201 (of 221)
+2016-02-24 20:00:09,956 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 202 (of 221)
+2016-02-24 20:00:10,024 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 203 (of 221)
+2016-02-24 20:00:10,103 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 204 (of 221)
+2016-02-24 20:00:10,184 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 205 (of 221)
+2016-02-24 20:00:10,277 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 206 (of 221)
+2016-02-24 20:00:10,354 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 207 (of 221)
+2016-02-24 20:00:10,440 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 208 (of 221)
+2016-02-24 20:00:10,594 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 209 (of 221)
+2016-02-24 20:00:10,655 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 210 (of 221)
+2016-02-24 20:00:10,738 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 211 (of 221)
+2016-02-24 20:00:10,807 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 212 (of 221)
+2016-02-24 20:00:11,921 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 213 (of 221)
+2016-02-24 20:00:13,089 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 214 (of 221)
+2016-02-24 20:00:14,018 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 215 (of 221)
+2016-02-24 20:00:15,100 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 216 (of 221)
+2016-02-24 20:00:16,106 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 217 (of 221)
+2016-02-24 20:00:16,268 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 218 (of 221)
+2016-02-24 20:00:16,379 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 219 (of 221)
+2016-02-24 20:00:16,501 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 220 (of 221)
+2016-02-24 20:00:16,537 - hybseldesign.coverage_analysis [INFO] Computing coverage in grouping 2 (of 2), with target genome 221 (of 221)
+2016-02-24 20:00:16,695 - hybseldesign.coverage_analysis [INFO] Computing bases covered across target genomes
+2016-02-24 20:00:16,758 - hybseldesign.coverage_analysis [INFO] Computing average coverage across target genomes
+2016-02-24 20:00:16,795 - hybseldesign.coverage_analysis [INFO] Computing sliding coverage across target genomes
+NUMBER OF PROBES: 4440
+
+Genome                                Num bases covered Average coverage/depth
+                                         [over unambig]         [over unambig]
+----------------------------- ------------------------- ----------------------
+zika, genome 0                  10220 (99.49%) [99.52%]            1.38 [1.38]
+zika, genome 0 (rc)             10220 (99.49%) [99.52%]            1.38 [1.38]
+zika, genome 1                10676 (100.00%) [100.00%]            2.47 [2.47]
+zika, genome 1 (rc)           10676 (100.00%) [100.00%]            2.47 [2.47]
+zika, genome 2                 10257 (99.85%) [100.00%]            1.31 [1.32]
+zika, genome 2 (rc)            10257 (99.85%) [100.00%]            1.31 [1.32]
+zika, genome 3                 10753 (99.98%) [100.00%]            1.32 [1.32]
+zika, genome 3 (rc)            10753 (99.98%) [100.00%]            1.32 [1.32]
+zika, genome 4                10788 (100.00%) [100.00%]            1.33 [1.33]
+zika, genome 4 (rc)           10788 (100.00%) [100.00%]            1.33 [1.33]
+zika, genome 5                  10131 (98.63%) [98.87%]            1.17 [1.18]
+zika, genome 5 (rc)             10131 (98.63%) [98.87%]            1.17 [1.18]
+zika, genome 6                10374 (100.00%) [100.00%]            2.28 [2.28]
+zika, genome 6 (rc)           10374 (100.00%) [100.00%]            2.28 [2.28]
+zika, genome 7                10727 (100.00%) [100.00%]            2.24 [2.24]
+zika, genome 7 (rc)           10727 (100.00%) [100.00%]            2.24 [2.24]
+zika, genome 8                10676 (100.00%) [100.00%]            2.52 [2.52]
+zika, genome 8 (rc)           10676 (100.00%) [100.00%]            2.52 [2.52]
+zika, genome 9                10662 (100.00%) [100.00%]            2.30 [2.30]
+zika, genome 9 (rc)           10662 (100.00%) [100.00%]            2.30 [2.30]
+zika, genome 10               10272 (100.00%) [100.00%]            1.34 [1.34]
+zika, genome 10 (rc)          10272 (100.00%) [100.00%]            1.34 [1.34]
+zika, genome 11               10794 (100.00%) [100.00%]            1.37 [1.37]
+zika, genome 11 (rc)          10794 (100.00%) [100.00%]            1.37 [1.37]
+zika, genome 12               10807 (100.00%) [100.00%]            1.39 [1.39]
+zika, genome 12 (rc)          10807 (100.00%) [100.00%]            1.39 [1.39]
+zika, genome 13               10254 (100.00%) [100.00%]            1.09 [1.09]
+zika, genome 13 (rc)          10254 (100.00%) [100.00%]            1.09 [1.09]
+zika, genome 14               10617 (100.00%) [100.00%]            2.50 [2.50]
+zika, genome 14 (rc)          10617 (100.00%) [100.00%]            2.50 [2.50]
+zika, genome 15               10662 (100.00%) [100.00%]            2.32 [2.32]
+zika, genome 15 (rc)          10662 (100.00%) [100.00%]            2.32 [2.32]
+zika, genome 16               10776 (100.00%) [100.00%]            1.39 [1.39]
+zika, genome 16 (rc)          10776 (100.00%) [100.00%]            1.39 [1.39]
+zika, genome 17               10272 (100.00%) [100.00%]            2.33 [2.33]
+zika, genome 17 (rc)          10272 (100.00%) [100.00%]            2.33 [2.33]
+zika, genome 18               10617 (100.00%) [100.00%]            2.56 [2.56]
+zika, genome 18 (rc)          10617 (100.00%) [100.00%]            2.56 [2.56]
+zika, genome 19               10675 (100.00%) [100.00%]            2.32 [2.32]
+zika, genome 19 (rc)          10675 (100.00%) [100.00%]            2.32 [2.32]
+zika, genome 20                 10074 (98.07%) [98.09%]            1.76 [1.77]
+zika, genome 20 (rc)            10074 (98.07%) [98.09%]            1.76 [1.77]
+zika, genome 21               10648 (100.00%) [100.00%]            2.30 [2.30]
+zika, genome 21 (rc)          10648 (100.00%) [100.00%]            2.30 [2.30]
+zika, genome 22               10808 (100.00%) [100.00%]            2.44 [2.44]
+zika, genome 22 (rc)          10808 (100.00%) [100.00%]            2.44 [2.44]
+zika, genome 23                 10172 (99.03%) [99.05%]            1.28 [1.28]
+zika, genome 23 (rc)            10172 (99.03%) [99.05%]            1.28 [1.28]
+zika, genome 24               10272 (100.00%) [100.00%]            2.32 [2.32]
+zika, genome 24 (rc)          10272 (100.00%) [100.00%]            2.32 [2.32]
+zika, genome 25               10794 (100.00%) [100.00%]            1.37 [1.37]
+zika, genome 25 (rc)          10794 (100.00%) [100.00%]            1.37 [1.37]
+zika, genome 26               10662 (100.00%) [100.00%]            2.33 [2.33]
+zika, genome 26 (rc)          10662 (100.00%) [100.00%]            2.33 [2.33]
+zika_partial, genome 0            685 (98.99%) [99.13%]            4.80 [4.80]
+zika_partial, genome 0 (rc)       685 (98.99%) [99.13%]            4.80 [4.80]
+zika_partial, genome 1            685 (98.99%) [99.13%]            4.80 [4.80]
+zika_partial, genome 1 (rc)       685 (98.99%) [99.13%]            4.80 [4.80]
+zika_partial, genome 2          661 (100.00%) [100.00%]            3.50 [3.50]
+zika_partial, genome 2 (rc)     661 (100.00%) [100.00%]            3.50 [3.50]
+zika_partial, genome 3          678 (100.00%) [100.00%]            5.04 [5.04]
+zika_partial, genome 3 (rc)     678 (100.00%) [100.00%]            5.04 [5.04]
+zika_partial, genome 4          693 (100.00%) [100.00%]            4.08 [4.08]
+zika_partial, genome 4 (rc)     693 (100.00%) [100.00%]            4.08 [4.08]
+zika_partial, genome 5          676 (100.00%) [100.00%]            4.76 [4.76]
+zika_partial, genome 5 (rc)     676 (100.00%) [100.00%]            4.76 [4.76]
+zika_partial, genome 6          672 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 6 (rc)     672 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 7          679 (100.00%) [100.00%]            5.04 [5.04]
+zika_partial, genome 7 (rc)     679 (100.00%) [100.00%]            5.04 [5.04]
+zika_partial, genome 8          679 (100.00%) [100.00%]            4.30 [4.30]
+zika_partial, genome 8 (rc)     679 (100.00%) [100.00%]            4.30 [4.30]
+zika_partial, genome 9          682 (100.00%) [100.00%]            5.31 [5.31]
+zika_partial, genome 9 (rc)     682 (100.00%) [100.00%]            5.31 [5.31]
+zika_partial, genome 10         667 (100.00%) [100.00%]            2.56 [2.56]
+zika_partial, genome 10 (rc)    667 (100.00%) [100.00%]            2.56 [2.56]
+zika_partial, genome 11         688 (100.00%) [100.00%]            5.12 [5.12]
+zika_partial, genome 11 (rc)    688 (100.00%) [100.00%]            5.12 [5.12]
+zika_partial, genome 12         663 (100.00%) [100.00%]            3.79 [3.79]
+zika_partial, genome 12 (rc)    663 (100.00%) [100.00%]            3.79 [3.79]
+zika_partial, genome 13         665 (100.00%) [100.00%]            3.93 [3.93]
+zika_partial, genome 13 (rc)    665 (100.00%) [100.00%]            3.93 [3.93]
+zika_partial, genome 14        1275 (100.00%) [100.00%]            2.05 [2.05]
+zika_partial, genome 14 (rc)   1275 (100.00%) [100.00%]            2.05 [2.05]
+zika_partial, genome 15       10269 (100.00%) [100.00%]            1.55 [1.55]
+zika_partial, genome 15 (rc)  10269 (100.00%) [100.00%]            1.55 [1.55]
+zika_partial, genome 16       10269 (100.00%) [100.00%]            1.85 [1.85]
+zika_partial, genome 16 (rc)  10269 (100.00%) [100.00%]            1.85 [1.85]
+zika_partial, genome 17         749 (100.00%) [100.00%]            5.10 [5.10]
+zika_partial, genome 17 (rc)    749 (100.00%) [100.00%]            5.10 [5.10]
+zika_partial, genome 18        2601 (100.00%) [100.00%]            2.55 [2.55]
+zika_partial, genome 18 (rc)   2601 (100.00%) [100.00%]            2.55 [2.55]
+zika_partial, genome 19        2601 (100.00%) [100.00%]            2.52 [2.52]
+zika_partial, genome 19 (rc)   2601 (100.00%) [100.00%]            2.52 [2.52]
+zika_partial, genome 20         705 (100.00%) [100.00%]            1.71 [1.71]
+zika_partial, genome 20 (rc)    705 (100.00%) [100.00%]            1.71 [1.71]
+zika_partial, genome 21        1922 (100.00%) [100.00%]            2.56 [2.56]
+zika_partial, genome 21 (rc)   1922 (100.00%) [100.00%]            2.56 [2.56]
+zika_partial, genome 22        2825 (100.00%) [100.00%]            2.49 [2.49]
+zika_partial, genome 22 (rc)   2825 (100.00%) [100.00%]            2.49 [2.49]
+zika_partial, genome 23        2826 (100.00%) [100.00%]            2.35 [2.35]
+zika_partial, genome 23 (rc)   2826 (100.00%) [100.00%]            2.35 [2.35]
+zika_partial, genome 24         397 (100.00%) [100.00%]            1.53 [1.53]
+zika_partial, genome 24 (rc)    397 (100.00%) [100.00%]            1.53 [1.53]
+zika_partial, genome 25         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 25 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 26         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 26 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 27         976 (100.00%) [100.00%]            4.54 [4.54]
+zika_partial, genome 27 (rc)    976 (100.00%) [100.00%]            4.54 [4.54]
+zika_partial, genome 28         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 28 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 29         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 29 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 30         976 (100.00%) [100.00%]            4.33 [4.33]
+zika_partial, genome 30 (rc)    976 (100.00%) [100.00%]            4.33 [4.33]
+zika_partial, genome 31         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 31 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 32         976 (100.00%) [100.00%]            4.33 [4.33]
+zika_partial, genome 32 (rc)    976 (100.00%) [100.00%]            4.33 [4.33]
+zika_partial, genome 33           967 (99.08%) [99.18%]            3.92 [3.92]
+zika_partial, genome 33 (rc)      967 (99.08%) [99.18%]            3.92 [3.92]
+zika_partial, genome 34           951 (97.44%) [97.54%]            4.12 [4.13]
+zika_partial, genome 34 (rc)      951 (97.44%) [97.54%]            4.12 [4.13]
+zika_partial, genome 35         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 35 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 36         976 (100.00%) [100.00%]            4.54 [4.54]
+zika_partial, genome 36 (rc)    976 (100.00%) [100.00%]            4.54 [4.54]
+zika_partial, genome 37         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 37 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 38         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 38 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 39         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 39 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 40         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 40 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 41         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 41 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 42         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 42 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 43           965 (98.87%) [98.97%]            4.02 [4.02]
+zika_partial, genome 43 (rc)      965 (98.87%) [98.97%]            4.02 [4.02]
+zika_partial, genome 44         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 44 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 45         976 (100.00%) [100.00%]            4.33 [4.33]
+zika_partial, genome 45 (rc)    976 (100.00%) [100.00%]            4.33 [4.33]
+zika_partial, genome 46         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 46 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 47         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 47 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 48         976 (100.00%) [100.00%]            4.54 [4.54]
+zika_partial, genome 48 (rc)    976 (100.00%) [100.00%]            4.54 [4.54]
+zika_partial, genome 49         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 49 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 50         976 (100.00%) [100.00%]            4.54 [4.54]
+zika_partial, genome 50 (rc)    976 (100.00%) [100.00%]            4.54 [4.54]
+zika_partial, genome 51         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 51 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 52         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 52 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 53         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 53 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 54         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 54 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 55         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 55 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 56         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 56 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 57         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 57 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 58         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 58 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 59         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 59 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 60         976 (100.00%) [100.00%]            4.54 [4.54]
+zika_partial, genome 60 (rc)    976 (100.00%) [100.00%]            4.54 [4.54]
+zika_partial, genome 61         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 61 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 62         976 (100.00%) [100.00%]            4.54 [4.54]
+zika_partial, genome 62 (rc)    976 (100.00%) [100.00%]            4.54 [4.54]
+zika_partial, genome 63         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 63 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 64         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 64 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 65         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 65 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 66         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 66 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 67         976 (100.00%) [100.00%]            4.54 [4.54]
+zika_partial, genome 67 (rc)    976 (100.00%) [100.00%]            4.54 [4.54]
+zika_partial, genome 68         976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 68 (rc)    976 (100.00%) [100.00%]            4.64 [4.64]
+zika_partial, genome 69         976 (100.00%) [100.00%]            4.54 [4.54]
+zika_partial, genome 69 (rc)    976 (100.00%) [100.00%]            4.54 [4.54]
+zika_partial, genome 70         976 (100.00%) [100.00%]            4.54 [4.54]
+zika_partial, genome 70 (rc)    976 (100.00%) [100.00%]            4.54 [4.54]
+zika_partial, genome 71           939 (96.21%) [96.31%]            4.02 [4.02]
+zika_partial, genome 71 (rc)      939 (96.21%) [96.31%]            4.02 [4.02]
+zika_partial, genome 72         976 (100.00%) [100.00%]            4.54 [4.54]
+zika_partial, genome 72 (rc)    976 (100.00%) [100.00%]            4.54 [4.54]
+zika_partial, genome 73         976 (100.00%) [100.00%]            4.33 [4.33]
+zika_partial, genome 73 (rc)    976 (100.00%) [100.00%]            4.33 [4.33]
+zika_partial, genome 74         976 (100.00%) [100.00%]            4.54 [4.54]
+zika_partial, genome 74 (rc)    976 (100.00%) [100.00%]            4.54 [4.54]
+zika_partial, genome 75         976 (100.00%) [100.00%]            4.33 [4.33]
+zika_partial, genome 75 (rc)    976 (100.00%) [100.00%]            4.33 [4.33]
+zika_partial, genome 76         281 (100.00%) [100.00%]            2.16 [2.16]
+zika_partial, genome 76 (rc)    281 (100.00%) [100.00%]            2.16 [2.16]
+zika_partial, genome 77         281 (100.00%) [100.00%]            2.16 [2.16]
+zika_partial, genome 77 (rc)    281 (100.00%) [100.00%]            2.16 [2.16]
+zika_partial, genome 78         310 (100.00%) [100.00%]            2.91 [2.91]
+zika_partial, genome 78 (rc)    310 (100.00%) [100.00%]            2.91 [2.91]
+zika_partial, genome 79         309 (100.00%) [100.00%]            2.92 [2.92]
+zika_partial, genome 79 (rc)    309 (100.00%) [100.00%]            2.92 [2.92]
+zika_partial, genome 80         310 (100.00%) [100.00%]            2.91 [2.91]
+zika_partial, genome 80 (rc)    310 (100.00%) [100.00%]            2.91 [2.91]
+zika_partial, genome 81         310 (100.00%) [100.00%]            2.59 [2.59]
+zika_partial, genome 81 (rc)    310 (100.00%) [100.00%]            2.59 [2.59]
+zika_partial, genome 82         397 (100.00%) [100.00%]            1.53 [1.53]
+zika_partial, genome 82 (rc)    397 (100.00%) [100.00%]            1.53 [1.53]
+zika_partial, genome 83         397 (100.00%) [100.00%]            1.53 [1.53]
+zika_partial, genome 83 (rc)    397 (100.00%) [100.00%]            1.53 [1.53]
+zika_partial, genome 84         789 (100.00%) [100.00%]            1.28 [1.28]
+zika_partial, genome 84 (rc)    789 (100.00%) [100.00%]            1.28 [1.28]
+zika_partial, genome 85         330 (100.00%) [100.00%]            2.13 [2.13]
+zika_partial, genome 85 (rc)    330 (100.00%) [100.00%]            2.13 [2.13]
+zika_partial, genome 86         330 (100.00%) [100.00%]            2.13 [2.13]
+zika_partial, genome 86 (rc)    330 (100.00%) [100.00%]            2.13 [2.13]
+zika_partial, genome 87         789 (100.00%) [100.00%]            2.43 [2.43]
+zika_partial, genome 87 (rc)    789 (100.00%) [100.00%]            2.43 [2.43]
+zika_partial, genome 88         281 (100.00%) [100.00%]            2.15 [2.15]
+zika_partial, genome 88 (rc)    281 (100.00%) [100.00%]            2.15 [2.15]
+zika_partial, genome 89         296 (100.00%) [100.00%]            2.73 [2.73]
+zika_partial, genome 89 (rc)    296 (100.00%) [100.00%]            2.73 [2.73]
+zika_partial, genome 90         296 (100.00%) [100.00%]            2.72 [2.72]
+zika_partial, genome 90 (rc)    296 (100.00%) [100.00%]            2.72 [2.72]
+zika_partial, genome 91         296 (100.00%) [100.00%]            2.73 [2.73]
+zika_partial, genome 91 (rc)    296 (100.00%) [100.00%]            2.73 [2.73]
+zika_partial, genome 92         296 (100.00%) [100.00%]            2.38 [2.38]
+zika_partial, genome 92 (rc)    296 (100.00%) [100.00%]            2.38 [2.38]
+zika_partial, genome 93         296 (100.00%) [100.00%]            1.70 [1.70]
+zika_partial, genome 93 (rc)    296 (100.00%) [100.00%]            1.70 [1.70]
+zika_partial, genome 94         226 (100.00%) [100.00%]            1.77 [1.77]
+zika_partial, genome 94 (rc)    226 (100.00%) [100.00%]            1.77 [1.77]
+zika_partial, genome 95         792 (100.00%) [100.00%]            4.06 [4.06]
+zika_partial, genome 95 (rc)    792 (100.00%) [100.00%]            4.06 [4.06]
+zika_partial, genome 96         893 (100.00%) [100.00%]            4.05 [4.05]
+zika_partial, genome 96 (rc)    893 (100.00%) [100.00%]            4.05 [4.05]
+zika_partial, genome 97       10141 (100.00%) [100.00%]            2.07 [2.07]
+zika_partial, genome 97 (rc)  10141 (100.00%) [100.00%]            2.07 [2.07]
+zika_partial, genome 98         201 (100.00%) [100.00%]            1.51 [1.51]
+zika_partial, genome 98 (rc)    201 (100.00%) [100.00%]            1.51 [1.51]
+zika_partial, genome 99        1512 (100.00%) [100.00%]            2.33 [2.33]
+zika_partial, genome 99 (rc)   1512 (100.00%) [100.00%]            2.33 [2.33]
+zika_partial, genome 100        281 (100.00%) [100.00%]            2.15 [2.15]
+zika_partial, genome 100 (rc)   281 (100.00%) [100.00%]            2.15 [2.15]
+zika_partial, genome 101        281 (100.00%) [100.00%]            2.15 [2.15]
+zika_partial, genome 101 (rc)   281 (100.00%) [100.00%]            2.15 [2.15]
+zika_partial, genome 102        281 (100.00%) [100.00%]            2.16 [2.16]
+zika_partial, genome 102 (rc)   281 (100.00%) [100.00%]            2.16 [2.16]
+zika_partial, genome 103        281 (100.00%) [100.00%]            2.16 [2.16]
+zika_partial, genome 103 (rc)   281 (100.00%) [100.00%]            2.16 [2.16]
+zika_partial, genome 104       9981 (100.00%) [100.00%]            1.31 [1.31]
+zika_partial, genome 104 (rc)  9981 (100.00%) [100.00%]            1.31 [1.31]
+zika_partial, genome 105         9882 (99.01%) [99.02%]            1.17 [1.17]
+zika_partial, genome 105 (rc)    9882 (99.01%) [99.02%]            1.17 [1.17]
+zika_partial, genome 106        708 (100.00%) [100.00%]            2.14 [2.14]
+zika_partial, genome 106 (rc)   708 (100.00%) [100.00%]            2.14 [2.14]
+zika_partial, genome 107        708 (100.00%) [100.00%]            1.85 [1.85]
+zika_partial, genome 107 (rc)   708 (100.00%) [100.00%]            1.85 [1.85]
+zika_partial, genome 108        708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 108 (rc)   708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 109        708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 109 (rc)   708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 110        708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 110 (rc)   708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 111        708 (100.00%) [100.00%]            1.84 [1.84]
+zika_partial, genome 111 (rc)   708 (100.00%) [100.00%]            1.84 [1.84]
+zika_partial, genome 112        708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 112 (rc)   708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 113        708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 113 (rc)   708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 114        708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 114 (rc)   708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 115        708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 115 (rc)   708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 116        708 (100.00%) [100.00%]            1.28 [1.28]
+zika_partial, genome 116 (rc)   708 (100.00%) [100.00%]            1.28 [1.28]
+zika_partial, genome 117        708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 117 (rc)   708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 118        708 (100.00%) [100.00%]            1.70 [1.70]
+zika_partial, genome 118 (rc)   708 (100.00%) [100.00%]            1.70 [1.70]
+zika_partial, genome 119        708 (100.00%) [100.00%]            1.70 [1.70]
+zika_partial, genome 119 (rc)   708 (100.00%) [100.00%]            1.70 [1.70]
+zika_partial, genome 120        708 (100.00%) [100.00%]            1.56 [1.56]
+zika_partial, genome 120 (rc)   708 (100.00%) [100.00%]            1.56 [1.56]
+zika_partial, genome 121        708 (100.00%) [100.00%]            1.56 [1.56]
+zika_partial, genome 121 (rc)   708 (100.00%) [100.00%]            1.56 [1.56]
+zika_partial, genome 122        708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 122 (rc)   708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 123        708 (100.00%) [100.00%]            1.56 [1.56]
+zika_partial, genome 123 (rc)   708 (100.00%) [100.00%]            1.56 [1.56]
+zika_partial, genome 124        708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 124 (rc)   708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 125        708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 125 (rc)   708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 126        708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 126 (rc)   708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 127        708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 127 (rc)   708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 128        708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 128 (rc)   708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 129        708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 129 (rc)   708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 130        708 (100.00%) [100.00%]            1.84 [1.84]
+zika_partial, genome 130 (rc)   708 (100.00%) [100.00%]            1.84 [1.84]
+zika_partial, genome 131        708 (100.00%) [100.00%]            1.84 [1.84]
+zika_partial, genome 131 (rc)   708 (100.00%) [100.00%]            1.84 [1.84]
+zika_partial, genome 132        708 (100.00%) [100.00%]            1.56 [1.56]
+zika_partial, genome 132 (rc)   708 (100.00%) [100.00%]            1.56 [1.56]
+zika_partial, genome 133        708 (100.00%) [100.00%]            2.14 [2.14]
+zika_partial, genome 133 (rc)   708 (100.00%) [100.00%]            2.14 [2.14]
+zika_partial, genome 134        708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 134 (rc)   708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 135        708 (100.00%) [100.00%]            1.99 [1.99]
+zika_partial, genome 135 (rc)   708 (100.00%) [100.00%]            1.99 [1.99]
+zika_partial, genome 136        708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 136 (rc)   708 (100.00%) [100.00%]            1.42 [1.42]
+zika_partial, genome 137        536 (100.00%) [100.00%]            2.07 [2.07]
+zika_partial, genome 137 (rc)   536 (100.00%) [100.00%]            2.07 [2.07]
+zika_partial, genome 138        537 (100.00%) [100.00%]            1.12 [1.12]
+zika_partial, genome 138 (rc)   537 (100.00%) [100.00%]            1.12 [1.12]
+zika_partial, genome 139        537 (100.00%) [100.00%]            1.49 [1.49]
+zika_partial, genome 139 (rc)   537 (100.00%) [100.00%]            1.49 [1.49]
+zika_partial, genome 140        537 (100.00%) [100.00%]            1.49 [1.49]
+zika_partial, genome 140 (rc)   537 (100.00%) [100.00%]            1.49 [1.49]
+zika_partial, genome 141        537 (100.00%) [100.00%]            1.49 [1.49]
+zika_partial, genome 141 (rc)   537 (100.00%) [100.00%]            1.49 [1.49]
+zika_partial, genome 142        537 (100.00%) [100.00%]            2.44 [2.44]
+zika_partial, genome 142 (rc)   537 (100.00%) [100.00%]            2.44 [2.44]
+zika_partial, genome 143        537 (100.00%) [100.00%]            1.49 [1.49]
+zika_partial, genome 143 (rc)   537 (100.00%) [100.00%]            1.49 [1.49]
+zika_partial, genome 144        537 (100.00%) [100.00%]            1.49 [1.49]
+zika_partial, genome 144 (rc)   537 (100.00%) [100.00%]            1.49 [1.49]
+zika_partial, genome 145        537 (100.00%) [100.00%]            1.49 [1.49]
+zika_partial, genome 145 (rc)   537 (100.00%) [100.00%]            1.49 [1.49]
+zika_partial, genome 146        537 (100.00%) [100.00%]            2.06 [2.06]
+zika_partial, genome 146 (rc)   537 (100.00%) [100.00%]            2.06 [2.06]
+zika_partial, genome 147        537 (100.00%) [100.00%]            2.06 [2.06]
+zika_partial, genome 147 (rc)   537 (100.00%) [100.00%]            2.06 [2.06]
+zika_partial, genome 148        537 (100.00%) [100.00%]            2.06 [2.06]
+zika_partial, genome 148 (rc)   537 (100.00%) [100.00%]            2.06 [2.06]
+zika_partial, genome 149        537 (100.00%) [100.00%]            1.87 [1.87]
+zika_partial, genome 149 (rc)   537 (100.00%) [100.00%]            1.87 [1.87]
+zika_partial, genome 150        537 (100.00%) [100.00%]            1.50 [1.50]
+zika_partial, genome 150 (rc)   537 (100.00%) [100.00%]            1.50 [1.50]
+zika_partial, genome 151        537 (100.00%) [100.00%]            2.25 [2.25]
+zika_partial, genome 151 (rc)   537 (100.00%) [100.00%]            2.25 [2.25]
+zika_partial, genome 152        537 (100.00%) [100.00%]            2.05 [2.05]
+zika_partial, genome 152 (rc)   537 (100.00%) [100.00%]            2.05 [2.05]
+zika_partial, genome 153        537 (100.00%) [100.00%]            2.43 [2.43]
+zika_partial, genome 153 (rc)   537 (100.00%) [100.00%]            2.43 [2.43]
+zika_partial, genome 154        537 (100.00%) [100.00%]            2.25 [2.25]
+zika_partial, genome 154 (rc)   537 (100.00%) [100.00%]            2.25 [2.25]
+zika_partial, genome 155        537 (100.00%) [100.00%]            2.25 [2.25]
+zika_partial, genome 155 (rc)   537 (100.00%) [100.00%]            2.25 [2.25]
+zika_partial, genome 156        537 (100.00%) [100.00%]            2.43 [2.43]
+zika_partial, genome 156 (rc)   537 (100.00%) [100.00%]            2.43 [2.43]
+zika_partial, genome 157        537 (100.00%) [100.00%]            2.43 [2.43]
+zika_partial, genome 157 (rc)   537 (100.00%) [100.00%]            2.43 [2.43]
+zika_partial, genome 158        537 (100.00%) [100.00%]            1.12 [1.12]
+zika_partial, genome 158 (rc)   537 (100.00%) [100.00%]            1.12 [1.12]
+zika_partial, genome 159        537 (100.00%) [100.00%]            1.12 [1.12]
+zika_partial, genome 159 (rc)   537 (100.00%) [100.00%]            1.12 [1.12]
+zika_partial, genome 160        537 (100.00%) [100.00%]            1.12 [1.12]
+zika_partial, genome 160 (rc)   537 (100.00%) [100.00%]            1.12 [1.12]
+zika_partial, genome 161        537 (100.00%) [100.00%]            2.43 [2.43]
+zika_partial, genome 161 (rc)   537 (100.00%) [100.00%]            2.43 [2.43]
+zika_partial, genome 162        537 (100.00%) [100.00%]            1.12 [1.12]
+zika_partial, genome 162 (rc)   537 (100.00%) [100.00%]            1.12 [1.12]
+zika_partial, genome 163        537 (100.00%) [100.00%]            1.12 [1.12]
+zika_partial, genome 163 (rc)   537 (100.00%) [100.00%]            1.12 [1.12]
+zika_partial, genome 164        537 (100.00%) [100.00%]            1.12 [1.12]
+zika_partial, genome 164 (rc)   537 (100.00%) [100.00%]            1.12 [1.12]
+zika_partial, genome 165        537 (100.00%) [100.00%]            2.06 [2.06]
+zika_partial, genome 165 (rc)   537 (100.00%) [100.00%]            2.06 [2.06]
+zika_partial, genome 166        537 (100.00%) [100.00%]            2.06 [2.06]
+zika_partial, genome 166 (rc)   537 (100.00%) [100.00%]            2.06 [2.06]
+zika_partial, genome 167        537 (100.00%) [100.00%]            2.44 [2.44]
+zika_partial, genome 167 (rc)   537 (100.00%) [100.00%]            2.44 [2.44]
+zika_partial, genome 168        537 (100.00%) [100.00%]            2.44 [2.44]
+zika_partial, genome 168 (rc)   537 (100.00%) [100.00%]            2.44 [2.44]
+zika_partial, genome 169        537 (100.00%) [100.00%]            1.49 [1.49]
+zika_partial, genome 169 (rc)   537 (100.00%) [100.00%]            1.49 [1.49]
+zika_partial, genome 170        537 (100.00%) [100.00%]            1.69 [1.69]
+zika_partial, genome 170 (rc)   537 (100.00%) [100.00%]            1.69 [1.69]
+zika_partial, genome 171        537 (100.00%) [100.00%]            2.43 [2.43]
+zika_partial, genome 171 (rc)   537 (100.00%) [100.00%]            2.43 [2.43]
+zika_partial, genome 172        537 (100.00%) [100.00%]            2.06 [2.06]
+zika_partial, genome 172 (rc)   537 (100.00%) [100.00%]            2.06 [2.06]
+zika_partial, genome 173          501 (93.30%) [93.47%]            1.50 [1.50]
+zika_partial, genome 173 (rc)     501 (93.30%) [93.47%]            1.50 [1.50]
+zika_partial, genome 174        753 (100.00%) [100.00%]            1.33 [1.33]
+zika_partial, genome 174 (rc)   753 (100.00%) [100.00%]            1.33 [1.33]
+zika_partial, genome 175        753 (100.00%) [100.00%]            1.74 [1.74]
+zika_partial, genome 175 (rc)   753 (100.00%) [100.00%]            1.74 [1.74]
+zika_partial, genome 176        753 (100.00%) [100.00%]            1.74 [1.74]
+zika_partial, genome 176 (rc)   753 (100.00%) [100.00%]            1.74 [1.74]
+zika_partial, genome 177        753 (100.00%) [100.00%]            1.74 [1.74]
+zika_partial, genome 177 (rc)   753 (100.00%) [100.00%]            1.74 [1.74]
+zika_partial, genome 178        753 (100.00%) [100.00%]            1.60 [1.60]
+zika_partial, genome 178 (rc)   753 (100.00%) [100.00%]            1.60 [1.60]
+zika_partial, genome 179        753 (100.00%) [100.00%]            1.74 [1.74]
+zika_partial, genome 179 (rc)   753 (100.00%) [100.00%]            1.74 [1.74]
+zika_partial, genome 180          653 (86.72%) [86.84%]            1.20 [1.20]
+zika_partial, genome 180 (rc)     653 (86.72%) [86.84%]            1.20 [1.20]
+zika_partial, genome 181        753 (100.00%) [100.00%]            1.60 [1.60]
+zika_partial, genome 181 (rc)   753 (100.00%) [100.00%]            1.60 [1.60]
+zika_partial, genome 182        753 (100.00%) [100.00%]            1.60 [1.60]
+zika_partial, genome 182 (rc)   753 (100.00%) [100.00%]            1.60 [1.60]
+zika_partial, genome 183        753 (100.00%) [100.00%]            1.47 [1.47]
+zika_partial, genome 183 (rc)   753 (100.00%) [100.00%]            1.47 [1.47]
+zika_partial, genome 184        753 (100.00%) [100.00%]            1.47 [1.47]
+zika_partial, genome 184 (rc)   753 (100.00%) [100.00%]            1.47 [1.47]
+zika_partial, genome 185        735 (100.00%) [100.00%]            1.23 [1.23]
+zika_partial, genome 185 (rc)   735 (100.00%) [100.00%]            1.23 [1.23]
+zika_partial, genome 186        753 (100.00%) [100.00%]            1.34 [1.34]
+zika_partial, genome 186 (rc)   753 (100.00%) [100.00%]            1.34 [1.34]
+zika_partial, genome 187        753 (100.00%) [100.00%]            1.34 [1.34]
+zika_partial, genome 187 (rc)   753 (100.00%) [100.00%]            1.34 [1.34]
+zika_partial, genome 188        753 (100.00%) [100.00%]            1.34 [1.34]
+zika_partial, genome 188 (rc)   753 (100.00%) [100.00%]            1.34 [1.34]
+zika_partial, genome 189        753 (100.00%) [100.00%]            1.20 [1.20]
+zika_partial, genome 189 (rc)   753 (100.00%) [100.00%]            1.20 [1.20]
+zika_partial, genome 190        753 (100.00%) [100.00%]            1.34 [1.34]
+zika_partial, genome 190 (rc)   753 (100.00%) [100.00%]            1.34 [1.34]
+zika_partial, genome 191        753 (100.00%) [100.00%]            1.34 [1.34]
+zika_partial, genome 191 (rc)   753 (100.00%) [100.00%]            1.34 [1.34]
+zika_partial, genome 192        753 (100.00%) [100.00%]            1.34 [1.34]
+zika_partial, genome 192 (rc)   753 (100.00%) [100.00%]            1.34 [1.34]
+zika_partial, genome 193        753 (100.00%) [100.00%]            1.47 [1.47]
+zika_partial, genome 193 (rc)   753 (100.00%) [100.00%]            1.47 [1.47]
+zika_partial, genome 194        753 (100.00%) [100.00%]            1.47 [1.47]
+zika_partial, genome 194 (rc)   753 (100.00%) [100.00%]            1.47 [1.47]
+zika_partial, genome 195        753 (100.00%) [100.00%]            1.47 [1.47]
+zika_partial, genome 195 (rc)   753 (100.00%) [100.00%]            1.47 [1.47]
+zika_partial, genome 196        753 (100.00%) [100.00%]            1.47 [1.47]
+zika_partial, genome 196 (rc)   753 (100.00%) [100.00%]            1.47 [1.47]
+zika_partial, genome 197        753 (100.00%) [100.00%]            1.47 [1.47]
+zika_partial, genome 197 (rc)   753 (100.00%) [100.00%]            1.47 [1.47]
+zika_partial, genome 198        753 (100.00%) [100.00%]            1.47 [1.47]
+zika_partial, genome 198 (rc)   753 (100.00%) [100.00%]            1.47 [1.47]
+zika_partial, genome 199        753 (100.00%) [100.00%]            1.46 [1.46]
+zika_partial, genome 199 (rc)   753 (100.00%) [100.00%]            1.46 [1.46]
+zika_partial, genome 200        753 (100.00%) [100.00%]            1.46 [1.46]
+zika_partial, genome 200 (rc)   753 (100.00%) [100.00%]            1.46 [1.46]
+zika_partial, genome 201          690 (91.63%) [91.76%]            1.07 [1.07]
+zika_partial, genome 201 (rc)     690 (91.63%) [91.76%]            1.07 [1.07]
+zika_partial, genome 202        753 (100.00%) [100.00%]            1.33 [1.33]
+zika_partial, genome 202 (rc)   753 (100.00%) [100.00%]            1.33 [1.33]
+zika_partial, genome 203        753 (100.00%) [100.00%]            1.33 [1.33]
+zika_partial, genome 203 (rc)   753 (100.00%) [100.00%]            1.33 [1.33]
+zika_partial, genome 204        753 (100.00%) [100.00%]            1.33 [1.33]
+zika_partial, genome 204 (rc)   753 (100.00%) [100.00%]            1.33 [1.33]
+zika_partial, genome 205        753 (100.00%) [100.00%]            1.46 [1.46]
+zika_partial, genome 205 (rc)   753 (100.00%) [100.00%]            1.46 [1.46]
+zika_partial, genome 206        772 (100.00%) [100.00%]            1.18 [1.18]
+zika_partial, genome 206 (rc)   772 (100.00%) [100.00%]            1.18 [1.18]
+zika_partial, genome 207        841 (100.00%) [100.00%]            1.08 [1.08]
+zika_partial, genome 207 (rc)   841 (100.00%) [100.00%]            1.08 [1.08]
+zika_partial, genome 208        467 (100.00%) [100.00%]            2.59 [2.59]
+zika_partial, genome 208 (rc)   467 (100.00%) [100.00%]            2.59 [2.59]
+zika_partial, genome 209        397 (100.00%) [100.00%]            1.53 [1.53]
+zika_partial, genome 209 (rc)   397 (100.00%) [100.00%]            1.53 [1.53]
+zika_partial, genome 210        402 (100.00%) [100.00%]            1.76 [1.76]
+zika_partial, genome 210 (rc)   402 (100.00%) [100.00%]            1.76 [1.76]
+zika_partial, genome 211        10070 (98.06%) [98.08%]            1.78 [1.79]
+zika_partial, genome 211 (rc)   10070 (98.06%) [98.08%]            1.78 [1.79]
+zika_partial, genome 212        10200 (99.33%) [99.34%]            1.28 [1.28]
+zika_partial, genome 212 (rc)   10200 (99.33%) [99.34%]            1.28 [1.28]
+zika_partial, genome 213      10251 (100.00%) [100.00%]            1.24 [1.24]
+zika_partial, genome 213 (rc) 10251 (100.00%) [100.00%]            1.24 [1.24]
+zika_partial, genome 214        10010 (97.48%) [97.51%]            1.05 [1.05]
+zika_partial, genome 214 (rc)   10010 (97.48%) [97.51%]            1.05 [1.05]
+zika_partial, genome 215      10269 (100.00%) [100.00%]            1.36 [1.36]
+zika_partial, genome 215 (rc) 10269 (100.00%) [100.00%]            1.36 [1.36]
+zika_partial, genome 216       1029 (100.00%) [100.00%]            1.66 [1.66]
+zika_partial, genome 216 (rc)  1029 (100.00%) [100.00%]            1.66 [1.66]
+zika_partial, genome 217        766 (100.00%) [100.00%]            1.18 [1.18]
+zika_partial, genome 217 (rc)   766 (100.00%) [100.00%]            1.18 [1.18]
+zika_partial, genome 218        830 (100.00%) [100.00%]            1.45 [1.45]
+zika_partial, genome 218 (rc)   830 (100.00%) [100.00%]            1.45 [1.45]
+zika_partial, genome 219        232 (100.00%) [100.00%]            1.31 [1.31]
+zika_partial, genome 219 (rc)   232 (100.00%) [100.00%]            1.31 [1.31]
+zika_partial, genome 220        314 (100.00%) [100.00%]            1.28 [1.28]
+zika_partial, genome 220 (rc)   314 (100.00%) [100.00%]            1.28 [1.28]
+
