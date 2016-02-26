@@ -2,7 +2,7 @@ from collections import OrderedDict
 import os
 
 
-RESULTS_PATH = "/home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_all-human-host-viruses/2015-10/"
+RESULTS_PATH = "/home/unix/hmetsky/viral/viral-work/results/hybsel_design/viral-probe-set_all-human-host-viruses/recent-data/"
 
 DATASETS = OrderedDict()
 with open(RESULTS_PATH + "datasets.txt") as f:
@@ -16,6 +16,7 @@ with open(RESULTS_PATH + "datasets.txt") as f:
 # (submitted with too little memory requested), re-run them with
 # double the initial requested amount
 DOUBLE_MEM = True
+DOUBLE_MEM_TWICE = True
 
 # output of 'bjobs -w | grep RUN'; don't submit commands
 # that are running
@@ -29,7 +30,7 @@ if RUNNING_CMD_LIST is not None:
 
 # parameter space is (mismatches, cover_extension)
 PARAMETER_SPACE = [(mismatches, cover_extension)
-                   for mismatches in range(0, 10)
+                   for mismatches in range(0, 7)
                    for cover_extension in range(0, 51, 10)]
 
 def mem_requested(num_seqs, avg_seq_len, mismatches):
@@ -57,6 +58,8 @@ def mem_requested(num_seqs, avg_seq_len, mismatches):
             mem = 2
 
     if DOUBLE_MEM:
+        mem *= 2
+    if DOUBLE_MEM_TWICE:
         mem *= 2
     return mem
 
@@ -114,11 +117,14 @@ for dataset, stats in DATASETS.items():
         bsub_cmd += ["-P", "hybseldesign"]
 
         cmd = ["python", "bin/make_probes.py"]
+        cmd += ["--probe_length", "75"]
+        cmd += ["--probe_stride", "25"]
         cmd += ["--mismatches", str(mismatches)]
-        cmd += ["--lcf_thres", "100"]
+        cmd += ["--island_of_exact_match", "30"]
         cmd += ["--cover_extension", str(cover_extension)]
         cmd += ["--dataset"] + dataset
         cmd += ["--skip_adapters"]
+        cmd += ["--skip_reverse_complements"]
         cmd += ["--print_analysis"]
         cmd += ["--write_analysis_to_tsv", path + ".analysis.tsv"]
         cmd += ["--write_sliding_window_coverage", path + ".covg"]
