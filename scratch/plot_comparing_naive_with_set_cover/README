@@ -1,0 +1,6 @@
+- Plot titled "Scaling probe count with additional genomes" from early 2015 presentations
+- The 'naive' approach is LCS (longest common substring) together with dominating set
+    - So not completely naive (just tiling), but still based on the idea of reducing probe redundancies
+- The other approach is the set cover approach
+- Uses a 100 bp shared string (lcf_thres=100) and 0 mismatches
+- Over Ebola Zaire genomes with 100% coverage
