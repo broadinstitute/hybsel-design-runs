@@ -35,7 +35,7 @@ PARAMETER_SPACE = [(mismatches, cover_extension)
 
 def mem_requested(num_seqs, avg_seq_len, mismatches):
     cost = num_seqs * avg_seq_len
-    if cost > 2 * 10**7:
+    if cost > 3 * 10**7:
         if mismatches >= 7:
             mem = 32
         elif mismatches >= 4:
@@ -118,7 +118,7 @@ for dataset, stats in DATASETS.items():
 
         cmd = ["python", "bin/make_probes.py"]
         cmd += ["--probe_length", "75"]
-        cmd += ["--probe_stride", "25"]
+        cmd += ["--probe_stride", "75"]
         cmd += ["--mismatches", str(mismatches)]
         cmd += ["--island_of_exact_match", "30"]
         cmd += ["--cover_extension", str(cover_extension)]
