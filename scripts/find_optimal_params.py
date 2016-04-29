@@ -508,7 +508,8 @@ def write_params_to_file(params, probe_counts, path, type="int"):
 
 
 def main(args):
-    probe_counts = utils.read_probe_counts(args)
+    probe_counts = utils.read_probe_counts(args,
+        use_n_expanded_counts=args.use_n_expanded_counts)
 
     loss_fn = make_loss_fn(probe_counts, args.max_probe_count)
     bounds = make_param_bounds(probe_counts,
@@ -532,7 +533,9 @@ def main(args):
     print("Rounded parameter values:")
     print_params_by_dataset(opt_params, probe_counts, "int")
     opt_params_count = make_total_probe_count_across_datasets_fn(probe_counts)(opt_params)
+    opt_params_loss = loss_fn(opt_params, 0)
     print("TOTAL PROBE COUNT: %d" % opt_params_count)
+    print("TOTAL PARAMS LOSS: %f" % opt_params_loss)
     print("##############################")
 
     if args.verify_without_interp:
@@ -553,8 +556,11 @@ if __name__ == "__main__":
     argparse.add_argument('--verify_without_interp',
                           dest='verify_without_interp',
                           action='store_true')
-    argparse.add_argument('--hard_max_mismatches', type=int, default=5)
+    argparse.add_argument('--hard_max_mismatches', type=int, default=6)
     argparse.add_argument('--hard_max_cover_extension', type=int, default=50)
+    argparse.add_argument('--use_n_expanded_counts',
+                          dest='use_n_expanded_counts',
+                          action='store_true')
     args = argparse.parse_args()
 
     main(args)

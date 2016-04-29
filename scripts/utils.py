@@ -5,6 +5,8 @@ import re
 import subprocess
 
 FASTA_PATTERN = re.compile('mismatches_([0-9]+)-coverextension_([0-9]+)\.fasta')
+FASTA_PATTERN_NEXPANDED = \
+    re.compile('mismatches_([0-9]+)-coverextension_([0-9]+)\.n_expanded\.fasta')
 
 
 def count_probes(fn):
@@ -19,7 +21,8 @@ def count_probes(fn):
 
 def read_probe_counts(args,
                       skip=["datasets.txt",
-                            "all_mismatches_3-coverextension_0.fasta"]):
+                            "all_mismatches_3-coverextension_0.fasta"],
+                      use_n_expanded_counts=False):
     probe_counts = {}
     for dir in os.listdir(args.results_dir):
         if args.limit_datasets is not None and dir not in args.limit_datasets:
@@ -37,7 +40,10 @@ def read_probe_counts(args,
         for fn in os.listdir(dataset_results_path):
             # match fasta files; the parameters are part of the
             # file name
-            m = FASTA_PATTERN.match(fn)
+            if use_n_expanded_counts:
+                m = FASTA_PATTERN_NEXPANDED.match(fn)
+            else:
+                m = FASTA_PATTERN.match(fn)
             if m:
                 # fn is a fasta file
                 mismatches = int(m.group(1))
