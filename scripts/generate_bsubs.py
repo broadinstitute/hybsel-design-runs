@@ -16,7 +16,7 @@ with open(RESULTS_PATH + "datasets.txt") as f:
 # (submitted with too little memory requested), re-run them with
 # double the initial requested amount
 DOUBLE_MEM = True
-DOUBLE_MEM_TWICE = True
+DOUBLE_MEM_TWICE = False
 
 # output of 'bjobs -w | grep RUN'; don't submit commands
 # that are running
@@ -118,7 +118,7 @@ for dataset, stats in DATASETS.items():
 
         cmd = ["python", "bin/make_probes.py"]
         cmd += ["--probe_length", "75"]
-        cmd += ["--probe_stride", "75"]
+        cmd += ["--probe_stride", "25"]
         cmd += ["--mismatches", str(mismatches)]
         cmd += ["--island_of_exact_match", "30"]
         cmd += ["--cover_extension", str(cover_extension)]
