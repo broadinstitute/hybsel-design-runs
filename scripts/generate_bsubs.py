@@ -16,7 +16,7 @@ with open(RESULTS_PATH + "datasets.txt") as f:
 # (submitted with too little memory requested), re-run them with
 # double the initial requested amount
 DOUBLE_MEM = True
-DOUBLE_MEM_TWICE = False
+DOUBLE_MEM_TWICE = True
 
 # output of 'bjobs -w | grep RUN'; don't submit commands
 # that are running
@@ -131,10 +131,9 @@ for dataset, stats in DATASETS.items():
         cmd += ["-o", path + ".fasta"]
         cmd += ["--verbose"]
 
-        py_cmd = ' '.join(cmd)
         skip_cmd = False
         for r in RUNNING:
-            if py_cmd in r:
+            if path in r:
                 skip_cmd = True
                 break
         if skip_cmd:
