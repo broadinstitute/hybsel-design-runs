@@ -537,11 +537,16 @@ def main(args):
     print("TOTAL PROBE COUNT: %d" % opt_params_count)
     print("TOTAL PARAMS LOSS: %f" % opt_params_loss)
     print("##############################")
+    print()
 
+    print("##############################")
+    opt_params_count_no_interp = total_probe_count_without_interp(opt_params, probe_counts)
+    print("TOTAL PROBE COUNT WITHOUT INTERP: %d" % opt_params_count_no_interp)
+    print("##############################")
     if args.verify_without_interp:
         # As a sanity check, verify that we get the same total probe count
         # without using interpolation
-        assert opt_params_count == total_probe_count_without_interp(opt_params, probe_counts)
+        assert opt_params_count == opt_params_count_no_interp
 
     if args.output_params:
         write_params_to_file(opt_params, probe_counts, args.output_params)
