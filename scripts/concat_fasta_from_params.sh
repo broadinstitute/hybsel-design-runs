@@ -18,6 +18,6 @@ while read line; do
     params_sep=$(echo "$params" | sed 's/(//' | sed 's/)//' | sed 's/, / /')
     mismatches=$(echo "$params_sep" | awk '{print $1}')
     coverextension=$(echo "$params_sep" | awk '{print $2}')
-    fasta="$2/$dataset/mismatches_${mismatches}-coverextension_${coverextension}.fasta"
+    fasta="$2/$dataset/mismatches_${mismatches}-coverextension_${coverextension}.n_expanded.fasta"
     cat $fasta
 done < $1
