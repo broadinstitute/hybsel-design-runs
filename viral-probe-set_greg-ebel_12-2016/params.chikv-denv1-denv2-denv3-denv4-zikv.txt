@@ -1,0 +1,6 @@
+chikungunya	(2, 20)
+dengue_1	(3, 30)
+dengue_2	(4, 30)
+dengue_3	(3, 20)
+dengue_4	(3, 20)
+zika	(2, 10)

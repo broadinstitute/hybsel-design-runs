@@ -21,7 +21,9 @@ def count_probes(fn):
 
 def read_probe_counts(args,
                       skip=["datasets.txt",
-                            "all_mismatches_3-coverextension_0.fasta"],
+                            "all_mismatches_3-coverextension_0.fasta",
+                            "make_probes.sh",
+                            "archived"],
                       use_n_expanded_counts=False):
     probe_counts = {}
     for dir in os.listdir(args.results_dir):

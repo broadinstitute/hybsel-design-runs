@@ -1,0 +1,5 @@
+chikungunya	(2, 10)
+dengue_1	(2, 50)
+dengue_2	(2, 50)
+west_nile	(2, 50)
+zika	(2, 10)
