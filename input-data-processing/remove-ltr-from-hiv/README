@@ -1,0 +1,39 @@
+If we download a single fasta with all HIV (HIV-1 and HIV-2) sequences
+  (hiv.fasta), then start with step (1).
+If we have HIV-1 genomes and HIV-2 genomes already separated into two
+  FASTA files, then start with step (2). The fasta files given in this
+  directory were downloaded from GenBank, but were not split using
+  step (1). They should include the sequences in hiv.fasta, as well as
+  additional sequences. So hiv-1.fasta and hiv-2.fasta should include
+  more sequences combined than hiv.fasta. hiv-1.fasta came from
+  scripts/download-genbank-viral-genomes/existing/data/hiv1.fasta and
+  hiv-2.fasta came from
+  scripts/download-genbank-viral-genomes/existing/data/hiv2.fasta.
+
+1) Split hiv.fasta (all isolates) into HIV-1 and HIV-2:
+   a) cd viral-work/scripts/fasta-processing/
+   b) python split_by_regex.py -i ../../data-processing/remove-ltr-from-hiv/hiv.fasta -r ".*HIV-2.*|.*virus 2.*|.*type 2.*" -o1 ../../data-processing/remove-ltr-from-hiv/hiv-2.fasta -o2 ../../data-processing/remove-ltr-from-hiv/hiv-1.fasta
+   c) Manually move 'gi|60256|emb|X61240.1| Huma Immunodeficiency Virus Isolate D205, complete genome'
+        from hiv-1.fasta to hiv-2.fasta
+
+[Note that I took out the reference sequence that was in hiv-1.fasta (which came from
+hiv.fasta) and inserted my own reference sequence (from hiv1_ref.fasta) into hiv-1.fasta.]
+
+Do on each HIV-1 and HIV-2 (example showing HIV-2):
+2) Perform multiple sequence alignment across all isolate sequences (the reference sequence
+     should be one of these sequences -- it is for hiv-1.fasta and hiv-2.fasta):
+   muscle -in hiv-2.fasta -out hiv-2.aligned.fasta
+3) Using the reference sequence in hiv-2.aligned.fasta, remove the LTRs from all the
+     other sequences:
+   python remove_ltr.py -i hiv-2.aligned.fasta -o hiv-2_no-ltr.fasta -s hiv2
+4) Do a sanity check by looking at lengths:
+   a) Check lengths with the LTRs:
+      python ../../scripts/fasta-processing/print_lengths.py -i hiv-2.fasta
+   b) Notice that the total length of the reference (name with 'ref') is 10359
+   c) Add up the length of the LTRs. For HIV-2, the 5' is 855 bp long and the
+        3' is 10359-9504=855 bp long. So 1710 bp in total.
+   d) The length of the ref without the LTR should therefore be 10359-1710 = 8649 bp.
+   e) Check lengths without the LTRs:
+      python ../../scripts/fasta-processing/print_lengths.py -i hiv-2_no-ltr.fasta
+   f) Notice that the length of the reference without the LTR is 8649 bp long.
+   g) Notice that most sequences without the LTR have a length around 8649 bp.
