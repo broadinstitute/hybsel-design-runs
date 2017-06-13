@@ -1,0 +1,100 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# OS X's .DS_Store
+*.DS_Store
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# LSF and UGER output
+*.out
+
+# Core dumps
+core.*
+
+# R files
+*.R.swp
+*.RData
+*.Rout
+
+# Large hybsel_design result outputs
+/hepatitis_c/**/*.covg
+/hepatitis_c/**/*.fasta
+/hepatitis_c/**/*.analysis*.tsv
+/viral-probe-set*/**/*.covg
+/viral-probe-set*/**/*.fasta
+/viral-probe-set*/**/*.analysis.tsv
+/viral-probe-set*/**/*.fastq
+/viral-probe-set*/all_alignment_analysis
+/viral-probe-set*/alignment_analysis
+/viral-probe-set*/2015-10_alignment-analysis
+/viral-probe-set*/2016-01_alignment-analysis
+/viral-probe-set*/2016-06_alignment-analysis
+# Do allow the full, finalized probe sets
+!/viral-probe-set_06-2015_with-adapters/*.fasta
+!/viral-probe-set_06-2015_with-adapters/*.out
+!/viral-probe-set_zika-and-chikungunya_02-2016/*.fasta
+!/viral-probe-set_zika-and-chikungunya_02-2016/*.out
+!/viral-probe-set_greg-ebel_12-2016/*.fasta
+
+# hybsel_design analysis large files
+/viral-probe-set_06-2015_with-adapters/**/*.fastq.gz
+/viral-probe-set_06-2015_with-adapters/**/*.sam
+/viral-probe-set_06-2015_with-adapters/**/*.bam
+/viral-probe-set_06-2015_with-adapters/**/*.bai
+/viral-probe-set_06-2015_with-adapters/**/*.bt2
+/viral-probe-set_06-2015_with-adapters/**/*.fasta.*
+
+# Downloaded GenBank genomes
+/download-genbank-viral-genomes/all
+/download-genbank-viral-genomes/existing
