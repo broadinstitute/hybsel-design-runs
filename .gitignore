@@ -86,6 +86,7 @@ core.*
 !/viral-probe-set_zika-and-chikungunya_02-2016/*.fasta
 !/viral-probe-set_zika-and-chikungunya_02-2016/*.out
 !/viral-probe-set_greg-ebel_12-2016/*.fasta
+!/viral-probe-set_all-human-host-viruses/2016-06_params/count_350000.run-247.fasta
 
 # hybsel_design analysis large files
 /viral-probe-set_06-2015_with-adapters/**/*.fastq.gz
