@@ -68,9 +68,9 @@ core.*
 *.Rout
 
 # Large hybsel_design result outputs
-/hepatitis_c/**/*.covg
-/hepatitis_c/**/*.fasta
-/hepatitis_c/**/*.analysis*.tsv
+early-experiments/hepatitis_c/**/*.covg
+early-experiments/hepatitis_c/**/*.fasta
+early-experiments/hepatitis_c/**/*.analysis*.tsv
 /viral-probe-set*/**/*.covg
 /viral-probe-set*/**/*.fasta
 /viral-probe-set*/**/*.analysis.tsv
