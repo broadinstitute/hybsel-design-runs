@@ -71,30 +71,28 @@ core.*
 early-experiments/hepatitis_c/**/*.covg
 early-experiments/hepatitis_c/**/*.fasta
 early-experiments/hepatitis_c/**/*.analysis*.tsv
-/viral-probe-set*/**/*.covg
-/viral-probe-set*/**/*.fasta
-/viral-probe-set*/**/*.analysis.tsv
-/viral-probe-set*/**/*.fastq
-/viral-probe-set*/all_alignment_analysis
-/viral-probe-set*/alignment_analysis
-/viral-probe-set*/2015-10_alignment-analysis
-/viral-probe-set*/2016-01_alignment-analysis
-/viral-probe-set*/2016-06_alignment-analysis
+/probe-sets/**/*.covg
+/probe-sets/**/*.fasta
+/probe-sets/**/*.analysis.tsv
+/probe-sets/**/*.fastq
+/probe-sets/**/all-alignment-analysis
+/probe-sets/**/alignment-analysis
+
 # Do allow the full, finalized probe sets
-!/viral-probe-set_06-2015_with-adapters/*.fasta
-!/viral-probe-set_06-2015_with-adapters/*.out
-!/viral-probe-set_zika-and-chikungunya_02-2016/*.fasta
-!/viral-probe-set_zika-and-chikungunya_02-2016/*.out
-!/viral-probe-set_greg-ebel_12-2016/*.fasta
-!/viral-probe-set_all-human-host-viruses/2016-06_params/count_350000.run-247.fasta
+!/probe-sets/west-africa-viruses/all-with-adapters/*.fasta
+!/probe-sets/west-africa-viruses/all-with-adapters/*.out
+!/probe-sets/zika-and-chikungunya/2016-02/*.fasta
+!/probe-sets/zika-and-chikungunya/2016-02/*.out
+!/probe-sets/arboviruses/2016-12/ebel-lab/*.fasta
+!/probe-sets/all-human-viruses/2016-06/params/count_350000.run-247.fasta
 
 # hybsel_design analysis large files
-/viral-probe-set_06-2015_with-adapters/**/*.fastq.gz
-/viral-probe-set_06-2015_with-adapters/**/*.sam
-/viral-probe-set_06-2015_with-adapters/**/*.bam
-/viral-probe-set_06-2015_with-adapters/**/*.bai
-/viral-probe-set_06-2015_with-adapters/**/*.bt2
-/viral-probe-set_06-2015_with-adapters/**/*.fasta.*
+/probe-sets/west-africa-viruses/**/*.fastq.gz
+/probe-sets/west-africa-viruses/**/*.sam
+/probe-sets/west-africa-viruses/**/*.bam
+/probe-sets/west-africa-viruses/**/*.bai
+/probe-sets/west-africa-viruses/**/*.bt2
+/probe-sets/west-africa-viruses/**/*.fasta.*
 
 # Downloaded GenBank genomes
 /download-genbank-viral-genomes/all
