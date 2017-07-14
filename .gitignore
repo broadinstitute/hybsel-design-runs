@@ -85,6 +85,7 @@ early-experiments/hepatitis_c/**/*.analysis*.tsv
 !/probe-sets/zika-and-chikungunya/2016-02/*.out
 !/probe-sets/arboviruses/2016-12/ebel-lab/*.fasta
 !/probe-sets/all-human-viruses/2016-06/params/count_350000.run-247.fasta
+!/probe-sets/mumps-and-measles/2016-03/*.fasta
 
 # hybsel_design analysis large files
 /probe-sets/west-africa-viruses/**/*.fastq.gz
