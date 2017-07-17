@@ -67,6 +67,9 @@ core.*
 *.RData
 *.Rout
 
+# Batch files of hybsel_design commands
+/probe-sets/**/commands.txt
+
 # Large hybsel_design result outputs
 early-experiments/hepatitis_c/**/*.covg
 early-experiments/hepatitis_c/**/*.fasta
@@ -77,6 +80,7 @@ early-experiments/hepatitis_c/**/*.analysis*.tsv
 /probe-sets/**/*.fastq
 /probe-sets/**/all-alignment-analysis
 /probe-sets/**/alignment-analysis
+/probe-sets/**/log
 
 # Do allow the full, finalized probe sets
 !/probe-sets/west-africa-viruses/all-with-adapters/*.fasta
@@ -86,6 +90,7 @@ early-experiments/hepatitis_c/**/*.analysis*.tsv
 !/probe-sets/arboviruses/2016-12/ebel-lab/*.fasta
 !/probe-sets/all-human-viruses/2016-06/params/count_350000.run-247.fasta
 !/probe-sets/mumps-and-measles/2016-03/*.fasta
+!/probe-sets/ecoli/2017-07/uclust80/all-probes.fasta
 
 # hybsel_design analysis large files
 /probe-sets/west-africa-viruses/**/*.fastq.gz
@@ -94,6 +99,9 @@ early-experiments/hepatitis_c/**/*.analysis*.tsv
 /probe-sets/west-africa-viruses/**/*.bai
 /probe-sets/west-africa-viruses/**/*.bt2
 /probe-sets/west-africa-viruses/**/*.fasta.*
+
+# E. Coli input sequences
+/probe-sets/ecoli/**/input
 
 # Downloaded GenBank genomes
 /download-genbank-viral-genomes/all
