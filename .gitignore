@@ -90,7 +90,7 @@ early-experiments/hepatitis_c/**/*.analysis*.tsv
 !/probe-sets/arboviruses/2016-12/ebel-lab/*.fasta
 !/probe-sets/all-human-viruses/2016-06/params/count_350000.run-247.fasta
 !/probe-sets/mumps-and-measles/2016-03/*.fasta
-!/probe-sets/ecoli/2017-07/uclust80/all-probes.fasta
+!/probe-sets/ecoli/v1/uclust80/all-probes.fasta
 
 # hybsel_design analysis large files
 /probe-sets/west-africa-viruses/**/*.fastq.gz
