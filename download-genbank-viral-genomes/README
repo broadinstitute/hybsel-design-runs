@@ -1,5 +1,8 @@
 Download all datasets from GenBank:
 python -u download_dataset_fastas.py -dl datasets.txt -gl taxid10239.nbr.txt -o all
 
+The most recent download (all/) was generated with the following command:
+python -u download_dataset_fastas.py -dl datasets.txt -gl taxid10239.nbr.with_manual_additions.txt -o all --allow_multiple_dataset_matches
+
 Download just existing datasets, merging other sequences as given in datasets.existing_sequences.txt [datasets_to_skip.txt gives all datasets that are *not* existing -- so that only existing ones are downloaded] [an "existing" dataset is one for which we already have sequences, which may or may not include sequences from GenBank]:
 python download_dataset_fastas.py -dl datasets.txt -gl taxid10239.nbr.with_manual_additions.txt -es datasets.existing_sequences.txt -o existing/ -ds datasets_to_skip.txt

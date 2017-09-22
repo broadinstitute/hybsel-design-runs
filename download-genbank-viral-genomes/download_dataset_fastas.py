@@ -71,7 +71,12 @@ ADDITIONAL_HUMAN_HOST = [
     "Ljungan virus strain 174F",
     ####
     "Monkeypox virus",
-    "Cowpox virus"
+    "Cowpox virus",
+    "Saffold virus",
+    "Human coronavirus OC43",
+    "Human enteric coronavirus 4408",
+    "Borna disease virus 1",
+    "Borna disease virus 2"
 ]
 
 DATASET_PYTHON_TEMPLATE_UNSEGMENTED = "dataset_unsegmented.template.py"
@@ -287,6 +292,8 @@ def map_dataset_to_sequences(dataset_for_sequence):
 
 
 def download_dataset(dataset, sequences, extra_sequences_path, out_dir):
+    print("Starting download for", dataset.name)
+
     num_sequences_segmented = sum([s.is_segmented for s in sequences])
     if num_sequences_segmented > 0 and num_sequences_segmented != len(sequences):
         # either none or all sequences should be labeled as segmented
@@ -295,7 +302,10 @@ def download_dataset(dataset, sequences, extra_sequences_path, out_dir):
 
     is_segmented = num_sequences_segmented > 0
     segments = set(s.segment for s in sequences)
-    assert is_segmented == (len(segments) > 1)
+    # Note that len(segments) may equal 1 even if is_segmented is True if
+    # sequences for dataset are labeled with segments (e.g., assigned
+    # 'segment X') but only 1 segment's sequence is available among the
+    # sequences (i.e., all sequences are assigned 'segment X')
 
     if is_segmented:
         gb = download_raw_from_genbank(sequences, results_type='gb')
@@ -304,7 +314,7 @@ def download_dataset(dataset, sequences, extra_sequences_path, out_dir):
         sequences_for_strain = breakup_sequences_by_strain(sequences, strains,
                                                            segments)
 
-        print(("%s (%d sequences) is segmented with %d segments; found "
+        print(("%s (%d sequences) is segmented with %d sequenced segments; found "
                "strains for %d of these sequences (%d of the sequences "
                "could not be placed in a grouping)") % (dataset.name,
               len(sequences), len(segments), num_found,
@@ -368,7 +378,8 @@ def breakup_sequences_by_strain(sequences, strains, segments):
         sequences_for_strain[strain].append(sequence)
 
     # ensure each strain has at most 1 of each segment
-    additions_to_none = set()
+    strain_additions_to_none = set()
+    seq_additions_to_none = set()
     for strain in sequences_for_strain.keys():
         if strain == None:
             continue
@@ -379,11 +390,13 @@ def breakup_sequences_by_strain(sequences, strains, segments):
                 # segment appears more than once in this strain, so
                 # invalidate it by adding all of these sequences to the
                 # 'None' strain
+                strain_additions_to_none.add(strain)
                 for s in sequences_for_strain[strain]:
-                    additions_to_none.add(strain)
-                    sequences_for_strain[None].append(s)
-    for strain in additions_to_none:
+                    seq_additions_to_none.add(s)
+    for strain in strain_additions_to_none:
         del sequences_for_strain[strain]
+    for s in seq_additions_to_none:
+        sequences_for_strain[None].append(s)
 
     sequences_for_strain = dict(sequences_for_strain)
     if None not in sequences_for_strain:
@@ -761,7 +774,6 @@ def write_accession_nums(dataset, sequences, extra_sequences_path, out_dir):
     accession_nums = set([s.name for s in sequences])
 
     if extra_sequences_path:
-
         headers = read_extra_sequences_headers(extra_sequences_path,
                                                is_segmented)
         for header in headers:
@@ -806,6 +818,11 @@ def main(args):
     dataset_for_sequence = pair_each_sequence_with_dataset(sequences, datasets,
         datasets_to_skip, args.allow_multiple_dataset_matches)
     sequences_for_dataset = map_dataset_to_sequences(dataset_for_sequence)
+
+    for dataset in datasets:
+        if dataset not in sequences_for_dataset:
+            if dataset.name not in datasets_to_skip:
+                raise ValueError("No sequences for dataset: %s" % dataset.name)
 
     for dataset, sequences in sequences_for_dataset.items():
         if dataset.name in extra_sequences_paths:

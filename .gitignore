@@ -106,4 +106,5 @@ early-experiments/hepatitis_c/**/*.analysis*.tsv
 
 # Downloaded GenBank genomes
 /download-genbank-viral-genomes/all
+/download-genbank-viral-genomes/all.201510
 /download-genbank-viral-genomes/existing

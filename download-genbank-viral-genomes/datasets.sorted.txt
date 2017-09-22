@@ -1,68 +1,85 @@
 ablv	Australian bat lyssavirus
-achimota	Achimota virus( [0-9]+)?
+achimota	Achimota rubulavirus( [0-9]+)?
 aedes	Aedes flavivirus
-aguacate	Aguacate virus
-akabane	Akabane virus
+aguacate	Aguacate virus	not_believed_to_be_human_pathogen
+aichivirus_a	Aichivirus A
+akabane	Akabane orthobunyavirus	not_believed_to_be_human_pathogen
 alethinophid_reptarenavirus	Alethinophid [0-9]+ reptarenavirus
 allpahuayo	Allpahuayo mammarenavirus
-amapari	Amapari mammarenavirus
-ampv	Avian metapneumovirus
-andes	Andes virus
-apmv	Avian paramyxovirus(es)?( [0-9]+| penguin/Falkland Islands/324/2007)?
+amapari	Amapar mammarenavirus
+ambe	Ambe virus
+andes	Andes orthohantavirus
+anhanga	Anhanga virus
+anjozorobe	Anjozorobe hantavirus
+apmv	Avian (paramyxo|avula)virus(es)?( [0-9]+| penguin/Falkland Islands/324/2007)?	not_believed_to_be_human_pathogen
 apoi	Apoi virus
-aravan	Aravan virus
+aravan	Aravan lyssavirus
 aroa	Aroa virus
 arumowot	Arumowot virus
-aspv	Atlantic salmon paramyxovirus
-avian_vornavirus	Avian bornavirus
-b19	Primate erythroparvovirus 1
+b19	Primate erythroparvovirus 1	dna
 bagaza	Bagaza virus
 banna	Banna virus
-bat_hepevirus	Bat hepevirus
-bat_sapovirus_tlc58	Bat sapovirus TLC58/HK
+banzi	Banzi virus
+barmah_forest	Barmah Forest virus
+bat_hepacivirus	Bat hepacivirus
+bat_hepevirus	Orthohepevirus D
+bat_sapovirus_tlc58	Bat sapovirus TLC58/HK	not_believed_to_be_human_pathogen
 bear_canyon	Bear Canyon mammarenavirus
 beilong	Beilong virus
-betapapillomavirus_1	Betapapillomavirus 1
-betapapillomavirus_2	Betapapillomavirus 2
-betapapillomavirus_3	Betapapillomavirus 3
-betapapillomavirus_4	Betapapillomavirus 4
-betapapillomavirus_5	Betapapillomavirus 5
-betapapillomavirus_6	Betapapillomavirus 6
+betacoronavirus_1	Betacoronavirus 1
 bhanja	Bhanja virus
-bk	BK polyomavirus
+bk	Human polyomavirus 1
 bokeloh_bat	Bokeloh bat lyssavirus
-borna_disease	Borna disease virus
-bovine_hepacivirus	Bovine hepacivirus
-bpv_3	Bovine parainfluenza virus 3
+bouboui	Bouboui virus
+bourbon	Bourbon virus
+bovine_hepacivirus	Bovine hepacivirus	not_believed_to_be_human_pathogen
+bowe	Bowe orthohantavirus
+bpv_3	Bovine respirovirus 3	not_believed_to_be_human_pathogen
 brazoran	Brazoran virus
-brsv	Bovine respiratory syncytial virus
-bunyamwera	Bunyamwera virus
+bruges	Bruges orthohantavirus
+bujaru	Bujaru phlebovirus
+bunyamwera	Bunyamwera orthobunyavirus
+bwamba	Bwamba orthobunyavirus
 cache_valley	Cache Valley virus	compare_to_explicit_tax_name,subset:bunyamwera
-california_encephalitis	California encephalitis virus
-candiru	Candiru virus
-canine_distemper	Canine distemper virus
-canine_pneumovirus	Canine pneumovirus
-cedar	Cedar virus
+california_encephalitis	California encephalitis orthobunyavirus
+candiru	Candiru phlebovirus
+canine_distemper	Canine morbillivirus	not_believed_to_be_human_pathogen
+cano_delgadito	Cano Delgadito orthohantavirus
+cao_bang	Cao Bang orthohantavirus
+capim	Capim orthobunyavirus
+caraparu	Caraparu orthobunyavirus
+cardiovirus_a	Cardiovirus A
+cardiovirus_b	Cardiovirus B
+cedar	Cedar henipavirus
 cell_fusing_agent	Cell fusing agent virus
-cetacean_morbillivirus	Cetacean morbillivirus
-chandipura	Chandipura virus
+chandipura	Chandipura vesiculovirus
 chaoyang	Chaoyang virus
 chapare	Chapare mammarenavirus
 chikungunya	Chikungunya virus
-colobus_monkey_papillomavirus	Colobus monkey papillomavirus
-crimean_congo	Crimean-Congo hemorrhagic fever virus
+clo_mor	Clo Mor virus
+colobus_monkey_papillomavirus	Colobus monkey papillomavirus	dna,not_believed_to_be_human_pathogen
+cosavirus_a	Cosavirus A
+cowpox	Cowpox virus	dna
+crimean_congo	Crimean-Congo hemorrhagic fever orthonairovirus
 ctfv	Colorado tick fever virus
 cupixi	Cupixi mammarenavirus
-cxfv	Culex flavivirus
+cxfv	Culex flavivirus	not_believed_to_be_human_pathogen
+dengue_1	Dengue virus 1	compare_to_explicit_tax_name,subset:dengue
+dengue_2	Dengue virus 2	compare_to_explicit_tax_name,subset:dengue
+dengue_3	Dengue virus 3	compare_to_explicit_tax_name,subset:dengue
+dengue_4	Dengue virus 4	compare_to_explicit_tax_name,subset:dengue
 dengue	Dengue virus
-dobrava_belgrade	Dobrava-Belgrade virus
+dera_ghazi_khan	Dera Ghazi Khan orthonairovirus
+dhori	Dhori virus
+dobrava_belgrade	Dobrava-Belgrade orthohantavirus
 donggang	Donggang virus
-dugbe	Dugbe virus
-duvenhage	Duvenhage virus
-eblv_1	European bat lyssavirus 1
-eblv_2	European bat lyssavirus 2
-ebola_nonzaire	(Sudan ebolavirus|Bundibugyo virus|Tai Forest ebolavirus|Reston ebolavirus)
+dugbe	Dugbe orthonairovirus
+duvenhage	Duvenhage lyssavirus
+eblv_1	European bat 1 lyssavirus
+eblv_2	European bat 2 lyssavirus
+ebola_nonzaire	(Sudan ebolavirus|Bundibugyo ebolavirus|Tai Forest ebolavirus|Reston ebolavirus)
 ebola_zaire_with_2014	Zaire ebolavirus
+edge_hill	Edge Hill virus
 eee	Eastern equine encephalitis virus
 entebbe_bat	Entebbe bat virus
 enterovirus_a	Enterovirus A
@@ -70,145 +87,185 @@ enterovirus_b	Enterovirus B
 enterovirus_c	Enterovirus C
 enterovirus_d	Enterovirus D
 eyach	Eyach virus
-feline_morbillivirus	Feline morbillivirus
-fer_de_lance	Fer-de-Lance paramyxovirus
+feline_morbillivirus	Feline morbillivirus	not_believed_to_be_human_pathogen
+fer_de_lance	Reptilian ferlavirus
 fitzroy_river	Fitzroy River virus
 flexal	Flexal mammarenavirus
-gairo	Gairo virus
-gbv_c	GB virus C
-gemycircularvirus_sl1	Gemycircularvirus SL1
+fugong	Fugong orthohantavirus
+gadgets_gully	Gadgets Gully virus
+gairo	Gairo mammarenavirus
+gbv_c	Pegivirus C
+gemycircularvirus_hvgcv1	Gemycircularvirus HV-GcV1
+gemykibivirus_2	Human associated gemykibivirus 2	dna
+giant_panda	Giant panda anellovirus	dna
 goose_paramyxovirus_sf02	Goose paramyxovirus SF02
-great_island	Great Island virus
+gorilla	Gorilla anellovirus	dna
+great_island	Great Island virus	not_believed_to_be_human_pathogen
 guanarito	Guanarito mammarenavirus
-hantaan	Hantaan virus
+guaroa	Guaroa orthobunyavirus
+hag1	Human associated gemyvongvirus 1
+hanko	Hanko virus
+hantaan	Hantaan orthohantavirus
 hantavirus_z10	Hantavirus Z10
-hbov	Human bocavirus
+hbov	Human bocavirus	dna
 heartland	Heartland virus
-hecv_4408	Human enteric coronavirus strain 4408
-hendra	Hendra virus
-hepatitis_a	Hepatitis A virus
-hepatitis_b	Hepatitis B virus
+hendra	Hendra henipavirus
+hepacivirus_d	Hepacivirus D
+hepatitis_a	Hepatovirus A
+hepatitis_b	Hepatitis B virus	dna
 hepatitis_c	Hepatitis C virus
 hepatitis_delta	Hepatitis delta virus
-hepatitis_e	Hepatitis E virus
-herpesvirus_1	Human herpesvirus 1
-herpesvirus_2	Human herpesvirus 2
-herpesvirus_3	Human herpesvirus 3
-herpesvirus_4	Human herpesvirus 4
-herpesvirus_5	Human herpesvirus 5
-herpesvirus_6	Human herpesvirus 6[AB]
-herpesvirus_7	Human herpesvirus 7
-herpesvirus_8	Human herpesvirus 8
-hervk	Human endogenous retrovirus K
+hepatitis_e	Orthohepevirus A
+herpesvirus_1	Human alphaherpesvirus 1	dna
+herpesvirus_2	Human alphaherpesvirus 2	dna
+herpesvirus_3	Human alphaherpesvirus 3	dna
+herpesvirus_4	Human gammaherpesvirus 4	dna
+herpesvirus_5	Human betaherpesvirus 5	dna
+herpesvirus_6	Human betaherpesvirus 6[AB]	dna
+herpesvirus_7	Human betaherpesvirus 7	dna
+herpesvirus_8	Human gammaherpesvirus 8	dna
+hervk	Human endogenous retrovirus K	erv
+hfcj	Human fecal virus Jorvi([0-9]+)?
 hiv1	Human immunodeficiency virus 1
 hiv2	Human immunodeficiency virus 2
-hpiv_1	Human parainfluenza virus 1
-hpiv_2	Human parainfluenza virus 2
-hpiv_3	Human parainfluenza virus 3
-hpiv_4	Human parainfluenza virus 4
-hpv	Human papillomavirus( type [0-9]+)?
+hpiv_1	Human respirovirus 1
+hpiv_2	Human rubulavirus 2
+hpiv_3	Human respirovirus 3
+hpiv_4	Human rubulavirus 4
+hpv	(Human papillomavirus( type [0-9]+([a-zA-Z])?| - .+| SIBX8| SIBX1)?|Alphapapillomavirus 9|Macaca fascicularis papillomavirus 2)	dna,compare_to_explicit_tax_name
+hrsv	Human orthopneumovirus
+hughes	Hughes orthonairovirus
 human_coronavirus_229e	Human coronavirus 229E
 human_coronavirus_hku1	Human coronavirus HKU1
 human_coronavirus_nl63	Human coronavirus NL63
-human_coronavirus_oc43	Betacoronavirus 1
-human_genital_associated_circular_dna	Human genital-associated circular DNA virus-1
-human_picobirnavirus	Human picobirnavirus
-human_smacovirus_1	Human smacovirus 1
+human_genital_associated_circular_dna	Sewage derived gemygorvirus 1	dna
+human_pegivirus_2	Human pegivirus 2
+human_picobirnavirus	Human picobirnavirus	dna
+human_smacovirus_1	Human smacovirus 1	dna
 ikoma	Ikoma lyssavirus
 ilheus	Ilheus virus
+imjin	Imjin orthohantavirus
 influenza_a	Influenza A virus
 influenza_b	Influenza B virus
 influenza_c	Influenza C virus
-ippy	Ippy mammarenavirus
-irkut	Irkut virus
-j_virus	J-virus
-jc	JC polyomavirus
+irkut	Irkut lyssavirus
+isfahan	Isfahan vesiculovirus
+jc	Human polyomavirus 2
+jeju	Jeju orthohantavirus
 jev	Japanese encephalitis virus
+jugra	Jugra virus
 junin	Junin mammarenavirus
-kadipiro	Kadipiro virus
+j_virus	J-virus
+kadam	Kadam virus
+kadipiro	Kadipiro virus	not_believed_to_be_human_pathogen
+kaeng_khoi	Kaeng Khoi orthobunyavirus
 kamiti_river	Kamiti River virus
+kasokero	Kasokero orthonairovirus
 kedougou	Kedougou virus
+kenkeme	Kenkeme orthohantavirus
+keterah	Keterah orthonairovirus
 kfd	Kyasanur forest disease virus
-khujand	Khujand virus
-ki_polyomavirus	KI polyomavirus
+khabarovsk	Khabarovsk orthohantavirus
+ki_polyomavirus	Human polyomavirus 3	dna
 kokobera	Kokobera virus
-lagos_bat	Lagos bat virus
+lagos_bat	Lagos bat lyssavirus	not_believed_to_be_human_pathogen
 langat	Langat virus
 lassa	Lassa mammarenavirus
 latino	Latino mammarenavirus
 lcmv	Lymphocytic choriomeningitis mammarenavirus
+le_dantec	Le Dantec ledantevirus
 leopards_hill	Leopards Hill virus
-liao_ning	Liao ning virus
+liao_ning	Liao ning virus	dna,not_believed_to_be_human_pathogen
 lloviu_cuevavirus	Lloviu cuevavirus
 louping_ill	Louping ill virus
 lujo	Lujo mammarenavirus
 luna	Luna mammarenavirus
-lunk_nks1	Lunk virus NKS-1
 lyssavirus_ozernoe	Lyssavirus Ozernoe
 machupo	Machupo mammarenavirus
-mamastrovirus	Mamastrovirus 1
-manzanilla	Manzanilla virus
-mapuera	Mapuera virus
+madrid	Madrid orthobunyavirus
+mamastrovirus	(Mamastrovirus 1|Human astrovirus)
+mammalian_1_bornavirus	Mammalian 1 bornavirus
+manzanilla	Manzanilla orthobunyavirus
+maporal	Maporal orthohantavirus
+mapuera	Mapuera rubulavirus
+maraba	Maraba vesiculovirus
 marburg	Marburg marburgvirus
-mastadenovirus_a	Human mastadenovirus A
-mastadenovirus_b	Human mastadenovirus B
-mastadenovirus_c	Human mastadenovirus C
-mastadenovirus_d	Human mastadenovirus D
+marituba	Marituba orthobunyavirus
+mastadenovirus_a	Human mastadenovirus A	dna
+mastadenovirus_b	Human mastadenovirus B	dna
+mastadenovirus_c	Human mastadenovirus C	dna
+mastadenovirus_d	Human mastadenovirus D	dna
+mastadenovirus_e	Human mastadenovirus E	dna
+mastadenovirus_f	Human mastadenovirus F	dna
+mastadenovirus_g	Human mastadenovirus G	dna
 mayaro	Mayaro virus
-mcv	Merkel cell polyomavirus
-measles	Measles virus
-menangle	Menangle virus
+mcv	Human polyomavirus 5	dna
+measles	Measles morbillivirus
+menangle	Menangle rubulavirus
 mercadeo	Mercadeo virus
-mers	Middle East respiratory syndrome coronavirus
+mers	Middle East respiratory syndrome-related coronavirus
 metapneumovirus	Human metapneumovirus
-mobala	Mobala mammarenavirus
 modoc	Modoc virus
 mojiang	Mojiang virus
-mokola	Mokola virus
+mokola	Mokola lyssavirus
+molluscum_contagiosum	Molluscum contagiosum virus	dna
+monkeypox	Monkeypox virus	dna
 montana_myotis_leukoencephalitis	Montana myotis leukoencephalitis virus
-mopeia	Mopeia mammarenavirus
+montano	Montano orthohantavirus
 mopeia_lassa_reassortant_29	Mopeia Lassa virus reassortant 29
-morogoro	Morogoro virus
+mopeia	Mopeia mammarenavirus
+morogoro	Morogoro mammarenavirus
 mossman	Mossman virus
-mssi2_225	MSSI2\.225 virus
-mumps	Mumps virus
-murine_pneumonia	Murine pneumonia virus
+mssi2_225	Human associated gemykibivirus 1	dna
+mumps	Mumps rubulavirus
 mvev	Murray Valley encephalitis virus
+nairobi_sheep_disease	Nairobi sheep disease orthonairovirus
 nariva	Nariva virus
-ndv	Newcastle disease virus
-nipah	Nipah virus
+nipah	Nipah henipavirus
 norwalk	Norwalk virus
-norway_rat_hepacivirus	Norway rat hepacivirus( [0-9]+)?
+norway_rat_hepacivirus	Norway rat hepacivirus( [0-9]+)?	not_believed_to_be_human_pathogen
+nounane	Nounane virus
 ntaya	Ntaya virus
-o_nyong_nyong	O'nyong-nyong virus
+nyando	Nyando orthobunyavirus
+ochlerotatus_caspius	Ochlerotatus caspius flavivirus
 oliveros	Oliveros mammarenavirus
 omsk_hemorrhagiv_fever	Omsk hemorrhagic fever virus
-oropouche	Oropouche virus
+o_nyong_nyong	O'nyong-nyong virus
+orf	Orf virus	dna
+oriboca	Oriboca orthobunyavirus
+oropouche	Oropouche orthobunyavirus
 parana	Parana mammarenavirus
+parechovirus_a	Human parechovirus
+parechovirus_b	Ljungan virus
 parramatta_river	Parramatta River virus
-pichinde	Pichinde mammarenavirus
+pbv1	Primate bocaparvovirus 1
+phocine	Phocine morbillivirus
+pichinde	Pichinde mammarenavirus	not_believed_to_be_human_pathogen
 pirital	Pirital mammarenavirus
 piscihepevirus_a	Piscihepevirus A
-piv_5	Parainfluenza virus 5
+piv_5	Mammalian rubulavirus 5	not_believed_to_be_human_pathogen
 porcine	Porcine rubulavirus
 powassan	Powassan virus
-ppiv_1	Porcine parainfluenza virus 1
-pprv	Peste-des-petits-ruminants virus
+ppbv	Phnom Penh bat virus
+ppiv_1	Porcine respirovirus 1
+pprv	Small ruminant morbillivirus	not_believed_to_be_human_pathogen
 ptlv_1	Primate T-lymphotropic virus 1
 ptlv_2	Primate T-lymphotropic virus 2
-punta_toro	Punta Toro virus
-puumala	Puumala virus
+punta_toro	Punta Toro phlebovirus	not_believed_to_be_human_pathogen
+puumala	Puumala orthohantavirus
+qalyub	Qalyub orthonairovirus
 quang_binh	Quang Binh virus
+quezon	Quezon orthohantavirus
 razdan	Razdan virus
-reptile_bornavirus_1	Reptile bornavirus 1
-rhabdovirus	Rabies virus
+rhabdovirus	Rabies lyssavirus
 rhinovirus_a	Rhinovirus A
 rhinovirus_b	Rhinovirus B
-rift_valley_fever	Rift Valley fever virus
-rinderpest	Rinderpest virus
+rift_valley_fever	Rift Valley fever phlebovirus
+rinderpest	Rinderpest morbillivirus	not_believed_to_be_human_pathogen
 rio_bravo	Rio Bravo virus
-rodent_hepacivirus	Rodent hepacivirus
-rodent_torque_teno	Rodent Torque teno virus( [0-9]+)?
+rodent_hepacivirus	Rodent hepacivirus	not_believed_to_be_human_pathogen
+rodent_torque_teno	Rodent Torque teno virus( [0-9]+)?	dna
+rosavirus_a	Rosavirus A
 ross_river	Ross River virus
 rotavirus_a	Rotavirus A
 rotavirus_b	Rotavirus B
@@ -218,69 +275,91 @@ rotavirus_g	Rotavirus G
 rotavirus_h	Rotavirus H
 rotavirus_i	Rotavirus I
 royal_farm	Royal Farm virus
-rsv	(Human )?(R|r)espiratory syncytial virus
+rsv	Respiratory syncytial virus
 rubella	Rubella virus
 sabia	Sabia mammarenavirus
+saboya	Saboya virus
+salehabad	Salehabad phlebovirus
 salem	Salem virus
+salivirus_a	Salivirus A
 sapporo	Sapporo virus
-sars	Severe acute respiratory syndrome-related coronavirus
-sathuperi	Sathuperi virus
-seal_anellovirus	Seal anellovirus( TFFN/USA/2006| [0-9]+)?
-sendai	Sendai virus
-seoul	Seoul virus
+sars	SARS-related coronavirus
+sathuperi	Sathuperi orthobunyavirus	not_believed_to_be_human_pathogen
+saumarez_reef	Saumarez Reef virus
+seal_anellovirus	Seal anellovirus( TFFN/USA/2006| [0-9]+)?	dna,not_believed_to_be_human_pathogen
+semliki_forest	Semliki Forest virus
+sendai	Murine respirovirus
+seoul	Seoul orthohantavirus
 sepik	Sepik virus
-sfnv	Sandfly fever Naples virus
+sfnv	Sandfly fever Naples phlebovirus
 sfsv	Sandfly fever Sicilian virus
-sfts	Severe fever with thrombocytopenia syndrome virus
-shamonda	Shamonda virus
-shimoni_bat	Shimoni bat virus
-shuni	Shuni virus
-simbu	Simbu virus
-simian_41	Simian virus 41
-simian_torque_teno	Simian torque teno virus( [0-9]+)?
-sin_nombre	Sin Nombre virus
+sfts	SFTS phlebovirus
+shamonda	Shamonda orthobunyavirus	not_believed_to_be_human_pathogen
+shimoni_bat	Shimoni bat lyssavirus
+shuni	Shuni orthobunyavirus	not_believed_to_be_human_pathogen
+simbu	Simbu orthobunyavirus
+simian_41	Simian rubulavirus
+simian_foamy	Simian foamy virus
+simian_torque_teno	Simian torque teno virus( [0-9]+)?	dna
+sindbis	Sindbis virus
+sin_nombre	Sin Nombre orthohantavirus
 slev	St\. Louis encephalitis virus
-small_anellovirus	Small anellovirus
-sosuga	Sosuga virus
+small_anellovirus	Small anellovirus	dna
+sosuga	Sosuga rubulavirus
 spanish_goat_encephalitis	Spanish goat encephalitis virus
-sunshine	Sunshine virus
-sv40	Simian virus 40
+spondweni	Spondweni virus
+sv40	Macaca mulatta polyomavirus 1	dna
 tacaribe	Tacaribe mammarenavirus
 tailam	Tailam virus
-tamana_bat	Tamana bat virus
 tamiami	Tamiami mammarenavirus
+tanapox	Tanapox virus
+tapara	Tapara virus
 tbev	Tick-borne encephalitis virus
 tembusu	Tembusu virus
+tete	Tete orthobunyavirus
+thiafora	Thiafora orthonairovirus
 thogoto	Thogoto virus
-thottapalayam	Thottapalayam virus
-tioman	Tioman virus
-tlmv	TTV-like mini virus
-torque_teno	Torque teno virus( [0-9]+)?
-torque_teno_canis	Torque teno canis virus
-torque_teno_douroucouli	Torque teno douroucouli virus
-torque_teno_felis	Torque teno felis virus
-torque_teno_midi	Torque teno midi virus( [0-9]+)
-torque_teno_mini	Torque teno mini virus( ALA22| ALH8| [0-9]+)?
-torque_teno_sus	Torque teno sus virus( [a-z0-9]+)?
-torque_teno_tamarin	Torque teno tamarin virus
-torque_teno_zalophus	Torque teno zalophus virus( [0-9]+)?
-tuhoko	Tuhoko virus( [0-9]+)?
-tula	Tula virus
+tho	T'Ho virus
+thottapalayam	Thottapalayam orthohantavirus	not_believed_to_be_human_pathogen
+tioman	Tioman rubulavirus
+tlmv	TTV-like mini virus	dna
+tofla	Tofla virus
+toros	Toros virus
+torque_teno_canis	Torque teno canis virus	dna
+torque_teno_douroucouli	Torque teno douroucouli virus	dna
+torque_teno_felis	Torque teno felis virus	dna
+torque_teno_indri	Torque teno indri virus 1	dna
+torque_teno_leptonychotes_weddelli	Torque teno Leptonychotes weddellii virus(-[0-9]+)?	dna
+torque_teno_midi	Torque teno midi virus( [0-9]+)	dna
+torque_teno_mini	Torque teno mini virus( ALA22| ALH8| [0-9]+)?	dna
+torque_teno_sus	Torque teno sus virus( [a-z0-9]+)?	dna
+torque_teno_tamarin	Torque teno tamarin virus	dna
+torque_teno	Torque teno virus( [0-9]+)?	dna
+torque_teno_zalophus	Torque teno zalophus virus( [0-9]+)?	dna
+tuhoko	Tuhoko rubulavirus( [0-9]+)?
+tula	Tula orthohantavirus
 tupaia	Tupaia paramyxovirus
+uganda_s	Uganda S virus
+unidentified_circular_ssdna	unidentified circular ssDNA virus	dna
+uriurana	Uriurana virus
+urucuri	Urucuri virus
 usutu	Usutu virus
-uukuniemi	Uukuniemi virus
-vaccinia	Vaccinia virus
-variola	Variola virus
+uukuniemi	Uukuniemi phlebovirus
+vaccinia	Vaccinia virus	dna
+variola	Variola virus	dna
 vee	Venezuelan equine encephalitis virus
-vsiv	Vesicular stomatitis Indiana virus
+vsiv	Indiana vesiculovirus	not_believed_to_be_human_pathogen
 wee	Western equine encephalitis virus
 wesselsbron	Wesselsbron virus
-west_caucasion_bat	West Caucasian bat virus
+west_caucasion_bat	West Caucasian bat lyssavirus
 west_nile	West Nile virus
 whitewater_arroyo	Whitewater Arroyo mammarenavirus
-wu_polyomavirus	WU Polyomavirus
+wu_polyomavirus	Human polyomavirus 4	dna
+wyeomyia	Wyeomyia orthobunyavirus
+yaounde	Yaounde virus
 yellow_fever	Yellow fever virus
+ymt	Yaba monkey tumor virus
+yogue	Yogue virus
 yokose	Yokose virus
-ypv	Yug Bogdanovac virus
+zerdali	Zerdali virus
 zika	Zika virus
-zygosaccharomyces_bailii_z	Zygosaccharomyces bailii virus Z

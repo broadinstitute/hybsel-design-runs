@@ -1,111 +1,128 @@
-(Human )?(R|r)espiratory syncytial virus
-(Sudan ebolavirus|Bundibugyo virus|Tai Forest ebolavirus|Reston ebolavirus)
-Achimota virus( [0-9]+)?
+Achimota rubulavirus( [0-9]+)?
 Aedes flavivirus
 Aguacate virus
-Akabane virus
+Aichivirus A
+Akabane orthobunyavirus
 Alethinophid [0-9]+ reptarenavirus
 Allpahuayo mammarenavirus
-Amapari mammarenavirus
-Andes virus
+Amapar mammarenavirus
+Ambe virus
+Andes orthohantavirus
+Anhanga virus
+Anjozorobe hantavirus
 Apoi virus
-Aravan virus
+Aravan lyssavirus
 Aroa virus
 Arumowot virus
-Atlantic salmon paramyxovirus
 Australian bat lyssavirus
-Avian bornavirus
-Avian metapneumovirus
-Avian paramyxovirus(es)?( [0-9]+| penguin/Falkland Islands/324/2007)?
-BK polyomavirus
+Avian (paramyxo|avula)virus(es)?( [0-9]+| penguin/Falkland Islands/324/2007)?
 Bagaza virus
 Banna virus
-Bat hepevirus
+Banzi virus
+Barmah Forest virus
+Bat hepacivirus
 Bat sapovirus TLC58/HK
 Bear Canyon mammarenavirus
 Beilong virus
 Betacoronavirus 1
-Betapapillomavirus 1
-Betapapillomavirus 2
-Betapapillomavirus 3
-Betapapillomavirus 4
-Betapapillomavirus 5
-Betapapillomavirus 6
 Bhanja virus
 Bokeloh bat lyssavirus
-Borna disease virus
+Bouboui virus
 Bourbon virus
 Bovine hepacivirus
-Bovine parainfluenza virus 3
-Bovine respiratory syncytial virus
+Bovine respirovirus 3
+Bowe orthohantavirus
 Brazoran virus
-Bunyamwera virus
+Bruges orthohantavirus
+Bujaru phlebovirus
+Bunyamwera orthobunyavirus
+Bwamba orthobunyavirus
 Cache Valley virus
-California encephalitis virus
-Candiru virus
-Canine distemper virus
-Canine pneumovirus
-Cedar virus
+California encephalitis orthobunyavirus
+Candiru phlebovirus
+Canine morbillivirus
+Cano Delgadito orthohantavirus
+Cao Bang orthohantavirus
+Capim orthobunyavirus
+Caraparu orthobunyavirus
+Cardiovirus A
+Cardiovirus B
+Cedar henipavirus
 Cell fusing agent virus
-Cetacean morbillivirus
-Chandipura virus
+Chandipura vesiculovirus
 Chaoyang virus
 Chapare mammarenavirus
 Chikungunya virus
+Clo Mor virus
 Colobus monkey papillomavirus
 Colorado tick fever virus
+Cosavirus A
 Cowpox virus
-Crimean-Congo hemorrhagic fever virus
+Crimean-Congo hemorrhagic fever orthonairovirus
 Culex flavivirus
 Cupixi mammarenavirus
 Dengue virus
-Dobrava-Belgrade virus
+Dengue virus 1
+Dengue virus 2
+Dengue virus 3
+Dengue virus 4
+Dera Ghazi Khan orthonairovirus
+Dhori virus
+Dobrava-Belgrade orthohantavirus
 Donggang virus
-Dugbe virus
-Duvenhage virus
+Dugbe orthonairovirus
+Duvenhage lyssavirus
 Eastern equine encephalitis virus
+Edge Hill virus
 Entebbe bat virus
 Enterovirus A
 Enterovirus B
 Enterovirus C
 Enterovirus D
-European bat lyssavirus 1
-European bat lyssavirus 2
+European bat 1 lyssavirus
+European bat 2 lyssavirus
 Eyach virus
 Feline morbillivirus
-Fer-de-Lance paramyxovirus
 Fitzroy River virus
 Flexal mammarenavirus
-GB virus C
-Gairo virus
-Gemycircularvirus SL1
+Fugong orthohantavirus
+Gadgets Gully virus
+Gairo mammarenavirus
+Gemycircularvirus HV-GcV1
+Giant panda anellovirus
 Goose paramyxovirus SF02
+Gorilla anellovirus
 Great Island virus
 Guanarito mammarenavirus
-Hantaan virus
+Guaroa orthobunyavirus
+Hanko virus
+Hantaan orthohantavirus
 Hantavirus Z10
 Heartland virus
-Hendra virus
-Hepatitis A virus
+Hendra henipavirus
+Hepacivirus D
 Hepatitis B virus
 Hepatitis C virus
-Hepatitis E virus
 Hepatitis delta virus
+Hepatovirus A
+Hughes orthonairovirus
+Human alphaherpesvirus 1
+Human alphaherpesvirus 2
+Human alphaherpesvirus 3
+Human associated gemykibivirus 1
+Human associated gemykibivirus 2
+Human associated gemyvongvirus 1
+Human betaherpesvirus 5
+Human betaherpesvirus 6[AB]
+Human betaherpesvirus 7
 Human bocavirus
 Human coronavirus 229E
 Human coronavirus HKU1
 Human coronavirus NL63
 Human endogenous retrovirus K
-Human enteric coronavirus strain 4408
-Human genital-associated circular DNA virus-1
-Human herpesvirus 1
-Human herpesvirus 2
-Human herpesvirus 3
-Human herpesvirus 4
-Human herpesvirus 5
-Human herpesvirus 6[AB]
-Human herpesvirus 7
-Human herpesvirus 8
+Human fecal virus Jorvi([0-9]+)?
+Human gammaherpesvirus 4
+Human gammaherpesvirus 8
 Human immunodeficiency virus 1
 Human immunodeficiency virus 2
 Human mastadenovirus A
@@ -116,36 +133,51 @@ Human mastadenovirus E
 Human mastadenovirus F
 Human mastadenovirus G
 Human metapneumovirus
-Human papillomavirus( type [0-9]+)?
-Human parainfluenza virus 1
-Human parainfluenza virus 2
-Human parainfluenza virus 3
-Human parainfluenza virus 4
+Human orthopneumovirus
+(Human papillomavirus( type [0-9]+([a-zA-Z])?| - .+| SIBX8| SIBX1)?|Alphapapillomavirus 9|Macaca fascicularis papillomavirus 2)
 Human parechovirus
+Human pegivirus 2
 Human picobirnavirus
+Human polyomavirus 1
+Human polyomavirus 2
+Human polyomavirus 3
+Human polyomavirus 4
+Human polyomavirus 5
+Human respirovirus 1
+Human respirovirus 3
+Human rubulavirus 2
+Human rubulavirus 4
 Human smacovirus 1
 Ikoma lyssavirus
 Ilheus virus
+Imjin orthohantavirus
+Indiana vesiculovirus
 Influenza A virus
 Influenza B virus
 Influenza C virus
-Ippy mammarenavirus
-Irkut virus
-J-virus
-JC polyomavirus
+Irkut lyssavirus
+Isfahan vesiculovirus
 Japanese encephalitis virus
+Jeju orthohantavirus
+Jugra virus
 Junin mammarenavirus
-KI polyomavirus
+J-virus
+Kadam virus
 Kadipiro virus
+Kaeng Khoi orthobunyavirus
 Kamiti River virus
+Kasokero orthonairovirus
 Kedougou virus
-Khujand virus
+Kenkeme orthohantavirus
+Keterah orthonairovirus
+Khabarovsk orthohantavirus
 Kokobera virus
 Kyasanur forest disease virus
-Lagos bat virus
+Lagos bat lyssavirus
 Langat virus
 Lassa mammarenavirus
 Latino mammarenavirus
+Le Dantec ledantevirus
 Leopards Hill virus
 Liao ning virus
 Ljungan virus
@@ -153,70 +185,88 @@ Lloviu cuevavirus
 Louping ill virus
 Lujo mammarenavirus
 Luna mammarenavirus
-Lunk virus NKS-1
 Lymphocytic choriomeningitis mammarenavirus
 Lyssavirus Ozernoe
-MSSI2\.225 virus
+Macaca mulatta polyomavirus 1
 Machupo mammarenavirus
-Mamastrovirus 1
-Manzanilla virus
-Mapuera virus
+Madrid orthobunyavirus
+(Mamastrovirus 1|Human astrovirus)
+Mammalian 1 bornavirus
+Mammalian rubulavirus 5
+Manzanilla orthobunyavirus
+Maporal orthohantavirus
+Mapuera rubulavirus
+Maraba vesiculovirus
 Marburg marburgvirus
+Marituba orthobunyavirus
 Mayaro virus
-Measles virus
-Menangle virus
+Measles morbillivirus
+Menangle rubulavirus
 Mercadeo virus
-Merkel cell polyomavirus
-Middle East respiratory syndrome coronavirus
-Mobala mammarenavirus
+Middle East respiratory syndrome-related coronavirus
 Modoc virus
 Mojiang virus
-Mokola virus
+Mokola lyssavirus
+Molluscum contagiosum virus
 Monkeypox virus
 Montana myotis leukoencephalitis virus
+Montano orthohantavirus
 Mopeia Lassa virus reassortant 29
 Mopeia mammarenavirus
-Morogoro virus
+Morogoro mammarenavirus
 Mossman virus
-Mumps virus
-Murine pneumonia virus
+Mumps rubulavirus
+Murine respirovirus
 Murray Valley encephalitis virus
+Nairobi sheep disease orthonairovirus
 Nariva virus
-Newcastle disease virus
-Nipah virus
+Nipah henipavirus
 Norwalk virus
 Norway rat hepacivirus( [0-9]+)?
+Nounane virus
 Ntaya virus
-O'nyong-nyong virus
+Nyando orthobunyavirus
+Ochlerotatus caspius flavivirus
 Oliveros mammarenavirus
 Omsk hemorrhagic fever virus
-Oropouche virus
-Parainfluenza virus 5
+O'nyong-nyong virus
+Orf virus
+Oriboca orthobunyavirus
+Oropouche orthobunyavirus
+Orthohepevirus A
+Orthohepevirus D
 Parana mammarenavirus
 Parramatta River virus
-Peste-des-petits-ruminants virus
+Pegivirus C
+Phnom Penh bat virus
+Phocine morbillivirus
 Pichinde mammarenavirus
 Pirital mammarenavirus
 Piscihepevirus A
-Porcine parainfluenza virus 1
+Porcine respirovirus 1
 Porcine rubulavirus
 Powassan virus
+Primate bocaparvovirus 1
+Primate erythroparvovirus 1
 Primate T-lymphotropic virus 1
 Primate T-lymphotropic virus 2
-Primate erythroparvovirus 1
-Punta Toro virus
-Puumala virus
+Punta Toro phlebovirus
+Puumala orthohantavirus
+Qalyub orthonairovirus
 Quang Binh virus
-Rabies virus
+Quezon orthohantavirus
+Rabies lyssavirus
 Razdan virus
-Reptile bornavirus 1
+Reptilian ferlavirus
+Respiratory syncytial virus
 Rhinovirus A
 Rhinovirus B
-Rift Valley fever virus
-Rinderpest virus
+Rift Valley fever phlebovirus
+Rinderpest morbillivirus
 Rio Bravo virus
-Rodent Torque teno virus( [0-9]+)?
 Rodent hepacivirus
+Rodent Torque teno virus( [0-9]+)?
+Rosavirus A
 Ross River virus
 Rotavirus A
 Rotavirus B
@@ -228,70 +278,88 @@ Rotavirus I
 Royal Farm virus
 Rubella virus
 Sabia mammarenavirus
+Saboya virus
+Salehabad phlebovirus
 Salem virus
-Sandfly fever Naples virus
+Salivirus A
+Sandfly fever Naples phlebovirus
 Sandfly fever Sicilian virus
 Sapporo virus
-Sathuperi virus
+SARS-related coronavirus
+Sathuperi orthobunyavirus
+Saumarez Reef virus
 Seal anellovirus( TFFN/USA/2006| [0-9]+)?
 Semliki Forest virus
-Sendai virus
-Seoul virus
+Seoul orthohantavirus
 Sepik virus
-Severe acute respiratory syndrome-related coronavirus
-Severe fever with thrombocytopenia syndrome virus
-Shamonda virus
-Shimoni bat virus
-Shuni virus
-Simbu virus
+Sewage derived gemygorvirus 1
+SFTS phlebovirus
+Shamonda orthobunyavirus
+Shimoni bat lyssavirus
+Shuni orthobunyavirus
+Simbu orthobunyavirus
+Simian foamy virus
+Simian rubulavirus
 Simian torque teno virus( [0-9]+)?
-Simian virus 40
-Simian virus 41
-Sin Nombre virus
 Sindbis virus
+Sin Nombre orthohantavirus
 Small anellovirus
-Sosuga virus
+Small ruminant morbillivirus
+Sosuga rubulavirus
 Spanish goat encephalitis virus
 Spondweni virus
 St\. Louis encephalitis virus
-Sunshine virus
-TTV-like mini virus
+(Sudan ebolavirus|Bundibugyo ebolavirus|Tai Forest ebolavirus|Reston ebolavirus)
 Tacaribe mammarenavirus
 Tailam virus
-Tamana bat virus
 Tamiami mammarenavirus
+Tanapox virus
+Tapara virus
 Tembusu virus
+Tete orthobunyavirus
+Thiafora orthonairovirus
 Thogoto virus
-Thottapalayam virus
+Thottapalayam orthohantavirus
+T'Ho virus
 Tick-borne encephalitis virus
-Tioman virus
+Tioman rubulavirus
+Tofla virus
+Toros virus
 Torque teno canis virus
 Torque teno douroucouli virus
 Torque teno felis virus
+Torque teno indri virus 1
+Torque teno Leptonychotes weddellii virus(-[0-9]+)?
 Torque teno midi virus( [0-9]+)
 Torque teno mini virus( ALA22| ALH8| [0-9]+)?
 Torque teno sus virus( [a-z0-9]+)?
 Torque teno tamarin virus
 Torque teno virus( [0-9]+)?
 Torque teno zalophus virus( [0-9]+)?
-Tuhoko virus( [0-9]+)?
-Tula virus
+TTV-like mini virus
+Tuhoko rubulavirus( [0-9]+)?
+Tula orthohantavirus
 Tupaia paramyxovirus
+Uganda S virus
+unidentified circular ssDNA virus
+Uriurana virus
+Urucuri virus
 Usutu virus
-Uukuniemi virus
+Uukuniemi phlebovirus
 Vaccinia virus
 Variola virus
 Venezuelan equine encephalitis virus
-Vesicular stomatitis Indiana virus
-WU Polyomavirus
 Wesselsbron virus
-West Caucasian bat virus
-West Nile virus
+West Caucasian bat lyssavirus
 Western equine encephalitis virus
+West Nile virus
 Whitewater Arroyo mammarenavirus
+Wyeomyia orthobunyavirus
+Yaba monkey tumor virus
+Yaounde virus
 Yellow fever virus
+Yogue virus
 Yokose virus
-Yug Bogdanovac virus
 Zaire ebolavirus
+Zerdali virus
 Zika virus
-Zygosaccharomyces bailii virus Z
