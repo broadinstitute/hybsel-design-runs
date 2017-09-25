@@ -28,10 +28,19 @@ HIV2_LTR3_COORDS = (9504, 10359)
 def main(args):
     seqs = seq_io.read_fasta(args.i)
 
-    # Find the reference sequence ('ref' in name)
-    num_with_ref = sum(True if 'ref' in name else False for name in seqs.keys())
+    # Find the reference sequence. For HIV-1, the sequence header
+    # contains 'reference'; for HIV-2, the sequence header contains
+    # 'isolate BEN'
+    if args.s == 'hiv1':
+        ref_search_pattern = 'reference'
+    elif args.s == 'hiv2':
+        ref_search_pattern = 'isolate BEN'
+    else:
+        raise ValueError("Unknown sequence %s" % args.s)
+    num_with_ref = sum(True if ref_search_pattern in name else False
+                       for name in seqs.keys())
     assert num_with_ref == 1
-    ref_name = [name for name in seqs.keys() if 'ref' in name][0]
+    ref_name = [name for name in seqs.keys() if ref_search_pattern in name][0]
     ref_seq = seqs[ref_name]
 
     # Find the index end of the 5' LTR (i.e., counting gaps)
@@ -39,8 +48,6 @@ def main(args):
         ltr_end_bp = HIV1_LTR5_COORDS[1]
     elif args.s == 'hiv2':
         ltr_end_bp = HIV2_LTR5_COORDS[1]
-    else:
-        raise ValueError("Unknown sequence %s" % args.s)
     bp = 0
     for i in range(len(ref_seq)):
         if ref_seq[i] != '-':
