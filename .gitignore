@@ -76,6 +76,8 @@ early-experiments/hepatitis_c/**/*.fasta
 early-experiments/hepatitis_c/**/*.analysis*.tsv
 /probe-sets/**/*.covg
 /probe-sets/**/*.fasta
+/probe-sets/**/*.fna.gz
+/probe-sets/**/*.fa
 /probe-sets/**/*.analysis.tsv
 /probe-sets/**/*.fastq
 /probe-sets/**/all-alignment-analysis
