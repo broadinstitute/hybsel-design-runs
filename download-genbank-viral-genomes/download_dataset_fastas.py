@@ -19,7 +19,7 @@ Entrez.email = "hayden@mit.edu"
 
 ADDITIONAL_HUMAN_HOST = [
     "Hepatitis A virus",
-    "Middle East respiratory syndrome coronavirus"
+    "Middle East respiratory syndrome coronavirus",
     "Human herpesvirus 6A",
     "Human herpesvirus 6B",
     "Eastern equine encephalitis virus",
