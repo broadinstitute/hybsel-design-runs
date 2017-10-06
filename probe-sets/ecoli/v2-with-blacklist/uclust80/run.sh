@@ -13,8 +13,8 @@ if [[ $1 == "make-commands" ]]; then
     # Use '--small_seq_min 60' because a small number of sequences (1475)
     # have a length that is less than the probe length, and the length of the
     # shortest sequence is 60.
-    for m in 2; do
-        for e in 25; do
+    for m in 2 4 6; do
+        for e in 25 50 100; do
             mkdir -p probes/m${m}-e${e}-iem30-expandn
             for x in input/*; do
                 f=$(echo "$x" | awk -F'/' '{print $2}')
