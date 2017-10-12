@@ -1,0 +1,23 @@
+Arenaviridae,Mammarenavirus,Lassa mammarenavirus
+Coronaviridae,Betacoronavirus,Middle East respiratory syndrome-related coronavirus
+Coronaviridae,Betacoronavirus,SARS-related coronavirus
+Filoviridae,Ebolavirus,Bundibugyo ebolavirus
+Filoviridae,Ebolavirus,Reston ebolavirus
+Filoviridae,Ebolavirus,Sudan ebolavirus
+Filoviridae,Ebolavirus,Tai Forest ebolavirus
+Filoviridae,Ebolavirus,Zaire ebolavirus
+Filoviridae,Marburgvirus,Marburg marburgvirus
+Flaviviridae,Flavivirus,Dengue virus
+Flaviviridae,Flavivirus,Yellow fever virus
+Flaviviridae,Hepacivirus,Hepatitis C virus
+Flaviviridae,Pegivirus,Pegivirus C
+Nairoviridae,Orthonairovirus,Crimean-Congo hemorrhagic fever orthonairovirus
+Orthomyxoviridae,Influenzavirus A,Influenza A virus
+Orthomyxoviridae,Influenzavirus B,Influenza B virus
+Paramyxoviridae,Morbillivirus,Measles morbillivirus
+Phenuiviridae,Phlebovirus,Rift Valley fever phlebovirus
+Picornaviridae,Hepatovirus,Hepatovirus A
+Retroviridae,Lentivirus,Human immunodeficiency virus 1
+Retroviridae,Lentivirus,Human immunodeficiency virus 2
+Rhabdoviridae,Lyssavirus,Rabies lyssavirus
+Togaviridae,Alphavirus,Chikungunya virus
