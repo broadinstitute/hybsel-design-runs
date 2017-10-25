@@ -110,3 +110,4 @@ early-experiments/hepatitis_c/**/*.analysis*.tsv
 /download-genbank-viral-genomes/all
 /download-genbank-viral-genomes/all.201510
 /download-genbank-viral-genomes/existing
+/download-genbank-viral-genomes/influenza/influenza.acc-list.txt

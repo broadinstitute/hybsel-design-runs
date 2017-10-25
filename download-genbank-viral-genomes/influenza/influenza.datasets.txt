@@ -1,0 +1,3 @@
+influenza_a	Influenza A virus
+influenza_b	Influenza B virus
+influenza_c	Influenza C virus
