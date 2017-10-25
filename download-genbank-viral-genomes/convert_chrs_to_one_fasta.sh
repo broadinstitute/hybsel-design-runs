@@ -15,7 +15,7 @@
 
 echo -n "" > $2
 
-for f in $(ls -1 $1/*.fasta); do
+for f in $(find $1 -type f -name '*.fasta'); do
     g=$(echo "${f##*/}" | sed 's/\.fasta//')
     while read line; do
         if [[ "$line" == ">"* ]]; then
