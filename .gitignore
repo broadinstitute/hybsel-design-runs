@@ -106,6 +106,9 @@ early-experiments/hepatitis_c/**/*.analysis*.tsv
 # E. Coli input sequences
 /probe-sets/ecoli/**/input
 
+# E. Coli final probe set, which is large
+/probe-sets/ecoli/v2-with-blacklist/uclust80/final-probe-set/OID45307_truncated_probes.txt
+
 # Downloaded GenBank genomes
 /download-genbank-viral-genomes/all
 /download-genbank-viral-genomes/all.201510
