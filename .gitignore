@@ -71,9 +71,9 @@ core.*
 /probe-sets/**/commands.txt
 
 # Large hybsel_design result outputs
-early-experiments/hepatitis_c/**/*.covg
-early-experiments/hepatitis_c/**/*.fasta
-early-experiments/hepatitis_c/**/*.analysis*.tsv
+/experiments/early-experiments/hepatitis_c/**/*.covg
+/experiments/early-experiments/hepatitis_c/**/*.fasta
+/experiments/early-experiments/hepatitis_c/**/*.analysis*.tsv
 /probe-sets/**/*.covg
 /probe-sets/**/*.fasta
 /probe-sets/**/*.fna.gz
