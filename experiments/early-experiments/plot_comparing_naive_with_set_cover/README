@@ -4,3 +4,7 @@
 - The other approach is the set cover approach
 - Uses a 100 bp shared string (lcf_thres=100) and 0 mismatches
 - Over Ebola Zaire genomes with 100% coverage
+
+(Note in 2017-11: I can't remember, but probe counts for the naive approach were
+probably produced using the script 'make_probes_by_redundancy_reduction.py' that
+existed early in the hybsel_design repo.)
