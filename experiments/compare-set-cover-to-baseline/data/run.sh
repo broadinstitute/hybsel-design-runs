@@ -67,31 +67,43 @@ if [[ $1 == "make-commands" ]]; then
             if try_approach "sc"; then
                 for m in "${MISMATCHES_TO_TRY[@]}"; do
                     for e in "${EXTENSIONS_TO_TRY[@]}"; do
-                        cmd="make_probes.py -pl 75 -ps 25 -l 75 -m $m -e $e --skip_reverse_complements --skip_adapters -d $DATASET --limit_target_genomes_randomly_with_replacement $n --max_num_processes 2 --verbose > $DATASET/num-probes/sc.m${m}-e${e}.n${n}.k${k} 2> $DATASET/log/sc.m${m}-e${e}.n${n}.k${k}.err"
-                        echo "$cmd" >> $COMMANDS
+                        outfn="$DATASET/num-probes/sc.m${m}-e${e}.n${n}.k${k}"
+                        if ! [[ -f "$outfn" && -s "$outfn" ]]; then
+                            cmd="make_probes.py -pl 75 -ps 25 -l 75 -m $m -e $e --skip_reverse_complements --skip_adapters -d $DATASET --limit_target_genomes_randomly_with_replacement $n --max_num_processes 8 --verbose > $outfn 2> $DATASET/log/sc.m${m}-e${e}.n${n}.k${k}.err"
+                            echo "$cmd" >> $COMMANDS
+                        fi
                     done
                 done
             fi
 
             # Design probes with naive tiling approach
             if try_approach "nt"; then
-                cmd="make_probes_naively.py -pl 75 -ps 25 --skip_reverse_complements -d $DATASET --limit_target_genomes_randomly_with_replacement $n --verbose > $DATASET/num-probes/nt.n${n}.k${k} 2> $DATASET/log/nt.n${n}.k${k}.err"
-                echo "$cmd" >> $COMMANDS
+                outfn="$DATASET/num-probes/nt.n${n}.k${k}"
+                if ! [[ -f "$outfn" && -s "$outfn" ]]; then
+                    cmd="make_probes_naively.py -pl 75 -ps 25 --skip_reverse_complements -d $DATASET --limit_target_genomes_randomly_with_replacement $n --verbose > $outfn 2> $DATASET/log/nt.n${n}.k${k}.err"
+                    echo "$cmd" >> $COMMANDS
+                fi
             fi
 
             # Design probes with naive redundant filter
             if try_approach "nr"; then
                 for m in "${MISMATCHES_TO_TRY[@]}"; do
-                    cmd="make_probes_naively.py -pl 75 -ps 25 --naive_redundant_filter $m 65 --skip_reverse_complements -d $DATASET --limit_target_genomes_randomly_with_replacement $n --verbose > $DATASET/num-probes/nr.m${m}.n${n}.k${k} 2> $DATASET/log/nr.m${m}.n${n}.k${k}.err"
-                    echo "$cmd" >> $COMMANDS
+                    outfn="$DATASET/num-probes/nr.m${m}.n${n}.k${k}"
+                    if ! [[ -f "$outfn" && -s "$outfn" ]]; then
+                        cmd="make_probes_naively.py -pl 75 -ps 25 --naive_redundant_filter $m 65 --skip_reverse_complements -d $DATASET --limit_target_genomes_randomly_with_replacement $n --verbose > $outfn 2> $DATASET/log/nr.m${m}.n${n}.k${k}.err"
+                        echo "$cmd" >> $COMMANDS
+                    fi
                 done
             fi
 
             # Design probes with dominating set filter
             if try_approach "ds"; then
                 for m in "${MISMATCHES_TO_TRY[@]}"; do
-                    cmd="make_probes_naively.py -pl 75 -ps 25 --dominating_set_filter $m 65 --skip_reverse_complements -d $DATASET --limit_target_genomes_randomly_with_replacement $n --verbose > $DATASET/num-probes/ds.m${m}.n${n}.k${k} 2> $DATASET/log/ds.m${m}.n${n}.k${k}.err"
-                    echo "$cmd" >> $COMMANDS
+                    outfn="$DATASET/num-probes/ds.m${m}.n${n}.k${k}"
+                    if ! [[ -f "$outfn" && -s "$outfn" ]]; then
+                        cmd="make_probes_naively.py -pl 75 -ps 25 --dominating_set_filter $m 65 --skip_reverse_complements -d $DATASET --limit_target_genomes_randomly_with_replacement $n --verbose > $outfn 2> $DATASET/log/ds.m${m}.n${n}.k${k}.err"
+                        echo "$cmd" >> $COMMANDS
+                    fi
                 done
             fi
 
