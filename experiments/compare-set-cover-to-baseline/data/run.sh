@@ -15,46 +15,48 @@
 #         applicable (comma separated)
 #      6: cover extensions to try for set cover approach
 #         (comma separated)
+#   If subcommand is "parallel":
+#      3: number of jobs to run in parallel
 
 DATASET=$2
 mkdir -p $DATASET
-
-# Draw samples of the following sizes: between start and
-# end, spaced by the stride; the sample size is the number
-# of genomes randomly selected to be used as an input (i.e.,
-# in the plot generated downstream, it is the number of
-# genomes as plotted on the x-axis)
-SAMPLE_SIZE_START=$(echo "$3" | awk -F, '{print $1}')
-SAMPLE_SIZE_END=$(echo "$3" | awk -F, '{print $2}')
-SAMPLE_SIZE_STRIDE=$(echo "$3" | awk -F, '{print $3}')
-
-# Draw the following number of samples for each value of
-# the sample size (used to construct a confidence interval
-# for a particular combination of approach and sample
-# size)
-NUM_SAMPLES=5
-
-IFS=',' read -ra APPROACHES_TO_TRY <<< "$4"
-IFS=',' read -ra MISMATCHES_TO_TRY <<< "$5"
-IFS=',' read -ra EXTENSIONS_TO_TRY <<< "$6"
-
-# Check if array contains an element
-# From https://stackoverflow.com/a/8574392
-contains_element() {
-  local e match="$1"
-  shift
-  for e; do [[ "$e" == "$match" ]] && return 0; done
-  return 1
-}
-try_approach() {
-    return $(contains_element $1 "${APPROACHES_TO_TRY[@]}")
-}
 
 COMMANDS="$DATASET/commands.txt"
 COMBINED_NUM_PROBES="$DATASET/num-probes.tsv"
 
 if [[ $1 == "make-commands" ]]; then
     # Make commands to call hybsel_design to calculate number of probes
+
+    # Draw samples of the following sizes: between start and
+    # end, spaced by the stride; the sample size is the number
+    # of genomes randomly selected to be used as an input (i.e.,
+    # in the plot generated downstream, it is the number of
+    # genomes as plotted on the x-axis)
+    SAMPLE_SIZE_START=$(echo "$3" | awk -F, '{print $1}')
+    SAMPLE_SIZE_END=$(echo "$3" | awk -F, '{print $2}')
+    SAMPLE_SIZE_STRIDE=$(echo "$3" | awk -F, '{print $3}')
+
+    # Draw the following number of samples for each value of
+    # the sample size (used to construct a confidence interval
+    # for a particular combination of approach and sample
+    # size)
+    NUM_SAMPLES=5
+
+    IFS=',' read -ra APPROACHES_TO_TRY <<< "$4"
+    IFS=',' read -ra MISMATCHES_TO_TRY <<< "$5"
+    IFS=',' read -ra EXTENSIONS_TO_TRY <<< "$6"
+
+    # Check if array contains an element
+    # From https://stackoverflow.com/a/8574392
+    contains_element() {
+      local e match="$1"
+      shift
+      for e; do [[ "$e" == "$match" ]] && return 0; done
+      return 1
+    }
+    try_approach() {
+        return $(contains_element $1 "${APPROACHES_TO_TRY[@]}")
+    }
 
     echo -n "" > $COMMANDS
     mkdir -p $DATASET/num-probes
@@ -112,9 +114,11 @@ if [[ $1 == "make-commands" ]]; then
 elif [[ $1 == "parallel" ]]; then
     # Run commands to calculate number of probes
 
+    NJOBS="$3"
+
     source activate /ebs/hybsel-design-runs/tools/envs/hybseldesign-prod
 
-    parallel --jobs 36 --no-notice --progress < $COMMANDS
+    parallel --jobs $NJOBS --no-notice --progress < $COMMANDS
 
     source deactivate
 elif [[ $1 == "merge-counts" ]]; then
