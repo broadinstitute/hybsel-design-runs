@@ -1,0 +1,350 @@
+Dominating set, m=0	1000	169115
+Dominating set, m=0	1000	169599
+Dominating set, m=0	1000	168584
+Dominating set, m=0	1000	170218
+Dominating set, m=0	1000	170989
+Dominating set, m=0	100	27978
+Dominating set, m=0	100	29132
+Dominating set, m=0	100	26918
+Dominating set, m=0	100	28220
+Dominating set, m=0	100	28812
+Dominating set, m=0	200	49859
+Dominating set, m=0	200	50845
+Dominating set, m=0	200	52155
+Dominating set, m=0	200	50249
+Dominating set, m=0	200	48794
+Dominating set, m=0	300	71976
+Dominating set, m=0	300	71873
+Dominating set, m=0	300	73366
+Dominating set, m=0	300	70886
+Dominating set, m=0	300	73353
+Dominating set, m=0	400	86967
+Dominating set, m=0	400	88577
+Dominating set, m=0	400	90153
+Dominating set, m=0	400	89350
+Dominating set, m=0	400	87550
+Dominating set, m=0	500	109702
+Dominating set, m=0	500	107470
+Dominating set, m=0	500	103595
+Dominating set, m=0	500	103289
+Dominating set, m=0	500	104021
+Dominating set, m=0	600	118139
+Dominating set, m=0	600	122980
+Dominating set, m=0	600	116406
+Dominating set, m=0	600	120194
+Dominating set, m=0	600	120460
+Dominating set, m=0	700	135743
+Dominating set, m=0	700	134969
+Dominating set, m=0	700	130860
+Dominating set, m=0	700	133407
+Dominating set, m=0	700	133526
+Dominating set, m=0	800	142720
+Dominating set, m=0	800	143928
+Dominating set, m=0	800	149403
+Dominating set, m=0	800	145025
+Dominating set, m=0	800	147411
+Dominating set, m=0	900	158742
+Dominating set, m=0	900	158404
+Dominating set, m=0	900	159652
+Dominating set, m=0	900	161266
+Dominating set, m=0	900	156880
+Dominating set, m=4	1000	43911
+Dominating set, m=4	1000	43364
+Dominating set, m=4	1000	43162
+Dominating set, m=4	1000	42399
+Dominating set, m=4	1000	43007
+Dominating set, m=4	100	9728
+Dominating set, m=4	100	10742
+Dominating set, m=4	100	10557
+Dominating set, m=4	100	10764
+Dominating set, m=4	100	11313
+Dominating set, m=4	200	16571
+Dominating set, m=4	200	16760
+Dominating set, m=4	200	16045
+Dominating set, m=4	200	15761
+Dominating set, m=4	200	17197
+Dominating set, m=4	300	21108
+Dominating set, m=4	300	21568
+Dominating set, m=4	300	22125
+Dominating set, m=4	300	20651
+Dominating set, m=4	300	21943
+Dominating set, m=4	400	25287
+Dominating set, m=4	400	24694
+Dominating set, m=4	400	25584
+Dominating set, m=4	400	25715
+Dominating set, m=4	400	27071
+Dominating set, m=4	500	30034
+Dominating set, m=4	500	28681
+Dominating set, m=4	500	28749
+Dominating set, m=4	500	30227
+Dominating set, m=4	500	30777
+Dominating set, m=4	600	31302
+Dominating set, m=4	600	33234
+Dominating set, m=4	600	33123
+Dominating set, m=4	600	31019
+Dominating set, m=4	600	32114
+Dominating set, m=4	700	35502
+Dominating set, m=4	700	36039
+Dominating set, m=4	700	36962
+Dominating set, m=4	700	36166
+Dominating set, m=4	700	35605
+Dominating set, m=4	800	37462
+Dominating set, m=4	800	39253
+Dominating set, m=4	800	39550
+Dominating set, m=4	800	37208
+Dominating set, m=4	800	37897
+Dominating set, m=4	900	40937
+Dominating set, m=4	900	40644
+Dominating set, m=4	900	41059
+Dominating set, m=4	900	39745
+Dominating set, m=4	900	40713
+Tiling	1000	218492
+Tiling	1000	221568
+Tiling	1000	213114
+Tiling	1000	218175
+Tiling	1000	222247
+Tiling	100	32675
+Tiling	100	32459
+Tiling	100	31057
+Tiling	100	31724
+Tiling	100	31429
+Tiling	200	56850
+Tiling	200	57545
+Tiling	200	59520
+Tiling	200	61210
+Tiling	200	61603
+Tiling	300	86987
+Tiling	300	86181
+Tiling	300	87322
+Tiling	300	86473
+Tiling	300	87257
+Tiling	400	106336
+Tiling	400	110858
+Tiling	400	110603
+Tiling	400	110804
+Tiling	400	108946
+Tiling	500	130689
+Tiling	500	132884
+Tiling	500	125484
+Tiling	500	133368
+Tiling	500	131512
+Tiling	600	156063
+Tiling	600	150174
+Tiling	600	149671
+Tiling	600	157618
+Tiling	600	151538
+Tiling	700	168268
+Tiling	700	175677
+Tiling	700	165400
+Tiling	700	172980
+Tiling	700	170935
+Tiling	800	182043
+Tiling	800	189216
+Tiling	800	193546
+Tiling	800	188099
+Tiling	800	187635
+Tiling	900	204600
+Tiling	900	206906
+Tiling	900	204802
+Tiling	900	204897
+Tiling	900	198463
+Set cover, m=0, e=0	1000	69128
+Set cover, m=0, e=0	1000	70129
+Set cover, m=0, e=0	1000	68904
+Set cover, m=0, e=0	1000	67679
+Set cover, m=0, e=0	1000	70009
+Set cover, m=0, e=0	100	10918
+Set cover, m=0, e=0	100	10891
+Set cover, m=0, e=0	100	10826
+Set cover, m=0, e=0	100	10231
+Set cover, m=0, e=0	100	10541
+Set cover, m=0, e=0	200	19973
+Set cover, m=0, e=0	200	20216
+Set cover, m=0, e=0	200	19257
+Set cover, m=0, e=0	200	19253
+Set cover, m=0, e=0	200	19263
+Set cover, m=0, e=0	300	28501
+Set cover, m=0, e=0	300	27004
+Set cover, m=0, e=0	300	28937
+Set cover, m=0, e=0	300	27705
+Set cover, m=0, e=0	300	28119
+Set cover, m=0, e=0	400	34398
+Set cover, m=0, e=0	400	35707
+Set cover, m=0, e=0	400	34710
+Set cover, m=0, e=0	400	34893
+Set cover, m=0, e=0	400	35060
+Set cover, m=0, e=0	500	40421
+Set cover, m=0, e=0	500	42284
+Set cover, m=0, e=0	500	41947
+Set cover, m=0, e=0	500	43989
+Set cover, m=0, e=0	500	42546
+Set cover, m=0, e=0	600	46388
+Set cover, m=0, e=0	600	49428
+Set cover, m=0, e=0	600	50190
+Set cover, m=0, e=0	600	49300
+Set cover, m=0, e=0	600	48567
+Set cover, m=0, e=0	700	55456
+Set cover, m=0, e=0	700	52710
+Set cover, m=0, e=0	700	54361
+Set cover, m=0, e=0	700	55719
+Set cover, m=0, e=0	700	54356
+Set cover, m=0, e=0	800	60286
+Set cover, m=0, e=0	800	58690
+Set cover, m=0, e=0	800	60375
+Set cover, m=0, e=0	800	60234
+Set cover, m=0, e=0	800	60470
+Set cover, m=0, e=0	900	65231
+Set cover, m=0, e=0	900	64377
+Set cover, m=0, e=0	900	63587
+Set cover, m=0, e=0	900	63552
+Set cover, m=0, e=0	900	65552
+Set cover, m=0, e=50	1000	27460
+Set cover, m=0, e=50	1000	27165
+Set cover, m=0, e=50	1000	26177
+Set cover, m=0, e=50	1000	26083
+Set cover, m=0, e=50	1000	26875
+Set cover, m=0, e=50	100	4319
+Set cover, m=0, e=50	100	4380
+Set cover, m=0, e=50	100	4371
+Set cover, m=0, e=50	100	4357
+Set cover, m=0, e=50	100	4493
+Set cover, m=0, e=50	200	8323
+Set cover, m=0, e=50	200	8262
+Set cover, m=0, e=50	200	8070
+Set cover, m=0, e=50	200	8368
+Set cover, m=0, e=50	200	7704
+Set cover, m=0, e=50	300	11948
+Set cover, m=0, e=50	300	11393
+Set cover, m=0, e=50	300	11295
+Set cover, m=0, e=50	300	11409
+Set cover, m=0, e=50	300	11682
+Set cover, m=0, e=50	400	14025
+Set cover, m=0, e=50	400	14134
+Set cover, m=0, e=50	400	14267
+Set cover, m=0, e=50	400	14253
+Set cover, m=0, e=50	400	14127
+Set cover, m=0, e=50	500	17032
+Set cover, m=0, e=50	500	16535
+Set cover, m=0, e=50	500	16723
+Set cover, m=0, e=50	500	17086
+Set cover, m=0, e=50	500	16762
+Set cover, m=0, e=50	600	19269
+Set cover, m=0, e=50	600	19658
+Set cover, m=0, e=50	600	18715
+Set cover, m=0, e=50	600	18769
+Set cover, m=0, e=50	600	19741
+Set cover, m=0, e=50	700	21379
+Set cover, m=0, e=50	700	21598
+Set cover, m=0, e=50	700	21299
+Set cover, m=0, e=50	700	21413
+Set cover, m=0, e=50	700	21536
+Set cover, m=0, e=50	800	23620
+Set cover, m=0, e=50	800	22866
+Set cover, m=0, e=50	800	23663
+Set cover, m=0, e=50	800	23721
+Set cover, m=0, e=50	800	23251
+Set cover, m=0, e=50	900	24668
+Set cover, m=0, e=50	900	24962
+Set cover, m=0, e=50	900	26133
+Set cover, m=0, e=50	900	24411
+Set cover, m=0, e=50	900	25434
+Set cover, m=4, e=0	1000	19775
+Set cover, m=4, e=0	1000	19940
+Set cover, m=4, e=0	1000	19892
+Set cover, m=4, e=0	1000	19657
+Set cover, m=4, e=0	1000	20067
+Set cover, m=4, e=0	100	4574
+Set cover, m=4, e=0	100	4892
+Set cover, m=4, e=0	100	5158
+Set cover, m=4, e=0	100	4946
+Set cover, m=4, e=0	100	4932
+Set cover, m=4, e=0	200	7726
+Set cover, m=4, e=0	200	7138
+Set cover, m=4, e=0	200	7829
+Set cover, m=4, e=0	200	6846
+Set cover, m=4, e=0	200	7399
+Set cover, m=4, e=0	300	10457
+Set cover, m=4, e=0	300	9162
+Set cover, m=4, e=0	300	10378
+Set cover, m=4, e=0	300	10147
+Set cover, m=4, e=0	300	9569
+Set cover, m=4, e=0	400	12092
+Set cover, m=4, e=0	400	12323
+Set cover, m=4, e=0	400	11797
+Set cover, m=4, e=0	400	11912
+Set cover, m=4, e=0	400	11937
+Set cover, m=4, e=0	500	13505
+Set cover, m=4, e=0	500	14053
+Set cover, m=4, e=0	500	13484
+Set cover, m=4, e=0	500	13863
+Set cover, m=4, e=0	500	13175
+Set cover, m=4, e=0	600	15529
+Set cover, m=4, e=0	600	15384
+Set cover, m=4, e=0	600	15021
+Set cover, m=4, e=0	600	15084
+Set cover, m=4, e=0	600	14442
+Set cover, m=4, e=0	700	16793
+Set cover, m=4, e=0	700	16254
+Set cover, m=4, e=0	700	16204
+Set cover, m=4, e=0	700	16064
+Set cover, m=4, e=0	700	16736
+Set cover, m=4, e=0	800	18487
+Set cover, m=4, e=0	800	18039
+Set cover, m=4, e=0	800	17776
+Set cover, m=4, e=0	800	17567
+Set cover, m=4, e=0	800	17300
+Set cover, m=4, e=0	900	18600
+Set cover, m=4, e=0	900	19660
+Set cover, m=4, e=0	900	18727
+Set cover, m=4, e=0	900	18748
+Set cover, m=4, e=0	900	18240
+Set cover, m=4, e=50	1000	4443
+Set cover, m=4, e=50	1000	4457
+Set cover, m=4, e=50	1000	4381
+Set cover, m=4, e=50	1000	4433
+Set cover, m=4, e=50	1000	4350
+Set cover, m=4, e=50	100	1345
+Set cover, m=4, e=50	100	1278
+Set cover, m=4, e=50	100	1449
+Set cover, m=4, e=50	100	1398
+Set cover, m=4, e=50	100	1384
+Set cover, m=4, e=50	200	1943
+Set cover, m=4, e=50	200	2000
+Set cover, m=4, e=50	200	2016
+Set cover, m=4, e=50	200	1967
+Set cover, m=4, e=50	200	1967
+Set cover, m=4, e=50	300	2479
+Set cover, m=4, e=50	300	2525
+Set cover, m=4, e=50	300	2513
+Set cover, m=4, e=50	300	2551
+Set cover, m=4, e=50	300	2498
+Set cover, m=4, e=50	400	2870
+Set cover, m=4, e=50	400	2696
+Set cover, m=4, e=50	400	2934
+Set cover, m=4, e=50	400	2943
+Set cover, m=4, e=50	400	3041
+Set cover, m=4, e=50	500	3182
+Set cover, m=4, e=50	500	3198
+Set cover, m=4, e=50	500	3142
+Set cover, m=4, e=50	500	3108
+Set cover, m=4, e=50	500	3354
+Set cover, m=4, e=50	600	3450
+Set cover, m=4, e=50	600	3478
+Set cover, m=4, e=50	600	3563
+Set cover, m=4, e=50	600	3559
+Set cover, m=4, e=50	600	3549
+Set cover, m=4, e=50	700	3686
+Set cover, m=4, e=50	700	3769
+Set cover, m=4, e=50	700	3952
+Set cover, m=4, e=50	700	3596
+Set cover, m=4, e=50	700	3752
+Set cover, m=4, e=50	800	3969
+Set cover, m=4, e=50	800	4062
+Set cover, m=4, e=50	800	3879
+Set cover, m=4, e=50	800	4202
+Set cover, m=4, e=50	800	4081
+Set cover, m=4, e=50	900	4202
+Set cover, m=4, e=50	900	4301
+Set cover, m=4, e=50	900	4291
+Set cover, m=4, e=50	900	4208
+Set cover, m=4, e=50	900	4202
