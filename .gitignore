@@ -119,3 +119,8 @@ core.*
 /experiments/compare-set-cover-to-baseline/data/*/num-probes/*
 /experiments/compare-set-cover-to-baseline/data/*/log/*
 /experiments/compare-set-cover-to-baseline/data/*/commands.txt
+
+# Some data in experiment to make probes from alignment
+/experiments/make-probes-from-alignment/*.fasta
+!/experiments/make-probes-from-alignment/*.aligned.gap-to-N.fasta
+!/experiments/make-probes-from-alignment/naive_tiling.out

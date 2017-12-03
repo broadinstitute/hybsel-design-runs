@@ -1,0 +1,15 @@
+From aligned input, n=100:
+23690
+From unaligned input, n=100:
+31383
+
+From aligned input, n=500:
+86752
+From unaligned input, n=500:
+131986
+
+From aligned input, n=1000:
+137197
+From unaligned input, n=1000:
+220638
+
