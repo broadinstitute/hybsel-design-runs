@@ -11,6 +11,8 @@
 #      genomes can show multiple times, e.g. if there is randomly
 #      sampled input)
 #   2: output PDF file
+#   3: dataset name
+#   4: scale ("log" or "linear")
 #
 # By Hayden Metsky <hayden@mit.edu>
 
@@ -21,6 +23,8 @@ args <- commandArgs(trailingOnly=TRUE)
 
 in.tsv <- args[1]
 out.pdf <- args[2]
+dataset <- args[3]
+scale <- args[4]
 
 ##################
 # Helper functions
@@ -90,11 +94,27 @@ data <- summarySE(input.table, measurevar="num.probes",
 # Note that, in data, num.probes is now the mean across the
 # replicates for each combination of approach and num.genomes
 
+# Pick out some approaches to show and give them descriptions
+data <- data[(data$approach == "Tiling" |
+              data$approach == "Dominating set, m=0" |
+              data$approach == "Dominating set, m=4" |
+              data$approach == "Set cover, m=0, e=0" |
+              data$approach == "Set cover, m=4, e=0" |
+              data$approach == "Set cover, m=4, e=50"), ]
+data$approach.description <- "unknown"
+data[data$approach == "Tiling", ]$approach.description <- "Baseline"
+data[data$approach == "Dominating set, m=0", ]$approach.description <- "Clustering-based, strict"
+data[data$approach == "Dominating set, m=4", ]$approach.description <- "Clustering-based, relaxed"
+data[data$approach == "Set cover, m=0, e=0", ]$approach.description <- "Our approach, strict hybridization"
+data[data$approach == "Set cover, m=4, e=0", ]$approach.description <- "Our approach, relaxed hybridization"
+data[data$approach == "Set cover, m=4, e=50", ]$approach.description <- "Our approach, relaxed hybridization with extension"
+data$approach.description <- factor(data$approach.description)
+
 ###############
 # Make the plot
 ###############
 p <- ggplot(data, aes(x=num.genomes, y=num.probes, group=approach))
-p <- p + geom_line(aes(color=approach))
+p <- p + geom_line(aes(color=approach.description))
 
 # Can use geom_errorbar(..) to show error bars at each plotted
 # x-value; alternatively, geom_ribbon(..) to show a continuous
@@ -102,12 +122,31 @@ p <- p + geom_line(aes(color=approach))
 # this is a 95% pointwise confidence band, NOT a simultaneous
 # confidence band.
 p <- p + geom_ribbon(aes(ymin=num.probes-ci, ymax=num.probes+ci,
-                     fill=approach), alpha=0.2)
+                     fill=approach.description), alpha=0.2)
 
-p <- p + labs(title="Scaling probe count with genomes",
+p <- p + labs(title=paste0("Scaling probe count with genomes - ", dataset),
               x="Number of genomes",
               y="Number of probes")
-#p <- p + scale_y_log10()
+
+if (scale == "linear") {
+    # do nothing; default is linear
+    p <- p
+} else if (scale == "log") {
+    # use log scale
+    p <- p + scale_y_log10()
+} else {
+    print(paste0("Unknown scale ", scale))
+    exit()
+}
+
+# Leave out usual ggplot2 background and grid lines but keep border
+# Use aspect.ratio=1 to make the plot square
+p <- p + theme_bw()
+p <- p + theme(panel.grid.major=element_blank(),
+               panel.grid.minor=element_blank(),
+               strip.background=element_blank(),
+               panel.border=element_rect(colour="black"),
+               aspect.ratio=1)
 
 # Save to PDF
 p <- p + ggsave(out.pdf, width=8, height=8, useDingbats=FALSE)
