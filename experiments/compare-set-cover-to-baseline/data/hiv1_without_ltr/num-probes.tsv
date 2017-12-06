@@ -8,6 +8,11 @@ Dominating set, m=0	100	29132
 Dominating set, m=0	100	26918
 Dominating set, m=0	100	28220
 Dominating set, m=0	100	28812
+Dominating set, m=0	1	324
+Dominating set, m=0	1	340
+Dominating set, m=0	1	335
+Dominating set, m=0	1	338
+Dominating set, m=0	1	336
 Dominating set, m=0	200	49859
 Dominating set, m=0	200	50845
 Dominating set, m=0	200	52155
@@ -28,6 +33,11 @@ Dominating set, m=0	500	107470
 Dominating set, m=0	500	103595
 Dominating set, m=0	500	103289
 Dominating set, m=0	500	104021
+Dominating set, m=0	50	15443
+Dominating set, m=0	50	15113
+Dominating set, m=0	50	14854
+Dominating set, m=0	50	15108
+Dominating set, m=0	50	15156
 Dominating set, m=0	600	118139
 Dominating set, m=0	600	122980
 Dominating set, m=0	600	116406
@@ -58,6 +68,11 @@ Dominating set, m=4	100	10742
 Dominating set, m=4	100	10557
 Dominating set, m=4	100	10764
 Dominating set, m=4	100	11313
+Dominating set, m=4	1	332
+Dominating set, m=4	1	334
+Dominating set, m=4	1	334
+Dominating set, m=4	1	335
+Dominating set, m=4	1	335
 Dominating set, m=4	200	16571
 Dominating set, m=4	200	16760
 Dominating set, m=4	200	16045
@@ -78,6 +93,11 @@ Dominating set, m=4	500	28681
 Dominating set, m=4	500	28749
 Dominating set, m=4	500	30227
 Dominating set, m=4	500	30777
+Dominating set, m=4	50	5863
+Dominating set, m=4	50	6250
+Dominating set, m=4	50	6957
+Dominating set, m=4	50	6165
+Dominating set, m=4	50	6071
 Dominating set, m=4	600	31302
 Dominating set, m=4	600	33234
 Dominating set, m=4	600	33123
@@ -108,6 +128,11 @@ Tiling	100	32459
 Tiling	100	31057
 Tiling	100	31724
 Tiling	100	31429
+Tiling	1	338
+Tiling	1	337
+Tiling	1	335
+Tiling	1	337
+Tiling	1	337
 Tiling	200	56850
 Tiling	200	57545
 Tiling	200	59520
@@ -128,6 +153,11 @@ Tiling	500	132884
 Tiling	500	125484
 Tiling	500	133368
 Tiling	500	131512
+Tiling	50	16243
+Tiling	50	16276
+Tiling	50	16203
+Tiling	50	16487
+Tiling	50	16138
 Tiling	600	156063
 Tiling	600	150174
 Tiling	600	149671
@@ -158,6 +188,11 @@ Set cover, m=0, e=0	100	10891
 Set cover, m=0, e=0	100	10826
 Set cover, m=0, e=0	100	10231
 Set cover, m=0, e=0	100	10541
+Set cover, m=0, e=0	1	113
+Set cover, m=0, e=0	1	112
+Set cover, m=0, e=0	1	113
+Set cover, m=0, e=0	1	114
+Set cover, m=0, e=0	1	113
 Set cover, m=0, e=0	200	19973
 Set cover, m=0, e=0	200	20216
 Set cover, m=0, e=0	200	19257
@@ -178,6 +213,11 @@ Set cover, m=0, e=0	500	42284
 Set cover, m=0, e=0	500	41947
 Set cover, m=0, e=0	500	43989
 Set cover, m=0, e=0	500	42546
+Set cover, m=0, e=0	50	5445
+Set cover, m=0, e=0	50	5549
+Set cover, m=0, e=0	50	5662
+Set cover, m=0, e=0	50	5484
+Set cover, m=0, e=0	50	5678
 Set cover, m=0, e=0	600	46388
 Set cover, m=0, e=0	600	49428
 Set cover, m=0, e=0	600	50190
@@ -208,6 +248,11 @@ Set cover, m=0, e=50	100	4380
 Set cover, m=0, e=50	100	4371
 Set cover, m=0, e=50	100	4357
 Set cover, m=0, e=50	100	4493
+Set cover, m=0, e=50	1	49
+Set cover, m=0, e=50	1	49
+Set cover, m=0, e=50	1	49
+Set cover, m=0, e=50	1	49
+Set cover, m=0, e=50	1	53
 Set cover, m=0, e=50	200	8323
 Set cover, m=0, e=50	200	8262
 Set cover, m=0, e=50	200	8070
@@ -228,6 +273,11 @@ Set cover, m=0, e=50	500	16535
 Set cover, m=0, e=50	500	16723
 Set cover, m=0, e=50	500	17086
 Set cover, m=0, e=50	500	16762
+Set cover, m=0, e=50	50	2308
+Set cover, m=0, e=50	50	2341
+Set cover, m=0, e=50	50	2326
+Set cover, m=0, e=50	50	2300
+Set cover, m=0, e=50	50	2423
 Set cover, m=0, e=50	600	19269
 Set cover, m=0, e=50	600	19658
 Set cover, m=0, e=50	600	18715
@@ -258,6 +308,11 @@ Set cover, m=4, e=0	100	4892
 Set cover, m=4, e=0	100	5158
 Set cover, m=4, e=0	100	4946
 Set cover, m=4, e=0	100	4932
+Set cover, m=4, e=0	1	116
+Set cover, m=4, e=0	1	113
+Set cover, m=4, e=0	1	113
+Set cover, m=4, e=0	1	112
+Set cover, m=4, e=0	1	113
 Set cover, m=4, e=0	200	7726
 Set cover, m=4, e=0	200	7138
 Set cover, m=4, e=0	200	7829
@@ -278,6 +333,11 @@ Set cover, m=4, e=0	500	14053
 Set cover, m=4, e=0	500	13484
 Set cover, m=4, e=0	500	13863
 Set cover, m=4, e=0	500	13175
+Set cover, m=4, e=0	50	3043
+Set cover, m=4, e=0	50	2976
+Set cover, m=4, e=0	50	2717
+Set cover, m=4, e=0	50	2732
+Set cover, m=4, e=0	50	2816
 Set cover, m=4, e=0	600	15529
 Set cover, m=4, e=0	600	15384
 Set cover, m=4, e=0	600	15021
@@ -308,6 +368,11 @@ Set cover, m=4, e=50	100	1278
 Set cover, m=4, e=50	100	1449
 Set cover, m=4, e=50	100	1398
 Set cover, m=4, e=50	100	1384
+Set cover, m=4, e=50	1	49
+Set cover, m=4, e=50	1	48
+Set cover, m=4, e=50	1	49
+Set cover, m=4, e=50	1	49
+Set cover, m=4, e=50	1	49
 Set cover, m=4, e=50	200	1943
 Set cover, m=4, e=50	200	2000
 Set cover, m=4, e=50	200	2016
@@ -328,6 +393,11 @@ Set cover, m=4, e=50	500	3198
 Set cover, m=4, e=50	500	3142
 Set cover, m=4, e=50	500	3108
 Set cover, m=4, e=50	500	3354
+Set cover, m=4, e=50	50	858
+Set cover, m=4, e=50	50	856
+Set cover, m=4, e=50	50	925
+Set cover, m=4, e=50	50	1051
+Set cover, m=4, e=50	50	862
 Set cover, m=4, e=50	600	3450
 Set cover, m=4, e=50	600	3478
 Set cover, m=4, e=50	600	3563
