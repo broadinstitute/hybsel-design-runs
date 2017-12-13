@@ -1,0 +1,296 @@
+ablv	Rhabdoviridae,Lyssavirus,Australian bat lyssavirus
+achimota	Paramyxoviridae,Rubulavirus,Achimota virus 1 & Paramyxoviridae,Rubulavirus,Achimota virus 2
+aedes	Flaviviridae,Flavivirus,Aedes flavivirus
+aguacate	Bunyaviridae,Phlebovirus,Aguacate virus
+akabane	Bunyaviridae,Orthobunyavirus,Akabane virus
+alethinophid_reptarenavirus	Arenaviridae,Reptarenavirus,Alethinophid 1 reptarenavirus & Arenaviridae,Reptarenavirus,Alethinophid 2 reptarenavirus
+allpahuayo	Arenaviridae,Mammarenavirus,Allpahuayo mammarenavirus
+amapari	Arenaviridae,Mammarenavirus,Amapari mammarenavirus
+ampv	Paramyxoviridae,Metapneumovirus,Avian metapneumovirus
+andes	Bunyaviridae,Hantavirus,Andes virus
+apmv	Paramyxoviridae,Avulavirus,Avian paramyxovirus 11 & Paramyxoviridae,Avulavirus,Avian paramyxovirus 12 & Paramyxoviridae,Avulavirus,Avian paramyxovirus 3 & Paramyxoviridae,Avulavirus,Avian paramyxovirus 4 & Paramyxoviridae,Avulavirus,Avian paramyxovirus 5 & Paramyxoviridae,Avulavirus,Avian paramyxovirus 6 & Paramyxoviridae,Avulavirus,Avian paramyxovirus 7 & Paramyxoviridae,Avulavirus,Avian paramyxovirus 8 & Paramyxoviridae,Avulavirus,Avian paramyxovirus 9 & Paramyxoviridae,Avulavirus,Avian paramyxovirus penguin/Falkland Islands/324/2007
+apoi	Flaviviridae,Flavivirus,Apoi virus
+aravan	Rhabdoviridae,Lyssavirus,Aravan virus
+aroa	Flaviviridae,Flavivirus,Aroa virus
+arumowot	Bunyaviridae,Phlebovirus,Arumowot virus
+aspv	Paramyxoviridae,Aquaparamyxovirus,Atlantic salmon paramyxovirus
+avian_vornavirus	Bornaviridae,,Avian bornavirus
+b19	Parvoviridae,Erythroparvovirus,Primate erythroparvovirus 1
+bagaza	Flaviviridae,Flavivirus,Bagaza virus
+banna	Reoviridae,Seadornavirus,Banna virus
+bat_hepevirus	Hepeviridae,,Bat hepevirus
+bat_sapovirus_tlc58	Caliciviridae,Sapovirus,Bat sapovirus TLC58/HK
+bear_canyon	Arenaviridae,Mammarenavirus,Bear Canyon mammarenavirus
+beilong	Paramyxoviridae,,Beilong virus
+betapapillomavirus_1	Papillomaviridae,Betapapillomavirus,Betapapillomavirus 1
+betapapillomavirus_2	Papillomaviridae,Betapapillomavirus,Betapapillomavirus 2
+betapapillomavirus_3	Papillomaviridae,Betapapillomavirus,Betapapillomavirus 3
+betapapillomavirus_4	Papillomaviridae,Betapapillomavirus,Betapapillomavirus 4
+betapapillomavirus_5	Papillomaviridae,Betapapillomavirus,Betapapillomavirus 5
+betapapillomavirus_6	Papillomaviridae,Betapapillomavirus,Betapapillomavirus 6
+bhanja	Bunyaviridae,Phlebovirus,Bhanja virus
+bk	Polyomaviridae,Polyomavirus,BK polyomavirus
+bokeloh_bat	Rhabdoviridae,Lyssavirus,Bokeloh bat lyssavirus
+borna_disease	Bornaviridae,Bornavirus,Borna disease virus
+bourbon	Orthomyxoviridae,Thogotovirus,Bourbon virus
+bovine_hepacivirus	Flaviviridae,Hepacivirus,Bovine hepacivirus
+bpv_3	Paramyxoviridae,Respirovirus,Bovine parainfluenza virus 3
+brazoran	Bunyaviridae,Orthobunyavirus,Brazoran virus
+brsv	Paramyxoviridae,Pneumovirus,Bovine respiratory syncytial virus
+bunyamwera	Bunyaviridae,Orthobunyavirus,Bunyamwera virus
+california_encephalitis	Bunyaviridae,Orthobunyavirus,California encephalitis virus
+candiru	Bunyaviridae,Phlebovirus,Candiru virus
+canine_distemper	Paramyxoviridae,Morbillivirus,Canine distemper virus
+canine_pneumovirus	Paramyxoviridae,Pneumovirus,Canine pneumovirus
+cedar	Paramyxoviridae,Henipavirus,Cedar virus
+cell_fusing_agent	Flaviviridae,Flavivirus,Cell fusing agent virus
+cetacean_morbillivirus	Paramyxoviridae,Morbillivirus,Cetacean morbillivirus
+chandipura	Rhabdoviridae,Vesiculovirus,Chandipura virus
+chaoyang	Flaviviridae,Flavivirus,Chaoyang virus
+chapare	Arenaviridae,Mammarenavirus,Chapare mammarenavirus
+chikungunya	Togaviridae,Alphavirus,Chikungunya virus
+colobus_monkey_papillomavirus	Papillomaviridae,Betapapillomavirus,Colobus monkey papillomavirus
+cowpox	Poxviridae,Orthopoxvirus,Cowpox virus
+crimean_congo	Bunyaviridae,Nairovirus,Crimean-Congo hemorrhagic fever virus
+ctfv	Reoviridae,Coltivirus,Colorado tick fever virus
+cupixi	Arenaviridae,Mammarenavirus,Cupixi mammarenavirus
+cxfv	Flaviviridae,Flavivirus,Culex flavivirus
+dengue	Flaviviridae,Flavivirus,Dengue virus
+dobrava_belgrade	Bunyaviridae,Hantavirus,Dobrava-Belgrade virus
+donggang	Flaviviridae,Flavivirus,Donggang virus
+dugbe	Bunyaviridae,Nairovirus,Dugbe virus
+duvenhage	Rhabdoviridae,Lyssavirus,Duvenhage virus
+eblv_1	Rhabdoviridae,Lyssavirus,European bat lyssavirus 1
+eblv_2	Rhabdoviridae,Lyssavirus,European bat lyssavirus 2
+ebola_nonzaire	Filoviridae,Ebolavirus,Bundibugyo virus & Filoviridae,Ebolavirus,Reston ebolavirus & Filoviridae,Ebolavirus,Sudan ebolavirus & Filoviridae,Ebolavirus,Tai Forest ebolavirus
+ebola_zaire_with_2014	Filoviridae,Ebolavirus,Zaire ebolavirus
+eee	Togaviridae,Alphavirus,Eastern equine encephalitis virus
+entebbe_bat	Flaviviridae,Flavivirus,Entebbe bat virus
+enterovirus_a	Picornaviridae,Enterovirus,Enterovirus A
+enterovirus_b	Picornaviridae,Enterovirus,Enterovirus B
+enterovirus_c	Picornaviridae,Enterovirus,Enterovirus C
+enterovirus_d	Picornaviridae,Enterovirus,Enterovirus D
+eyach	Reoviridae,Coltivirus,Eyach virus
+feline_morbillivirus	Paramyxoviridae,Morbillivirus,Feline morbillivirus
+fer_de_lance	Paramyxoviridae,Ferlavirus,Fer-de-Lance paramyxovirus
+fitzroy_river	Flaviviridae,Flavivirus,Fitzroy River virus
+flexal	Arenaviridae,Mammarenavirus,Flexal mammarenavirus
+gairo	Arenaviridae,,Gairo virus
+gbv_c	Flaviviridae,Pegivirus,GB virus C
+gemycircularvirus_sl1	Gemycircularvirus SL1
+goose_paramyxovirus_sf02	Paramyxoviridae,Avulavirus,Goose paramyxovirus SF02
+great_island	Reoviridae,Orbivirus,Great Island virus
+guanarito	Arenaviridae,Mammarenavirus,Guanarito mammarenavirus
+hantaan	Bunyaviridae,Hantavirus,Hantaan virus
+hantavirus_z10	Bunyaviridae,Hantavirus,Hantavirus Z10
+hbov	Parvoviridae,Bocaparvovirus,Human bocavirus
+heartland	Bunyaviridae,Phlebovirus,Heartland virus
+hecv_4408	Coronaviridae,,Human enteric coronavirus strain 4408
+hendra	Paramyxoviridae,Henipavirus,Hendra virus
+hepatitis_a	Picornaviridae,Hepatovirus,Hepatitis A virus
+hepatitis_b	Hepadnaviridae,Orthohepadnavirus,Hepatitis B virus
+hepatitis_c	Flaviviridae,Hepacivirus,Hepatitis C virus
+hepatitis_delta	Deltavirus,Hepatitis delta virus
+hepatitis_e	Hepeviridae,Hepevirus,Hepatitis E virus
+herpesvirus_1	Herpesviridae,Simplexvirus,Human herpesvirus 1
+herpesvirus_2	Herpesviridae,Simplexvirus,Human herpesvirus 2
+herpesvirus_3	Herpesviridae,Varicellovirus,Human herpesvirus 3
+herpesvirus_4	Herpesviridae,Lymphocryptovirus,Human herpesvirus 4
+herpesvirus_5	Herpesviridae,Cytomegalovirus,Human herpesvirus 5
+herpesvirus_6	Herpesviridae,Roseolovirus,Human herpesvirus 6B
+herpesvirus_7	Herpesviridae,Roseolovirus,Human herpesvirus 7
+herpesvirus_8	Herpesviridae,Rhadinovirus,Human herpesvirus 8
+hervk	Retroviridae,,Human endogenous retrovirus K
+hiv1	Retroviridae,Lentivirus,Human immunodeficiency virus 1
+hiv2	Retroviridae,Lentivirus,Human immunodeficiency virus 2
+hpiv_1	Paramyxoviridae,Respirovirus,Human parainfluenza virus 1
+hpiv_2	Paramyxoviridae,Rubulavirus,Human parainfluenza virus 2
+hpiv_3	Paramyxoviridae,Respirovirus,Human parainfluenza virus 3
+hpiv_4	Paramyxoviridae,Rubulavirus,Human parainfluenza virus 4
+hpv	Papillomaviridae,Gammapapillomavirus,Human papillomavirus type 178 & Papillomaviridae,Gammapapillomavirus,Human papillomavirus type 201 & Papillomaviridae,,Human papillomavirus & Papillomaviridae,,Human papillomavirus type 136 & Papillomaviridae,,Human papillomavirus type 140 & Papillomaviridae,,Human papillomavirus type 154 & Papillomaviridae,,Human papillomavirus type 179
+human_coronavirus_229e	Coronaviridae,Alphacoronavirus,Human coronavirus 229E
+human_coronavirus_hku1	Coronaviridae,Betacoronavirus,Human coronavirus HKU1
+human_coronavirus_nl63	Coronaviridae,Alphacoronavirus,Human coronavirus NL63
+human_coronavirus_oc43	Coronaviridae,Betacoronavirus,Betacoronavirus 1
+human_genital_associated_circular_dna	Human genital-associated circular DNA virus-1
+human_picobirnavirus	Picobirnaviridae,Picobirnavirus,Human picobirnavirus
+human_smacovirus_1	Human smacovirus 1
+ikoma	Rhabdoviridae,Lyssavirus,Ikoma lyssavirus
+ilheus	Flaviviridae,Flavivirus,Ilheus virus
+influenza_a	Orthomyxoviridae,Influenzavirus A,Influenza A virus
+influenza_b	Orthomyxoviridae,Influenzavirus B,Influenza B virus
+influenza_c	Orthomyxoviridae,Influenzavirus C,Influenza C virus
+ippy	Arenaviridae,Mammarenavirus,Ippy mammarenavirus
+irkut	Rhabdoviridae,Lyssavirus,Irkut virus
+jc	Polyomaviridae,Polyomavirus,JC polyomavirus
+jev	Flaviviridae,Flavivirus,Japanese encephalitis virus
+junin	Arenaviridae,Mammarenavirus,Junin mammarenavirus
+j_virus	Paramyxoviridae,,J-virus
+kadipiro	Reoviridae,Seadornavirus,Kadipiro virus
+kamiti_river	Flaviviridae,Flavivirus,Kamiti River virus
+kedougou	Flaviviridae,Flavivirus,Kedougou virus
+kfd	Flaviviridae,Flavivirus,Kyasanur forest disease virus
+khujand	Rhabdoviridae,Lyssavirus,Khujand virus
+ki_polyomavirus	Polyomaviridae,Polyomavirus,KI polyomavirus
+kokobera	Flaviviridae,Flavivirus,Kokobera virus
+lagos_bat	Rhabdoviridae,Lyssavirus,Lagos bat virus
+langat	Flaviviridae,Flavivirus,Langat virus
+lassa	Arenaviridae,Mammarenavirus,Lassa mammarenavirus
+latino	Arenaviridae,Mammarenavirus,Latino mammarenavirus
+lcmv	Arenaviridae,Mammarenavirus,Lymphocytic choriomeningitis mammarenavirus
+leopards_hill	Bunyaviridae,Nairovirus,Leopards Hill virus
+liao_ning	Reoviridae,Seadornavirus,Liao ning virus
+lloviu_cuevavirus	Filoviridae,Cuevavirus,Lloviu cuevavirus
+louping_ill	Flaviviridae,Flavivirus,Louping ill virus
+lujo	Arenaviridae,Mammarenavirus,Lujo mammarenavirus
+luna	Arenaviridae,Mammarenavirus,Luna mammarenavirus
+lunk_nks1	Arenaviridae,Arenavirus,Lunk virus NKS-1
+lyssavirus_ozernoe	Rhabdoviridae,Lyssavirus,Lyssavirus Ozernoe
+machupo	Arenaviridae,Mammarenavirus,Machupo mammarenavirus
+mamastrovirus	Astroviridae,Mamastrovirus,Mamastrovirus 1
+manzanilla	Bunyaviridae,Orthobunyavirus,Manzanilla virus
+mapuera	Paramyxoviridae,Rubulavirus,Mapuera virus
+marburg	Filoviridae,Marburgvirus,Marburg marburgvirus
+mastadenovirus_a	Adenoviridae,Mastadenovirus,Human mastadenovirus A
+mastadenovirus_b	Adenoviridae,Mastadenovirus,Human mastadenovirus B
+mastadenovirus_c	Adenoviridae,Mastadenovirus,Human mastadenovirus C
+mastadenovirus_d	Adenoviridae,Mastadenovirus,Human mastadenovirus D
+mastadenovirus_e	Adenoviridae,Mastadenovirus,Human mastadenovirus E
+mastadenovirus_f	Adenoviridae,Mastadenovirus,Human mastadenovirus F
+mastadenovirus_g	Adenoviridae,Mastadenovirus,Human mastadenovirus G
+mayaro	Togaviridae,Alphavirus,Mayaro virus
+mcv	Polyomaviridae,Polyomavirus,Merkel cell polyomavirus
+measles	Paramyxoviridae,Morbillivirus,Measles virus
+menangle	Paramyxoviridae,Rubulavirus,Menangle virus
+mercadeo	Flaviviridae,Flavivirus,Mercadeo virus
+mers	Coronaviridae,Betacoronavirus,Middle East respiratory syndrome coronavirus
+metapneumovirus	Paramyxoviridae,Metapneumovirus,Human metapneumovirus
+mobala	Arenaviridae,Mammarenavirus,Mobala mammarenavirus
+modoc	Flaviviridae,Flavivirus,Modoc virus
+mojiang	Paramyxoviridae,Henipavirus,Mojiang virus
+mokola	Rhabdoviridae,Lyssavirus,Mokola virus
+monkeypox	Poxviridae,Orthopoxvirus,Monkeypox virus
+montana_myotis_leukoencephalitis	Flaviviridae,Flavivirus,Montana myotis leukoencephalitis virus
+mopeia	Arenaviridae,Mammarenavirus,Mopeia mammarenavirus
+mopeia_lassa_reassortant_29	Arenaviridae,Arenavirus,Mopeia Lassa virus reassortant 29
+morogoro	Arenaviridae,Arenavirus,Morogoro virus
+mossman	Paramyxoviridae,,Mossman virus
+mssi2_225	MSSI2.225 virus
+mumps	Paramyxoviridae,Rubulavirus,Mumps virus
+murine_pneumonia	Paramyxoviridae,Pneumovirus,Murine pneumonia virus
+mvev	Flaviviridae,Flavivirus,Murray Valley encephalitis virus
+nariva	Paramyxoviridae,,Nariva virus
+ndv	Paramyxoviridae,Avulavirus,Newcastle disease virus
+nipah	Paramyxoviridae,Henipavirus,Nipah virus
+norwalk	Caliciviridae,Norovirus,Norwalk virus
+norway_rat_hepacivirus	Flaviviridae,Hepacivirus,Norway rat hepacivirus 1 & Flaviviridae,Hepacivirus,Norway rat hepacivirus 2
+ntaya	Flaviviridae,Flavivirus,Ntaya virus
+oliveros	Arenaviridae,Mammarenavirus,Oliveros mammarenavirus
+omsk_hemorrhagiv_fever	Flaviviridae,Flavivirus,Omsk hemorrhagic fever virus
+o_nyong_nyong	Togaviridae,Alphavirus,O'nyong-nyong virus
+oropouche	Bunyaviridae,Orthobunyavirus,Oropouche virus
+parana	Arenaviridae,Mammarenavirus,Parana mammarenavirus
+parechovirus_a	Picornaviridae,Parechovirus,Human parechovirus
+parechovirus_b	Picornaviridae,Parechovirus,Ljungan virus
+parramatta_river	Flaviviridae,Flavivirus,Parramatta River virus
+pichinde	Arenaviridae,Mammarenavirus,Pichinde mammarenavirus
+pirital	Arenaviridae,Mammarenavirus,Pirital mammarenavirus
+piscihepevirus_a	Hepeviridae,Piscihepevirus,Piscihepevirus A
+piv_5	Paramyxoviridae,Rubulavirus,Parainfluenza virus 5
+porcine	Paramyxoviridae,Rubulavirus,Porcine rubulavirus
+powassan	Flaviviridae,Flavivirus,Powassan virus
+ppiv_1	Paramyxoviridae,Respirovirus,Porcine parainfluenza virus 1
+pprv	Paramyxoviridae,Morbillivirus,Peste-des-petits-ruminants virus
+ptlv_1	Retroviridae,Deltaretrovirus,Primate T-lymphotropic virus 1
+ptlv_2	Retroviridae,Deltaretrovirus,Primate T-lymphotropic virus 2
+punta_toro	Bunyaviridae,Phlebovirus,Punta Toro virus
+puumala	Bunyaviridae,Hantavirus,Puumala virus
+quang_binh	Flaviviridae,Flavivirus,Quang Binh virus
+razdan	Bunyaviridae,Phlebovirus,Razdan virus
+reptile_bornavirus_1	Bornaviridae,,Reptile bornavirus 1
+rhabdovirus	Rhabdoviridae,Lyssavirus,Rabies virus
+rhinovirus_a	Picornaviridae,Enterovirus,Rhinovirus A
+rhinovirus_b	Picornaviridae,Enterovirus,Rhinovirus B
+rift_valley_fever	Bunyaviridae,Phlebovirus,Rift Valley fever virus
+rinderpest	Paramyxoviridae,Morbillivirus,Rinderpest virus
+rio_bravo	Flaviviridae,Flavivirus,Rio Bravo virus
+rodent_hepacivirus	Flaviviridae,Hepacivirus,Rodent hepacivirus
+rodent_torque_teno	Anelloviridae,,Rodent Torque teno virus 2
+ross_river	Togaviridae,Alphavirus,Ross River virus
+rotavirus_a	Reoviridae,Rotavirus,Rotavirus A
+rotavirus_b	Reoviridae,Rotavirus,Rotavirus B
+rotavirus_c	Reoviridae,Rotavirus,Rotavirus C
+rotavirus_f	Reoviridae,Rotavirus,Rotavirus F
+rotavirus_g	Reoviridae,Rotavirus,Rotavirus G
+rotavirus_h	Reoviridae,Rotavirus,Rotavirus H
+rotavirus_i	Reoviridae,Rotavirus,Rotavirus I
+royal_farm	Flaviviridae,Flavivirus,Royal Farm virus
+rsv	Paramyxoviridae,Pneumovirus,Human respiratory syncytial virus & Paramyxoviridae,Pneumovirus,Respiratory syncytial virus
+rubella	Togaviridae,Rubivirus,Rubella virus
+sabia	Arenaviridae,Mammarenavirus,Sabia mammarenavirus
+salem	Paramyxoviridae,,Salem virus
+sapporo	Caliciviridae,Sapovirus,Sapporo virus
+sars	Coronaviridae,Betacoronavirus,Severe acute respiratory syndrome-related coronavirus
+sathuperi	Bunyaviridae,Orthobunyavirus,Sathuperi virus
+seal_anellovirus	Anelloviridae,,Seal anellovirus 2 & Anelloviridae,,Seal anellovirus 3 & Anelloviridae,,Seal anellovirus TFFN/USA/2006
+semliki_forest	Togaviridae,Alphavirus,Semliki Forest virus
+sendai	Paramyxoviridae,Respirovirus,Sendai virus
+seoul	Bunyaviridae,Hantavirus,Seoul virus
+sepik	Flaviviridae,Flavivirus,Sepik virus
+sfnv	Bunyaviridae,Phlebovirus,Sandfly fever Naples virus
+sfsv	Bunyaviridae,Phlebovirus,Sandfly fever Sicilian virus
+sfts	Bunyaviridae,Phlebovirus,Severe fever with thrombocytopenia syndrome virus
+shamonda	Bunyaviridae,Orthobunyavirus,Shamonda virus
+shimoni_bat	Rhabdoviridae,Lyssavirus,Shimoni bat virus
+shuni	Bunyaviridae,Orthobunyavirus,Shuni virus
+simbu	Bunyaviridae,Orthobunyavirus,Simbu virus
+simian_41	Paramyxoviridae,Rubulavirus,Simian virus 41
+simian_torque_teno	Anelloviridae,Alphatorquevirus,Simian torque teno virus 30 & Anelloviridae,Alphatorquevirus,Simian torque teno virus 31 & Anelloviridae,Alphatorquevirus,Simian torque teno virus 32 & Anelloviridae,Alphatorquevirus,Simian torque teno virus 33 & Anelloviridae,Alphatorquevirus,Simian torque teno virus 34
+sindbis	Togaviridae,Alphavirus,Sindbis virus
+sin_nombre	Bunyaviridae,Hantavirus,Sin Nombre virus
+slev	Flaviviridae,Flavivirus,St. Louis encephalitis virus
+small_anellovirus	Anelloviridae,,Small anellovirus
+sosuga	Paramyxoviridae,Rubulavirus,Sosuga virus
+spanish_goat_encephalitis	Flaviviridae,Flavivirus,Spanish goat encephalitis virus
+spondweni	Flaviviridae,Flavivirus,Spondweni virus
+sunshine	Paramyxoviridae,,Sunshine virus
+sv40	Polyomaviridae,Polyomavirus,Simian virus 40
+tacaribe	Arenaviridae,Mammarenavirus,Tacaribe mammarenavirus
+tailam	Paramyxoviridae,,Tailam virus
+tamana_bat	Flaviviridae,Flavivirus,Tamana bat virus
+tamiami	Arenaviridae,Mammarenavirus,Tamiami mammarenavirus
+tbev	Flaviviridae,Flavivirus,Tick-borne encephalitis virus
+tembusu	Flaviviridae,Flavivirus,Tembusu virus
+thogoto	Orthomyxoviridae,Thogotovirus,Thogoto virus
+thottapalayam	Bunyaviridae,Hantavirus,Thottapalayam virus
+tioman	Paramyxoviridae,Rubulavirus,Tioman virus
+tlmv	Anelloviridae,,TTV-like mini virus
+torque_teno	Anelloviridae,Alphatorquevirus,Torque teno virus 1 & Anelloviridae,Alphatorquevirus,Torque teno virus 10 & Anelloviridae,Alphatorquevirus,Torque teno virus 12 & Anelloviridae,Alphatorquevirus,Torque teno virus 14 & Anelloviridae,Alphatorquevirus,Torque teno virus 15 & Anelloviridae,Alphatorquevirus,Torque teno virus 16 & Anelloviridae,Alphatorquevirus,Torque teno virus 19 & Anelloviridae,Alphatorquevirus,Torque teno virus 2 & Anelloviridae,Alphatorquevirus,Torque teno virus 25 & Anelloviridae,Alphatorquevirus,Torque teno virus 26 & Anelloviridae,Alphatorquevirus,Torque teno virus 27 & Anelloviridae,Alphatorquevirus,Torque teno virus 28 & Anelloviridae,Alphatorquevirus,Torque teno virus 3 & Anelloviridae,Alphatorquevirus,Torque teno virus 4 & Anelloviridae,Alphatorquevirus,Torque teno virus 6 & Anelloviridae,Alphatorquevirus,Torque teno virus 7 & Anelloviridae,Alphatorquevirus,Torque teno virus 8 & Anelloviridae,,Torque teno virus
+torque_teno_canis	Anelloviridae,Thetatorquevirus,Torque teno canis virus
+torque_teno_douroucouli	Anelloviridae,Zetatorquevirus,Torque teno douroucouli virus
+torque_teno_felis	Anelloviridae,Etatorquevirus,Torque teno felis virus
+torque_teno_midi	Anelloviridae,Gammatorquevirus,Torque teno midi virus 1 & Anelloviridae,Gammatorquevirus,Torque teno midi virus 2
+torque_teno_mini	Anelloviridae,Betatorquevirus,Torque teno mini virus 1 & Anelloviridae,Betatorquevirus,Torque teno mini virus 2 & Anelloviridae,Betatorquevirus,Torque teno mini virus 3 & Anelloviridae,Betatorquevirus,Torque teno mini virus 4 & Anelloviridae,Betatorquevirus,Torque teno mini virus 5 & Anelloviridae,Betatorquevirus,Torque teno mini virus 6 & Anelloviridae,Betatorquevirus,Torque teno mini virus 7 & Anelloviridae,Betatorquevirus,Torque teno mini virus 8 & Anelloviridae,Betatorquevirus,Torque teno mini virus 9 & Anelloviridae,Betatorquevirus,Torque teno mini virus ALA22 & Anelloviridae,Betatorquevirus,Torque teno mini virus ALH8
+torque_teno_sus	Anelloviridae,Iotatorquevirus,Torque teno sus virus 1a & Anelloviridae,Iotatorquevirus,Torque teno sus virus 1b & Anelloviridae,Kappatorquevirus,Torque teno sus virus k2
+torque_teno_tamarin	Anelloviridae,Epsilontorquevirus,Torque teno tamarin virus
+torque_teno_zalophus	Anelloviridae,Lambdatorquevirus,Torque teno zalophus virus 1
+tuhoko	Paramyxoviridae,Rubulavirus,Tuhoko virus 1 & Paramyxoviridae,Rubulavirus,Tuhoko virus 2 & Paramyxoviridae,Rubulavirus,Tuhoko virus 3
+tula	Bunyaviridae,Hantavirus,Tula virus
+tupaia	Paramyxoviridae,,Tupaia paramyxovirus
+usutu	Flaviviridae,Flavivirus,Usutu virus
+uukuniemi	Bunyaviridae,Phlebovirus,Uukuniemi virus
+vaccinia	Poxviridae,Orthopoxvirus,Vaccinia virus
+variola	Poxviridae,Orthopoxvirus,Variola virus
+vee	Togaviridae,Alphavirus,Venezuelan equine encephalitis virus
+vsiv	Rhabdoviridae,Vesiculovirus,Vesicular stomatitis Indiana virus
+wee	Togaviridae,Alphavirus,Western equine encephalitis virus
+wesselsbron	Flaviviridae,Flavivirus,Wesselsbron virus
+west_caucasion_bat	Rhabdoviridae,Lyssavirus,West Caucasian bat virus
+west_nile	Flaviviridae,Flavivirus,West Nile virus
+whitewater_arroyo	Arenaviridae,Mammarenavirus,Whitewater Arroyo mammarenavirus
+wu_polyomavirus	Polyomaviridae,Polyomavirus,WU Polyomavirus
+yellow_fever	Flaviviridae,Flavivirus,Yellow fever virus
+yokose	Flaviviridae,Flavivirus,Yokose virus
+ypv	Rhabdoviridae,Vesiculovirus,Yug Bogdanovac virus
+zika	Flaviviridae,Flavivirus,Zika virus
+zygosaccharomyces_bailii_z	Totiviridae,Totivirus,Zygosaccharomyces bailii virus Z
