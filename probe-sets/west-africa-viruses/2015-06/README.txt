@@ -12,3 +12,6 @@
     three viruses (based on one selected choice of parameters per
     virus, as specified in params.12000.txt, and coped from all/);
     I don't believe this probe set was ever synthesized or tested
+  - num_probes.tsv has the number of probes for each dataset for
+    each combination of parameters (mismatches and cover extension)
+    as taken from the fasta files in all/
