@@ -824,6 +824,12 @@ def main(args):
             if dataset.name not in datasets_to_skip:
                 raise ValueError("No sequences for dataset: %s" % dataset.name)
 
+    if args.skip_download_and_print_sequences:
+        for dataset, sequences in sequences_for_dataset.items():
+            for s in sequences:
+                print('\t'.join([dataset.name, s.representative, s.name, s.lineage]))
+        return 0
+
     for dataset, sequences in sequences_for_dataset.items():
         if dataset.name in extra_sequences_paths:
             extra_sequences_path = extra_sequences_paths[dataset.name]
@@ -853,6 +859,12 @@ if __name__ == "__main__":
         help=("When set, do not perform the download and instead write "
               "a list of accession nums for each dataset in the specified "
               "directory"))
+    parser.add_argument('--skip_download_and_print_sequences',
+        dest="skip_download_and_print_sequences",
+        action="store_true",
+        help=("When set, do not perform the download and instead print "
+              "a list of sequences (accession and lineage) for each "
+              "dataset"))
     parser.add_argument('--allow_multiple_dataset_matches',
         dest="allow_multiple_dataset_matches",
         action="store_true",
