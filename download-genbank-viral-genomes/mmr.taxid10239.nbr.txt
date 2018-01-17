@@ -1,0 +1,300 @@
+NC_001545	JN635282	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	JN635292	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	KT962867	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	JN635285	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	AF435866	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	DQ085341	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	AB928203	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	L78917	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	AB047330	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	JN635293	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	JN635288	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	JN635284	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	DQ388281	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	JF727653	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	JN635287	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	AB222609	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	KF201674	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	KT962865	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	JN635283	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	KT962868	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	AY258322	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	AB588189	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	DQ085342	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	AB588190	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	KT962864	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	KT962869	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	KT962871	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	DQ388279	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	AY258323	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	JN635281	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	JN635296	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	AB047329	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	AF435865	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	AB588193	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	DQ085340	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	AB928204	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	JN635290	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	AB588188	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	AB928205	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	AB222608	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	MF496142	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus genotype 2B	segment  
+NC_001545	KU958641	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus genotype 1A	segment  
+NC_001545	AB860305	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	JN635291	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	FJ211588	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	JQ624624	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	JQ624625	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	AB588191	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	JN635295	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	AB588192	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	JN635289	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	AF188704	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	JN635294	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	DQ388280	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	KT962866	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	JF727654	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	KT962870	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	M15240	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	DQ085343	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	KT962863	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	FJ211587	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	KT962862	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	DQ085339	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	JN635286	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001545	DQ085338	vertebrates,human	Togaviridae,Rubivirus,Rubella virus	Rubella virus	segment  
+NC_001498	KT732224	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype B3	segment  
+NC_001498	KY656518	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D4	segment  
+NC_001498	AB481088	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KT732251	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	KT732230	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	EU293550	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	K01711	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KJ755978	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype H1	segment  
+NC_001498	E04903	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KJ755979	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype H1	segment  
+NC_001498	KJ410048	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	DQ227318	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	BD137596	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KT732255	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	BD137590	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	EU293551	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KT588921	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype H1	segment  
+NC_001498	KT732239	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	KT732249	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	KJ755975	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype H1	segment  
+NC_001498	KT732240	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	KT732244	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	KJ018971	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	KT732254	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	KT732227	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D4	segment  
+NC_001498	KY969477	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype B3	segment  
+NC_001498	KT732223	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype B3	segment  
+NC_001498	KJ018970	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype H1	segment  
+NC_001498	AB591381	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KT732257	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	JF727650	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KY969480	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	KT732246	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	KT732214	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype B3	segment  
+NC_001498	KT732233	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	KT732220	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype B3	segment  
+NC_001498	BD137593	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KX838946	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype B3	segment  
+NC_001498	KU728742	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	FJ161211	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KT732218	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype B3	segment  
+NC_001498	KT732256	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	KU728743	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	DQ345722	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KT732245	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	HM439386	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	Z66517	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KT732225	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D4	segment  
+NC_001498	JN635403	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus strain MVi/Florida.USA/19.09	segment  
+NC_001498	FJ211583	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KT732219	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype B3	segment  
+NC_001498	AF266286	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus strain AIK-C	segment  
+NC_001498	AF266289	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus strain Rubeovax	segment  
+NC_001498	KT732215	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype B3	segment  
+NC_001498	KJ755981	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype H1	segment  
+NC_001498	KT732243	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	BD137595	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	AB012949	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KJ755980	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype H1	segment  
+NC_001498	KJ755976	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype H1	segment  
+NC_001498	KJ755974	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype H1	segment  
+NC_001498	GQ376027	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KT732234	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	KT732221	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype B3	segment  
+NC_001498	EU293549	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KT732252	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	AB032167	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KT732237	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	BD137591	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	DQ345723	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	JN635404	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus strain MVi/Virginia.USA/15.09	segment  
+NC_001498	BD137597	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KY969479	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D4	segment  
+NC_001498	JN635405	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus strain MVi/Washington.USA/18.08/1	segment  
+NC_001498	KT732236	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	KY969478	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype B3	segment  
+NC_001498	AF266290	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus strain Edmonston-Zagreb	segment  
+NC_001498	BD137594	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	DQ227319	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	AY486083	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus strain Edmonston-Zagreb	segment  
+NC_001498	EU435017	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	DQ345721	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	AY486084	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus strain Edmonston-Zagreb	segment  
+NC_001498	JN635408	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus strain MVi/New Jersey.USA/45.05	segment  
+NC_001498	KC164758	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype G3	segment  
+NC_001498	JN635410	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus strain MVi/California.USA/16.03	segment  
+NC_001498	KT732260	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	KT732228	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D4	segment  
+NC_001498	KT732238	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	AY730614	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KT732248	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	AB254456	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KT732261	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	KY969481	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype B3	segment  
+NC_001498	KY969476	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D9	segment  
+NC_001498	FJ416067	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KT732222	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype B3	segment  
+NC_001498	AB016162	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KT732247	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	AB046218	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	DQ227321	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	JN635409	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus strain MVi/California.USA/8.04	segment  
+NC_001498	KT732226	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D4	segment  
+NC_001498	AF266288	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	JF727649	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	FJ211590	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	JN635407	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus strain MVi/Texas.USA/4.07	segment  
+NC_001498	KT732229	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D4	segment  
+NC_001498	KJ755982	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype H1	segment  
+NC_001498	AF266287	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus strain Moraten	segment  
+NC_001498	DQ227320	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KT732232	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	AF266291	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus strain Schwarz	segment  
+NC_001498	KT732259	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	KT732216	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype B3	segment  
+NC_001498	KT732242	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	JN635411	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus strain MVi/Pennsylvania.USA/20.09	segment  
+NC_001498	KT732217	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype B3	segment  
+NC_001498	MF449469	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D4	segment  
+NC_001498	EU293552	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	DQ211902	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KT732250	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	AB481087	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KT732241	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	KT732258	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	GQ376026	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	BD137592	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KT732235	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	KT732231	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	FJ416068	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	S58435	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	JN635406	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus strain MVi/Arizona.USA/11.08/2	segment  
+NC_001498	JF791787	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	EF033071	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KJ755977	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype H1	segment  
+NC_001498	KC164757	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D4	segment  
+NC_001498	EU293548	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	AB012948	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_001498	KT732253	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus genotype D8	segment  
+NC_001498	JN635402	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus strain MVi/New York.USA/26.09/3	segment  
+NC_001498	FJ211589	vertebrates,human	Paramyxoviridae,Morbillivirus,Measles morbillivirus	Measles virus	segment  
+NC_002200	KF481689	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KF878081	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KF843894	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus genotype C	segment  
+NC_002200	KF878082	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	AX081123	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	JX287387	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KY006856	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus genotype G	segment  
+NC_002200	AX081134	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KJ810514	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus genotype G	segment  
+NC_002200	KF843893	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus genotype C	segment  
+NC_002200	AB470486	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	AB576764	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	FJ375177	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	FN431985	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus strain Jeryl Lynn	segment  
+NC_002200	KY969482	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus genotype G	segment  
+NC_002200	AF345290	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus strain Jeryl Lynn	segment  
+NC_002200	FJ211585	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KY680537	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus genotype G	segment  
+NC_002200	AB744049	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	AY685920	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus strain L-Zagreb	segment  
+NC_002200	JF727651	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	GU980052	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	AX081133	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	AB000388	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	JQ388690	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	JN635498	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KF170917	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	JQ946552	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KF738114	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus genotype G	segment  
+NC_002200	AY685921	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus strain L-Zagreb	segment  
+NC_002200	KF170919	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	AY669145	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	JQ946551	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	JQ388691	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	JX287386	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	AY508995	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	AF314560	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	AB000386	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KY006858	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus genotype G	segment  
+NC_002200	JX287385	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KF878077	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	AB744048	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KF878078	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	DQ649478	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	FJ375178	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	FJ211584	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KM597072	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus genotype G	segment  
+NC_002200	HQ416906	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KF843895	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus genotype C	segment  
+NC_002200	HQ416907	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	JF727652	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	AF314559	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KF878079	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	AF201473	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	AY309060	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	AY681495	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KF170916	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	JX287390	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	JQ946554	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	AF280799	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KF170918	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	AF314562	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	EU370206	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KY969483	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus genotype H	segment  
+NC_002200	KY680539	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus genotype G	segment  
+NC_002200	AB600942	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	JQ946550	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KF878076	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	JN012242	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	AB000387	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	AB600843	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KF878080	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KF843896	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus genotype C	segment  
+NC_002200	FJ211586	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KF738113	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus genotype G	segment  
+NC_002200	AB040874	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KM385447	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus genotype C	segment  
+NC_002200	AF467767	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	AF314561	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KY604739	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus genotype G	segment  
+NC_002200	EU370207	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	KY680540	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus genotype G	segment  
+NC_002200	KY006857	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus genotype G	segment  
+NC_002200	KY680538	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus genotype G	segment  
+NC_002200	FJ556896	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	EU884413	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	AF338106	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus strain Jeryl Lynn	segment  
+NC_002200	AF314558	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	AB827968	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	JX287389	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	JX287388	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	AB823535	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	JQ946553	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
+NC_002200	JX287391	vertebrates,human	Paramyxoviridae,Rubulavirus,Mumps rubulavirus	Mumps virus	segment  
