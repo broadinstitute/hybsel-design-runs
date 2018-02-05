@@ -120,6 +120,12 @@ core.*
 /experiments/compare-set-cover-to-baseline/data/*/log/*
 /experiments/compare-set-cover-to-baseline/data/*/commands.txt
 
+# Data and logs from experiments to generate plots showing probe counts at varying
+# choices of parameters
+/experiments/count-probes-with-varying-parameter-values/data/*/num-probes/*
+/experiments/count-probes-with-varying-parameter-values/data/*/log/*
+/experiments/count-probes-with-varying-parameter-values/data/*/commands.txt
+
 # Some data in experiment to make probes from alignment
 /experiments/make-probes-from-alignment/*.fasta
 !/experiments/make-probes-from-alignment/*.aligned.gap-to-N.fasta
