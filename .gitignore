@@ -83,6 +83,7 @@ core.*
 /probe-sets/**/all-alignment-analysis
 /probe-sets/**/alignment-analysis
 /probe-sets/**/log
+/probe-sets/**/*.fasta
 
 # Do allow the full, finalized probe sets
 !/probe-sets/west-africa-viruses/all-with-adapters/*.fasta
@@ -94,6 +95,10 @@ core.*
 !/probe-sets/mumps-and-measles/2016-03/*.fasta
 !/probe-sets/ecoli/v1/uclust80/all-probes.fasta
 !/probe-sets/ecoli/v2/uclust80/probes/m2-e25.all-probes.fasta
+!/probe-sets/mmr/2018-01/pool/mmr-pooled-probes.fasta
+
+# Do allow additional input to probe sets
+!/probe-sets/mmr/2018-01/additional-input/*.fasta
 
 # hybsel_design analysis large files
 /probe-sets/west-africa-viruses/**/*.fastq.gz
