@@ -135,3 +135,6 @@ core.*
 /experiments/make-probes-from-alignment/*.fasta
 !/experiments/make-probes-from-alignment/*.aligned.gap-to-N.fasta
 !/experiments/make-probes-from-alignment/naive_tiling.out
+
+# Some data in experiment to benchmark LSH
+/experiments/benchmark-lsh/data/*/*
