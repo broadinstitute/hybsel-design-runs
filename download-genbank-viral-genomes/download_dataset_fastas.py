@@ -363,7 +363,7 @@ def download_dataset(dataset, sequences, extra_sequences_path, out_dir):
         num_genomes += genomes_added
 
     make_dataset_python_file(dataset, num_genomes, num_sequences, segments,
-                             out_dir)
+                             is_segmented, out_dir)
         
 
 def breakup_sequences_by_strain(sequences, strains, segments):
@@ -672,12 +672,11 @@ def parse_strain_from_gb_results(gb_results):
 
 
 def make_dataset_python_file(dataset, num_genomes, num_sequences,
-                             segments, out_dir):
+                             segments, is_segmented, out_dir):
     # sort segments alphanumerically (numerically if they're numbers)
     segments = sorted(segments,
                       key=lambda x: (int(x) if x.isdigit() else float('inf'), x))
 
-    is_segmented = len(segments) > 1
     if is_segmented:
         template_file = DATASET_PYTHON_TEMPLATE_SEGMENTED
     else:
