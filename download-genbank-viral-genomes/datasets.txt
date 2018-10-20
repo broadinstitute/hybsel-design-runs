@@ -90,7 +90,7 @@ gorilla_anellovirus	Gorilla anellovirus
 rodent_torque_teno_virus_2	Rodent Torque teno virus 2
 seal_anellovirus_2	Seal anellovirus 2
 seal_anellovirus_3	Seal anellovirus 3
-seal_anellovirus_tffn/usa/2006	Seal anellovirus TFFN/USA/2006
+seal_anellovirus_tffn--usa--2006	Seal anellovirus TFFN/USA/2006
 small_anellovirus	Small anellovirus
 torque_teno_indri_virus_1	Torque teno indri virus 1
 torque_teno_leptonychotes_weddellii_virus-1	Torque teno Leptonychotes weddellii virus-1
@@ -139,7 +139,7 @@ mamastrovirus_6	Mamastrovirus 6
 mamastrovirus_8	Mamastrovirus 8
 mamastrovirus_9	Mamastrovirus 9
 norwalk	Norwalk virus
-bat_sapovirus_tlc58/hk	Bat sapovirus TLC58/HK
+bat_sapovirus_tlc58--hk	Bat sapovirus TLC58/HK
 sapporo	Sapporo virus
 vesicular_exanthema_of_swine	Vesicular exanthema of swine virus
 human_associated_circovirus_1	Human associated circovirus 1
