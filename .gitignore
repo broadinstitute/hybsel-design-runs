@@ -116,8 +116,8 @@ core.*
 
 # Downloaded GenBank genomes
 /download-genbank-viral-genomes/all
-/download-genbank-viral-genomes/all.201510
-/download-genbank-viral-genomes/existing
+/download-genbank-viral-genomes/archive/all.201510
+/download-genbank-viral-genomes/archive/existing
 /download-genbank-viral-genomes/influenza/influenza.acc-list.txt
 
 # Data and logs from experiments to generate plots showing scaling of probe counts
