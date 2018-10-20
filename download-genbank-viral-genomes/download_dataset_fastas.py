@@ -151,7 +151,7 @@ def filter_sequences_with_nonhuman_host(sequences, args):
         with open(args.human_host_lineages_to_add) as f:
             for line in f:
                 ls = line.rstrip().split('\t')
-                lineages_to_include.add(tuple(ls))
+                lineages_to_include.add(','.join(ls))
 
     return [s for s in sequences if s.lineage in lineages_to_include]
 
@@ -802,7 +802,8 @@ if __name__ == "__main__":
         help=("File listing lineages to explicitly include as having human "
               "as a host; each row gives a lineage, tab-separated "
               "by family/genus/species"))
-    parser.add_argument('--skip-download',
+    parser.add_argument('--skip-download', dest="skip_download",
+        action="store_true",
         help=("When set, do not perform the download"))
     parser.add_argument('--write-accession-nums',
         help=("When set, write a list of accession nums for each dataset "
