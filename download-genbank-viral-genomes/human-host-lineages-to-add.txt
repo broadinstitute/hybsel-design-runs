@@ -5,15 +5,30 @@ Astroviridae	Mamastrovirus	Mamastrovirus 6
 Astroviridae	Mamastrovirus	Mamastrovirus 9
 Bornaviridae	Bornavirus	Mammalian 1 bornavirus
 Bornaviridae	Bornavirus	Mammalian 2 bornavirus
+Circoviridae	Circovirus	Human associated circovirus 1 
+Circoviridae	Cyclovirus	Human associated cyclovirus 1
+Circoviridae	Cyclovirus	Human associated cyclovirus 2
+Circoviridae	Cyclovirus	Human associated cyclovirus 3
+Circoviridae	Cyclovirus	Human associated cyclovirus 4
+Circoviridae	Cyclovirus	Human associated cyclovirus 5
+Circoviridae	Cyclovirus	Human associated cyclovirus 6
+Circoviridae	Cyclovirus	Human associated cyclovirus 7
+Circoviridae	Cyclovirus	Human associated cyclovirus 8
+Circoviridae	Cyclovirus	Human associated cyclovirus 9
+Circoviridae	Cyclovirus	Human associated cyclovirus 10
+Circoviridae	Cyclovirus	Human associated cyclovirus 11
+Circoviridae	Cyclovirus	Human associated cyclovirus 12
 Coronaviridae	Betacoronavirus	Middle East respiratory syndrome-related coronavirus
 Flaviviridae	Flavivirus	Cacipacore virus
 Flaviviridae	Flavivirus	Kyasanur forest disease virus
 Flaviviridae	Pegivirus	Pegivirus A
 Flaviviridae	Pestivirus	Bovine viral diarrhea virus 1
+Genomoviridae	Gemygorvirus	Sewage derived gemygorvirus 1
 Hantaviridae	Orthohantavirus	Bayou orthohantavirus
 Herpesviridae	Roseolovirus	Human betaherpesvirus 6A
 Herpesviridae	Roseolovirus	Human betaherpesvirus 6B
 Paramyxoviridae	Avulavirus	Avian avulavirus 1
+Parvoviridae	Dependoparvovirus	Adeno-associated dependoparvovirus A
 Peribunyaviridae	Orthobunyavirus	Catu orthobunyavirus
 Peribunyaviridae	Orthobunyavirus	Guama orthobunyavirus
 Peribunyaviridae	Orthobunyavirus	Kairi orthobunyavirus
@@ -40,6 +55,7 @@ Reoviridae	Orbivirus	Lebombo virus
 Reoviridae	Orbivirus	Orungo virus
 Reoviridae	Orthoreovirus	Mammalian orthoreovirus
 Reoviridae	Orthoreovirus	Nelson Bay orthoreovirus
+Retroviridae	Deltaretrovirus	Primate T-lymphotropic virus 1
 Retroviridae	Deltaretrovirus	Primate T-lymphotropic virus 2
 Retroviridae	Deltaretrovirus	Primate T-lymphotropic virus 3
 Retroviridae	Lentivirus	Simian immunodeficiency virus
