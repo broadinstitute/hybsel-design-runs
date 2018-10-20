@@ -17,68 +17,6 @@ __author__ = 'Hayden Metsky <hayden@mit.edu>'
 
 Entrez.email = "hayden@mit.edu"
 
-ADDITIONAL_HUMAN_HOST = [
-    "Hepatitis A virus",
-    "Middle East respiratory syndrome coronavirus",
-    "Human herpesvirus 6A",
-    "Human herpesvirus 6B",
-    "Eastern equine encephalitis virus",
-    "Venezuelan equine encephalitis virus",
-    "Western equine encephalitis virus",
-    ## Sindbis virus ##
-    "Sindbis virus",
-    "Babanki virus",
-    "Sindbis-like virus",
-    "Kyzylagach virus",
-    "Ockelbo virus",
-    "Sindbis-like virus YN87448",
-    ####
-    "Semliki Forest virus",
-    "Semliki forest virus",
-    ## Human mastadenovirus E ##
-    "Human adenovirus 4",
-    "Human adenovirus E",
-    "Simian adenovirus 22",
-    "Simian adenovirus 23",
-    "Simian adenovirus 24",
-    "Simian adenovirus 25",
-    "Simian adenovirus 25.2",
-    "Simian adenovirus 26",
-    "Simian adenovirus 30",
-    "Simian adenovirus 36",
-    "Simian adenovirus 37.1",
-    "Simian adenovirus 37.2",
-    "Simian adenovirus 38",
-    "Simian adenovirus 39",
-    ####
-    "Human adenovirus 41",
-    "Human adenovirus F",
-    "Human adenovirus 52",
-    "Simian adenovirus 1",
-    ## Parechoviruses ##
-    "Human parechovirus",
-    "Human parechovirus 1",
-    "Human parechovirus 2",
-    "Human parechovirus 3",
-    "Human parechovirus 4",
-    "Human parechovirus 5",
-    "Human parechovirus 6",
-    "Human parechovirus 7",
-    "Human parechovirus 8",
-    "Human parechovirus type 1 PicoBank/HPeV1/a",
-    "Ljungan virus",
-    "Ljungan virus strain 145SL",
-    "Ljungan virus strain 174F",
-    ####
-    "Monkeypox virus",
-    "Cowpox virus",
-    "Saffold virus",
-    "Human coronavirus OC43",
-    "Human enteric coronavirus 4408",
-    "Borna disease virus 1",
-    "Borna disease virus 2"
-]
-
 DATASET_PYTHON_TEMPLATE_UNSEGMENTED = "dataset_unsegmented.template.py"
 DATASET_PYTHON_TEMPLATE_SEGMENTED = "dataset_segmented.template.py"
 
@@ -203,13 +141,19 @@ def uniqueify_genome_accession_list(sequences):
     return list(set(sequences))
 
 
-def filter_sequences_with_nonhuman_host(sequences):
-    # return only those sequences where humans are a host
-    # sometimes (e.g., for 'Hepatitis A') the accession list incorrectly
-    # omits human as a host, so also check against the manual
-    # ADDITIONAL_HUMAN_HOST list
-    return [s for s in sequences if (s.human_is_host or
-                                     s.taxonomy_name in ADDITIONAL_HUMAN_HOST)]
+def filter_sequences_with_nonhuman_host(sequences, args):
+    # return only those sequences from lineages where humans are a host
+    # sometimes the accession list incorrectly leaves out human as a
+    # host, so also include any in args.human_host_lineages_to_add (if given)
+    lineages_to_include = set(s.lineage for s in sequences if s.human_is_host)
+
+    if args.human_host_lineages_to_add:
+        with open(args.human_host_lineages_to_add) as f:
+            for line in f:
+                ls = line.rstrip().split('\t')
+                lineages_to_include.add(tuple(ls))
+
+    return [s for s in sequences if s.lineage in lineages_to_include]
 
 
 def verify_dataset_list(datasets):
@@ -797,7 +741,7 @@ def write_accession_nums(dataset, sequences, extra_sequences_path, out_dir):
 def main(args):
     datasets = read_dataset_list(args.dataset_list)
     sequences = read_genome_accession_list(args.genome_accession_list)
-    sequences = filter_sequences_with_nonhuman_host(sequences)
+    sequences = filter_sequences_with_nonhuman_host(sequences, args)
     sequences = uniqueify_genome_accession_list(sequences)
 
     if args.datasets_to_skip:
@@ -854,6 +798,10 @@ if __name__ == "__main__":
     parser.add_argument('-es', '--extra_sequences',
         help=("File with list of datasets and corresponding paths to extra "
               "sequences to merge with those downloaded from GenBank"))
+    parser.add_argument('--human-host-lineages-to-add',
+        help=("File listing lineages to explicitly include as having human "
+              "as a host; each row gives a lineage, tab-separated "
+              "by family/genus/species"))
     parser.add_argument('--skip_download_and_write_accession_nums',
         help=("When set, do not perform the download and instead write "
               "a list of accession nums for each dataset in the specified "
