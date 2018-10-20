@@ -762,10 +762,14 @@ def main(args):
         datasets_to_skip, args.allow_multiple_dataset_matches)
     sequences_for_dataset = map_dataset_to_sequences(dataset_for_sequence)
 
+    missing_seqs = False
     for dataset in datasets:
         if dataset not in sequences_for_dataset:
             if dataset.name not in datasets_to_skip:
-                raise ValueError("No sequences for dataset: %s" % dataset.name)
+                print("No sequences for dataset: %s" % dataset.name)
+                missing_seqs = True
+    if missing_seqs:
+        raise Exception("Missing sequences for datasets printed above")
 
     if args.print_sequences:
         for dataset, sequences in sequences_for_dataset.items():
