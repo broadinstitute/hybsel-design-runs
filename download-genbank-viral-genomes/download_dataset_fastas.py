@@ -767,11 +767,10 @@ def main(args):
             if dataset.name not in datasets_to_skip:
                 raise ValueError("No sequences for dataset: %s" % dataset.name)
 
-    if args.skip_download_and_print_sequences:
+    if args.print_sequences:
         for dataset, sequences in sequences_for_dataset.items():
             for s in sequences:
                 print('\t'.join([dataset.name, s.representative, s.name, s.lineage]))
-        return 0
 
     for dataset, sequences in sequences_for_dataset.items():
         if dataset.name in extra_sequences_paths:
@@ -779,45 +778,45 @@ def main(args):
         else:
             extra_sequences_path = None
 
-        if args.skip_download_and_write_accession_nums:
+        if args.write_accession_nums:
             write_accession_nums(dataset, sequences, extra_sequences_path,
-                                 args.skip_download_and_write_accession_nums)
-        else:
+                                 args.write_accession_nums)
+
+        if not args.skip_download:
             download_dataset(dataset, sequences, extra_sequences_path,
                              args.out_dir)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('-dl', '--dataset_list', required=True,
+    parser.add_argument('-dl', '--dataset-list', required=True,
         help="File with list of datasets")
-    parser.add_argument('-gl', '--genome_accession_list', required=True,
+    parser.add_argument('-gl', '--genome-accession-list', required=True,
         help="File with accession list of all viral genomes")
-    parser.add_argument('-ds', '--datasets_to_skip',
+    parser.add_argument('-ds', '--datasets-to-skip',
         help="File with list of datasets to not download")
-    parser.add_argument('-es', '--extra_sequences',
+    parser.add_argument('-es', '--extra-sequences',
         help=("File with list of datasets and corresponding paths to extra "
               "sequences to merge with those downloaded from GenBank"))
     parser.add_argument('--human-host-lineages-to-add',
         help=("File listing lineages to explicitly include as having human "
               "as a host; each row gives a lineage, tab-separated "
               "by family/genus/species"))
-    parser.add_argument('--skip_download_and_write_accession_nums',
-        help=("When set, do not perform the download and instead write "
-              "a list of accession nums for each dataset in the specified "
-              "directory"))
-    parser.add_argument('--skip_download_and_print_sequences',
-        dest="skip_download_and_print_sequences",
+    parser.add_argument('--skip-download',
+        help=("When set, do not perform the download"))
+    parser.add_argument('--write-accession-nums',
+        help=("When set, write a list of accession nums for each dataset "
+              "in the specified directory (this does not require a download)"))
+    parser.add_argument('--print-sequences', dest="print_sequences",
         action="store_true",
-        help=("When set, do not perform the download and instead print "
-              "a list of sequences (accession and lineage) for each "
-              "dataset"))
-    parser.add_argument('--allow_multiple_dataset_matches',
+        help=("When set, print a list of sequences (accession and lineages) "
+              "for each dataset (this does not require a download)"))
+    parser.add_argument('--allow-multiple-dataset-matches',
         dest="allow_multiple_dataset_matches",
         action="store_true",
         help=("When set, do not fail when a sequence matches more than one "
               "dataset"))
-    parser.add_argument('-o', '--out_dir', required=True,
+    parser.add_argument('-o', '--out-dir', required=True,
         help="Directory in which to place output data")
 
     args = parser.parse_args()  
