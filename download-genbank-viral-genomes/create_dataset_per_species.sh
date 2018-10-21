@@ -35,7 +35,7 @@ if [ "$num_lineages" -ne "$num_datasets" ]; then
     exit 1
 fi
 
-# Print out, and then remove, the datasets file
-cat "$tmpf"
+# Print out in sorted order, and then remove, the datasets file
+cat "$tmpf" | sort -k1
 
 rm "$tmpf"
