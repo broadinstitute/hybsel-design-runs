@@ -12,7 +12,6 @@ import sys
 
 from catch.datasets import GenomesDatasetMultiChrom
 
-__author__ = 'Hayden Metsky <hayden@mit.edu>'
 
 chrs = ["segment_" + seg for seg in [[LIST_OF_SEGMENTS_PYTHON_FORM]]]
 
