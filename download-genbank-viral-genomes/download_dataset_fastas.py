@@ -19,6 +19,7 @@ Entrez.email = "hayden@mit.edu"
 
 DATASET_PYTHON_TEMPLATE_UNSEGMENTED = "dataset_unsegmented.template.py"
 DATASET_PYTHON_TEMPLATE_SEGMENTED = "dataset_segmented.template.py"
+DATASET_PYTHON_TEMPLATE_SEGMENTED_CONSOLIDATED = "dataset_segmented.consolidated.template.py"
 
 class Dataset:
 
@@ -235,7 +236,8 @@ def map_dataset_to_sequences(dataset_for_sequence):
     return dict(sequences_for_dataset)
 
 
-def download_dataset(dataset, sequences, extra_sequences_path, out_dir):
+def download_dataset(dataset, sequences, extra_sequences_path, out_dir,
+                     consolidate_segments=False):
     print("Starting download for", dataset.name)
 
     num_sequences_segmented = sum([s.is_segmented for s in sequences])
@@ -306,8 +308,27 @@ def download_dataset(dataset, sequences, extra_sequences_path, out_dir):
         num_sequences += sequences_added
         num_genomes += genomes_added
 
+    if is_segmented and consolidate_segments:
+        # group all .fasta files (one per genome) for this dataset into
+        # one fasta file, and delete all the old ones
+        segment_dir = os.path.join(out_dir, 'data', dataset.name)
+        new_fasta_path = os.path.join(out_dir, 'data', dataset.name + '.fasta')
+        with open(new_fasta_path, 'w') as fout:
+            for genome_fn in os.listdir(segment_dir):
+                if not genome_fn.endswith('.fasta'):
+                    continue
+                genome_id = genome_fn.replace('.fasta', '')
+                with open(os.path.join(segment_dir, genome_fn)) as fin:
+                    for line in fin:
+                        line = line.rstrip()
+                        if line.startswith('>'):
+                            # append genome id to header
+                            line = line + ' [genome ' + genome_id + ']'
+                        fout.write(line + '\n')
+        shutil.rmtree(segment_dir)
+
     make_dataset_python_file(dataset, num_genomes, num_sequences, segments,
-                             is_segmented, out_dir)
+                             is_segmented, consolidate_segments, out_dir)
         
 
 def breakup_sequences_by_strain(sequences, strains, segments):
@@ -616,13 +637,17 @@ def parse_strain_from_gb_results(gb_results):
 
 
 def make_dataset_python_file(dataset, num_genomes, num_sequences,
-                             segments, is_segmented, out_dir):
+                             segments, is_segmented, consolidate_segments,
+                             out_dir):
     # sort segments alphanumerically (numerically if they're numbers)
     segments = sorted(segments,
                       key=lambda x: (int(x) if x.isdigit() else float('inf'), x))
 
     if is_segmented:
-        template_file = DATASET_PYTHON_TEMPLATE_SEGMENTED
+        if consolidate_segments:
+            template_file = DATASET_PYTHON_TEMPLATE_SEGMENTED_CONSOLIDATED
+        else:
+            template_file = DATASET_PYTHON_TEMPLATE_SEGMENTED
     else:
         template_file = DATASET_PYTHON_TEMPLATE_UNSEGMENTED
 
@@ -788,7 +813,8 @@ def main(args):
 
         if not args.skip_download:
             download_dataset(dataset, sequences, extra_sequences_path,
-                             args.out_dir)
+                             args.out_dir,
+                             consolidate_segments=args.consolidate_segmented_genomes_into_one_fasta)
 
 
 if __name__ == "__main__":
@@ -821,6 +847,12 @@ if __name__ == "__main__":
         action="store_true",
         help=("When set, do not fail when a sequence matches more than one "
               "dataset"))
+    parser.add_argument('--consolidate-segmented-genomes-into-one-fasta',
+        dest="consolidate_segmented_genomes_into_one_fasta",
+        action="store_true",
+        help=("When set, instead of storing all .fasta files (one per "
+              "genome) for a segmented virus in a directory, place them "
+              "all in a single fasta file"))
     parser.add_argument('-o', '--out-dir', required=True,
         help="Directory in which to place output data")
 
