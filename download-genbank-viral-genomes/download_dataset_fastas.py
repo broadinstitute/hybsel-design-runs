@@ -3,6 +3,7 @@
 
 import argparse
 from collections import defaultdict
+import gzip
 import hashlib
 import os
 import re
@@ -237,7 +238,7 @@ def map_dataset_to_sequences(dataset_for_sequence):
 
 
 def download_dataset(dataset, sequences, extra_sequences_path, out_dir,
-                     consolidate_segments=False):
+                     consolidate_segments=False, gzip_fastas=False):
     print("Starting download for", dataset.name)
 
     num_sequences_segmented = sum([s.is_segmented for s in sequences])
@@ -327,8 +328,26 @@ def download_dataset(dataset, sequences, extra_sequences_path, out_dir,
                         fout.write(line + '\n')
         shutil.rmtree(segment_dir)
 
+    if gzip_fastas:
+        # gzip each fasta that was created
+        if not is_segmented or (is_segmented and consolidate_segments):
+            paths_to_gzip = [os.path.join(out_dir, 'data', dataset.name + '.fasta')]
+        else:
+            paths_to_gzip = []
+            segment_dir = os.path.join(out_dir, 'data', dataset.name)
+            for genome_fn in os.listdir(segment_dir):
+                if genome_fn.endswith('.fasta'):
+                    paths_to_gzip += [os.path.join(segment_dir, genome_fn)]
+
+        for path in paths_to_gzip:    
+            with open(path, 'rb') as fin:
+                with gzip.open(path + '.gz', 'wb') as fout:
+                    shutil.copyfileobj(fin, fout)
+            os.remove(path)
+
     make_dataset_python_file(dataset, num_genomes, num_sequences, segments,
-                             is_segmented, consolidate_segments, out_dir)
+                             is_segmented, consolidate_segments, gzip_fastas,
+                             out_dir)
         
 
 def breakup_sequences_by_strain(sequences, strains, segments):
@@ -638,7 +657,7 @@ def parse_strain_from_gb_results(gb_results):
 
 def make_dataset_python_file(dataset, num_genomes, num_sequences,
                              segments, is_segmented, consolidate_segments,
-                             out_dir):
+                             gzip_fastas, out_dir):
     # sort segments alphanumerically (numerically if they're numbers)
     segments = sorted(segments,
                       key=lambda x: (int(x) if x.isdigit() else float('inf'), x))
@@ -662,6 +681,11 @@ def make_dataset_python_file(dataset, num_genomes, num_sequences,
         fillins['SUBSET_NOTE'] = ('\n' + "Note that the sequences in this "
                                   "dataset are a subset of those in the '%s' "
                                   "dataset." % dataset.subset_of + '\n')
+
+    if gzip_fastas:
+        fillins['GZIP'] = '.gz'
+    else:
+        fillins['GZIP'] = ''
 
     if is_segmented:
         segments_brief = [s.replace('segment ', '') for s in segments]
@@ -814,7 +838,8 @@ def main(args):
         if not args.skip_download:
             download_dataset(dataset, sequences, extra_sequences_path,
                              args.out_dir,
-                             consolidate_segments=args.consolidate_segmented_genomes_into_one_fasta)
+                             consolidate_segments=args.consolidate_segmented_genomes_into_one_fasta,
+                             gzip_fastas=args.gzip_fastas)
 
 
 if __name__ == "__main__":
@@ -853,6 +878,10 @@ if __name__ == "__main__":
         help=("When set, instead of storing all .fasta files (one per "
               "genome) for a segmented virus in a directory, place them "
               "all in a single fasta file"))
+    parser.add_argument('--gzip-fastas',
+        dest="gzip_fastas",
+        action="store_true",
+        help=("When set, gzip each fasta file created"))
     parser.add_argument('-o', '--out-dir', required=True,
         help="Directory in which to place output data")
 

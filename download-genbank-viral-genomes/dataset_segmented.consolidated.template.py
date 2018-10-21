@@ -32,5 +32,5 @@ chrs = ["segment_" + seg for seg in [[LIST_OF_SEGMENTS_PYTHON_FORM]]]
 ds = GenomesDatasetMultiChrom(__name__, __file__, __spec__,
                               chrs, seq_header_to_chr,
                               seq_header_to_genome=seq_header_to_genome)
-ds.add_fasta_path("data/[[DATASET_NAME]].fasta", relative=True)
+ds.add_fasta_path("data/[[DATASET_NAME]].fasta[[GZIP]]", relative=True)
 sys.modules[__name__] = ds
