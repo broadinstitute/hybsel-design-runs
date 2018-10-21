@@ -13,21 +13,17 @@ import sys
 from catch.datasets import GenomesDatasetMultiChrom
 
 
-chrs = ["segment_" + seg for seg in [[LIST_OF_SEGMENTS_PYTHON_FORM]]]
-
 def seq_header_to_chr(header):
     import re
     c = re.compile(r'\[segment ([[LIST_OF_SEGMENTS_REGEX_FORM]])\]')
     m = c.search(header)
     if not m:
-        raise ValueError("Unknown segment in header %s" % header)
+        raise ValueError("Unknown or invalid segment in header %s" % header)
     seg = m.group(1)
-    valid_segs = [[LIST_OF_SEGMENTS_PYTHON_FORM]]
-    if seg not in valid_segs:
-        raise ValueError("Unknown segment %s" % seg)
     return "segment_" + seg
 
 
+chrs = ["segment_" + seg for seg in [[LIST_OF_SEGMENTS_PYTHON_FORM]]]
 ds = GenomesDatasetMultiChrom(__name__, __file__, __spec__,
                               chrs, seq_header_to_chr)
 
