@@ -471,7 +471,7 @@ tembusu	Flaviviridae,Flavivirus,Tembusu virus
 tete_orthobunyavirus	Peribunyaviridae,Orthobunyavirus,Tete orthobunyavirus
 thailand_orthohantavirus	Hantaviridae,Orthohantavirus,Thailand orthohantavirus
 thiafora_orthonairovirus	Nairoviridae,Orthonairovirus,Thiafora orthonairovirus
-t'ho	Flaviviridae,Flavivirus,T'Ho virus
+tho	Flaviviridae,Flavivirus,T'Ho virus
 thogoto_thogotovirus	Orthomyxoviridae,Thogotovirus,Thogoto thogotovirus
 thottapalayam_orthohantavirus	Hantaviridae,Orthohantavirus,Thottapalayam orthohantavirus
 tick-borne_encephalitis	Flaviviridae,Flavivirus,Tick-borne encephalitis virus

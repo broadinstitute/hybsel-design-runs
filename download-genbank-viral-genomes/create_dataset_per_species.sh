@@ -13,8 +13,8 @@
 dataset_name() {
     # Create a dataset name from a species name
     # Convert to lowercase, make spaces be underscores, change '/'
-    # to '--', and if it ends in ' virus' then remove that
-    dataset=$(echo "$1" | awk '{ print tolower($0) }' | sed 's/ /\_/g' | sed 's/\//--/g' | sed -E 's/\_virus$//')
+    # to '--', remove ', and if it ends in ' virus' then remove that
+    dataset=$(echo "$1" | awk '{ print tolower($0) }' | sed 's/ /\_/g' | sed 's/\//--/g' | sed "s/'//g" | sed -E 's/\_virus$//')
     echo "$dataset"
 }
 

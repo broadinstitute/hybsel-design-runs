@@ -472,7 +472,7 @@ tete_orthobunyavirus	Tete orthobunyavirus
 thailand_orthohantavirus	Thailand orthohantavirus
 thiafora_orthonairovirus	Thiafora orthonairovirus
 thogoto_thogotovirus	Thogoto thogotovirus
-t'ho	T'Ho virus
+tho	T'Ho virus
 thottapalayam_orthohantavirus	Thottapalayam orthohantavirus
 tick-borne_encephalitis	Tick-borne encephalitis virus
 tioman_rubulavirus	Tioman rubulavirus
