@@ -84,6 +84,9 @@ core.*
 /probe-sets/**/alignment-analysis
 /probe-sets/**/log
 /probe-sets/**/*.fasta
+/probe-sets/**/*.fasta.gz
+/probe-sets/**/dataset-runs/*/num-probes
+/probe-sets/**/dataset-runs/*/coverage-analysis
 
 # Do allow the full, finalized probe sets
 !/probe-sets/west-africa-viruses/all-with-adapters/*.fasta
@@ -96,6 +99,7 @@ core.*
 !/probe-sets/ecoli/v1/uclust80/all-probes.fasta
 !/probe-sets/ecoli/v2/uclust80/probes/m2-e25.all-probes.fasta
 !/probe-sets/mmr/2018-01/pool/mmr-pooled-probes.fasta
+!/probe-sets/influenza/**/pooled/design-*/probes.fasta.gz
 
 # Do allow additional input to probe sets
 !/probe-sets/mmr/2018-01/additional-input/*.fasta
