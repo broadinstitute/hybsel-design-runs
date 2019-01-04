@@ -117,10 +117,10 @@ elif [[ $1 == "param-exploration-combine-counts" ]]; then
         for m in "${MISMATCHES_TO_TRY[@]}"; do
             for e in "${EXTENSIONS_TO_TRY[@]}"; do
                 for i in "${ISLAND_OF_EXACT_MATCHES_TO_TRY[@]}"; do
-                    outfn="dataset-runs/$dataset/num-probes/m${m}-e${e}-i${i}"
+                    outnumfn="dataset-runs/$dataset/num-probes/m${m}-e${e}-i${i}"
                     # Only print if the file (count) exists
-                    if [[ -f "$outfn" && -s "$outfn" ]]; then
-                        num_probes=$(cat "$outfn")
+                    if [[ -f "$outnumfn" && -s "$outnumfn" ]]; then
+                        num_probes=$(cat "$outnumfn")
                         echo -e "$dataset\t$m\t$e\t$i\t$num_probes" >> $outfn
                     fi
                 done
