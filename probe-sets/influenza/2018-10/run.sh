@@ -145,11 +145,9 @@ elif [[ $1 == "find-optimal-pooled-params" ]]; then
     num_probes=$2
     mkdir -p pooled/design-${num_probes}
 
-    # Run combine-counts (from this script) and extract the
-    # columns for mismatches and cover_extension (leave out island_of_exact_match)
+    # Extract columns for mismatches and cover_extension (leave out island_of_exact_match)
     # Note: Here, we assume that island_of_exact_match is a constant (and determine
     # and store that constant in $iem)
-    ./run.sh combine-counts > pooled/probe-counts.tsv
     if [[ $(cat pooled/probe-counts.tsv | tail -n +2 | awk '{print $4}' | sort | uniq | wc -l) -gt "1" ]]; then
         # island_of_exact_match is not a constant
         echo "FATAL: island_of_exact_match must be a constant"
