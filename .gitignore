@@ -100,6 +100,8 @@ core.*
 !/probe-sets/ecoli/v2/uclust80/probes/m2-e25.all-probes.fasta
 !/probe-sets/mmr/2018-01/pool/mmr-pooled-probes.fasta
 !/probe-sets/influenza/**/pooled/design-*/probes.fasta.gz
+!/probe-sets/all-human-viruses/**/pooled/design-*/probes.fasta.gz
+!/probe-sets/all-human-viruses/**/pooled/design-*/pool.out
 
 # Do allow additional input to probe sets
 !/probe-sets/mmr/2018-01/additional-input/*.fasta
