@@ -102,6 +102,7 @@ core.*
 !/probe-sets/influenza/**/pooled/design-*/probes.fasta.gz
 !/probe-sets/all-human-viruses/**/pooled/design-*/probes.fasta.gz
 !/probe-sets/all-human-viruses/**/pooled/design-*/pool.out
+!/probe-sets/respiratory/**/pooled/design-*/probes.fasta.gz
 
 # Do allow additional input to probe sets
 !/probe-sets/mmr/2018-01/additional-input/*.fasta
