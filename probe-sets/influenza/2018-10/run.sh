@@ -219,6 +219,8 @@ elif [[ $1 == "make-probe-set-from-optimal-pooled-params" ]]; then
     # Construct commands to output probes
     # In contrast to the designs for determining the number of probes:
     #   Remove Ns, add adapters, and also add reverse complements
+    # [Later note: The use of `--expand-n 0` was ineffective here due to a
+    #  bug in CATCH; fixed in commit 074ac1c0.]
     echo -n "" > $COMMANDS
     while read line; do
         dataset=$(echo "$line" | awk '{print $1}')

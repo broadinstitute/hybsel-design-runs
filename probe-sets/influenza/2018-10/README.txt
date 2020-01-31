@@ -41,3 +41,7 @@ determined in step (2) (besides also being twice as large, due to adding
 reverse complements) because of randomness due to `--filter-with-lsh-hamming`.
 
 The final probe sets are in pooled/design-NPROBES/probes.fasta.gz.
+
+Note that, even though run.sh uses `--expand-n 0` in the design (in the final
+step), this was ineffective and some output probes contain N. This was due
+to a bug in CATCH, and fixed in commit 074ac1c0.
