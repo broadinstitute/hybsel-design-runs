@@ -2,6 +2,12 @@
 
 # Args:
 #   1: subcommand
+#   Subcommands:
+#     - param-exploration-make-commands
+#     - param-exploration-parallel-run
+#     - param-exploration-combine-counts
+#     - find-optimal-pooled-params
+#     - make-probe-set-from-optimal-pooled-params
 #
 #   If subcommand is "param-exploration-parallel-run":
 #      2: number of jobs to run in parallel
@@ -9,7 +15,6 @@
 #      2: number of probes to design
 #   If subcommand is "make-probe-set-from-optimal-pooled-params":
 #      2: number of probes to design
-#      3: number of jobs to run in parallel
 #
 # Author: Hayden Metsky
 
@@ -65,8 +70,7 @@ if [[ $1 == "param-exploration-make-commands" ]]; then
     echo -n "" > $COMMANDS
 
     for dataset in "${DATASETS[@]}"; do
-        mkdir -p dataset-runs/$dataset/num-probes
-        mkdir -p dataset-runs/$dataset/log
+        mkdir -p dataset-runs/$dataset
 
         dataset_input=$(dataset_load $dataset)
 
@@ -77,17 +81,18 @@ if [[ $1 == "param-exploration-make-commands" ]]; then
 
             for e in "${EXTENSIONS_TO_TRY[@]}"; do
                 for i in "${ISLAND_OF_EXACT_MATCHES_TO_TRY[@]}"; do
-                    outfn="dataset-runs/$dataset/num-probes/m${m}-e${e}-i${i}"
-                    outlogfn="dataset-runs/$dataset/log/m${m}-e${e}-i${i}.err"
+                    outdir="dataset-runs/$dataset/m${m}-e${e}-i${i}"
+                    mkdir -p $outdir
+                    outlogfn="$outdir/log.err"
+                    outprobesfn="$outdir/probes.fasta"
+                    outanalysisfn="$outdir/coverage-analysis.tsv"
+                    taxidaccdir="$outdir/taxid-acc"
+                    mkdir -p $taxidaccdir
 
-                    if ! [[ -f "$outfn" && -s "$outfn" ]]; then
+                    if ! [[ -f "${outprobesfn}.gz" && -s "${outprobesfn}.gz" ]]; then
                         # Create a command that writes the number of probes to stdout,
-                        # but does not use -o (i.e., does not write the probe sequences
-                        # to a file); the probe sequences can be easily re-generated
-                        # from known parameter values. Since -o is required, this just
-                        # passes /dev/null
                         # Also, toss the stderr (log) when the job is done
-                        cmd="design.py $dataset_input -pl 75 -ps 25 -l 75 -m $m -e $e --island-of-exact-match $i --filter-with-lsh-hamming $filter_with_lsh_hamming -o /dev/null --max-num-processes 8 --ncbi-api-key $NCBI_API_KEY --verbose > $outfn 2> $outlogfn; rm $outlogfn"
+                        cmd="design.py $dataset_input -pl 75 -ps 25 -l 75 -m $m -e $e --island-of-exact-match $i --filter-with-lsh-hamming $filter_with_lsh_hamming --expand-n 0 -o $outprobesfn --write-analysis-to-tsv $outanalysisfn --write-taxid-acc $taxidaccdir --max-num-processes 8 --ncbi-api-key $NCBI_API_KEY --verbose &> $outlogfn; rm $outlogfn; gzip $outprobesfn; gzip $outanalysisfn"
                         echo "$cmd" >> $COMMANDS
                     fi
                 done
@@ -100,7 +105,8 @@ elif [[ $1 == "param-exploration-parallel-run" ]]; then
     # at different choices of parameters
     # Input: $COMMANDS file listing commands from `param-exploration-make-commands`
     # Output: Result of calling those commands - i.e., number of probes written to
-    #         dataset-runs/[dataset]/num-probes/[param choice]
+    #         dataset-runs/[dataset]/[param choice]/probes.fasta.gz
+    # and analysis, etc. for each param choice
 
     if [ -z "$2" ]; then
         echo "FATAL: Unknown number of commands to run in parallel"
@@ -118,9 +124,10 @@ elif [[ $1 == "param-exploration-parallel-run" ]]; then
 elif [[ $1 == "param-exploration-combine-counts" ]]; then
     # Combine probe counts to construct a table of the number of
     # probes for each choice of parameters for each dataset
-    # Input: Probe counts given in dataset-runs/[dataset]/num-probes/[param choice]
+    # Input: Probe counts given by dataset-runs/[dataset]/[param choice]/probes.fasta.gz
     # Output: Table combining all the probe counts, across datasets and
     #         choices of parameters - written to pooled/probe-counts.tsv
+    mkdir -p pooled
     outfn="pooled/probe-counts.tsv"
 
     # Print a header
@@ -131,10 +138,10 @@ elif [[ $1 == "param-exploration-combine-counts" ]]; then
         for m in "${MISMATCHES_TO_TRY[@]}"; do
             for e in "${EXTENSIONS_TO_TRY[@]}"; do
                 for i in "${ISLAND_OF_EXACT_MATCHES_TO_TRY[@]}"; do
-                    outnumfn="dataset-runs/$dataset/num-probes/m${m}-e${e}-i${i}"
-                    # Only print if the file (count) exists
-                    if [[ -f "$outnumfn" && -s "$outnumfn" ]]; then
-                        num_probes=$(cat "$outnumfn")
+                    outprobesfn="dataset-runs/$dataset/m${m}-e${e}-i${i}/probes.fasta.gz"
+                    # Only print if the file exists
+                    if [[ -f "$outprobesfn" && -s "$outprobesfn" ]]; then
+                        num_probes=$(zcat "$outprobesfn" | grep '>' | wc -l)
                         echo -e "$dataset\t$m\t$e\t$i\t$num_probes" >> $outfn
                     fi
                 done
@@ -210,12 +217,6 @@ elif [[ $1 == "make-probe-set-from-optimal-pooled-params" ]]; then
     fi
     num_probes=$2
 
-    if [ -z "$3" ]; then
-        echo "FATAL: Unknown number of commands to run in parallel"
-        exit 1
-    fi
-    NJOBS="$3"
-
     if [[ ! -f "pooled/design-${num_probes}/params.tsv" ]]; then
         echo "FATAL: Unknown optimal pooled params"
         exit 1
@@ -230,44 +231,6 @@ elif [[ $1 == "make-probe-set-from-optimal-pooled-params" ]]; then
         exit 1
     fi
 
-    # Construct commands to output probes
-    # In contrast to the designs for determining the number of probes:
-    #   Remove Ns
-    echo -n "" > $COMMANDS
-    while read line; do
-        dataset=$(echo "$line" | awk '{print $1}')
-        m=$(echo "$line" | awk '{print $2}')
-        e=$(echo "$line" | awk '{print $3}')
-        i=$(echo "$line" | awk '{print $4}')
-        mkdir -p dataset-runs/$dataset/probes
-        mkdir -p dataset-runs/$dataset/coverage-analysis
-        mkdir -p dataset-runs/$dataset/taxid-acc
-        outprobesfn="dataset-runs/$dataset/probes/m${m}-e${e}-i${i}.fasta"
-        outanalysisfn="dataset-runs/$dataset/coverage-analysis/m${m}-e${e}-i${i}.tsv"
-        outlogfn="dataset-runs/$dataset/log/m${m}-e${e}-i${i}.probe-design.err"
-        taxidaccdir="dataset-runs/$dataset/taxid-acc"
-
-        dataset_input=$(dataset_load $dataset)
-
-        # --filter-with-lsh-hamming should be commensurate with, but not
-        # greater than, m. Use m
-        filter_with_lsh_hamming=$m
-
-        if ! [[ -f "${outprobesfn}.gz" && -s "${outprobesfn}.gz" ]]; then
-            # Create a command that writes the probe sequences to $outprobesfn and
-            # then gzips it
-            # Write the stdout to /dev/null
-            # Also, toss the stderr (log) when the job is done
-            cmd="design.py $dataset_input -pl 75 -ps 25 -l 75 -m $m -e $e --island-of-exact-match $i --filter-with-lsh-hamming $filter_with_lsh_hamming --expand-n 0 -o $outprobesfn --write-analysis-to-tsv $outanalysisfn --write-taxid-acc $taxidaccdir --max-num-processes 8 --ncbi-api-key $NCBI_API_KEY --verbose > /dev/null 2> $outlogfn; gzip $outprobesfn; rm $outlogfn"
-            echo "$cmd" >> $COMMANDS
-        fi
-    done < <(cat $paramsfn | tail -n +2)
-
-    # Run the commands to design and output probes
-    conda activate /ebs/hybsel-design-runs/tools/envs/catch-prod
-    parallel --jobs $NJOBS --no-notice --progress < $COMMANDS
-    conda deactivate
-
     # Combine all the probes
     pooledprobesfn="pooled/design-${num_probes}/probes.fasta"
     echo -n "" > $pooledprobesfn
@@ -276,7 +239,7 @@ elif [[ $1 == "make-probe-set-from-optimal-pooled-params" ]]; then
         m=$(echo "$line" | awk '{print $2}')
         e=$(echo "$line" | awk '{print $3}')
         i=$(echo "$line" | awk '{print $4}')
-        probesfn="dataset-runs/$dataset/probes/m${m}-e${e}-i${i}.fasta.gz"
+        probesfn="dataset-runs/$dataset/m${m}-e${e}-i${i}/probes.fasta.gz"
         zcat $probesfn >> $pooledprobesfn
     done < <(cat $paramsfn | tail -n +2)
     gzip $pooledprobesfn
@@ -289,8 +252,8 @@ elif [[ $1 == "make-probe-set-from-optimal-pooled-params" ]]; then
         e=$(echo "$line" | awk '{print $3}')
         i=$(echo "$line" | awk '{print $4}')
         # Get the header of the analysis tsv
-        analysisfn="dataset-runs/$dataset/coverage-analysis/m${m}-e${e}-i${i}.tsv"
-        head -n 1 $analysisfn > $coverageanalysisfn
+        analysisfn="dataset-runs/$dataset/m${m}-e${e}-i${i}/coverage-analysis.tsv.gz"
+        zcat $analysisfn | head -n 1 > $coverageanalysisfn
     done < <(cat $paramsfn | tail -n +2 | head -n 1)
     # Concatenate all analysis tsvs, leaving out the header
     while read line; do
@@ -298,8 +261,8 @@ elif [[ $1 == "make-probe-set-from-optimal-pooled-params" ]]; then
         m=$(echo "$line" | awk '{print $2}')
         e=$(echo "$line" | awk '{print $3}')
         i=$(echo "$line" | awk '{print $4}')
-        analysisfn="dataset-runs/$dataset/coverage-analysis/m${m}-e${e}-i${i}.tsv"
-        tail -n +2 $analysisfn >> $coverageanalysisfn
+        analysisfn="dataset-runs/$dataset/m${m}-e${e}-i${i}/coverage-analysis.tsv.gz"
+        zcat $analysisfn | tail -n +2 >> $coverageanalysisfn
     done < <(cat $paramsfn | tail -n +2)
     gzip $coverageanalysisfn
 else
