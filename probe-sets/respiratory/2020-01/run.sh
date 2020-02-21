@@ -44,6 +44,12 @@ done
 
 NCBI_API_KEY="321e5004f2502f604ee2e8858a22b993d608"
 
+if [[ -d "/ebs/tmpfs/tmp" ]]; then
+    TMPDIR="/ebs/tmpfs/tmp"
+else
+    TMPDIR="/tmp"
+fi
+export TMPDIR
 
 # Allow activating conda environments
 source ~/anaconda3/etc/profile.d/conda.sh
@@ -52,7 +58,7 @@ source ~/anaconda3/etc/profile.d/conda.sh
 dataset_load () {
     if [[ $1 == "ncov" ]]; then
         # Load from file
-        echo "input/ncov.20200127.fasta.gz"
+        echo "input/ncov.20200214.fasta.gz"
     else
         taxid=$(cat input/taxid.tsv | awk -F'\t' -v d="$1" '$1==d {print $2}')
         echo "download:$taxid"
@@ -74,6 +80,15 @@ if [[ $1 == "param-exploration-make-commands" ]]; then
 
         dataset_input=$(dataset_load $dataset)
 
+        # For influenza A/B, speed up by clustering and designing separately
+        if [[ $dataset == influenza_a_* ]] || [[ $dataset == influenza_b_* ]]; then
+            cds="--cluster-and-design-separately 0.1"
+            is_influenza_ab=true
+        else
+            cds=""
+            is_influenza_ab=false
+        fi
+
         for m in "${MISMATCHES_TO_TRY[@]}"; do
             # --filter-with-lsh-hamming should be commensurate with, but not
             # greater than, m. Use m
@@ -81,6 +96,16 @@ if [[ $1 == "param-exploration-make-commands" ]]; then
 
             for e in "${EXTENSIONS_TO_TRY[@]}"; do
                 for i in "${ISLAND_OF_EXACT_MATCHES_TO_TRY[@]}"; do
+                    if [ "$is_influenza_ab" = true ]; then
+                        # For speed, only compute for large values
+                        if [ "$m" -lt "4" ]; then
+                            continue
+                        fi
+                        if [ "$e" -lt "25" ]; then
+                            continue
+                        fi
+                    fi
+
                     outdir="dataset-runs/$dataset/m${m}-e${e}-i${i}"
                     mkdir -p $outdir
                     outlogfn="$outdir/log.err"
@@ -92,7 +117,7 @@ if [[ $1 == "param-exploration-make-commands" ]]; then
                     if ! [[ -f "${outprobesfn}.gz" && -s "${outprobesfn}.gz" ]]; then
                         # Create a command that writes the number of probes to stdout,
                         # Also, toss the stderr (log) when the job is done
-                        cmd="design.py $dataset_input -pl 75 -ps 25 -l 75 -m $m -e $e --island-of-exact-match $i --filter-with-lsh-hamming $filter_with_lsh_hamming --expand-n 0 -o $outprobesfn --write-analysis-to-tsv $outanalysisfn --write-taxid-acc $taxidaccdir --max-num-processes 8 --ncbi-api-key $NCBI_API_KEY --verbose &> $outlogfn; rm $outlogfn; gzip $outprobesfn; gzip $outanalysisfn"
+                        cmd="design.py $dataset_input -pl 75 -ps 25 -l 75 -m $m -e $e --island-of-exact-match $i --filter-with-lsh-hamming $filter_with_lsh_hamming --expand-n 0 $cds -o $outprobesfn --write-analysis-to-tsv $outanalysisfn --write-taxid-acc $taxidaccdir --max-num-processes 8 --ncbi-api-key $NCBI_API_KEY --verbose &> $outlogfn; rm $outlogfn; gzip $outprobesfn; gzip $outanalysisfn"
                         echo "$cmd" >> $COMMANDS
                     fi
                 done

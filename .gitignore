@@ -79,6 +79,7 @@ core.*
 /probe-sets/**/*.fna.gz
 /probe-sets/**/*.fa
 /probe-sets/**/*.analysis.tsv
+/probe-sets/**/coverage-analysis.tsv.gz
 /probe-sets/**/*.fastq
 /probe-sets/**/all-alignment-analysis
 /probe-sets/**/alignment-analysis
@@ -87,6 +88,7 @@ core.*
 /probe-sets/**/*.fasta.gz
 /probe-sets/**/dataset-runs/*/num-probes
 /probe-sets/**/dataset-runs/*/coverage-analysis
+/probe-sets/**/dataset-runs/*/*/taxid-acc
 
 # Do allow the full, finalized probe sets
 !/probe-sets/west-africa-viruses/all-with-adapters/*.fasta
@@ -103,6 +105,7 @@ core.*
 !/probe-sets/all-human-viruses/**/pooled/design-*/probes.fasta.gz
 !/probe-sets/all-human-viruses/**/pooled/design-*/pool.out
 !/probe-sets/respiratory/**/pooled/design-*/probes.fasta.gz
+!/probe-sets/respiratory/**/pooled/design-*/coverage-analysis.tsv.gz
 
 # Do allow additional input to probe sets
 !/probe-sets/mmr/2018-01/additional-input/*.fasta
