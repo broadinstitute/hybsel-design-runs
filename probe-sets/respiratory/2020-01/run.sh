@@ -56,9 +56,9 @@ source ~/anaconda3/etc/profile.d/conda.sh
 
 
 dataset_load () {
-    if [[ $1 == "ncov" ]]; then
+    if [[ $1 == "sars" ]]; then
         # Load from file
-        echo "input/ncov.20200214.fasta.gz"
+        echo "input/SARS-all.20200218.fasta.gz"
     else
         taxid=$(cat input/taxid.tsv | awk -F'\t' -v d="$1" '$1==d {print $2}')
         echo "download:$taxid"
