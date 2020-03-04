@@ -47,3 +47,4 @@ rhinovirus_a
 rhinovirus_b
 rhinovirus_c
 sars
+betacoronavirus_1

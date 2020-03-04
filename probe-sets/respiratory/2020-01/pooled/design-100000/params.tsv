@@ -1,4 +1,5 @@
 dataset	mismatches	cover_extension	island_of_exact_match
+betacoronavirus_1	2	25	25
 enterovirus_a	4	25	25
 enterovirus_b	2	50	25
 enterovirus_c	3	25	25
@@ -15,7 +16,7 @@ human_coronavirus_nl63	1	25	25
 human_mastadenovirus_a	1	25	25
 human_mastadenovirus_b	2	25	25
 human_mastadenovirus_c	2	25	25
-human_mastadenovirus_d	3	25	25
+human_mastadenovirus_d	2	25	25
 human_mastadenovirus_e	2	25	25
 human_mastadenovirus_f	1	25	25
 human_mastadenovirus_g	1	25	25
@@ -25,7 +26,7 @@ influenza_a_segment2	4	25	25
 influenza_a_segment3	4	25	25
 influenza_a_segment4	4	25	25
 influenza_a_segment5	4	25	25
-influenza_a_segment6	4	25	25
+influenza_a_segment6	4	50	25
 influenza_a_segment7	4	25	25
 influenza_a_segment8	4	25	25
 influenza_b_segment1	4	25	25
@@ -42,7 +43,7 @@ influenza_c_segment3	1	25	25
 influenza_c_segment4	1	25	25
 influenza_c_segment5	1	25	25
 influenza_c_segment6	1	25	25
-influenza_c_segment7	1	25	25
+influenza_c_segment7	1	0	25
 mers	1	25	25
 rhinovirus_a	3	50	25
 rhinovirus_b	1	25	25

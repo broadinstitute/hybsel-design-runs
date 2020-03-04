@@ -27,7 +27,7 @@ while read -r dataset; do
     DATASETS+=("$dataset")
 done < input/datasets.txt
 
-MISMATCHES_TO_TRY=(0 1 2 3 4 5 6 8)
+MISMATCHES_TO_TRY=(0 1 2 3 4 6 8)
 
 EXTENSIONS_TO_TRY=()
 for e in $(seq 0 25 75); do
