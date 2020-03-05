@@ -20,19 +20,13 @@ To generate a probe set, I did the following:
      NPROBES is the number of probes in the design and NJOBS is the number of jobs
      to run in parallel
 
-I designed a probe set with 6,000 probes and another with 45,000 probes, so I
-ran steps (4) and (5) above twice (once with NPROBES=6000 and again with
-NPROBES=45000). Note that, since step (5) adds reverse complements to the
-probes (via `--add-reverse-complements`), the total size of the probe set is
-twice the design size (12,000 and 90,000).
-
-Note that steps (1) and (2) do not in fact output the designed probes; they only
-output the number of needed probes (not including reverse complements). They could
-have output the probes for each choice of parameters, but I chose instead to
-re-run `design.py` in CATCH (in step (5)) on the final choice of parameters and
-save probes on these runs. Step (5) also adds `--expand-n 0`; it could also add
-reverse complements and adapters (but does not here).
-The size of the probe set in step (5) might be slightly different than the number
-determined in step (2) because of randomness due to `--filter-with-lsh-hamming`.
-
 The final probe sets are in pooled/design-NPROBES/probes.fasta.gz.
+
+Note that the taxonomic ID for hpiv_4 is 11224, which is Human parainfluenza virus 4a
+(not 1979161, which is Human rubulavirus 4). This is because the NCBI seems to have
+some issues, where 1979161 does not return any results but redirects to 11224. 11224
+in fact includes neighbors for both Human parainfluenza 4a and 4b (both major strains),
+so using it is fine; this can be verified by looking under the taxid-acc/ for hpiv_4.
+Likewise, the ID for human_mastadenovirus_g is 310540 (Simian adenovirus 1) rather than
+536079 for this same reason; but 310540 includes neighbors for all the major lineages
+of Human mastadenovirus G.
